@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["fritz.meissner@gmail.com"]
 
   spec.summary       = %q{Solargraph plugin that adds Rails-specific code through a Convention}
-  spec.description   = %q{Solargraph plugin that adds Rails-specific code through a Convention}
+  spec.description   = %q{Add reflection on ActiveModel dynamic attributes that will be created at runtime}
   spec.homepage      = 'https://github.com/iftheshoefritz/solargraph_rails'
   spec.license       = "MIT"
 
