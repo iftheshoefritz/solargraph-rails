@@ -2,7 +2,7 @@ require 'solargraph_rails/version'
 require 'solargraph'
 
 module SolargraphRails
-  class MyConvention < Solargraph::Convention::Base
+  class DynamicAttributes < Solargraph::Convention::Base
     def global yard_map
       Solargraph::Logging.logger.info "*"*100 + 'running convention!'
       puts "*"*100
@@ -13,7 +13,8 @@ module SolargraphRails
 
     def parse_pins
       klasses = [MyBook] # use ActiveRecord::Base.descendants to find the real list
-      klass = ActiveRecord::Base.descendants.first
+      klass = ApplicationRecord.descendants.first
+      Solargraph::Logging.logger.info "*"*50 + "adding #{klass}"
       pins = []
       ## TODO: find a way to do resolution that can handle namespaces:
       source = Solargraph::Source.load(Rails.root.join('app', 'models', "#{klass.name.underscore}.rb"))
@@ -61,4 +62,4 @@ module SolargraphRails
 end
 
 
-Solargraph::Convention.register MyConvention
+Solargraph::Convention.register SolargraphRails::DynamicAttributes
