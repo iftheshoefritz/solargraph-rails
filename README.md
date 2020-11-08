@@ -42,7 +42,9 @@ This has all been hacked together quite quickly so a lot is in WIP. Check out th
 
 ## Installation
 
-Add this line to your application's Gemfile:
+First step: add schema comments your model files using [Annotate](https://github.com/ctran/annotate_models/). At the moment SolargraphRails assumes your schema comments are at the top of the source file.
+
+Then, add this line to your application's Gemfile:
 
 ```ruby
 gem 'solargraph_rails'
