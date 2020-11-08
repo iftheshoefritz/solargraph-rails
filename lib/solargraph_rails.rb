@@ -15,33 +15,41 @@ module SolargraphRails
     def parse_models
       pins = []
 
-      klass_name = 'MyBook'
-      klass_name_underscore = 'my_book'
-      # doesn't like Rails.root here:
-      file_name = File.join(Dir.pwd, 'app', 'models', "#{klass_name_underscore}.rb")
+      file_names = Dir[File.join(Dir.pwd, 'app', 'models', '**', '*.rb')]
 
-      log_message :info, "loading from #{file_name}"
+      file_names.each do |file_name|
+        log_message :info, "loading from #{file_name}"
 
-      line_number = -1
-      File.open(file_name).each do |line|
-        line_number += 1
-        log_message :info, "PROCESSING: #{line}"
-        next if skip_line?(line)
-        break if end_comments?(line)
-        col_name, col_type = col_with_type(line)
-        log_message :info, "parsed name: #{col_name} type: #{col_type}"
+        model_attrs = []
+        model_name = nil
+        line_number = -1
+        File.open(file_name).each do |line|
+          line_number += 1
+          log_message :info, "PROCESSING: #{line}"
+          next if skip_line?(line)
+          if is_comment?(line)
+            col_name, col_type = col_with_type(line)
+            log_message :info, "parsed name: #{col_name} type: #{col_type}"
 
-        loc = Solargraph::Location.new(file_name, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
-        log_message :info, loc.inspect
+            loc = Solargraph::Location.new(file_name, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
+            log_message :info, loc.inspect
 
-        pins << Solargraph::Pin::Method.new(
-          name: col_name,
-          comments: "@return [#{type_translation[col_type]}]",
-          location: loc,
-          closure: Solargraph::Pin::Namespace.new(name: klass_name),
-          scope: :instance,
-          #attribute: true
-        )
+            model_attrs << {name: col_name, type: col_type, location: loc}
+          else
+            model_name = klass_name(line)
+            break
+          end
+        end
+        model_attrs.each do |attr|
+          pins << Solargraph::Pin::Method.new(
+            name: attr[:name],
+            comments: "@return [#{type_translation[attr[:type]]}]",
+            location: attr[:location],
+            closure: Solargraph::Pin::Namespace.new(name: model_name),
+            scope: :instance,
+            attribute: true
+          )
+        end
       end
       log_message(:info, pins)
       log_message(:info, "*********** pin names:")
@@ -55,8 +63,8 @@ module SolargraphRails
       skip
     end
 
-    def end_comments?(line)
-      !line.start_with?('#')
+    def is_comment?(line)
+      line.start_with?('#')
     end
 
     def col_with_type(line)
@@ -66,7 +74,12 @@ module SolargraphRails
         .first(2)
     end
 
-    # log_message both to STDOUT and Solargraph logger while I am diagnosing from console
+    def klass_name(line)
+      line.gsub(/#\s*/, '').match /class\s*?([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/
+      $1
+    end
+
+    # log_message both to STDOUT and Solargraph logger while I am debugging from console
     # and client
     def log_message(level, msg)
       puts "[#{level}] #{msg}"
