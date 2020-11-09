@@ -69,7 +69,7 @@ When you make changes, you probably need to shut down solargraph and restart it 
 
 `api_map = Solargraph::ApiMap.load(Rails.root)`
 
-in the root of the Rails project where solargraph_rails is installed. This may require restarting the rails console each time, and possibly killing Spring.
+in the console of the Rails project where solargraph_rails is installed. This may require restarting the rails console each time, and possibly killing Spring.
 
 Once you have an instance of `Solargraph::ApiMap`, you can interrogate it with Solargraph code like:
 
