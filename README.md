@@ -1,5 +1,6 @@
-# SolargraphRails - Add ActiveRecord dynamic attributes to solargraph
+# SolargraphRails - Help solargraph with Rails
 
+## Models
 Given a typical Rails model like this:
 
 ```ruby
@@ -40,35 +41,41 @@ With this you get autocompletion on ActiveRecord attributes:
 
 This has all been hacked together quite quickly so a lot is in WIP. Check out the issues and contribute if you are interested.
 
+## Associations
+This is coming soon.
+
 ## Installation
 
-First step: add schema comments your model files using [Annotate](https://github.com/ctran/annotate_models/). At the moment SolargraphRails assumes your schema comments are at the top of the source file.
+###  Install `solargraph` v0.40+ and `solargraph_rails`
+Typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
 
-Then, add this line to your application's Gemfile:
+SG v0.40 and solargraph_rails are unreleased at time of writing. To install gems locally you will need to clone the source from github, run `gem build` in the directory where you cloned the source, then run `gem install --local /path/to/generated_file.gem` to get solargraph into the executable path and solargraph_rails into a place where `solargraph` can find it when it loads plugins.
 
-```ruby
-gem 'solargraph_rails'
-```
-
-And then execute:
-
-    $ bundle install
-    
-    
-Then add `solargraph_rails` as a plugin to your `.solargraph.yml` file:
+### Add `solargraph_rails` to your `.solargraph.yml`
 
 ```
 plugins:
   - solargraph_rails
 ```
 
+### Add annotate
+Add schema comments your model files using [Annotate](https://github.com/ctran/annotate_models/). At the moment SolargraphRails assumes your schema comments are at the top of the source file.
+
 ## Development
 
-Check out the source, start hacking, put up a PR :).
+Fork the project, start hacking, put up a PR :).
 
-When you make changes, you probably need to shut down solargraph and restart it (maybe that requires you to shut down your whole editor?). You can speed up the feedback loop by running `api_map = Solargraph::ApiMap.load(Rails.root)` in the root of the Rails project where solargraph_rails is installed. This may require restarting the rails console each time, or at least killing Spring.
+When you make changes, you probably need to shut down solargraph and restart it (maybe that requires you to shut down your whole editor?). You can speed up the feedback loop by running
 
-Once you have an `api_map`, you can interrogate it with Solargraph code like: `pins = api_map.get_methods('MyBook')`. More examples here: https://solargraph.org/guides/code-examples
+`api_map = Solargraph::ApiMap.load(Rails.root)`
+
+in the root of the Rails project where solargraph_rails is installed. This may require restarting the rails console each time, and possibly killing Spring.
+
+Once you have an instance of `Solargraph::ApiMap`, you can interrogate it with Solargraph code like:
+
+`pins = api_map.get_methods('MyBook')`
+
+More examples here: https://solargraph.org/guides/code-examples
 
 ## Contributing
 
