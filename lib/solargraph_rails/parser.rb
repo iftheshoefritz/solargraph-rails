@@ -55,7 +55,7 @@ module SolargraphRails
     end
 
     def skip_line?(line)
-      skip = line.empty? || line =~ /Schema/ || line =~ /Table/ || line =~ /^\s*#\s*$/ || line =~ /frozen string literal/
+      skip = line.strip.empty? || line =~ /Schema/ || line =~ /Table/ || line =~ /^\s*#\s*$/ || line =~ /frozen string literal/
       log_message :info, 'skipping' if skip
       skip
     end
