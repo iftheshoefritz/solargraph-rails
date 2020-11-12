@@ -38,6 +38,8 @@ RSpec.describe SolargraphRails::Parser do
 
   end
 
+  context 'model with malformed annotations'
+
   context 'descendant of ApplicationRecord' do
     context 'with one annotation' do
       it 'has one pin' do
