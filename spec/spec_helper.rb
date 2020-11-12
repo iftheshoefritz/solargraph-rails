@@ -1,5 +1,8 @@
-require "bundler/setup"
-require "solargraph_rails"
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'byebug'
+require 'solargraph_rails'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
