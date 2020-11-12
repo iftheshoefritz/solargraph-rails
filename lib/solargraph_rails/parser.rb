@@ -15,34 +15,34 @@ module SolargraphRails
       line_number = -1
       contents.lines do |line|
         line_number += 1
-        log_message :info, "PROCESSING: #{line}"
+        Solargraph::Logging.logger.info "PROCESSING: #{line}"
 
         next if skip_line?(line)
 
         if is_comment?(line)
           col_name, col_type = col_with_type(line)
-          log_message :info, "suspected attribute name: #{col_name} type: #{col_type}"
-          if type_translation.keys.include?(col_type.to_sym)
-            log_message :info, "parsed name: #{col_name} type: #{col_type}"
+          Solargraph::Logging.logger.info "suspected attribute name: #{col_name} type: #{col_type}"
+          if type_translation.keys.include?(col_type)
+            Solargraph::Logging.logger.info "parsed name: #{col_name} type: #{col_type}"
 
             loc = Solargraph::Location.new(path, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
-            log_message :info, loc.inspect
+            Solargraph::Logging.logger.info loc.inspect
 
             model_attrs << {name: col_name, type: col_type, location: loc}
           else
-            log_message :info, "could not find annotation in comment"
+            Solargraph::Logging.logger.info "could not find annotation in comment"
             next
           end
         else
           model_name = activerecord_model_name(line)
           if model_name.nil?
-            log_message :warn, "Unable to find model name in #{line}"
+            Solargraph::Logging.logger.warn "Unable to find model name in #{line}"
             model_attrs = [] # don't include anything from this model
           end
           break
         end
       end
-      log_message :info, "Adding #{model_attrs.count} attributes as pins"
+      Solargraph::Logging.logger.info "Adding #{model_attrs.count} attributes as pins"
       model_attrs.map do |attr|
         Solargraph::Pin::Method.new(
           name: attr[:name],
@@ -57,7 +57,7 @@ module SolargraphRails
 
     def skip_line?(line)
       skip = line.strip.empty? || line =~ /Schema/ || line =~ /Table/ || line =~ /^\s*#\s*$/ || line =~ /frozen string literal/
-      log_message :info, 'skipping' if skip
+      Solargraph::Logging.logger.info 'skipping' if skip
       skip
     end
 
@@ -69,6 +69,7 @@ module SolargraphRails
       line
         .gsub(/#\s*/, '')
         .gsub(':', '')
+        .gsub(/\(|,|\)/, '')
         .split
         .first(2)
     end
@@ -78,21 +79,15 @@ module SolargraphRails
       $1
     end
 
-    # log_message both to STDOUT and Solargraph logger while I am debugging from console
-    # and client
-    def log_message(level, msg)
-      puts "[#{level}] #{msg}"
-      Solargraph::Logging.logger.send(level, msg)
-    end
-
     def type_translation
       {
-        decimal: 'Decimal',
-        integer: 'Int',
-        date: 'Date',
-        datetime: 'DateTime',
-        string: 'String',
-        boolean: 'Bool'
+        'decimal' => 'Decimal',
+        'integer' => 'Int',
+        'date' => 'Date',
+        'datetime' => 'DateTime',
+        'string' => 'String',
+        'boolean' => 'Bool',
+        'text' => 'String'
       }
     end
   end

@@ -8,7 +8,7 @@ RSpec.describe SolargraphRails::FilesLoader do
       expect(file_name).to eq('test.txt')
       expect(content).to eq(file_contents)
     end
-    loader.each &blk
+    loader.each(&blk)
   end
 
   it 'calls block once for each file name' do
