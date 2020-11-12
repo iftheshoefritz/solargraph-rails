@@ -21,12 +21,17 @@ module SolargraphRails
 
         if is_comment?(line)
           col_name, col_type = col_with_type(line)
-          log_message :info, "parsed name: #{col_name} type: #{col_type}"
+          if type_translation.keys.include?(col_type)
+            log_message :info, "parsed name: #{col_name} type: #{col_type}"
 
-          loc = Solargraph::Location.new(file_name, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
-          log_message :info, loc.inspect
+            loc = Solargraph::Location.new(path, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
+            log_message :info, loc.inspect
 
-          model_attrs << {name: col_name, type: col_type, location: loc}
+            model_attrs << {name: col_name, type: col_type, location: loc}
+          else
+            log_message :info, "could not find annotation in comment"
+            next
+          end
         else
           model_name = activerecord_model_name(line)
           if model_name.nil?
@@ -37,8 +42,8 @@ module SolargraphRails
         end
       end
       log_message :info, "Adding #{model_attrs.count} attributes as pins"
-      model_attrs.each do |attr|
-        pins << Solargraph::Pin::Method.new(
+      model_attrs.map do |attr|
+        Solargraph::Pin::Method.new(
           name: attr[:name],
           comments: "@return [#{type_translation[attr[:type]]}]",
           location: attr[:location],
@@ -56,7 +61,7 @@ module SolargraphRails
     end
 
     def is_comment?(line)
-      line.start_with?('#')
+      line =~ (/^\s*#/)
     end
 
     def col_with_type(line)
