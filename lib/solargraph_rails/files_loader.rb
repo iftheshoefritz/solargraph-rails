@@ -6,6 +6,7 @@ module SolargraphRails
 
     def each(&blk)
       @file_names.each do |file_name|
+        log_message :info, "loading from #{file_name}"
         blk.call(file_name, File.read(file_name))
       end
     end

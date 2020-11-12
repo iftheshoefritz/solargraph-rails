@@ -11,11 +11,11 @@ module SolargraphRails
     private
 
     def parse_models
-      pins = []
+      loader = FilesLoader.new(
+        Dir[File.join(Dir.pwd, 'app', 'models', '**', '*.rb')]
+      )
 
-      file_names = Dir[File.join(Dir.pwd, 'app', 'models', '**', '*.rb')]
-
-      Parser.new(file_names).parse
+      MultiFileParser.new(loader).parse
     end
   end
 end

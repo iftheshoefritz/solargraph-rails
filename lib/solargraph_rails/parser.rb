@@ -1,19 +1,24 @@
-class Parser
-  def initialize(file_names)
-    @file_names = file_names
-  end
+# frozen_string_literal: true
 
-  def parse
-    @file_names.each do |file_name|
-      log_message :info, "loading from #{file_name}"
+module SolargraphRails
+  class Parser
+    attr_reader :contents, :path
 
+    def initialize(path, contents)
+      @path = path
+      @contents = contents
+    end
+
+    def parse
       model_attrs = []
       model_name = nil
       line_number = -1
-      File.open(file_name).each do |line|
+      contents.lines do |line|
         line_number += 1
         log_message :info, "PROCESSING: #{line}"
+
         next if skip_line?(line)
+
         if is_comment?(line)
           col_name, col_type = col_with_type(line)
           log_message :info, "parsed name: #{col_name} type: #{col_type}"
@@ -43,50 +48,45 @@ class Parser
         )
       end
     end
-    log_message(:info, pins)
-    log_message(:info, "*********** pin names:")
-    log_message(:info, pins.map(&:name))
-    pins
-  end
 
-  def skip_line?(line)
-    skip = line.empty? || line =~ /Schema/ || line =~ /Table/ || line =~ /^\s*#\s*$/ || line =~ /frozen string literal/
-    log_message :info, 'skipping' if skip
-    skip
-  end
+    def skip_line?(line)
+      skip = line.empty? || line =~ /Schema/ || line =~ /Table/ || line =~ /^\s*#\s*$/ || line =~ /frozen string literal/
+      log_message :info, 'skipping' if skip
+      skip
+    end
 
-  def is_comment?(line)
-    line.start_with?('#')
-  end
+    def is_comment?(line)
+      line.start_with?('#')
+    end
 
-  def col_with_type(line)
-    line
-      .gsub(/#\s*/, '')
-      .split
-      .first(2)
-  end
+    def col_with_type(line)
+      line
+        .gsub(/#\s*/, '')
+        .split
+        .first(2)
+    end
 
-  def activerecord_model_name(line)
-    line.gsub(/#\s*/, '').match /class\s*?([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/
-    $1
-  end
+    def activerecord_model_name(line)
+      line.gsub(/#\s*/, '').match /class\s*?([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/
+      $1
+    end
 
-  # log_message both to STDOUT and Solargraph logger while I am debugging from console
-  # and client
-  def log_message(level, msg)
-    puts "[#{level}] #{msg}"
-    Solargraph::Logging.logger.send(level, msg)
-  end
+    # log_message both to STDOUT and Solargraph logger while I am debugging from console
+    # and client
+    def log_message(level, msg)
+      puts "[#{level}] #{msg}"
+      Solargraph::Logging.logger.send(level, msg)
+    end
 
-  def type_translation
-    {
-      decimal: 'Decimal',
-      integer: 'Int',
-      date: 'Date',
-      datetime: 'DateTime',
-      string: 'String',
-      boolean: 'Bool'
-    }
+    def type_translation
+      {
+        decimal: 'Decimal',
+        integer: 'Int',
+        date: 'Date',
+        datetime: 'DateTime',
+        string: 'String',
+        boolean: 'Bool'
+      }
+    end
   end
 end
-
