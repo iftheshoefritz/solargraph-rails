@@ -21,7 +21,8 @@ module SolargraphRails
 
         if is_comment?(line)
           col_name, col_type = col_with_type(line)
-          if type_translation.keys.include?(col_type)
+          log_message :info, "suspected attribute name: #{col_name} type: #{col_type}"
+          if type_translation.keys.include?(col_type.to_sym)
             log_message :info, "parsed name: #{col_name} type: #{col_type}"
 
             loc = Solargraph::Location.new(path, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
@@ -67,6 +68,7 @@ module SolargraphRails
     def col_with_type(line)
       line
         .gsub(/#\s*/, '')
+        .gsub(':', '')
         .split
         .first(2)
     end
