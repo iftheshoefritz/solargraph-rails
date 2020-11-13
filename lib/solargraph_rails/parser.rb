@@ -81,12 +81,12 @@ module SolargraphRails
 
     def type_translation
       {
-        'decimal' => 'Decimal',
-        'integer' => 'Int',
+        'decimal' => 'BigDecimal',
+        'integer' => 'Integer',
         'date' => 'Date',
-        'datetime' => 'DateTime',
+        'datetime' => 'ActiveSupport::TimeWithZone',
         'string' => 'String',
-        'boolean' => 'Bool',
+        'boolean' => 'Boolean',
         'text' => 'String'
       }
     end

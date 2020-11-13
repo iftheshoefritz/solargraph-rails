@@ -72,7 +72,7 @@ RSpec.describe SolargraphRails::Parser do
 
       it 'has correct comments' do
         expect(@parser.parse.first.comments).to eq(
-          '@return [Int]'
+          '@return [Integer]'
         )
       end
 
@@ -102,13 +102,13 @@ RSpec.describe SolargraphRails::Parser do
         attrs = pins.each_with_object({}) do |pin, memo|
           memo[pin.name] = pin.return_type.to_s
         end
-        expect(attrs['id']).to eq('Int')
+        expect(attrs['id']).to eq('Integer')
         expect(attrs['start_date']).to eq('Date')
-        expect(attrs['living_expenses']).to eq('Decimal')
-        expect(attrs['less_deposits']).to eq('Bool')
+        expect(attrs['living_expenses']).to eq('BigDecimal')
+        expect(attrs['less_deposits']).to eq('Boolean')
         expect(attrs['notes']).to eq('String')
         expect(attrs['name']).to eq('String')
-        expect(attrs['created_at']).to eq('DateTime')
+        expect(attrs['created_at']).to eq('ActiveSupport::TimeWithZone')
       end
     end
   end
