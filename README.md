@@ -48,7 +48,7 @@ For my setup with Emacs, that means running `M-x lsp-restart-workspace`, YMMV in
 This is coming soon.
 
 ## Known issues
-This project is WIP. Check out the issues tab and contribute if you are interested.
+This project is WIP and is unlikely to work on your Rails project out of the box. Check out the issues tab and contribute if you are interested.
 
 ## Installation
 
