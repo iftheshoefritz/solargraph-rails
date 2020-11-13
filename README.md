@@ -44,11 +44,11 @@ Solargraph won't know about attributes that you add during a session. Restart yo
 
 For my setup with Emacs, that means running `M-x lsp-restart-workspace`, YMMV in other editors.
 
-### Known issues
-This has all been hacked together quite quickly so a lot is WIP. Check out the issues tab and contribute if you are interested.
-
 ## Associations
 This is coming soon.
+
+## Known issues
+This project is WIP. Check out the issues tab and contribute if you are interested.
 
 ## Installation
 
