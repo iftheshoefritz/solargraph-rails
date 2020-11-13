@@ -39,7 +39,13 @@ With this you get autocompletion on ActiveRecord attributes:
 
  ![Go to definition of dynamic attributes like created_at](assets/solar_rails_goto.gif)
 
-This has all been hacked together quite quickly so a lot is in WIP. Check out the issues and contribute if you are interested.
+### Reload workspace after migrations
+Solargraph won't know about attributes that you add during a session. Restart your LSP workspace to get the new attributes.
+
+For my setup with Emacs, that means running `M-x lsp-restart-workspace`, YMMV in other editors.
+
+### Known issues
+This has all been hacked together quite quickly so a lot is WIP. Check out the issues tab and contribute if you are interested.
 
 ## Associations
 This is coming soon.
