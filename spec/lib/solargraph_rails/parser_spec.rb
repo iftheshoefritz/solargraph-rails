@@ -228,7 +228,74 @@ RSpec.describe SolargraphRails::Parser do
       )
     end
 
-    it 'module and class on separate lines'
-    it 'more than one module'
+    it 'module and class on separate lines' do
+      pins = SolargraphRails::Parser.new(
+        'my_model.rb',
+        <<-FILE
+        # frozen_string_literal: true
+
+        #  start_date  :date
+        module MyModule
+          class MyModel < ActiveRecord::Base
+          end
+        end
+        FILE
+      ).parse
+
+      attr = pins.first
+      expect(
+        attr.closure.path
+      ).to eq(
+        'MyModule::MyModel'
+      )
+    end
+
+    it 'more than one module' do
+      pins = SolargraphRails::Parser.new(
+        'my_model.rb',
+        <<-FILE
+        # frozen_string_literal: true
+
+        #  start_date  :date
+        module MyModule
+          module MyOtherModule
+            class MyModel < ActiveRecord::Base
+            end
+          end
+        end
+        FILE
+      ).parse
+
+      attr = pins.first
+      expect(
+        attr.closure.path
+      ).to eq(
+        'MyModule::MyOtherModule::MyModel'
+      )
+    end
+
+    it 'inline and standalone module names' do
+      pins = SolargraphRails::Parser.new(
+        'my_model.rb',
+        <<-FILE
+        # frozen_string_literal: true
+
+        #  start_date  :date
+        module MyModule
+          module MyOtherModule
+            class MyInlineModule::MyModel < ActiveRecord::Base
+            end
+          end
+        end
+        FILE
+      ).parse
+
+      attr = pins.first
+      expect(
+        attr.closure.path
+      ).to eq(
+        'MyModule::MyOtherModule::MyInlineModule::MyModel'
+      )
+    end
   end
 end

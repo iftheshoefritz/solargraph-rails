@@ -12,7 +12,7 @@ module SolargraphRails
     def parse
       model_attrs = []
       model_name = nil
-      namespace = nil
+      module_names = []
       line_number = -1
       contents.lines do |line|
         line_number += 1
@@ -35,10 +35,17 @@ module SolargraphRails
             next
           end
         else
-          namespace, model_name = namespace_and_model_name(line)
+          standalone_module = standalone_module_name(line)
+          if standalone_module
+            Solargraph::Logging.logger.info "found standalone module #{standalone_module}"
+            module_names << standalone_module
+            next
+          end
+          inline_module, model_name = namespace_and_model_name(line)
+          module_names << inline_module
           if model_name.nil?
             Solargraph::Logging.logger.warn "Unable to find model name in #{line}"
-            model_attrs = [] # don't include anything from this model
+            model_attrs = [] # don't include anything from this file
           end
           break
         end
@@ -49,7 +56,7 @@ module SolargraphRails
           name: attr[:name],
           comments: "@return [#{type_translation[attr[:type]]}]",
           location: attr[:location],
-          closure: Solargraph::Pin::Namespace.new(name: namespace + model_name),
+          closure: Solargraph::Pin::Namespace.new(name: module_names.join('::') + model_name),
           scope: :instance,
           attribute: true
         )
@@ -75,10 +82,14 @@ module SolargraphRails
         .first(2)
     end
 
+    def standalone_module_name(line)
+      line.match(/^\s*module\s*?([A-Z]\w+)/)
+      $1
+    end
+
     def namespace_and_model_name(line)
       line
-        .gsub(/#\s*/, '')
-        .match(/class\s*?((?:[A-Z]\w+\:\:)*)([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/)
+        .match(/class\s*?([A-Z]\w+\:\:)*([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/)
       [$1 || '', $2]
     end
 
