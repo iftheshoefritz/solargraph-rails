@@ -39,6 +39,10 @@ With this you get autocompletion on ActiveRecord attributes:
 
  ![Go to definition of dynamic attributes like created_at](assets/solar_rails_goto.gif)
 
+... and peek commands show you documentation about the attribute:
+
+ ![Peek at documentation of attributes like created_at, author, etc.](assets/peek.png)
+
 ### Reload workspace after migrations
 Solargraph won't know about attributes that you add during a session. Restart your LSP workspace to get the new attributes.
 
