@@ -12,6 +12,7 @@ module SolargraphRails
     def parse
       model_attrs = []
       model_name = nil
+      namespace = nil
       line_number = -1
       contents.lines do |line|
         line_number += 1
@@ -34,7 +35,7 @@ module SolargraphRails
             next
           end
         else
-          model_name = activerecord_model_name(line)
+          namespace, model_name = namespace_and_model_name(line)
           if model_name.nil?
             Solargraph::Logging.logger.warn "Unable to find model name in #{line}"
             model_attrs = [] # don't include anything from this model
@@ -48,7 +49,7 @@ module SolargraphRails
           name: attr[:name],
           comments: "@return [#{type_translation[attr[:type]]}]",
           location: attr[:location],
-          closure: Solargraph::Pin::Namespace.new(name: model_name),
+          closure: Solargraph::Pin::Namespace.new(name: namespace + model_name),
           scope: :instance,
           attribute: true
         )
@@ -74,9 +75,11 @@ module SolargraphRails
         .first(2)
     end
 
-    def activerecord_model_name(line)
-      line.gsub(/#\s*/, '').match /class\s*?([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/
-      $1
+    def namespace_and_model_name(line)
+      line
+        .gsub(/#\s*/, '')
+        .match(/class\s*?((?:[A-Z]\w+\:\:)*)([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/)
+      [$1 || '', $2]
     end
 
     def type_translation

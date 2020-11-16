@@ -206,4 +206,29 @@ RSpec.describe SolargraphRails::Parser do
       end
     end
   end
+
+  context 'nested class and module' do
+    it 'Module::Class' do
+      pins = SolargraphRails::Parser.new(
+        'my_model.rb',
+        <<-FILE
+        # frozen_string_literal: true
+
+        #  start_date  :date
+        class MyModule::MyModel < ActiveRecord::Base
+        end
+        FILE
+      ).parse
+
+      attr = pins.first
+      expect(
+        attr.closure.path
+      ).to eq(
+        'MyModule::MyModel'
+      )
+    end
+
+    it 'module and class on separate lines'
+    it 'more than one module'
+  end
 end
