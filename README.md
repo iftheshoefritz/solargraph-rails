@@ -1,5 +1,8 @@
 # SolargraphRails - Help solargraph with Rails
 
+## Work in progress - here be dragons
+There are significant rough edges to this gem still. Don't use it if you're not willing to do things like build gems from source and install them locally.
+
 ## Models
 Given a typical Rails model like this:
 
