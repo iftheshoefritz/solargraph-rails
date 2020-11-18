@@ -1,7 +1,7 @@
 # SolargraphRails - Help solargraph with Rails
 
 ## Work in progress - here be dragons
-There are significant rough edges to this gem still. Don't use it if you're not willing to do things like build gems from source and install them locally.
+There are significant rough edges to this gem still. Don't use it if you're not willing to do things like build gems from source and install them locally. See `Installation` below for more info.
 
 ## Models
 Given a typical Rails model like this:
@@ -59,7 +59,7 @@ This project is WIP and is unlikely to work on your Rails project out of the box
 
 ## Installation
 
-###  Install `solargraph` v0.40+ and `solargraph_rails`
+###  Install `solargraph` v0.40+ and `solargraph_rails` locally
 Typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
 
 SG v0.40 and solargraph_rails are unreleased at time of writing. To install gems locally you will need to clone the source from github, run `gem build` in the directory where you cloned the source, then run `gem install --local /path/to/generated_file.gem` to get solargraph into the executable path and solargraph_rails into a place where `solargraph` can find it when it loads plugins.
