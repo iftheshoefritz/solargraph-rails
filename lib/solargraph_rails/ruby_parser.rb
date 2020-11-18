@@ -23,7 +23,7 @@ module SolargraphRails
 
     def parse
       @lines
-        .map(&:strip)
+        .map(&:rstrip)
         .each_with_index do |line, i|
         @current_line_number = i
         @current_line_length = line.length
