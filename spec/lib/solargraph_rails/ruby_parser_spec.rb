@@ -68,6 +68,22 @@ RSpec.describe SolargraphRails::RubyParser do
 
         parser.parse
       end
+
+      it 'passes superklass with namespace' do
+        parser = SolargraphRails::RubyParser.new(
+          file_contents: "class X < Yabc::Zabc\nend"
+        )
+        handler = proc do |klass, superklass|
+          expect(superklass).to eq('Yabc::Zabc')
+        end
+
+        parser.on_class(&handler)
+
+        expect(handler).to receive(:call).and_call_original
+
+        parser.parse
+
+      end
     end
 
     context 'module declaration' do
