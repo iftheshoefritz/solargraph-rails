@@ -1,5 +1,7 @@
 module SolargraphRails
   class RubyParser
+    attr_reader :current_line_number, :current_line_length
+
     def initialize(file_contents: '')
       @lines = file_contents.lines
       @comment_handlers = []
@@ -22,7 +24,10 @@ module SolargraphRails
     def parse
       @lines
         .map(&:strip)
-        .each do |line|
+        .each_with_index do |line, i|
+        @current_line_number = i
+        @current_line_length = line.length
+
         if is_comment?(line)
           comment_content = line.gsub(/#\s*/, '')
           @comment_handlers.each { |handler| handler.call(comment_content) }

@@ -139,4 +139,22 @@ RSpec.describe SolargraphRails::RubyParser do
       end
     end
   end
+
+  it 'line info' do
+    parser = SolargraphRails::RubyParser.new(
+      file_contents: "class X\n# a comment\n"
+    )
+
+    parser.on_class do |klass|
+      expect(parser.current_line_number).to eq(0)
+      expect(parser.current_line_length).to eq(7)
+    end
+
+    parser.on_comment do |comment|
+      expect(parser.current_line_number).to eq(1)
+      expect(parser.current_line_length).to eq(11)
+    end
+
+    parser.parse
+  end
 end
