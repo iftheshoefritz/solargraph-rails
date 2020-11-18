@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module SolargraphRails
-  class Parser
+  class PinCreator
     attr_reader :contents, :path
 
     def initialize(path, contents)
@@ -17,7 +17,7 @@ module SolargraphRails
       parser = RubyParser.new(file_contents: contents)
 
       parser.on_comment do |comment|
-        Solargraph::Logging.logger.info "parsing comment #{comment}"
+        Solargraph::Logging.logger.info "found comment #{comment}"
         col_name, col_type = col_with_type(comment)
         if type_translation.keys.include?(col_type)
           loc = Solargraph::Location.new(
@@ -41,7 +41,7 @@ module SolargraphRails
       end
 
       parser.on_class do |klass, superklass|
-        Solargraph::Logging.logger.info "PROCESSING CLASS: #{klass} < #{superklass}"
+        Solargraph::Logging.logger.info "found class: #{klass} < #{superklass}"
         if superklass == "ActiveRecord::Base" || superklass == "ApplicationRecord"
           model_name = klass
         else

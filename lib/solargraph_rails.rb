@@ -2,7 +2,7 @@
 
 require 'solargraph_rails/version'
 require 'solargraph'
-require_relative 'solargraph_rails/parser'
+require_relative 'solargraph_rails/pin_creator'
 require_relative 'solargraph_rails/ruby_parser'
 require_relative 'solargraph_rails/files_loader'
 
@@ -19,7 +19,7 @@ module SolargraphRails
 
       FilesLoader.new(
         Dir[File.join(Dir.pwd, 'app', 'models', '**', '*.rb')]
-      ).each { |file, contents| pins.push *Parser.new(file, contents).parse }
+      ).each { |file, contents| pins.push *PinCreator.new(file, contents).parse }
 
       pins
     end

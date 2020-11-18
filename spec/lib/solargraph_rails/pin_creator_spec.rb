@@ -1,10 +1,10 @@
 require 'solargraph_rails/files_loader'
 
-RSpec.describe SolargraphRails::Parser do
+RSpec.describe SolargraphRails::PinCreator do
   context 'non-ruby file' do
     it 'creates no pins' do
       expect(
-        SolargraphRails::Parser.new(
+        SolargraphRails::PinCreator.new(
           'nonruby.txt',
           'xyz$&*^'
         ).parse
@@ -15,7 +15,7 @@ RSpec.describe SolargraphRails::Parser do
   context 'non-model ruby file' do
     it 'creates no pins' do
       expect(
-        SolargraphRails::Parser.new(
+        SolargraphRails::PinCreator.new(
           'non_model.rb',
           "# PORO\nclass NonModel\nend\n"
         ).parse
@@ -26,7 +26,7 @@ RSpec.describe SolargraphRails::Parser do
   context 'model without annotations' do
     it 'creates no pins' do
       expect(
-        SolargraphRails::Parser.new(
+        SolargraphRails::PinCreator.new(
           'unannotated_model.rb',
           'class UnannotatedModel < AppliationRecord; end'
         ).parse
@@ -42,7 +42,7 @@ RSpec.describe SolargraphRails::Parser do
           class MyModel < ApplicationRecord
         FILE
 
-        @parser = SolargraphRails::Parser.new(
+        @parser = SolargraphRails::PinCreator.new(
           'files/my_file/my_model.rb',
           contents
         )
@@ -98,7 +98,7 @@ RSpec.describe SolargraphRails::Parser do
           class MyModel < ApplicationRecord
         FILE
 
-        pins = SolargraphRails::Parser.new('app/models/my_model.rb', contents).parse
+        pins = SolargraphRails::PinCreator.new('app/models/my_model.rb', contents).parse
         attrs = pins.each_with_object({}) do |pin, memo|
           memo[pin.name] = pin.return_type.to_s
         end
@@ -127,7 +127,7 @@ RSpec.describe SolargraphRails::Parser do
       FILE
 
       expect(
-        SolargraphRails::Parser.new(
+        SolargraphRails::PinCreator.new(
           'my_model.rb',
           contents
         ).parse.count
@@ -146,7 +146,7 @@ RSpec.describe SolargraphRails::Parser do
       FILE
 
       expect(
-        SolargraphRails::Parser.new(
+        SolargraphRails::PinCreator.new(
           'my_model.rb',
           contents
         ).parse.count
@@ -158,7 +158,7 @@ RSpec.describe SolargraphRails::Parser do
     context 'with one annotation' do
       it 'has one pin' do
         expect(
-          SolargraphRails::Parser.new(
+          SolargraphRails::PinCreator.new(
             'my_model.rb',
             <<-FILE
               #  start_date  :date
@@ -175,7 +175,7 @@ RSpec.describe SolargraphRails::Parser do
     context 'with one annotation' do
       it 'has one pin' do
         expect(
-          SolargraphRails::Parser.new(
+          SolargraphRails::PinCreator.new(
             'my_model.rb',
             <<-FILE
               #  start_date  :date
@@ -192,7 +192,7 @@ RSpec.describe SolargraphRails::Parser do
     context 'with one annotation' do
       it 'has one pin' do
         expect(
-          SolargraphRails::Parser.new(
+          SolargraphRails::PinCreator.new(
             'my_model.rb',
             <<-FILE
               # frozen_string_literal: true
@@ -209,7 +209,7 @@ RSpec.describe SolargraphRails::Parser do
 
   context 'nested class and module' do
     it 'Module::Class' do
-      pins = SolargraphRails::Parser.new(
+      pins = SolargraphRails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
@@ -229,7 +229,7 @@ RSpec.describe SolargraphRails::Parser do
     end
 
     it 'module and class on separate lines' do
-      pins = SolargraphRails::Parser.new(
+      pins = SolargraphRails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
@@ -251,7 +251,7 @@ RSpec.describe SolargraphRails::Parser do
     end
 
     it 'more than one module' do
-      pins = SolargraphRails::Parser.new(
+      pins = SolargraphRails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
@@ -275,7 +275,7 @@ RSpec.describe SolargraphRails::Parser do
     end
 
     it 'inline and standalone module names' do
-      pins = SolargraphRails::Parser.new(
+      pins = SolargraphRails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
