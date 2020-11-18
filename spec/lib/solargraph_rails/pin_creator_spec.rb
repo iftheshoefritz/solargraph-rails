@@ -7,7 +7,7 @@ RSpec.describe SolargraphRails::PinCreator do
         SolargraphRails::PinCreator.new(
           'nonruby.txt',
           'xyz$&*^'
-        ).parse
+        ).create_pins
       ).to eq([])
     end
   end
@@ -18,7 +18,7 @@ RSpec.describe SolargraphRails::PinCreator do
         SolargraphRails::PinCreator.new(
           'non_model.rb',
           "# PORO\nclass NonModel\nend\n"
-        ).parse
+        ).create_pins
       ).to eq([])
     end
   end
@@ -29,7 +29,7 @@ RSpec.describe SolargraphRails::PinCreator do
         SolargraphRails::PinCreator.new(
           'unannotated_model.rb',
           'class UnannotatedModel < AppliationRecord; end'
-        ).parse
+        ).create_pins
       ).to eq([])
     end
   end
@@ -42,23 +42,23 @@ RSpec.describe SolargraphRails::PinCreator do
           class MyModel < ApplicationRecord
         FILE
 
-        @parser = SolargraphRails::PinCreator.new(
+        @pin_creator = SolargraphRails::PinCreator.new(
           'files/my_file/my_model.rb',
           contents
         )
       end
 
       it 'has correct name' do
-        expect(@parser.parse.first.name).to eq('id')
+        expect(@pin_creator.create_pins.first.name).to eq('id')
       end
 
       context 'location' do
         it 'has correct filename' do
-          expect(@parser.parse.first.location.filename).to eq('files/my_file/my_model.rb')
+          expect(@pin_creator.create_pins.first.location.filename).to eq('files/my_file/my_model.rb')
         end
 
         it 'has correct position' do
-          range = @parser.parse.first.location.range
+          range = @pin_creator.create_pins.first.location.range
           expect(range.start.line).to eq(0)
           expect(range.start.column).to eq(0)
           expect(range.ending.line).to eq(0)
@@ -67,21 +67,21 @@ RSpec.describe SolargraphRails::PinCreator do
       end
 
       it 'has correct closure' do
-        expect(@parser.parse.first.closure.name).to eq('MyModel')
+        expect(@pin_creator.create_pins.first.closure.name).to eq('MyModel')
       end
 
       it 'has correct comments' do
-        expect(@parser.parse.first.comments).to eq(
+        expect(@pin_creator.create_pins.first.comments).to eq(
           '@return [Integer]'
         )
       end
 
       it 'is an instance variable' do
-        expect(@parser.parse.first.scope).to eq(:instance)
+        expect(@pin_creator.create_pins.first.scope).to eq(:instance)
       end
 
       it 'is an attribute' do
-        expect(@parser.parse.first.attribute?).to eq(true)
+        expect(@pin_creator.create_pins.first.attribute?).to eq(true)
       end
     end
 
@@ -98,7 +98,7 @@ RSpec.describe SolargraphRails::PinCreator do
           class MyModel < ApplicationRecord
         FILE
 
-        pins = SolargraphRails::PinCreator.new('app/models/my_model.rb', contents).parse
+        pins = SolargraphRails::PinCreator.new('app/models/my_model.rb', contents).create_pins
         attrs = pins.each_with_object({}) do |pin, memo|
           memo[pin.name] = pin.return_type.to_s
         end
@@ -130,7 +130,7 @@ RSpec.describe SolargraphRails::PinCreator do
         SolargraphRails::PinCreator.new(
           'my_model.rb',
           contents
-        ).parse.count
+        ).create_pins.count
       ).to eq(0)
     end
 
@@ -149,7 +149,7 @@ RSpec.describe SolargraphRails::PinCreator do
         SolargraphRails::PinCreator.new(
           'my_model.rb',
           contents
-        ).parse.count
+        ).create_pins.count
       ).to eq(1)
     end
   end
@@ -165,7 +165,7 @@ RSpec.describe SolargraphRails::PinCreator do
               class MyModel < ApplicationRecord
               end
             FILE
-          ).parse.count
+          ).create_pins.count
         ).to eq(1)
       end
     end
@@ -182,7 +182,7 @@ RSpec.describe SolargraphRails::PinCreator do
               class MyModel < ActiveRecord::Base
               end
             FILE
-          ).parse.count
+          ).create_pins.count
         ).to eq(1)
       end
     end
@@ -201,7 +201,7 @@ RSpec.describe SolargraphRails::PinCreator do
               class MyModel < ActiveRecord::Base
               end
             FILE
-          ).parse.count
+          ).create_pins.count
         ).to eq(1)
       end
     end
@@ -218,7 +218,7 @@ RSpec.describe SolargraphRails::PinCreator do
         class MyModule::MyModel < ActiveRecord::Base
         end
         FILE
-      ).parse
+      ).create_pins
 
       attr = pins.first
       expect(
@@ -240,7 +240,7 @@ RSpec.describe SolargraphRails::PinCreator do
           end
         end
         FILE
-      ).parse
+      ).create_pins
 
       attr = pins.first
       expect(
@@ -264,7 +264,7 @@ RSpec.describe SolargraphRails::PinCreator do
           end
         end
         FILE
-      ).parse
+      ).create_pins
 
       attr = pins.first
       expect(
@@ -288,7 +288,7 @@ RSpec.describe SolargraphRails::PinCreator do
           end
         end
         FILE
-      ).parse
+      ).create_pins
 
       attr = pins.first
       expect(

@@ -9,7 +9,7 @@ module SolargraphRails
       @contents = contents
     end
 
-    def parse
+    def create_pins
       model_attrs = []
       model_name = nil
       module_names = []

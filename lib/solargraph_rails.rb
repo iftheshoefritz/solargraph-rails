@@ -19,7 +19,7 @@ module SolargraphRails
 
       FilesLoader.new(
         Dir[File.join(Dir.pwd, 'app', 'models', '**', '*.rb')]
-      ).each { |file, contents| pins.push *PinCreator.new(file, contents).parse }
+      ).each { |file, contents| pins.push *PinCreator.new(file, contents).create_pins }
 
       pins
     end
