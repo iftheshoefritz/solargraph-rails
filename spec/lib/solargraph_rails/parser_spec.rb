@@ -62,7 +62,7 @@ RSpec.describe SolargraphRails::Parser do
           expect(range.start.line).to eq(0)
           expect(range.start.column).to eq(0)
           expect(range.ending.line).to eq(0)
-          expect(range.ending.column).to eq(78)
+          expect(range.ending.column).to eq(77)
         end
       end
 

@@ -3,6 +3,7 @@
 require 'solargraph_rails/version'
 require 'solargraph'
 require_relative 'solargraph_rails/parser'
+require_relative 'solargraph_rails/ruby_parser'
 require_relative 'solargraph_rails/files_loader'
 
 module SolargraphRails

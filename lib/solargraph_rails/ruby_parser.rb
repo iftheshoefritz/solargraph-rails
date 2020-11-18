@@ -34,7 +34,7 @@ module SolargraphRails
         end
 
         if is_class?(line)
-          line.scan(/([A-Z]\w*)\:\:/).flatten.each do |inline_module_name|
+          line.scan(/(?:(?<!<\s)(?:(\b\w+\b)\:\:))/).flatten.each do |inline_module_name|
             @module_handlers.each { | handler| handler.call(inline_module_name) }
           end
           line.match(/class\s+(?:\w*?(?:\:\:))*([A-Z]\w*)/)

@@ -14,83 +14,63 @@ module SolargraphRails
       model_name = nil
       module_names = []
       line_number = -1
-      contents.lines do |line|
-        line_number += 1
-        Solargraph::Logging.logger.info "PROCESSING: #{line}"
+      parser = RubyParser.new(file_contents: contents)
 
-        next if skip_line?(line)
-
-        if is_comment?(line)
-          col_name, col_type = col_with_type(line)
-          Solargraph::Logging.logger.info "suspected attribute name: #{col_name} type: #{col_type}"
-          if type_translation.keys.include?(col_type)
-            Solargraph::Logging.logger.info "parsed name: #{col_name} type: #{col_type}"
-
-            loc = Solargraph::Location.new(path, Solargraph::Range.from_to(line_number, 0, line_number, line.length - 1))
-            Solargraph::Logging.logger.info loc.inspect
-
-            model_attrs << {name: col_name, type: col_type, location: loc}
-          else
-            Solargraph::Logging.logger.info "could not find annotation in comment"
-            next
-          end
+      parser.on_comment do |comment|
+        Solargraph::Logging.logger.info "parsing comment #{comment}"
+        col_name, col_type = col_with_type(comment)
+        if type_translation.keys.include?(col_type)
+          loc = Solargraph::Location.new(
+            path,
+            Solargraph::Range.from_to(
+              parser.current_line_number,
+              0,
+              parser.current_line_number,
+              parser.current_line_length - 1
+            )
+          )
+          model_attrs << {name: col_name, type: col_type, location: loc}
         else
-          standalone_module = standalone_module_name(line)
-          if standalone_module
-            Solargraph::Logging.logger.info "found standalone module #{standalone_module}"
-            module_names << standalone_module
-            next
-          end
-          inline_module, model_name = namespace_and_model_name(line)
-          module_names << inline_module
-          if model_name.nil?
-            Solargraph::Logging.logger.warn "Unable to find model name in #{line}"
-            model_attrs = [] # don't include anything from this file
-          end
-          break
+          Solargraph::Logging.logger.info "could not find annotation in comment"
         end
       end
+
+      parser.on_module do |mod_name|
+        Solargraph::Logging.logger.info "found module #{mod_name}"
+        module_names << mod_name
+      end
+
+      parser.on_class do |klass, superklass|
+        Solargraph::Logging.logger.info "PROCESSING CLASS: #{klass} < #{superklass}"
+        if superklass == "ActiveRecord::Base" || superklass == "ApplicationRecord"
+          model_name = klass
+        else
+          Solargraph::Logging.logger.info "Unable to find ActiveRecord model from #{klass} #{superklass}"
+          model_attrs = [] # don't include anything from this file
+        end
+      end
+
+      parser.parse
+
       Solargraph::Logging.logger.info "Adding #{model_attrs.count} attributes as pins"
       model_attrs.map do |attr|
         Solargraph::Pin::Method.new(
           name: attr[:name],
           comments: "@return [#{type_translation[attr[:type]]}]",
           location: attr[:location],
-          closure: Solargraph::Pin::Namespace.new(name: module_names.join('::') + model_name),
+          closure: Solargraph::Pin::Namespace.new(name: module_names.join('::') + "::#{model_name}"),
           scope: :instance,
           attribute: true
         )
       end
     end
 
-    def skip_line?(line)
-      skip = line.strip.empty? || line =~ /Schema/ || line =~ /Table/ || line =~ /^\s*#\s*$/ || line =~ /frozen string literal/
-      Solargraph::Logging.logger.info 'skipping' if skip
-      skip
-    end
-
-    def is_comment?(line)
-      line =~ (/^\s*#/)
-    end
-
     def col_with_type(line)
       line
-        .gsub(/#\s*/, '')
         .gsub(':', '')
         .gsub(/\(|,|\)/, '')
         .split
         .first(2)
-    end
-
-    def standalone_module_name(line)
-      line.match(/^\s*module\s*?([A-Z]\w+)/)
-      $1
-    end
-
-    def namespace_and_model_name(line)
-      line
-        .match(/class\s*?([A-Z]\w+\:\:)*([A-Z]\w+)\s*<\s*(?:ActiveRecord::Base|ApplicationRecord)/)
-      [$1 || '', $2]
     end
 
     def type_translation
