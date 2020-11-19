@@ -152,6 +152,21 @@ RSpec.describe SolargraphRails::RubyParser do
 
           parser.parse
         end
+
+        it 'does not process namespace in superclass' do
+          parser = SolargraphRails::RubyParser.new(
+            file_contents: "class MyModule1::MyClass < SuperNamespace::Superclass\nend"
+          )
+          handler = proc { }
+
+          parser.on_module(&handler)
+
+          expect(handler).to receive(:call).with('MyModule1')
+          expect(handler).not_to receive(:call).with('SuperNamespace')
+
+          parser.parse
+
+        end
       end
     end
   end
