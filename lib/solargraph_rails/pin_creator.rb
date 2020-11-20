@@ -13,7 +13,6 @@ module SolargraphRails
       model_attrs = []
       model_name = nil
       module_names = []
-      line_number = -1
       parser = RubyParser.new(file_contents: contents)
 
       parser.on_comment do |comment|
