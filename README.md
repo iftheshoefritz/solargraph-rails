@@ -55,14 +55,26 @@ For my setup with Emacs, that means running `M-x lsp-restart-workspace`, YMMV in
 This is coming soon.
 
 ## Known issues
-This project is WIP and is unlikely to work on your Rails project out of the box. Check out the issues tab and contribute if you are interested.
+This project is being used to write production code by the maintainer, but it is still WIP. Check out the issues tab and contribute if you are interested.
 
 ## Installation
 
 ###  Install `solargraph` v0.40+ and `solargraph_rails` locally
-Typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
 
-SG v0.40 and solargraph_rails are unreleased at time of writing. To install gems locally you will need to clone the source from github, run `gem build` in the directory where you cloned the source, then run `gem install --local /path/to/generated_file.gem` to get solargraph into the executable path and solargraph_rails into a place where `solargraph` can find it when it loads plugins.
+SG v0.40 and solargraph_rails are unreleased at time of writing. You'll need to install both locally:
+
+1. Clone solargraph and update version.rb to 0.40.0
+2. Run `gem build` in the root of your clone to create `solargraph-0.40.0.gem`
+3. Clone solargraph_rails 
+4. Run `gem build` in the root of your clone to create `solargraph_rails-0.1.1.gem`
+5. From the root of your Rails app, install solargraph locally: `gem install --local /path/to/solargraph-0.40.0.gem`
+6. From the root of your Rails app, install solargraph_rails locally: `gem install --local /path/to/solargraph_rails-0.1.1.gem`
+
+###  Install gems outside of bundler
+This is the path described above. typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
+
+####  Alternative: using bundler
+If you do want to use bundler, add `gem "solargraph", path: "/path/to/my_solargraph"` and `gem "solargraph_rails", path: "/path/to/my_solargraph_rails"` instead of steps 5 & 6 above.
 
 ### Add `solargraph_rails` to your `.solargraph.yml`
 
