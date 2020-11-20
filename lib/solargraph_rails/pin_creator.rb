@@ -28,9 +28,9 @@ module SolargraphRails
               parser.current_line_length - 1
             )
           )
-          model_attrs << {name: col_name, type: col_type, location: loc}
+          model_attrs << { name: col_name, type: col_type, location: loc }
         else
-          Solargraph::Logging.logger.info "could not find annotation in comment"
+          Solargraph::Logging.logger.info 'could not find annotation in comment'
         end
       end
 
@@ -41,7 +41,7 @@ module SolargraphRails
 
       parser.on_class do |klass, superklass|
         Solargraph::Logging.logger.info "found class: #{klass} < #{superklass}"
-        if superklass == "ActiveRecord::Base" || superklass == "ApplicationRecord"
+        if ['ActiveRecord::Base', 'ApplicationRecord'].include?(superklass)
           model_name = klass
         else
           Solargraph::Logging.logger.info "Unable to find ActiveRecord model from #{klass} #{superklass}"
