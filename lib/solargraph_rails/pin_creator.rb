@@ -66,8 +66,7 @@ module SolargraphRails
 
     def col_with_type(line)
       line
-        .gsub(':', '')
-        .gsub(/\(|,|\)/, '')
+        .gsub(/[\(\),:\d]/, '')
         .split
         .first(2)
     end

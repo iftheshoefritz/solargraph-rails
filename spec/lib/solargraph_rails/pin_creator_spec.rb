@@ -85,6 +85,34 @@ RSpec.describe SolargraphRails::PinCreator do
       end
     end
 
+    context 'types' do
+      it 'can ignore string column length info in brackets' do
+        contents = <<-FILE
+          #  name            :string(255)
+          class MyModel < ApplicationRecord
+        FILE
+
+        pin_creator = SolargraphRails::PinCreator.new(
+          'files/my_file/my_model.rb',
+          contents
+        )
+        expect(pin_creator.create_pins.first.return_type.to_s).to eq('String')
+      end
+
+      it 'can ignore decimal precision info' do
+        contents = <<-FILE
+          #  cost_of_attendance       :decimal(, )
+          class MyModel < ApplicationRecord
+        FILE
+
+        pin_creator = SolargraphRails::PinCreator.new(
+          'files/my_file/my_model.rb',
+          contents
+        )
+        expect(pin_creator.create_pins.first.return_type.to_s).to eq('BigDecimal')
+      end
+    end
+
     context 'multiple annotations' do
       it 'types are correct' do
         contents = <<-FILE
