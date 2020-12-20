@@ -49,7 +49,7 @@ With this you get autocompletion on ActiveRecord attributes:
 ### Reload workspace after migrations
 Solargraph won't know about attributes that you add during a session. Restart your LSP workspace to get the new attributes.
 
-For my setup with Emacs, that means running `M-x lsp-restart-workspace`, YMMV in other editors.
+For my setup with Emacs, that means running `M-x lsp-workspace-restart`, YMMV in other editors.
 
 ## Associations
 This is coming soon.
