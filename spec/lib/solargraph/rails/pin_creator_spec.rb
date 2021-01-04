@@ -1,10 +1,10 @@
-require 'solargraph_rails/files_loader'
+require 'solargraph/rails/files_loader'
 
-RSpec.describe SolargraphRails::PinCreator do
+RSpec.describe Solargraph::Rails::PinCreator do
   context 'non-ruby file' do
     it 'creates no pins' do
       expect(
-        SolargraphRails::PinCreator.new(
+        Solargraph::Rails::PinCreator.new(
           'nonruby.txt',
           'xyz$&*^'
         ).create_pins
@@ -15,7 +15,7 @@ RSpec.describe SolargraphRails::PinCreator do
   context 'non-model ruby file' do
     it 'creates no pins' do
       expect(
-        SolargraphRails::PinCreator.new(
+        Solargraph::Rails::PinCreator.new(
           'non_model.rb',
           "# PORO\nclass NonModel\nend\n"
         ).create_pins
@@ -26,7 +26,7 @@ RSpec.describe SolargraphRails::PinCreator do
   context 'model without annotations' do
     it 'creates no pins' do
       expect(
-        SolargraphRails::PinCreator.new(
+        Solargraph::Rails::PinCreator.new(
           'unannotated_model.rb',
           'class UnannotatedModel < AppliationRecord; end'
         ).create_pins
@@ -42,7 +42,7 @@ RSpec.describe SolargraphRails::PinCreator do
           class MyModel < ApplicationRecord
         FILE
 
-        @pin_creator = SolargraphRails::PinCreator.new(
+        @pin_creator = Solargraph::Rails::PinCreator.new(
           'files/my_file/my_model.rb',
           contents
         )
@@ -92,7 +92,7 @@ RSpec.describe SolargraphRails::PinCreator do
           class MyModel < ApplicationRecord
         FILE
 
-        pin_creator = SolargraphRails::PinCreator.new(
+        pin_creator = Solargraph::Rails::PinCreator.new(
           'files/my_file/my_model.rb',
           contents
         )
@@ -105,7 +105,7 @@ RSpec.describe SolargraphRails::PinCreator do
           class MyModel < ApplicationRecord
         FILE
 
-        pin_creator = SolargraphRails::PinCreator.new(
+        pin_creator = Solargraph::Rails::PinCreator.new(
           'files/my_file/my_model.rb',
           contents
         )
@@ -126,7 +126,7 @@ RSpec.describe SolargraphRails::PinCreator do
           class MyModel < ApplicationRecord
         FILE
 
-        pins = SolargraphRails::PinCreator.new('app/models/my_model.rb', contents).create_pins
+        pins = Solargraph::Rails::PinCreator.new('app/models/my_model.rb', contents).create_pins
         attrs = pins.each_with_object({}) do |pin, memo|
           memo[pin.name] = pin.return_type.to_s
         end
@@ -155,7 +155,7 @@ RSpec.describe SolargraphRails::PinCreator do
       FILE
 
       expect(
-        SolargraphRails::PinCreator.new(
+        Solargraph::Rails::PinCreator.new(
           'my_model.rb',
           contents
         ).create_pins.count
@@ -174,7 +174,7 @@ RSpec.describe SolargraphRails::PinCreator do
       FILE
 
       expect(
-        SolargraphRails::PinCreator.new(
+        Solargraph::Rails::PinCreator.new(
           'my_model.rb',
           contents
         ).create_pins.count
@@ -186,7 +186,7 @@ RSpec.describe SolargraphRails::PinCreator do
     context 'with one annotation' do
       it 'has one pin' do
         expect(
-          SolargraphRails::PinCreator.new(
+          Solargraph::Rails::PinCreator.new(
             'my_model.rb',
             <<-FILE
               #  start_date  :date
@@ -203,7 +203,7 @@ RSpec.describe SolargraphRails::PinCreator do
     context 'with one annotation' do
       it 'has one pin' do
         expect(
-          SolargraphRails::PinCreator.new(
+          Solargraph::Rails::PinCreator.new(
             'my_model.rb',
             <<-FILE
               #  start_date  :date
@@ -220,7 +220,7 @@ RSpec.describe SolargraphRails::PinCreator do
     context 'with one annotation' do
       it 'has one pin' do
         expect(
-          SolargraphRails::PinCreator.new(
+          Solargraph::Rails::PinCreator.new(
             'my_model.rb',
             <<-FILE
               # frozen_string_literal: true
@@ -237,7 +237,7 @@ RSpec.describe SolargraphRails::PinCreator do
 
   context 'nested class and module' do
     it 'Module::Class' do
-      pins = SolargraphRails::PinCreator.new(
+      pins = Solargraph::Rails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
@@ -257,7 +257,7 @@ RSpec.describe SolargraphRails::PinCreator do
     end
 
     it 'module and class on separate lines' do
-      pins = SolargraphRails::PinCreator.new(
+      pins = Solargraph::Rails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
@@ -279,7 +279,7 @@ RSpec.describe SolargraphRails::PinCreator do
     end
 
     it 'more than one module' do
-      pins = SolargraphRails::PinCreator.new(
+      pins = Solargraph::Rails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true
@@ -303,7 +303,7 @@ RSpec.describe SolargraphRails::PinCreator do
     end
 
     it 'inline and standalone module names' do
-      pins = SolargraphRails::PinCreator.new(
+      pins = Solargraph::Rails::PinCreator.new(
         'my_model.rb',
         <<-FILE
         # frozen_string_literal: true

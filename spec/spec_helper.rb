@@ -2,7 +2,7 @@
 
 require 'bundler/setup'
 require 'byebug'
-require 'solargraph_rails'
+require 'solargraph-rails'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

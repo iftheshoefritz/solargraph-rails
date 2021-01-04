@@ -1,4 +1,4 @@
-# SolargraphRails - Help solargraph with Rails
+# Solargraph::Rails - Help solargraph with Rails
 
 ## Work in progress - here be dragons
 There are significant rough edges to this gem still. Don't use it if you're not willing to do things like build gems from source and install them locally. See `Installation` below for more info.
@@ -84,7 +84,7 @@ plugins:
 ```
 
 ### Add annotate
-Add schema comments your model files using [Annotate](https://github.com/ctran/annotate_models/). At the moment SolargraphRails assumes your schema comments are at the top of the source file.
+Add schema comments your model files using [Annotate](https://github.com/ctran/annotate_models/). At the moment Solargraph::Rails assumes your schema comments are at the top of the source file.
 
 ## Development
 

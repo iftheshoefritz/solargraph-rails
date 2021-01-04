@@ -1,4 +1,4 @@
-RSpec.describe SolargraphRails::DynamicAttributes do
+RSpec.describe Solargraph::Rails::DynamicAttributes do
   it 'adds pins' do
     files = [
       [
@@ -19,12 +19,12 @@ RSpec.describe SolargraphRails::DynamicAttributes do
         FILE
       ]
     ]
-    allow_any_instance_of(SolargraphRails::FilesLoader).to receive(:each) do |&blk|
+    allow_any_instance_of(Solargraph::Rails::FilesLoader).to receive(:each) do |&blk|
       blk.call(*files[0])
       blk.call(*files[1])
     end
 
-    environ = SolargraphRails::DynamicAttributes
+    environ = Solargraph::Rails::DynamicAttributes
                 .new
                 .global(double('Solargraph::YardMap'))
 

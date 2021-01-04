@@ -1,9 +1,9 @@
-require 'solargraph_rails/ruby_parser'
+require 'solargraph/rails/ruby_parser'
 
-RSpec.describe SolargraphRails::RubyParser do
+RSpec.describe Solargraph::Rails::RubyParser do
   context 'callbacks' do
     it 'empty file calls nothing' do
-      parser = SolargraphRails::RubyParser.new(file_contents: '')
+      parser = Solargraph::Rails::RubyParser.new(file_contents: '')
 
       handler = ->(x) { }
       parser.on_comment(&handler)
@@ -16,7 +16,7 @@ RSpec.describe SolargraphRails::RubyParser do
 
     context 'comments' do
       it 'passes content of comment without "#"' do
-        parser = SolargraphRails::RubyParser.new(
+        parser = Solargraph::Rails::RubyParser.new(
           file_contents: "# a comment\n"
         )
         handler = proc { |x| expect(x).to eq('a comment') }
@@ -28,7 +28,7 @@ RSpec.describe SolargraphRails::RubyParser do
       end
 
       it 'calls handler once for each comment' do
-        parser = SolargraphRails::RubyParser.new(
+        parser = Solargraph::Rails::RubyParser.new(
           file_contents: "# a comment\n# another comment\n"
         )
         handler = proc {}
@@ -42,7 +42,7 @@ RSpec.describe SolargraphRails::RubyParser do
 
     context 'class declaration' do
       it 'passes correct class name' do
-        parser = SolargraphRails::RubyParser.new(
+        parser = Solargraph::Rails::RubyParser.new(
           file_contents: "class X\nend"
         )
         handler = proc { |klass_name| expect(klass_name).to eq('X') }
@@ -54,7 +54,7 @@ RSpec.describe SolargraphRails::RubyParser do
       end
 
       it 'passes class name with superclass' do
-        parser = SolargraphRails::RubyParser.new(
+        parser = Solargraph::Rails::RubyParser.new(
           file_contents: "class X < Y\nend"
         )
         handler = proc do |klass, superklass|
@@ -70,7 +70,7 @@ RSpec.describe SolargraphRails::RubyParser do
       end
 
       it 'passes superklass with namespace' do
-        parser = SolargraphRails::RubyParser.new(
+        parser = Solargraph::Rails::RubyParser.new(
           file_contents: "class X < Yabc::Zabc\nend"
         )
         handler = proc do |klass, superklass|
@@ -89,7 +89,7 @@ RSpec.describe SolargraphRails::RubyParser do
     context 'module declaration' do
       context 'standalone module' do
         it 'passes correct module name' do
-          parser = SolargraphRails::RubyParser.new(
+          parser = Solargraph::Rails::RubyParser.new(
             file_contents: "module MyModule\n"
           )
           handler = proc { |mod| expect(mod).to eq('MyModule') }
@@ -101,7 +101,7 @@ RSpec.describe SolargraphRails::RubyParser do
         end
 
         it 'calls handler once for each module declaration' do
-          parser = SolargraphRails::RubyParser.new(
+          parser = Solargraph::Rails::RubyParser.new(
             file_contents: "module MyModule\n  module MyModule2\n  end\nend"
           )
           handler = proc { }
@@ -115,7 +115,7 @@ RSpec.describe SolargraphRails::RubyParser do
 
       context 'inline module and class' do
         it 'calls module handler with inline module name' do
-          parser = SolargraphRails::RubyParser.new(
+          parser = Solargraph::Rails::RubyParser.new(
             file_contents: "class MyModule::MyClass\nend"
           )
           module_handler = proc { |mod| expect(mod).to eq('MyModule') }
@@ -128,7 +128,7 @@ RSpec.describe SolargraphRails::RubyParser do
         end
 
         it 'calls class handler with class name' do
-          parser = SolargraphRails::RubyParser.new(
+          parser = Solargraph::Rails::RubyParser.new(
             file_contents: "class MyModule::MyClass\nend"
           )
           class_handler = proc { |klass| expect(klass).to eq('MyClass') }
@@ -141,7 +141,7 @@ RSpec.describe SolargraphRails::RubyParser do
         end
 
         it 'multiple inline module names' do
-          parser = SolargraphRails::RubyParser.new(
+          parser = Solargraph::Rails::RubyParser.new(
             file_contents: "class MyModule1::MyModule2::MyModule3::MyClass\nend"
           )
           handler = proc { }
@@ -154,7 +154,7 @@ RSpec.describe SolargraphRails::RubyParser do
         end
 
         it 'does not process namespace in superclass' do
-          parser = SolargraphRails::RubyParser.new(
+          parser = Solargraph::Rails::RubyParser.new(
             file_contents: "class MyModule1::MyClass < SuperNamespace::Superclass\nend"
           )
           handler = proc { }
@@ -172,7 +172,7 @@ RSpec.describe SolargraphRails::RubyParser do
   end
 
   it 'line info' do
-    parser = SolargraphRails::RubyParser.new(
+    parser = Solargraph::Rails::RubyParser.new(
       file_contents: "class X\n# a comment\n"
     )
 
