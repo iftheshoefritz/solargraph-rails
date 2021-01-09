@@ -92,7 +92,7 @@ Fork the project, start hacking, put up a PR :).
 
 When you make changes, you probably need to shut down solargraph and restart it (maybe that requires you to shut down your whole editor?). You can speed up the feedback loop by running
 
-`api_map = Solargraph::ApiMap.load(Rails.root)`
+`api_map = Solargraph::ApiMap.load(Rails.root.to_s)`
 
 in the console of the Rails project where solargraph_rails is installed. This may require restarting the rails console each time, and possibly killing Spring.
 
