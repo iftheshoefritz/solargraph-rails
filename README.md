@@ -1,7 +1,7 @@
 # Solargraph::Rails - Help solargraph with Rails
 
 ## Work in progress - here be dragons
-There are significant rough edges to this gem still. Don't use it if you're not willing to do things like build gems from source and install them locally. See `Installation` below for more info.
+There are significant rough edges to this gem still. You won't be able to use it if you're not willing to install a gem using `--pre`. See `Installation` below for more info.
 
 ## Models
 Given a typical Rails model like this:
@@ -61,26 +61,18 @@ This project is being used to write production code by the maintainer, but it is
 
 ###  Install `solargraph` v0.40+ and `solargraph_rails` locally
 
-SG v0.40 and solargraph_rails are unreleased at time of writing. You'll need to install both locally:
+Typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
 
-1. Clone solargraph and update version.rb to 0.40.0
-2. Run `gem build` in the root of your clone to create `solargraph-0.40.0.gem`
-3. Clone solargraph_rails 
-4. Run `gem build` in the root of your clone to create `solargraph_rails-0.1.1.gem`
-5. From the root of your Rails app, install solargraph locally: `gem install --local /path/to/solargraph-0.40.0.gem`
-6. From the root of your Rails app, install solargraph_rails locally: `gem install --local /path/to/solargraph_rails-0.1.1.gem`
-
-###  Install gems outside of bundler
-This is the path described above. typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
+`gem install solargraph-rails --pre`
 
 ####  Alternative: using bundler
-If you do want to use bundler, add `gem "solargraph", path: "/path/to/my_solargraph"` and `gem "solargraph_rails", path: "/path/to/my_solargraph_rails"` instead of steps 5 & 6 above.
+If you do want to use bundler, add `gem 'solargraph-rails', '0.2.0.pre'`
 
-### Add `solargraph_rails` to your `.solargraph.yml`
+### Add `solargraph-rails` to your `.solargraph.yml`
 
 ```
 plugins:
-  - solargraph_rails
+  - solargraph-rails
 ```
 
 ### Add annotate
@@ -94,7 +86,7 @@ When you make changes, you probably need to shut down solargraph and restart it 
 
 `api_map = Solargraph::ApiMap.load(Rails.root.to_s)`
 
-in the console of the Rails project where solargraph_rails is installed. This may require restarting the rails console each time, and possibly killing Spring.
+in the console of the Rails project where solargraph-rails is installed. This may require restarting the rails console each time, and possibly killing Spring.
 
 Once you have an instance of `Solargraph::ApiMap`, you can interrogate it with Solargraph code like:
 
