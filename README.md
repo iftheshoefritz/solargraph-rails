@@ -1,7 +1,7 @@
 # Solargraph::Rails - Help solargraph with Rails
 
 ## Work in progress - here be dragons
-There are significant rough edges to this gem still. You won't be able to use it if you're not willing to install a gem using `--pre`. See `Installation` below for more info.
+There are significant rough edges to this gem still.
 
 ## Models
 Given a typical Rails model like this:
@@ -63,12 +63,14 @@ This project is being used to write production code by the maintainer, but it is
 
 Typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
 
-`gem install solargraph-rails --pre`
+`gem install solargraph-rails`
 
 ####  Alternative: using bundler
-If you do want to use bundler, add `gem 'solargraph-rails', '0.2.0.pre'`
+If you do want to use bundler, add `gem 'solargraph-rails', '~> 0.2.0'`
 
 ### Add `solargraph-rails` to your `.solargraph.yml`
+
+(if you don't have a `.solargraph.yml` in your project root, you can run `solargraph config` to add one)
 
 ```
 plugins:
