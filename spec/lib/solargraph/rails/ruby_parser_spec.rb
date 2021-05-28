@@ -165,8 +165,40 @@ RSpec.describe Solargraph::Rails::RubyParser do
           expect(handler).not_to receive(:call).with('SuperNamespace')
 
           parser.parse
-
         end
+      end
+    end
+
+    context 'every non-comment line' do
+      it 'ignores comments' do
+        parser = Solargraph::Rails::RubyParser.new(
+          file_contents: <<-RUBY
+            # 2+2
+          RUBY
+        )
+        handler = proc { }
+        parser.on_ruby_line(&handler)
+
+        expect(handler).not_to receive(:call).with('2+2')
+
+        parser.parse
+      end
+
+      it 'calls handler with non-comment line' do
+        parser = Solargraph::Rails::RubyParser.new(
+          file_contents: <<-RUBY
+            2+2
+            def mymethod; end
+          RUBY
+        )
+        handler = proc { }
+
+        parser.on_ruby_line(&handler)
+
+        expect(handler).to receive(:call).with(a_string_matching(/2\+2/))
+        expect(handler).to receive(:call).with(a_string_matching(/def mymethod; end/))
+
+        parser.parse
       end
     end
   end

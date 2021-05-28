@@ -6,6 +6,7 @@ module Solargraph
       def initialize(file_contents: '')
         @lines = file_contents.lines
         @comment_handlers = []
+        @non_comment_handlers = []
         @class_handlers = []
         @module_handlers = []
       end
@@ -22,6 +23,10 @@ module Solargraph
         @module_handlers << blk
       end
 
+      def on_ruby_line(&blk)
+        @non_comment_handlers << blk
+      end
+
       def parse
         @lines
           .map(&:rstrip)
@@ -32,6 +37,8 @@ module Solargraph
           if is_comment?(line)
             comment_content = line.gsub(/#\s*/, '')
             @comment_handlers.each { |handler| handler.call(comment_content) }
+          else
+            @non_comment_handlers.each { |handler| handler.call(line) }
           end
 
           if is_class?(line)
