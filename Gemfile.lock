@@ -1,12 +1,19 @@
 PATH
   remote: .
   specs:
-    solargraph-rails (0.2.0)
+    solargraph-rails (0.2.2.pre.1)
+      activesupport (~> 6.1.3)
       solargraph (~> 0.41.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (6.1.3.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     ast (2.4.2)
     backport (1.1.2)
     benchmark (0.1.1)
@@ -14,15 +21,19 @@ GEM
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
     byebug (11.1.3)
+    concurrent-ruby (1.1.9)
     diff-lcs (1.4.4)
     e2mmap (0.1.0)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
     kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     mini_portile2 (2.5.3)
-    nokogiri (1.11.6)
+    minitest (5.14.4)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     parallel (1.20.1)
@@ -76,8 +87,11 @@ GEM
       yard (~> 0.9, >= 0.9.24)
     thor (1.1.0)
     tilt (2.0.10)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
     yard (0.9.26)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
