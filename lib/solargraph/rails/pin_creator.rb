@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'active_support/core_ext/string'
+
 module Solargraph
   module Rails
     class PinCreator
@@ -50,13 +52,47 @@ module Solargraph
           end
         end
 
+        parser.on_ruby_line do |line|
+          if line =~ /belongs_to\s+:([a-z_]*)/
+            belongs_to_reader = Regexp.last_match(1)
+
+            loc = Solargraph::Location.new(
+              path,
+              Solargraph::Range.from_to(
+                parser.current_line_number,
+                0,
+                parser.current_line_number,
+                parser.current_line_length - 1
+              )
+            )
+            model_attrs << { name: belongs_to_reader, type: belongs_to_reader.camelize, location: loc }
+          elsif line =~ /has_many\s+:([a-z_]*)/
+            has_many_reader = Regexp.last_match(1)
+
+            loc = Solargraph::Location.new(
+              path,
+              Solargraph::Range.from_to(
+                parser.current_line_number,
+                0,
+                parser.current_line_number,
+                parser.current_line_length - 1
+              )
+            )
+            model_attrs << {
+              name: has_many_reader,
+              type: "Array<#{has_many_reader.singularize.camelize}>",
+              location: loc
+            }
+          end
+        end
+
         parser.parse
 
         Solargraph::Logging.logger.info "Adding #{model_attrs.count} attributes as pins"
         model_attrs.map do |attr|
           Solargraph::Pin::Method.new(
             name: attr[:name],
-            comments: "@return [#{type_translation[attr[:type]]}]",
+            comments: "@return [#{type_translation.fetch(attr[:type], attr[:type])}]",
             location: attr[:location],
             closure: Solargraph::Pin::Namespace.new(name: module_names.join('::') + "::#{model_name}"),
             scope: :instance,
