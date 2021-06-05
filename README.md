@@ -51,8 +51,10 @@ Solargraph won't know about attributes that you add during a session. Restart yo
 
 For my setup with Emacs, that means running `M-x lsp-workspace-restart`, YMMV in other editors.
 
-## Associations
-This is coming soon.
+## Associations (experimental)
+There is very hacky and simplistic support for `belongs_to` and `has_many` macros, if you are willing to use `gem install solargraph-rails --pre`:
+
+ ![Experimental autocomplete and go to definition of associations](assets/solar_rails_associations.gif)
 
 ## Known issues
 This project is being used to write production code by the maintainer, but it is still WIP. Check out the issues tab and contribute if you are interested.
