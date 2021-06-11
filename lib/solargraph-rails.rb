@@ -5,6 +5,10 @@ require 'solargraph/rails/version'
 require_relative 'solargraph/rails/pin_creator'
 require_relative 'solargraph/rails/ruby_parser'
 require_relative 'solargraph/rails/files_loader'
+require_relative 'solargraph/rails/meta_source/association/belongs_to_matcher'
+require_relative 'solargraph/rails/meta_source/association/has_many_matcher'
+require_relative 'solargraph/rails/meta_source/association/has_one_matcher'
+require_relative 'solargraph/rails/meta_source/association/has_and_belongs_to_many_matcher'
 
 module Solargraph
   module Rails

@@ -53,9 +53,11 @@ module Solargraph
         end
 
         parser.on_ruby_line do |line|
-          if line =~ /belongs_to\s+:([a-z_]*)/
-            belongs_to_reader = Regexp.last_match(1)
+          matcher = ruby_matchers.find do |m|
+            m.match?(line)
+          end
 
+          if matcher
             loc = Solargraph::Location.new(
               path,
               Solargraph::Range.from_to(
@@ -65,24 +67,7 @@ module Solargraph
                 parser.current_line_length - 1
               )
             )
-            model_attrs << { name: belongs_to_reader, type: belongs_to_reader.camelize, location: loc }
-          elsif line =~ /has_many\s+:([a-z_]*)/
-            has_many_reader = Regexp.last_match(1)
-
-            loc = Solargraph::Location.new(
-              path,
-              Solargraph::Range.from_to(
-                parser.current_line_number,
-                0,
-                parser.current_line_number,
-                parser.current_line_length - 1
-              )
-            )
-            model_attrs << {
-              name: has_many_reader,
-              type: "Array<#{has_many_reader.singularize.camelize}>",
-              location: loc
-            }
+            model_attrs << { name: matcher.name, type: matcher.type, location: loc }
           end
         end
 
@@ -101,6 +86,14 @@ module Solargraph
         end
       end
 
+      def ruby_matchers
+        [
+          MetaSource::Association::BelongsToMatcher.new,
+          MetaSource::Association::HasManyMatcher.new,
+          MetaSource::Association::HasOneMatcher.new,
+          MetaSource::Association::HasAndBelongsToManyMatcher.new
+        ]
+      end
       def col_with_type(line)
         line
           .gsub(/[\(\),:\d]/, '')
