@@ -70,15 +70,45 @@ RSpec.describe 'Methods based on association declarations' do
           ).to eq('MyModel')
         end
 
-        it 'has correct type' do
-          expect(
-            @pin_creator
-              .create_pins
-              .select { |pin| pin.name == 'other_model' }
-              .first
-              .return_type
-              .to_s
-          ).to eq('OtherModel')
+        context 'return type' do
+          context 'default type' do
+            it 'is based on association name' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_model' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('OtherModel')
+            end
+          end
+
+          context 'when there is an explicit class_name argument' do
+            before do
+              contents = <<-FILE
+                  class MyModel < ApplicationRecord
+                    belongs_to :other_model, class_name: 'DifferentModelName'
+                  end
+              FILE
+
+              @pin_creator = Solargraph::Rails::PinCreator.new(
+                'files/my_file/my_model.rb',
+                contents
+              )
+            end
+
+            it 'is based on the argument' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_model' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('DifferentModelName')
+            end
+          end
         end
 
         it 'is an instance method' do
@@ -144,15 +174,45 @@ RSpec.describe 'Methods based on association declarations' do
           ).to eq('MyModel')
         end
 
-        it 'has correct type' do
-          expect(
-            @pin_creator
-              .create_pins
-              .select { |pin| pin.name == 'other_models' }
-              .first
-              .return_type
-              .to_s
-          ).to eq('ActiveRecord::Associations::CollectionProxy<OtherModel>')
+        context 'return type' do
+          context 'default type' do
+            it 'is based on association name' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_models' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('ActiveRecord::Associations::CollectionProxy<OtherModel>')
+            end
+          end
+
+          context 'when there is an explicit class_name argument' do
+            before do
+              contents = <<-FILE
+                  class MyModel < ApplicationRecord
+                    has_many :other_models, class_name: 'DifferentModelName'
+                  end
+              FILE
+
+              @pin_creator = Solargraph::Rails::PinCreator.new(
+                'files/my_file/my_model.rb',
+                contents
+              )
+            end
+
+            it 'is based on the argument' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_models' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('ActiveRecord::Associations::CollectionProxy<DifferentModelName>')
+            end
+          end
         end
 
         it 'is an instance method' do
@@ -218,15 +278,45 @@ RSpec.describe 'Methods based on association declarations' do
           ).to eq('MyModel')
         end
 
-        it 'has correct type' do
-          expect(
-            @pin_creator
-              .create_pins
-              .select { |pin| pin.name == 'other_model' }
-              .first
-              .return_type
-              .to_s
-          ).to eq('OtherModel')
+        context 'return type' do
+          context 'default type' do
+            it 'is based on association name' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_model' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('OtherModel')
+            end
+          end
+
+          context 'when there is an explicit class_name argument' do
+            before do
+              contents = <<-FILE
+                  class MyModel < ApplicationRecord
+                    has_one :other_model, class_name: 'DifferentModelName'
+                  end
+              FILE
+
+              @pin_creator = Solargraph::Rails::PinCreator.new(
+                'files/my_file/my_model.rb',
+                contents
+              )
+            end
+
+            it 'is based on the argument' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_model' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('DifferentModelName')
+            end
+          end
         end
 
         it 'is an instance method' do
@@ -292,15 +382,45 @@ RSpec.describe 'Methods based on association declarations' do
           ).to eq('MyModel')
         end
 
-        it 'has correct type' do
-          expect(
-            @pin_creator
-              .create_pins
-              .select { |pin| pin.name == 'other_models' }
-              .first
-              .return_type
-              .to_s
-          ).to eq('ActiveRecord::Associations::CollectionProxy<OtherModel>')
+        context 'return type' do
+          context 'default type' do
+            it 'is based on association name' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_models' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('ActiveRecord::Associations::CollectionProxy<OtherModel>')
+            end
+          end
+
+          context 'when there is an explicit class_name argument' do
+            before do
+              contents = <<-FILE
+                  class MyModel < ApplicationRecord
+                    has_and_belongs_to_many :other_models, class_name: 'DifferentModelName'
+                  end
+              FILE
+
+              @pin_creator = Solargraph::Rails::PinCreator.new(
+                'files/my_file/my_model.rb',
+                contents
+              )
+            end
+
+            it 'is based on the argument' do
+              expect(
+                @pin_creator
+                  .create_pins
+                  .select { |pin| pin.name == 'other_models' }
+                  .first
+                  .return_type
+                  .to_s
+              ).to eq('ActiveRecord::Associations::CollectionProxy<DifferentModelName>')
+            end
+          end
         end
 
         it 'is an instance method' do
