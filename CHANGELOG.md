@@ -3,6 +3,10 @@
 ## Changes
 
 ### v0.2.2.pre
+* Update to solargraph 0.42.3
+* Determine return type of association using class_name argument
+
+### v0.2.2.pre
 
 * Simplistic support for associations
 * Added dependency on ActiveSupport 6.1 for helpful String methods like `.camelize` and `.singularize`
