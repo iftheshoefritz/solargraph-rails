@@ -9,7 +9,7 @@ module MetaSource
       end
 
       def type
-        "Array<#{name.singularize.camelize}>"
+        "ActiveRecord::Associations::CollectionProxy<#{name.singularize.camelize}>"
       end
     end
   end

@@ -152,7 +152,7 @@ RSpec.describe 'Methods based on association declarations' do
               .first
               .return_type
               .to_s
-          ).to eq('Array<OtherModel>')
+          ).to eq('ActiveRecord::Associations::CollectionProxy<OtherModel>')
         end
 
         it 'is an instance method' do
@@ -300,7 +300,7 @@ RSpec.describe 'Methods based on association declarations' do
               .first
               .return_type
               .to_s
-          ).to eq('Array<OtherModel>')
+          ).to eq('ActiveRecord::Associations::CollectionProxy<OtherModel>')
         end
 
         it 'is an instance method' do
