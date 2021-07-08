@@ -2,6 +2,9 @@
 
 ## Changes
 
+### v0.2.2.pre.4
+* Loosen the dependency requirements
+
 ### v0.2.2.pre.3
 * Update to solargraph 0.42.3
 * Determine return type of association using class_name argument
