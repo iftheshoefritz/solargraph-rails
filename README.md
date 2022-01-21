@@ -52,23 +52,25 @@ Solargraph won't know about attributes that you add during a session. Restart yo
 For my setup with Emacs, that means running `M-x lsp-workspace-restart`, YMMV in other editors.
 
 ## Associations (experimental)
-There is very hacky and simplistic support for `belongs_to` and `has_many` macros, if you are willing to use `gem install solargraph-rails --pre`:
+There is simplistic support for `belongs_to` and `has_many` macros:
 
  ![Experimental autocomplete and go to definition of associations](assets/solar_rails_associations.gif)
 
 ## Known issues
 This project is being used to write production code by the maintainer, but it is still WIP. Check out the issues tab and contribute if you are interested.
 
+Association support is slightly less functional in Rails 7.
+
 ## Installation
 
-###  Install `solargraph` v0.40+ and `solargraph_rails` locally
+###  Install `solargraph` and `solargraph-rails` locally
 
 Typically gems like these are not installed via the Gemfile, because most projects have more than one contributor and other contributors might have different setups for their editors in mind. Instead you need to use `gem install`.
 
 `gem install solargraph-rails`
 
 ####  Alternative: using bundler
-If you do want to use bundler, add `gem 'solargraph-rails', '~> 0.2.0'`
+If you do want to use bundler, add `gem 'solargraph-rails'`
 
 ### Add `solargraph-rails` to your `.solargraph.yml`
 
