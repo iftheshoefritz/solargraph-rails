@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'active_support/core_ext/string'
+require 'active_support/core_ext/string/inflections'
 
 module Solargraph
   module Rails
