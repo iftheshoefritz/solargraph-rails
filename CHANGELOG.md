@@ -2,6 +2,10 @@
 
 ## Changes
 
+### v0.3.0
+* Require String inflection monkeypatches directly to avoid error from ActiveSupport v7
+* Remove Gemfile.lock from version control
+
 ### v0.2.2.pre.4
 * Loosen the dependency requirements
 
