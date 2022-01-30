@@ -109,6 +109,7 @@ module Solargraph
           'datetime' => 'ActiveSupport::TimeWithZone',
           'string' => 'String',
           'boolean' => 'Boolean',
+          'float' => 'Float',
           'text' => 'String'
         }
       end
