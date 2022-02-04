@@ -101,6 +101,7 @@ RSpec.describe 'Attributes based on annotate' do
           #  notes                     :text
           #  name                      :string
           #  created_at                :datetime
+          #  price                     :float
           class MyModel < ApplicationRecord
         FILE
 
@@ -115,6 +116,7 @@ RSpec.describe 'Attributes based on annotate' do
         expect(attrs['notes']).to eq('String')
         expect(attrs['name']).to eq('String')
         expect(attrs['created_at']).to eq('ActiveSupport::TimeWithZone')
+        expect(attrs['price']).to eq('Float')
       end
     end
   end
