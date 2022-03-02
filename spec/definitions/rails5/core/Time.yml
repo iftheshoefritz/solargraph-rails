@@ -1,0 +1,772 @@
+---
+Time.===:
+  types:
+  - undefined
+  skip: false
+Time.`:
+  types:
+  - undefined
+  skip: false
+Time.acts_like?:
+  types:
+  - undefined
+  skip: false
+Time.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Time.anonymous?:
+  types:
+  - undefined
+  skip: false
+Time.as_json:
+  types:
+  - undefined
+  skip: false
+Time.at:
+  types:
+  - undefined
+  skip: false
+Time.at_with_coercion:
+  types:
+  - undefined
+  skip: false
+Time.attr_internal:
+  types:
+  - undefined
+  skip: false
+Time.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+Time.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+Time.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+Time.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Time.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.class_attribute:
+  types:
+  - undefined
+  skip: false
+Time.concern:
+  types:
+  - undefined
+  skip: false
+Time.concerning:
+  types:
+  - undefined
+  skip: false
+Time.current:
+  types:
+  - undefined
+  skip: false
+Time.days_in_month:
+  types:
+  - undefined
+  skip: false
+Time.days_in_year:
+  types:
+  - undefined
+  skip: false
+Time.deep_dup:
+  types:
+  - undefined
+  skip: false
+Time.delegate:
+  types:
+  - undefined
+  skip: false
+Time.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Time.deprecate:
+  types:
+  - undefined
+  skip: false
+Time.descendants:
+  types:
+  - undefined
+  skip: true
+Time.duplicable?:
+  types:
+  - undefined
+  skip: false
+Time.find_zone:
+  types:
+  - undefined
+  skip: false
+Time.find_zone!:
+  types:
+  - undefined
+  skip: false
+Time.html_safe?:
+  types:
+  - undefined
+  skip: false
+Time.in?:
+  types:
+  - undefined
+  skip: false
+Time.instance_values:
+  types:
+  - undefined
+  skip: false
+Time.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Time.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.method_visibility:
+  types:
+  - undefined
+  skip: false
+Time.parent:
+  types:
+  - undefined
+  skip: false
+Time.parent_name:
+  types:
+  - undefined
+  skip: false
+Time.parents:
+  types:
+  - undefined
+  skip: false
+Time.presence:
+  types:
+  - Object
+  skip: false
+Time.presence_in:
+  types:
+  - Object
+  skip: false
+Time.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Time.reachable_without_deprecation?:
+  types:
+  - undefined
+  skip: true
+Time.redefine_method:
+  types:
+  - undefined
+  skip: false
+Time.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Time.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Time.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Time.rfc3339:
+  types:
+  - undefined
+  skip: false
+Time.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Time.subclasses:
+  types:
+  - undefined
+  skip: false
+Time.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.to_json:
+  types:
+  - undefined
+  skip: true
+Time.to_param:
+  types:
+  - undefined
+  skip: false
+Time.to_query:
+  types:
+  - undefined
+  skip: false
+Time.try:
+  types:
+  - undefined
+  skip: false
+Time.try!:
+  types:
+  - undefined
+  skip: false
+Time.use_zone:
+  types:
+  - undefined
+  skip: false
+Time.with_options:
+  types:
+  - undefined
+  skip: false
+Time.zone:
+  types:
+  - undefined
+  skip: false
+Time.zone=:
+  types:
+  - undefined
+  skip: false
+Time.zone_default:
+  types:
+  - undefined
+  skip: false
+Time.zone_default=:
+  types:
+  - undefined
+  skip: false
+Time#+:
+  types:
+  - undefined
+  skip: false
+Time#-:
+  types:
+  - undefined
+  skip: false
+Time#<=>:
+  types:
+  - undefined
+  skip: false
+Time#`:
+  types:
+  - undefined
+  skip: false
+Time#acts_like?:
+  types:
+  - undefined
+  skip: false
+Time#acts_like_time?:
+  types:
+  - undefined
+  skip: false
+Time#advance:
+  types:
+  - undefined
+  skip: false
+Time#ago:
+  types:
+  - undefined
+  skip: false
+Time#all_day:
+  types:
+  - undefined
+  skip: false
+Time#all_month:
+  types:
+  - undefined
+  skip: false
+Time#all_quarter:
+  types:
+  - undefined
+  skip: false
+Time#all_week:
+  types:
+  - undefined
+  skip: false
+Time#all_year:
+  types:
+  - undefined
+  skip: false
+Time#as_json:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_day:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_hour:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_minute:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_month:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_quarter:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_week:
+  types:
+  - undefined
+  skip: false
+Time#at_beginning_of_year:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_day:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_hour:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_minute:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_month:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_quarter:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_week:
+  types:
+  - undefined
+  skip: false
+Time#at_end_of_year:
+  types:
+  - undefined
+  skip: false
+Time#at_midday:
+  types:
+  - undefined
+  skip: false
+Time#at_middle_of_day:
+  types:
+  - undefined
+  skip: false
+Time#at_midnight:
+  types:
+  - undefined
+  skip: false
+Time#at_noon:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_day:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_hour:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_minute:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_month:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_quarter:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_week:
+  types:
+  - undefined
+  skip: false
+Time#beginning_of_year:
+  types:
+  - undefined
+  skip: false
+Time#blank?:
+  types:
+  - 'false'
+  skip: false
+Time#change:
+  types:
+  - undefined
+  skip: false
+Time#class_eval:
+  types:
+  - undefined
+  skip: false
+Time#compare_with_coercion:
+  types:
+  - undefined
+  skip: false
+Time#days_ago:
+  types:
+  - undefined
+  skip: false
+Time#days_since:
+  types:
+  - undefined
+  skip: false
+Time#days_to_week_start:
+  types:
+  - undefined
+  skip: false
+Time#deep_dup:
+  types:
+  - undefined
+  skip: false
+Time#duplicable?:
+  types:
+  - undefined
+  skip: false
+Time#end_of_day:
+  types:
+  - undefined
+  skip: false
+Time#end_of_hour:
+  types:
+  - undefined
+  skip: false
+Time#end_of_minute:
+  types:
+  - undefined
+  skip: false
+Time#end_of_month:
+  types:
+  - undefined
+  skip: false
+Time#end_of_quarter:
+  types:
+  - undefined
+  skip: false
+Time#end_of_week:
+  types:
+  - undefined
+  skip: false
+Time#end_of_year:
+  types:
+  - undefined
+  skip: false
+Time#eql?:
+  types:
+  - undefined
+  skip: false
+Time#eql_with_coercion:
+  types:
+  - undefined
+  skip: false
+Time#formatted_offset:
+  types:
+  - undefined
+  skip: false
+Time#future?:
+  types:
+  - undefined
+  skip: false
+Time#html_safe?:
+  types:
+  - undefined
+  skip: false
+Time#in:
+  types:
+  - undefined
+  skip: false
+Time#in?:
+  types:
+  - undefined
+  skip: false
+Time#in_time_zone:
+  types:
+  - undefined
+  skip: false
+Time#instance_values:
+  types:
+  - undefined
+  skip: false
+Time#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Time#last_month:
+  types:
+  - undefined
+  skip: false
+Time#last_quarter:
+  types:
+  - undefined
+  skip: false
+Time#last_week:
+  types:
+  - undefined
+  skip: false
+Time#last_weekday:
+  types:
+  - undefined
+  skip: false
+Time#last_year:
+  types:
+  - undefined
+  skip: false
+Time#midday:
+  types:
+  - undefined
+  skip: false
+Time#middle_of_day:
+  types:
+  - undefined
+  skip: false
+Time#midnight:
+  types:
+  - undefined
+  skip: false
+Time#minus_with_coercion:
+  types:
+  - undefined
+  skip: false
+Time#minus_with_duration:
+  types:
+  - undefined
+  skip: false
+Time#minus_without_coercion:
+  types:
+  - undefined
+  skip: false
+Time#monday:
+  types:
+  - undefined
+  skip: false
+Time#months_ago:
+  types:
+  - undefined
+  skip: false
+Time#months_since:
+  types:
+  - undefined
+  skip: false
+Time#next_day:
+  types:
+  - undefined
+  skip: false
+Time#next_month:
+  types:
+  - undefined
+  skip: false
+Time#next_occurring:
+  types:
+  - undefined
+  skip: false
+Time#next_quarter:
+  types:
+  - undefined
+  skip: false
+Time#next_week:
+  types:
+  - undefined
+  skip: false
+Time#next_weekday:
+  types:
+  - undefined
+  skip: false
+Time#next_year:
+  types:
+  - undefined
+  skip: false
+Time#noon:
+  types:
+  - undefined
+  skip: false
+Time#on_weekday?:
+  types:
+  - undefined
+  skip: false
+Time#on_weekend?:
+  types:
+  - undefined
+  skip: false
+Time#past?:
+  types:
+  - undefined
+  skip: false
+Time#plus_with_duration:
+  types:
+  - undefined
+  skip: false
+Time#presence:
+  types:
+  - Object
+  skip: false
+Time#presence_in:
+  types:
+  - Object
+  skip: false
+Time#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Time#preserve_timezone:
+  types:
+  - undefined
+  skip: true
+Time#prev_day:
+  types:
+  - undefined
+  skip: false
+Time#prev_month:
+  types:
+  - undefined
+  skip: false
+Time#prev_occurring:
+  types:
+  - undefined
+  skip: false
+Time#prev_quarter:
+  types:
+  - undefined
+  skip: false
+Time#prev_week:
+  types:
+  - undefined
+  skip: false
+Time#prev_weekday:
+  types:
+  - undefined
+  skip: false
+Time#prev_year:
+  types:
+  - undefined
+  skip: false
+Time#sec_fraction:
+  types:
+  - undefined
+  skip: false
+Time#seconds_since_midnight:
+  types:
+  - undefined
+  skip: false
+Time#seconds_until_end_of_day:
+  types:
+  - undefined
+  skip: false
+Time#since:
+  types:
+  - undefined
+  skip: false
+Time#sunday:
+  types:
+  - undefined
+  skip: false
+Time#to_formatted_s:
+  types:
+  - undefined
+  skip: false
+Time#to_json:
+  types:
+  - undefined
+  skip: true
+Time#to_param:
+  types:
+  - undefined
+  skip: false
+Time#to_query:
+  types:
+  - undefined
+  skip: false
+Time#to_s:
+  types:
+  - undefined
+  skip: false
+Time#to_time:
+  types:
+  - undefined
+  skip: false
+Time#today?:
+  types:
+  - undefined
+  skip: false
+Time#tomorrow:
+  types:
+  - undefined
+  skip: false
+Time#try:
+  types:
+  - undefined
+  skip: false
+Time#try!:
+  types:
+  - undefined
+  skip: false
+Time#weeks_ago:
+  types:
+  - undefined
+  skip: false
+Time#weeks_since:
+  types:
+  - undefined
+  skip: false
+Time#with_options:
+  types:
+  - undefined
+  skip: false
+Time#years_ago:
+  types:
+  - undefined
+  skip: false
+Time#years_since:
+  types:
+  - undefined
+  skip: false
+Time#yesterday:
+  types:
+  - undefined
+  skip: false

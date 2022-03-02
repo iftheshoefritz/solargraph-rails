@@ -1,0 +1,444 @@
+---
+Hash.`:
+  types:
+  - undefined
+  skip: false
+Hash.acts_like?:
+  types:
+  - undefined
+  skip: false
+Hash.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Hash.anonymous?:
+  types:
+  - undefined
+  skip: false
+Hash.as_json:
+  types:
+  - undefined
+  skip: false
+Hash.attr_internal:
+  types:
+  - undefined
+  skip: false
+Hash.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+Hash.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+Hash.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Hash.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.class_attribute:
+  types:
+  - undefined
+  skip: false
+Hash.concern:
+  types:
+  - undefined
+  skip: false
+Hash.concerning:
+  types:
+  - undefined
+  skip: false
+Hash.deep_dup:
+  types:
+  - undefined
+  skip: false
+Hash.delegate:
+  types:
+  - undefined
+  skip: false
+Hash.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Hash.deprecate:
+  types:
+  - undefined
+  skip: false
+Hash.descendants:
+  types:
+  - undefined
+  skip: true
+Hash.duplicable?:
+  types:
+  - undefined
+  skip: false
+Hash.from_trusted_xml:
+  types:
+  - undefined
+  skip: false
+Hash.from_xml:
+  types:
+  - undefined
+  skip: false
+Hash.html_safe?:
+  types:
+  - undefined
+  skip: false
+Hash.in?:
+  types:
+  - undefined
+  skip: false
+Hash.instance_values:
+  types:
+  - undefined
+  skip: false
+Hash.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Hash.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.method_visibility:
+  types:
+  - undefined
+  skip: false
+Hash.parent:
+  types:
+  - undefined
+  skip: false
+Hash.parent_name:
+  types:
+  - undefined
+  skip: false
+Hash.parents:
+  types:
+  - undefined
+  skip: false
+Hash.presence:
+  types:
+  - Object
+  skip: false
+Hash.presence_in:
+  types:
+  - Object
+  skip: false
+Hash.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Hash.reachable_without_deprecation?:
+  types:
+  - undefined
+  skip: true
+Hash.redefine_method:
+  types:
+  - undefined
+  skip: false
+Hash.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Hash.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Hash.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Hash.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Hash.subclasses:
+  types:
+  - undefined
+  skip: false
+Hash.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.to_json:
+  types:
+  - undefined
+  skip: true
+Hash.to_param:
+  types:
+  - undefined
+  skip: false
+Hash.to_query:
+  types:
+  - undefined
+  skip: false
+Hash.try:
+  types:
+  - undefined
+  skip: false
+Hash.try!:
+  types:
+  - undefined
+  skip: false
+Hash.with_options:
+  types:
+  - undefined
+  skip: false
+Hash#`:
+  types:
+  - undefined
+  skip: false
+Hash#acts_like?:
+  types:
+  - undefined
+  skip: false
+Hash#as_json:
+  types:
+  - undefined
+  skip: false
+Hash#assert_valid_keys:
+  types:
+  - undefined
+  skip: false
+Hash#class_eval:
+  types:
+  - undefined
+  skip: false
+Hash#deep_dup:
+  types:
+  - undefined
+  skip: false
+Hash#deep_merge:
+  types:
+  - undefined
+  skip: false
+Hash#deep_merge!:
+  types:
+  - undefined
+  skip: false
+Hash#deep_stringify_keys:
+  types:
+  - undefined
+  skip: false
+Hash#deep_stringify_keys!:
+  types:
+  - undefined
+  skip: false
+Hash#deep_symbolize_keys:
+  types:
+  - undefined
+  skip: false
+Hash#deep_symbolize_keys!:
+  types:
+  - undefined
+  skip: false
+Hash#deep_transform_keys:
+  types:
+  - undefined
+  skip: false
+Hash#deep_transform_keys!:
+  types:
+  - undefined
+  skip: false
+Hash#duplicable?:
+  types:
+  - undefined
+  skip: false
+Hash#except:
+  types:
+  - undefined
+  skip: false
+Hash#except!:
+  types:
+  - undefined
+  skip: false
+Hash#exclude?:
+  types:
+  - undefined
+  skip: false
+Hash#extract!:
+  types:
+  - undefined
+  skip: false
+Hash#extractable_options?:
+  types:
+  - undefined
+  skip: false
+Hash#html_safe?:
+  types:
+  - undefined
+  skip: false
+Hash#in?:
+  types:
+  - undefined
+  skip: false
+Hash#index_by:
+  types:
+  - undefined
+  skip: false
+Hash#instance_values:
+  types:
+  - undefined
+  skip: false
+Hash#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Hash#many?:
+  types:
+  - undefined
+  skip: false
+Hash#nested_under_indifferent_access:
+  types:
+  - undefined
+  skip: false
+Hash#pluck:
+  types:
+  - undefined
+  skip: false
+Hash#presence:
+  types:
+  - Object
+  skip: false
+Hash#presence_in:
+  types:
+  - Object
+  skip: false
+Hash#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Hash#reverse_merge:
+  types:
+  - undefined
+  skip: false
+Hash#reverse_merge!:
+  types:
+  - undefined
+  skip: false
+Hash#reverse_update:
+  types:
+  - undefined
+  skip: false
+Hash#slice!:
+  types:
+  - undefined
+  skip: false
+Hash#stringify_keys:
+  types:
+  - undefined
+  skip: false
+Hash#stringify_keys!:
+  types:
+  - undefined
+  skip: false
+Hash#sum:
+  types:
+  - undefined
+  skip: false
+Hash#symbolize_keys:
+  types:
+  - undefined
+  skip: false
+Hash#symbolize_keys!:
+  types:
+  - undefined
+  skip: false
+Hash#to_json:
+  types:
+  - undefined
+  skip: true
+Hash#to_options:
+  types:
+  - undefined
+  skip: false
+Hash#to_options!:
+  types:
+  - undefined
+  skip: false
+Hash#to_param:
+  types:
+  - undefined
+  skip: false
+Hash#to_query:
+  types:
+  - undefined
+  skip: false
+Hash#to_xml:
+  types:
+  - undefined
+  skip: false
+Hash#try:
+  types:
+  - undefined
+  skip: false
+Hash#try!:
+  types:
+  - undefined
+  skip: false
+Hash#with_defaults:
+  types:
+  - undefined
+  skip: false
+Hash#with_defaults!:
+  types:
+  - undefined
+  skip: false
+Hash#with_indifferent_access:
+  types:
+  - undefined
+  skip: false
+Hash#with_options:
+  types:
+  - undefined
+  skip: false
+Hash#without:
+  types:
+  - undefined
+  skip: false

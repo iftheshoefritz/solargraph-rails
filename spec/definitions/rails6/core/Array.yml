@@ -1,0 +1,416 @@
+---
+Array.acts_like?:
+  types:
+  - undefined
+  skip: false
+Array.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Array.anonymous?:
+  types:
+  - undefined
+  skip: false
+Array.as_json:
+  types:
+  - undefined
+  skip: false
+Array.attr_internal:
+  types:
+  - undefined
+  skip: false
+Array.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+Array.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+Array.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+Array.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Array.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Array.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Array.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Array.class_attribute:
+  types:
+  - undefined
+  skip: false
+Array.concern:
+  types:
+  - undefined
+  skip: false
+Array.concerning:
+  types:
+  - undefined
+  skip: false
+Array.deep_dup:
+  types:
+  - undefined
+  skip: false
+Array.delegate:
+  types:
+  - undefined
+  skip: false
+Array.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Array.deprecate:
+  types:
+  - undefined
+  skip: false
+Array.descendants:
+  types:
+  - undefined
+  skip: false
+Array.duplicable?:
+  types:
+  - undefined
+  skip: false
+Array.html_safe?:
+  types:
+  - undefined
+  skip: false
+Array.in?:
+  types:
+  - undefined
+  skip: false
+Array.instance_values:
+  types:
+  - undefined
+  skip: false
+Array.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Array.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Array.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Array.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Array.method_visibility:
+  types:
+  - undefined
+  skip: false
+Array.module_parent:
+  types:
+  - undefined
+  skip: false
+Array.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Array.module_parents:
+  types:
+  - undefined
+  skip: false
+Array.presence:
+  types:
+  - Object
+  skip: false
+Array.presence_in:
+  types:
+  - Object
+  skip: false
+Array.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Array.redefine_method:
+  types:
+  - undefined
+  skip: false
+Array.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Array.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Array.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Array.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Array.subclasses:
+  types:
+  - undefined
+  skip: false
+Array.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Array.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Array.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Array.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Array.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Array.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Array.to_json:
+  types:
+  - undefined
+  skip: true
+Array.to_param:
+  types:
+  - undefined
+  skip: false
+Array.to_query:
+  types:
+  - undefined
+  skip: false
+Array.try:
+  types:
+  - undefined
+  skip: false
+Array.try!:
+  types:
+  - undefined
+  skip: false
+Array.with_options:
+  types:
+  - undefined
+  skip: false
+Array.wrap:
+  types:
+  - undefined
+  skip: false
+Array#acts_like?:
+  types:
+  - undefined
+  skip: false
+Array#as_json:
+  types:
+  - undefined
+  skip: false
+Array#class_eval:
+  types:
+  - undefined
+  skip: false
+Array#compact_blank:
+  types:
+  - undefined
+  skip: false
+Array#compact_blank!:
+  types:
+  - undefined
+  skip: false
+Array#deep_dup:
+  types:
+  - undefined
+  skip: false
+Array#duplicable?:
+  types:
+  - undefined
+  skip: false
+Array#exclude?:
+  types:
+  - undefined
+  skip: false
+Array#excluding:
+  types:
+  - undefined
+  skip: false
+Array#extract!:
+  types:
+  - undefined
+  skip: false
+Array#extract_options!:
+  types:
+  - undefined
+  skip: false
+Array#fifth:
+  types:
+  - undefined
+  skip: false
+Array#forty_two:
+  types:
+  - undefined
+  skip: false
+Array#fourth:
+  types:
+  - undefined
+  skip: false
+Array#from:
+  types:
+  - undefined
+  skip: false
+Array#html_safe?:
+  types:
+  - undefined
+  skip: false
+Array#in?:
+  types:
+  - undefined
+  skip: false
+Array#in_groups:
+  types:
+  - undefined
+  skip: false
+Array#in_groups_of:
+  types:
+  - undefined
+  skip: false
+Array#including:
+  types:
+  - undefined
+  skip: false
+Array#index_by:
+  types:
+  - undefined
+  skip: false
+Array#index_with:
+  types:
+  - undefined
+  skip: false
+Array#inquiry:
+  types:
+  - undefined
+  skip: false
+Array#instance_values:
+  types:
+  - undefined
+  skip: false
+Array#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Array#many?:
+  types:
+  - undefined
+  skip: false
+Array#pick:
+  types:
+  - undefined
+  skip: false
+Array#pluck:
+  types:
+  - undefined
+  skip: false
+Array#presence:
+  types:
+  - Object
+  skip: false
+Array#presence_in:
+  types:
+  - Object
+  skip: false
+Array#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Array#second:
+  types:
+  - undefined
+  skip: false
+Array#second_to_last:
+  types:
+  - undefined
+  skip: false
+Array#split:
+  types:
+  - undefined
+  skip: false
+Array#sum:
+  types:
+  - undefined
+  skip: false
+Array#third:
+  types:
+  - undefined
+  skip: false
+Array#third_to_last:
+  types:
+  - undefined
+  skip: false
+Array#to:
+  types:
+  - undefined
+  skip: false
+Array#to_formatted_s:
+  types:
+  - undefined
+  skip: false
+Array#to_json:
+  types:
+  - undefined
+  skip: true
+Array#to_param:
+  types:
+  - undefined
+  skip: false
+Array#to_query:
+  types:
+  - undefined
+  skip: false
+Array#to_s:
+  types:
+  - undefined
+  skip: false
+Array#to_sentence:
+  types:
+  - undefined
+  skip: false
+Array#to_xml:
+  types:
+  - undefined
+  skip: false
+Array#try:
+  types:
+  - undefined
+  skip: false
+Array#try!:
+  types:
+  - undefined
+  skip: false
+Array#with_options:
+  types:
+  - undefined
+  skip: false
+Array#without:
+  types:
+  - undefined
+  skip: false

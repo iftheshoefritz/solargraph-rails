@@ -1,0 +1,776 @@
+---
+DateTime.`:
+  types:
+  - undefined
+  skip: false
+DateTime.acts_like?:
+  types:
+  - undefined
+  skip: false
+DateTime.alias_attribute:
+  types:
+  - undefined
+  skip: false
+DateTime.anonymous?:
+  types:
+  - undefined
+  skip: false
+DateTime.as_json:
+  types:
+  - undefined
+  skip: false
+DateTime.attr_internal:
+  types:
+  - undefined
+  skip: false
+DateTime.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+DateTime.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+DateTime.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+DateTime.beginning_of_week:
+  types:
+  - undefined
+  skip: true
+DateTime.beginning_of_week=:
+  types:
+  - undefined
+  skip: true
+DateTime.beginning_of_week_default:
+  types:
+  - undefined
+  skip: true
+DateTime.beginning_of_week_default=:
+  types:
+  - undefined
+  skip: true
+DateTime.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+DateTime.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+DateTime.cattr_reader:
+  types:
+  - undefined
+  skip: false
+DateTime.cattr_writer:
+  types:
+  - undefined
+  skip: false
+DateTime.civil_from_format:
+  types:
+  - undefined
+  skip: false
+DateTime.class_attribute:
+  types:
+  - undefined
+  skip: false
+DateTime.concern:
+  types:
+  - undefined
+  skip: false
+DateTime.concerning:
+  types:
+  - undefined
+  skip: false
+DateTime.current:
+  types:
+  - undefined
+  skip: false
+DateTime.deep_dup:
+  types:
+  - undefined
+  skip: false
+DateTime.delegate:
+  types:
+  - undefined
+  skip: false
+DateTime.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+DateTime.deprecate:
+  types:
+  - undefined
+  skip: false
+DateTime.descendants:
+  types:
+  - undefined
+  skip: true
+DateTime.duplicable?:
+  types:
+  - undefined
+  skip: false
+DateTime.find_beginning_of_week!:
+  types:
+  - undefined
+  skip: true
+DateTime.html_safe?:
+  types:
+  - undefined
+  skip: false
+DateTime.in?:
+  types:
+  - undefined
+  skip: false
+DateTime.instance_values:
+  types:
+  - undefined
+  skip: false
+DateTime.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+DateTime.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+DateTime.mattr_reader:
+  types:
+  - undefined
+  skip: false
+DateTime.mattr_writer:
+  types:
+  - undefined
+  skip: false
+DateTime.method_visibility:
+  types:
+  - undefined
+  skip: false
+DateTime.parent:
+  types:
+  - undefined
+  skip: false
+DateTime.parent_name:
+  types:
+  - undefined
+  skip: false
+DateTime.parents:
+  types:
+  - undefined
+  skip: false
+DateTime.presence:
+  types:
+  - Object
+  skip: false
+DateTime.presence_in:
+  types:
+  - Object
+  skip: false
+DateTime.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+DateTime.reachable_without_deprecation?:
+  types:
+  - undefined
+  skip: true
+DateTime.redefine_method:
+  types:
+  - undefined
+  skip: false
+DateTime.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+DateTime.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+DateTime.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+DateTime.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+DateTime.subclasses:
+  types:
+  - undefined
+  skip: false
+DateTime.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+DateTime.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+DateTime.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+DateTime.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+DateTime.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+DateTime.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+DateTime.to_json:
+  types:
+  - undefined
+  skip: true
+DateTime.to_param:
+  types:
+  - undefined
+  skip: false
+DateTime.to_query:
+  types:
+  - undefined
+  skip: false
+DateTime.tomorrow:
+  types:
+  - undefined
+  skip: true
+DateTime.try:
+  types:
+  - undefined
+  skip: false
+DateTime.try!:
+  types:
+  - undefined
+  skip: false
+DateTime.with_options:
+  types:
+  - undefined
+  skip: false
+DateTime.yesterday:
+  types:
+  - undefined
+  skip: true
+DateTime#+:
+  types:
+  - undefined
+  skip: true
+DateTime#-:
+  types:
+  - undefined
+  skip: true
+DateTime#<=>:
+  types:
+  - undefined
+  skip: false
+DateTime#`:
+  types:
+  - undefined
+  skip: false
+DateTime#acts_like?:
+  types:
+  - undefined
+  skip: false
+DateTime#acts_like_date?:
+  types:
+  - undefined
+  skip: false
+DateTime#acts_like_time?:
+  types:
+  - undefined
+  skip: false
+DateTime#advance:
+  types:
+  - undefined
+  skip: false
+DateTime#ago:
+  types:
+  - undefined
+  skip: false
+DateTime#all_day:
+  types:
+  - undefined
+  skip: true
+DateTime#all_month:
+  types:
+  - undefined
+  skip: true
+DateTime#all_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#all_week:
+  types:
+  - undefined
+  skip: true
+DateTime#all_year:
+  types:
+  - undefined
+  skip: true
+DateTime#as_json:
+  types:
+  - undefined
+  skip: false
+DateTime#at_beginning_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#at_beginning_of_hour:
+  types:
+  - undefined
+  skip: false
+DateTime#at_beginning_of_minute:
+  types:
+  - undefined
+  skip: false
+DateTime#at_beginning_of_month:
+  types:
+  - undefined
+  skip: true
+DateTime#at_beginning_of_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#at_beginning_of_week:
+  types:
+  - undefined
+  skip: true
+DateTime#at_beginning_of_year:
+  types:
+  - undefined
+  skip: true
+DateTime#at_end_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#at_end_of_hour:
+  types:
+  - undefined
+  skip: false
+DateTime#at_end_of_minute:
+  types:
+  - undefined
+  skip: false
+DateTime#at_end_of_month:
+  types:
+  - undefined
+  skip: true
+DateTime#at_end_of_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#at_end_of_week:
+  types:
+  - undefined
+  skip: true
+DateTime#at_end_of_year:
+  types:
+  - undefined
+  skip: true
+DateTime#at_midday:
+  types:
+  - undefined
+  skip: false
+DateTime#at_middle_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#at_midnight:
+  types:
+  - undefined
+  skip: false
+DateTime#at_noon:
+  types:
+  - undefined
+  skip: false
+DateTime#beginning_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#beginning_of_hour:
+  types:
+  - undefined
+  skip: false
+DateTime#beginning_of_minute:
+  types:
+  - undefined
+  skip: false
+DateTime#beginning_of_month:
+  types:
+  - undefined
+  skip: true
+DateTime#beginning_of_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#beginning_of_week:
+  types:
+  - undefined
+  skip: true
+DateTime#beginning_of_year:
+  types:
+  - undefined
+  skip: true
+DateTime#blank?:
+  types:
+  - 'false'
+  skip: false
+DateTime#change:
+  types:
+  - undefined
+  skip: false
+DateTime#class_eval:
+  types:
+  - undefined
+  skip: false
+DateTime#compare_with_coercion:
+  types:
+  - undefined
+  skip: true
+DateTime#days_ago:
+  types:
+  - undefined
+  skip: true
+DateTime#days_since:
+  types:
+  - undefined
+  skip: true
+DateTime#days_to_week_start:
+  types:
+  - undefined
+  skip: true
+DateTime#deep_dup:
+  types:
+  - undefined
+  skip: false
+DateTime#default_inspect:
+  types:
+  - undefined
+  skip: false
+DateTime#duplicable?:
+  types:
+  - undefined
+  skip: false
+DateTime#end_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#end_of_hour:
+  types:
+  - undefined
+  skip: false
+DateTime#end_of_minute:
+  types:
+  - undefined
+  skip: false
+DateTime#end_of_month:
+  types:
+  - undefined
+  skip: true
+DateTime#end_of_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#end_of_week:
+  types:
+  - undefined
+  skip: true
+DateTime#end_of_year:
+  types:
+  - undefined
+  skip: true
+DateTime#formatted_offset:
+  types:
+  - undefined
+  skip: false
+DateTime#future?:
+  types:
+  - undefined
+  skip: true
+DateTime#getgm:
+  types:
+  - undefined
+  skip: false
+DateTime#getlocal:
+  types:
+  - undefined
+  skip: false
+DateTime#getutc:
+  types:
+  - undefined
+  skip: false
+DateTime#gmtime:
+  types:
+  - undefined
+  skip: false
+DateTime#html_safe?:
+  types:
+  - undefined
+  skip: false
+DateTime#in:
+  types:
+  - undefined
+  skip: false
+DateTime#in?:
+  types:
+  - undefined
+  skip: false
+DateTime#in_time_zone:
+  types:
+  - undefined
+  skip: true
+DateTime#inspect:
+  types:
+  - undefined
+  skip: false
+DateTime#instance_values:
+  types:
+  - undefined
+  skip: false
+DateTime#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+DateTime#last_month:
+  types:
+  - undefined
+  skip: true
+DateTime#last_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#last_week:
+  types:
+  - undefined
+  skip: true
+DateTime#last_weekday:
+  types:
+  - undefined
+  skip: true
+DateTime#last_year:
+  types:
+  - undefined
+  skip: true
+DateTime#localtime:
+  types:
+  - undefined
+  skip: false
+DateTime#midday:
+  types:
+  - undefined
+  skip: false
+DateTime#middle_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#midnight:
+  types:
+  - undefined
+  skip: false
+DateTime#minus_with_duration:
+  types:
+  - undefined
+  skip: true
+DateTime#monday:
+  types:
+  - undefined
+  skip: true
+DateTime#months_ago:
+  types:
+  - undefined
+  skip: true
+DateTime#months_since:
+  types:
+  - undefined
+  skip: true
+DateTime#next_occurring:
+  types:
+  - undefined
+  skip: true
+DateTime#next_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#next_week:
+  types:
+  - undefined
+  skip: true
+DateTime#next_weekday:
+  types:
+  - undefined
+  skip: true
+DateTime#noon:
+  types:
+  - undefined
+  skip: false
+DateTime#nsec:
+  types:
+  - undefined
+  skip: false
+DateTime#on_weekday?:
+  types:
+  - undefined
+  skip: true
+DateTime#on_weekend?:
+  types:
+  - undefined
+  skip: true
+DateTime#past?:
+  types:
+  - undefined
+  skip: true
+DateTime#plus_with_duration:
+  types:
+  - undefined
+  skip: true
+DateTime#presence:
+  types:
+  - Object
+  skip: false
+DateTime#presence_in:
+  types:
+  - Object
+  skip: false
+DateTime#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+DateTime#preserve_timezone:
+  types:
+  - undefined
+  skip: true
+DateTime#prev_occurring:
+  types:
+  - undefined
+  skip: true
+DateTime#prev_quarter:
+  types:
+  - undefined
+  skip: true
+DateTime#prev_week:
+  types:
+  - undefined
+  skip: true
+DateTime#prev_weekday:
+  types:
+  - undefined
+  skip: true
+DateTime#readable_inspect:
+  types:
+  - undefined
+  skip: false
+DateTime#seconds_since_midnight:
+  types:
+  - undefined
+  skip: false
+DateTime#seconds_until_end_of_day:
+  types:
+  - undefined
+  skip: false
+DateTime#since:
+  types:
+  - undefined
+  skip: false
+DateTime#subsec:
+  types:
+  - undefined
+  skip: false
+DateTime#sunday:
+  types:
+  - undefined
+  skip: true
+DateTime#to_f:
+  types:
+  - undefined
+  skip: false
+DateTime#to_formatted_s:
+  types:
+  - undefined
+  skip: false
+DateTime#to_i:
+  types:
+  - undefined
+  skip: false
+DateTime#to_json:
+  types:
+  - undefined
+  skip: true
+DateTime#to_param:
+  types:
+  - undefined
+  skip: false
+DateTime#to_query:
+  types:
+  - undefined
+  skip: false
+DateTime#to_s:
+  types:
+  - undefined
+  skip: false
+DateTime#to_time:
+  types:
+  - undefined
+  skip: false
+DateTime#today?:
+  types:
+  - undefined
+  skip: true
+DateTime#tomorrow:
+  types:
+  - undefined
+  skip: true
+DateTime#try:
+  types:
+  - undefined
+  skip: false
+DateTime#try!:
+  types:
+  - undefined
+  skip: false
+DateTime#usec:
+  types:
+  - undefined
+  skip: false
+DateTime#utc:
+  types:
+  - undefined
+  skip: false
+DateTime#utc?:
+  types:
+  - undefined
+  skip: false
+DateTime#utc_offset:
+  types:
+  - undefined
+  skip: false
+DateTime#weeks_ago:
+  types:
+  - undefined
+  skip: true
+DateTime#weeks_since:
+  types:
+  - undefined
+  skip: true
+DateTime#with_options:
+  types:
+  - undefined
+  skip: false
+DateTime#years_ago:
+  types:
+  - undefined
+  skip: true
+DateTime#years_since:
+  types:
+  - undefined
+  skip: true
+DateTime#yesterday:
+  types:
+  - undefined
+  skip: true

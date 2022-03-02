@@ -1,0 +1,465 @@
+---
+String.acts_like?:
+  types:
+  - undefined
+  skip: false
+String.alias_attribute:
+  types:
+  - undefined
+  skip: false
+String.anonymous?:
+  types:
+  - undefined
+  skip: false
+String.as_json:
+  types:
+  - undefined
+  skip: false
+String.attr_internal:
+  types:
+  - undefined
+  skip: false
+String.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+String.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+String.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+String.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+String.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+String.cattr_reader:
+  types:
+  - undefined
+  skip: false
+String.cattr_writer:
+  types:
+  - undefined
+  skip: false
+String.class_attribute:
+  types:
+  - undefined
+  skip: false
+String.concern:
+  types:
+  - undefined
+  skip: false
+String.concerning:
+  types:
+  - undefined
+  skip: false
+String.deep_dup:
+  types:
+  - undefined
+  skip: false
+String.delegate:
+  types:
+  - undefined
+  skip: false
+String.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+String.deprecate:
+  types:
+  - undefined
+  skip: false
+String.descendants:
+  types:
+  - undefined
+  skip: false
+String.duplicable?:
+  types:
+  - undefined
+  skip: false
+String.html_safe?:
+  types:
+  - undefined
+  skip: false
+String.in?:
+  types:
+  - undefined
+  skip: false
+String.instance_values:
+  types:
+  - undefined
+  skip: false
+String.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+String.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+String.mattr_reader:
+  types:
+  - undefined
+  skip: false
+String.mattr_writer:
+  types:
+  - undefined
+  skip: false
+String.method_visibility:
+  types:
+  - undefined
+  skip: false
+String.module_parent:
+  types:
+  - undefined
+  skip: false
+String.module_parent_name:
+  types:
+  - undefined
+  skip: false
+String.module_parents:
+  types:
+  - undefined
+  skip: false
+String.presence:
+  types:
+  - Object
+  skip: false
+String.presence_in:
+  types:
+  - Object
+  skip: false
+String.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+String.redefine_method:
+  types:
+  - undefined
+  skip: false
+String.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+String.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+String.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+String.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+String.subclasses:
+  types:
+  - undefined
+  skip: false
+String.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+String.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+String.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+String.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+String.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+String.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+String.to_json:
+  types:
+  - undefined
+  skip: true
+String.to_param:
+  types:
+  - undefined
+  skip: false
+String.to_query:
+  types:
+  - undefined
+  skip: false
+String.try:
+  types:
+  - undefined
+  skip: false
+String.try!:
+  types:
+  - undefined
+  skip: false
+String.with_options:
+  types:
+  - undefined
+  skip: false
+String#acts_like?:
+  types:
+  - undefined
+  skip: false
+String#acts_like_string?:
+  types:
+  - undefined
+  skip: false
+String#as_json:
+  types:
+  - undefined
+  skip: false
+String#at:
+  types:
+  - undefined
+  skip: false
+String#blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+String#camelcase:
+  types:
+  - undefined
+  skip: false
+String#camelize:
+  types:
+  - undefined
+  skip: false
+String#class_eval:
+  types:
+  - undefined
+  skip: false
+String#classify:
+  types:
+  - undefined
+  skip: false
+String#constantize:
+  types:
+  - undefined
+  skip: false
+String#dasherize:
+  types:
+  - undefined
+  skip: false
+String#deconstantize:
+  types:
+  - undefined
+  skip: false
+String#deep_dup:
+  types:
+  - undefined
+  skip: false
+String#demodulize:
+  types:
+  - undefined
+  skip: false
+String#duplicable?:
+  types:
+  - undefined
+  skip: false
+String#exclude?:
+  types:
+  - undefined
+  skip: false
+String#first:
+  types:
+  - undefined
+  skip: false
+String#foreign_key:
+  types:
+  - undefined
+  skip: false
+String#from:
+  types:
+  - undefined
+  skip: false
+String#html_safe:
+  types:
+  - undefined
+  skip: false
+String#html_safe?:
+  types:
+  - undefined
+  skip: false
+String#humanize:
+  types:
+  - undefined
+  skip: false
+String#in?:
+  types:
+  - undefined
+  skip: false
+String#in_time_zone:
+  types:
+  - undefined
+  skip: false
+String#indent:
+  types:
+  - undefined
+  skip: false
+String#indent!:
+  types:
+  - undefined
+  skip: false
+String#inquiry:
+  types:
+  - undefined
+  skip: false
+String#instance_values:
+  types:
+  - undefined
+  skip: false
+String#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+String#is_utf8?:
+  types:
+  - undefined
+  skip: false
+String#last:
+  types:
+  - undefined
+  skip: false
+String#mb_chars:
+  types:
+  - undefined
+  skip: false
+String#parameterize:
+  types:
+  - undefined
+  skip: false
+String#pluralize:
+  types:
+  - undefined
+  skip: false
+String#presence:
+  types:
+  - Object
+  skip: false
+String#presence_in:
+  types:
+  - Object
+  skip: false
+String#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+String#remove:
+  types:
+  - undefined
+  skip: false
+String#remove!:
+  types:
+  - undefined
+  skip: false
+String#safe_constantize:
+  types:
+  - undefined
+  skip: false
+String#singularize:
+  types:
+  - undefined
+  skip: false
+String#squish:
+  types:
+  - undefined
+  skip: false
+String#squish!:
+  types:
+  - undefined
+  skip: false
+String#strip_heredoc:
+  types:
+  - undefined
+  skip: false
+String#tableize:
+  types:
+  - undefined
+  skip: false
+String#titlecase:
+  types:
+  - undefined
+  skip: false
+String#titleize:
+  types:
+  - undefined
+  skip: false
+String#to:
+  types:
+  - undefined
+  skip: false
+String#to_date:
+  types:
+  - undefined
+  skip: false
+String#to_datetime:
+  types:
+  - undefined
+  skip: false
+String#to_json:
+  types:
+  - undefined
+  skip: true
+String#to_param:
+  types:
+  - undefined
+  skip: false
+String#to_query:
+  types:
+  - undefined
+  skip: false
+String#to_time:
+  types:
+  - undefined
+  skip: false
+String#truncate:
+  types:
+  - undefined
+  skip: false
+String#truncate_bytes:
+  types:
+  - undefined
+  skip: false
+String#truncate_words:
+  types:
+  - undefined
+  skip: false
+String#try:
+  types:
+  - undefined
+  skip: false
+String#try!:
+  types:
+  - undefined
+  skip: false
+String#underscore:
+  types:
+  - undefined
+  skip: false
+String#upcase_first:
+  types:
+  - undefined
+  skip: false
+String#with_options:
+  types:
+  - undefined
+  skip: false

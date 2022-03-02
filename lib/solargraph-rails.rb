@@ -1,36 +1,71 @@
-# frozen_string_literal: true
-
 require 'solargraph'
-require 'solargraph/rails/version'
-require_relative 'solargraph/rails/pin_creator'
-require_relative 'solargraph/rails/ruby_parser'
-require_relative 'solargraph/rails/files_loader'
-require_relative 'solargraph/rails/meta_source/association/belongs_to_matcher'
-require_relative 'solargraph/rails/meta_source/association/has_many_matcher'
-require_relative 'solargraph/rails/meta_source/association/has_one_matcher'
-require_relative 'solargraph/rails/meta_source/association/has_and_belongs_to_many_matcher'
+require 'active_support/core_ext/string/inflections'
+
+require_relative 'solargraph/rails/util.rb'
+require_relative 'solargraph/rails/schema.rb'
+require_relative 'solargraph/rails/annotate.rb'
+require_relative 'solargraph/rails/autoload.rb'
+require_relative 'solargraph/rails/model.rb'
+require_relative 'solargraph/rails/devise.rb'
+require_relative 'solargraph/rails/walker.rb'
+require_relative 'solargraph/rails/rails_api.rb'
+require_relative 'solargraph/rails/delegate.rb'
+require_relative 'solargraph/rails/storage.rb'
+require_relative 'solargraph/rails/debug.rb'
+require_relative 'solargraph/rails/version.rb'
 
 module Solargraph
   module Rails
-    class DynamicAttributes < Solargraph::Convention::Base
-      def global yard_map
-        Solargraph::Environ.new(pins: parse_models)
+    class NodeParser
+      extend Solargraph::Parser::Legacy::ClassMethods
+    end
+
+    class Convention < Solargraph::Convention::Base
+      def global(yard_map)
+        Solargraph::Environ.new(
+          pins: Solargraph::Rails::RailsApi.instance.global(yard_map)
+        )
+      rescue => error
+        Solargraph.logger.warn(
+          error.message + "\n" + error.backtrace.join("\n")
+        )
+        EMPTY_ENVIRON
+      end
+
+      def local(source_map)
+        pins = []
+        ds =
+          source_map.document_symbols.select do |n|
+            n.is_a?(Solargraph::Pin::Namespace)
+          end
+        ns = ds.first
+
+        return EMPTY_ENVIRON unless ns
+
+        pins += run_feature { Schema.instance.process(source_map, ns) }
+        pins += run_feature { Annotate.instance.process(source_map, ns) }
+        pins += run_feature { Model.instance.process(source_map, ns) }
+        pins += run_feature { Storage.instance.process(source_map, ns) }
+        pins += run_feature { Autoload.instance.process(source_map, ns, ds) }
+        pins += run_feature { Devise.instance.process(source_map, ns) }
+        pins += run_feature { Delegate.instance.process(source_map, ns) }
+        pins += run_feature { RailsApi.instance.local(source_map, ns) }
+
+        Solargraph::Environ.new(pins: pins)
       end
 
       private
 
-      def parse_models
-        pins = []
-
-        FilesLoader.new(
-          Dir[File.join(Dir.pwd, 'app', 'models', '**', '*.rb')]
-        ).each { |file, contents| pins.push *PinCreator.new(file, contents).create_pins }
-
-        pins
+      def run_feature(&block)
+        yield
+      rescue => error
+        Solargraph.logger.warn(
+          error.message + "\n" + error.backtrace.join("\n")
+        )
+        []
       end
     end
   end
 end
 
-
-Solargraph::Convention.register Solargraph::Rails::DynamicAttributes
+Solargraph::Convention.register(Solargraph::Rails::Convention)
