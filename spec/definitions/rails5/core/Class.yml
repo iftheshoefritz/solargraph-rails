@@ -91,7 +91,7 @@ Class.deprecate:
 Class.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Class.duplicable?:
   types:
   - undefined
@@ -131,15 +131,15 @@ Class.method_visibility:
 Class.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Class.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Class.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Class.presence:
   types:
   - Object
@@ -313,7 +313,7 @@ Class#deprecate:
 Class#descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Class#duplicable?:
   types:
   - undefined
@@ -353,15 +353,15 @@ Class#method_visibility:
 Class#parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Class#parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Class#parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Class#presence:
   types:
   - Object

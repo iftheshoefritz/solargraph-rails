@@ -118,7 +118,7 @@ ActionController::Base.before_action:
 ActionController::Base.binary_params_for?:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.blank?:
   types:
   - 'true'
@@ -527,15 +527,15 @@ ActionController::Base.normalize_callback_params:
 ActionController::Base.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.per_form_csrf_tokens:
   types:
   - undefined
@@ -596,7 +596,7 @@ ActionController::Base.rake_extension:
 ActionController::Base.reachable?:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.reachable_with_deprecation?:
   types:
   - undefined

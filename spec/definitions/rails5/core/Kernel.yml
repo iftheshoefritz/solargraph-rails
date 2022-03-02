@@ -115,15 +115,15 @@ Kernel.method_visibility:
 Kernel.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Kernel.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Kernel.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Kernel.presence:
   types:
   - Object

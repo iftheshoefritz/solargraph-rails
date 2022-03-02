@@ -103,7 +103,7 @@ Date.deprecate:
 Date.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Date.duplicable?:
   types:
   - undefined
@@ -147,15 +147,15 @@ Date.method_visibility:
 Date.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Date.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Date.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Date.presence:
   types:
   - Object

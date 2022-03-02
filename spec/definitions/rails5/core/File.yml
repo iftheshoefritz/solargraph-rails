@@ -87,7 +87,7 @@ File.deprecate:
 File.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 File.duplicable?:
   types:
   - undefined
@@ -127,15 +127,15 @@ File.method_visibility:
 File.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 File.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 File.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 File.presence:
   types:
   - Object

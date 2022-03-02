@@ -83,7 +83,7 @@ String.deprecate:
 String.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 String.duplicable?:
   types:
   - undefined
@@ -123,15 +123,15 @@ String.method_visibility:
 String.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 String.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 String.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 String.presence:
   types:
   - Object

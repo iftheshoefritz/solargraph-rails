@@ -107,7 +107,7 @@ Time.deprecate:
 Time.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Time.duplicable?:
   types:
   - undefined
@@ -155,15 +155,15 @@ Time.method_visibility:
 Time.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Time.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Time.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Time.presence:
   types:
   - Object

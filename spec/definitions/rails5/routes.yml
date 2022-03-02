@@ -87,7 +87,7 @@ ActionDispatch::Routing::Mapper.deprecate:
 ActionDispatch::Routing::Mapper.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 ActionDispatch::Routing::Mapper.duplicable?:
   types:
   - undefined
@@ -147,15 +147,15 @@ ActionDispatch::Routing::Mapper.normalize_path:
 ActionDispatch::Routing::Mapper.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.presence:
   types:
   - Object
@@ -180,7 +180,7 @@ ActionDispatch::Routing::Mapper.rake_extension:
 ActionDispatch::Routing::Mapper.reachable?:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.reachable_with_deprecation?:
   types:
   - undefined

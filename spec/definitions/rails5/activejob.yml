@@ -131,7 +131,7 @@ ActiveJob::Base.deprecate:
 ActiveJob::Base.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.deserialize:
   types:
   - undefined
@@ -219,15 +219,15 @@ ActiveJob::Base.normalize_callback_params:
 ActiveJob::Base.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveJob::Base.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveJob::Base.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveJob::Base.perform_later:
   types:
   - undefined
@@ -328,7 +328,7 @@ ActiveJob::Base.rake_extension:
 ActiveJob::Base.reachable?:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveJob::Base.reachable_with_deprecation?:
   types:
   - undefined

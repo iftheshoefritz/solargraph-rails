@@ -83,7 +83,7 @@ Hash.deprecate:
 Hash.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Hash.duplicable?:
   types:
   - undefined
@@ -131,15 +131,15 @@ Hash.method_visibility:
 Hash.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Hash.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Hash.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Hash.presence:
   types:
   - Object

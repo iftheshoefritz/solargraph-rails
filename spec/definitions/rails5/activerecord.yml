@@ -1177,15 +1177,15 @@ ActiveRecord::Base.order:
 ActiveRecord::Base.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.partial_writes:
   types:
   - undefined
@@ -1286,7 +1286,7 @@ ActiveRecord::Base.rake_extension:
 ActiveRecord::Base.reachable?:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reachable_with_deprecation?:
   types:
   - undefined

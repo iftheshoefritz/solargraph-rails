@@ -107,7 +107,7 @@ DateTime.deprecate:
 DateTime.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.duplicable?:
   types:
   - undefined
@@ -151,15 +151,15 @@ DateTime.method_visibility:
 DateTime.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 DateTime.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 DateTime.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 DateTime.presence:
   types:
   - Object

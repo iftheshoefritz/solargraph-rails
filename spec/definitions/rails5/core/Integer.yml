@@ -83,7 +83,7 @@ Integer.deprecate:
 Integer.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Integer.duplicable?:
   types:
   - undefined
@@ -123,15 +123,15 @@ Integer.method_visibility:
 Integer.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Integer.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Integer.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Integer.presence:
   types:
   - Object

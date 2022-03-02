@@ -83,7 +83,7 @@ Array.deprecate:
 Array.descendants:
   types:
   - undefined
-  skip: true
+  skip: false
 Array.duplicable?:
   types:
   - undefined
@@ -123,15 +123,15 @@ Array.method_visibility:
 Array.parent:
   types:
   - undefined
-  skip: false
+  skip: true
 Array.parent_name:
   types:
   - undefined
-  skip: false
+  skip: true
 Array.parents:
   types:
   - undefined
-  skip: false
+  skip: true
 Array.presence:
   types:
   - Object
