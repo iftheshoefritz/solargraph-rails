@@ -7,6 +7,12 @@
 /spec/reports/
 /tmp/
 .DS_Store
+spec/rails5/log/
+spec/rails5/tmp/
+spec/rails6/log/
+spec/rails6/tmp/
+.projections.json
+.byebug_history
 
 # rspec failure tracking
 .rspec_status

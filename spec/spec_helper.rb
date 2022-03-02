@@ -2,6 +2,8 @@ ENV['RAILS_ENV'] = 'test'
 
 require 'solargraph'
 require 'solargraph-rails'
+require 'logger'
+require 'byebug'
 require_relative './helpers'
 
 RSpec.configure do |config|
@@ -41,15 +43,6 @@ RSpec.configure do |config|
     Solargraph.logger.level = Logger::DEBUG
     example.run
     Solargraph.logger.level = Logger::INFO
-  end
-
-  config.after(:suite) do
-    if coverages.any?
-      coverages.each do |key, data|
-        sorted = data.sort_by { |hash| hash[:class_name] }
-        File.write("coverage/#{key}.json", JSON.pretty_generate(sorted))
-      end
-    end
   end
 
   config.default_formatter = 'doc' if config.files_to_run.one?

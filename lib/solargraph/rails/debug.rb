@@ -1,7 +1,7 @@
 module Solargraph
   module Rails
     class Debug
-      def self.run(query=nil)
+      def self.run(query = nil)
         self.new.run(query)
       end
 
@@ -18,12 +18,12 @@ module Solargraph
 
         puts "Known methods for #{query}"
 
-        pin = api_map.pins.find {|p| p.path == query }
+        pin = api_map.pins.find { |p| p.path == query }
         return unless pin
 
-        api_map.get_complex_type_methods(pin.return_type).each do |pin|
-          puts "- #{pin.path}"
-        end
+        api_map
+          .get_complex_type_methods(pin.return_type)
+          .each { |pin| puts "- #{pin.path}" }
       end
     end
   end
