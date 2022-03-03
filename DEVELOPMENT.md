@@ -24,8 +24,8 @@
 
 ## Completion coverage tracking
 
-Solargraph-Rails uses a [set of yaml files](https://github.com/alisnic/solargraph-rails/tree/master/spec/definitions) to track coverage of found completions.
-Those yaml files are generated at runtime from a dummy [rails5](https://github.com/alisnic/solargraph-rails/tree/master/spec/rails5) or [rails6](https://github.com/alisnic/solargraph-rails/tree/master/spec/rails6) app.
+Solargraph-Rails uses a [set of yaml files](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/definitions) to track coverage of found completions.
+Those yaml files are generated at runtime from a dummy [rails5](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/rails5) or [rails6](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/rails6) app.
 
 The main goal is to catch any regressions in case of any change. In case a method completion is marked completed and it is not found in solargraph completions, the tests will fail.
 
@@ -72,7 +72,7 @@ In case of option 2, don't forget to remove the flag after yml file has been upd
 
 ### Generating assertions
 
-In case a new set of assertion files has to be created (for a new Rails version for example), a script can be used - https://github.com/alisnic/solargraph-rails/blob/master/script/generate_definitions.rb.
+In case a new set of assertion files has to be created (for a new Rails version for example), a script can be used - https://github.com/iftheshoefritz/solargraph-rails/blob/master/script/generate_definitions.rb.
 
 All you have to do is to go to the same Rails app root, and execute the script:
 
