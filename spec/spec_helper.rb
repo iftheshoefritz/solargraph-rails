@@ -27,18 +27,6 @@ RSpec.configure do |config|
     Bundler.reset_rubygems!
   end
 
-  config.around(:each) do |example|
-    begin
-      if key = example.metadata[:coverage]
-        Thread.current[:solargraph_arc_coverage] = coverages[key] ||= []
-      end
-
-      example.run
-    ensure
-      Thread.current[:solargraph_arc_coverage] = nil
-    end
-  end
-
   config.around(:each, :debug) do |example|
     Solargraph.logger.level = Logger::DEBUG
     example.run

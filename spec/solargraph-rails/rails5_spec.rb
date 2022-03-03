@@ -99,7 +99,7 @@ RSpec.describe 'Rails 5 API' do
     expect(completion_at(filename, [14, 10], map)).to include('column')
   end
 
-  it 'provides completions for ActiveJob::Base', coverage: :rails5 do
+  it 'provides completions for ActiveJob::Base' do
     map = use_workspace './spec/rails5'
 
     assert_matches_definitions(
@@ -110,8 +110,7 @@ RSpec.describe 'Rails 5 API' do
     )
   end
 
-  it 'provides completions for ActionDispatch::Routing::Mapper',
-     coverage: :rails5 do
+  it 'provides completions for ActionDispatch::Routing::Mapper' do
     map = use_workspace './spec/rails5'
 
     assert_matches_definitions(
@@ -122,7 +121,7 @@ RSpec.describe 'Rails 5 API' do
     )
   end
 
-  it 'provides completions for ActiveRecord::Base', coverage: :rails5 do
+  it 'provides completions for ActiveRecord::Base' do
     map = use_workspace './spec/rails5'
 
     assert_matches_definitions(
@@ -133,7 +132,7 @@ RSpec.describe 'Rails 5 API' do
     )
   end
 
-  it 'provides completions for ActionController::Base', coverage: :rails5 do
+  it 'provides completions for ActionController::Base' do
     map = use_workspace './spec/rails5'
     assert_matches_definitions(
       map,
@@ -143,7 +142,7 @@ RSpec.describe 'Rails 5 API' do
     )
   end
 
-  it 'auto-completes ActiveSupport core extensions', coverage: :rails5 do
+  it 'auto-completes ActiveSupport core extensions' do
     map = use_workspace './spec/rails5'
 
     Dir
