@@ -98,12 +98,7 @@ RSpec.describe 'Rails 6 API' do
   it 'provides completions for ActiveJob::Base' do
     map = use_workspace './spec/rails6'
 
-    assert_matches_definitions(
-      map,
-      'ActiveJob::Base',
-      'rails6/activejob',
-      print_stats: true
-    )
+    assert_matches_definitions(map, 'ActiveJob::Base', 'rails6/activejob')
   end
 
   it 'provides completions for ActionDispatch::Routing::Mapper' do
@@ -112,20 +107,14 @@ RSpec.describe 'Rails 6 API' do
     assert_matches_definitions(
       map,
       'ActionDispatch::Routing::Mapper',
-      'rails6/routes',
-      print_stats: true
+      'rails6/routes'
     )
   end
 
   it 'provides completions for ActiveRecord::Base' do
     map = use_workspace './spec/rails6'
 
-    assert_matches_definitions(
-      map,
-      'ActiveRecord::Base',
-      'rails6/activerecord',
-      print_stats: true
-    )
+    assert_matches_definitions(map, 'ActiveRecord::Base', 'rails6/activerecord')
   end
 
   it 'provides completions for ActionController::Base' do
@@ -133,8 +122,7 @@ RSpec.describe 'Rails 6 API' do
     assert_matches_definitions(
       map,
       'ActionController::Base',
-      'rails6/actioncontroller',
-      print_stats: true
+      'rails6/actioncontroller'
     )
   end
 
@@ -146,12 +134,7 @@ RSpec.describe 'Rails 6 API' do
       .each do |path|
         name = File.basename(path).split('.').first
 
-        assert_matches_definitions(
-          map,
-          name,
-          "rails6/core/#{name}",
-          print_stats: true
-        )
+        assert_matches_definitions(map, name, "rails6/core/#{name}")
       end
   end
 end
