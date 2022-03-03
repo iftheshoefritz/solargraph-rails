@@ -27,7 +27,7 @@ If applicable, add screenshots to help explain your problem.
 
 Run the following command in the project you are having problems:
 ```
-ruby -r'solargraph-arc' -e 'Solargraph::Rails::Debug.run()'
+ruby -r'solargraph-rails' -e 'Solargraph::Rails::Debug.run()'
 ```
 
 and paste the output here
