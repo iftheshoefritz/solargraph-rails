@@ -812,7 +812,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
 ActionController::Base.use:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.use_renderer:
   types:
   - undefined

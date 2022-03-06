@@ -5,13 +5,13 @@ RSpec.describe 'Rails 6 API' do
     map =
       use_workspace './spec/rails6' do |root|
         root.write_file 'app/controllers/things_controller.rb', <<~EOS
-        class ThingsController < ActionController::Base
-          res
-          def index
-            re
+          class ThingsController < ActionController::Base
+            res
+            def index
+              re
+            end
           end
-        end
-      EOS
+        EOS
       end
 
     filename = './app/controllers/things_controller.rb'
