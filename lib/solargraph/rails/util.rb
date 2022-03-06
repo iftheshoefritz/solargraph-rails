@@ -42,12 +42,15 @@ module Solargraph
       end
 
       def self.dummy_location(path)
-        Solargraph::Location.new(path, Solargraph::Range.from_to(0, 0, 0, 0))
+        Solargraph::Location.new(
+          File.expand_path(path),
+          Solargraph::Range.from_to(0, 0, 0, 0)
+        )
       end
 
       def self.build_location(ast, path)
         Solargraph::Location.new(
-          path,
+          File.expand_path(path),
           Solargraph::Range.from_to(
             ast.location.first_line,
             0,

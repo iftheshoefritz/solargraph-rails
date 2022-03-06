@@ -52,7 +52,7 @@ module Solargraph
 
         if pins.any?
           Solargraph.logger.debug(
-            "[ARC][Schema] added #{pins.map(&:name)} to #{ns.path}"
+            "[Rails][Schema] added #{pins.map(&:name)} to #{ns.path}"
           )
         end
         pins

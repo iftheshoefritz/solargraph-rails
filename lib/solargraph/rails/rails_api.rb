@@ -89,7 +89,7 @@ module Solargraph
         ]
 
         Solargraph.logger.debug(
-          "[ARC][RailsApi] added #{pins.map(&:name)} to #{ns.path}"
+          "[Rails][RailsApi] added #{pins.map(&:name)} to #{ns.path}"
         )
         pins
       end

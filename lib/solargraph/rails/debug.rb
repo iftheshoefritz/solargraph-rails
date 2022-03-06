@@ -12,7 +12,7 @@ module Solargraph
 
         puts "Ruby version: #{RUBY_VERSION}"
         puts "Solargraph version: #{Solargraph::VERSION}"
-        puts "Solargraph ARC version: #{Solargraph::Rails::VERSION}"
+        puts "Solargraph Rails version: #{Solargraph::Rails::VERSION}"
 
         return unless query
 

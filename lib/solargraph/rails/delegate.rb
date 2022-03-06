@@ -28,9 +28,13 @@ module Solargraph
         end
 
         walker.walk
-        Solargraph.logger.debug(
-          "[ARC][Delegate] added #{pins.map(&:name)} to #{ns.path}"
-        )
+
+        if pins.any?
+          Solargraph.logger.debug(
+            "[Rails][Delegate] added #{pins.map(&:name)} to #{ns.path}"
+          )
+        end
+
         pins
       end
     end

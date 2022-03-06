@@ -51,7 +51,7 @@ module Solargraph
         walker.walk
         if pins.any?
           Solargraph.logger.debug(
-            "[ARC][Model] added #{pins.map(&:name)} to #{ns.path}"
+            "[Rails][Model] added #{pins.map(&:name)} to #{ns.path}"
           )
         end
         pins
