@@ -1,0 +1,223 @@
+---
+Kernel.acts_like?:
+  types:
+  - undefined
+  skip: false
+Kernel.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Kernel.anonymous?:
+  types:
+  - undefined
+  skip: false
+Kernel.as_json:
+  types:
+  - undefined
+  skip: false
+Kernel.attr_internal:
+  types:
+  - undefined
+  skip: false
+Kernel.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+Kernel.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+Kernel.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+Kernel.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Kernel.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Kernel.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Kernel.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Kernel.concern:
+  types:
+  - undefined
+  skip: false
+Kernel.concerning:
+  types:
+  - undefined
+  skip: false
+Kernel.deep_dup:
+  types:
+  - undefined
+  skip: false
+Kernel.delegate:
+  types:
+  - undefined
+  skip: false
+Kernel.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Kernel.deprecate:
+  types:
+  - undefined
+  skip: false
+Kernel.duplicable?:
+  types:
+  - undefined
+  skip: false
+Kernel.enable_warnings:
+  types:
+  - undefined
+  skip: false
+Kernel.html_safe?:
+  types:
+  - undefined
+  skip: false
+Kernel.in?:
+  types:
+  - undefined
+  skip: false
+Kernel.instance_values:
+  types:
+  - undefined
+  skip: false
+Kernel.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Kernel.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Kernel.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Kernel.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Kernel.method_visibility:
+  types:
+  - undefined
+  skip: false
+Kernel.module_parent:
+  types:
+  - undefined
+  skip: false
+Kernel.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Kernel.module_parents:
+  types:
+  - undefined
+  skip: false
+Kernel.presence:
+  types:
+  - Object
+  skip: false
+Kernel.presence_in:
+  types:
+  - Object
+  skip: false
+Kernel.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Kernel.redefine_method:
+  types:
+  - undefined
+  skip: false
+Kernel.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Kernel.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Kernel.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Kernel.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Kernel.silence_warnings:
+  types:
+  - undefined
+  skip: false
+Kernel.suppress:
+  types:
+  - undefined
+  skip: false
+Kernel.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Kernel.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Kernel.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Kernel.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Kernel.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Kernel.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Kernel.to_json:
+  types:
+  - undefined
+  skip: true
+Kernel.to_param:
+  types:
+  - undefined
+  skip: false
+Kernel.to_query:
+  types:
+  - undefined
+  skip: false
+Kernel.try:
+  types:
+  - undefined
+  skip: false
+Kernel.try!:
+  types:
+  - undefined
+  skip: false
+Kernel.with_options:
+  types:
+  - undefined
+  skip: false
+Kernel.with_warnings:
+  types:
+  - undefined
+  skip: false
+Kernel#class_eval:
+  types:
+  - undefined
+  skip: false
