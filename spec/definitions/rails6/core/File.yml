@@ -1,0 +1,345 @@
+---
+File.acts_like?:
+  types:
+  - undefined
+  skip: false
+File.alias_attribute:
+  types:
+  - undefined
+  skip: false
+File.anonymous?:
+  types:
+  - undefined
+  skip: false
+File.as_json:
+  types:
+  - undefined
+  skip: false
+File.atomic_write:
+  types:
+  - undefined
+  skip: false
+File.attr_internal:
+  types:
+  - undefined
+  skip: false
+File.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+File.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+File.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+File.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+File.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.cattr_reader:
+  types:
+  - undefined
+  skip: false
+File.cattr_writer:
+  types:
+  - undefined
+  skip: false
+File.class_attribute:
+  types:
+  - undefined
+  skip: false
+File.concern:
+  types:
+  - undefined
+  skip: false
+File.concerning:
+  types:
+  - undefined
+  skip: false
+File.deep_dup:
+  types:
+  - undefined
+  skip: false
+File.delegate:
+  types:
+  - undefined
+  skip: false
+File.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+File.deprecate:
+  types:
+  - undefined
+  skip: false
+File.descendants:
+  types:
+  - undefined
+  skip: false
+File.duplicable?:
+  types:
+  - undefined
+  skip: false
+File.html_safe?:
+  types:
+  - undefined
+  skip: false
+File.in?:
+  types:
+  - undefined
+  skip: false
+File.instance_values:
+  types:
+  - undefined
+  skip: false
+File.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+File.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.mattr_reader:
+  types:
+  - undefined
+  skip: false
+File.mattr_writer:
+  types:
+  - undefined
+  skip: false
+File.method_visibility:
+  types:
+  - undefined
+  skip: false
+File.module_parent:
+  types:
+  - undefined
+  skip: false
+File.module_parent_name:
+  types:
+  - undefined
+  skip: false
+File.module_parents:
+  types:
+  - undefined
+  skip: false
+File.presence:
+  types:
+  - Object
+  skip: false
+File.presence_in:
+  types:
+  - Object
+  skip: false
+File.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+File.probe_stat_in:
+  types:
+  - undefined
+  skip: false
+File.redefine_method:
+  types:
+  - undefined
+  skip: false
+File.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+File.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+File.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+File.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+File.subclasses:
+  types:
+  - undefined
+  skip: false
+File.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+File.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+File.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+File.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+File.to_json:
+  types:
+  - undefined
+  skip: true
+File.to_param:
+  types:
+  - undefined
+  skip: false
+File.to_query:
+  types:
+  - undefined
+  skip: false
+File.try:
+  types:
+  - undefined
+  skip: false
+File.try!:
+  types:
+  - undefined
+  skip: false
+File.with_options:
+  types:
+  - undefined
+  skip: false
+File#acts_like?:
+  types:
+  - undefined
+  skip: false
+File#as_json:
+  types:
+  - undefined
+  skip: false
+File#blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+File#class_eval:
+  types:
+  - undefined
+  skip: false
+File#compact_blank:
+  types:
+  - undefined
+  skip: false
+File#deep_dup:
+  types:
+  - undefined
+  skip: false
+File#duplicable?:
+  types:
+  - undefined
+  skip: false
+File#exclude?:
+  types:
+  - undefined
+  skip: false
+File#excluding:
+  types:
+  - undefined
+  skip: false
+File#html_safe?:
+  types:
+  - undefined
+  skip: false
+File#in?:
+  types:
+  - undefined
+  skip: false
+File#including:
+  types:
+  - undefined
+  skip: false
+File#index_by:
+  types:
+  - undefined
+  skip: false
+File#index_with:
+  types:
+  - undefined
+  skip: false
+File#instance_values:
+  types:
+  - undefined
+  skip: false
+File#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+File#many?:
+  types:
+  - undefined
+  skip: false
+File#pick:
+  types:
+  - undefined
+  skip: false
+File#pluck:
+  types:
+  - undefined
+  skip: false
+File#presence:
+  types:
+  - Object
+  skip: false
+File#presence_in:
+  types:
+  - Object
+  skip: false
+File#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+File#sum:
+  types:
+  - undefined
+  skip: false
+File#to_json:
+  types:
+  - undefined
+  skip: true
+File#to_param:
+  types:
+  - undefined
+  skip: false
+File#to_query:
+  types:
+  - undefined
+  skip: false
+File#try:
+  types:
+  - undefined
+  skip: false
+File#try!:
+  types:
+  - undefined
+  skip: false
+File#with_options:
+  types:
+  - undefined
+  skip: false
+File#without:
+  types:
+  - undefined
+  skip: false

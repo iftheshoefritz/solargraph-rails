@@ -1,0 +1,432 @@
+---
+Integer.acts_like?:
+  types:
+  - undefined
+  skip: false
+Integer.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Integer.anonymous?:
+  types:
+  - undefined
+  skip: false
+Integer.as_json:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal_reader:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+Integer.blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Integer.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.class_attribute:
+  types:
+  - undefined
+  skip: false
+Integer.concern:
+  types:
+  - undefined
+  skip: false
+Integer.concerning:
+  types:
+  - undefined
+  skip: false
+Integer.deep_dup:
+  types:
+  - undefined
+  skip: false
+Integer.delegate:
+  types:
+  - undefined
+  skip: false
+Integer.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Integer.deprecate:
+  types:
+  - undefined
+  skip: false
+Integer.descendants:
+  types:
+  - undefined
+  skip: false
+Integer.duplicable?:
+  types:
+  - undefined
+  skip: false
+Integer.html_safe?:
+  types:
+  - undefined
+  skip: false
+Integer.in?:
+  types:
+  - undefined
+  skip: false
+Integer.instance_values:
+  types:
+  - undefined
+  skip: false
+Integer.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.method_visibility:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Integer.module_parents:
+  types:
+  - undefined
+  skip: false
+Integer.presence:
+  types:
+  - Object
+  skip: false
+Integer.presence_in:
+  types:
+  - Object
+  skip: false
+Integer.present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Integer.redefine_method:
+  types:
+  - undefined
+  skip: false
+Integer.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Integer.subclasses:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.to_json:
+  types:
+  - undefined
+  skip: true
+Integer.to_param:
+  types:
+  - undefined
+  skip: false
+Integer.to_query:
+  types:
+  - undefined
+  skip: false
+Integer.try:
+  types:
+  - undefined
+  skip: false
+Integer.try!:
+  types:
+  - undefined
+  skip: false
+Integer.with_options:
+  types:
+  - undefined
+  skip: false
+Integer#acts_like?:
+  types:
+  - undefined
+  skip: false
+Integer#as_json:
+  types:
+  - undefined
+  skip: false
+Integer#blank?:
+  types:
+  - 'false'
+  skip: false
+Integer#byte:
+  types:
+  - undefined
+  skip: false
+Integer#bytes:
+  types:
+  - undefined
+  skip: false
+Integer#class_eval:
+  types:
+  - undefined
+  skip: false
+Integer#day:
+  types:
+  - undefined
+  skip: false
+Integer#days:
+  types:
+  - undefined
+  skip: false
+Integer#deep_dup:
+  types:
+  - undefined
+  skip: false
+Integer#duplicable?:
+  types:
+  - undefined
+  skip: false
+Integer#exabyte:
+  types:
+  - undefined
+  skip: false
+Integer#exabytes:
+  types:
+  - undefined
+  skip: false
+Integer#fortnight:
+  types:
+  - undefined
+  skip: false
+Integer#fortnights:
+  types:
+  - undefined
+  skip: false
+Integer#gigabyte:
+  types:
+  - undefined
+  skip: false
+Integer#gigabytes:
+  types:
+  - undefined
+  skip: false
+Integer#hour:
+  types:
+  - undefined
+  skip: false
+Integer#hours:
+  types:
+  - undefined
+  skip: false
+Integer#html_safe?:
+  types:
+  - undefined
+  skip: false
+Integer#in?:
+  types:
+  - undefined
+  skip: false
+Integer#in_milliseconds:
+  types:
+  - undefined
+  skip: false
+Integer#instance_values:
+  types:
+  - undefined
+  skip: false
+Integer#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Integer#kilobyte:
+  types:
+  - undefined
+  skip: false
+Integer#kilobytes:
+  types:
+  - undefined
+  skip: false
+Integer#megabyte:
+  types:
+  - undefined
+  skip: false
+Integer#megabytes:
+  types:
+  - undefined
+  skip: false
+Integer#minute:
+  types:
+  - undefined
+  skip: false
+Integer#minutes:
+  types:
+  - undefined
+  skip: false
+Integer#month:
+  types:
+  - undefined
+  skip: false
+Integer#months:
+  types:
+  - undefined
+  skip: false
+Integer#multiple_of?:
+  types:
+  - undefined
+  skip: false
+Integer#ordinal:
+  types:
+  - undefined
+  skip: false
+Integer#ordinalize:
+  types:
+  - undefined
+  skip: false
+Integer#petabyte:
+  types:
+  - undefined
+  skip: false
+Integer#petabytes:
+  types:
+  - undefined
+  skip: false
+Integer#presence:
+  types:
+  - Object
+  skip: false
+Integer#presence_in:
+  types:
+  - Object
+  skip: false
+Integer#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Integer#second:
+  types:
+  - undefined
+  skip: false
+Integer#seconds:
+  types:
+  - undefined
+  skip: false
+Integer#terabyte:
+  types:
+  - undefined
+  skip: false
+Integer#terabytes:
+  types:
+  - undefined
+  skip: false
+Integer#to_json:
+  types:
+  - undefined
+  skip: true
+Integer#to_param:
+  types:
+  - undefined
+  skip: false
+Integer#to_query:
+  types:
+  - undefined
+  skip: false
+Integer#to_s:
+  types:
+  - undefined
+  skip: false
+Integer#try:
+  types:
+  - undefined
+  skip: false
+Integer#try!:
+  types:
+  - undefined
+  skip: false
+Integer#week:
+  types:
+  - undefined
+  skip: false
+Integer#weeks:
+  types:
+  - undefined
+  skip: false
+Integer#with_options:
+  types:
+  - undefined
+  skip: false
+Integer#year:
+  types:
+  - undefined
+  skip: false
+Integer#years:
+  types:
+  - undefined
+  skip: false
