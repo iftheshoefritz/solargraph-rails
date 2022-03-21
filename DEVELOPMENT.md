@@ -19,8 +19,16 @@
     $ bundle install && yard gems
     $ cd ../../
     ```
-4. now tests should pass locally and you can try different changes
-5. sumbit PR
+
+4. install dummy rails7 app deps and build its yard cache
+
+    ```
+    $ cd spec/rails7
+    $ bundle install && yard gems
+    $ cd ../../
+    ```
+5. now tests should pass locally and you can try different changes
+6. sumbit PR
 
 ## Completion coverage tracking
 
@@ -74,10 +82,10 @@ In case of option 2, don't forget to remove the flag after yml file has been upd
 
 In case a new set of assertion files has to be created (for a new Rails version for example), a script can be used - https://github.com/iftheshoefritz/solargraph-rails/blob/master/script/generate_definitions.rb.
 
-All you have to do is to go to the same Rails app root, and execute the script:
+All you have to do is execute the script and pass it a path to rails app:
 
 ```
-ruby path/to/generate_definitions.rb
+ruby script/generate_definitions.rb spec/rails6
 ```
 
 Make sure to review the script and uncomment relevant parts

@@ -32,5 +32,7 @@ jobs:
         run: (cd spec/rails5; bundle install; yard gems)
       - name: Install Rails 6 deps
         run: (cd spec/rails6; bundle install; yard gems)
+      - name: Install Rails 7 deps
+        run: (cd spec/rails7; bundle install; yard gems)
       - name: Run tests
         run: bundle exec rspec

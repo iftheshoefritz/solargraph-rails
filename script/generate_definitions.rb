@@ -106,29 +106,36 @@ Rails.application.routes.draw do
   File.write('routes.yml', report.deep_stringify_keys.to_yaml)
 end
 
-# [Array, String, Time, Date, Class, DateTime, File, Hash, Integer, Kernel].each do |klass|
-#   test = case klass
-#   when Time
-#     Time.now
-#   when Date
-#     Date.today
-#   when File
-#     false
-#   else
-#     klass.new rescue false
-#   end
-#
-#   report = core_ext_report(klass, test=test)
-#   File.write("#{klass.to_s}.yml", report.deep_stringify_keys.to_yaml)
-# end
+[
+  Array,
+  String,
+  Time,
+  Date,
+  Class,
+  DateTime,
+  File,
+  Hash,
+  Integer,
+  Kernel
+].each do |klass|
+  test =
+    case klass
+    when Time
+      Time.now
+    when Date
+      Date.today
+    when File
+      false
+    else
+      begin
+        klass.new
+      rescue StandardError
+        false
+      end
+    end
+
+  report = core_ext_report(klass, test = test)
+  File.write("#{klass.to_s}.yml", report.deep_stringify_keys.to_yaml)
+end
 
 # binding.pry
-
-# File.write("activerecord.yml", result.deep_stringify_keys.to_yaml)
-
-# report = build_report(
-#   ActionController::Base,
-#   own_class_methods(ActionController::Base),
-#   own_instance_methods(ActionController::Base)
-# )
-# File.write("actioncontroller.yml", report.deep_stringify_keys.to_yaml)
