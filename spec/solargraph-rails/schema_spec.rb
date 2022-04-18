@@ -21,6 +21,7 @@ RSpec.describe Solargraph::Rails::Schema do
           t.json "old_school_json"
           t.jsonb "new_school_json"
           t.uuid "uuid"
+          t.citext "some_citext"
 
           t.check_constraint "balance > 0"
           t.index ["some_big_id"], name: "index_accounts_on_some_big_id", unique: true
@@ -62,6 +63,7 @@ RSpec.describe Solargraph::Rails::Schema do
     assert_public_instance_method(map, "Account#uuid", ["String"])
     assert_public_instance_method(map, "Account#old_school_json", ["Hash"])
     assert_public_instance_method(map, "Account#new_school_json", ["Hash"])
+    assert_public_instance_method(map, "Account#some_citext", ["String"])
   end
 end
 
