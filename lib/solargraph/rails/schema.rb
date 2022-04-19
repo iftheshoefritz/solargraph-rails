@@ -16,7 +16,8 @@ module Solargraph
         json: 'Hash',
         bigint: 'Integer',
         uuid: 'String',
-        inet: 'IPAddr'
+        inet: 'IPAddr',
+        citext: 'String',
       }
 
       def self.instance
