@@ -18,6 +18,8 @@ module Solargraph
         uuid: 'String',
         inet: 'IPAddr',
         citext: 'String',
+        binary: 'String',
+        timestamp: 'ActiveSupport::TimeWithZone'
       }
 
       def self.instance
