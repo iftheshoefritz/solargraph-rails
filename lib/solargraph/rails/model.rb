@@ -28,6 +28,7 @@ module Solargraph
         end
 
         walker.on :send, [nil, :scope] do |ast|
+          next if ast.children[2].nil?
           name = ast.children[2].children.last
 
           method_pin =
