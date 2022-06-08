@@ -93,4 +93,28 @@ RSpec.describe Solargraph::Rails::Model do
       expect(pin.parameters.first.name).to eq('min_height')
     end
   end
+
+  it 'does not generate methods for variable named scope' do
+    load_string 'app/models/person.rb',
+                <<-RUBY
+                class Person < ActiveRecord::Base
+                  def some_method
+                    scope = Person.where(id: 0)
+                    scope.count
+                  end
+
+                  scope :taller_than,
+                        ->(min_height) { where('height > ?', min_height) }
+                end
+                RUBY
+
+    assert_class_method(
+      api_map,
+      'Person.taller_than',
+      ['Class<Person>']
+    ) do |pin|
+      expect(pin.parameters).not_to be_empty
+      expect(pin.parameters.first.name).to eq('min_height')
+    end
+  end
 end
