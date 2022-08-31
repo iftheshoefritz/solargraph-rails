@@ -36,7 +36,7 @@ module Solargraph
 
       def process(source_map, ns)
         return [] unless @schema_present
-        return [] unless source_map.filename.include?('app/models')
+        return [] unless Model.valid_filename?(source_map.filename)
 
         table = find_table(source_map, ns)
 

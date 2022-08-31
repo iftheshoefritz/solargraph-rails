@@ -5,8 +5,12 @@ module Solargraph
         @instance ||= self.new
       end
 
+      def self.valid_filename?(filename)
+        filename.include?('app/models')
+      end
+
       def process(source_map, ns)
-        return [] unless source_map.filename.include?('app/models')
+        return [] unless self.class.valid_filename?(source_map.filename)
 
         walker = Walker.from_source(source_map.source)
         pins = []

@@ -6,7 +6,7 @@ module Solargraph
       end
 
       def process(source_map, ns)
-        if source_map.filename.include?('app/models')
+        if Model.valid_filename?(source_map.filename)
           process_model(source_map.source, ns)
         else
           []
