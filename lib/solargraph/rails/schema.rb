@@ -38,8 +38,7 @@ module Solargraph
         return [] unless @schema_present
         return [] unless source_map.filename.include?('app/models')
 
-        table_name = infer_table_name(ns)
-        table = schema[table_name]
+        table = find_table(source_map, ns)
 
         return [] unless table
 
@@ -71,10 +70,27 @@ module Solargraph
           end
       end
 
-      # TODO: support custom table names, by parsing `self.table_name = ` invokations
-      # inside model
-      def infer_table_name(ns)
-        ns.name.underscore.pluralize
+      def find_table(source_map, ns)
+        table_name = nil
+        walker = Walker.from_source(source_map.source)
+        walker.on :send, [:self, :table_name=, :str] do |ast|
+          table_name = ast.children.last.children.first
+        end
+        walker.walk
+
+        # always use explicit table name if present
+        return schema[table_name] if table_name
+
+        infer_table_names(ns).filter_map { |table_name| schema[table_name] }.first
+      end
+
+      def infer_table_names(ns)
+        table_name = ns.name.tableize
+        if ns.namespace.present?
+          [ns.path.tableize.tr('/', '_'), table_name]
+        else
+          [table_name]
+        end
       end
 
       def extract_schema(ast)

@@ -69,5 +69,64 @@ RSpec.describe Solargraph::Rails::Schema do
     assert_public_instance_method(map, "Account#some_binary", ["String"])
     assert_public_instance_method(map, "Account#some_timestamp", ["ActiveSupport::TimeWithZone"])
   end
+
+  it 'infers prefixed table name' do
+    map = use_workspace "./spec/rails5" do |root|
+      root.write_file 'db/schema.rb', <<-RUBY
+        ActiveRecord::Schema.define(version: 2021_10_20_084658) do
+          create_table "accounting_invoices", force: :cascade do |t|
+            t.decimal "amount"
+          end
+        end
+      RUBY
+
+      root.write_file 'app/models/accounting/invoice.rb', <<-RUBY
+        class Accounting::Invoice < ActiveRecord::Base
+        end
+      RUBY
+    end
+
+    assert_public_instance_method(map, "Accounting::Invoice#amount", ["BigDecimal"])
+  end
+
+  it 'falls back unprefixed tables even if model is namespaced' do
+    map = use_workspace "./spec/rails5" do |root|
+      root.write_file 'db/schema.rb', <<-RUBY
+        ActiveRecord::Schema.define(version: 2021_10_20_084658) do
+          create_table "invoices", force: :cascade do |t|
+            t.decimal "amount"
+          end
+        end
+      RUBY
+
+      root.write_file 'app/models/accounting/invoice.rb', <<-RUBY
+        class Accounting::Invoice < ActiveRecord::Base
+        end
+      RUBY
+    end
+
+    # resolves to accounts table
+    assert_public_instance_method(map, "Accounting::Invoice#amount", ["BigDecimal"])
+  end
+
+  it 'uses explicit table name if defined' do
+    map = use_workspace "./spec/rails7" do |root|
+      root.write_file 'db/schema.rb', <<-RUBY
+        ActiveRecord::Schema.define(version: 2021_10_20_084658) do
+          create_table "bills", force: :cascade do |t|
+            t.decimal "amount"
+          end
+        end
+      RUBY
+
+      root.write_file 'app/models/invoice.rb', <<-RUBY
+        class Invoice < ActiveRecord::Base
+          self.table_name = 'bills'
+        end
+      RUBY
+    end
+
+    assert_public_instance_method(map, 'Invoice#amount', ['BigDecimal'])
+  end
 end
 
