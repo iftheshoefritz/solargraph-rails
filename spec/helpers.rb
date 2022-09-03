@@ -105,6 +105,7 @@ module Helpers
     end
 
     def write_file(path, content)
+      FileUtils.mkdir_p(File.dirname(path))
       File.write(path, content)
       @files << path
     end
