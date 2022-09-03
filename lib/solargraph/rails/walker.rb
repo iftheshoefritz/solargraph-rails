@@ -28,14 +28,14 @@ module Solargraph
           return unless node.children
           return true if @args.empty?
 
-          if node.children.first.is_a?(::Parser::AST::Node)
-            node.children.any? do |child|
-              child.is_a?(::Parser::AST::Node) &&
-                match_children(child.children, @args[1..-1])
-            end
-          else
-            match_children(node.children)
+          a_child_matches = node.children.first.is_a?(::Parser::AST::Node) && node.children.any? do |child|
+            child.is_a?(::Parser::AST::Node) &&
+              match_children(child.children, @args[1..-1])
           end
+
+          return true if a_child_matches
+
+          match_children(node.children)
         end
 
         def match_children(children, args = @args)
