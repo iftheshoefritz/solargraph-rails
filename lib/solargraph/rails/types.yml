@@ -1,17 +1,9 @@
 ActionController::Metal#params:
   return: ["ActionController::Parameters"]
-ActiveRecord::FinderMethods#find:
-  return: ["self", "Array<self>"]
 ActionController::Cookies#cookies:
   return: ["ActionDispatch::Cookies::CookieJar"]
 ActionDispatch::Flash::FlashHash#now:
   return: ["ActionDispatch::Flash::FlashNow"]
-ActiveRecord::QueryMethods#where:
-  return: ["self", "ActiveRecord::Relation", "ActiveRecord::QueryMethods::WhereChain"]
-ActiveRecord::QueryMethods#not:
-  return: ["ActiveRecord::QueryMethods::WhereChain"]
-ActiveRecord::FinderMethods#find_by:
-  return: ["self", "nil"]
 Rails.application:
   return: ["Rails::Application"]
 ActionDispatch::Routing::RouteSet#draw:
