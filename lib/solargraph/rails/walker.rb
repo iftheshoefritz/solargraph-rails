@@ -51,27 +51,29 @@ module Solargraph
       end
 
       def try_match(node, hook)
+        return unless matches?(node, hook)
+
+        if hook.proc.arity == 1
+          hook.proc.call(node)
+        elsif hook.proc.arity == 2
+          walker = Walker.new(node)
+          hook.proc.call(node, walker)
+          walker.walk
+        end
+      end
+
+      def matches?(node, hook)
         return unless node.type == hook.node_type
         return unless node.children
+        return true if hook.args.empty?
 
-        matched =
-          hook.args.empty? || if node.children.first.is_a?(::Parser::AST::Node)
-            node.children.any? do |child|
-              child.is_a?(::Parser::AST::Node) &&
-                match_children(hook.args[1..-1], child.children)
-            end
-          else
-            match_children(hook.args, node.children)
+        if node.children.first.is_a?(::Parser::AST::Node)
+          node.children.any? do |child|
+            child.is_a?(::Parser::AST::Node) &&
+              match_children(hook.args[1..-1], child.children)
           end
-
-        if matched
-          if hook.proc.arity == 1
-            hook.proc.call(node)
-          elsif hook.proc.arity == 2
-            walker = Walker.new(node)
-            hook.proc.call(node, walker)
-            walker.walk
-          end
+        else
+          match_children(hook.args, node.children)
         end
       end
 
