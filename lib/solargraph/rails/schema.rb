@@ -48,7 +48,7 @@ module Solargraph
             Util.build_public_method(
               ns,
               column,
-              types: [RUBY_TYPES.fetch(data.type.to_sym)],
+              types: [RUBY_TYPES[data.type.to_sym] || 'String'],
               location: Util.build_location(data.ast, 'db/schema.rb')
             )
           end
