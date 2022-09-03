@@ -44,7 +44,7 @@ module Solargraph
         return [] unless table
 
         pins = table.flat_map do |column, data|
-          ruby_type = RUBY_TYPES.fetch(data.type.to_sym)
+          ruby_type = RUBY_TYPES.fetch(data.type.to_sym, 'String')
           location = Util.build_location(data.ast, 'db/schema.rb')
 
           [
