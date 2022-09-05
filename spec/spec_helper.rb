@@ -4,6 +4,7 @@ require 'solargraph'
 require 'solargraph-rails'
 require 'logger'
 require 'byebug'
+require 'fileutils'
 require_relative './helpers'
 
 RSpec.configure do |config|
