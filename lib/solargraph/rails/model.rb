@@ -69,6 +69,7 @@ module Solargraph
             location = ast.children.last.location
             block_pin = source_map.locate_block_pin(location.line, location.column)
             parameters.concat(block_pin.parameters.clone)
+            block_pin.instance_variable_set(:@binder, relation)
           end
 
           location = Util.build_location(ast, ns.filename)
