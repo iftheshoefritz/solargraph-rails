@@ -43,15 +43,24 @@ module Solargraph
 
         return [] unless table
 
-        pins =
-          table.map do |column, data|
-            Util.build_public_method(
-              ns,
-              column,
-              types: [RUBY_TYPES[data.type.to_sym] || 'String'],
-              location: Util.build_location(data.ast, 'db/schema.rb')
-            )
+        pins = []
+        table.each do |column, data|
+          location = Util.build_location(data.ast, 'db/schema.rb')
+          type = RUBY_TYPES[data.type.to_sym] || 'String'
+          %w[% %_in_database %_before_last_save].each do |tpl|
+            name = tpl.sub('%', column)
+            pins << Util.build_public_method(ns, name, types: [type], location: location)
           end
+          %w[%? %_changed? saved_change_to_%? will_save_change_to_%?].each do |tpl|
+            name = tpl.sub('%', column)
+            pins << Util.build_public_method(ns, name, types: ['Boolean'], location: location)
+          end
+          %w[%_change_to_be_saved saved_change_to_%].each do |tpl|
+            name = tpl.sub('%', column)
+            types = ["Array(#{type}, #{type})"]
+            pins << Util.build_public_method(ns, name, types: types, location: location)
+          end
+        end
 
         if pins.any?
           Solargraph.logger.debug(
