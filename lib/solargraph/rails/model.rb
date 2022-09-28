@@ -164,17 +164,30 @@ module Solargraph
       # @return [Array<Solargraph::Pin::Method>]
       def relation_method_pins(namespace, scope, model_class)
         pins = []
-        RETURNS_RELATION.each do |method|
-          pins << Util.build_public_method(namespace, method, scope: scope, types: [relation_type(model_class)])
+        finalize_type = -> (template) { template.gsub '$T', model_class }
+        RETURNS_RELATION.each do |method, params|
+          next if OVERLOADED.key(method)
+
+          parameters = params.map do |name, type|
+            decl = :arg
+            if name.start_with?("*")
+              name = name[1..]
+              decl = :restarg
+            end
+            Solargraph::Pin::Parameter.new(name: name, decl: decl)
+          end
+          pins << Util.build_public_method(namespace, method, scope: scope, parameters: parameters, types: [relation_type(model_class)])
         end
+
         RETURNS_INSTANCE.each do |method|
           pins << Util.build_public_method(namespace, method, scope: scope, types: [model_class])
         end
+
         OVERLOADED.each do |method, overloads|
-          comments = overloads.map do |args, lines|
+          comments = overloads.map do |arg_list, lines|
             lines = ["@return [#{lines}]"] if lines.is_a?(String)
-            lines = ["@overload #{method}#{args}"] + lines
-            lines.map { |line| line.gsub '$T', model_class }.join("\n  ")
+            lines = ["@overload #{method}#{arg_list}"] + lines
+            lines.map(&finalize_type).join("\n  ")
           end
           pins << Util.build_public_method(namespace, method, scope: scope, comments: comments.join("\n"))
         end
@@ -186,59 +199,57 @@ module Solargraph
       def relation_type(model_path)
         "#{model_path}::ActiveRecord_Relation"
       end
+
+      ANY_ARGS = {"*args" => nil}
       
-      RETURNS_RELATION = %w[
-        all
-        and
-        annotate
-        distinct
-        eager_load
-        excluding
-        from
-        group
-        having
-        in_order_of
-        includes
-        invert_where
-        joins
-        left_joins
-        left_outer_joins
-        limit
-        lock
-        none
-        offset
-        or
-        order
-        preload
-        readonly
-        references
-        reorder
-        reselect
-        reverse_order
-        rewhere
-        select
-        strict_loading
-        unscope
-        where
-        without
-      ]
+      RETURNS_RELATION = {
+        "all" => {},
+        "and" => {"other" => "ActiveRecord::Relation"},
+        "annotate" => ANY_ARGS,
+        "distinct" => ANY_ARGS,
+        "eager_load" => ANY_ARGS,
+        "excluding" => ANY_ARGS,
+        "from" => {"source" => "ActiveRecord::Relation"},
+        "group" => ANY_ARGS,
+        "having" => ANY_ARGS,
+        "in_order_of" => ANY_ARGS,
+        "includes" => ANY_ARGS,
+        "invert_where" => {},
+        "joins" => ANY_ARGS,
+        "left_joins" => ANY_ARGS,
+        "left_outer_joins" => ANY_ARGS,
+        "limit" => {"value" => "Integer"},
+        "lock" => {"locks" => "true, false"},
+        "none" => {},
+        "offset" => {"value" => "Integer"},
+        "or" => {"other" => "ActiveRecord::Relation"},
+        "order" => ANY_ARGS,
+        "preload" => ANY_ARGS,
+        "readonly" => {"value" => "true, false"},
+        "references" => {"*table_names" => nil},
+        "reorder" => ANY_ARGS,
+        "reselect" => ANY_ARGS,
+        "reverse_order" => {},
+        "rewhere" => {"conditions" => "Hash"},
+        "select" => ANY_ARGS,
+        "strict_loading" => {"value" => "true, false"},
+        "unscope" => ANY_ARGS,
+        "without" => ANY_ARGS,
+      }
 
       RETURNS_INSTANCE = %w[
-        find
-        find_by find_by!
-        take
-        take!
-        sole find_sole_by
+        take take! sole
         first  second  third  fourth  fifth  third_to_last  second_to_last  last
         first! second! third! fourth! fifth! third_to_last! second_to_last! last!
-        forty_two
-        forty_two!
+        forty_two forty_two!
       ]
 
       OVERLOADED = {
         "where" => {
           "()" => "ActiveRecord::QueryMethods::WhereChain<$T::ActiveRecord_Relation>",
-          "(*args)" => "$T::ActiveRecord_Relation",
+          "(sql, *args)" => [
+            "@return [$T::ActiveRecord_Relation]",
+          ],
         },
         "select" => {
           "()" => [
@@ -253,6 +264,36 @@ module Solargraph
             "@return [$T]"
           ],
           "(*ids)" => "Array<$T>",
+        },
+        "find_by" => {
+          "(hash)" => [
+            "@param hash [Hash] attributes to match by",
+            "@return [$T, nil]",
+          ],
+          "(sql, *args)" => [
+            "@param sql [String] a SQL snippet for the WHERE clause",
+            "@return [$T, nil]"
+          ]
+        },
+        "find_by!" => {
+          "(hash)" => [
+            "@param hash [Hash] attributes to match by",
+            "@return [$T]",
+          ],
+          "(sql, *args)" => [
+            "@param sql [String] a SQL snippet for the WHERE clause",
+            "@return [$T]"
+          ]
+        },
+        "find_sole_by" => {
+          "(hash)" => [
+            "@param hash [Hash] attributes to match by",
+            "@return [$T]",
+          ],
+          "(sql, *args)" => [
+            "@param sql [String] a SQL snippet for the WHERE clause",
+            "@return [$T]"
+          ]
         },
         "take" => {
           "()" => "T, nil",
