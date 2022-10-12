@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'solargraph', '~> 0.44.2'
   spec.add_runtime_dependency 'activesupport'
+  spec.add_runtime_dependency 'yard', '~> 0.9.28'
 end

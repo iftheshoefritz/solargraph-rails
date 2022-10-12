@@ -28,8 +28,11 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Run Rails 5 tests
-        run: (cd spec/rails5; bundle install; yard gems; cd ..; bundle exec rspec spec/solargraph-rails/rails5_spec.rb)
+      - name: Save Rails 5 deps
+        run: bundle install && yard gems
+        working_directory: spec/rails5
+      - name: Run Rails 5 integration tests
+        run: bundle exec rspec spec/solargraph-rails/rails5_spec.rb
       # - name: Install Rails 6 deps
       #   run: (cd spec/rails6; bundle install; yard gems)
       # - name: Install Rails 7 deps
