@@ -19,8 +19,8 @@ jobs:
       matrix:
         ruby-version:
           - "2.7"
-          - "3.0"
-          - "3.1"
+          # - "3.0"
+          # - "3.1"
 
     steps:
       - uses: actions/checkout@v2
@@ -28,11 +28,11 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Install Rails 5 deps
-        run: (cd spec/rails5; bundle install; yard gems)
-      - name: Install Rails 6 deps
-        run: (cd spec/rails6; bundle install; yard gems)
-      - name: Install Rails 7 deps
-        run: (cd spec/rails7; bundle install; yard gems)
-      - name: Run tests
-        run: bundle exec rspec
+      - name: Run Rails 5 tests
+        run: (cd spec/rails5; bundle install; yard gems; cd ..; bundle exec rspec spec/solargraph-rails/rails5_spec.rb)
+      # - name: Install Rails 6 deps
+      #   run: (cd spec/rails6; bundle install; yard gems)
+      # - name: Install Rails 7 deps
+      #   run: (cd spec/rails7; bundle install; yard gems)
+      # - name: Run tests
+      #   run: bundle exec rspec
