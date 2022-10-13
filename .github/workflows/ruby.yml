@@ -29,6 +29,7 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Install dependencies and run tests
+        continue-on-error: true
         run: |
           cd spec/rails5
           bundle install
