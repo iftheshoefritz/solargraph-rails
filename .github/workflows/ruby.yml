@@ -26,22 +26,22 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Install dependencies and run tests
-        continue-on-error: true
-        run: |
-          cd spec/rails5
-          bundle install
-          yard gems || true
-          gem env | grep INSTALLATION | grep -v USER | sed 's/.*: \(.*\)/\1\/doc/' | xargs ls
-          cd ../rails6
-          bundle install
-          yard gems || true
-          gem env | grep INSTALLATION | grep -v USER | sed 's/.*: \(.*\)/\1\/doc/' | xargs ls
-          cd ../rails7
-          bundle install
-          yard gems || true
-          gem env | grep INSTALLATION | grep -v USER | sed 's/.*: \(.*\)/\1\/doc/' | xargs ls
-          cd ../..
+      # - name: Install dependencies and run tests
+      #   continue-on-error: true
+      #   run: |
+      #     cd spec/rails5
+      #     bundle install
+      #     yard gems || true
+      #     gem env | grep INSTALLATION | grep -v USER | sed 's/.*: \(.*\)/\1\/doc/' | xargs ls
+      #     cd ../rails6
+      #     bundle install
+      #     yard gems || true
+      #     gem env | grep INSTALLATION | grep -v USER | sed 's/.*: \(.*\)/\1\/doc/' | xargs ls
+      #     cd ../rails7
+      #     bundle install
+      #     yard gems || true
+      #     gem env | grep INSTALLATION | grep -v USER | sed 's/.*: \(.*\)/\1\/doc/' | xargs ls
+      #     cd ../..
       - name: Setup upterm session
         uses: lhotari/action-upterm@v1
         with:
