@@ -2,7 +2,7 @@
 
 ## Changes
 
-### v1.0.0
+### v1.0.1
 
 https://github.com/alisnic/solargraph-arc was merged, with the following features:
 - fixes autocompletion for multi-level classes defined in 1 line `class Foo::Bar::Baz`. See https://github.com/castwide/solargraph/issues/506
