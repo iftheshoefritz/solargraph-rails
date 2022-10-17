@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
-RVM_PATH=/usr/local/rvm
+RVM_PATH=/home/runner/.rvm
 ARGS=("$@")
 
 if [[ ! -d $RVM_PATH ]]; then
   curl -sSL https://get.rvm.io | bash
 fi
 
-source /etc/profile.d/rvm.sh
+source /home/runner/.rvm/scripts/rvm
 
 rvm install ruby $ARGS
 rvm use $ARGS
