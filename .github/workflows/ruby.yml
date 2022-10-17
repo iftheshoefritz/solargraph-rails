@@ -19,8 +19,8 @@ jobs:
       matrix:
         ruby-version:
           - "2.7"
-          # - "3.0"
-          # - "3.1"
+          - "3.0"
+          - "3.1"
 
     steps:
       - uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
         with:
           key: ${{ runner.os }}-rvm-${{ matrix.ruby-version }}
           path: |
-            /usr/local/rvm
-            ~/.yardoc
+            /home/runner/.rvm
+            /home/runner/.yardoc
       - name: Prepare Ruby
         run: /bin/bash ./ci.sh ${{ matrix.ruby-version }}
