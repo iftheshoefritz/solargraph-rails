@@ -20,19 +20,16 @@ jobs:
         ruby-version:
           - "2.7"
           - "3.0"
-          - "3.1"
 
     steps:
       - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - name: Cache RVM
+        uses: actions/cache@v3
+        id: rvm
         with:
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Install Rails 5 deps
-        run: (cd spec/rails5; bundle install; yard gems)
-      - name: Install Rails 6 deps
-        run: (cd spec/rails6; bundle install; yard gems)
-      - name: Install Rails 7 deps
-        run: (cd spec/rails7; bundle install; yard gems)
-      - name: Run tests
-        run: bundle exec rspec
+          key: ${{ runner.os }}-rvm-${{ matrix.ruby-version }}
+          path: |
+            /home/runner/.rvm
+            /home/runner/.yardoc
+      - name: Prepare Ruby
+        run: /bin/bash ./ci.sh ${{ matrix.ruby-version }}
