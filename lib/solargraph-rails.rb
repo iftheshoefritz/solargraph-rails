@@ -34,9 +34,10 @@ module Solargraph
 
       def local(source_map)
         pins = []
-        ns = source_map.document_symbols.find do |n|
-          n.is_a?(Solargraph::Pin::Namespace) && n.type == :class
+        ds = source_map.document_symbols.select do |n|
+          n.is_a?(Solargraph::Pin::Namespace)
         end
+        ns = ds.find { |s| s.type == :class }
 
         return EMPTY_ENVIRON unless ns
 
