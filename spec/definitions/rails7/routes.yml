@@ -87,7 +87,7 @@ ActionDispatch::Routing::Mapper.duplicable?:
 ActionDispatch::Routing::Mapper.gem:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.html_safe?:
   types:
   - undefined
@@ -180,7 +180,7 @@ ActionDispatch::Routing::Mapper.remove_possible_singleton_method:
 ActionDispatch::Routing::Mapper.require_dependency:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.silence_redefinition_of_method:
   types:
   - undefined
@@ -212,7 +212,7 @@ ActionDispatch::Routing::Mapper.thread_mattr_writer:
 ActionDispatch::Routing::Mapper.to_json:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper.to_param:
   types:
   - undefined
@@ -353,7 +353,7 @@ ActionDispatch::Routing::Mapper#duplicable?:
 ActionDispatch::Routing::Mapper#gem:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper#get:
   types:
   - undefined
@@ -450,7 +450,7 @@ ActionDispatch::Routing::Mapper#redirect:
 ActionDispatch::Routing::Mapper#require_dependency:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper#resolve:
   types:
   - undefined
@@ -490,7 +490,7 @@ ActionDispatch::Routing::Mapper#shallow?:
 ActionDispatch::Routing::Mapper#to_json:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionDispatch::Routing::Mapper#to_param:
   types:
   - undefined
