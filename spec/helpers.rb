@@ -5,8 +5,8 @@ module Helpers
     source
   end
 
-  def assert_matches_definitions(map, class_name, defition_name, update: false)
-    definitions_file = "spec/definitions/#{defition_name}.yml"
+  def assert_matches_definitions(map, class_name, definition_name, update: false)
+    definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
     class_methods =
@@ -25,6 +25,7 @@ module Helpers
 
     skipped = 0
     typed = 0
+    errors = []
 
     definitions.each do |meth, data|
       unless meth.start_with?('.') || meth.start_with?('#')
@@ -56,12 +57,19 @@ module Helpers
       elsif data['skip']
         next
       else
-        raise "#{meth} was not found in completions"
+        errors << meth
       end
     end
 
+    if errors.any?
+      raise <<~STR
+        The following methods could not be found despite being listed in #{definition_name}.yml:
+        #{errors}
+      STR
+    end
+
     if update
-      File.write("spec/definitions/#{defition_name}.yml", definitions.to_yaml)
+      File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml)
     end
 
     total = definitions.keys.size
