@@ -25,6 +25,7 @@ module Helpers
 
     skipped = 0
     typed = 0
+    errors = []
 
     definitions.each do |meth, data|
       unless meth.start_with?('.') || meth.start_with?('#')
@@ -56,8 +57,15 @@ module Helpers
       elsif data['skip']
         next
       else
-        raise "#{meth} was not found in completions despite it being listed in #{definition_name}.yml"
+        errors << meth
       end
+    end
+
+    if errors.any?
+      raise <<~STR
+        The following methods could not be found despite being listed in #{definition_name}.yml:
+        #{errors}
+      STR
     end
 
     if update
