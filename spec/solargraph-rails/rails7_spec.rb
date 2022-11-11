@@ -106,12 +106,12 @@ RSpec.describe 'Rails 7 API' do
   end
 
   it 'provides completions for ActionDispatch::Routing::Mapper' do
-    map = use_workspace './spec/rails6'
+    map = use_workspace './spec/rails7'
 
     assert_matches_definitions(
       map,
       'ActionDispatch::Routing::Mapper',
-      'rails6/routes'
+      'rails7/routes'
     )
   end
 
