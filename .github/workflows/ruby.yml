@@ -20,7 +20,13 @@ jobs:
       matrix:
         ruby-version:
           - "2.7"
-          - "3.0"
+          #- "3.0"
+        solargraph-version:
+          - "0.44.3"
+          #- "0.45.0"
+          #- "0.46.0"
+          #- "0.47.2"
+      fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
@@ -32,5 +38,8 @@ jobs:
           path: |
             /home/runner/.rvm
             /home/runner/.yardoc
-      - name: Prepare Ruby
-        run: /bin/bash ./ci.sh ${{ matrix.ruby-version }}
+            #/usr/local/rvm/
+      #- name: Setup upterm session
+      #  uses: lhotari/action-upterm@v1
+      - name: Test
+        run: "/bin/bash ./ci.sh ${{ matrix.ruby-version }} ${{ matrix.solargraph-version}}"
