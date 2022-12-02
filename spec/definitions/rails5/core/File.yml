@@ -87,7 +87,7 @@ File.deprecate:
 File.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 File.duplicable?:
   types:
   - undefined

@@ -83,7 +83,7 @@ Array.deprecate:
 Array.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Array.duplicable?:
   types:
   - undefined

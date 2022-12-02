@@ -83,7 +83,7 @@ Integer.deprecate:
 Integer.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Integer.duplicable?:
   types:
   - undefined

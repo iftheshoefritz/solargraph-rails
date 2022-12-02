@@ -103,7 +103,7 @@ Date.deprecate:
 Date.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Date.duplicable?:
   types:
   - undefined

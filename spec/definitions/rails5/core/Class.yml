@@ -91,7 +91,7 @@ Class.deprecate:
 Class.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Class.duplicable?:
   types:
   - undefined
@@ -313,7 +313,7 @@ Class#deprecate:
 Class#descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Class#duplicable?:
   types:
   - undefined

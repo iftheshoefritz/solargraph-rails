@@ -83,7 +83,7 @@ Hash.deprecate:
 Hash.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Hash.duplicable?:
   types:
   - undefined
