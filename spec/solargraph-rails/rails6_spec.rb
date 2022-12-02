@@ -126,15 +126,17 @@ RSpec.describe 'Rails 6 API' do
     )
   end
 
-  it 'auto-completes ActiveSupport core extensions' do
-    map = use_workspace './spec/rails6'
-
+  context 'auto-completes ActiveSupport core extensions' do
     Dir
       .glob('spec/definitions/rails6/core/*.yml')
       .each do |path|
-        name = File.basename(path).split('.').first
+      name = File.basename(path).split('.').first
+
+      it "core/#{name}" do
+        map = use_workspace './spec/rails6'
 
         assert_matches_definitions(map, name, "rails6/core/#{name}")
       end
+    end
   end
 end
