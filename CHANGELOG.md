@@ -2,6 +2,10 @@
 
 ## Changes
 
+### v1.1.0
+
+- remove pinned solargraph version
+
 ### v1.0.1
 
 https://github.com/alisnic/solargraph-arc was merged, with the following features:
