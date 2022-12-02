@@ -131,7 +131,7 @@ ActiveJob::Base.deprecate:
 ActiveJob::Base.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveJob::Base.deserialize:
   types:
   - undefined

@@ -107,7 +107,7 @@ DateTime.deprecate:
 DateTime.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 DateTime.duplicable?:
   types:
   - undefined

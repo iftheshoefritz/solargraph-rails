@@ -83,7 +83,7 @@ String.deprecate:
 String.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 String.duplicable?:
   types:
   - undefined

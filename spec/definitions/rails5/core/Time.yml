@@ -107,7 +107,7 @@ Time.deprecate:
 Time.descendants:
   types:
   - undefined
-  skip: false
+  skip: true
 Time.duplicable?:
   types:
   - undefined
