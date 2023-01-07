@@ -26,17 +26,12 @@
 #     include ActionDispatch::Routing::Mapper::Resources
 #     include ActionDispatch::Routing::Mapper::CustomUrls
 #   end
-#   class Rails
-#     # @return [Rails::Application]
-#     def self.application; end
-#   end
-#   class Rails::Application
-#     # @return [ActionDispatch::Routing::RouteSet]
-#     def routes; end
-#   end
-#   class ActionDispatch::Routing::RouteSet
-#     # @yieldself [ActionDispatch::Routing::Mapper]
-#     def draw; end
+#   class ActionMailer::Base
+#     # @return [self]
+#     def self.with(**params); end
+#
+#     # @return [ActionMailer::MessageDelivery]
+#     def mail(**params); end
 #   end
 #
 #   # this module doesn't really exist, it's here to avoid repeating these mixins
@@ -60,6 +55,19 @@
 #     extend ActiveRecord::Scoping::Named::ClassMethods
 #     extend ActiveRecord::RelationMethods
 #     include ActiveRecord::Persistence
+#   end
+#
+#   class Rails
+#     # @return [Rails::Application]
+#     def self.application; end
+#   end
+#   class Rails::Application
+#     # @return [ActionDispatch::Routing::RouteSet]
+#     def routes; end
+#   end
+#   class ActionDispatch::Routing::RouteSet
+#     # @yieldself [ActionDispatch::Routing::Mapper]
+#     def draw; end
 #   end
 
 # @!override ActiveRecord::Batches#find_each
