@@ -171,11 +171,16 @@ module Solargraph
           method = Util.build_public_method(namespace, method, scope: scope, parameters: [], types: [relation_type(model_class)])
           params.each do |name, type|
             decl = :arg
-            if name.start_with?("*")
+            # TODO: maybe I can remove this and go back to letting solargraph parse a comment block
+            # @see https://github.com/castwide/solargraph/pull/601
+            if name.start_with?('**')
+              name = name[2..]
+              decl = :kwrestarg
+            elsif name.start_with?('*')
               name = name[1..]
               decl = :restarg
             end
-            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method)
+            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method, return_type: type)
           end
           pins << method
         end
