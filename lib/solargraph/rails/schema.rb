@@ -19,6 +19,7 @@ module Solargraph
         inet: 'IPAddr',
         citext: 'String',
         binary: 'String',
+        tsvector: 'String',
         timestamp: 'ActiveSupport::TimeWithZone'
       }
 
