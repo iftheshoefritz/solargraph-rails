@@ -164,11 +164,11 @@ module Solargraph
       # @return [Array<Solargraph::Pin::Method>]
       def relation_method_pins(namespace, scope, model_class)
         pins = []
-        finalize_type = -> (template) { template.gsub '$T', model_class }
-        RETURNS_RELATION.each do |method, params|
-          next if OVERLOADED.key(method)
+        finalize_type = ->(template) { template.gsub '$T', model_class }
+        RETURNS_RELATION.each do |method_name, params|
+          next if OVERLOADED.key(method_name)
 
-          method = Util.build_public_method(namespace, method, scope: scope, parameters: [], types: [relation_type(model_class)])
+          method = Util.build_public_method(namespace, method_name, scope: scope, parameters: [], types: [relation_type(model_class)])
           params.each do |name, type|
             decl = :arg
             # TODO: maybe I can remove this and go back to letting solargraph parse a comment block
