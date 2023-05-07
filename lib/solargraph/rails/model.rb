@@ -164,14 +164,14 @@ module Solargraph
       # @return [Array<Solargraph::Pin::Method>]
       def relation_method_pins(namespace, scope, model_class)
         pins = []
-        finalize_type = -> (template) { template.gsub '$T', model_class }
-        RETURNS_RELATION.each do |method, params|
-          next if OVERLOADED.key(method)
+        finalize_type = ->(template) { template.gsub '$T', model_class }
+        RETURNS_RELATION.each do |method_name, params|
+          next if OVERLOADED.key(method_name)
 
           method = Pin::Method.new(
             closure: namespace,
             scope:,
-            name:,
+            name: method_name,
             comments: "@return [#{relation_type(model_class)}]"
           )
           params.each do |name, type|
