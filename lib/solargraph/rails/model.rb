@@ -190,6 +190,7 @@ module Solargraph
               closure: method,
               return_type: type
             )
+            pins << method
           end
         end
 
