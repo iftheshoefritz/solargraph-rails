@@ -66,7 +66,7 @@ RSpec.describe 'Rails 7 API' do
     map =
       use_workspace './spec/rails7' do |root|
         root.write_file 'db/migrate/20130502114652_create_things.rb', <<~EOS
-        class CreateThings < ActiveRecord::Migration[5.2]
+        class CreateThings < ActiveRecord::Migration[7.0]
           def self.up
             crea
           end

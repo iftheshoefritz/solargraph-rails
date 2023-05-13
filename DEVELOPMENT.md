@@ -4,36 +4,20 @@
 
 1. create fork and clone the repo
 2. install gem deps `bundle install`
-3. install dummy rails5 app deps and build its yard cache
-
-    ```
-    $ cd spec/rails5
-    $ bundle install && yard gems
-    $ cd ../../
-    ```
-
-3. install dummy rails6 app deps and build its yard cache
-
-    ```
-    $ cd spec/rails6
-    $ bundle install && yard gems
-    $ cd ../../
-    ```
-
-4. install dummy rails7 app deps and build its yard cache
+3. install dummy Rails app deps and build its yard cache
 
     ```
     $ cd spec/rails7
     $ bundle install && yard gems
     $ cd ../../
     ```
-5. now tests should pass locally and you can try different changes
-6. sumbit PR
+4. now tests should pass locally and you can try different changes
+5. sumbit PR
 
 ## Completion coverage tracking
 
 Solargraph-Rails uses a [set of yaml files](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/definitions) to track coverage of found completions.
-Those yaml files are generated at runtime from a dummy [rails5](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/rails5) or [rails6](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/rails6) app.
+Those yaml files are generated at runtime from a dummy [Rails 7 app](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/rails7).
 
 The main goal is to catch any regressions in case of any change. In case a method completion is marked completed and it is not found in solargraph completions, the tests will fail.
 
@@ -85,7 +69,7 @@ In case a new set of assertion files has to be created (for a new Rails version 
 All you have to do is execute the script and pass it a path to rails app:
 
 ```
-ruby script/generate_definitions.rb spec/rails6
+ruby script/generate_definitions.rb spec/rails7
 ```
 
 Make sure to review the script and uncomment relevant parts
