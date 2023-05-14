@@ -6,5 +6,7 @@ gem 'rails', '~> 7.0.2'
 gem 'sqlite3'
 
 group :development do
+  gem 'rdbg'
   gem 'solargraph', require: false
+  gem 'solargraph-rails', require: false, path: '../..'
 end
