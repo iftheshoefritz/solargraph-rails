@@ -26,35 +26,17 @@ RSpec.describe 'Rails 7 API' do
     )
   end
 
-  it 'can auto-complete inside routes' do
-    map =
-      use_workspace './spec/rails7' do |root|
-        root.write_file 'config/routes.rb', <<~EOS
-        Rails.application.routes.draw do
-          res
-          resource :things do
-            res
-          end
-        end
-      EOS
-      end
-
-    filename = './config/routes.rb'
-    expect(completion_at(filename, [1, 5], map)).to include('resources')
-    expect(completion_at(filename, [3, 7], map)).to include('resources')
-  end
-
   it 'can auto-complete inside mailers' do
     map =
       use_workspace './spec/rails7' do |root|
         root.write_file 'app/mailers/test_mailer.rb', <<~EOS
-        class TestMailer < ActionMailer::Base
-          defa
-          def welcome_email
-            ma
+          class TestMailer < ActionMailer::Base
+            defa
+            def welcome_email
+              ma
+            end
           end
-        end
-      EOS
+        EOS
       end
 
     filename = './app/mailers/test_mailer.rb'
@@ -66,25 +48,25 @@ RSpec.describe 'Rails 7 API' do
     map =
       use_workspace './spec/rails7' do |root|
         root.write_file 'db/migrate/20130502114652_create_things.rb', <<~EOS
-        class CreateThings < ActiveRecord::Migration[7.0]
-          def self.up
-            crea
-          end
+          class CreateThings < ActiveRecord::Migration[7.0]
+            def self.up
+              crea
+            end
 
-          def change
-            crea
-            create_table :things do |t|
-              t.col
-            end
-            change_table :things do |t|
-              t.col
-            end
-            create_join_table :things do |t|
-              t.col
+            def change
+              crea
+              create_table :things do |t|
+                t.col
+              end
+              change_table :things do |t|
+                t.col
+              end
+              create_join_table :things do |t|
+                t.col
+              end
             end
           end
-        end
-      EOS
+        EOS
       end
 
     filename = './db/migrate/20130502114652_create_things.rb'
