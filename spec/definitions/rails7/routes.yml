@@ -1,137 +1,4 @@
 ---
-ActionDispatch::Routing::Mapper.acts_like?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.alias_attribute:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.anonymous?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.as_json:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.attr_internal:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.attr_internal_accessor:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.attr_internal_reader:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.attr_internal_writer:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.blank?:
-  types:
-  - "true"
-  - "false"
-  skip: false
-ActionDispatch::Routing::Mapper.cattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.cattr_reader:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.cattr_writer:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.class_attribute:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.concern:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.concerning:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.deep_dup:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.delegate:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.delegate_missing_to:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.deprecate:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.descendants:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.duplicable?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.gem:
-  types:
-  - undefined
-  skip: true
-ActionDispatch::Routing::Mapper.html_safe?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.in?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.instance_values:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.instance_variable_names:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.mattr_reader:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.mattr_writer:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.method_visibility:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.module_parent:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.module_parent_name:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.module_parents:
-  types:
-  - undefined
-  skip: false
 ActionDispatch::Routing::Mapper.normalize_name:
   types:
   - undefined
@@ -140,108 +7,7 @@ ActionDispatch::Routing::Mapper.normalize_path:
   types:
   - undefined
   skip: false
-ActionDispatch::Routing::Mapper.presence:
-  types:
-  - "Object"
-  skip: false
-ActionDispatch::Routing::Mapper.presence_in:
-  types:
-  - "Object"
-  skip: false
-ActionDispatch::Routing::Mapper.present?:
-  types:
-  - "true"
-  - "false"
-  skip: false
-ActionDispatch::Routing::Mapper.pry:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.rake_extension:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.redefine_method:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.redefine_singleton_method:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.remove_possible_method:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.remove_possible_singleton_method:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.require_dependency:
-  types:
-  - undefined
-  skip: true
-ActionDispatch::Routing::Mapper.silence_redefinition_of_method:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.thread_cattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.thread_cattr_reader:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.thread_cattr_writer:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.thread_mattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.thread_mattr_reader:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.thread_mattr_writer:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.to_json:
-  types:
-  - undefined
-  skip: true
-ActionDispatch::Routing::Mapper.to_param:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.to_query:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.try:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.try!:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper.with_options:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#acts_like?:
-  types:
-  - undefined
-  skip: false
 ActionDispatch::Routing::Mapper#as:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#as_json:
   types:
   - undefined
   skip: false
@@ -250,15 +16,6 @@ ActionDispatch::Routing::Mapper#authenticate:
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper#authenticated:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#blank?:
-  types:
-  - "true"
-  - "false"
-  skip: false
-ActionDispatch::Routing::Mapper#class_eval:
   types:
   - undefined
   skip: false
@@ -283,10 +40,6 @@ ActionDispatch::Routing::Mapper#constraints_for:
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper#controller:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#deep_dup:
   types:
   - undefined
   skip: false
@@ -346,35 +99,11 @@ ActionDispatch::Routing::Mapper#draw:
   types:
   - undefined
   skip: false
-ActionDispatch::Routing::Mapper#duplicable?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#gem:
-  types:
-  - undefined
-  skip: true
 ActionDispatch::Routing::Mapper#get:
   types:
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper#has_named_route?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#html_safe?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#in?:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#instance_values:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -414,32 +143,7 @@ ActionDispatch::Routing::Mapper#post:
   types:
   - undefined
   skip: false
-ActionDispatch::Routing::Mapper#presence:
-  types:
-  - "Object"
-  skip: false
-ActionDispatch::Routing::Mapper#presence_in:
-  types:
-  - "Object"
-  skip: false
-ActionDispatch::Routing::Mapper#present?:
-  types:
-  - "true"
-  - "false"
-  skip: false
-ActionDispatch::Routing::Mapper#pry:
-  types:
-  - undefined
-  skip: false
 ActionDispatch::Routing::Mapper#put:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#raise_no_devise_method_error!:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#raise_no_secret_key:
   types:
   - undefined
   skip: false
@@ -447,10 +151,6 @@ ActionDispatch::Routing::Mapper#redirect:
   types:
   - undefined
   skip: false
-ActionDispatch::Routing::Mapper#require_dependency:
-  types:
-  - undefined
-  skip: true
 ActionDispatch::Routing::Mapper#resolve:
   types:
   - undefined
@@ -487,26 +187,6 @@ ActionDispatch::Routing::Mapper#shallow?:
   types:
   - undefined
   skip: false
-ActionDispatch::Routing::Mapper#to_json:
-  types:
-  - undefined
-  skip: true
-ActionDispatch::Routing::Mapper#to_param:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#to_query:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#try:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#try!:
-  types:
-  - undefined
-  skip: false
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:
   - undefined
@@ -516,10 +196,6 @@ ActionDispatch::Routing::Mapper#with_default_scope:
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper#with_devise_exclusive_scope:
-  types:
-  - undefined
-  skip: false
-ActionDispatch::Routing::Mapper#with_options:
   types:
   - undefined
   skip: false
