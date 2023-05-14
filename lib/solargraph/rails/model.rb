@@ -101,6 +101,7 @@ module Solargraph
         # Uses DelegatedMethod pins (instead of build_public_method) so Solargraph
         # will show the "real" method pin for type inference, probing, docs etc.
         source_map.pins.each do |pin|
+          next unless Delegate.supported?
           next unless pin.is_a?(Solargraph::Pin::Method) && pin.scope == :class && pin.closure == ns
 
           pins << Solargraph::Pin::DelegatedMethod.new(closure: relation, scope: :instance, method: pin)
