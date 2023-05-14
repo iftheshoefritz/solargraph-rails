@@ -23,20 +23,33 @@ jobs:
         solargraph-version:
           - "0.48.0"
           - "0.49.0"
+        rails-version:
+          - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
-      - name: Cache RVM
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+      - uses: ruby/setup-ruby@v1
+        with:
+          working-directory: spec/rails${{ matrix.rails-version }}
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+
+      - name: Cache yardoc
         uses: actions/cache@v3
         id: rvm
         with:
-          key: ${{ runner.os }}-rvm-${{ matrix.ruby-version }}
+          key: ${{ runner.os }}-yard-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
           path: |
-            /home/runner/.rvm
             /home/runner/.yardoc
-            #/usr/local/rvm/
-      #- name: Setup upterm session
-      #  uses: lhotari/action-upterm@v1
-      - name: Test
-        run: "/bin/bash ./ci.sh ${{ matrix.ruby-version }} ${{ matrix.solargraph-version}}"
+
+      - name: Generate YARD docs
+        run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
+
+      - name: RSpec
+        run: bundle exec rspec spec/solargraph-rails
+
