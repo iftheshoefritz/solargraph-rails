@@ -220,7 +220,6 @@ Time.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -231,7 +230,6 @@ Time.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -642,7 +640,7 @@ Time#eql?:
   skip: false
 Time#eql_with_coercion:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#formatted_offset:
   types:
@@ -808,7 +806,6 @@ Time#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -819,7 +816,6 @@ Time#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2

@@ -80,7 +80,7 @@ module Helpers
           if update
             if effective_type == ['undefined']
               add_to_skip(data)
-            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject')
+            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject') || specified_type.include?('Object')
               # sounds like a better type
               data['types'] = effective_type
             elsif !skip

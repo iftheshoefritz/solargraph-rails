@@ -246,7 +246,6 @@ DateTime.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -257,7 +256,6 @@ DateTime.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -490,7 +488,6 @@ DateTime#as_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 DateTime#at_beginning_of_day:
   types:
   - undefined
@@ -1077,7 +1074,6 @@ DateTime#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1088,7 +1084,6 @@ DateTime#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1160,7 +1155,7 @@ DateTime#prev_weekday:
   - 0.54.6.alpha
 DateTime#readable_inspect:
   types:
-  - undefined
+  - String
   skip: false
 DateTime#seconds_since_midnight:
   types:

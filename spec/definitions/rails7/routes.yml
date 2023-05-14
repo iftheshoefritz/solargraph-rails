@@ -185,7 +185,6 @@ ActionDispatch::Routing::Mapper.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -196,7 +195,6 @@ ActionDispatch::Routing::Mapper.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -518,7 +516,6 @@ ActionDispatch::Routing::Mapper#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -529,7 +526,6 @@ ActionDispatch::Routing::Mapper#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
