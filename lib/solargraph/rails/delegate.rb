@@ -5,7 +5,12 @@ module Solargraph
         @instance ||= self.new
       end
 
+      def self.supported?
+        Solargraph::Pin.const_defined?(:DelegatedMethod)
+      end
+
       def process(source_map, ns)
+        return [] unless self.class.supported?
         return [] unless source_map.code.include?('delegate')
 
         walker = Walker.from_source(source_map.source)
