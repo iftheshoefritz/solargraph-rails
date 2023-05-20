@@ -38,7 +38,7 @@ RSpec.describe Solargraph::Rails::Schema do
   end
 
   it "generates methods based on schema" do
-    map = use_workspace "./spec/rails5" do |root|
+    map = use_workspace "./spec/rails7" do |root|
       root.write_file 'db/schema.rb', schema
 
       root.write_file 'app/models/account.rb', <<-RUBY
@@ -73,7 +73,7 @@ RSpec.describe Solargraph::Rails::Schema do
   end
 
   it 'infers prefixed table name' do
-    map = use_workspace "./spec/rails5" do |root|
+    map = use_workspace "./spec/rails7" do |root|
       root.write_file 'db/schema.rb', <<-RUBY
         ActiveRecord::Schema.define(version: 2021_10_20_084658) do
           create_table "accounting_invoices", force: :cascade do |t|
@@ -92,7 +92,7 @@ RSpec.describe Solargraph::Rails::Schema do
   end
 
   it 'falls back unprefixed tables even if model is namespaced' do
-    map = use_workspace "./spec/rails5" do |root|
+    map = use_workspace "./spec/rails7" do |root|
       root.write_file 'db/schema.rb', <<-RUBY
         ActiveRecord::Schema.define(version: 2021_10_20_084658) do
           create_table "invoices", force: :cascade do |t|
