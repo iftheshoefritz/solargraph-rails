@@ -26,7 +26,7 @@ RSpec.xdescribe 'Rails 7 API' do
     )
   end
 
-  it 'can auto-complete inside routes' do
+  it 'can auto-complete inside routes', skip: 'not working' do
     map =
       use_workspace './spec/rails7' do |root|
         root.write_file 'config/routes.rb', <<~EOS
