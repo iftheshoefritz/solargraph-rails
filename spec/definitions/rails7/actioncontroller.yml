@@ -577,10 +577,6 @@ ActionController::Base.protect_from_forgery:
   types:
   - undefined
   skip: false
-ActionController::Base.pry:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.raise_on_open_redirects:
   types:
   - undefined
@@ -589,10 +585,6 @@ ActionController::Base.raise_on_open_redirects=:
   types:
   - undefined
   skip: true
-ActionController::Base.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.redefine_method:
   types:
   - undefined
@@ -1392,10 +1384,6 @@ ActionController::Base#present?:
   - 'false'
   skip: false
 ActionController::Base#process:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#pry:
   types:
   - undefined
   skip: false

@@ -1613,10 +1613,6 @@ ActiveRecord::Base.protected_environments=:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.pry:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.queues:
   types:
   - undefined
@@ -1630,10 +1626,6 @@ ActiveRecord::Base.quoted_primary_key:
   - undefined
   skip: true
 ActiveRecord::Base.quoted_table_name:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.rake_extension:
   types:
   - undefined
   skip: false
@@ -2969,10 +2961,6 @@ ActiveRecord::Base#primary_key_prefix_type?:
   types:
   - undefined
   skip: true
-ActiveRecord::Base#pry:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base#query_attribute:
   types:
   - undefined
