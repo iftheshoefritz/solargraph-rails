@@ -40,17 +40,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby }}
+          ruby-version: "${{ matrix.ruby-version }}"
           bundler-cache: true
           bundler: latest
           cache-version: 2
-      - uses: ruby/setup-ruby@v1
-        with:
-          working-directory: spec/rails${{ matrix.rails-version }}
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
 
       - name: cache gem annotations
         uses: actions/cache@v3
@@ -62,16 +58,6 @@ jobs:
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
 
-      - name: Cache yardoc
-        uses: actions/cache@v3
-        id: yardoc
-        with:
-          key: ${{ runner.os }}-yard-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
-          path: |
-            /home/runner/.yardoc
-
-      - name: Generate YARD docs
-        run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
-
       - name: RSpec
-        run: bundle exec rspec spec/solargraph-rails
+        run: |
+          bundle exec rspec spec/solargraph-rails
