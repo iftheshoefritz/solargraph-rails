@@ -53,7 +53,7 @@ Time.zone_default=:
   skip: false
 Time#+:
   types:
-  - Time
+  - undefined
   skip: false
 Time#-:
   types:
@@ -442,7 +442,7 @@ Time#to_fs:
   skip: false
 Time#to_time:
   types:
-  - Time
+  - undefined
   skip: false
 Time#today?:
   types:

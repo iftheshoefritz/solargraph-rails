@@ -26,11 +26,6 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-      - uses: ruby/setup-ruby@v1
-        with:
-          working-directory: spec/rails${{ matrix.rails-version }}
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
       - name: RSpec
         run: bundle exec rspec spec/solargraph-rails
 
