@@ -13,7 +13,7 @@ instance_eval File.read("spec/rails#{rails_version}/Gemfile")
 
 group :development, :test do
   gem 'bundler-audit'
-  gem 'byebug'
+  gem 'debug'
 end
 
 # Specify your gem's dependencies in solargraph_rails.gemspec
