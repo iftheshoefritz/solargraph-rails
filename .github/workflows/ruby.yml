@@ -29,7 +29,7 @@ jobs:
 #          - "0.52.0"
         rails-version:
           - "7"
-      fail-fast: false
+      fail-fast: true
 
     steps:
       - uses: actions/checkout@v2
