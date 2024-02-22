@@ -25,12 +25,11 @@ module Helpers
 
     skipped = 0
     typed = 0
-    errors = []
+    incorrect = []
+    missing = []
 
     definitions.each do |meth, data|
-      unless meth.start_with?('.') || meth.start_with?('#')
-        meth = meth.gsub(class_name, '')
-      end
+      meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
 
       pin =
         if meth.start_with?('.')
@@ -49,7 +48,16 @@ module Helpers
           Consider setting skip=false
         STR
       elsif pin
-        assert_entry_valid(pin, data, update: update)
+        effective_type = pin.return_type.map(&:tag)
+        specified_type = data['types']
+
+        if effective_type != specified_type
+          if update
+            data['types'] = effective_type
+          else
+            incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+          end
+        end
         data['skip'] = false if update
       elsif update
         skipped += 1
@@ -57,20 +65,25 @@ module Helpers
       elsif data['skip']
         next
       else
-        errors << meth
+        missing << meth
       end
     end
 
-    if errors.any?
+    if missing.any?
       raise <<~STR
         The following methods could not be found despite being listed in #{definition_name}.yml:
-        #{errors}
+        #{missing}
       STR
     end
 
-    if update
-      File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml)
+    if incorrect.any?
+      raise <<~STR
+        The return types of these methods did not match #{definition_name}.yml:
+          #{incorrect.join("\n  ")}
+      STR
     end
+
+    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     total = definitions.keys.size
 
@@ -90,19 +103,6 @@ module Helpers
 
   def percent(a, b)
     ((a.to_f / b) * 100).round(1)
-  end
-
-  def assert_entry_valid(pin, data, update: false)
-    effective_type = pin.return_type.map(&:tag)
-    specified_type = data['types']
-
-    if effective_type != specified_type
-      if update
-        data['types'] = effective_type
-      else
-        raise "#{pin.path} return type is wrong. Expected #{specified_type}, got: #{effective_type}"
-      end
-    end
   end
 
   class Injector

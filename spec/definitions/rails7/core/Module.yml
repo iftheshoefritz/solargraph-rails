@@ -1,377 +1,421 @@
 ---
-Date.beginning_of_week:
+Module.acts_like?:
   types:
   - undefined
   skip: false
-Date.beginning_of_week=:
+Module.alias_attribute:
   types:
   - undefined
   skip: false
-Date.beginning_of_week_default:
+Module.anonymous?:
   types:
   - undefined
   skip: false
-Date.beginning_of_week_default=:
+Module.as_json:
   types:
   - undefined
   skip: false
-Date.current:
+Module.attr_internal:
   types:
   - undefined
   skip: false
-Date.find_beginning_of_week!:
+Module.attr_internal_accessor:
   types:
   - undefined
   skip: false
-Date.tomorrow:
+Module.attr_internal_naming_format:
   types:
   - undefined
   skip: false
-Date.yesterday:
+Module.attr_internal_naming_format=:
   types:
   - undefined
   skip: false
-Date#acts_like_date?:
+Module.attr_internal_reader:
   types:
   - undefined
   skip: false
-Date#advance:
+Module.attr_internal_writer:
   types:
   - undefined
   skip: false
-Date#after?:
+Module.blank?:
   types:
-  - undefined
-  skip: false
-Date#ago:
-  types:
-  - undefined
-  skip: false
-Date#all_day:
-  types:
-  - undefined
-  skip: false
-Date#all_month:
-  types:
-  - undefined
-  skip: false
-Date#all_quarter:
-  types:
-  - undefined
-  skip: false
-Date#all_week:
-  types:
-  - undefined
-  skip: false
-Date#all_year:
-  types:
-  - undefined
-  skip: false
-Date#at_beginning_of_day:
-  types:
-  - undefined
-  skip: false
-Date#at_beginning_of_month:
-  types:
-  - undefined
-  skip: false
-Date#at_beginning_of_quarter:
-  types:
-  - undefined
-  skip: false
-Date#at_beginning_of_week:
-  types:
-  - undefined
-  skip: false
-Date#at_beginning_of_year:
-  types:
-  - undefined
-  skip: false
-Date#at_end_of_day:
-  types:
-  - undefined
-  skip: false
-Date#at_end_of_month:
-  types:
-  - undefined
-  skip: false
-Date#at_end_of_quarter:
-  types:
-  - undefined
-  skip: false
-Date#at_end_of_week:
-  types:
-  - undefined
-  skip: false
-Date#at_end_of_year:
-  types:
-  - undefined
+  - 'true'
+  - 'false'
   skip: false
-Date#at_midday:
+Module.cattr_accessor:
   types:
   - undefined
   skip: false
-Date#at_middle_of_day:
+Module.cattr_reader:
   types:
   - undefined
   skip: false
-Date#at_midnight:
+Module.cattr_writer:
   types:
   - undefined
   skip: false
-Date#at_noon:
+Module.class_attribute:
   types:
   - undefined
   skip: false
-Date#before?:
+Module.concern:
   types:
   - undefined
   skip: false
-Date#beginning_of_day:
+Module.concerning:
   types:
   - undefined
   skip: false
-Date#beginning_of_month:
+Module.deep_dup:
   types:
   - undefined
   skip: false
-Date#beginning_of_quarter:
+Module.delegate:
   types:
   - undefined
   skip: false
-Date#beginning_of_week:
+Module.delegate_missing_to:
   types:
   - undefined
   skip: false
-Date#beginning_of_year:
+Module.deprecate:
   types:
   - undefined
   skip: false
-Date#compare_with_coercion:
+Module.descendants:
   types:
   - undefined
   skip: false
-Date#days_ago:
+Module.duplicable?:
   types:
   - undefined
   skip: false
-Date#days_since:
+Module.html_safe?:
   types:
   - undefined
   skip: false
-Date#days_to_week_start:
+Module.in?:
   types:
   - undefined
   skip: false
-Date#end_of_day:
+Module.instance_values:
   types:
   - undefined
   skip: false
-Date#end_of_month:
+Module.instance_variable_names:
   types:
   - undefined
   skip: false
-Date#end_of_quarter:
+Module.mattr_accessor:
   types:
   - undefined
   skip: false
-Date#end_of_week:
+Module.mattr_reader:
   types:
   - undefined
   skip: false
-Date#end_of_year:
+Module.mattr_writer:
   types:
   - undefined
   skip: false
-Date#future?:
+Module.method_visibility:
   types:
   - undefined
   skip: false
-Date#in_time_zone:
+Module.module_parent:
   types:
   - undefined
   skip: false
-Date#last_month:
+Module.module_parent_name:
   types:
   - undefined
   skip: false
-Date#last_quarter:
+Module.module_parents:
   types:
   - undefined
   skip: false
-Date#last_week:
+Module.presence:
   types:
-  - undefined
-  skip: false
-Date#last_weekday:
-  types:
-  - undefined
-  skip: false
-Date#last_year:
-  types:
-  - undefined
-  skip: false
-Date#midday:
-  types:
-  - undefined
-  skip: false
-Date#middle_of_day:
-  types:
-  - undefined
-  skip: false
-Date#midnight:
-  types:
-  - undefined
-  skip: false
-Date#minus_with_duration:
-  types:
-  - undefined
-  skip: false
-Date#monday:
-  types:
-  - undefined
-  skip: false
-Date#months_ago:
-  types:
-  - undefined
-  skip: false
-Date#months_since:
-  types:
-  - undefined
-  skip: false
-Date#next_day?:
-  types:
-  - Boolean
-  skip: false
-Date#next_occurring:
-  types:
-  - undefined
-  skip: false
-Date#next_quarter:
-  types:
-  - undefined
+  - Object
   skip: false
-Date#next_week:
+Module.presence_in:
   types:
-  - undefined
-  skip: false
-Date#next_weekday:
-  types:
-  - undefined
-  skip: false
-Date#noon:
-  types:
-  - undefined
-  skip: false
-Date#on_weekday?:
-  types:
-  - undefined
+  - Object
   skip: false
-Date#on_weekend?:
+Module.present?:
   types:
-  - undefined
+  - 'true'
+  - 'false'
   skip: false
-Date#past?:
+Module.redefine_method:
   types:
   - undefined
   skip: false
-Date#plus_with_duration:
+Module.redefine_singleton_method:
   types:
   - undefined
-  skip: false
-Date#prev_day?:
-  types:
-  - Boolean
   skip: false
-Date#prev_occurring:
+Module.remove_possible_method:
   types:
   - undefined
   skip: false
-Date#prev_quarter:
+Module.remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Date#prev_week:
+Module.silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-Date#prev_weekday:
+Module.thread_cattr_accessor:
   types:
   - undefined
   skip: false
-Date#readable_inspect:
+Module.thread_cattr_reader:
   types:
   - undefined
   skip: false
-Date#since:
+Module.thread_cattr_writer:
   types:
   - undefined
   skip: false
-Date#sunday:
+Module.thread_mattr_accessor:
   types:
   - undefined
   skip: false
-Date#to_formatted_s:
+Module.thread_mattr_reader:
   types:
   - undefined
   skip: false
-Date#to_fs:
+Module.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Date#to_json:
+Module.to_json:
   types:
   - undefined
   skip: true
-Date#to_param:
+Module.to_param:
   types:
   - undefined
   skip: false
-Date#to_query:
+Module.to_query:
   types:
   - undefined
   skip: false
-Date#to_time:
+Module.try:
   types:
   - undefined
   skip: false
-Date#today?:
+Module.try!:
   types:
   - undefined
   skip: false
-Date#tomorrow:
+Module.with_options:
   types:
   - undefined
   skip: false
-Date#tomorrow?:
+Module#acts_like?:
   types:
   - undefined
   skip: false
-Date#weeks_ago:
+Module#alias_attribute:
   types:
   - undefined
   skip: false
-Date#weeks_since:
+Module#anonymous?:
   types:
   - undefined
   skip: false
-Date#xmlschema:
+Module#as_json:
   types:
   - undefined
   skip: false
-Date#years_ago:
+Module#attr_internal:
   types:
   - undefined
   skip: false
-Date#years_since:
+Module#attr_internal_accessor:
   types:
   - undefined
   skip: false
-Date#yesterday:
+Module#attr_internal_reader:
   types:
   - undefined
   skip: false
-Date#yesterday?:
+Module#attr_internal_writer:
+  types:
+  - undefined
+  skip: false
+Module#blank?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Module#cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Module#cattr_reader:
+  types:
+  - undefined
+  skip: false
+Module#cattr_writer:
+  types:
+  - undefined
+  skip: false
+Module#concern:
+  types:
+  - undefined
+  skip: false
+Module#concerning:
+  types:
+  - undefined
+  skip: false
+Module#deep_dup:
+  types:
+  - undefined
+  skip: false
+Module#delegate:
+  types:
+  - undefined
+  skip: false
+Module#delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Module#deprecate:
+  types:
+  - undefined
+  skip: false
+Module#duplicable?:
+  types:
+  - undefined
+  skip: false
+Module#html_safe?:
+  types:
+  - undefined
+  skip: false
+Module#in?:
+  types:
+  - undefined
+  skip: false
+Module#instance_values:
+  types:
+  - undefined
+  skip: false
+Module#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Module#mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Module#mattr_reader:
+  types:
+  - undefined
+  skip: false
+Module#mattr_writer:
+  types:
+  - undefined
+  skip: false
+Module#method_visibility:
+  types:
+  - undefined
+  skip: false
+Module#module_parent:
+  types:
+  - undefined
+  skip: false
+Module#module_parent_name:
+  types:
+  - undefined
+  skip: false
+Module#module_parents:
+  types:
+  - undefined
+  skip: false
+Module#presence:
+  types:
+  - Object
+  skip: false
+Module#presence_in:
+  types:
+  - Object
+  skip: false
+Module#present?:
+  types:
+  - 'true'
+  - 'false'
+  skip: false
+Module#redefine_method:
+  types:
+  - undefined
+  skip: false
+Module#redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Module#remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Module#remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Module#silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Module#thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Module#thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Module#thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Module#thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Module#thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Module#thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Module#to_json:
+  types:
+  - undefined
+  skip: true
+Module#to_param:
+  types:
+  - undefined
+  skip: false
+Module#to_query:
+  types:
+  - undefined
+  skip: false
+Module#try:
+  types:
+  - undefined
+  skip: false
+Module#try!:
+  types:
+  - undefined
+  skip: false
+Module#with_options:
   types:
   - undefined
   skip: false
