@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::Annotate do
+  before { Solargraph::Rails::Annotate.reset }
+
   let(:api_map) { Solargraph::ApiMap.new }
 
-  it 'auto completes implicit nested classes' do
+  it "reads `annotate' comments" do
     load_string 'app/models/my_model.rb',
                 <<~RUBY
       #  id                        :integer          not null, primary key

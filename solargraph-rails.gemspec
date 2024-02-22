@@ -2,6 +2,9 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'solargraph/rails/version'
 
+
+solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION']) || ">= 0.48.0"
+
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
   spec.version = Solargraph::Rails::VERSION
@@ -27,6 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
 
-  spec.add_runtime_dependency 'solargraph'
+  spec.add_runtime_dependency 'solargraph', solargraph_version
   spec.add_runtime_dependency 'activesupport'
 end
