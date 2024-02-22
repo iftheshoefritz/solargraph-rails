@@ -1,4 +1,0 @@
-development:
-  adapter: sqlite3
-  pool: 5
-  database: db/dev.sqlite3

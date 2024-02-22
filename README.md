@@ -74,12 +74,10 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ifthes
 3. install dummy rails app deps and build the yard cache:
 
 ```
-$ cd spec/rails5
+$ cd spec/rails7
 $ bundle install && yard gems
 $ cd ../../
 ```
-
-(and the same for rails 6 and rails 7)
 
 4. now tests should pass locally and you can try different changes
 
