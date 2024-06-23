@@ -1,10 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 7.0.2'
+plugin 'auto_yard', path: '../auto_yard'
+
 gem 'devise'
 gem 'pry-rails'
+gem 'rails', '~> 7.0.4'
 gem 'sqlite3'
 
 group :development do
-  gem 'solargraph'
+  gem 'rdbg'
+  gem 'solargraph', require: false
+  gem 'solargraph-rails', require: false, path: '../..'
 end

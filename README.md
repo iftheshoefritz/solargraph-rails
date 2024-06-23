@@ -1,32 +1,34 @@
 # Solargraph::Rails - Help solargraph with Rails
 
 ## Models
-Given a typical Rails model like this:
+Consider pair of typical Rails models like this:
+
+```sh
+rails g model Author lastname:string firstnames:string
+rails g model Book title:string isbn:string author:belongs_to
+```
 
 ```ruby
-# == Schema Information
-#
-# Table name: my_books
-#
-#  id         :integer          not null, primary key
-#  author     :string
-#  name       :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#
-class MyBook < ApplicationRecord
-  def my_method
-    "hello"
+class Author < ApplicationRecord
+  has_many :books
+
+  def sortable_name
+    "#{lastname}, #{firstnames}"
   end
+end
 
-  ...
+class Book < ApplicationRecord
+  belongs_to :book
 
+  def label
+    [author.sortable_name, title, isbn].join("\n")
+  end
 end
 ```
 
-The various Ruby intellisense tools are ok at knowing that there is a `MyBook` constant, and some (including Solargraph) are aware that objects like `MyBook.new` have a method `.my_method`. But what about those magical dynamic attributes that ActiveRecord creates when Rails starts up? You can see these listed at the top of the file under `# == Schema Information`, the comments helpfully added by the Annotate gem.
+The various Ruby intellisense tools are ok at knowing that there are `Book` and `Author` constants, and some (including Solargraph) are aware that objects like `Book.new` have a `.label` method. But what about those "magical" dynamic methods that ActiveRecord creates like `.title`, or `.author`?
 
-Since these attributes are only created at runtime, static analysis alone can't identify them. Your editor has no idea that these attributes exist, but they're amongst the most common things that you will work with in any Rails app.
+Since these attributes are only created at runtime, a simple static analysis of the `Book` class alone can't identify them. Your editor has no idea that these attributes exist, but they're amongst the most common things that you will work with in any Rails app.
 
 That's where this plugin for Solargraph comes in: it parses the database schema and YARD docs of various gems to give Solargraph some extra hints. For instance database attributes:
 
@@ -74,12 +76,10 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ifthes
 3. install dummy rails app deps and build the yard cache:
 
 ```
-$ cd spec/rails5
+$ cd spec/rails7
 $ bundle install && yard gems
 $ cd ../../
 ```
-
-(and the same for rails 6 and rails 7)
 
 4. now tests should pass locally and you can try different changes
 
