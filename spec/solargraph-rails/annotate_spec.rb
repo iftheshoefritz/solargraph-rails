@@ -25,6 +25,8 @@ RSpec.describe Solargraph::Rails::Annotate do
     end
 
     assert_public_instance_method(api_map, 'MyModel#start_date', ['Date'])
+    assert_public_instance_method(api_map, 'MyModel#start_date=', ['Date'],
+                                  args: { value: 'Date' })
     assert_public_instance_method(
       api_map,
       'MyModel#living_expenses',

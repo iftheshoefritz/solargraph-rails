@@ -132,11 +132,19 @@ module Helpers
     map
   end
 
-  def assert_public_instance_method(map, query, return_type, &block)
+  def assert_public_instance_method(map, query, return_type, args: {}, &block)
     pin = find_pin(query, map)
     expect(pin).to_not be_nil
     expect(pin.scope).to eq(:instance)
     expect(pin.return_type.map(&:tag)).to eq(return_type)
+    args.each_pair do |name, type|
+      expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil
+      expect(parameter.return_type.tag).to eq(type)
+    end
+    pin.parameters.each do |param|
+      expect(args).to have_key(param.name.to_sym)
+      expect(param.return_type.tag).to eq(args[param.name.to_sym])
+    end
 
     yield pin if block_given?
   end
