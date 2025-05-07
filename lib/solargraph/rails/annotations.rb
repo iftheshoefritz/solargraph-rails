@@ -2,9 +2,14 @@
 # Rails apps. Since they're all in YARD, they get mapped in Solargraph but
 # ignored at runtime.
 #
-# You can put this file anywhere in the project, as long as it gets included in
-# the workspace maps. It's recommended that you keep it in a standalone file
-# instead of pasting it into an existing one.
+# This file is automatically included in the Solargraph workspace when
+# solargrph-rails is configured as a plugin.
+#
+# To make additions, you can add a similar file anywhere in your
+# project, as long as it gets included in the workspace maps. It's
+# recommended that you keep it in a standalone file instead of pasting
+# it into an existing one.  If your additions are generally useful,
+# please contribute it back via PR to the solargraph-rails project.
 #
 # @!parse
 #   class ActionController::Base
