@@ -1,4 +1,5 @@
 require 'solargraph'
+require 'active_support'
 require 'active_support/core_ext/string/inflections'
 
 require_relative 'solargraph/rails/util'

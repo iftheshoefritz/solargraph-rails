@@ -96,7 +96,7 @@ module Solargraph
 
       def infer_table_names(ns)
         table_name = ns.name.tableize
-        if ns.namespace.present?
+        if ns.namespace && !ns.namespace.empty?
           [ns.path.tableize.tr('/', '_'), table_name]
         else
           [table_name]

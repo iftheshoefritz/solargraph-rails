@@ -83,7 +83,7 @@ $ cd ../../
 
 4. now tests should pass locally and you can try different changes
 
-5. sumbit PR
+5. submit PR
 
 ## License
 
