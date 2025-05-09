@@ -125,7 +125,7 @@ module Helpers
 
     Dir.chdir folder do
       yield injector if block_given?
-      map = Solargraph::ApiMap.load('./')
+      map = Solargraph::ApiMap.load_with_cache('./', STDERR)
       injector.files.each { |f| File.delete(f) }
     end
 
