@@ -397,7 +397,7 @@ Hash#slice!:
   skip: false
 Hash#sole:
   types:
-  - "::Hash{::String => generic<V>}"
+  - undefined
   skip: false
 Hash#stringify_keys:
   types:
