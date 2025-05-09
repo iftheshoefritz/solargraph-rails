@@ -626,8 +626,10 @@ Date#to_s:
   - "::String"
   skip: false
 Date#to_time:
+  # the activesupport core_ext definition shadows the core rbs
+  # definition; it should be updated with a better return type
   types:
-  - "::Time"
+  - "undefined"
   skip: false
 Date#today?:
   types:
@@ -663,7 +665,7 @@ Date#with_options:
   skip: false
 Date#xmlschema:
   types:
-  - "::String"
+  - undefined
   skip: false
 Date#years_ago:
   types:

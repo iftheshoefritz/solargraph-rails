@@ -914,8 +914,12 @@ ActionController::Base#authenticate_with_http_digest:
   - undefined
   skip: false
 ActionController::Base#authenticate_with_http_token:
+  # Awaiting either better definition in RBS (this should return a
+  # generic based on the block passed in) or an understanding of
+  # boolish type from solargraph
   types:
-  - boolish
+#  - boolish
+  - undefined
   skip: false
 ActionController::Base#available_action?:
   types:
