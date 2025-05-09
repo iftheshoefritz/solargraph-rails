@@ -17,7 +17,7 @@ String.as_json:
   skip: false
 String.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 String.attr_internal_accessor:
   types:

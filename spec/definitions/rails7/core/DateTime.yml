@@ -87,9 +87,21 @@ DateTime.deep_dup:
   types:
   - undefined
   skip: false
-DateTime.delegate:
+DateTime.find_beginning_of_week!:
   types:
   - undefined
+  skip: false
+DateTime.tomorrow:
+  types:
+  - undefined
+  skip: false
+DateTime#acts_like_date?:
+  types:
+  - 'true'
+  skip: false
+DateTime.delegate:
+  types:
+  - 'true'
   skip: false
 DateTime.delegate_missing_to:
   types:

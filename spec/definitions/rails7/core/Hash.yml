@@ -355,7 +355,7 @@ Hash#minimum:
   skip: false
 Hash#nested_under_indifferent_access:
   types:
-  - undefined
+  - "::ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>"
   skip: false
 Hash#pick:
   types:
@@ -397,7 +397,7 @@ Hash#slice!:
   skip: false
 Hash#sole:
   types:
-  - undefined
+  - "::Hash{::String => generic<V>}"
   skip: false
 Hash#stringify_keys:
   types:
@@ -428,7 +428,7 @@ Hash#to_json:
   skip: true
 Hash#to_options:
   types:
-  - undefined
+  - "::Hash{::Symbol => generic<V>}"
   skip: false
 Hash#to_options!:
   types:

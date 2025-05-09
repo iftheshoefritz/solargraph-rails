@@ -29,7 +29,7 @@ Time.at_with_coercion:
   skip: false
 Time.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Time.attr_internal_accessor:
   types:
@@ -574,7 +574,7 @@ Time#minus_with_duration:
   skip: false
 Time#minus_without_coercion:
   types:
-  - undefined
+  - self
   skip: false
 Time#monday:
   types:

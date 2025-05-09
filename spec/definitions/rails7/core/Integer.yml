@@ -235,7 +235,7 @@ Integer#class_eval:
   skip: false
 Integer#day:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#days:
   types:
@@ -319,7 +319,7 @@ Integer#megabytes:
   skip: false
 Integer#minute:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#minutes:
   types:

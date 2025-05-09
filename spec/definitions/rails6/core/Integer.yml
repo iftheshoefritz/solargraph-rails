@@ -1,7 +1,7 @@
 ---
 Integer.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Integer.alias_attribute:
   skip: false
 Integer.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer.as_json:
   types:
@@ -17,24 +17,23 @@ Integer.as_json:
   skip: false
 Integer.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Integer.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Integer.attr_internal_reader:
   types:
-  - undefined
+  - "::String"
   skip: false
 Integer.attr_internal_writer:
   types:
-  - undefined
+  - "::String"
   skip: false
 Integer.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Integer.cattr_accessor:
   types:
@@ -82,15 +81,15 @@ Integer.descendants:
   skip: false
 Integer.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Integer.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Integer.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer.instance_values:
   types:
@@ -130,16 +129,17 @@ Integer.module_parents:
   skip: false
 Integer.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Integer.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Integer.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Integer.redefine_method:
   types:
@@ -199,7 +199,7 @@ Integer.to_param:
   skip: false
 Integer.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Integer.try:
   types:
@@ -215,7 +215,7 @@ Integer.with_options:
   skip: false
 Integer#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer#as_json:
   types:
@@ -227,7 +227,7 @@ Integer#blank?:
   skip: false
 Integer#byte:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer#bytes:
   types:
@@ -235,19 +235,19 @@ Integer#bytes:
   skip: false
 Integer#class_eval:
   types:
-  - undefined
+  - void
   skip: false
 Integer#day:
   types:
-  - undefined
+  - void
   skip: false
 Integer#days:
   types:
-  - undefined
+  - void
   skip: false
 Integer#deep_dup:
   types:
-  - undefined
+  - void
   skip: false
 Integer#duplicable?:
   types:
@@ -367,8 +367,7 @@ Integer#presence_in:
   skip: false
 Integer#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Integer#second:
   types:
@@ -396,7 +395,7 @@ Integer#to_param:
   skip: false
 Integer#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Integer#to_s:
   types:
