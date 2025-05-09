@@ -48,7 +48,7 @@ module Helpers
           Consider setting skip=false
         STR
       elsif pin
-        effective_type = pin.return_type.map(&:tag)
+        effective_type = pin.typify(map).items.map(&:rooted_tag).sort.uniq
         specified_type = data['types']
 
         if effective_type != specified_type
