@@ -7,7 +7,6 @@ source 'https://rubygems.org'
 #
 # So if we just install the rails deps at the same time, we have a single cache and a single
 # directory for gems.
-plugin 'auto_yard', path: './ci/auto_yard'
 rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
 instance_eval File.read("spec/rails#{rails_version}/Gemfile")
 
