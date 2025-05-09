@@ -101,7 +101,7 @@ DateTime#acts_like_date?:
   skip: false
 DateTime.delegate:
   types:
-  - 'true'
+  - undefined
   skip: false
 DateTime.delegate_missing_to:
   types:
