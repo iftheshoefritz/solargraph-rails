@@ -60,8 +60,8 @@ module Solargraph
         )
       end
 
-      def self.method_return(path, type)
-        Solargraph::Pin::Reference::Override.method_return(path, type)
+      def self.method_return(path, *types)
+        Solargraph::Pin::Reference::Override.method_return(path, *types)
       end
     end
   end

@@ -21,7 +21,7 @@ module Solargraph
             .load_file(File.dirname(__FILE__) + '/types.yml')
             .map do |meth, data|
               if data['return']
-                Util.method_return(meth, data['return'])
+                Util.method_return(meth, *data['return'])
               elsif data['yieldself']
                 Solargraph::Pin::Reference::Override.from_comment(
                   meth,
