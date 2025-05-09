@@ -17,7 +17,7 @@ DateTime.as_json:
   skip: false
 DateTime.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 DateTime.attr_internal_accessor:
   types:
@@ -118,10 +118,6 @@ DateTime.descendants:
 DateTime.duplicable?:
   types:
   - 'true'
-  skip: false
-DateTime.find_beginning_of_week!:
-  types:
-  - undefined
   skip: false
 DateTime.html_safe?:
   types:
@@ -237,10 +233,6 @@ DateTime.to_query:
   types:
   - "::String"
   skip: false
-DateTime.tomorrow:
-  types:
-  - undefined
-  skip: false
 DateTime.try:
   types:
   - undefined
@@ -259,7 +251,7 @@ DateTime.yesterday:
   skip: false
 DateTime#+:
   types:
-  - "::Date"
+  - self
   skip: false
 DateTime#-:
   types:

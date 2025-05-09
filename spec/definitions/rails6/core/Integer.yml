@@ -217,10 +217,6 @@ Integer#acts_like?:
   types:
   - "::Boolean"
   skip: false
-Integer#as_json:
-  types:
-  - undefined
-  skip: false
 Integer#blank?:
   types:
   - 'false'

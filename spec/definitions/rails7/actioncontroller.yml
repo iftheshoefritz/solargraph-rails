@@ -1499,10 +1499,6 @@ ActionController::Base#request_http_token_authentication:
   types:
   - void
   skip: false
-ActionController::Base#require_dependency:
-  types:
-  - undefined
-  skip: false
 ActionController::Base#rescue_handlers:
   types:
   - undefined

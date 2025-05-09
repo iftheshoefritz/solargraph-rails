@@ -1401,7 +1401,7 @@ ActiveRecord::Base.maintain_test_schema=:
 ActiveRecord::Base.many?:
   types:
   - "::Boolean"
-  skip: true
+  skip: false
 ActiveRecord::Base.mattr_accessor:
   types:
   - undefined
