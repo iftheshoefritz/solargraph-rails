@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'rails', '~> 7.1.0'
 gem 'devise'
-gem 'rails', '~> 7.0.4'
 gem 'sqlite3'
+
+group :development do
+  gem 'solargraph', path: '/Users/broz/src/solargraph'
+end
