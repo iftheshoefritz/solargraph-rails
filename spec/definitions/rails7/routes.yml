@@ -1,7 +1,7 @@
 ---
 ActionDispatch::Routing::Mapper.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper.alias_attribute:
   types:
@@ -9,7 +9,7 @@ ActionDispatch::Routing::Mapper.alias_attribute:
   skip: false
 ActionDispatch::Routing::Mapper.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper.as_json:
   types:
@@ -21,20 +21,19 @@ ActionDispatch::Routing::Mapper.attr_internal:
   skip: false
 ActionDispatch::Routing::Mapper.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 ActionDispatch::Routing::Mapper.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 ActionDispatch::Routing::Mapper.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 ActionDispatch::Routing::Mapper.blank?:
   types:
-  - "true"
-  - "false"
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper.cattr_accessor:
   types:
@@ -82,7 +81,7 @@ ActionDispatch::Routing::Mapper.descendants:
   skip: false
 ActionDispatch::Routing::Mapper.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 ActionDispatch::Routing::Mapper.gem:
   types:
@@ -90,11 +89,11 @@ ActionDispatch::Routing::Mapper.gem:
   skip: true
 ActionDispatch::Routing::Mapper.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 ActionDispatch::Routing::Mapper.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper.instance_values:
   types:
@@ -142,16 +141,17 @@ ActionDispatch::Routing::Mapper.normalize_path:
   skip: false
 ActionDispatch::Routing::Mapper.presence:
   types:
-  - "Object"
+  - nil
+  - self
   skip: false
 ActionDispatch::Routing::Mapper.presence_in:
   types:
-  - "Object"
+  - nil
+  - self
   skip: false
 ActionDispatch::Routing::Mapper.present?:
   types:
-  - "true"
-  - "false"
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper.pry:
   types:
@@ -180,7 +180,7 @@ ActionDispatch::Routing::Mapper.remove_possible_singleton_method:
 ActionDispatch::Routing::Mapper.require_dependency:
   types:
   - undefined
-  skip: true
+  skip: false
 ActionDispatch::Routing::Mapper.silence_redefinition_of_method:
   types:
   - undefined
@@ -219,7 +219,7 @@ ActionDispatch::Routing::Mapper.to_param:
   skip: false
 ActionDispatch::Routing::Mapper.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 ActionDispatch::Routing::Mapper.try:
   types:
@@ -235,7 +235,7 @@ ActionDispatch::Routing::Mapper.with_options:
   skip: false
 ActionDispatch::Routing::Mapper#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper#as:
   types:
@@ -255,8 +255,7 @@ ActionDispatch::Routing::Mapper#authenticated:
   skip: false
 ActionDispatch::Routing::Mapper#blank?:
   types:
-  - "true"
-  - "false"
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper#class_eval:
   types:
@@ -348,7 +347,7 @@ ActionDispatch::Routing::Mapper#draw:
   skip: false
 ActionDispatch::Routing::Mapper#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 ActionDispatch::Routing::Mapper#gem:
   types:
@@ -360,15 +359,15 @@ ActionDispatch::Routing::Mapper#get:
   skip: false
 ActionDispatch::Routing::Mapper#has_named_route?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 ActionDispatch::Routing::Mapper#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper#instance_values:
   types:
@@ -400,7 +399,7 @@ ActionDispatch::Routing::Mapper#nested:
   skip: false
 ActionDispatch::Routing::Mapper#new:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#options:
   types:
@@ -416,16 +415,17 @@ ActionDispatch::Routing::Mapper#post:
   skip: false
 ActionDispatch::Routing::Mapper#presence:
   types:
-  - "Object"
+  - nil
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#presence_in:
   types:
-  - "Object"
+  - nil
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#present?:
   types:
-  - "true"
-  - "false"
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper#pry:
   types:
@@ -445,12 +445,14 @@ ActionDispatch::Routing::Mapper#raise_no_secret_key:
   skip: false
 ActionDispatch::Routing::Mapper#redirect:
   types:
-  - undefined
+  - "::ActionDispatch::Routing::OptionRedirect"
+  - "::ActionDispatch::Routing::PathRedirect"
+  - "::ActionDispatch::Routing::Redirect"
   skip: false
 ActionDispatch::Routing::Mapper#require_dependency:
   types:
   - undefined
-  skip: true
+  skip: false
 ActionDispatch::Routing::Mapper#resolve:
   types:
   - undefined
@@ -485,7 +487,7 @@ ActionDispatch::Routing::Mapper#shallow:
   skip: false
 ActionDispatch::Routing::Mapper#shallow?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActionDispatch::Routing::Mapper#to_json:
   types:
@@ -497,7 +499,7 @@ ActionDispatch::Routing::Mapper#to_param:
   skip: false
 ActionDispatch::Routing::Mapper#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 ActionDispatch::Routing::Mapper#try:
   types:

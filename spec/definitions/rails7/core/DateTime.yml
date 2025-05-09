@@ -1,7 +1,7 @@
 ---
 DateTime.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 DateTime.alias_attribute:
   types:
@@ -9,7 +9,7 @@ DateTime.alias_attribute:
   skip: false
 DateTime.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 DateTime.as_json:
   types:
@@ -21,36 +21,35 @@ DateTime.attr_internal:
   skip: false
 DateTime.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 DateTime.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 DateTime.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 DateTime.beginning_of_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.beginning_of_week=:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.beginning_of_week_default:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.beginning_of_week_default=:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 DateTime.cattr_accessor:
   types:
@@ -106,19 +105,19 @@ DateTime.descendants:
   skip: false
 DateTime.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 DateTime.find_beginning_of_week!:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 DateTime.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 DateTime.instance_values:
   types:
@@ -158,16 +157,17 @@ DateTime.module_parents:
   skip: false
 DateTime.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 DateTime.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 DateTime.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 DateTime.redefine_method:
   types:
@@ -223,12 +223,12 @@ DateTime.to_param:
   skip: false
 DateTime.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 DateTime.tomorrow:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime.try:
   types:
   - undefined
@@ -244,30 +244,31 @@ DateTime.with_options:
 DateTime.yesterday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#+:
   types:
-  - undefined
-  skip: true
+  - "::Date"
+  skip: false
 DateTime#-:
   types:
-  - undefined
-  skip: true
+  - self
+  skip: false
 DateTime#<=>:
   types:
-  - undefined
+  - "::Integer"
+  - nil
   skip: false
 DateTime#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 DateTime#acts_like_date?:
   types:
-  - undefined
+  - 'true'
   skip: false
 DateTime#acts_like_time?:
   types:
-  - undefined
+  - 'true'
   skip: false
 DateTime#advance:
   types:
@@ -275,32 +276,32 @@ DateTime#advance:
   skip: false
 DateTime#after?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#ago:
   types:
   - undefined
   skip: false
 DateTime#all_day:
   types:
-  - undefined
-  skip: true
+  - "::Range"
+  skip: false
 DateTime#all_month:
   types:
-  - undefined
-  skip: true
+  - "::Range"
+  skip: false
 DateTime#all_quarter:
   types:
-  - undefined
-  skip: true
+  - "::Range"
+  skip: false
 DateTime#all_week:
   types:
-  - undefined
-  skip: true
+  - "::Range"
+  skip: false
 DateTime#all_year:
   types:
-  - undefined
-  skip: true
+  - "::Range"
+  skip: false
 DateTime#as_json:
   types:
   - undefined
@@ -320,19 +321,19 @@ DateTime#at_beginning_of_minute:
 DateTime#at_beginning_of_month:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_beginning_of_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_beginning_of_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_beginning_of_year:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_end_of_day:
   types:
   - undefined
@@ -348,19 +349,19 @@ DateTime#at_end_of_minute:
 DateTime#at_end_of_month:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_end_of_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_end_of_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_end_of_year:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#at_midday:
   types:
   - undefined
@@ -379,8 +380,8 @@ DateTime#at_noon:
   skip: false
 DateTime#before?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#beginning_of_day:
   types:
   - undefined
@@ -396,19 +397,19 @@ DateTime#beginning_of_minute:
 DateTime#beginning_of_month:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#beginning_of_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#beginning_of_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#beginning_of_year:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#blank?:
   types:
   - 'false'
@@ -424,26 +425,26 @@ DateTime#class_eval:
 DateTime#compare_with_coercion:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#days_ago:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#days_since:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#days_to_week_start:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#deep_dup:
   types:
   - undefined
   skip: false
 DateTime#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 DateTime#end_of_day:
   types:
@@ -460,27 +461,27 @@ DateTime#end_of_minute:
 DateTime#end_of_month:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#end_of_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#end_of_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#end_of_year:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#formatted_offset:
   types:
   - undefined
   skip: false
 DateTime#future?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#getgm:
   types:
   - undefined
@@ -499,7 +500,7 @@ DateTime#gmtime:
   skip: false
 DateTime#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 DateTime#in:
   types:
@@ -507,15 +508,16 @@ DateTime#in:
   skip: false
 DateTime#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 DateTime#in_time_zone:
   types:
-  - undefined
-  skip: true
+  - "::ActiveSupport::TimeWithZone"
+  - "::Time"
+  skip: false
 DateTime#inspect:
   types:
-  - undefined
+  - "::String"
   skip: false
 DateTime#instance_values:
   types:
@@ -528,23 +530,23 @@ DateTime#instance_variable_names:
 DateTime#last_month:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#last_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#last_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#last_weekday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#last_year:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#localtime:
   types:
   - undefined
@@ -564,39 +566,39 @@ DateTime#midnight:
 DateTime#minus_with_duration:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#monday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#months_ago:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#months_since:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#next_day?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#next_occurring:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#next_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#next_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#next_weekday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#noon:
   types:
   - undefined
@@ -607,57 +609,58 @@ DateTime#nsec:
   skip: false
 DateTime#on_weekday?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#on_weekend?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#past?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#plus_with_duration:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 DateTime#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 DateTime#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 DateTime#preserve_timezone:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#prev_day?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#prev_occurring:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#prev_quarter:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#prev_week:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#prev_weekday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#readable_inspect:
   types:
   - undefined
@@ -681,7 +684,7 @@ DateTime#subsec:
 DateTime#sunday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#to_f:
   types:
   - undefined
@@ -692,7 +695,7 @@ DateTime#to_formatted_s:
   skip: false
 DateTime#to_fs:
   types:
-  - undefined
+  - "::String"
   skip: false
 DateTime#to_i:
   types:
@@ -708,28 +711,28 @@ DateTime#to_param:
   skip: false
 DateTime#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 DateTime#to_s:
   types:
-  - undefined
+  - "::String"
   skip: false
 DateTime#to_time:
   types:
-  - undefined
+  - "::Time"
   skip: false
 DateTime#today?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#tomorrow:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#tomorrow?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 DateTime#try:
   types:
   - undefined
@@ -748,7 +751,7 @@ DateTime#utc:
   skip: false
 DateTime#utc?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 DateTime#utc_offset:
   types:
@@ -761,11 +764,11 @@ DateTime#utc_to_local_returns_utc_offset_times:
 DateTime#weeks_ago:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#weeks_since:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#with_options:
   types:
   - undefined
@@ -773,16 +776,16 @@ DateTime#with_options:
 DateTime#years_ago:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#years_since:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#yesterday:
   types:
   - undefined
-  skip: true
+  skip: false
 DateTime#yesterday?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false

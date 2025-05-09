@@ -1,7 +1,7 @@
 ---
 File.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File.alias_attribute:
   types:
@@ -9,7 +9,7 @@ File.alias_attribute:
   skip: false
 File.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File.as_json:
   types:
@@ -25,20 +25,19 @@ File.attr_internal:
   skip: false
 File.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 File.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 File.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 File.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 File.cattr_accessor:
   types:
@@ -86,15 +85,15 @@ File.descendants:
   skip: false
 File.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 File.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 File.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File.instance_values:
   types:
@@ -134,16 +133,17 @@ File.module_parents:
   skip: false
 File.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 File.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 File.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 File.probe_stat_in:
   types:
@@ -203,7 +203,7 @@ File.to_param:
   skip: false
 File.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 File.try:
   types:
@@ -219,7 +219,7 @@ File.with_options:
   skip: false
 File#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File#as_json:
   types:
@@ -227,8 +227,7 @@ File#as_json:
   skip: false
 File#blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 File#class_eval:
   types:
@@ -236,7 +235,7 @@ File#class_eval:
   skip: false
 File#compact_blank:
   types:
-  - undefined
+  - "::Array<::String>"
   skip: false
 File#deep_dup:
   types:
@@ -244,11 +243,11 @@ File#deep_dup:
   skip: false
 File#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 File#exclude?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File#excluding:
   types:
@@ -256,11 +255,11 @@ File#excluding:
   skip: false
 File#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 File#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File#in_order_of:
   types:
@@ -288,7 +287,7 @@ File#instance_variable_names:
   skip: false
 File#many?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 File#maximum:
   types:
@@ -308,16 +307,17 @@ File#pluck:
   skip: false
 File#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 File#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 File#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 File#sole:
   types:
@@ -325,7 +325,10 @@ File#sole:
   skip: false
 File#sum:
   types:
-  - undefined
+  - "::String"
+  - "::Integer"
+  - generic<T>
+  - generic<U>
   skip: false
 File#to_json:
   types:
@@ -337,7 +340,7 @@ File#to_param:
   skip: false
 File#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 File#try:
   types:

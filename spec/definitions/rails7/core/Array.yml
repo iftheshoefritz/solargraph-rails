@@ -1,7 +1,7 @@
 ---
 Array.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Array.alias_attribute:
   skip: false
 Array.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array.as_json:
   types:
@@ -21,20 +21,19 @@ Array.attr_internal:
   skip: false
 Array.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Array.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Array.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Array.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Array.cattr_accessor:
   types:
@@ -82,15 +81,15 @@ Array.descendants:
   skip: false
 Array.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Array.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Array.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array.instance_values:
   types:
@@ -130,16 +129,17 @@ Array.module_parents:
   skip: false
 Array.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Array.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Array.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Array.redefine_method:
   types:
@@ -195,7 +195,7 @@ Array.to_param:
   skip: false
 Array.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Array.try:
   types:
@@ -211,11 +211,12 @@ Array.with_options:
   skip: false
 Array.wrap:
   types:
-  - undefined
+  - "::Array"
+  - "::Array<generic<T>>"
   skip: false
 Array#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array#as_json:
   types:
@@ -227,11 +228,11 @@ Array#class_eval:
   skip: false
 Array#compact_blank:
   types:
-  - undefined
+  - "::Array"
   skip: false
 Array#compact_blank!:
   types:
-  - undefined
+  - "::Array<generic<Elem>>"
   skip: false
 Array#deep_dup:
   types:
@@ -239,11 +240,11 @@ Array#deep_dup:
   skip: false
 Array#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Array#exclude?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array#excluding:
   types:
@@ -275,11 +276,11 @@ Array#from:
   skip: false
 Array#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Array#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array#in_groups:
   types:
@@ -307,7 +308,7 @@ Array#index_with:
   skip: false
 Array#inquiry:
   types:
-  - undefined
+  - "::ActiveSupport::ArrayInquirer<generic<Elem>>"
   skip: false
 Array#instance_values:
   types:
@@ -319,7 +320,7 @@ Array#instance_variable_names:
   skip: false
 Array#many?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Array#maximum:
   types:
@@ -339,16 +340,17 @@ Array#pluck:
   skip: false
 Array#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Array#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Array#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Array#second:
   types:
@@ -388,7 +390,7 @@ Array#to_formatted_s:
   skip: false
 Array#to_fs:
   types:
-  - undefined
+  - "::String"
   skip: false
 Array#to_json:
   types:
@@ -400,11 +402,11 @@ Array#to_param:
   skip: false
 Array#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Array#to_s:
   types:
-  - undefined
+  - "::String"
   skip: false
 Array#to_sentence:
   types:

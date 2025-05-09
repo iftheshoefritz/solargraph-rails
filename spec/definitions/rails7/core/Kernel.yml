@@ -1,7 +1,7 @@
 ---
 Kernel.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Kernel.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Kernel.alias_attribute:
   skip: false
 Kernel.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Kernel.as_json:
   types:
@@ -21,20 +21,19 @@ Kernel.attr_internal:
   skip: false
 Kernel.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Kernel.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Kernel.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Kernel.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Kernel.cattr_accessor:
   types:
@@ -74,7 +73,7 @@ Kernel.deprecate:
   skip: false
 Kernel.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Kernel.enable_warnings:
   types:
@@ -82,11 +81,11 @@ Kernel.enable_warnings:
   skip: false
 Kernel.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Kernel.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Kernel.instance_values:
   types:
@@ -126,16 +125,17 @@ Kernel.module_parents:
   skip: false
 Kernel.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Kernel.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Kernel.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Kernel.redefine_method:
   types:
@@ -199,7 +199,7 @@ Kernel.to_param:
   skip: false
 Kernel.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Kernel.try:
   types:

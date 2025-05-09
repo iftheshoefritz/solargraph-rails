@@ -1,7 +1,7 @@
 ---
 Date.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Date.alias_attribute:
   skip: false
 Date.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date.as_json:
   types:
@@ -21,15 +21,15 @@ Date.attr_internal:
   skip: false
 Date.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Date.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Date.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Date.beginning_of_week:
   types:
@@ -49,8 +49,7 @@ Date.beginning_of_week_default=:
   skip: false
 Date.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Date.cattr_accessor:
   types:
@@ -102,7 +101,7 @@ Date.descendants:
   skip: false
 Date.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Date.find_beginning_of_week!:
   types:
@@ -110,11 +109,11 @@ Date.find_beginning_of_week!:
   skip: false
 Date.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Date.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date.instance_values:
   types:
@@ -154,16 +153,17 @@ Date.module_parents:
   skip: false
 Date.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Date.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Date.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Date.redefine_method:
   types:
@@ -219,7 +219,7 @@ Date.to_param:
   skip: false
 Date.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date.tomorrow:
   types:
@@ -243,23 +243,24 @@ Date.yesterday:
   skip: false
 Date#+:
   types:
-  - undefined
+  - "::Date"
   skip: false
 Date#-:
   types:
-  - undefined
+  - self
   skip: false
 Date#<=>:
   types:
-  - undefined
+  - "::Integer"
+  - nil
   skip: false
 Date#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#acts_like_date?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Date#advance:
   types:
@@ -267,7 +268,7 @@ Date#advance:
   skip: false
 Date#after?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#ago:
   types:
@@ -275,23 +276,23 @@ Date#ago:
   skip: false
 Date#all_day:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Date#all_month:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Date#all_quarter:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Date#all_week:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Date#all_year:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Date#as_json:
   types:
@@ -355,7 +356,7 @@ Date#at_noon:
   skip: false
 Date#before?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#beginning_of_day:
   types:
@@ -411,7 +412,7 @@ Date#deep_dup:
   skip: false
 Date#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Date#end_of_day:
   types:
@@ -435,11 +436,11 @@ Date#end_of_year:
   skip: false
 Date#future?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Date#in:
   types:
@@ -447,15 +448,16 @@ Date#in:
   skip: false
 Date#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#in_time_zone:
   types:
-  - undefined
+  - "::ActiveSupport::TimeWithZone"
+  - "::Time"
   skip: false
 Date#inspect:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date#instance_values:
   types:
@@ -515,7 +517,7 @@ Date#months_since:
   skip: false
 Date#next_day?:
   types:
-  - Boolean
+  - "::Boolean"
   skip: false
 Date#next_occurring:
   types:
@@ -539,15 +541,15 @@ Date#noon:
   skip: false
 Date#on_weekday?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#on_weekend?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#past?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#plus_with_duration:
   types:
@@ -555,20 +557,21 @@ Date#plus_with_duration:
   skip: false
 Date#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Date#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Date#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Date#prev_day?:
   types:
-  - Boolean
+  - "::Boolean"
   skip: false
 Date#prev_occurring:
   types:
@@ -604,7 +607,7 @@ Date#to_formatted_s:
   skip: false
 Date#to_fs:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date#to_json:
   types:
@@ -616,19 +619,19 @@ Date#to_param:
   skip: false
 Date#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date#to_s:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date#to_time:
   types:
-  - undefined
+  - "::Time"
   skip: false
 Date#today?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#tomorrow:
   types:
@@ -636,7 +639,7 @@ Date#tomorrow:
   skip: false
 Date#tomorrow?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Date#try:
   types:
@@ -660,7 +663,7 @@ Date#with_options:
   skip: false
 Date#xmlschema:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date#years_ago:
   types:
@@ -676,5 +679,5 @@ Date#yesterday:
   skip: false
 Date#yesterday?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false

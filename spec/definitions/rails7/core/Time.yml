@@ -1,11 +1,11 @@
 ---
 Time.===:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time.alias_attribute:
   types:
@@ -13,7 +13,7 @@ Time.alias_attribute:
   skip: false
 Time.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time.as_json:
   types:
@@ -21,7 +21,7 @@ Time.as_json:
   skip: false
 Time.at:
   types:
-  - undefined
+  - "::Time"
   skip: false
 Time.at_with_coercion:
   types:
@@ -33,20 +33,19 @@ Time.attr_internal:
   skip: false
 Time.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Time.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Time.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Time.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Time.cattr_accessor:
   types:
@@ -74,7 +73,7 @@ Time.concerning:
   skip: false
 Time.current:
   types:
-  - undefined
+  - "::ActiveSupport::TimeWithZone"
   skip: false
 Time.days_in_month:
   types:
@@ -106,23 +105,24 @@ Time.descendants:
   skip: false
 Time.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Time.find_zone:
   types:
-  - undefined
+  - "::ActiveSupport::TimeZone"
+  - nil
   skip: false
 Time.find_zone!:
   types:
-  - undefined
+  - "::ActiveSupport::TimeZone"
   skip: false
 Time.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Time.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time.instance_values:
   types:
@@ -162,16 +162,17 @@ Time.module_parents:
   skip: false
 Time.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Time.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Time.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Time.redefine_method:
   types:
@@ -191,7 +192,7 @@ Time.remove_possible_singleton_method:
   skip: false
 Time.rfc3339:
   types:
-  - undefined
+  - "::Time"
   skip: false
 Time.silence_redefinition_of_method:
   types:
@@ -231,7 +232,7 @@ Time.to_param:
   skip: false
 Time.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Time.try:
   types:
@@ -251,7 +252,7 @@ Time.with_options:
   skip: false
 Time.zone:
   types:
-  - undefined
+  - "::ActiveSupport::TimeZone"
   skip: false
 Time.zone=:
   types:
@@ -267,23 +268,24 @@ Time.zone_default=:
   skip: false
 Time#+:
   types:
-  - undefined
+  - self
   skip: false
 Time#-:
   types:
-  - undefined
+  - self
   skip: false
 Time#<=>:
   types:
-  - undefined
+  - "::Integer"
+  - nil
   skip: false
 Time#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#acts_like_time?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Time#advance:
   types:
@@ -291,7 +293,7 @@ Time#advance:
   skip: false
 Time#after?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#ago:
   types:
@@ -299,23 +301,23 @@ Time#ago:
   skip: false
 Time#all_day:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Time#all_month:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Time#all_quarter:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Time#all_week:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Time#all_year:
   types:
-  - undefined
+  - "::Range"
   skip: false
 Time#as_json:
   types:
@@ -395,7 +397,7 @@ Time#at_noon:
   skip: false
 Time#before?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#beginning_of_day:
   types:
@@ -459,7 +461,7 @@ Time#deep_dup:
   skip: false
 Time#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Time#end_of_day:
   types:
@@ -491,7 +493,7 @@ Time#end_of_year:
   skip: false
 Time#eql?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#eql_with_coercion:
   types:
@@ -503,11 +505,11 @@ Time#formatted_offset:
   skip: false
 Time#future?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Time#in:
   types:
@@ -515,11 +517,12 @@ Time#in:
   skip: false
 Time#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#in_time_zone:
   types:
-  - undefined
+  - "::ActiveSupport::TimeWithZone"
+  - "::Time"
   skip: false
 Time#instance_values:
   types:
@@ -591,7 +594,7 @@ Time#next_day:
   skip: false
 Time#next_day?:
   types:
-  - Boolean
+  - "::Boolean"
   skip: false
 Time#next_month:
   types:
@@ -623,15 +626,15 @@ Time#noon:
   skip: false
 Time#on_weekday?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#on_weekend?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#past?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#plus_with_duration:
   types:
@@ -639,28 +642,29 @@ Time#plus_with_duration:
   skip: false
 Time#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Time#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Time#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Time#preserve_timezone:
   types:
   - undefined
-  skip: true
+  skip: false
 Time#prev_day:
   types:
   - undefined
   skip: false
 Time#prev_day?:
   types:
-  - Boolean
+  - "::Boolean"
   skip: false
 Time#prev_month:
   types:
@@ -712,7 +716,7 @@ Time#to_formatted_s:
   skip: false
 Time#to_fs:
   types:
-  - undefined
+  - "::String"
   skip: false
 Time#to_json:
   types:
@@ -724,19 +728,19 @@ Time#to_param:
   skip: false
 Time#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Time#to_s:
   types:
-  - undefined
+  - "::String"
   skip: false
 Time#to_time:
   types:
-  - undefined
+  - "::Time"
   skip: false
 Time#today?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#tomorrow:
   types:
@@ -744,7 +748,7 @@ Time#tomorrow:
   skip: false
 Time#tomorrow?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Time#try:
   types:
@@ -784,5 +788,5 @@ Time#yesterday:
   skip: false
 Time#yesterday?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false

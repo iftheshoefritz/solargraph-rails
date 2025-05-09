@@ -1,7 +1,7 @@
 ---
 String.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String.alias_attribute:
   types:
@@ -9,7 +9,7 @@ String.alias_attribute:
   skip: false
 String.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String.as_json:
   types:
@@ -21,20 +21,19 @@ String.attr_internal:
   skip: false
 String.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 String.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 String.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 String.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 String.cattr_accessor:
   types:
@@ -82,15 +81,15 @@ String.descendants:
   skip: false
 String.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 String.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 String.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String.instance_values:
   types:
@@ -130,16 +129,17 @@ String.module_parents:
   skip: false
 String.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 String.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 String.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 String.redefine_method:
   types:
@@ -195,7 +195,7 @@ String.to_param:
   skip: false
 String.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 String.try:
   types:
@@ -211,11 +211,11 @@ String.with_options:
   skip: false
 String#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String#acts_like_string?:
   types:
-  - undefined
+  - 'true'
   skip: false
 String#as_json:
   types:
@@ -227,8 +227,7 @@ String#at:
   skip: false
 String#blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 String#camelcase:
   types:
@@ -236,7 +235,7 @@ String#camelcase:
   skip: false
 String#camelize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#class_eval:
   types:
@@ -244,7 +243,7 @@ String#class_eval:
   skip: false
 String#classify:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#constantize:
   types:
@@ -252,11 +251,11 @@ String#constantize:
   skip: false
 String#dasherize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#deconstantize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#deep_dup:
   types:
@@ -264,15 +263,15 @@ String#deep_dup:
   skip: false
 String#demodulize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 String#exclude?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String#first:
   types:
@@ -280,7 +279,7 @@ String#first:
   skip: false
 String#foreign_key:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#from:
   types:
@@ -288,23 +287,24 @@ String#from:
   skip: false
 String#html_safe:
   types:
-  - undefined
+  - "::ActiveSupport::SafeBuffer"
   skip: false
 String#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 String#humanize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String#in_time_zone:
   types:
-  - undefined
+  - "::ActiveSupport::TimeWithZone"
+  - "::Time"
   skip: false
 String#indent:
   types:
@@ -316,7 +316,7 @@ String#indent!:
   skip: false
 String#inquiry:
   types:
-  - undefined
+  - "::ActiveSupport::StringInquirer"
   skip: false
 String#instance_values:
   types:
@@ -328,7 +328,7 @@ String#instance_variable_names:
   skip: false
 String#is_utf8?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 String#last:
   types:
@@ -340,24 +340,25 @@ String#mb_chars:
   skip: false
 String#parameterize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#pluralize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 String#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 String#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 String#remove:
   types:
@@ -373,7 +374,7 @@ String#safe_constantize:
   skip: false
 String#singularize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#squish:
   types:
@@ -389,7 +390,7 @@ String#strip_heredoc:
   skip: false
 String#tableize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#titlecase:
   types:
@@ -397,7 +398,7 @@ String#titlecase:
   skip: false
 String#titleize:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#to:
   types:
@@ -421,7 +422,7 @@ String#to_param:
   skip: false
 String#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#to_time:
   types:
@@ -449,11 +450,11 @@ String#try!:
   skip: false
 String#underscore:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#upcase_first:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#with_options:
   types:

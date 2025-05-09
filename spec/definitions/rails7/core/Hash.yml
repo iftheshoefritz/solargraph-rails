@@ -1,7 +1,7 @@
 ---
 Hash.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Hash.alias_attribute:
   skip: false
 Hash.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash.as_json:
   types:
@@ -21,20 +21,19 @@ Hash.attr_internal:
   skip: false
 Hash.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Hash.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Hash.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Hash.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Hash.cattr_accessor:
   types:
@@ -82,7 +81,7 @@ Hash.descendants:
   skip: false
 Hash.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Hash.from_trusted_xml:
   types:
@@ -94,11 +93,11 @@ Hash.from_xml:
   skip: false
 Hash.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Hash.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash.instance_values:
   types:
@@ -138,16 +137,17 @@ Hash.module_parents:
   skip: false
 Hash.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Hash.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Hash.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Hash.redefine_method:
   types:
@@ -203,7 +203,7 @@ Hash.to_param:
   skip: false
 Hash.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Hash.try:
   types:
@@ -219,7 +219,7 @@ Hash.with_options:
   skip: false
 Hash#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash#as_json:
   types:
@@ -235,11 +235,11 @@ Hash#class_eval:
   skip: false
 Hash#compact_blank:
   types:
-  - undefined
+  - "::Hash{generic<K> => generic<V>}"
   skip: false
 Hash#compact_blank!:
   types:
-  - undefined
+  - "::Hash{generic<K> => generic<V>}"
   skip: false
 Hash#deep_dup:
   types:
@@ -255,19 +255,19 @@ Hash#deep_merge!:
   skip: false
 Hash#deep_stringify_keys:
   types:
-  - undefined
+  - "::Hash<::String>"
   skip: false
 Hash#deep_stringify_keys!:
   types:
-  - undefined
+  - self
   skip: false
 Hash#deep_symbolize_keys:
   types:
-  - undefined
+  - "::Hash<::Symbol>"
   skip: false
 Hash#deep_symbolize_keys!:
   types:
-  - undefined
+  - self
   skip: false
 Hash#deep_transform_keys:
   types:
@@ -287,7 +287,7 @@ Hash#deep_transform_values!:
   skip: false
 Hash#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Hash#except!:
   types:
@@ -295,7 +295,7 @@ Hash#except!:
   skip: false
 Hash#exclude?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash#excluding:
   types:
@@ -307,15 +307,15 @@ Hash#extract!:
   skip: false
 Hash#extractable_options?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Hash#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash#in_order_of:
   types:
@@ -343,7 +343,7 @@ Hash#instance_variable_names:
   skip: false
 Hash#many?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Hash#maximum:
   types:
@@ -367,16 +367,17 @@ Hash#pluck:
   skip: false
 Hash#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Hash#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Hash#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Hash#reverse_merge:
   types:
@@ -400,23 +401,26 @@ Hash#sole:
   skip: false
 Hash#stringify_keys:
   types:
-  - undefined
+  - "::Hash{::String => generic<V>}"
   skip: false
 Hash#stringify_keys!:
   types:
-  - undefined
+  - self
   skip: false
 Hash#sum:
   types:
-  - undefined
+  - "::Array"
+  - "::Integer"
+  - generic<T>
+  - generic<U>
   skip: false
 Hash#symbolize_keys:
   types:
-  - undefined
+  - "::Hash{::Symbol => generic<V>}"
   skip: false
 Hash#symbolize_keys!:
   types:
-  - undefined
+  - self
   skip: false
 Hash#to_json:
   types:
@@ -436,7 +440,7 @@ Hash#to_param:
   skip: false
 Hash#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Hash#to_xml:
   types:
@@ -460,7 +464,7 @@ Hash#with_defaults!:
   skip: false
 Hash#with_indifferent_access:
   types:
-  - undefined
+  - "::ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>"
   skip: false
 Hash#with_options:
   types:
