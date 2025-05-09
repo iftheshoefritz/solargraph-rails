@@ -505,14 +505,6 @@ ActiveJob::Base#enqueue:
   types:
   - undefined
   skip: false
-ActiveJob::Base#enqueue_error:
-  types:
-  - undefined
-  skip: false
-ActiveJob::Base#enqueue_error=:
-  types:
-  - undefined
-  skip: false
 ActiveJob::Base#enqueued_at:
   types:
   - undefined
@@ -695,18 +687,14 @@ ActiveJob::Base#serialized_arguments=:
   types:
   - undefined
   skip: false
-ActiveJob::Base#set:
-  types:
-  - undefined
-  skip: false
 ActiveJob::Base#successfully_enqueued=:
   types:
   - undefined
-  skip: false
+  # in code but not in RBS
+  skip: true
 ActiveJob::Base#successfully_enqueued?:
-  types:
-  - "::Boolean"
-  skip: false
+  # in code but not in RBS
+  skip: true
 ActiveJob::Base#timezone:
   types:
   - undefined
