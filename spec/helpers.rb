@@ -6,6 +6,9 @@ module Helpers
   end
 
   def assert_matches_definitions(map, class_name, definition_name, update: false)
+    if ENV['FORCE_UPDATE'] == 'true'
+      update = true
+    end
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
