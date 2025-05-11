@@ -1,437 +1,429 @@
 ---
-Integer.acts_like?:
+Class.acts_like?:
   types:
   - "::Boolean"
   skip: false
-Integer.alias_attribute:
+Class.alias_attribute:
   types:
   - undefined
   skip: false
-Integer.anonymous?:
+Class.anonymous?:
   types:
   - "::Boolean"
   skip: false
-Integer.as_json:
+Class.as_json:
   types:
   - undefined
   skip: false
-Integer.attr_internal:
+Class.attr_internal:
   types:
   - undefined
   skip: false
-Integer.attr_internal_accessor:
+Class.attr_internal_accessor:
   types:
   - void
   skip: false
-Integer.attr_internal_reader:
+Class.attr_internal_naming_format:
+  types:
+  - "::String"
+  skip: false
+Class.attr_internal_naming_format=:
+  types:
+  - "::String"
+  skip: false
+Class.attr_internal_reader:
   types:
   - void
   skip: false
-Integer.attr_internal_writer:
+Class.attr_internal_writer:
   types:
   - void
   skip: false
-Integer.blank?:
+Class.blank?:
   types:
   - "::Boolean"
   skip: false
-Integer.cattr_accessor:
+Class.cattr_accessor:
   types:
   - undefined
   skip: false
-Integer.cattr_reader:
+Class.cattr_reader:
   types:
   - undefined
   skip: false
-Integer.cattr_writer:
+Class.cattr_writer:
   types:
   - undefined
   skip: false
-Integer.class_attribute:
+Class.class_attribute:
   types:
   - undefined
   skip: false
-Integer.concern:
+Class.concern:
   types:
   - undefined
   skip: false
-Integer.concerning:
+Class.concerning:
   types:
   - undefined
   skip: false
-Integer.deep_dup:
+Class.deep_dup:
   types:
   - undefined
   skip: false
-Integer.delegate:
+Class.delegate:
   types:
   - undefined
   skip: false
-Integer.delegate_missing_to:
+Class.delegate_missing_to:
   types:
   - undefined
   skip: false
-Integer.deprecate:
+Class.deprecate:
   types:
   - undefined
   skip: false
-Integer.descendants:
+Class.descendants:
   types:
   - undefined
   skip: false
-Integer.duplicable?:
+Class.duplicable?:
   types:
   - 'true'
   skip: false
-Integer.html_safe?:
+Class.html_safe?:
   types:
   - 'false'
   skip: false
-Integer.in?:
+Class.in?:
   types:
   - "::Boolean"
   skip: false
-Integer.instance_values:
+Class.instance_values:
   types:
   - undefined
   skip: false
-Integer.instance_variable_names:
+Class.instance_variable_names:
   types:
   - undefined
   skip: false
-Integer.mattr_accessor:
+Class.mattr_accessor:
   types:
   - undefined
   skip: false
-Integer.mattr_reader:
+Class.mattr_reader:
   types:
   - undefined
   skip: false
-Integer.mattr_writer:
+Class.mattr_writer:
   types:
   - undefined
   skip: false
-Integer.method_visibility:
+Class.method_visibility:
   types:
   - undefined
   skip: false
-Integer.module_parent:
+Class.module_parent:
   types:
   - undefined
   skip: false
-Integer.module_parent_name:
+Class.module_parent_name:
   types:
   - undefined
   skip: false
-Integer.module_parents:
+Class.module_parents:
   types:
   - undefined
   skip: false
-Integer.presence:
+Class.presence:
   types:
   - nil
   - self
   skip: false
-Integer.presence_in:
+Class.presence_in:
   types:
   - nil
   - self
   skip: false
-Integer.present?:
+Class.present?:
   types:
   - "::Boolean"
   skip: false
-Integer.redefine_method:
+Class.redefine_method:
   types:
   - undefined
   skip: false
-Integer.redefine_singleton_method:
+Class.redefine_singleton_method:
   types:
   - undefined
   skip: false
-Integer.remove_possible_method:
+Class.remove_possible_method:
   types:
   - undefined
   skip: false
-Integer.remove_possible_singleton_method:
+Class.remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Integer.silence_redefinition_of_method:
+Class.silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-Integer.thread_cattr_accessor:
+Class.thread_cattr_accessor:
   types:
   - undefined
   skip: false
-Integer.thread_cattr_reader:
+Class.thread_cattr_reader:
   types:
   - undefined
   skip: false
-Integer.thread_cattr_writer:
+Class.thread_cattr_writer:
   types:
   - undefined
   skip: false
-Integer.thread_mattr_accessor:
+Class.thread_mattr_accessor:
   types:
   - undefined
   skip: false
-Integer.thread_mattr_reader:
+Class.thread_mattr_reader:
   types:
   - undefined
   skip: false
-Integer.thread_mattr_writer:
+Class.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Integer.to_json:
+Class.to_json:
   types:
   - undefined
   skip: true
-Integer.to_param:
+Class.to_param:
   types:
   - undefined
   skip: false
-Integer.to_query:
+Class.to_query:
   types:
   - "::String"
   skip: false
-Integer.try:
+Class.try:
   types:
   - undefined
   skip: false
-Integer.try!:
+Class.try!:
   types:
   - undefined
   skip: false
-Integer.with_options:
+Class.with_options:
   types:
   - undefined
   skip: false
-Integer#acts_like?:
+Class#acts_like?:
   types:
   - "::Boolean"
   skip: false
-Integer#as_json:
+Class#alias_attribute:
   types:
   - undefined
   skip: false
-Integer#blank?:
+Class#anonymous?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#as_json:
+  types:
+  - undefined
+  skip: false
+Class#attr_internal:
+  types:
+  - undefined
+  skip: false
+Class#attr_internal_accessor:
+  types:
+  - void
+  skip: false
+Class#attr_internal_reader:
+  types:
+  - void
+  skip: false
+Class#attr_internal_writer:
+  types:
+  - void
+  skip: false
+Class#blank?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Class#cattr_reader:
+  types:
+  - undefined
+  skip: false
+Class#cattr_writer:
+  types:
+  - undefined
+  skip: false
+Class#class_attribute:
+  types:
+  - undefined
+  skip: false
+Class#concern:
+  types:
+  - undefined
+  skip: false
+Class#concerning:
+  types:
+  - undefined
+  skip: false
+Class#deep_dup:
+  types:
+  - undefined
+  skip: false
+Class#delegate:
+  types:
+  - undefined
+  skip: false
+Class#delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Class#deprecate:
+  types:
+  - undefined
+  skip: false
+Class#descendants:
+  types:
+  - undefined
+  skip: false
+Class#duplicable?:
+  types:
+  - 'true'
+  skip: false
+Class#html_safe?:
   types:
   - 'false'
   skip: false
-Integer#byte:
-  types:
-  - undefined
-  skip: false
-Integer#bytes:
-  types:
-  - undefined
-  skip: false
-Integer#class_eval:
-  types:
-  - undefined
-  skip: false
-Integer#day:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#days:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#deep_dup:
-  types:
-  - undefined
-  skip: false
-Integer#duplicable?:
-  types:
-  - 'true'
-  skip: false
-Integer#exabyte:
-  types:
-  - undefined
-  skip: false
-Integer#exabytes:
-  types:
-  - undefined
-  skip: false
-Integer#fortnight:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#fortnights:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#gigabyte:
-  types:
-  - undefined
-  skip: false
-Integer#gigabytes:
-  types:
-  - undefined
-  skip: false
-Integer#hour:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#hours:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#html_safe?:
-  types:
-  - 'true'
-  skip: false
-Integer#in?:
+Class#in?:
   types:
   - "::Boolean"
   skip: false
-Integer#in_milliseconds:
+Class#instance_values:
   types:
   - undefined
   skip: false
-Integer#instance_values:
+Class#instance_variable_names:
   types:
   - undefined
   skip: false
-Integer#instance_variable_names:
+Class#mattr_accessor:
   types:
   - undefined
   skip: false
-Integer#kilobyte:
+Class#mattr_reader:
   types:
   - undefined
   skip: false
-Integer#kilobytes:
+Class#mattr_writer:
   types:
   - undefined
   skip: false
-Integer#megabyte:
+Class#method_visibility:
   types:
   - undefined
   skip: false
-Integer#megabytes:
+Class#module_parent:
   types:
   - undefined
   skip: false
-Integer#minute:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#minutes:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#month:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#months:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#multiple_of?:
-  types:
-  - "::Boolean"
-  skip: false
-Integer#ordinal:
+Class#module_parent_name:
   types:
   - undefined
   skip: false
-Integer#ordinalize:
+Class#module_parents:
   types:
   - undefined
   skip: false
-Integer#petabyte:
-  types:
-  - undefined
-  skip: false
-Integer#petabytes:
-  types:
-  - undefined
-  skip: false
-Integer#presence:
+Class#presence:
   types:
   - nil
   - self
   skip: false
-Integer#presence_in:
+Class#presence_in:
   types:
   - nil
   - self
   skip: false
-Integer#present?:
+Class#present?:
   types:
   - "::Boolean"
   skip: false
-Integer#second:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#seconds:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#terabyte:
+Class#redefine_method:
   types:
   - undefined
   skip: false
-Integer#terabytes:
+Class#redefine_singleton_method:
   types:
   - undefined
   skip: false
-Integer#to_formatted_s:
+Class#remove_possible_method:
   types:
   - undefined
   skip: false
-Integer#to_fs:
+Class#remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Integer#to_json:
+Class#silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Class#thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Class#thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Class#thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Class#thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Class#thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Class#thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Class#to_json:
   types:
   - undefined
   skip: true
-Integer#to_param:
+Class#to_param:
   types:
   - undefined
   skip: false
-Integer#to_query:
+Class#to_query:
   types:
   - "::String"
   skip: false
-Integer#to_s:
-  types:
-  - "::String"
-  skip: false
-Integer#try:
+Class#try:
   types:
   - undefined
   skip: false
-Integer#try!:
+Class#try!:
   types:
   - undefined
   skip: false
-Integer#week:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#weeks:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#with_options:
+Class#with_options:
   types:
   - undefined
-  skip: false
-Integer#year:
-  types:
-  - "::ActiveSupport::Duration"
-  skip: false
-Integer#years:
-  types:
-  - "::ActiveSupport::Duration"
   skip: false

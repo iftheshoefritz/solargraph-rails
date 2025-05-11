@@ -1,11 +1,11 @@
 ---
 Enumerable#compact_blank:
   types:
-  - undefined
+  - "::Array<generic<Elem>>"
   skip: false
 Enumerable#exclude?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Enumerable#excluding:
   types:
@@ -29,7 +29,7 @@ Enumerable#index_with:
   skip: false
 Enumerable#many?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Enumerable#maximum:
   types:
@@ -53,7 +53,10 @@ Enumerable#sole:
   skip: false
 Enumerable#sum:
   types:
-  - undefined
+  - "::Integer"
+  - generic<Elem>
+  - generic<T>
+  - generic<U>
   skip: false
 Enumerable#without:
   types:
