@@ -35,6 +35,16 @@ module Solargraph
               location:
                 Solargraph::Location.new(source_map.filename, snip.range)
             )
+
+          pins <<
+            Util.build_public_method(
+              ns,
+              "#{name}=",
+              types: [ruby_type],
+              params: { 'value' => [ruby_type] },
+              location:
+                Solargraph::Location.new(source_map.filename, snip.range)
+            )
         end
 
         pins

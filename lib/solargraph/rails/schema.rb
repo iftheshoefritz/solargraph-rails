@@ -47,6 +47,7 @@ module Solargraph
         table.each do |column, data|
           location = Util.build_location(data.ast, 'db/schema.rb')
           type = RUBY_TYPES[data.type.to_sym] || 'String'
+          pins << Util.build_public_method(ns, "#{column}=", types: [type], params: { 'value' => [type] }, location: location)
           %w[% %_in_database %_before_last_save].each do |tpl|
             name = tpl.sub('%', column)
             pins << Util.build_public_method(ns, name, types: [type], location: location)

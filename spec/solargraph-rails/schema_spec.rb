@@ -55,6 +55,8 @@ RSpec.describe Solargraph::Rails::Schema do
     end
 
     assert_public_instance_method(map, "Account#balance", ["BigDecimal"])
+    assert_public_instance_method(map, "Account#balance=", ["BigDecimal"],
+                                  args: { value: 'BigDecimal' })
     assert_public_instance_method(map, "Account#some_int", ["Integer"])
     assert_public_instance_method(map, "Account#some_date", ["Date"])
     assert_public_instance_method(map, "Account#some_big_id", ["Integer"])
@@ -129,4 +131,3 @@ RSpec.describe Solargraph::Rails::Schema do
     assert_public_instance_method(map, 'Invoice#amount', ['BigDecimal'])
   end
 end
-
