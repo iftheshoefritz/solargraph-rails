@@ -13,11 +13,7 @@ ActiveJob::Base.after_perform:
   skip: false
 ActiveJob::Base.alias_attribute:
   types:
-  - "::Boolean"
-  skip: false
-ActiveJob::Base.anonymous?:
-  types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveJob::Base.anonymous?:
   types:
