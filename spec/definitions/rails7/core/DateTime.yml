@@ -266,10 +266,6 @@ DateTime#acts_like?:
   types:
   - "::Boolean"
   skip: false
-DateTime#acts_like_date?:
-  types:
-  - 'true'
-  skip: false
 DateTime#acts_like_time?:
   types:
   - 'true'
