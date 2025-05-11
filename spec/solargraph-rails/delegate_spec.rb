@@ -25,11 +25,11 @@ RSpec.describe Solargraph::Rails::Delegate, skip: skip_reason do
       end
     RUBY
 
-    assert_public_instance_method(api_map, 'Thing#one', ['Integer'])
+    assert_public_instance_method(api_map, 'Thing#one', ['1'])
     assert_public_instance_method(api_map, 'Thing#two', ['String']) do |pin|
       expect(pin.location.range.to_hash).to eq(
-        start: { line: 1, character: 0 },
-        end: { line: 1, character: 8 }
+        start: { line: 1, character: 8 },
+        end: { line: 1, character: 37 }
       )
     end
   end
