@@ -140,6 +140,7 @@ module Helpers
     expect(pin).to_not be_nil, -> { "Could not find method in api_map via #{query}" }
     expect(pin.scope).to eq(:instance)
     pin_return_type = pin.return_type
+    pin_return_type = pin.probe map if pin_return_type.undefined?
     expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
     unless args.nil?
       args.each_pair do |name, type|
