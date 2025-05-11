@@ -30,7 +30,7 @@ The various Ruby intellisense tools are ok at knowing that there are `Book` and 
 
 Since these attributes are only created at runtime, a simple static analysis of the `Book` class alone can't identify them. Your editor has no idea that these attributes exist, but they're amongst the most common things that you will work with in any Rails app.
 
-That's where this plugin for Solargraph comes in: it parses the database schema and YARD docs of various gems to give Solargraph some extra hints. For instance database attributes:
+That's where this plugin for Solargraph comes in: it parses the database schema to give Solargraph some extra hints on top of Solargraph's use of YARD and RBS. For instance:
 
  ![Go to attribute schema definition](assets/sg_rails_1_0_go_to_attribute_definition.gif)
 
@@ -54,6 +54,16 @@ and more!
 
 If you add them to your Gemfile, you'll have to tell your IDE plugin to use bundler to load the right version of solargraph.
 
+### Import Rails RBS types
+
+Use [gem\_rbs\_collection](https://github.com/ruby/gem_rbs_collection)
+to install RBS types for Rails:
+
+```sh
+rbs collection init
+rbs collection install
+```
+
 ### Add `solargraph-rails` to your `.solargraph.yml`
 
 (if you don't have a `.solargraph.yml` in your project root, you can run `solargraph config` to add one)
@@ -73,12 +83,10 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ifthes
 
 2. install gem deps `bundle install`
 
-3. install dummy rails app deps and build the yard cache:
+3. install dummy rails app deps:
 
 ```
-$ cd spec/rails7
-$ bundle install && yard gems
-$ cd ../../
+cd spec/rails7 && bundle install && bundle update solargraph && rbs collection init && rbs collection install
 ```
 
 4. now tests should pass locally and you can try different changes
