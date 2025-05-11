@@ -631,7 +631,7 @@ ActionController::Base.request_forgery_protection_token=:
   skip: true
 ActionController::Base.require_dependency:
   types:
-  - void
+  - undefined
   skip: false
 ActionController::Base.rescue_from:
   types:
