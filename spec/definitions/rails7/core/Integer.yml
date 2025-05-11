@@ -17,7 +17,7 @@ Integer.as_json:
   skip: false
 Integer.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Integer.attr_internal_accessor:
   types:

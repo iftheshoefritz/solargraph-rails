@@ -17,7 +17,7 @@ Date.as_json:
   skip: false
 Date.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Date.attr_internal_accessor:
   types:
@@ -243,7 +243,7 @@ Date.yesterday:
   skip: false
 Date#+:
   types:
-  - "::Date"
+  - self
   skip: false
 Date#-:
   types:
@@ -629,7 +629,7 @@ Date#to_time:
   # the activesupport core_ext definition shadows the core rbs
   # definition; it should be updated with a better return type
   types:
-  - "undefined"
+  - undefined
   skip: false
 Date#today?:
   types:
