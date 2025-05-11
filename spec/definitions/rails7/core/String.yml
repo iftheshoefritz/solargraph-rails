@@ -231,7 +231,7 @@ String#blank?:
   skip: false
 String#camelcase:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#camelize:
   types:
@@ -394,7 +394,7 @@ String#tableize:
   skip: false
 String#titlecase:
   types:
-  - undefined
+  - "::String"
   skip: false
 String#titleize:
   types:

@@ -432,7 +432,7 @@ Hash#to_options:
   skip: false
 Hash#to_options!:
   types:
-  - undefined
+  - self
   skip: false
 Hash#to_param:
   types:
