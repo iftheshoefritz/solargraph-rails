@@ -259,7 +259,7 @@ Integer#exabytes:
   skip: false
 Integer#fortnight:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#fortnights:
   types:
@@ -275,7 +275,7 @@ Integer#gigabytes:
   skip: false
 Integer#hour:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#hours:
   types:
@@ -327,7 +327,7 @@ Integer#minutes:
   skip: false
 Integer#month:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#months:
   types:
@@ -369,7 +369,7 @@ Integer#present?:
   skip: false
 Integer#second:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#seconds:
   types:
@@ -417,7 +417,7 @@ Integer#try!:
   skip: false
 Integer#week:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#weeks:
   types:
@@ -429,7 +429,7 @@ Integer#with_options:
   skip: false
 Integer#year:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#years:
   types:

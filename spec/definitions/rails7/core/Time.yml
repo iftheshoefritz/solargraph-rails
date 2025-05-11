@@ -268,7 +268,7 @@ Time.zone_default=:
   skip: false
 Time#+:
   types:
-  - self
+  - "::Time"
   skip: false
 Time#-:
   types:
