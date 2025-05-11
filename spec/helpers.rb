@@ -135,18 +135,21 @@ module Helpers
     map
   end
 
-  def assert_public_instance_method(map, query, return_type, args: {}, &block)
+  def assert_public_instance_method(map, query, return_type, args: nil, &block)
     pin = find_pin(query, map)
-    expect(pin).to_not be_nil
+    expect(pin).to_not be_nil, -> { "Could not find method in api_map via #{query}" }
     expect(pin.scope).to eq(:instance)
-    expect(pin.return_type.map(&:tag)).to eq(return_type)
-    args.each_pair do |name, type|
-      expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil
-      expect(parameter.return_type.tag).to eq(type)
-    end
-    pin.parameters.each do |param|
-      expect(args).to have_key(param.name.to_sym)
-      expect(param.return_type.tag).to eq(args[param.name.to_sym])
+    pin_return_type = pin.return_type
+    expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
+    unless args.nil?
+      args.each_pair do |name, type|
+        expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil
+        expect(parameter.return_type.tag).to eq(type)
+      end
+      pin.parameters.each do |param|
+        expect(args).to have_key(param.name.to_sym)
+        expect(param.return_type.tag).to eq(args[param.name.to_sym])
+      end
     end
 
     yield pin if block_given?
