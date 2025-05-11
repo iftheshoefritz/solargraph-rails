@@ -22,7 +22,7 @@ module Solargraph
 
         comments << "\n@return [#{types.join(',')}]" if types
 
-        opts[:comments] ||= comments.join("\n")
+        opts[:comments] ||= comments
 
         Solargraph::Pin::Method.new(**opts)
       end
