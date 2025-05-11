@@ -58,7 +58,7 @@ RSpec.describe 'Rails 7 API' do
         EOS
       end
 
-    filename = './app/mailers/test_mailer.rb'
+    filename = File.expand_path('./app/mailers/test_mailer.rb', './spec/rails7')
     expect(completion_at(filename, [1, 6], map)).to include('default')
     expect(completion_at(filename, [3, 6], map)).to include('mail')
   end
