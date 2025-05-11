@@ -4,10 +4,10 @@ module Solargraph
       def self.build_public_method(
         ns,
         name,
-        comments: +"",
-        parameters: [],
-        types: nil,
         params: {},
+        parameters: [],
+        comments: nil,
+        types: nil,
         location: nil,
         attribute: false,
         scope: :instance
@@ -21,10 +21,14 @@ module Solargraph
           attribute: attribute
         }
 
-        params.each do |name, types|
-          comments << "@param [#{types.join(',')}] #{name}"
-        end
-        comments << "@return [#{types.join(',')}]" if types
+        comments ||= begin
+                       comments_arr = []
+                       params.each do |name, types|
+                         comments_arr << "@param [#{types.join(',')}] #{name}"
+                       end
+                       comments_arr << "\n@return [#{types.join(',')}]" if types
+                       comments_arr.join("\n")
+                     end
 
         opts[:comments] ||= comments
 
