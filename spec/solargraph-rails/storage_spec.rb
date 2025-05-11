@@ -12,11 +12,10 @@ RSpec.describe Solargraph::Rails::Storage do
         Thing.new.image.att
         Thing.new.photos.att
       EOS
-    end
 
-    filename = './app/models/thing.rb'
+    end
+    filename = File.expand_path('./app/models/thing.rb', './spec/rails7')
     expect(completion_at(filename, [5, 19], map)).to include("attach")
     expect(completion_at(filename, [6, 20], map)).to include("attach")
   end
 end
-

@@ -19,7 +19,7 @@ RSpec.describe Solargraph::Rails::Devise do
       RUBY
     end
 
-    filename = './app/controllers/pages_controller.rb'
+    filename = File.expand_path('./app/controllers/pages_controller.rb', './spec/rails7')
     expect(completion_at(filename, [3, 23], map)).to include("confirm")
   end
 end

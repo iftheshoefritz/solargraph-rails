@@ -14,7 +14,7 @@ RSpec.describe 'Rails 7 API' do
         EOS
       end
 
-    filename = './app/controllers/things_controller.rb'
+    filename = File.expand_path('./app/controllers/things_controller.rb', './spec/rails7')
     expect(completion_at(filename, [1, 4], map)).to include('rescue_from')
 
     expect(completion_at(filename, [3, 5], map)).to include(
@@ -39,7 +39,7 @@ RSpec.describe 'Rails 7 API' do
       EOS
       end
 
-    filename = './config/routes.rb'
+    filename = File.expand_path('./config/routes.rb', './spec/rails7')
     expect(completion_at(filename, [1, 5], map)).to include('resources')
     expect(completion_at(filename, [3, 7], map)).to include('resources')
   end
@@ -87,7 +87,7 @@ RSpec.describe 'Rails 7 API' do
         EOS
       end
 
-    filename = './db/migrate/20130502114652_create_things.rb'
+    filename = File.expand_path('./db/migrate/20130502114652_create_things.rb', './spec/rails7')
     expect(completion_at(filename, [2, 7], map)).to include('create_table')
     expect(completion_at(filename, [6, 7], map)).to include('create_table')
     expect(completion_at(filename, [8, 10], map)).to include('column')
