@@ -227,10 +227,12 @@ Date.tomorrow:
   skip: false
 Date.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Date.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Date.with_options:
@@ -645,10 +647,12 @@ Date#tomorrow?:
   skip: false
 Date#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Date#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Date#weeks_ago:

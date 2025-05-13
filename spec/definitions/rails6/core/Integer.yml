@@ -203,10 +203,12 @@ Integer.to_query:
   skip: false
 Integer.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Integer.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Integer.with_options:
@@ -395,10 +397,12 @@ Integer#to_query:
   skip: false
 Integer#to_s:
   types:
+  - generic<T>
   - undefined
   skip: false
 Integer#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Integer#try!:
