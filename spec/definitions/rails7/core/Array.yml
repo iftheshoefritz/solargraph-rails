@@ -386,7 +386,7 @@ Array#to:
   skip: false
 Array#to_formatted_s:
   types:
-  - undefined
+  - "::String"
   skip: false
 Array#to_fs:
   types:
