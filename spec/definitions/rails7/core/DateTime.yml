@@ -691,7 +691,7 @@ DateTime#to_f:
   skip: false
 DateTime#to_formatted_s:
   types:
-  - undefined
+  - "::String"
   skip: false
 DateTime#to_fs:
   types:
