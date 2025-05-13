@@ -173,12 +173,12 @@ ActiveRecord::Base.asynchronous_queries_tracker:
   skip: true
 ActiveRecord::Base.attachment_reflections:
   types:
-  - undefined
-  skip: true
+  - "::Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
+  skip: false
 ActiveRecord::Base.attachment_reflections=:
   types:
-  - undefined
-  skip: true
+  - "::Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
+  skip: false
 ActiveRecord::Base.attachment_reflections?:
   types:
   - undefined
@@ -338,11 +338,11 @@ ActiveRecord::Base.belongs_to:
 ActiveRecord::Base.belongs_to_required_by_default:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.belongs_to_required_by_default=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.belongs_to_required_by_default?:
   types:
   - undefined
@@ -558,11 +558,11 @@ ActiveRecord::Base.connection_handler=:
 ActiveRecord::Base.connection_handlers:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.connection_handlers=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.connection_pool:
   types:
   - undefined
@@ -719,11 +719,11 @@ ActiveRecord::Base.default_shard?:
 ActiveRecord::Base.default_timezone:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.default_timezone=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.define_attribute:
   types:
   - undefined
@@ -831,19 +831,19 @@ ActiveRecord::Base.distinct:
 ActiveRecord::Base.dump_schema_after_migration:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.dump_schema_after_migration=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.dump_schemas:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.dump_schemas=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.dup:
   types:
   - self
@@ -874,7 +874,7 @@ ActiveRecord::Base.encrypts:
   skip: false
 ActiveRecord::Base.enum:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
@@ -891,11 +891,11 @@ ActiveRecord::Base.enumerate_columns_in_select_statements?:
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.error_on_ignored_order=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.establish_connection:
   types:
   - undefined
@@ -1213,11 +1213,11 @@ ActiveRecord::Base.increment_counter:
 ActiveRecord::Base.index_nested_attribute_errors:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.index_nested_attribute_errors=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.inheritance_column:
   types:
   - undefined
@@ -1373,11 +1373,11 @@ ActiveRecord::Base.locking_enabled?:
 ActiveRecord::Base.logger:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.logger=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.logger?:
   types:
   - undefined
@@ -1393,11 +1393,11 @@ ActiveRecord::Base.lookup_connection_handler:
 ActiveRecord::Base.maintain_test_schema:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.maintain_test_schema=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.many?:
   types:
   - "::Boolean"
@@ -1619,11 +1619,11 @@ ActiveRecord::Base.primary_key=:
 ActiveRecord::Base.primary_key_prefix_type:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.primary_key_prefix_type=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.primary_key_prefix_type?:
   types:
   - undefined
@@ -1667,11 +1667,11 @@ ActiveRecord::Base.rake_extension:
 ActiveRecord::Base.reading_role:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.reading_role=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.readonly:
   types:
   - undefined
@@ -1847,11 +1847,11 @@ ActiveRecord::Base.sanitize_sql_like:
 ActiveRecord::Base.schema_format:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.schema_format=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.schema_migrations_table_name:
   types:
   - undefined
@@ -2163,11 +2163,11 @@ ActiveRecord::Base.thread_mattr_writer:
 ActiveRecord::Base.time_zone_aware_attributes:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.time_zone_aware_attributes=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.time_zone_aware_attributes?:
   types:
   - undefined
@@ -2195,11 +2195,11 @@ ActiveRecord::Base.timestamp_attributes_for_update_in_model:
 ActiveRecord::Base.timestamped_migrations:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.timestamped_migrations=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.to_adapter:
   types:
   - undefined
@@ -2367,19 +2367,19 @@ ActiveRecord::Base.validators_on:
 ActiveRecord::Base.verbose_query_logs:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.verbose_query_logs=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.warn_on_records_fetched_greater_than:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.where:
   types:
   - "::ActiveRecord::QueryMethods::WhereChain"
@@ -2405,11 +2405,11 @@ ActiveRecord::Base.without:
 ActiveRecord::Base.writing_role:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.writing_role=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.yaml_encoder:
   types:
   - undefined

@@ -665,7 +665,7 @@ Date#with_options:
   skip: false
 Date#xmlschema:
   types:
-  - undefined
+  - "::String"
   skip: false
 Date#years_ago:
   types:

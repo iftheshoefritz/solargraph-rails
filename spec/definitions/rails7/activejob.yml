@@ -686,11 +686,11 @@ ActiveJob::Base#serialized_arguments=:
 ActiveJob::Base#successfully_enqueued=:
   types:
   - undefined
-  # in code but not in RBS
-  skip: true
+  skip: false
 ActiveJob::Base#successfully_enqueued?:
-  # in code but not in RBS
-  skip: true
+  types:
+  - "::Boolean"
+  skip: false
 ActiveJob::Base#timezone:
   types:
   - undefined
