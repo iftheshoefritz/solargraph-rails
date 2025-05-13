@@ -203,10 +203,12 @@ Kernel.to_query:
   skip: false
 Kernel.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Kernel.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Kernel.with_options:

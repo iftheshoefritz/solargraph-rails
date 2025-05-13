@@ -875,6 +875,7 @@ ActiveRecord::Base.encrypts:
 ActiveRecord::Base.enum:
   types:
   - undefined
+  - void
   skip: false
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
@@ -2230,10 +2231,12 @@ ActiveRecord::Base.transaction:
   skip: false
 ActiveRecord::Base.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveRecord::Base.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveRecord::Base.type_caster:
@@ -2467,14 +2470,6 @@ ActiveRecord::Base#attachment_changes:
   types:
   - void
   skip: false
-ActiveRecord::Base#attachment_reflections:
-  types:
-  - "::Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
-  skip: false
-ActiveRecord::Base#attachment_reflections?:
-  types:
-  - undefined
-  skip: true
 ActiveRecord::Base#attribute_aliases:
   types:
   - undefined
@@ -3283,10 +3278,12 @@ ActiveRecord::Base#trigger_transactional_callbacks?:
   skip: false
 ActiveRecord::Base#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveRecord::Base#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveRecord::Base#type_for_attribute:

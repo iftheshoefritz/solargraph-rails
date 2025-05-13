@@ -207,10 +207,12 @@ Class.to_query:
   skip: false
 Class.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Class.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Class.with_options:
@@ -417,10 +419,12 @@ Class#to_query:
   skip: false
 Class#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Class#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Class#with_options:
