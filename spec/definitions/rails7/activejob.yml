@@ -451,10 +451,12 @@ ActiveJob::Base.to_query:
   skip: false
 ActiveJob::Base.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveJob::Base.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveJob::Base.with_options:
@@ -713,10 +715,12 @@ ActiveJob::Base#to_query:
   skip: false
 ActiveJob::Base#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveJob::Base#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActiveJob::Base#with_options:

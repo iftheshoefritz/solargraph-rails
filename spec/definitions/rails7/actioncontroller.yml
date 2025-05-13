@@ -771,10 +771,12 @@ ActionController::Base.to_query:
   skip: false
 ActionController::Base.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionController::Base.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionController::Base.urlsafe_csrf_tokens:
@@ -1669,10 +1671,12 @@ ActionController::Base#translate:
   skip: false
 ActionController::Base#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionController::Base#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionController::Base#url_for:

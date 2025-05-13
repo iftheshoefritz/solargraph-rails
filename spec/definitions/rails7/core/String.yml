@@ -199,10 +199,12 @@ String.to_query:
   skip: false
 String.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 String.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 String.with_options:
@@ -442,10 +444,12 @@ String#truncate_words:
   skip: false
 String#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 String#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 String#underscore:

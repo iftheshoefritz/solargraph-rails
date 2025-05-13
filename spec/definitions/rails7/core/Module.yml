@@ -207,10 +207,12 @@ Module.to_query:
   skip: false
 Module.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module.with_options:
@@ -409,10 +411,12 @@ Module#to_query:
   skip: false
 Module#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module#with_options:

@@ -199,10 +199,12 @@ Array.to_query:
   skip: false
 Array.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Array.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Array.with_options:
@@ -418,10 +420,12 @@ Array#to_xml:
   skip: false
 Array#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Array#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Array#with_options:

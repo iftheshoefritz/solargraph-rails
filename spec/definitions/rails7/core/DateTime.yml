@@ -235,10 +235,12 @@ DateTime.to_query:
   skip: false
 DateTime.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 DateTime.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 DateTime.with_options:
@@ -735,10 +737,12 @@ DateTime#tomorrow?:
   skip: false
 DateTime#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 DateTime#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 DateTime#usec:

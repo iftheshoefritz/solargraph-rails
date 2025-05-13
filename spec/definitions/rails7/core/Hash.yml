@@ -207,10 +207,12 @@ Hash.to_query:
   skip: false
 Hash.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Hash.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Hash.with_options:
@@ -448,10 +450,12 @@ Hash#to_xml:
   skip: false
 Hash#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Hash#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Hash#with_defaults:

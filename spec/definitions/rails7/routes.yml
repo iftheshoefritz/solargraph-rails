@@ -223,10 +223,12 @@ ActionDispatch::Routing::Mapper.to_query:
   skip: false
 ActionDispatch::Routing::Mapper.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper.with_options:
@@ -503,10 +505,12 @@ ActionDispatch::Routing::Mapper#to_query:
   skip: false
 ActionDispatch::Routing::Mapper#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 ActionDispatch::Routing::Mapper#unauthenticated:

@@ -207,10 +207,12 @@ File.to_query:
   skip: false
 File.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 File.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 File.with_options:
@@ -344,10 +346,12 @@ File#to_query:
   skip: false
 File#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 File#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 File#with_options:
