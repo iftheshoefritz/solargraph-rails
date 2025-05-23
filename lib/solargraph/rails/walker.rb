@@ -54,7 +54,7 @@ module Solargraph
         ast = source.node
 
         if ast.is_a?(::Parser::AST::Node)
-          ast
+          [ast]
         else
           NodeParser.parse_with_comments(source.code, source.filename)
         end
