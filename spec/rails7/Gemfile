@@ -5,5 +5,5 @@ gem 'devise'
 gem 'sqlite3'
 
 group :development do
-  gem 'solargraph', path: '/Users/broz/src/solargraph'
+  gem 'solargraph'
 end
