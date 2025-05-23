@@ -18,7 +18,7 @@
 
 ```sh
 npm install -g act
-act act pull_request
+act pull_request
 ```
 
 ## Completion coverage tracking
