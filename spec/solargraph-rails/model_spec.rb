@@ -75,6 +75,17 @@ RSpec.describe Solargraph::Rails::Model do
     assert_class_method(api_map, 'Transaction.positive', ['Class<Transaction>'])
   end
 
+  it 'handles primary_abstract_class without breaking' do
+    expect do
+      load_string 'app/models/application_record.rb',
+                  <<-RUBY
+                  class ApplicationRecord < ActiveRecord::Base
+                    primary_abstract_class
+                  end
+                  RUBY
+    end.not_to raise_error
+  end
+
   it 'generates scope methods with parameters' do
     load_string 'app/models/person.rb',
                 <<-RUBY
