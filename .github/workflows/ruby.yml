@@ -109,6 +109,5 @@ jobs:
 
       - name: Test
         run: |
-          gem install bundler
           bundle install
           bundle exec rspec
