@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'solargraph/rails/version'
 
 
-solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION']) || ">= 0.48.0"
+solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION']) || ">= 0.54.5"
 
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
