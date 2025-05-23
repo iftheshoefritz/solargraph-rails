@@ -27,6 +27,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
 
-  spec.add_runtime_dependency 'solargraph'
+  # Solargraph temporarily dropped support for Convention.global in
+  # 0.53 - this should be lifted after it returns:
+  #
+  # https://github.com/castwide/solargraph/pull/877
+  spec.add_runtime_dependency 'solargraph', '<0.53.0'
   spec.add_runtime_dependency 'activesupport'
 end

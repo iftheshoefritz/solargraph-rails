@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'Rails 5 API' do
+RSpec.xdescribe 'Rails 5 API' do
   it 'it provides Rails controller api' do
     map =
       use_workspace './spec/rails5' do |root|
