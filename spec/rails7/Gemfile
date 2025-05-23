@@ -1,10 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 7.0.2'
 gem 'devise'
-gem 'pry-rails'
+gem 'rails', '~> 7.0.4'
 gem 'sqlite3'
-
-group :development do
-  gem 'solargraph'
-end

@@ -7,10 +7,6 @@
 /spec/reports/
 /tmp/
 .DS_Store
-spec/rails5/log/
-spec/rails5/tmp/
-spec/rails6/log/
-spec/rails6/tmp/
 spec/rails7/log/
 spec/rails7/tmp/
 .projections.json
@@ -20,3 +16,4 @@ spec/rails7/tmp/
 .rspec_status
 Gemfile.lock
 /.Gemfile
+vendor
