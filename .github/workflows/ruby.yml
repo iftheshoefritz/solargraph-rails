@@ -37,6 +37,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
+          bundler: latest
           cache-version: 2
 
       - name: bundle list
@@ -56,6 +57,5 @@ jobs:
       #  uses: lhotari/action-upterm@v1
       - name: Test
         run: |
-          gem install bundler
           bundle install
           bundle exec rspec
