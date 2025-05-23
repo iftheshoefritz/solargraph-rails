@@ -58,6 +58,15 @@ jobs:
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
 
+      - name: Install child bundle
+        run: |
+          set -x
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          cd "spec/rails${{ matrix.rails-version }}"
+          bundle install
+
       - name: RSpec
         run: |
+          set -x
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
           bundle exec rspec spec/solargraph-rails
