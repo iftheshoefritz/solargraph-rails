@@ -171,7 +171,7 @@ module Solargraph
 
           method = Pin::Method.new(
             closure: namespace,
-            scope:,
+            scope: scope,
             name: method_name,
             comments: "@return [#{relation_type(model_class)}]"
           )
@@ -187,7 +187,7 @@ module Solargraph
               decl = :restarg
             end
             method.parameters << Solargraph::Pin::Parameter.new(
-              name:, decl:,
+              name: name, decl: decl,
               closure: method,
               return_type: Solargraph::ComplexType.parse(type)
             )
@@ -217,7 +217,7 @@ module Solargraph
       end
 
       ANY_ARGS = {"*args" => nil}
-      
+
       RETURNS_RELATION = {
         "all" => {},
         "and" => {"other" => "ActiveRecord::Relation"},
