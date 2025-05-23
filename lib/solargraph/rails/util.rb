@@ -5,6 +5,7 @@ module Solargraph
         ns,
         name,
         types: nil,
+        params: {},
         location: nil,
         attribute: false,
         scope: :instance
@@ -18,11 +19,27 @@ module Solargraph
         }
 
         comments = []
+        params.each do |name, types|
+          comments << "@param [#{types.join(',')}] #{name}"
+        end
         comments << "@return [#{types.join(',')}]" if types
 
         opts[:comments] = comments.join("\n")
 
-        Solargraph::Pin::Method.new(**opts)
+        m = Solargraph::Pin::Method.new(**opts)
+        parameters = params.map do |name, type|
+            Solargraph::Pin::Parameter.new(
+              location: nil,
+              closure: m,
+              comments: '',
+              name: name,
+              presence: nil,
+              decl: :arg,
+              asgn_code: nil
+            )
+        end
+        m.parameters.concat(parameters)
+        m
       end
 
       def self.build_module_include(ns, module_name, location)
