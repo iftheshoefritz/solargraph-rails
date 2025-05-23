@@ -77,6 +77,7 @@ jobs:
       - name: Install child bundle
         run: |
           set -x
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           cd "spec/rails${{ matrix.rails-version }}"
           bundle install
@@ -84,5 +85,11 @@ jobs:
       - name: RSpec
         run: |
           set -x
+          env
+          echo $MATRIX_SOLARGRAPH_VERSION
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
+          ruby --version
+          bundle install
+          bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails
