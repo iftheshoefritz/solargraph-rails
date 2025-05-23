@@ -12,8 +12,14 @@
     $ cd ../../
     ```
 4. now tests should pass locally and you can try different changes
-5. sumbit PR
+5. submit PR
 
+## Debugging workflow / test matrix issues locally
+
+```sh
+npm install -g act
+act pull_request
+```
 ## Completion coverage tracking
 
 Solargraph-Rails uses a [set of yaml files](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/definitions) to track coverage of found completions.
