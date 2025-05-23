@@ -14,6 +14,7 @@
 #     include AbstractController::Rendering
 #     extend ActiveSupport::Callbacks::ClassMethods
 #     extend ActiveSupport::Rescuable::ClassMethods
+#     extend ActionController::AllowBrowser::ClassMethods
 #     extend AbstractController::Callbacks::ClassMethods
 #     extend ActionController::RequestForgeryProtection::ClassMethods
 #   end
@@ -26,6 +27,14 @@
 #     include ActionDispatch::Routing::Mapper::Resources
 #     include ActionDispatch::Routing::Mapper::CustomUrls
 #   end
+#   class ActionMailer::Base
+#     extend ActionView::Layouts::ClassMethods
+#   end
+#   class Rails::Railtie
+#     # @yieldself [Rails::Application]
+#     # @return [void]
+#     def configure(&block); end
+#   end
 #   class Rails
 #     # @return [Rails::Application]
 #     def self.application; end
@@ -33,9 +42,11 @@
 #   class Rails::Application
 #     # @return [ActionDispatch::Routing::RouteSet]
 #     def routes; end
+#     extend Rails::Application
 #   end
 #   class ActionDispatch::Routing::RouteSet
 #     # @yieldself [ActionDispatch::Routing::Mapper]
+#     # @return [void]
 #     def draw; end
 #   end
 #   class ActiveRecord::Base
