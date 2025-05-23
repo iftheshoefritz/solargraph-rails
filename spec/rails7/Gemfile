@@ -3,7 +3,3 @@ source 'https://rubygems.org'
 gem 'rails', '~> 7.1.0'
 gem 'devise'
 gem 'sqlite3'
-
-group :development do
-  gem 'solargraph'
-end
