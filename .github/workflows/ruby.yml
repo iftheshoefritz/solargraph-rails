@@ -42,6 +42,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
+          bundler: latest
           cache-version: 2
       - name: cache gem annotations
         uses: actions/cache@v3
@@ -54,6 +55,5 @@ jobs:
       #  uses: lhotari/action-upterm@v1
       - name: Test
         run: |
-          gem install bundler
           bundle install
           bundle exec rspec
