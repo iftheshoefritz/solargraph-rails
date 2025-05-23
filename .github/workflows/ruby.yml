@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby:
+        ruby-version:
           - "3.0"
 #          - "3.1"
 #          - "3.2"
@@ -34,16 +34,20 @@ jobs:
 #          - "0.50.0"
 #          - "0.51.2"
 #          - "0.52.0"
+        rails-version:
+          - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby }}
+          ruby-version: "${{ matrix.ruby-version }}"
           bundler-cache: true
           bundler: latest
           cache-version: 2
+
       - name: cache gem annotations
         uses: actions/cache@v3
         id: dot-cache
@@ -53,7 +57,22 @@ jobs:
             /home/runner/.cache
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
-      - name: Test
+
+      - name: Install child bundle
         run: |
+          set -x
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          cd "spec/rails${{ matrix.rails-version }}"
           bundle install
-          bundle exec rspec
+
+      - name: RSpec
+        run: |
+          set -x
+          echo $MATRIX_SOLARGRAPH_VERSION
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          ruby --version
+          bundle install
+          bundle exec solargraph version
+          bundle exec rspec spec/solargraph-rails
