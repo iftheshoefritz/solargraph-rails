@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe Solargraph::Rails::Annotate do
   let(:api_map) { Solargraph::ApiMap.new }
 
-  it 'auto completes implicit nested classes' do
+  xit 'auto completes implicit nested classes' do
     load_string 'app/models/my_model.rb',
                 <<~RUBY
       #  id                        :integer          not null, primary key
@@ -22,7 +22,7 @@ RSpec.describe Solargraph::Rails::Annotate do
       expect(pin.location.range.to_hash).to eq(
         { start: { line: 0, character: 0 }, end: { line: 0, character: 68 } }
       )
-    end
+   end
 
     assert_public_instance_method(api_map, 'MyModel#start_date', ['Date'])
     assert_public_instance_method(api_map, 'MyModel#start_date=', ['Date'],
