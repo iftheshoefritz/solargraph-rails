@@ -112,10 +112,21 @@ module Helpers
       @files = []
     end
 
+    def solargraph_version
+      Solargraph::VERSION.split('.')[0..1].join('.').to_f
+    end
+
     def write_file(path, content)
       FileUtils.mkdir_p(File.dirname(path))
       File.write(path, content)
       @files << path
+      # Older Solargraph versions store relative paths; return those
+      # so we can fetch them by the same names later
+      if solargraph_version < 0.51
+        "./" + path
+      else
+        File.expand_path(path)
+      end
     end
   end
 
