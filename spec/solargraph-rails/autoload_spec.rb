@@ -31,4 +31,3 @@ RSpec.describe Solargraph::Rails::Autoload do
     expect(completion_at('test1.rb', [4, 16])).to include("Baz")
   end
 end
-
