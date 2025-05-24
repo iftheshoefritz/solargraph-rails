@@ -189,7 +189,7 @@ module Solargraph
             method.parameters << Solargraph::Pin::Parameter.new(
               name:, decl:,
               closure: method,
-              return_type: type
+              comments: "@return [#{type}]"
             )
             pins << method
           end
