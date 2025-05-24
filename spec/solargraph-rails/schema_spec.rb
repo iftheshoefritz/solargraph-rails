@@ -49,12 +49,14 @@ RSpec.describe Solargraph::Rails::Schema do
 
     assert_public_instance_method(map, "Account#extra", ["Hash"]) do |pin|
       expect(pin.location.range.to_hash).to eq({
-        :start => { :line => 5, :character => 0 },
-        :end => { :line => 5, :character => 4 }
+        :start => { :line => 5, :character => 4 },
+        :end => { :line => 5, :character => 19 }
       })
     end
 
     assert_public_instance_method(map, "Account#balance", ["BigDecimal"])
+    assert_public_instance_method(map, "Account#balance=", ["BigDecimal"],
+                                  args: { value: 'BigDecimal' })
     assert_public_instance_method(map, "Account#some_int", ["Integer"])
     assert_public_instance_method(map, "Account#some_date", ["Date"])
     assert_public_instance_method(map, "Account#some_big_id", ["Integer"])

@@ -1,7 +1,7 @@
 ---
 Module.acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Module.alias_attribute:
   skip: false
 Module.anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module.as_json:
   types:
@@ -17,32 +17,31 @@ Module.as_json:
   skip: false
 Module.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_naming_format:
   types:
-  - undefined
+  - "::String"
   skip: false
 Module.attr_internal_naming_format=:
   types:
-  - undefined
+  - "::String"
   skip: false
 Module.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Module.blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Module.cattr_accessor:
   types:
@@ -90,15 +89,15 @@ Module.descendants:
   skip: false
 Module.duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Module.html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Module.in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module.instance_values:
   types:
@@ -138,16 +137,17 @@ Module.module_parents:
   skip: false
 Module.presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Module.presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Module.present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Module.redefine_method:
   types:
@@ -203,14 +203,16 @@ Module.to_param:
   skip: false
 Module.to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Module.try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module.try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module.with_options:
@@ -219,7 +221,7 @@ Module.with_options:
   skip: false
 Module#acts_like?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module#alias_attribute:
   types:
@@ -227,7 +229,7 @@ Module#alias_attribute:
   skip: false
 Module#anonymous?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module#as_json:
   types:
@@ -235,24 +237,23 @@ Module#as_json:
   skip: false
 Module#attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Module#attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Module#attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Module#attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Module#blank?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Module#cattr_accessor:
   types:
@@ -292,15 +293,15 @@ Module#deprecate:
   skip: false
 Module#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Module#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Module#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module#instance_values:
   types:
@@ -340,16 +341,17 @@ Module#module_parents:
   skip: false
 Module#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Module#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Module#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Module#redefine_method:
   types:
@@ -405,14 +407,16 @@ Module#to_param:
   skip: false
 Module#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Module#try:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module#try!:
   types:
+  - generic<T>
   - undefined
   skip: false
 Module#with_options:

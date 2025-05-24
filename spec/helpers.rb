@@ -6,6 +6,9 @@ module Helpers
   end
 
   def assert_matches_definitions(map, class_name, definition_name, update: false)
+    if ENV['FORCE_UPDATE'] == 'true'
+      update = true
+    end
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
@@ -48,7 +51,7 @@ module Helpers
           Consider setting skip=false
         STR
       elsif pin
-        effective_type = pin.return_type.map(&:tag)
+        effective_type = pin.typify(map).items.map(&:rooted_tag).sort.uniq
         specified_type = data['types']
 
         if effective_type != specified_type
@@ -125,18 +128,30 @@ module Helpers
 
     Dir.chdir folder do
       yield injector if block_given?
-      map = Solargraph::ApiMap.load('./')
+      map = Solargraph::ApiMap.load_with_cache('./', STDERR)
       injector.files.each { |f| File.delete(f) }
     end
 
     map
   end
 
-  def assert_public_instance_method(map, query, return_type, &block)
+  def assert_public_instance_method(map, query, return_type, args: nil, &block)
     pin = find_pin(query, map)
-    expect(pin).to_not be_nil
+    expect(pin).to_not be_nil, -> { "Could not find method in api_map via #{query}" }
     expect(pin.scope).to eq(:instance)
-    expect(pin.return_type.map(&:tag)).to eq(return_type)
+    pin_return_type = pin.return_type
+    pin_return_type = pin.probe map if pin_return_type.undefined?
+    expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
+    unless args.nil?
+      args.each_pair do |name, type|
+        expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil
+        expect(parameter.return_type.tag).to eq(type)
+      end
+      pin.parameters.each do |param|
+        expect(args).to have_key(param.name.to_sym)
+        expect(param.return_type.tag).to eq(args[param.name.to_sym])
+      end
+    end
 
     yield pin if block_given?
   end

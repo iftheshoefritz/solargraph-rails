@@ -1,11 +1,10 @@
 ENV['RAILS_ENV'] = 'test'
 
+require 'debug'
 # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
 require 'logger'
 require 'solargraph'
 require 'solargraph-rails'
-require 'logger'
-require 'debug'
 require 'fileutils'
 require_relative './helpers'
 

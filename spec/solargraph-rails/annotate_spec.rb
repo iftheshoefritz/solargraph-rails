@@ -24,9 +24,11 @@ RSpec.describe Solargraph::Rails::Annotate do
       expect(pin.location.range.to_hash).to eq(
         { start: { line: 0, character: 0 }, end: { line: 0, character: 68 } }
       )
-   end
+    end
 
     assert_public_instance_method(api_map, 'MyModel#start_date', ['Date'])
+    assert_public_instance_method(api_map, 'MyModel#start_date=', ['Date'],
+                                  args: { value: 'Date' })
     assert_public_instance_method(
       api_map,
       'MyModel#living_expenses',

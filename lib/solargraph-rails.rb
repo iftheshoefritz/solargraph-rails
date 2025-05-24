@@ -3,18 +3,19 @@ require 'logger'
 require 'active_support'
 require 'active_support/core_ext/string/inflections'
 
-require_relative 'solargraph/rails/util.rb'
-require_relative 'solargraph/rails/schema.rb'
-require_relative 'solargraph/rails/annotate.rb'
-require_relative 'solargraph/rails/autoload.rb'
-require_relative 'solargraph/rails/model.rb'
-require_relative 'solargraph/rails/devise.rb'
-require_relative 'solargraph/rails/walker.rb'
-require_relative 'solargraph/rails/rails_api.rb'
-require_relative 'solargraph/rails/delegate.rb'
-require_relative 'solargraph/rails/storage.rb'
-require_relative 'solargraph/rails/debug.rb'
-require_relative 'solargraph/rails/version.rb'
+require_relative 'solargraph/rails/util'
+require_relative 'solargraph/rails/schema'
+require_relative 'solargraph/rails/annotate'
+require_relative 'solargraph/rails/autoload'
+require_relative 'solargraph/rails/model'
+require_relative 'solargraph/rails/devise'
+require_relative 'solargraph/rails/walker'
+require_relative 'solargraph/rails/rails_api'
+require_relative 'solargraph/rails/routes_dsl'
+require_relative 'solargraph/rails/delegate'
+require_relative 'solargraph/rails/storage'
+require_relative 'solargraph/rails/debug'
+require_relative 'solargraph/rails/version'
 
 module Solargraph
   module Rails
@@ -35,12 +36,13 @@ module Solargraph
       end
 
       def local(source_map)
+        run_feature { RoutesDsl.local(source_map) }
+
         pins = []
-        ds =
-          source_map.document_symbols.select do |n|
-            n.is_a?(Solargraph::Pin::Namespace)
-          end
-        ns = ds.first
+        ds = source_map.document_symbols.select do |n|
+          n.is_a?(Solargraph::Pin::Namespace)
+        end
+        ns = ds.find { |s| s.type == :class }
 
         return EMPTY_ENVIRON unless ns
 
@@ -50,7 +52,7 @@ module Solargraph
         pins += run_feature { Storage.instance.process(source_map, ns) }
         pins += run_feature { Autoload.instance.process(source_map, ns, ds) }
         pins += run_feature { Devise.instance.process(source_map, ns) }
-        pins += run_feature { Delegate.instance.process(source_map, ns) }
+        pins += run_feature { Delegate.instance.process(source_map, ns) } if Delegate.supported?
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
 
         Solargraph::Environ.new(pins: pins)
