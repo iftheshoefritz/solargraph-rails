@@ -58,7 +58,7 @@ jobs:
       #  uses: lhotari/action-upterm@v1
 
       - name: bundle list
-        run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        run: bundle install && bundle list && cat Gemfile.lock && find vendor -name Gemfile
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
