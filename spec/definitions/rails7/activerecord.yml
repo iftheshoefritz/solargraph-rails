@@ -846,7 +846,7 @@ ActiveRecord::Base.dump_schemas=:
   skip: true
 ActiveRecord::Base.dup:
   types:
-  - String
+  - undefined
   skip: false
 ActiveRecord::Base.duplicable?:
   types:
@@ -2879,7 +2879,7 @@ ActiveRecord::Base#initialize_internals_callback:
   skip: false
 ActiveRecord::Base#inspect:
   types:
-  - String
+  - undefined
   skip: false
 ActiveRecord::Base#instance_values:
   types:
