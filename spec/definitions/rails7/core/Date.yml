@@ -149,7 +149,7 @@ Date#beginning_of_year:
   skip: false
 Date#compare_with_coercion:
   types:
-  - undefined
+  - "-1"
   skip: false
 Date#days_ago:
   types:
@@ -188,6 +188,18 @@ Date#future?:
   - undefined
   skip: false
 Date#in_time_zone:
+  types:
+  - undefined
+  skip: false
+Date#inspect:
+  types:
+  - undefined
+  skip: false
+Date#instance_values:
+  types:
+  - undefined
+  skip: false
+Date#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -301,7 +313,7 @@ Date#prev_weekday:
   skip: false
 Date#readable_inspect:
   types:
-  - undefined
+  - String
   skip: false
 Date#since:
   types:
@@ -333,7 +345,7 @@ Date#to_query:
   skip: false
 Date#to_time:
   types:
-  - undefined
+  - Time
   skip: false
 Date#today?:
   types:

@@ -138,11 +138,11 @@ Module.module_parents:
   skip: false
 Module.presence:
   types:
-  - Object
+  - self
   skip: false
 Module.presence_in:
   types:
-  - Object
+  - self
   skip: false
 Module.present?:
   types:
@@ -340,11 +340,11 @@ Module#module_parents:
   skip: false
 Module#presence:
   types:
-  - Object
+  - self
   skip: false
 Module#presence_in:
   types:
-  - Object
+  - self
   skip: false
 Module#present?:
   types:

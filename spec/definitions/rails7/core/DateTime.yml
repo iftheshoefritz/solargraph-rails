@@ -389,11 +389,11 @@ DateTime#plus_with_duration:
   skip: true
 DateTime#presence:
   types:
-  - Object
+  - self
   skip: false
 DateTime#presence_in:
   types:
-  - Object
+  - self
   skip: false
 DateTime#present?:
   types:
@@ -426,7 +426,7 @@ DateTime#prev_weekday:
   skip: true
 DateTime#readable_inspect:
   types:
-  - undefined
+  - String
   skip: false
 DateTime#seconds_since_midnight:
   types:

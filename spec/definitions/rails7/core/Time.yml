@@ -1,8 +1,8 @@
 ---
 Time.at:
   types:
-  - undefined
-  skip: false
+  - Time
+  skip: true
 Time.at_with_coercion:
   types:
   - undefined
@@ -54,16 +54,17 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip: false
+  skip: true
 Time#-:
   types:
-  - undefined
-  skip: false
+  - Float
+  - Time
+  skip: true
 Time#<=>:
   types:
   - Integer
   - nil
-  skip: false
+  skip: true
 Time#advance:
   types:
   - undefined
@@ -210,7 +211,7 @@ Time#change:
   skip: false
 Time#compare_with_coercion:
   types:
-  - undefined
+  - "-1"
   skip: false
 Time#days_ago:
   types:
@@ -254,7 +255,7 @@ Time#end_of_year:
   skip: false
 Time#eql_with_coercion:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#formatted_offset:
   types:
@@ -442,7 +443,7 @@ Time#to_fs:
   skip: false
 Time#to_time:
   types:
-  - Time
+  - undefined
   skip: false
 Time#today?:
   types:

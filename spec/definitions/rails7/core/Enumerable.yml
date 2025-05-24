@@ -53,8 +53,11 @@ Enumerable#sole:
   skip: false
 Enumerable#sum:
   types:
-  - undefined
-  skip: false
+  - "param<Elem>"
+  - "Integer"
+  - "param<T>"
+  - "param<U>"
+  skip: true
 Enumerable#without:
   types:
   - undefined

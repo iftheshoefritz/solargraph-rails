@@ -125,11 +125,11 @@ Integer#petabytes:
   skip: false
 Integer#presence:
   types:
-  - Object
+  - self
   skip: false
 Integer#presence_in:
   types:
-  - Object
+  - self
   skip: false
 Integer#present?:
   types:
@@ -157,6 +157,30 @@ Integer#to_formatted_s:
   - undefined
   skip: false
 Integer#to_fs:
+  types:
+  - undefined
+  skip: false
+Integer#to_json:
+  types:
+  - undefined
+  skip: true
+Integer#to_param:
+  types:
+  - undefined
+  skip: false
+Integer#to_query:
+  types:
+  - undefined
+  skip: false
+Integer#to_s:
+  types:
+  - String
+  skip: true
+Integer#try:
+  types:
+  - undefined
+  skip: false
+Integer#try!:
   types:
   - undefined
   skip: false
