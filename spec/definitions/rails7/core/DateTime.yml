@@ -390,11 +390,17 @@ DateTime#plus_with_duration:
 DateTime#presence:
   types:
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 DateTime#presence_in:
   types:
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 DateTime#present?:
   types:
   - 'true'

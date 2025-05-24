@@ -126,11 +126,17 @@ Integer#petabytes:
 Integer#presence:
   types:
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Integer#presence_in:
   types:
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Integer#present?:
   types:
   - 'true'

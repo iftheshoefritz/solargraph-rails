@@ -150,7 +150,13 @@ Date#beginning_of_year:
 Date#compare_with_coercion:
   types:
   - "-1"
-  skip: false
+  - "0"
+  - "1"
+  - nil
+  skip:
+    - "0.48.0"
+    - "0.49.0"
+    - "0.50.0"
 Date#days_ago:
   types:
   - undefined
