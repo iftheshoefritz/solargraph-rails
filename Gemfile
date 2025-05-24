@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 
 rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
+instance_eval File.read("spec/rails#{rails_version}/Gemfile")
 
 if rails_version == '7'
   # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
