@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.xdescribe 'Rails 7 API' do
+RSpec.describe 'Rails 7 API' do
   it 'it provides Rails controller api' do
     map =
       use_workspace './spec/rails7' do |root|
