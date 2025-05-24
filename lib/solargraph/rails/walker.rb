@@ -49,15 +49,8 @@ module Solargraph
         end
       end
 
-      # https://github.com/castwide/solargraph/issues/522
       def self.normalize_ast(source)
-        ast = source.node
-
-        if ast.is_a?(::Parser::AST::Node)
-          [ast]
-        else
-          NodeParser.parse_with_comments(source.code, source.filename)
-        end
+        NodeParser.parse_with_comments(source.code, source.filename)
       end
 
       def self.from_source(source)
