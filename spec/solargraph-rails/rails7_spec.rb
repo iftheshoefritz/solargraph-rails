@@ -201,8 +201,7 @@ RSpec.describe 'Rails 7 API' do
     methods = api_map.get_method_stack(
       'Person',
       'where',
-      scope: :class,
-      visibility: %i[public protected private]
+      scope: :class
     )
     expect(methods).not_to be_empty
     expect(methods.map(&:class).uniq).to eq([Solargraph::Pin::Method])

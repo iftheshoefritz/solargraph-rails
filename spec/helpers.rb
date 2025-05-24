@@ -51,7 +51,7 @@ module Helpers
           Consider setting skip=false
         STR
       elsif pin
-        effective_type = pin.typify(map).items.map(&:rooted_tag).sort.uniq
+        effective_type = pin.typify(map).map(&:tag).sort.uniq
         specified_type = data['types']
 
         if effective_type != specified_type
@@ -139,7 +139,11 @@ module Helpers
 
     Dir.chdir folder do
       yield injector if block_given?
-      map = Solargraph::ApiMap.load_with_cache('./', STDERR)
+      if Solargraph::ApiMap.respond_to?(:load_with_cache)
+        map = Solargraph::ApiMap.load_with_cache('./', STDERR)
+      else
+        map = Solargraph::ApiMap.load('./')
+      end
       injector.files.each { |f| File.delete(f) }
     end
 

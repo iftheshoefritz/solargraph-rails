@@ -18,7 +18,11 @@ end
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
 
-gem 'solargraph',
-    github: 'apiology/solargraph',
-    branch: '2025-04-28'
+solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION']) || "0.55.alpha"
+
+if solargraph_version == '0.55.alpha'
+  gem 'solargraph',
+      github: 'apiology/solargraph',
+      branch: '2025-04-28'
     # path: '../solargraph'
+end
