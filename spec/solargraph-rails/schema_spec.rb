@@ -129,4 +129,3 @@ RSpec.describe Solargraph::Rails::Schema do
     assert_public_instance_method(map, 'Invoice#amount', ['BigDecimal'])
   end
 end
-
