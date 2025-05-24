@@ -35,5 +35,6 @@ Gem::Specification.new do |spec|
   #
   # https://github.com/castwide/solargraph/pull/877
   spec.add_runtime_dependency 'solargraph', '<0.53.0', solargraph_version
+
   spec.add_runtime_dependency 'activesupport'
 end

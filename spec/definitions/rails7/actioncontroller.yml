@@ -35,10 +35,6 @@ ActionController::Base.after_action:
   types:
   - undefined
   skip: true
-ActionController::Base.alias_attribute:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.all_helpers_from_path:
   types:
   - undefined
@@ -629,10 +625,6 @@ ActionController::Base.request_forgery_protection_token=:
   types:
   - undefined
   skip: true
-ActionController::Base.require_dependency:
-  types:
-  - undefined
-  skip: true
 ActionController::Base.rescue_from:
   types:
   - undefined
@@ -788,7 +780,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
 ActionController::Base.use:
   types:
   - undefined
-  skip: true
+  skip: false
 ActionController::Base.use_renderer:
   types:
   - undefined
@@ -1480,10 +1472,6 @@ ActionController::Base#request_http_digest_authentication:
   - undefined
   skip: true
 ActionController::Base#request_http_token_authentication:
-  types:
-  - undefined
-  skip: true
-ActionController::Base#require_dependency:
   types:
   - undefined
   skip: true
