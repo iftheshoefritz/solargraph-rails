@@ -1,7 +1,7 @@
 ---
 Array.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Array.alias_attribute:
   skip: false
 Array.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array.as_json:
   types:
@@ -33,7 +33,7 @@ Array.attr_internal_writer:
   skip: false
 Array.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array.cattr_accessor:
   types:
@@ -89,7 +89,7 @@ Array.html_safe?:
   skip: false
 Array.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array.instance_values:
   types:
@@ -139,7 +139,7 @@ Array.presence_in:
   skip: false
 Array.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array.redefine_method:
   types:
@@ -195,7 +195,7 @@ Array.to_param:
   skip: false
 Array.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Array.try:
   types:
@@ -213,12 +213,12 @@ Array.with_options:
   skip: false
 Array.wrap:
   types:
-  - "::Array"
-  - "::Array<generic<T>>"
+  - "Array"
+  - "Array<generic<T>>"
   skip: false
 Array#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array#as_json:
   types:
@@ -230,11 +230,11 @@ Array#class_eval:
   skip: false
 Array#compact_blank:
   types:
-  - "::Array"
+  - "Array"
   skip: false
 Array#compact_blank!:
   types:
-  - "::Array<generic<Elem>>"
+  - "Array<generic<Elem>>"
   skip: false
 Array#deep_dup:
   types:
@@ -246,7 +246,7 @@ Array#duplicable?:
   skip: false
 Array#exclude?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array#excluding:
   types:
@@ -282,7 +282,7 @@ Array#html_safe?:
   skip: false
 Array#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array#in_groups:
   types:
@@ -310,7 +310,7 @@ Array#index_with:
   skip: false
 Array#inquiry:
   types:
-  - "::ActiveSupport::ArrayInquirer<generic<Elem>>"
+  - "ActiveSupport::ArrayInquirer<generic<Elem>>"
   skip: false
 Array#instance_values:
   types:
@@ -322,7 +322,7 @@ Array#instance_variable_names:
   skip: false
 Array#many?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array#maximum:
   types:
@@ -352,7 +352,7 @@ Array#presence_in:
   skip: false
 Array#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Array#second:
   types:
@@ -388,11 +388,11 @@ Array#to:
   skip: false
 Array#to_formatted_s:
   types:
-  - "::String"
+  - "String"
   skip: false
 Array#to_fs:
   types:
-  - "::String"
+  - "String"
   skip: false
 Array#to_json:
   types:
@@ -404,11 +404,11 @@ Array#to_param:
   skip: false
 Array#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Array#to_s:
   types:
-  - "::String"
+  - "String"
   skip: false
 Array#to_sentence:
   types:

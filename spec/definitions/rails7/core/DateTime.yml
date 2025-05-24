@@ -1,7 +1,7 @@
 ---
 DateTime.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime.alias_attribute:
   types:
@@ -9,7 +9,7 @@ DateTime.alias_attribute:
   skip: false
 DateTime.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime.as_json:
   types:
@@ -49,7 +49,7 @@ DateTime.beginning_of_week_default=:
   skip: false
 DateTime.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime.cattr_accessor:
   types:
@@ -125,7 +125,7 @@ DateTime.html_safe?:
   skip: false
 DateTime.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime.instance_values:
   types:
@@ -175,7 +175,7 @@ DateTime.presence_in:
   skip: false
 DateTime.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime.redefine_method:
   types:
@@ -231,7 +231,7 @@ DateTime.to_param:
   skip: false
 DateTime.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 DateTime.try:
   types:
@@ -261,12 +261,12 @@ DateTime#-:
   skip: false
 DateTime#<=>:
   types:
-  - "::Integer"
+  - "Integer"
   - nil
   skip: false
 DateTime#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#acts_like_time?:
   types:
@@ -278,7 +278,7 @@ DateTime#advance:
   skip: false
 DateTime#after?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#ago:
   types:
@@ -286,23 +286,23 @@ DateTime#ago:
   skip: false
 DateTime#all_day:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 DateTime#all_month:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 DateTime#all_quarter:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 DateTime#all_week:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 DateTime#all_year:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 DateTime#as_json:
   types:
@@ -382,7 +382,7 @@ DateTime#at_noon:
   skip: false
 DateTime#before?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#beginning_of_day:
   types:
@@ -482,7 +482,7 @@ DateTime#formatted_offset:
   skip: false
 DateTime#future?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#getgm:
   types:
@@ -510,16 +510,16 @@ DateTime#in:
   skip: false
 DateTime#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#in_time_zone:
   types:
-  - "::ActiveSupport::TimeWithZone"
-  - "::Time"
+  - "ActiveSupport::TimeWithZone"
+  - "Time"
   skip: false
 DateTime#inspect:
   types:
-  - "::String"
+  - "String"
   skip: false
 DateTime#instance_values:
   types:
@@ -583,7 +583,7 @@ DateTime#months_since:
   skip: false
 DateTime#next_day?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#next_occurring:
   types:
@@ -611,15 +611,15 @@ DateTime#nsec:
   skip: false
 DateTime#on_weekday?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#on_weekend?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#past?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#plus_with_duration:
   types:
@@ -641,7 +641,7 @@ DateTime#presence_in:
     - "0.50.0"
 DateTime#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#preserve_timezone:
   types:
@@ -649,7 +649,7 @@ DateTime#preserve_timezone:
   skip: false
 DateTime#prev_day?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#prev_occurring:
   types:
@@ -697,11 +697,11 @@ DateTime#to_f:
   skip: false
 DateTime#to_formatted_s:
   types:
-  - "::String"
+  - "String"
   skip: false
 DateTime#to_fs:
   types:
-  - "::String"
+  - "String"
   skip: false
 DateTime#to_i:
   types:
@@ -717,19 +717,19 @@ DateTime#to_param:
   skip: false
 DateTime#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 DateTime#to_s:
   types:
-  - "::String"
+  - "String"
   skip: false
 DateTime#to_time:
   types:
-  - "::Time"
+  - "Time"
   skip: false
 DateTime#today?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#tomorrow:
   types:
@@ -737,7 +737,7 @@ DateTime#tomorrow:
   skip: false
 DateTime#tomorrow?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#try:
   types:
@@ -759,7 +759,7 @@ DateTime#utc:
   skip: false
 DateTime#utc?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 DateTime#utc_offset:
   types:
@@ -795,5 +795,5 @@ DateTime#yesterday:
   skip: false
 DateTime#yesterday?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false

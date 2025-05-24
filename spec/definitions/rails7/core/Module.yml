@@ -1,7 +1,7 @@
 ---
 Module.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Module.alias_attribute:
   skip: false
 Module.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module.as_json:
   types:
@@ -25,11 +25,11 @@ Module.attr_internal_accessor:
   skip: false
 Module.attr_internal_naming_format:
   types:
-  - "::String"
+  - "String"
   skip: false
 Module.attr_internal_naming_format=:
   types:
-  - "::String"
+  - "String"
   skip: false
 Module.attr_internal_reader:
   types:
@@ -41,7 +41,7 @@ Module.attr_internal_writer:
   skip: false
 Module.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module.cattr_accessor:
   types:
@@ -97,7 +97,7 @@ Module.html_safe?:
   skip: false
 Module.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module.instance_values:
   types:
@@ -151,7 +151,7 @@ Module.presence_in:
     - "0.50.0"
 Module.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module.redefine_method:
   types:
@@ -207,7 +207,7 @@ Module.to_param:
   skip: false
 Module.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Module.try:
   types:
@@ -225,7 +225,7 @@ Module.with_options:
   skip: false
 Module#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module#alias_attribute:
   types:
@@ -233,7 +233,7 @@ Module#alias_attribute:
   skip: false
 Module#anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module#as_json:
   types:
@@ -257,7 +257,7 @@ Module#attr_internal_writer:
   skip: false
 Module#blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module#cattr_accessor:
   types:
@@ -305,7 +305,7 @@ Module#html_safe?:
   skip: false
 Module#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module#instance_values:
   types:
@@ -359,7 +359,7 @@ Module#presence_in:
     - "0.50.0"
 Module#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Module#redefine_method:
   types:
@@ -415,7 +415,7 @@ Module#to_param:
   skip: false
 Module#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Module#try:
   types:

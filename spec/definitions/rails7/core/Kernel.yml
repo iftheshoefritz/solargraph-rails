@@ -1,7 +1,7 @@
 ---
 Kernel.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Kernel.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Kernel.alias_attribute:
   skip: false
 Kernel.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Kernel.as_json:
   types:
@@ -33,7 +33,7 @@ Kernel.attr_internal_writer:
   skip: false
 Kernel.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Kernel.cattr_accessor:
   types:
@@ -85,7 +85,7 @@ Kernel.html_safe?:
   skip: false
 Kernel.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Kernel.instance_values:
   types:
@@ -135,7 +135,7 @@ Kernel.presence_in:
   skip: false
 Kernel.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Kernel.redefine_method:
   types:
@@ -199,7 +199,7 @@ Kernel.to_param:
   skip: false
 Kernel.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Kernel.try:
   types:

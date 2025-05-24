@@ -1,11 +1,11 @@
 ---
 Time.===:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time.alias_attribute:
   types:
@@ -13,7 +13,7 @@ Time.alias_attribute:
   skip: false
 Time.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time.as_json:
   types:
@@ -21,7 +21,7 @@ Time.as_json:
   skip: false
 Time.at:
   types:
-  - "::Time"
+  - "Time"
   skip: false
 Time.at_with_coercion:
   types:
@@ -45,7 +45,7 @@ Time.attr_internal_writer:
   skip: false
 Time.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time.cattr_accessor:
   types:
@@ -73,7 +73,7 @@ Time.concerning:
   skip: false
 Time.current:
   types:
-  - "::ActiveSupport::TimeWithZone"
+  - "ActiveSupport::TimeWithZone"
   skip: false
 Time.days_in_month:
   types:
@@ -109,12 +109,12 @@ Time.duplicable?:
   skip: false
 Time.find_zone:
   types:
-  - "::ActiveSupport::TimeZone"
+  - "ActiveSupport::TimeZone"
   - nil
   skip: false
 Time.find_zone!:
   types:
-  - "::ActiveSupport::TimeZone"
+  - "ActiveSupport::TimeZone"
   skip: false
 Time.html_safe?:
   types:
@@ -122,7 +122,7 @@ Time.html_safe?:
   skip: false
 Time.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time.instance_values:
   types:
@@ -172,7 +172,7 @@ Time.presence_in:
   skip: false
 Time.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time.redefine_method:
   types:
@@ -192,7 +192,7 @@ Time.remove_possible_singleton_method:
   skip: false
 Time.rfc3339:
   types:
-  - "::Time"
+  - "Time"
   skip: false
 Time.silence_redefinition_of_method:
   types:
@@ -232,7 +232,7 @@ Time.to_param:
   skip: false
 Time.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Time.try:
   types:
@@ -252,7 +252,7 @@ Time.with_options:
   skip: false
 Time.zone:
   types:
-  - "::ActiveSupport::TimeZone"
+  - "ActiveSupport::TimeZone"
   skip: false
 Time.zone=:
   types:
@@ -268,7 +268,7 @@ Time.zone_default=:
   skip: false
 Time#+:
   types:
-  - "::Time"
+  - "Time"
   skip: false
 Time#-:
   types:
@@ -276,12 +276,12 @@ Time#-:
   skip: false
 Time#<=>:
   types:
-  - "::Integer"
+  - "Integer"
   - nil
   skip: false
 Time#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#acts_like_time?:
   types:
@@ -293,7 +293,7 @@ Time#advance:
   skip: false
 Time#after?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#ago:
   types:
@@ -301,23 +301,23 @@ Time#ago:
   skip: false
 Time#all_day:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 Time#all_month:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 Time#all_quarter:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 Time#all_week:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 Time#all_year:
   types:
-  - "::Range"
+  - "Range"
   skip: false
 Time#as_json:
   types:
@@ -397,7 +397,7 @@ Time#at_noon:
   skip: false
 Time#before?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#beginning_of_day:
   types:
@@ -499,7 +499,7 @@ Time#end_of_year:
   skip: false
 Time#eql?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#eql_with_coercion:
   types:
@@ -511,7 +511,7 @@ Time#formatted_offset:
   skip: false
 Time#future?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#html_safe?:
   types:
@@ -523,12 +523,12 @@ Time#in:
   skip: false
 Time#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#in_time_zone:
   types:
-  - "::ActiveSupport::TimeWithZone"
-  - "::Time"
+  - "ActiveSupport::TimeWithZone"
+  - "Time"
   skip: false
 Time#instance_values:
   types:
@@ -600,7 +600,7 @@ Time#next_day:
   skip: false
 Time#next_day?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#next_month:
   types:
@@ -632,15 +632,15 @@ Time#noon:
   skip: false
 Time#on_weekday?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#on_weekend?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#past?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#plus_with_duration:
   types:
@@ -658,7 +658,7 @@ Time#presence_in:
   skip: false
 Time#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#preserve_timezone:
   types:
@@ -670,7 +670,7 @@ Time#prev_day:
   skip: false
 Time#prev_day?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#prev_month:
   types:
@@ -722,7 +722,7 @@ Time#to_formatted_s:
   skip: false
 Time#to_fs:
   types:
-  - "::String"
+  - "String"
   skip: false
 Time#to_json:
   types:
@@ -734,19 +734,19 @@ Time#to_param:
   skip: false
 Time#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Time#to_s:
   types:
-  - "::String"
+  - "String"
   skip: false
 Time#to_time:
   types:
-  - "::Time"
+  - "Time"
   skip: false
 Time#today?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#tomorrow:
   types:
@@ -754,7 +754,7 @@ Time#tomorrow:
   skip: false
 Time#tomorrow?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Time#try:
   types:
@@ -794,5 +794,5 @@ Time#yesterday:
   skip: false
 Time#yesterday?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false

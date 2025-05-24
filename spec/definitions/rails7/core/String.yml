@@ -1,7 +1,7 @@
 ---
 String.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String.alias_attribute:
   types:
@@ -9,7 +9,7 @@ String.alias_attribute:
   skip: false
 String.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String.as_json:
   types:
@@ -33,7 +33,7 @@ String.attr_internal_writer:
   skip: false
 String.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String.cattr_accessor:
   types:
@@ -89,7 +89,7 @@ String.html_safe?:
   skip: false
 String.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String.instance_values:
   types:
@@ -139,7 +139,7 @@ String.presence_in:
   skip: false
 String.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String.redefine_method:
   types:
@@ -195,7 +195,7 @@ String.to_param:
   skip: false
 String.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 String.try:
   types:
@@ -213,7 +213,7 @@ String.with_options:
   skip: false
 String#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String#acts_like_string?:
   types:
@@ -229,15 +229,15 @@ String#at:
   skip: false
 String#blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String#camelcase:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#camelize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#class_eval:
   types:
@@ -245,7 +245,7 @@ String#class_eval:
   skip: false
 String#classify:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#constantize:
   types:
@@ -253,11 +253,11 @@ String#constantize:
   skip: false
 String#dasherize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#deconstantize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#deep_dup:
   types:
@@ -265,7 +265,7 @@ String#deep_dup:
   skip: false
 String#demodulize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#duplicable?:
   types:
@@ -273,7 +273,7 @@ String#duplicable?:
   skip: false
 String#exclude?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String#first:
   types:
@@ -281,7 +281,7 @@ String#first:
   skip: false
 String#foreign_key:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#from:
   types:
@@ -289,7 +289,7 @@ String#from:
   skip: false
 String#html_safe:
   types:
-  - "::ActiveSupport::SafeBuffer"
+  - "ActiveSupport::SafeBuffer"
   skip: false
 String#html_safe?:
   types:
@@ -297,16 +297,16 @@ String#html_safe?:
   skip: false
 String#humanize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String#in_time_zone:
   types:
-  - "::ActiveSupport::TimeWithZone"
-  - "::Time"
+  - "ActiveSupport::TimeWithZone"
+  - "Time"
   skip: false
 String#indent:
   types:
@@ -318,7 +318,7 @@ String#indent!:
   skip: false
 String#inquiry:
   types:
-  - "::ActiveSupport::StringInquirer"
+  - "ActiveSupport::StringInquirer"
   skip: false
 String#instance_values:
   types:
@@ -330,7 +330,7 @@ String#instance_variable_names:
   skip: false
 String#is_utf8?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String#last:
   types:
@@ -342,11 +342,11 @@ String#mb_chars:
   skip: false
 String#parameterize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#pluralize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#presence:
   types:
@@ -360,7 +360,7 @@ String#presence_in:
   skip: false
 String#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 String#remove:
   types:
@@ -376,7 +376,7 @@ String#safe_constantize:
   skip: false
 String#singularize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#squish:
   types:
@@ -392,15 +392,15 @@ String#strip_heredoc:
   skip: false
 String#tableize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#titlecase:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#titleize:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#to:
   types:
@@ -424,7 +424,7 @@ String#to_param:
   skip: false
 String#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#to_time:
   types:
@@ -454,11 +454,11 @@ String#try!:
   skip: false
 String#underscore:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#upcase_first:
   types:
-  - "::String"
+  - "String"
   skip: false
 String#with_options:
   types:
