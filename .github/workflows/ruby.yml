@@ -22,14 +22,14 @@ jobs:
 #          - "3.3"
 #          - "3.4"
         solargraph-version:
-#          - "0.48.0"
+          - "0.48.0"
           - "0.49.0"
 #          - "0.50.0"
 #          - "0.51.2"
 #          - "0.52.0"
         rails-version:
           - "7"
-      fail-fast: true
+      fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
@@ -48,13 +48,14 @@ jobs:
           cd "spec/rails${{ matrix.rails-version }}"
           bundle install
 
-      - name: cache gem annotations
-        uses: actions/cache@v3
-        id: dot-cache
-        with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
-          path: |
-            /home/runner/.cache
+# Enable once self-annotating versions of Solargraph are supported
+#      - name: cache gem annotations
+#        uses: actions/cache@v3
+#        id: dot-cache
+#        with:
+#          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
+#          path: |
+#            /home/runner/.cache
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile

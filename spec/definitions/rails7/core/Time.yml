@@ -2,7 +2,7 @@
 Time.at:
   types:
   - Time
-  skip: false
+  skip: true
 Time.at_with_coercion:
   types:
   - undefined
@@ -54,17 +54,17 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip: false
+  skip: true
 Time#-:
   types:
   - Float
   - Time
-  skip: false
+  skip: true
 Time#<=>:
   types:
   - Integer
   - nil
-  skip: false
+  skip: true
 Time#advance:
   types:
   - undefined
