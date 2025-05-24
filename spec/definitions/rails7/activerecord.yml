@@ -1,8 +1,4 @@
 ---
-ActiveRecord::Base.===:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.abstract_class:
   types:
   - undefined
@@ -99,10 +95,6 @@ ActiveRecord::Base.aggregate_reflections?:
   types:
   - undefined
   skip: true
-ActiveRecord::Base.alias_attribute:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.all:
   types:
   - undefined
@@ -125,7 +117,7 @@ ActiveRecord::Base.anonymous?:
   skip: false
 ActiveRecord::Base.any?:
   types:
-  - undefined
+  - Boolean
   skip: true
 ActiveRecord::Base.application_record_class:
   types:
@@ -294,7 +286,7 @@ ActiveRecord::Base.automatic_scope_inversing?:
 ActiveRecord::Base.average:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.base_class:
   types:
   - undefined
@@ -391,7 +383,7 @@ ActiveRecord::Base.cached_find_by_statement:
 ActiveRecord::Base.calculate:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.cattr_accessor:
   types:
   - undefined
@@ -587,7 +579,7 @@ ActiveRecord::Base.content_columns:
 ActiveRecord::Base.count:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -940,16 +932,10 @@ ActiveRecord::Base.filter_attributes=:
   types:
   - undefined
   skip: true
-ActiveRecord::Base.find:
-  types:
-  - self
-  - Array<self>
-  skip: false
 ActiveRecord::Base.find_by:
   types:
   - self
-  - nil
-  skip: false
+  skip: true
 ActiveRecord::Base.find_by!:
   types:
   - undefined
@@ -961,11 +947,11 @@ ActiveRecord::Base.find_by_sql:
 ActiveRecord::Base.find_each:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.find_in_batches:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.find_or_create_by:
   types:
   - undefined
@@ -1145,7 +1131,7 @@ ActiveRecord::Base.i18n_scope:
 ActiveRecord::Base.ids:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.ignored_columns:
   types:
   - undefined
@@ -1185,7 +1171,7 @@ ActiveRecord::Base.in?:
 ActiveRecord::Base.in_batches:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.in_order_of:
   types:
   - undefined
@@ -1264,8 +1250,8 @@ ActiveRecord::Base.insert_all!:
   skip: true
 ActiveRecord::Base.inspect:
   types:
-  - undefined
-  skip: false
+  - String
+  skip: true
 ActiveRecord::Base.inspection_filter:
   types:
   - undefined
@@ -1401,23 +1387,11 @@ ActiveRecord::Base.maintain_test_schema=:
 ActiveRecord::Base.many?:
   types:
   - undefined
-  skip: true
-ActiveRecord::Base.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.mattr_reader:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.mattr_writer:
-  types:
-  - undefined
   skip: false
 ActiveRecord::Base.maximum:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.merge:
   types:
   - undefined
@@ -1433,7 +1407,7 @@ ActiveRecord::Base.method_visibility:
 ActiveRecord::Base.minimum:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.model_name:
   types:
   - undefined
@@ -1480,7 +1454,7 @@ ActiveRecord::Base.none:
   skip: false
 ActiveRecord::Base.none?:
   types:
-  - undefined
+  - Boolean
   skip: true
 ActiveRecord::Base.normalize_callback_params:
   types:
@@ -1492,7 +1466,7 @@ ActiveRecord::Base.offset:
   skip: false
 ActiveRecord::Base.one?:
   types:
-  - undefined
+  - Boolean
   skip: true
 ActiveRecord::Base.only:
   types:
@@ -1549,11 +1523,11 @@ ActiveRecord::Base.partial_writes?:
 ActiveRecord::Base.pick:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.pluck:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
@@ -1639,10 +1613,6 @@ ActiveRecord::Base.protected_environments=:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.pry:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.queues:
   types:
   - undefined
@@ -1656,10 +1626,6 @@ ActiveRecord::Base.quoted_primary_key:
   - undefined
   skip: true
 ActiveRecord::Base.quoted_table_name:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.rake_extension:
   types:
   - undefined
   skip: false
@@ -1763,10 +1729,6 @@ ActiveRecord::Base.reorder:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.require_dependency:
-  types:
-  - undefined
-  skip: true
 ActiveRecord::Base.reselect:
   types:
   - undefined
@@ -2054,7 +2016,7 @@ ActiveRecord::Base.subclasses:
 ActiveRecord::Base.sum:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.suppress:
   types:
   - undefined
@@ -2128,30 +2090,6 @@ ActiveRecord::Base.third_to_last:
   - undefined
   skip: false
 ActiveRecord::Base.third_to_last!:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_cattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_cattr_reader:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_cattr_writer:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_mattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_mattr_reader:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_mattr_writer:
   types:
   - undefined
   skip: false
@@ -2378,9 +2316,7 @@ ActiveRecord::Base.warn_on_records_fetched_greater_than=:
 ActiveRecord::Base.where:
   types:
   - self
-  - ActiveRecord::Relation
-  - ActiveRecord::QueryMethods::WhereChain
-  skip: false
+  skip: true
 ActiveRecord::Base.while_preventing_writes:
   types:
   - undefined
@@ -3025,10 +2961,6 @@ ActiveRecord::Base#primary_key_prefix_type?:
   types:
   - undefined
   skip: true
-ActiveRecord::Base#pry:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base#query_attribute:
   types:
   - undefined
@@ -3062,14 +2994,6 @@ ActiveRecord::Base#record_timestamps?:
   - undefined
   skip: true
 ActiveRecord::Base#reload:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base#require_dependency:
-  types:
-  - undefined
-  skip: true
-ActiveRecord::Base#respond_to?:
   types:
   - undefined
   skip: false
@@ -3378,10 +3302,6 @@ ActiveRecord::Base#will_save_change_to_attribute?:
   - undefined
   skip: true
 ActiveRecord::Base#with_lock:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base#with_options:
   types:
   - undefined
   skip: false

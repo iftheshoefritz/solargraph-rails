@@ -39,8 +39,11 @@
 #     def draw; end
 #   end
 #   class ActiveRecord::Base
+#     extend Enumerable
 #     extend ActiveRecord::QueryMethods
 #     extend ActiveRecord::FinderMethods
+#     extend ActiveRecord::Calculations
+#     extend ActiveRecord::Batches
 #     extend ActiveRecord::Associations::ClassMethods
 #     extend ActiveRecord::Inheritance::ClassMethods
 #     extend ActiveRecord::ModelSchema::ClassMethods

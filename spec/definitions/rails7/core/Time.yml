@@ -1,74 +1,9 @@
 ---
-Time.===:
-  types:
-  - undefined
-  skip: false
-Time.acts_like?:
-  types:
-  - undefined
-  skip: false
-Time.alias_attribute:
-  types:
-  - undefined
-  skip: false
-Time.anonymous?:
-  types:
-  - undefined
-  skip: false
-Time.as_json:
-  types:
-  - undefined
-  skip: false
 Time.at:
   types:
-  - undefined
-  skip: false
+  - Time
+  skip: true
 Time.at_with_coercion:
-  types:
-  - undefined
-  skip: false
-Time.attr_internal:
-  types:
-  - undefined
-  skip: false
-Time.attr_internal_accessor:
-  types:
-  - undefined
-  skip: false
-Time.attr_internal_reader:
-  types:
-  - undefined
-  skip: false
-Time.attr_internal_writer:
-  types:
-  - undefined
-  skip: false
-Time.blank?:
-  types:
-  - 'true'
-  - 'false'
-  skip: false
-Time.cattr_accessor:
-  types:
-  - undefined
-  skip: false
-Time.cattr_reader:
-  types:
-  - undefined
-  skip: false
-Time.cattr_writer:
-  types:
-  - undefined
-  skip: false
-Time.class_attribute:
-  types:
-  - undefined
-  skip: false
-Time.concern:
-  types:
-  - undefined
-  skip: false
-Time.concerning:
   types:
   - undefined
   skip: false
@@ -84,30 +19,6 @@ Time.days_in_year:
   types:
   - undefined
   skip: false
-Time.deep_dup:
-  types:
-  - undefined
-  skip: false
-Time.delegate:
-  types:
-  - undefined
-  skip: false
-Time.delegate_missing_to:
-  types:
-  - undefined
-  skip: false
-Time.deprecate:
-  types:
-  - undefined
-  skip: false
-Time.descendants:
-  types:
-  - undefined
-  skip: false
-Time.duplicable?:
-  types:
-  - undefined
-  skip: false
 Time.find_zone:
   types:
   - undefined
@@ -116,136 +27,11 @@ Time.find_zone!:
   types:
   - undefined
   skip: false
-Time.html_safe?:
-  types:
-  - undefined
-  skip: false
-Time.in?:
-  types:
-  - undefined
-  skip: false
-Time.instance_values:
-  types:
-  - undefined
-  skip: false
-Time.instance_variable_names:
-  types:
-  - undefined
-  skip: false
-Time.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-Time.mattr_reader:
-  types:
-  - undefined
-  skip: false
-Time.mattr_writer:
-  types:
-  - undefined
-  skip: false
-Time.method_visibility:
-  types:
-  - undefined
-  skip: false
-Time.module_parent:
-  types:
-  - undefined
-  skip: false
-Time.module_parent_name:
-  types:
-  - undefined
-  skip: false
-Time.module_parents:
-  types:
-  - undefined
-  skip: false
-Time.presence:
-  types:
-  - Object
-  skip: false
-Time.presence_in:
-  types:
-  - Object
-  skip: false
-Time.present?:
-  types:
-  - 'true'
-  - 'false'
-  skip: false
-Time.redefine_method:
-  types:
-  - undefined
-  skip: false
-Time.redefine_singleton_method:
-  types:
-  - undefined
-  skip: false
-Time.remove_possible_method:
-  types:
-  - undefined
-  skip: false
-Time.remove_possible_singleton_method:
-  types:
-  - undefined
-  skip: false
 Time.rfc3339:
   types:
   - undefined
   skip: false
-Time.silence_redefinition_of_method:
-  types:
-  - undefined
-  skip: false
-Time.thread_cattr_accessor:
-  types:
-  - undefined
-  skip: false
-Time.thread_cattr_reader:
-  types:
-  - undefined
-  skip: false
-Time.thread_cattr_writer:
-  types:
-  - undefined
-  skip: false
-Time.thread_mattr_accessor:
-  types:
-  - undefined
-  skip: false
-Time.thread_mattr_reader:
-  types:
-  - undefined
-  skip: false
-Time.thread_mattr_writer:
-  types:
-  - undefined
-  skip: false
-Time.to_json:
-  types:
-  - undefined
-  skip: true
-Time.to_param:
-  types:
-  - undefined
-  skip: false
-Time.to_query:
-  types:
-  - undefined
-  skip: false
-Time.try:
-  types:
-  - undefined
-  skip: false
-Time.try!:
-  types:
-  - undefined
-  skip: false
 Time.use_zone:
-  types:
-  - undefined
-  skip: false
-Time.with_options:
   types:
   - undefined
   skip: false
@@ -267,24 +53,18 @@ Time.zone_default=:
   skip: false
 Time#+:
   types:
-  - undefined
-  skip: false
+  - Time
+  skip: true
 Time#-:
   types:
-  - undefined
-  skip: false
+  - Float
+  - Time
+  skip: true
 Time#<=>:
   types:
-  - undefined
-  skip: false
-Time#acts_like?:
-  types:
-  - undefined
-  skip: false
-Time#acts_like_time?:
-  types:
-  - undefined
-  skip: false
+  - Integer
+  - nil
+  skip: true
 Time#advance:
   types:
   - undefined
@@ -425,15 +205,7 @@ Time#beginning_of_year:
   types:
   - undefined
   skip: false
-Time#blank?:
-  types:
-  - 'false'
-  skip: false
 Time#change:
-  types:
-  - undefined
-  skip: false
-Time#class_eval:
   types:
   - undefined
   skip: false
@@ -450,14 +222,6 @@ Time#days_since:
   - undefined
   skip: false
 Time#days_to_week_start:
-  types:
-  - undefined
-  skip: false
-Time#deep_dup:
-  types:
-  - undefined
-  skip: false
-Time#duplicable?:
   types:
   - undefined
   skip: false
@@ -489,10 +253,6 @@ Time#end_of_year:
   types:
   - undefined
   skip: false
-Time#eql?:
-  types:
-  - undefined
-  skip: false
 Time#eql_with_coercion:
   types:
   - undefined
@@ -505,27 +265,7 @@ Time#future?:
   types:
   - undefined
   skip: false
-Time#html_safe?:
-  types:
-  - undefined
-  skip: false
-Time#in:
-  types:
-  - undefined
-  skip: false
-Time#in?:
-  types:
-  - undefined
-  skip: false
 Time#in_time_zone:
-  types:
-  - undefined
-  skip: false
-Time#instance_values:
-  types:
-  - undefined
-  skip: false
-Time#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -637,19 +377,6 @@ Time#plus_with_duration:
   types:
   - undefined
   skip: false
-Time#presence:
-  types:
-  - Object
-  skip: false
-Time#presence_in:
-  types:
-  - Object
-  skip: false
-Time#present?:
-  types:
-  - 'true'
-  - 'false'
-  skip: false
 Time#preserve_timezone:
   types:
   - undefined
@@ -714,22 +441,6 @@ Time#to_fs:
   types:
   - undefined
   skip: false
-Time#to_json:
-  types:
-  - undefined
-  skip: true
-Time#to_param:
-  types:
-  - undefined
-  skip: false
-Time#to_query:
-  types:
-  - undefined
-  skip: false
-Time#to_s:
-  types:
-  - undefined
-  skip: false
 Time#to_time:
   types:
   - undefined
@@ -746,14 +457,6 @@ Time#tomorrow?:
   types:
   - undefined
   skip: false
-Time#try:
-  types:
-  - undefined
-  skip: false
-Time#try!:
-  types:
-  - undefined
-  skip: false
 Time#utc_to_local_returns_utc_offset_times:
   types:
   - undefined
@@ -763,10 +466,6 @@ Time#weeks_ago:
   - undefined
   skip: false
 Time#weeks_since:
-  types:
-  - undefined
-  skip: false
-Time#with_options:
   types:
   - undefined
   skip: false
