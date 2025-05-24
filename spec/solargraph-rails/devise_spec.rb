@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::Devise do
   it "includes devise modules in rails7" do
+    filename = nil
     map = use_workspace "./spec/rails7" do |root|
       root.write_file 'app/models/awesome_user.rb', <<~RUBY
         class AwesomeUser < ActiveRecord::Base
@@ -9,7 +10,7 @@ RSpec.describe Solargraph::Rails::Devise do
         end
       RUBY
 
-      root.write_file 'app/controllers/pages_controller.rb', <<~RUBY
+      filename = root.write_file 'app/controllers/pages_controller.rb', <<~RUBY
         class PagesController < ApplicationController
           def index
             curr
@@ -19,7 +20,6 @@ RSpec.describe Solargraph::Rails::Devise do
       RUBY
     end
 
-    filename = File.expand_path('./app/controllers/pages_controller.rb', './spec/rails7')
     expect(completion_at(filename, [3, 23], map)).to include("confirm")
   end
 end

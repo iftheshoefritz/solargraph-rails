@@ -2,10 +2,11 @@ require 'spec_helper'
 
 # Validate against here if there's a question: https://api.rubyonrails.org/v7.1.0/
 RSpec.describe 'Rails 7 API' do
+  filename = nil
   it 'it provides Rails controller api' do
     map =
       use_workspace './spec/rails7' do |root|
-        root.write_file 'app/controllers/things_controller.rb', <<~EOS
+        filename = root.write_file 'app/controllers/things_controller.rb', <<~EOS
           class ThingsController < ActionController::Base
             res
             def index
@@ -15,7 +16,6 @@ RSpec.describe 'Rails 7 API' do
         EOS
       end
 
-    filename = File.expand_path('./app/controllers/things_controller.rb', './spec/rails7')
     expect(completion_at(filename, [1, 4], map)).to include('rescue_from')
 
     expect(completion_at(filename, [3, 5], map)).to include(
@@ -28,9 +28,10 @@ RSpec.describe 'Rails 7 API' do
   end
 
   it 'can auto-complete inside routes', skip: 'not working' do
+    filename = nil
     map =
       use_workspace './spec/rails7' do |root|
-        root.write_file 'config/routes.rb', <<~EOS
+        filename = root.write_file 'config/routes.rb', <<~EOS
         Rails.application.routes.draw do
           res
           resource :things do
@@ -40,34 +41,33 @@ RSpec.describe 'Rails 7 API' do
       EOS
       end
 
-    filename = File.expand_path('./config/routes.rb', './spec/rails7')
     expect(completion_at(filename, [1, 5], map)).to include('resources')
     expect(completion_at(filename, [3, 7], map)).to include('resources')
   end
 
   it 'can auto-complete inside mailers' do
+    filename = nil
     map =
       use_workspace './spec/rails7' do |root|
-        root.write_file 'app/mailers/test_mailer.rb', <<~EOS
-          class TestMailer < ActionMailer::Base
-            defa
-            def welcome_email
-              ma
-            end
+        filename = root.write_file 'app/mailers/test_mailer.rb', <<~EOS
+        class TestMailer < ActionMailer::Base
+          defa
+          def welcome_email
+            ma
           end
         EOS
       end
 
-    filename = File.expand_path('./app/mailers/test_mailer.rb', './spec/rails7')
     expect(completion_at(filename, [1, 6], map)).to include('default')
     expect(completion_at(filename, [3, 6], map)).to include('mail')
   end
 
   it 'can auto-complete inside migrations' do
+    filename = nil
     map =
       use_workspace './spec/rails7' do |root|
-        root.write_file 'db/migrate/20130502114652_create_things.rb', <<~EOS
-          class CreateThings < ActiveRecord::Migration[7.0]
+        filename = root.write_file 'db/migrate/20130502114652_create_things.rb', <<~EOS
+        class CreateThings < ActiveRecord::Migration[7.0]
             def self.up
               crea
             end
@@ -88,7 +88,6 @@ RSpec.describe 'Rails 7 API' do
         EOS
       end
 
-    filename = File.expand_path('./db/migrate/20130502114652_create_things.rb', './spec/rails7')
     expect(completion_at(filename, [2, 7], map)).to include('create_table')
     expect(completion_at(filename, [6, 7], map)).to include('create_table')
     expect(completion_at(filename, [8, 10], map)).to include('column')
