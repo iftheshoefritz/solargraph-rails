@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.xdescribe Solargraph::Rails::Devise do
+RSpec.describe Solargraph::Rails::Devise do
   it "includes devise modules in rails7" do
     map = use_workspace "./spec/rails7" do |root|
       root.write_file 'app/models/awesome_user.rb', <<~RUBY
