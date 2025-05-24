@@ -585,9 +585,12 @@ ActiveRecord::Base.content_columns:
   skip: false
 ActiveRecord::Base.count:
   types:
-  - "::Hash"
-  - "::Integer"
-  skip: false
+  - Integer
+  - Hash
+  skip:
+    - "0.48.0"
+    - "0.49.0"
+    - "0.50.0"
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -1553,8 +1556,10 @@ ActiveRecord::Base.pick:
   skip: false
 ActiveRecord::Base.pluck:
   types:
-  - undefined
-  skip: false
+  - Array
+  - Array<Array>
+  skip:
+    - "0.48.0"
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
@@ -1589,14 +1594,18 @@ ActiveRecord::Base.preload:
   skip: false
 ActiveRecord::Base.presence:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActiveRecord::Base.presence_in:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActiveRecord::Base.present?:
   types:
   - "::Boolean"
@@ -2992,14 +3001,18 @@ ActiveRecord::Base#populate_with_current_scope_attributes:
   skip: false
 ActiveRecord::Base#presence:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActiveRecord::Base#presence_in:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActiveRecord::Base#present?:
   types:
   - 'true'

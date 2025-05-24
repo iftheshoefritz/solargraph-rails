@@ -565,14 +565,18 @@ ActionController::Base.prepend_view_path:
   skip: true
 ActionController::Base.presence:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActionController::Base.presence_in:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActionController::Base.present?:
   types:
   - "::Boolean"
@@ -1345,8 +1349,11 @@ ActionController::Base#notice:
   skip: true
 ActionController::Base#params:
   types:
-  - undefined
-  skip: false
+  - ActionController::Parameters
+  skip:
+    - "0.48.0"
+    - "0.49.0"
+    - "0.50.0"
 ActionController::Base#params=:
   types:
   - undefined
@@ -1385,14 +1392,18 @@ ActionController::Base#prepend_view_path:
   skip: false
 ActionController::Base#presence:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActionController::Base#presence_in:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 ActionController::Base#present?:
   types:
   - "::Boolean"

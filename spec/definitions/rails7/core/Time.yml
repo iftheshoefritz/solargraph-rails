@@ -441,8 +441,14 @@ Time#class_eval:
   skip: false
 Time#compare_with_coercion:
   types:
-  - undefined
-  skip: false
+  - "-1"
+  - "0"
+  - "1"
+  - nil
+  skip:
+    - "0.48.0"
+    - "0.49.0"
+    - "0.50.0"
 Time#days_ago:
   types:
   - undefined
@@ -497,7 +503,7 @@ Time#eql?:
   skip: false
 Time#eql_with_coercion:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#formatted_offset:
   types:

@@ -357,14 +357,18 @@ Integer#petabytes:
   skip: false
 Integer#presence:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Integer#presence_in:
   types:
-  - nil
   - self
-  skip: false
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Integer#present?:
   types:
   - "::Boolean"

@@ -394,8 +394,14 @@ Date#class_eval:
   skip: false
 Date#compare_with_coercion:
   types:
-  - undefined
-  skip: false
+  - "-1"
+  - "0"
+  - "1"
+  - nil
+  skip:
+    - "0.48.0"
+    - "0.49.0"
+    - "0.50.0"
 Date#days_ago:
   types:
   - undefined
