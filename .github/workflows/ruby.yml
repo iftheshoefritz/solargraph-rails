@@ -27,6 +27,7 @@ jobs:
           - "0.50.0"
           - "0.51.2"
           - "0.52.0"
+          - "0.54.6.alpha"
         rails-version:
           - "7"
       fail-fast: false
@@ -49,14 +50,13 @@ jobs:
           cd "spec/rails${{ matrix.rails-version }}"
           bundle install
 
-# Enable once self-annotating versions of Solargraph are supported
-#      - name: cache gem annotations
-#        uses: actions/cache@v3
-#        id: dot-cache
-#        with:
-#          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
-#          path: |
-#            /home/runner/.cache
+      - name: cache gem annotations
+        uses: actions/cache@v3
+        id: dot-cache
+        with:
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
+          path: |
+            /home/runner/.cache
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
