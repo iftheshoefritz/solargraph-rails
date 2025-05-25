@@ -13,6 +13,18 @@ module Helpers
     data['skip'].sort!.uniq!
   end
 
+  def remove_skip(data)(data)
+    if data['skip'].is_a?(Array)
+      data['skip'].delete(Solargraph::VERSION)
+      data['skip'].sort!.uniq!
+      if data['skip'].empty?
+        data['skip'] = false
+      end
+    else
+      data['skip'] = false
+    end
+  end
+
   def assert_matches_definitions(map, class_name, definition_name, update: false)
     if ENV['FORCE_UPDATE'] == 'true'
       update = true
@@ -59,16 +71,7 @@ module Helpers
       end
 
       # Completion is found, but marked as skipped
-      if pin && skip
-        if update
-          data['skip'] = false
-        else
-          puts <<~STR
-            #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
-            Consider setting skip=false
-          STR
-        end
-      elsif pin
+      if pin
         effective_type = pin.return_type.map(&:tag)
         effective_type = pin.typify(map).map(&:tag).sort.uniq
         specified_type = data['types']
@@ -77,11 +80,23 @@ module Helpers
           if update
             if effective_type == ['undefined']
               add_to_skip(data)
-            else
+            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject')
+              # sounds like a better type
               data['types'] = effective_type
+            elsif !skip
+              incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
             end
-          else
+          elsif !skip
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+          end
+        elsif skip
+          if update
+            remove_skip(data)
+          else
+            puts <<~STR
+            #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present and correct.
+            Consider setting skip=false
+          STR
           end
         end
       elsif update
