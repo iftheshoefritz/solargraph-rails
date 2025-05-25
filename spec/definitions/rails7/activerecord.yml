@@ -1137,7 +1137,12 @@ ActiveRecord::Base.content_columns:
 ActiveRecord::Base.count:
   types:
   - Integer
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -1887,8 +1892,13 @@ ActiveRecord::Base.filter_attributes=:
   - 0.54.6.alpha
 ActiveRecord::Base.find_by:
   types:
+  - nil
   - self
   skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.54.6.alpha
 ActiveRecord::Base.find_by!:
   types:
@@ -1975,7 +1985,12 @@ ActiveRecord::Base.first:
   - Array<generic<Elem>>
   - generic<Elem>
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.first!:
   types:
   - undefined
@@ -2436,7 +2451,12 @@ ActiveRecord::Base.inheritance_column?:
 ActiveRecord::Base.inherited:
   types:
   - BasicObject
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.initialize_find_by_cache:
   types:
   - undefined
@@ -2860,7 +2880,12 @@ ActiveRecord::Base.nested_attributes_options?:
 ActiveRecord::Base.new:
   types:
   - ActiveRecord::Base
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
@@ -3669,7 +3694,12 @@ ActiveRecord::Base.select:
   types:
   - Array
   - Enumerator<undefined, Array>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.sequence_name:
   types:
   - undefined
@@ -4003,7 +4033,12 @@ ActiveRecord::Base.sum:
   - generic<Elem>
   - generic<T>
   - generic<U>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.suppress:
   types:
   - undefined
@@ -4116,7 +4151,12 @@ ActiveRecord::Base.table_name_suffix?:
 ActiveRecord::Base.take:
   types:
   - Array<generic<Elem>>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.take!:
   types:
   - undefined
@@ -4650,8 +4690,14 @@ ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   - 0.54.6.alpha
 ActiveRecord::Base.where:
   types:
+  - ActiveRecord::QueryMethods::WhereChain
+  - ActiveRecord::Relation
   - self
   skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.54.6.alpha
 ActiveRecord::Base.while_preventing_writes:
   types:
@@ -4703,9 +4749,12 @@ ActiveRecord::Base.yaml_encoder:
   - 0.54.6.alpha
 ActiveRecord::Base#<=>:
   types:
+  - Integer
   - nil
-  - undefined
   skip:
+  - 0.48.0
+  - 0.51.2
+  - 0.52.0
   - 0.54.6.alpha
 ActiveRecord::Base#==:
   types:
@@ -5017,7 +5066,12 @@ ActiveRecord::Base#before_committed!:
 ActiveRecord::Base#blank?:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#cache_key:
   types:
   - undefined
@@ -5475,7 +5529,8 @@ ActiveRecord::Base#has_changes_to_save?:
 ActiveRecord::Base#hash:
   types:
   - Integer
-  skip: false
+  skip:
+  - 0.48.0
 ActiveRecord::Base#html_safe?:
   types:
   - Boolean
@@ -5679,7 +5734,8 @@ ActiveRecord::Base#marked_for_destruction?:
 ActiveRecord::Base#method_missing:
   types:
   - BasicObject
-  skip: false
+  skip:
+  - 0.48.0
 ActiveRecord::Base#model_name:
   types:
   - undefined
@@ -5801,11 +5857,21 @@ ActiveRecord::Base#presence_in:
 ActiveRecord::Base#present?:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#pretty_print:
   types:
   - BasicObject
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#previous_changes:
   types:
   - undefined
