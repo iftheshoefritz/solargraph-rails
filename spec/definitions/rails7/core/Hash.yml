@@ -69,7 +69,7 @@ Hash#extract!:
   skip: false
 Hash#extractable_options?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Hash#nested_under_indifferent_access:
   types:
