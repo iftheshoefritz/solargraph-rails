@@ -782,7 +782,8 @@ ActionController::Base.include_all_helpers?:
 ActionController::Base.inherited:
   types:
   - BasicObject
-  skip: false
+  skip:
+  - 0.48.0
 ActionController::Base.instance_values:
   types:
   - undefined
@@ -904,7 +905,8 @@ ActionController::Base.mattr_writer:
 ActionController::Base.method_added:
   types:
   - BasicObject
-  skip: false
+  skip:
+  - 0.48.0
 ActionController::Base.method_visibility:
   types:
   - undefined
