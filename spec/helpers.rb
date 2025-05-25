@@ -93,8 +93,8 @@ module Helpers
           if update
             remove_skip(data)
           else
-            puts <<~STR
-            #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present and correct.
+            incorrect << <<~STR
+            #{class_name}#{meth} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
             Consider setting skip=false
           STR
           end
