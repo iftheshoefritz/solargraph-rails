@@ -2,7 +2,7 @@
 Time.at:
   types:
   - Time
-  skip: true
+  skip: false
 Time.at_with_coercion:
   types:
   - undefined
@@ -54,24 +54,26 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip: true
+  skip: false
 Time#-:
   types:
   - Float
   - Time
-  skip: true
+  skip:
+  - 0.48.0
 Time#<=>:
   types:
   - Integer
   - nil
-  skip: true
+  skip:
+  - 0.48.0
 Time#advance:
   types:
   - undefined
   skip: false
 Time#after?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#ago:
   types:
@@ -175,7 +177,7 @@ Time#at_noon:
   skip: false
 Time#before?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#beginning_of_day:
   types:
@@ -263,7 +265,7 @@ Time#formatted_offset:
   skip: false
 Time#future?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#in_time_zone:
   types:
@@ -363,15 +365,15 @@ Time#noon:
   skip: false
 Time#on_weekday?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#on_weekend?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#past?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#plus_with_duration:
   types:
@@ -380,7 +382,13 @@ Time#plus_with_duration:
 Time#preserve_timezone:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#prev_day:
   types:
   - undefined
@@ -443,11 +451,11 @@ Time#to_fs:
   skip: false
 Time#to_time:
   types:
-  - undefined
+  - Time
   skip: false
 Time#today?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#tomorrow:
   types:
@@ -455,12 +463,18 @@ Time#tomorrow:
   skip: false
 Time#tomorrow?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#utc_to_local_returns_utc_offset_times:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#weeks_ago:
   types:
   - undefined
@@ -483,5 +497,5 @@ Time#yesterday:
   skip: false
 Time#yesterday?:
   types:
-  - undefined
+  - Boolean
   skip: false
