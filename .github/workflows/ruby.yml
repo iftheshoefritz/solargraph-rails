@@ -44,6 +44,13 @@ jobs:
           bundler: latest
           cache-version: 2
 
+      - name: Install child bundle
+        run: |
+          set -x
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          cd "spec/rails${{ matrix.rails-version }}"
+          bundle install
+
       - name: cache gem annotations
         uses: actions/cache@v3
         id: dot-cache
@@ -71,4 +78,6 @@ jobs:
 
       - name: RSpec
         run: |
+          set -x
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
           bundle exec rspec spec/solargraph-rails
