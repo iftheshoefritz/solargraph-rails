@@ -5,7 +5,30 @@ module Helpers
     source
   end
 
+  def add_to_skip(data)
+    unless data['skip'].is_a?(Array)
+      data['skip'] = []
+    end
+    data['skip'] << Solargraph::VERSION
+    data['skip'].sort!.uniq!
+  end
+
+  def remove_skip(data)
+    if data['skip'].is_a?(Array)
+      data['skip'].delete(Solargraph::VERSION)
+      data['skip'].sort!.uniq!
+      if data['skip'].empty?
+        data['skip'] = false
+      end
+    else
+      data['skip'] = false
+    end
+  end
+
   def assert_matches_definitions(map, class_name, definition_name, update: false)
+    if ENV['FORCE_UPDATE'] == 'true'
+      update = true
+    end
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
@@ -25,12 +48,11 @@ module Helpers
 
     skipped = 0
     typed = 0
-    errors = []
+    incorrect = []
+    missing = []
 
     definitions.each do |meth, data|
-      unless meth.start_with?('.') || meth.start_with?('#')
-        meth = meth.gsub(class_name, '')
-      end
+      meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
 
       pin =
         if meth.start_with?('.')
@@ -39,38 +61,69 @@ module Helpers
           instance_methods.find { |p| p.name == meth[1..-1] }
         end
 
+      skip = false
       typed += 1 if data['types'] != ['undefined']
-      skipped += 1 if data['skip']
+      if data['skip'] == true ||
+         data['skip'] == Solargraph::VERSION ||
+         (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
+        skip = true
+        skipped += 1
+      end
 
       # Completion is found, but marked as skipped
-      if pin && data['skip']
-        puts <<~STR
-          #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
-          Consider setting skip=false
-        STR
-      elsif pin
-        assert_entry_valid(pin, data, update: update)
-        data['skip'] = false if update
+      if pin
+        effective_type = pin.return_type.map(&:tag)
+        effective_type = pin.typify(map).map(&:tag).sort.uniq
+        specified_type = data['types']
+
+        if effective_type != specified_type
+          if update
+            if effective_type == ['undefined']
+              add_to_skip(data)
+            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject')
+              # sounds like a better type
+              data['types'] = effective_type
+            elsif !skip
+              incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+            end
+          elsif !skip
+            incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+          end
+        elsif skip
+          if update
+            remove_skip(data)
+          else
+            incorrect << <<~STR
+            #{class_name}#{meth} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
+            Consider setting skip=false
+          STR
+          end
+        end
       elsif update
         skipped += 1
-        data['skip'] = true
+        add_to_skip(data)
       elsif data['skip']
         next
       else
-        errors << meth
+        missing << meth
       end
     end
 
-    if errors.any?
+    if missing.any?
       raise <<~STR
         The following methods could not be found despite being listed in #{definition_name}.yml:
-        #{errors}
+        #{missing}
       STR
     end
 
-    if update
-      File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml)
+    if incorrect.any?
+      raise <<~STR
+        The return types of these methods did not match #{definition_name}.yml:
+          #{incorrect.join("\n  ")}
+      STR
     end
+
+    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     total = definitions.keys.size
 
@@ -92,19 +145,6 @@ module Helpers
     ((a.to_f / b) * 100).round(1)
   end
 
-  def assert_entry_valid(pin, data, update: false)
-    effective_type = pin.return_type.map(&:tag)
-    specified_type = data['types']
-
-    if effective_type != specified_type
-      if update
-        data['types'] = effective_type
-      else
-        raise "#{pin.path} return type is wrong. Expected #{specified_type}, got: #{effective_type}"
-      end
-    end
-  end
-
   class Injector
     attr_reader :files
     def initialize(folder)
@@ -112,10 +152,21 @@ module Helpers
       @files = []
     end
 
+    def solargraph_version
+      Solargraph::VERSION.split('.')[0..1].join('.').to_f
+    end
+
     def write_file(path, content)
       FileUtils.mkdir_p(File.dirname(path))
       File.write(path, content)
       @files << path
+      # Older Solargraph versions store relative paths; return those
+      # so we can fetch them by the same names later
+      if solargraph_version < 0.51
+        "./" + path
+      else
+        File.expand_path(path)
+      end
     end
   end
 
@@ -125,7 +176,11 @@ module Helpers
 
     Dir.chdir folder do
       yield injector if block_given?
-      map = Solargraph::ApiMap.load('./')
+      if Solargraph::ApiMap.respond_to?(:load_with_cache)
+        map = Solargraph::ApiMap.load_with_cache('./', STDERR)
+      else
+        map = Solargraph::ApiMap.load('./')
+      end
       injector.files.each { |f| File.delete(f) }
     end
 

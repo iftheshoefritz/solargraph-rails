@@ -1,10 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
-# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
-
 # To debug locally:
 #   npm install -g act
 #   act act pull_request
@@ -22,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby:
+        ruby-version:
           - "3.0"
 #          - "3.1"
 #          - "3.2"
@@ -30,20 +23,32 @@ jobs:
 #          - "3.4"
         solargraph-version:
           - "0.48.0"
-#          - "0.49.0"
-#          - "0.50.0"
-#          - "0.51.2"
-#          - "0.52.0"
+          - "0.49.0"
+          - "0.50.0"
+          - "0.51.2"
+          - "0.52.0"
+          - "0.54.6.alpha"
+        rails-version:
+          - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
+          ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
-          cache-version: 2
+          bundler-cache: true
+
+
+      - name: Install child bundle
+        run: |
+          set -x
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          cd "spec/rails${{ matrix.rails-version }}"
+          bundle install
+
       - name: cache gem annotations
         uses: actions/cache@v3
         id: dot-cache
@@ -51,9 +56,21 @@ jobs:
           key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
           path: |
             /home/runner/.cache
+
+      - name: bundle list
+        run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
-      - name: Test
+
+      - name: RSpec
         run: |
+          set -x
+          echo $MATRIX_SOLARGRAPH_VERSION
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          ruby --version
           bundle install
-          bundle exec rspec
+          bundle exec solargraph gems || true
+          bundle exec solargraph version
+          bundle exec rspec spec/solargraph-rails

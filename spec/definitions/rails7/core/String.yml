@@ -1,251 +1,30 @@
 ---
-String.acts_like?:
-  types:
-  - Boolean
-  skip: false
-String.alias_attribute:
-  types:
-  - undefined
-  skip: false
-String.anonymous?:
-  types:
-  - Boolean
-  skip: false
-String.as_json:
-  types:
-  - undefined
-  skip: false
-String.attr_internal:
-  types:
-  - void
-  skip: false
-String.attr_internal_accessor:
-  types:
-  - void
-  skip: false
-String.attr_internal_reader:
-  types:
-  - void
-  skip: false
-String.attr_internal_writer:
-  types:
-  - void
-  skip: false
-String.blank?:
-  types:
-  - Boolean
-  skip: false
-String.cattr_accessor:
-  types:
-  - undefined
-  skip: false
-String.cattr_reader:
-  types:
-  - undefined
-  skip: false
-String.cattr_writer:
-  types:
-  - undefined
-  skip: false
-String.class_attribute:
-  types:
-  - undefined
-  skip: false
-String.concern:
-  types:
-  - undefined
-  skip: false
-String.concerning:
-  types:
-  - undefined
-  skip: false
-String.deep_dup:
-  types:
-  - undefined
-  skip: false
-String.delegate:
-  types:
-  - undefined
-  skip: false
-String.delegate_missing_to:
-  types:
-  - undefined
-  skip: false
-String.deprecate:
-  types:
-  - undefined
-  skip: false
-String.descendants:
-  types:
-  - undefined
-  skip: false
-String.duplicable?:
-  types:
-  - 'true'
-  skip: false
-String.html_safe?:
-  types:
-  - 'false'
-  skip: false
-String.in?:
-  types:
-  - Boolean
-  skip: false
-String.instance_values:
-  types:
-  - undefined
-  skip: false
-String.instance_variable_names:
-  types:
-  - undefined
-  skip: false
-String.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-String.mattr_reader:
-  types:
-  - undefined
-  skip: false
-String.mattr_writer:
-  types:
-  - undefined
-  skip: false
-String.method_visibility:
-  types:
-  - undefined
-  skip: false
-String.module_parent:
-  types:
-  - undefined
-  skip: false
-String.module_parent_name:
-  types:
-  - undefined
-  skip: false
-String.module_parents:
-  types:
-  - undefined
-  skip: false
-String.presence:
-  types:
-  - nil
-  - self
-  skip: false
-String.presence_in:
-  types:
-  - nil
-  - self
-  skip: false
-String.present?:
-  types:
-  - Boolean
-  skip: false
-String.redefine_method:
-  types:
-  - undefined
-  skip: false
-String.redefine_singleton_method:
-  types:
-  - undefined
-  skip: false
-String.remove_possible_method:
-  types:
-  - undefined
-  skip: false
-String.remove_possible_singleton_method:
-  types:
-  - undefined
-  skip: false
-String.silence_redefinition_of_method:
-  types:
-  - undefined
-  skip: false
-String.thread_cattr_accessor:
-  types:
-  - undefined
-  skip: false
-String.thread_cattr_reader:
-  types:
-  - undefined
-  skip: false
-String.thread_cattr_writer:
-  types:
-  - undefined
-  skip: false
-String.thread_mattr_accessor:
-  types:
-  - undefined
-  skip: false
-String.thread_mattr_reader:
-  types:
-  - undefined
-  skip: false
-String.thread_mattr_writer:
-  types:
-  - undefined
-  skip: false
-String.to_json:
-  types:
-  - undefined
-  skip: true
-String.to_param:
-  types:
-  - undefined
-  skip: false
-String.to_query:
-  types:
-  - String
-  skip: false
-String.try:
-  types:
-  - generic<T>
-  - undefined
-  skip: false
-String.try!:
-  types:
-  - generic<T>
-  - undefined
-  skip: false
-String.with_options:
-  types:
-  - undefined
-  skip: false
-String#acts_like?:
-  types:
-  - Boolean
-  skip: false
-String#acts_like_string?:
-  types:
-  - 'true'
-  skip: false
-String#as_json:
-  types:
-  - undefined
-  skip: false
 String#at:
   types:
   - undefined
   skip: false
 String#blank?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 String#camelcase:
   types:
-  - String
+  - undefined
   skip: false
 String#camelize:
-  types:
-  - String
-  skip: false
-String#class_eval:
   types:
   - undefined
   skip: false
 String#classify:
   types:
-  - String
+  - undefined
   skip: false
 String#constantize:
   types:
@@ -253,35 +32,19 @@ String#constantize:
   skip: false
 String#dasherize:
   types:
-  - String
+  - undefined
   skip: false
 String#deconstantize:
-  types:
-  - String
-  skip: false
-String#deep_dup:
   types:
   - undefined
   skip: false
 String#demodulize:
   types:
-  - String
-  skip: false
-String#duplicable?:
-  types:
-  - 'true'
-  skip: false
-String#exclude?:
-  types:
-  - Boolean
-  skip: false
-String#first:
-  types:
   - undefined
   skip: false
 String#foreign_key:
   types:
-  - String
+  - undefined
   skip: false
 String#from:
   types:
@@ -289,24 +52,19 @@ String#from:
   skip: false
 String#html_safe:
   types:
-  - ActiveSupportSafeBuffer
+  - undefined
   skip: false
 String#html_safe?:
   types:
-  - 'false'
+  - Boolean
   skip: false
 String#humanize:
   types:
-  - String
-  skip: false
-String#in?:
-  types:
-  - Boolean
+  - undefined
   skip: false
 String#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
-  - Time
+  - undefined
   skip: false
 String#indent:
   types:
@@ -317,14 +75,6 @@ String#indent!:
   - undefined
   skip: false
 String#inquiry:
-  types:
-  - ActiveSupportStringInquirer
-  skip: false
-String#instance_values:
-  types:
-  - undefined
-  skip: false
-String#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -342,25 +92,11 @@ String#mb_chars:
   skip: false
 String#parameterize:
   types:
-  - String
+  - undefined
   skip: false
 String#pluralize:
   types:
-  - String
-  skip: false
-String#presence:
-  types:
-  - nil
-  - self
-  skip: false
-String#presence_in:
-  types:
-  - nil
-  - self
-  skip: false
-String#present?:
-  types:
-  - Boolean
+  - undefined
   skip: false
 String#remove:
   types:
@@ -376,7 +112,7 @@ String#safe_constantize:
   skip: false
 String#singularize:
   types:
-  - String
+  - undefined
   skip: false
 String#squish:
   types:
@@ -392,15 +128,15 @@ String#strip_heredoc:
   skip: false
 String#tableize:
   types:
-  - String
+  - undefined
   skip: false
 String#titlecase:
   types:
-  - String
+  - undefined
   skip: false
 String#titleize:
   types:
-  - String
+  - undefined
   skip: false
 String#to:
   types:
@@ -416,15 +152,20 @@ String#to_datetime:
   skip: false
 String#to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 String#to_param:
   types:
   - undefined
   skip: false
 String#to_query:
   types:
-  - String
+  - undefined
   skip: false
 String#to_time:
   types:
@@ -442,25 +183,11 @@ String#truncate_words:
   types:
   - undefined
   skip: false
-String#try:
-  types:
-  - generic<T>
-  - undefined
-  skip: false
-String#try!:
-  types:
-  - generic<T>
-  - undefined
-  skip: false
 String#underscore:
   types:
-  - String
+  - undefined
   skip: false
 String#upcase_first:
-  types:
-  - String
-  skip: false
-String#with_options:
   types:
   - undefined
   skip: false

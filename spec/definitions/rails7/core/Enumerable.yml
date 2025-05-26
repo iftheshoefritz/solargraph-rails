@@ -1,7 +1,7 @@
 ---
 Enumerable#compact_blank:
   types:
-  - Array<generic<Elem>>
+  - undefined
   skip: false
 Enumerable#exclude?:
   types:
@@ -57,7 +57,11 @@ Enumerable#sum:
   - generic<Elem>
   - generic<T>
   - generic<U>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
 Enumerable#without:
   types:
   - undefined
