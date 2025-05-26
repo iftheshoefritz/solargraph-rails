@@ -649,14 +649,13 @@ ActionController::Base.fragment_cache_keys?:
   - 0.54.6.alpha
 ActionController::Base.gem:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base.handler_for_rescue:
   types:
   - undefined
@@ -1435,14 +1434,13 @@ ActionController::Base.thread_mattr_writer:
   skip: false
 ActionController::Base.to_json:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base.to_param:
   types:
   - undefined
@@ -2255,14 +2253,13 @@ ActionController::Base#full_url_for:
   skip: false
 ActionController::Base#gem:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base#handle_unverified_request:
   types:
   - undefined
@@ -2302,6 +2299,7 @@ ActionController::Base#headers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#helpers:
   types:
   - undefined
@@ -3043,6 +3041,7 @@ ActionController::Base#response=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#response_body:
   types:
   - undefined
@@ -3281,14 +3280,13 @@ ActionController::Base#to_a:
   skip: false
 ActionController::Base#to_json:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base#to_param:
   types:
   - undefined
