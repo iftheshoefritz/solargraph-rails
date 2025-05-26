@@ -1,7 +1,7 @@
 ---
 Integer.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Integer.alias_attribute:
   skip: false
 Integer.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.as_json:
   types:
@@ -25,15 +25,15 @@ Integer.attr_internal_accessor:
   skip: false
 Integer.attr_internal_reader:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer.attr_internal_writer:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.cattr_accessor:
   types:
@@ -89,7 +89,7 @@ Integer.html_safe?:
   skip: false
 Integer.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.instance_values:
   types:
@@ -139,7 +139,7 @@ Integer.presence_in:
   skip: false
 Integer.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.redefine_method:
   types:
@@ -199,7 +199,7 @@ Integer.to_param:
   skip: false
 Integer.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer.try:
   types:
@@ -217,7 +217,7 @@ Integer.with_options:
   skip: false
 Integer#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#blank?:
   types:
@@ -225,7 +225,7 @@ Integer#blank?:
   skip: false
 Integer#byte:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#bytes:
   types:
@@ -365,7 +365,7 @@ Integer#presence_in:
   skip: false
 Integer#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#second:
   types:
@@ -393,7 +393,7 @@ Integer#to_param:
   skip: false
 Integer#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer#to_s:
   types:
