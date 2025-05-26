@@ -191,6 +191,18 @@ Date#in_time_zone:
   types:
   - undefined
   skip: false
+Date#inspect:
+  types:
+  - String
+  skip: false
+Date#instance_values:
+  types:
+  - undefined
+  skip: false
+Date#instance_variable_names:
+  types:
+  - undefined
+  skip: false
 Date#last_month:
   types:
   - undefined
