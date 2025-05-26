@@ -53,5 +53,9 @@ jobs:
           working-directory: spec/rails${{ matrix.rails-version }}
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
+
+      - name: bundle list
+        run: bundle list && cd spec/rails7 && bundle list && cat Gemfile.lock
+
       - name: RSpec
         run: bundle exec rspec spec/solargraph-rails
