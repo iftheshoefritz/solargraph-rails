@@ -10,18 +10,15 @@ ActionDispatch::Routing::Mapper.normalize_path:
 ActionDispatch::Routing::Mapper#as:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#authenticate:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#authenticated:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#collection:
   types:
   - undefined
@@ -41,8 +38,7 @@ ActionDispatch::Routing::Mapper#constraints:
 ActionDispatch::Routing::Mapper#constraints_for:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#controller:
   types:
   - undefined
@@ -66,43 +62,35 @@ ActionDispatch::Routing::Mapper#delete:
 ActionDispatch::Routing::Mapper#devise_confirmation:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_for:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_omniauth_callback:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_password:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_registration:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_scope:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_session:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#devise_unlock:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#direct:
   types:
   - undefined
@@ -195,8 +183,7 @@ ActionDispatch::Routing::Mapper#scope:
 ActionDispatch::Routing::Mapper#set_omniauth_path_prefix!:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#shallow:
   types:
   - undefined
@@ -208,8 +195,7 @@ ActionDispatch::Routing::Mapper#shallow?:
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActionDispatch::Routing::Mapper#with_default_scope:
   types:
   - undefined
@@ -217,5 +203,4 @@ ActionDispatch::Routing::Mapper#with_default_scope:
 ActionDispatch::Routing::Mapper#with_devise_exclusive_scope:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
