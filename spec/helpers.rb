@@ -13,7 +13,7 @@ module Helpers
     data['skip'].sort!.uniq!
   end
 
-  def remove_skip(data)(data)
+  def remove_skip(data)
     if data['skip'].is_a?(Array)
       data['skip'].delete(Solargraph::VERSION)
       data['skip'].sort!.uniq!
