@@ -9,7 +9,7 @@ source 'https://rubygems.org'
 # directory for gems.
 plugin 'auto_yard', path: './ci/auto_yard'
 rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
-instance_eval File.read("spec/rails#{rails_version}/Gemfile")
+instance_eval File.read(File.expand_path("spec/rails#{rails_version}/Gemfile", __dir__))
 
 group :development, :test do
   gem 'bundler-audit'
@@ -24,6 +24,15 @@ end
 
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
+
+solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
+
+if solargraph_force_ci_version == '0.54.6.alpha'
+  gem 'solargraph',
+      github: 'apiology/solargraph',
+      branch: 'v54-alpha'
+    # path: '../solargraph'
+end
 
 # Local gemfile for development tools, etc.
 local_gemfile = File.expand_path(".Gemfile", __dir__)

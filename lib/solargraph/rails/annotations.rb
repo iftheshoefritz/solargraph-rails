@@ -51,3 +51,9 @@
 #     extend ActiveRecord::Scoping::Named::ClassMethods
 #     include ActiveRecord::Persistence
 #   end
+# @!override Time#to_time
+#   @return [Time]
+# @!override Time.at
+#   @return [Time]
+# @!override Time#+
+#   @return [Time]
