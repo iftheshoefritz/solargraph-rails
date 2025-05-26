@@ -5,7 +5,18 @@ module Helpers
     source
   end
 
+  def add_to_skip(data)
+    unless data['skip'].is_a?(Array)
+      data['skip'] = []
+    end
+    data['skip'] << Solargraph::VERSION
+    data['skip'].sort!.uniq!
+  end
+
   def assert_matches_definitions(map, class_name, definition_name, update: false)
+    if ENV['FORCE_UPDATE'] == 'true'
+      update = true
+    end
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
@@ -38,30 +49,44 @@ module Helpers
           instance_methods.find { |p| p.name == meth[1..-1] }
         end
 
+      skip = false
       typed += 1 if data['types'] != ['undefined']
-      skipped += 1 if data['skip']
+      if data['skip'] == true ||
+         data['skip'] == Solargraph::VERSION ||
+         (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
+        skip = true
+        skipped += 1
+      end
 
       # Completion is found, but marked as skipped
-      if pin && data['skip']
-        puts <<~STR
-          #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
-          Consider setting skip=false
-        STR
+      if pin && skip
+        if update
+          data['skip'] = false
+        else
+          puts <<~STR
+            #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
+            Consider setting skip=false
+          STR
+        end
       elsif pin
         effective_type = pin.return_type.map(&:tag)
+        effective_type = pin.typify(map).map(&:tag).sort.uniq
         specified_type = data['types']
 
         if effective_type != specified_type
           if update
-            data['types'] = effective_type
+            if effective_type == ['undefined']
+              add_to_skip(data)
+            else
+              data['types'] = effective_type
+            end
           else
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
         end
-        data['skip'] = false if update
       elsif update
         skipped += 1
-        data['skip'] = true
+        add_to_skip(data)
       elsif data['skip']
         next
       else
