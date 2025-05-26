@@ -9,7 +9,7 @@ source 'https://rubygems.org'
 # directory for gems.
 plugin 'auto_yard', path: './ci/auto_yard'
 rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
-instance_eval File.read("spec/rails#{rails_version}/Gemfile")
+instance_eval File.read(File.expand_path("spec/rails#{rails_version}/Gemfile", __dir__))
 
 group :development, :test do
   gem 'bundler-audit'
