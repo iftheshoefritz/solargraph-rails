@@ -1,7 +1,7 @@
 ---
 ActiveRecord::Base.===:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.abstract_class:
   types:
@@ -13,7 +13,7 @@ ActiveRecord::Base.abstract_class=:
   skip: false
 ActiveRecord::Base.abstract_class?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.accepts_nested_attributes_for:
   types:
@@ -29,7 +29,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   skip: true
 ActiveRecord::Base.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.after_commit:
   types:
@@ -97,7 +97,7 @@ ActiveRecord::Base.aggregate_reflections=:
   skip: false
 ActiveRecord::Base.aggregate_reflections?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.alias_attribute:
   types:
@@ -121,11 +121,11 @@ ActiveRecord::Base.annotate:
   skip: false
 ActiveRecord::Base.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.any?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.application_record_class:
   types:
@@ -141,7 +141,7 @@ ActiveRecord::Base.application_record_class?:
   skip: true
 ActiveRecord::Base.arel_table:
   types:
-  - "::Arel::Table"
+  - "Arel::Table"
   skip: false
 ActiveRecord::Base.around_create:
   types:
@@ -173,11 +173,11 @@ ActiveRecord::Base.asynchronous_queries_tracker:
   skip: true
 ActiveRecord::Base.attachment_reflections:
   types:
-  - "::Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
+  - "Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
   skip: false
 ActiveRecord::Base.attachment_reflections=:
   types:
-  - "::Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
+  - "Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
   skip: false
 ActiveRecord::Base.attachment_reflections?:
   types:
@@ -213,7 +213,7 @@ ActiveRecord::Base.attribute_alias:
   skip: false
 ActiveRecord::Base.attribute_alias?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.attribute_aliases:
   types:
@@ -225,11 +225,11 @@ ActiveRecord::Base.attribute_aliases=:
   skip: false
 ActiveRecord::Base.attribute_aliases?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.attribute_method?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.attribute_method_affix:
   types:
@@ -245,7 +245,7 @@ ActiveRecord::Base.attribute_method_matchers=:
   skip: false
 ActiveRecord::Base.attribute_method_matchers?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.attribute_method_prefix:
   types:
@@ -301,7 +301,7 @@ ActiveRecord::Base.base_class:
   skip: false
 ActiveRecord::Base.base_class?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.before_commit:
   types:
@@ -353,7 +353,7 @@ ActiveRecord::Base.benchmark:
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.cache:
   types:
@@ -369,7 +369,7 @@ ActiveRecord::Base.cache_timestamp_format=:
   skip: false
 ActiveRecord::Base.cache_timestamp_format?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.cache_versioning:
   types:
@@ -381,7 +381,7 @@ ActiveRecord::Base.cache_versioning=:
   skip: false
 ActiveRecord::Base.cache_versioning?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.cached_find_by_statement:
   types:
@@ -453,7 +453,7 @@ ActiveRecord::Base.collection_cache_versioning=:
   skip: false
 ActiveRecord::Base.collection_cache_versioning?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.column_defaults:
   types:
@@ -469,7 +469,7 @@ ActiveRecord::Base.column_names:
   skip: false
 ActiveRecord::Base.columns:
   types:
-  - "::Array"
+  - "Array"
   skip: false
 ActiveRecord::Base.columns_hash:
   types:
@@ -501,7 +501,7 @@ ActiveRecord::Base.configurations=:
   skip: true
 ActiveRecord::Base.connected?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.connected_to:
   types:
@@ -509,7 +509,7 @@ ActiveRecord::Base.connected_to:
   skip: false
 ActiveRecord::Base.connected_to?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.connected_to_many:
   types:
@@ -577,7 +577,7 @@ ActiveRecord::Base.connection_specification_name=:
   skip: false
 ActiveRecord::Base.connects_to:
   types:
-  - "::Array<::ActiveRecord::ConnectionAdapters::ConnectionPool>"
+  - "Array<::ActiveRecord::ConnectionAdapters::ConnectionPool>"
   skip: false
 ActiveRecord::Base.content_columns:
   types:
@@ -585,8 +585,8 @@ ActiveRecord::Base.content_columns:
   skip: false
 ActiveRecord::Base.count:
   types:
-  - "::Hash"
-  - "::Integer"
+  - "Hash"
+  - "Integer"
   skip: false
 ActiveRecord::Base.count_by_sql:
   types:
@@ -638,11 +638,11 @@ ActiveRecord::Base.current_time_from_proper_timezone:
   skip: false
 ActiveRecord::Base.dangerous_attribute_method?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.dangerous_class_method?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.decrement_counter:
   types:
@@ -662,7 +662,7 @@ ActiveRecord::Base.default_connection_handler=:
   skip: false
 ActiveRecord::Base.default_connection_handler?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.default_extensions:
   types:
@@ -702,7 +702,7 @@ ActiveRecord::Base.default_scopes=:
   skip: false
 ActiveRecord::Base.default_scopes?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.default_shard:
   types:
@@ -754,7 +754,7 @@ ActiveRecord::Base.defined_enums=:
   skip: false
 ActiveRecord::Base.defined_enums?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.delegate:
   types:
@@ -790,7 +790,7 @@ ActiveRecord::Base.descendants:
   skip: false
 ActiveRecord::Base.descends_from_active_record?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.destroy:
   types:
@@ -915,7 +915,7 @@ ActiveRecord::Base.exec_explain:
   skip: false
 ActiveRecord::Base.exists?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.extending:
   types:
@@ -943,7 +943,7 @@ ActiveRecord::Base.filter_attributes=:
   skip: false
 ActiveRecord::Base.find:
   types:
-  - "::Array<self>"
+  - "Array<self>"
   - self
   skip: false
 ActiveRecord::Base.find_by:
@@ -993,7 +993,7 @@ ActiveRecord::Base.find_sole_by:
   skip: false
 ActiveRecord::Base.finder_needs_type_condition?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.first:
   types:
@@ -1085,7 +1085,7 @@ ActiveRecord::Base.has_and_belongs_to_many:
   skip: false
 ActiveRecord::Base.has_attribute?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.has_many:
   types:
@@ -1177,11 +1177,11 @@ ActiveRecord::Base.implicit_order_column=:
   skip: false
 ActiveRecord::Base.implicit_order_column?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.in_batches:
   types:
@@ -1201,7 +1201,7 @@ ActiveRecord::Base.include_root_in_json=:
   skip: false
 ActiveRecord::Base.include_root_in_json?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.includes:
   types:
@@ -1265,7 +1265,7 @@ ActiveRecord::Base.insert_all!:
   skip: false
 ActiveRecord::Base.inspect:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.inspection_filter:
   types:
@@ -1273,7 +1273,7 @@ ActiveRecord::Base.inspection_filter:
   skip: false
 ActiveRecord::Base.instance_method_already_implemented?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.instance_values:
   types:
@@ -1297,7 +1297,7 @@ ActiveRecord::Base.internal_metadata_table_name=:
   skip: false
 ActiveRecord::Base.internal_metadata_table_name?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.invert_where:
   types:
@@ -1357,7 +1357,7 @@ ActiveRecord::Base.lock_optimistically=:
   skip: false
 ActiveRecord::Base.lock_optimistically?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.locking_column:
   types:
@@ -1369,7 +1369,7 @@ ActiveRecord::Base.locking_column=:
   skip: false
 ActiveRecord::Base.locking_enabled?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.logger:
   types:
@@ -1401,7 +1401,7 @@ ActiveRecord::Base.maintain_test_schema=:
   skip: false
 ActiveRecord::Base.many?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.mattr_accessor:
   types:
@@ -1425,7 +1425,7 @@ ActiveRecord::Base.merge:
   skip: true
 ActiveRecord::Base.method_defined_within?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.method_visibility:
   types:
@@ -1461,7 +1461,7 @@ ActiveRecord::Base.nested_attributes_options=:
   skip: false
 ActiveRecord::Base.nested_attributes_options?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.new:
   types:
@@ -1481,11 +1481,11 @@ ActiveRecord::Base.none:
   skip: false
 ActiveRecord::Base.none?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.normalize_callback_params:
   types:
-  - "::Array"
+  - "Array"
   skip: false
 ActiveRecord::Base.offset:
   types:
@@ -1493,7 +1493,7 @@ ActiveRecord::Base.offset:
   skip: false
 ActiveRecord::Base.one?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.only:
   types:
@@ -1545,7 +1545,7 @@ ActiveRecord::Base.partial_writes=:
   skip: false
 ActiveRecord::Base.partial_writes?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.pick:
   types:
@@ -1565,7 +1565,7 @@ ActiveRecord::Base.pluralize_table_names=:
   skip: false
 ActiveRecord::Base.pluralize_table_names?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.polymorphic_class_for:
   types:
@@ -1581,7 +1581,7 @@ ActiveRecord::Base.predicate_builder:
   skip: false
 ActiveRecord::Base.prefetch_primary_key?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.preload:
   types:
@@ -1599,7 +1599,7 @@ ActiveRecord::Base.presence_in:
   skip: false
 ActiveRecord::Base.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.primary_abstract_class:
   types:
@@ -1607,7 +1607,7 @@ ActiveRecord::Base.primary_abstract_class:
   skip: false
 ActiveRecord::Base.primary_class?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.primary_key:
   types:
@@ -1679,7 +1679,7 @@ ActiveRecord::Base.readonly:
   skip: false
 ActiveRecord::Base.readonly_attribute?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.readonly_attributes:
   types:
@@ -1699,7 +1699,7 @@ ActiveRecord::Base.record_timestamps=:
   skip: false
 ActiveRecord::Base.record_timestamps?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.redefine_method:
   types:
@@ -1723,11 +1723,11 @@ ActiveRecord::Base.reflect_on_all_aggregations:
   skip: false
 ActiveRecord::Base.reflect_on_all_associations:
   types:
-  - "::Array"
+  - "Array"
   skip: false
 ActiveRecord::Base.reflect_on_all_attachments:
   types:
-  - "::Array<::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection>"
+  - "Array<::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection>"
   skip: false
 ActiveRecord::Base.reflect_on_all_autosave_associations:
   types:
@@ -1739,8 +1739,8 @@ ActiveRecord::Base.reflect_on_association:
   skip: false
 ActiveRecord::Base.reflect_on_attachment:
   types:
-  - "::ActiveStorage::Reflection::HasManyAttachedReflection"
-  - "::ActiveStorage::Reflection::HasOneAttachedReflection"
+  - "ActiveStorage::Reflection::HasManyAttachedReflection"
+  - "ActiveStorage::Reflection::HasOneAttachedReflection"
   - nil
   skip: false
 ActiveRecord::Base.reflections:
@@ -1813,37 +1813,37 @@ ActiveRecord::Base.rewhere:
   skip: false
 ActiveRecord::Base.rich_text_association_names:
   types:
-  - "::Array<::String>"
+  - "Array<::String>"
   skip: false
 ActiveRecord::Base.sanitize_sql:
   types:
-  - "::String"
+  - "String"
   - nil
   skip: false
 ActiveRecord::Base.sanitize_sql_array:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.sanitize_sql_for_assignment:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.sanitize_sql_for_conditions:
   types:
-  - "::String"
+  - "String"
   - nil
   skip: false
 ActiveRecord::Base.sanitize_sql_for_order:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.sanitize_sql_hash_for_assignment:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.sanitize_sql_like:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.schema_format:
   types:
@@ -1863,7 +1863,7 @@ ActiveRecord::Base.schema_migrations_table_name=:
   skip: false
 ActiveRecord::Base.schema_migrations_table_name?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.scope:
   types:
@@ -1875,7 +1875,7 @@ ActiveRecord::Base.scope_attributes:
   skip: false
 ActiveRecord::Base.scope_attributes?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.scope_for_association:
   types:
@@ -1903,7 +1903,7 @@ ActiveRecord::Base.second_to_last!:
   skip: false
 ActiveRecord::Base.select:
   types:
-  - "::Array<::String>"
+  - "Array<::String>"
   skip: false
 ActiveRecord::Base.sequence_name:
   types:
@@ -1935,7 +1935,7 @@ ActiveRecord::Base.shard_selector?:
   skip: true
 ActiveRecord::Base.shard_swapping_prohibited?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.signed_id_verifier:
   types:
@@ -1975,7 +1975,7 @@ ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   skip: false
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.sole:
   types:
@@ -2027,7 +2027,7 @@ ActiveRecord::Base.store_full_sti_class=:
   skip: false
 ActiveRecord::Base.store_full_sti_class?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.stored_attributes:
   types:
@@ -2055,7 +2055,7 @@ ActiveRecord::Base.strict_loading_violation!:
   skip: true
 ActiveRecord::Base.subclasses:
   types:
-  - "::Array<::Class>"
+  - "Array<::Class>"
   skip: false
 ActiveRecord::Base.sum:
   types:
@@ -2079,7 +2079,7 @@ ActiveRecord::Base.symbol_column_to_string:
   skip: false
 ActiveRecord::Base.table_exists?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.table_name:
   types:
@@ -2099,7 +2099,7 @@ ActiveRecord::Base.table_name_prefix=:
   skip: false
 ActiveRecord::Base.table_name_prefix?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.table_name_suffix:
   types:
@@ -2111,7 +2111,7 @@ ActiveRecord::Base.table_name_suffix=:
   skip: false
 ActiveRecord::Base.table_name_suffix?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.take:
   types:
@@ -2183,7 +2183,7 @@ ActiveRecord::Base.time_zone_aware_types=:
   skip: false
 ActiveRecord::Base.time_zone_aware_types?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base.timestamp_attributes_for_create_in_model:
   types:
@@ -2215,7 +2215,7 @@ ActiveRecord::Base.to_param:
   skip: false
 ActiveRecord::Base.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base.touch_all:
   types:
@@ -2241,7 +2241,7 @@ ActiveRecord::Base.try!:
   skip: false
 ActiveRecord::Base.type_caster:
   types:
-  - "::ActiveRecord::TypeCaster::Map"
+  - "ActiveRecord::TypeCaster::Map"
   skip: false
 ActiveRecord::Base.type_for_attribute:
   types:
@@ -2385,8 +2385,8 @@ ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   skip: false
 ActiveRecord::Base.where:
   types:
-  - "::ActiveRecord::QueryMethods::WhereChain"
-  - "::ActiveRecord::Relation"
+  - "ActiveRecord::QueryMethods::WhereChain"
+  - "ActiveRecord::Relation"
   - self
   skip: false
 ActiveRecord::Base.while_preventing_writes:
@@ -2424,7 +2424,7 @@ ActiveRecord::Base#<=>:
   skip: false
 ActiveRecord::Base#==:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#[]:
   types:
@@ -2440,7 +2440,7 @@ ActiveRecord::Base#accessed_fields:
   skip: false
 ActiveRecord::Base#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
@@ -2448,7 +2448,7 @@ ActiveRecord::Base#aggregate_reflections:
   skip: false
 ActiveRecord::Base#aggregate_reflections?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#as_json:
   types:
@@ -2464,7 +2464,7 @@ ActiveRecord::Base#association:
   skip: false
 ActiveRecord::Base#association_cached?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attachment_changes:
   types:
@@ -2476,7 +2476,7 @@ ActiveRecord::Base#attribute_aliases:
   skip: false
 ActiveRecord::Base#attribute_aliases?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attribute_before_last_save:
   types:
@@ -2488,11 +2488,11 @@ ActiveRecord::Base#attribute_change_to_be_saved:
   skip: false
 ActiveRecord::Base#attribute_changed?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attribute_changed_in_place?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attribute_for_inspect:
   types:
@@ -2508,7 +2508,7 @@ ActiveRecord::Base#attribute_method_matchers:
   skip: false
 ActiveRecord::Base#attribute_method_matchers?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attribute_missing:
   types:
@@ -2520,11 +2520,11 @@ ActiveRecord::Base#attribute_names:
   skip: false
 ActiveRecord::Base#attribute_present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attribute_previously_changed?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#attribute_previously_was:
   types:
@@ -2592,7 +2592,7 @@ ActiveRecord::Base#cache_timestamp_format:
   skip: false
 ActiveRecord::Base#cache_timestamp_format?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#cache_version:
   types:
@@ -2604,7 +2604,7 @@ ActiveRecord::Base#cache_versioning:
   skip: false
 ActiveRecord::Base#cache_versioning?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#changed:
   types:
@@ -2612,7 +2612,7 @@ ActiveRecord::Base#changed:
   skip: false
 ActiveRecord::Base#changed?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#changed_attribute_names_to_save:
   types:
@@ -2624,7 +2624,7 @@ ActiveRecord::Base#changed_attributes:
   skip: false
 ActiveRecord::Base#changed_for_autosave?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#changes:
   types:
@@ -2660,7 +2660,7 @@ ActiveRecord::Base#collection_cache_versioning:
   skip: false
 ActiveRecord::Base#collection_cache_versioning?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#column_for_attribute:
   types:
@@ -2696,7 +2696,7 @@ ActiveRecord::Base#default_connection_handler:
   skip: false
 ActiveRecord::Base#default_connection_handler?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#default_role:
   types:
@@ -2728,7 +2728,7 @@ ActiveRecord::Base#defined_enums:
   skip: false
 ActiveRecord::Base#defined_enums?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#delete:
   types:
@@ -2736,7 +2736,7 @@ ActiveRecord::Base#delete:
   skip: false
 ActiveRecord::Base#destroy:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#destroy!:
   types:
@@ -2748,7 +2748,7 @@ ActiveRecord::Base#destroy_association_async_job:
   skip: true
 ActiveRecord::Base#destroyed?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#destroyed_by_association:
   types:
@@ -2772,7 +2772,7 @@ ActiveRecord::Base#encrypt:
   skip: false
 ActiveRecord::Base#encrypted_attribute?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#encrypted_attributes:
   types:
@@ -2788,11 +2788,11 @@ ActiveRecord::Base#encrypted_attributes?:
   skip: true
 ActiveRecord::Base#eql?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#errors:
   types:
-  - "::ActiveModel::Errors"
+  - "ActiveModel::Errors"
   skip: false
 ActiveRecord::Base#freeze:
   types:
@@ -2804,7 +2804,7 @@ ActiveRecord::Base#from_json:
   skip: false
 ActiveRecord::Base#frozen?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#gem:
   types:
@@ -2812,15 +2812,15 @@ ActiveRecord::Base#gem:
   skip: true
 ActiveRecord::Base#has_attribute?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#has_changes_to_save?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#hash:
   types:
-  - "::Integer"
+  - "Integer"
   skip: false
 ActiveRecord::Base#html_safe?:
   types:
@@ -2836,7 +2836,7 @@ ActiveRecord::Base#id=:
   skip: false
 ActiveRecord::Base#id?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#id_before_type_cast:
   types:
@@ -2856,7 +2856,7 @@ ActiveRecord::Base#id_was:
   skip: false
 ActiveRecord::Base#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#include_root_in_json:
   types:
@@ -2864,7 +2864,7 @@ ActiveRecord::Base#include_root_in_json:
   skip: false
 ActiveRecord::Base#include_root_in_json?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#increment:
   types:
@@ -2888,7 +2888,7 @@ ActiveRecord::Base#initialize_internals_callback:
   skip: false
 ActiveRecord::Base#inspect:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base#instance_values:
   types:
@@ -2900,7 +2900,7 @@ ActiveRecord::Base#instance_variable_names:
   skip: false
 ActiveRecord::Base#invalid?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#lock!:
   types:
@@ -2912,11 +2912,11 @@ ActiveRecord::Base#lock_optimistically:
   skip: false
 ActiveRecord::Base#lock_optimistically?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#locking_enabled?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#logger:
   types:
@@ -2932,7 +2932,7 @@ ActiveRecord::Base#mark_for_destruction:
   skip: false
 ActiveRecord::Base#marked_for_destruction?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#method_missing:
   types:
@@ -2948,15 +2948,15 @@ ActiveRecord::Base#nested_attributes_options:
   skip: false
 ActiveRecord::Base#nested_attributes_options?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#new_record?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#no_touching?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#partial_inserts:
   types:
@@ -2976,7 +2976,7 @@ ActiveRecord::Base#partial_updates?:
   skip: true
 ActiveRecord::Base#persisted?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#pluralize_table_names:
   types:
@@ -2984,7 +2984,7 @@ ActiveRecord::Base#pluralize_table_names:
   skip: false
 ActiveRecord::Base#pluralize_table_names?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#populate_with_current_scope_attributes:
   types:
@@ -3014,11 +3014,11 @@ ActiveRecord::Base#previous_changes:
   skip: false
 ActiveRecord::Base#previously_new_record?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#previously_persisted?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#primary_key_prefix_type:
   types:
@@ -3050,7 +3050,7 @@ ActiveRecord::Base#readonly!:
   skip: false
 ActiveRecord::Base#readonly?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#record_timestamps:
   types:
@@ -3062,7 +3062,7 @@ ActiveRecord::Base#record_timestamps=:
   skip: false
 ActiveRecord::Base#record_timestamps?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#reload:
   types:
@@ -3074,7 +3074,7 @@ ActiveRecord::Base#require_dependency:
   skip: false
 ActiveRecord::Base#respond_to?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#restore_attributes:
   types:
@@ -3090,7 +3090,7 @@ ActiveRecord::Base#run_callbacks:
   skip: false
 ActiveRecord::Base#save:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#save!:
   types:
@@ -3102,7 +3102,7 @@ ActiveRecord::Base#saved_change_to_attribute:
   skip: false
 ActiveRecord::Base#saved_change_to_attribute?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#saved_changes:
   types:
@@ -3110,7 +3110,7 @@ ActiveRecord::Base#saved_changes:
   skip: false
 ActiveRecord::Base#saved_changes?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#serializable_hash:
   types:
@@ -3134,11 +3134,11 @@ ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   skip: false
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#slice:
   types:
-  - "::ActiveSupport::HashWithIndifferentAccess<::Symbol>"
+  - "ActiveSupport::HashWithIndifferentAccess<::Symbol>"
   skip: false
 ActiveRecord::Base#store_full_class_name:
   types:
@@ -3154,15 +3154,15 @@ ActiveRecord::Base#store_full_sti_class:
   skip: false
 ActiveRecord::Base#store_full_sti_class?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#strict_loading!:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#strict_loading?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#strict_loading_mode:
   types:
@@ -3170,7 +3170,7 @@ ActiveRecord::Base#strict_loading_mode:
   skip: false
 ActiveRecord::Base#strict_loading_n_plus_one_only?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#table_name_prefix:
   types:
@@ -3178,7 +3178,7 @@ ActiveRecord::Base#table_name_prefix:
   skip: false
 ActiveRecord::Base#table_name_prefix?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#table_name_suffix:
   types:
@@ -3186,7 +3186,7 @@ ActiveRecord::Base#table_name_suffix:
   skip: false
 ActiveRecord::Base#table_name_suffix?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#time_zone_aware_attributes:
   types:
@@ -3202,7 +3202,7 @@ ActiveRecord::Base#time_zone_aware_types:
   skip: false
 ActiveRecord::Base#time_zone_aware_types?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#to_gid:
   types:
@@ -3238,7 +3238,7 @@ ActiveRecord::Base#to_partial_path:
   skip: false
 ActiveRecord::Base#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveRecord::Base#to_sgid:
   types:
@@ -3274,7 +3274,7 @@ ActiveRecord::Base#transaction:
   skip: false
 ActiveRecord::Base#trigger_transactional_callbacks?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#try:
   types:
@@ -3292,7 +3292,7 @@ ActiveRecord::Base#type_for_attribute:
   skip: true
 ActiveRecord::Base#update:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#update!:
   types:
@@ -3312,11 +3312,11 @@ ActiveRecord::Base#update_columns:
   skip: false
 ActiveRecord::Base#valid?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#validate:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#validate!:
   types:
@@ -3376,11 +3376,11 @@ ActiveRecord::Base#validation_context:
   skip: false
 ActiveRecord::Base#values_at:
   types:
-  - "::Array"
+  - "Array"
   skip: false
 ActiveRecord::Base#will_save_change_to_attribute?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveRecord::Base#with_lock:
   types:

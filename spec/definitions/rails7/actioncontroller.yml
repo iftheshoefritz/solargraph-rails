@@ -9,7 +9,7 @@ ActionController::Base.abstract!:
   skip: false
 ActionController::Base.abstract?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base.action:
   types:
@@ -25,7 +25,7 @@ ActionController::Base.action_methods:
   skip: false
 ActionController::Base.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base.add_flash_types:
   types:
@@ -53,7 +53,7 @@ ActionController::Base.allow_forgery_protection=:
   skip: true
 ActionController::Base.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base.append_after_action:
   types:
@@ -117,7 +117,7 @@ ActionController::Base.before_action:
   skip: false
 ActionController::Base.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base.build_view_context_class:
   types:
@@ -385,7 +385,7 @@ ActionController::Base.http_basic_authenticate_with:
   skip: false
 ActionController::Base.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base.include_all_helpers:
   types:
@@ -521,7 +521,7 @@ ActionController::Base.modules_for_helpers:
   skip: false
 ActionController::Base.normalize_callback_params:
   types:
-  - "::Array"
+  - "Array"
   skip: false
 ActionController::Base.param_encoding:
   types:
@@ -575,7 +575,7 @@ ActionController::Base.presence_in:
   skip: false
 ActionController::Base.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base.protect_from_forgery:
   types:
@@ -735,7 +735,7 @@ ActionController::Base.stylesheets_dir=:
   skip: true
 ActionController::Base.subclasses:
   types:
-  - "::Array<::Class>"
+  - "Array<::Class>"
   skip: false
 ActionController::Base.supports_path?:
   types:
@@ -775,7 +775,7 @@ ActionController::Base.to_param:
   skip: false
 ActionController::Base.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActionController::Base.try:
   types:
@@ -837,7 +837,7 @@ ActionController::Base.wrap_parameters:
   skip: false
 ActionController::Base#action_has_layout?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#action_methods:
   types:
@@ -853,7 +853,7 @@ ActionController::Base#action_name=:
   skip: false
 ActionController::Base#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#after_sign_in_path_for:
   types:
@@ -937,7 +937,7 @@ ActionController::Base#authenticate_with_http_token:
   skip: false
 ActionController::Base#available_action?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#benchmark:
   types:
@@ -945,7 +945,7 @@ ActionController::Base#benchmark:
   skip: false
 ActionController::Base#blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#bypass_sign_in:
   types:
@@ -969,7 +969,7 @@ ActionController::Base#combined_fragment_cache_key:
   skip: false
 ActionController::Base#config:
   types:
-  - "::ActiveSupport::InheritableOptions"
+  - "ActiveSupport::InheritableOptions"
   skip: false
 ActionController::Base#content_type:
   types:
@@ -1037,7 +1037,7 @@ ActionController::Base#default_url_options?:
   skip: true
 ActionController::Base#details_for_lookup:
   types:
-  - "::Hash"
+  - "Hash"
   skip: false
 ActionController::Base#devise_controller?:
   types:
@@ -1109,7 +1109,7 @@ ActionController::Base#expires_now:
   skip: false
 ActionController::Base#flash:
   types:
-  - "::ActionDispatch::Flash::FlashHash"
+  - "ActionDispatch::Flash::FlashHash"
   skip: false
 ActionController::Base#forgery_protection_origin_check:
   types:
@@ -1149,7 +1149,7 @@ ActionController::Base#fragment_cache_keys?:
   skip: true
 ActionController::Base#fragment_exist?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#fresh_when:
   types:
@@ -1209,7 +1209,7 @@ ActionController::Base#http_cache_forever:
   skip: false
 ActionController::Base#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#include_all_helpers:
   types:
@@ -1225,7 +1225,7 @@ ActionController::Base#include_all_helpers?:
   skip: true
 ActionController::Base#inspect:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActionController::Base#instance_values:
   types:
@@ -1377,7 +1377,7 @@ ActionController::Base#perform_caching=:
   skip: true
 ActionController::Base#performed?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#polymorphic_path:
   types:
@@ -1403,7 +1403,7 @@ ActionController::Base#presence_in:
   skip: false
 ActionController::Base#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#process:
   types:
@@ -1471,7 +1471,7 @@ ActionController::Base#rendered_format:
   skip: false
 ActionController::Base#request:
   types:
-  - "::ActionDispatch::Request"
+  - "ActionDispatch::Request"
   skip: false
 ActionController::Base#request=:
   types:
@@ -1543,7 +1543,7 @@ ActionController::Base#responder?:
   skip: true
 ActionController::Base#response:
   types:
-  - "::ActionDispatch::Response"
+  - "ActionDispatch::Response"
   skip: false
 ActionController::Base#response=:
   types:
@@ -1583,7 +1583,7 @@ ActionController::Base#send_file:
   skip: false
 ActionController::Base#session:
   types:
-  - "::ActionDispatch::Request::Session"
+  - "ActionDispatch::Request::Session"
   skip: false
 ActionController::Base#set_request!:
   types:
@@ -1627,7 +1627,7 @@ ActionController::Base#signed_in_root_path:
   skip: true
 ActionController::Base#stale?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActionController::Base#status:
   types:
@@ -1675,7 +1675,7 @@ ActionController::Base#to_param:
   skip: false
 ActionController::Base#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActionController::Base#translate:
   types:

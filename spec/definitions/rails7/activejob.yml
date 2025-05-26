@@ -1,7 +1,7 @@
 ---
 ActiveJob::Base.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base.after_enqueue:
   types:
@@ -17,7 +17,7 @@ ActiveJob::Base.alias_attribute:
   skip: false
 ActiveJob::Base.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base.around_enqueue:
   types:
@@ -57,7 +57,7 @@ ActiveJob::Base.before_perform:
   skip: false
 ActiveJob::Base.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base.cattr_accessor:
   types:
@@ -157,7 +157,7 @@ ActiveJob::Base.html_safe?:
   skip: false
 ActiveJob::Base.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base.instance_values:
   types:
@@ -239,7 +239,7 @@ ActiveJob::Base.presence_in:
   skip: false
 ActiveJob::Base.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base.priority:
   types:
@@ -387,7 +387,7 @@ ActiveJob::Base.return_false_on_aborted_enqueue=:
   skip: true
 ActiveJob::Base.set:
   types:
-  - "::ActiveJob::ConfiguredJob"
+  - "ActiveJob::ConfiguredJob"
   skip: false
 ActiveJob::Base.set_callback:
   types:
@@ -411,7 +411,7 @@ ActiveJob::Base.skip_callback:
   skip: true
 ActiveJob::Base.subclasses:
   types:
-  - "::Array<::Class>"
+  - "Array<::Class>"
   skip: false
 ActiveJob::Base.thread_cattr_accessor:
   types:
@@ -447,7 +447,7 @@ ActiveJob::Base.to_param:
   skip: false
 ActiveJob::Base.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveJob::Base.try:
   types:
@@ -465,7 +465,7 @@ ActiveJob::Base.with_options:
   skip: false
 ActiveJob::Base#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base#arguments:
   types:
@@ -481,7 +481,7 @@ ActiveJob::Base#as_json:
   skip: false
 ActiveJob::Base#blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base#class_eval:
   types:
@@ -541,7 +541,7 @@ ActiveJob::Base#html_safe?:
   skip: false
 ActiveJob::Base#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base#instance_values:
   types:
@@ -595,7 +595,7 @@ ActiveJob::Base#presence_in:
   skip: false
 ActiveJob::Base#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base#priority:
   types:
@@ -679,7 +679,7 @@ ActiveJob::Base#scheduled_at=:
   skip: false
 ActiveJob::Base#serialize:
   types:
-  - "::Hash<::String>"
+  - "Hash<::String>"
   skip: false
 ActiveJob::Base#serialized_arguments=:
   types:
@@ -691,7 +691,7 @@ ActiveJob::Base#successfully_enqueued=:
   skip: false
 ActiveJob::Base#successfully_enqueued?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 ActiveJob::Base#timezone:
   types:
@@ -711,7 +711,7 @@ ActiveJob::Base#to_param:
   skip: false
 ActiveJob::Base#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 ActiveJob::Base#try:
   types:

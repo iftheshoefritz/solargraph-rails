@@ -1,7 +1,7 @@
 ---
 Integer.acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Integer.alias_attribute:
   skip: false
 Integer.anonymous?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.as_json:
   types:
@@ -33,7 +33,7 @@ Integer.attr_internal_writer:
   skip: false
 Integer.blank?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.cattr_accessor:
   types:
@@ -89,7 +89,7 @@ Integer.html_safe?:
   skip: false
 Integer.in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.instance_values:
   types:
@@ -139,7 +139,7 @@ Integer.presence_in:
   skip: false
 Integer.present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer.redefine_method:
   types:
@@ -195,7 +195,7 @@ Integer.to_param:
   skip: false
 Integer.to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer.try:
   types:
@@ -213,7 +213,7 @@ Integer.with_options:
   skip: false
 Integer#acts_like?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#as_json:
   types:
@@ -237,11 +237,11 @@ Integer#class_eval:
   skip: false
 Integer#day:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#days:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#deep_dup:
   types:
@@ -261,11 +261,11 @@ Integer#exabytes:
   skip: false
 Integer#fortnight:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#fortnights:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#gigabyte:
   types:
@@ -277,11 +277,11 @@ Integer#gigabytes:
   skip: false
 Integer#hour:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#hours:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#html_safe?:
   types:
@@ -289,7 +289,7 @@ Integer#html_safe?:
   skip: false
 Integer#in?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#in_milliseconds:
   types:
@@ -321,23 +321,23 @@ Integer#megabytes:
   skip: false
 Integer#minute:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#minutes:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#month:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#months:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#multiple_of?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#ordinal:
   types:
@@ -367,15 +367,15 @@ Integer#presence_in:
   skip: false
 Integer#present?:
   types:
-  - "::Boolean"
+  - "Boolean"
   skip: false
 Integer#second:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#seconds:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#terabyte:
   types:
@@ -403,11 +403,11 @@ Integer#to_param:
   skip: false
 Integer#to_query:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer#to_s:
   types:
-  - "::String"
+  - "String"
   skip: false
 Integer#try:
   types:
@@ -421,11 +421,11 @@ Integer#try!:
   skip: false
 Integer#week:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#weeks:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#with_options:
   types:
@@ -433,9 +433,9 @@ Integer#with_options:
   skip: false
 Integer#year:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
 Integer#years:
   types:
-  - "::ActiveSupport::Duration"
+  - "ActiveSupportDuration"
   skip: false
