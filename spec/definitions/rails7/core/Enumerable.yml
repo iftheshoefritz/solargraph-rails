@@ -1,0 +1,68 @@
+---
+Enumerable#compact_blank:
+  types:
+  - undefined
+  skip: false
+Enumerable#exclude?:
+  types:
+  - Boolean
+  skip: false
+Enumerable#excluding:
+  types:
+  - undefined
+  skip: false
+Enumerable#in_order_of:
+  types:
+  - undefined
+  skip: false
+Enumerable#including:
+  types:
+  - undefined
+  skip: false
+Enumerable#index_by:
+  types:
+  - undefined
+  skip: false
+Enumerable#index_with:
+  types:
+  - undefined
+  skip: false
+Enumerable#many?:
+  types:
+  - Boolean
+  skip: false
+Enumerable#maximum:
+  types:
+  - undefined
+  skip: false
+Enumerable#minimum:
+  types:
+  - undefined
+  skip: false
+Enumerable#pick:
+  types:
+  - undefined
+  skip: false
+Enumerable#pluck:
+  types:
+  - undefined
+  skip: false
+Enumerable#sole:
+  types:
+  - undefined
+  skip: false
+Enumerable#sum:
+  types:
+  - Integer
+  - generic<Elem>
+  - generic<T>
+  - generic<U>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+Enumerable#without:
+  types:
+  - undefined
+  skip: false

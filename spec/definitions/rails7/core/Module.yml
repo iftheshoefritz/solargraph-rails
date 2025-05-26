@@ -1,473 +1,427 @@
 ---
-String.`:
+Module.acts_like?:
+  types:
+  - Boolean
+  skip: false
+Module.alias_attribute:
   types:
   - undefined
   skip: false
-String.acts_like?:
+Module.anonymous?:
+  types:
+  - Boolean
+  skip: false
+Module.as_json:
   types:
   - undefined
   skip: false
-String.alias_attribute:
+Module.attr_internal:
   types:
   - undefined
   skip: false
-String.anonymous?:
+Module.attr_internal_accessor:
   types:
   - undefined
   skip: false
-String.as_json:
+Module.attr_internal_naming_format:
   types:
   - undefined
   skip: false
-String.attr_internal:
+Module.attr_internal_naming_format=:
   types:
   - undefined
   skip: false
-String.attr_internal_accessor:
+Module.attr_internal_reader:
   types:
   - undefined
   skip: false
-String.attr_internal_reader:
+Module.attr_internal_writer:
   types:
   - undefined
   skip: false
-String.attr_internal_writer:
+Module.blank?:
+  types:
+  - Boolean
+  skip: false
+Module.cattr_accessor:
   types:
   - undefined
   skip: false
-String.blank?:
-  types:
-  - 'true'
-  - 'false'
-  skip: false
-String.cattr_accessor:
+Module.cattr_reader:
   types:
   - undefined
   skip: false
-String.cattr_reader:
+Module.cattr_writer:
   types:
   - undefined
   skip: false
-String.cattr_writer:
+Module.class_attribute:
   types:
   - undefined
   skip: false
-String.class_attribute:
+Module.concern:
   types:
   - undefined
   skip: false
-String.concern:
+Module.concerning:
   types:
   - undefined
   skip: false
-String.concerning:
+Module.deep_dup:
   types:
   - undefined
   skip: false
-String.deep_dup:
+Module.delegate:
   types:
   - undefined
   skip: false
-String.delegate:
+Module.delegate_missing_to:
   types:
   - undefined
   skip: false
-String.delegate_missing_to:
+Module.deprecate:
   types:
   - undefined
   skip: false
-String.deprecate:
+Module.descendants:
   types:
   - undefined
   skip: false
-String.descendants:
+Module.duplicable?:
   types:
-  - undefined
-  skip: true
-String.duplicable?:
+  - Boolean
+  skip: false
+Module.html_safe?:
+  types:
+  - Boolean
+  skip: false
+Module.in?:
+  types:
+  - Boolean
+  skip: false
+Module.instance_values:
   types:
   - undefined
   skip: false
-String.html_safe?:
+Module.instance_variable_names:
   types:
   - undefined
   skip: false
-String.in?:
+Module.mattr_accessor:
   types:
   - undefined
   skip: false
-String.instance_values:
+Module.mattr_reader:
   types:
   - undefined
   skip: false
-String.instance_variable_names:
+Module.mattr_writer:
   types:
   - undefined
   skip: false
-String.mattr_accessor:
+Module.method_visibility:
   types:
   - undefined
   skip: false
-String.mattr_reader:
+Module.module_parent:
   types:
   - undefined
   skip: false
-String.mattr_writer:
+Module.module_parent_name:
   types:
   - undefined
   skip: false
-String.method_visibility:
+Module.module_parents:
   types:
   - undefined
   skip: false
-String.parent:
-  types:
-  - undefined
-  skip: true
-String.parent_name:
-  types:
-  - undefined
-  skip: true
-String.parents:
-  types:
-  - undefined
-  skip: true
-String.presence:
+Module.presence:
   types:
   - Object
   skip: false
-String.presence_in:
+Module.presence_in:
   types:
   - Object
   skip: false
-String.present?:
+Module.present?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
-String.reachable_without_deprecation?:
-  types:
-  - undefined
-  skip: true
-String.redefine_method:
+Module.redefine_method:
   types:
   - undefined
   skip: false
-String.redefine_singleton_method:
+Module.redefine_singleton_method:
   types:
   - undefined
   skip: false
-String.remove_possible_method:
+Module.remove_possible_method:
   types:
   - undefined
   skip: false
-String.remove_possible_singleton_method:
+Module.remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-String.silence_redefinition_of_method:
+Module.silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-String.subclasses:
+Module.thread_cattr_accessor:
   types:
   - undefined
   skip: false
-String.thread_cattr_accessor:
+Module.thread_cattr_reader:
   types:
   - undefined
   skip: false
-String.thread_cattr_reader:
+Module.thread_cattr_writer:
   types:
   - undefined
   skip: false
-String.thread_cattr_writer:
+Module.thread_mattr_accessor:
   types:
   - undefined
   skip: false
-String.thread_mattr_accessor:
+Module.thread_mattr_reader:
   types:
   - undefined
   skip: false
-String.thread_mattr_reader:
+Module.thread_mattr_writer:
   types:
   - undefined
   skip: false
-String.thread_mattr_writer:
+Module.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Module.to_param:
   types:
   - undefined
   skip: false
-String.to_json:
-  types:
-  - undefined
-  skip: true
-String.to_param:
+Module.to_query:
   types:
   - undefined
   skip: false
-String.to_query:
+Module.try:
   types:
   - undefined
   skip: false
-String.try:
+Module.try!:
   types:
   - undefined
   skip: false
-String.try!:
+Module.with_options:
   types:
   - undefined
   skip: false
-String.with_options:
+Module#acts_like?:
+  types:
+  - Boolean
+  skip: false
+Module#alias_attribute:
   types:
   - undefined
   skip: false
-String#`:
+Module#anonymous?:
+  types:
+  - Boolean
+  skip: false
+Module#as_json:
   types:
   - undefined
   skip: false
-String#acts_like?:
+Module#attr_internal:
   types:
   - undefined
   skip: false
-String#acts_like_string?:
+Module#attr_internal_accessor:
   types:
   - undefined
   skip: false
-String#as_json:
+Module#attr_internal_reader:
   types:
   - undefined
   skip: false
-String#at:
+Module#attr_internal_writer:
   types:
   - undefined
   skip: false
-String#blank?:
+Module#blank?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
-String#camelcase:
-  types:
-  - undefined
-  skip: false
-String#camelize:
+Module#cattr_accessor:
   types:
   - undefined
   skip: false
-String#class_eval:
+Module#cattr_reader:
   types:
   - undefined
   skip: false
-String#classify:
+Module#cattr_writer:
   types:
   - undefined
   skip: false
-String#constantize:
+Module#concern:
   types:
   - undefined
   skip: false
-String#dasherize:
+Module#concerning:
   types:
   - undefined
   skip: false
-String#deconstantize:
+Module#deep_dup:
   types:
   - undefined
   skip: false
-String#deep_dup:
+Module#delegate:
   types:
   - undefined
   skip: false
-String#demodulize:
+Module#delegate_missing_to:
   types:
   - undefined
   skip: false
-String#duplicable?:
+Module#deprecate:
   types:
   - undefined
   skip: false
-String#exclude?:
+Module#duplicable?:
+  types:
+  - Boolean
+  skip: false
+Module#html_safe?:
+  types:
+  - Boolean
+  skip: false
+Module#in?:
+  types:
+  - Boolean
+  skip: false
+Module#instance_values:
   types:
   - undefined
   skip: false
-String#first:
+Module#instance_variable_names:
   types:
   - undefined
   skip: false
-String#foreign_key:
+Module#mattr_accessor:
   types:
   - undefined
   skip: false
-String#from:
+Module#mattr_reader:
   types:
   - undefined
   skip: false
-String#html_safe:
+Module#mattr_writer:
   types:
   - undefined
   skip: false
-String#html_safe?:
+Module#method_visibility:
   types:
   - undefined
   skip: false
-String#humanize:
+Module#module_parent:
   types:
   - undefined
   skip: false
-String#in?:
+Module#module_parent_name:
   types:
   - undefined
   skip: false
-String#in_time_zone:
+Module#module_parents:
   types:
   - undefined
   skip: false
-String#indent:
-  types:
-  - undefined
-  skip: false
-String#indent!:
-  types:
-  - undefined
-  skip: false
-String#inquiry:
-  types:
-  - undefined
-  skip: false
-String#instance_values:
-  types:
-  - undefined
-  skip: false
-String#instance_variable_names:
-  types:
-  - undefined
-  skip: false
-String#is_utf8?:
-  types:
-  - undefined
-  skip: false
-String#last:
-  types:
-  - undefined
-  skip: false
-String#mb_chars:
-  types:
-  - undefined
-  skip: false
-String#parameterize:
-  types:
-  - undefined
-  skip: false
-String#pluralize:
-  types:
-  - undefined
-  skip: false
-String#presence:
+Module#presence:
   types:
   - Object
   skip: false
-String#presence_in:
+Module#presence_in:
   types:
   - Object
   skip: false
-String#present?:
+Module#present?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
-String#remove:
+Module#redefine_method:
   types:
   - undefined
   skip: false
-String#remove!:
+Module#redefine_singleton_method:
   types:
   - undefined
   skip: false
-String#safe_constantize:
+Module#remove_possible_method:
   types:
   - undefined
   skip: false
-String#singularize:
+Module#remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-String#squish:
+Module#silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-String#squish!:
+Module#thread_cattr_accessor:
   types:
   - undefined
   skip: false
-String#strip_heredoc:
+Module#thread_cattr_reader:
   types:
   - undefined
   skip: false
-String#tableize:
+Module#thread_cattr_writer:
   types:
   - undefined
   skip: false
-String#titlecase:
+Module#thread_mattr_accessor:
   types:
   - undefined
   skip: false
-String#titleize:
+Module#thread_mattr_reader:
   types:
   - undefined
   skip: false
-String#to:
+Module#thread_mattr_writer:
   types:
   - undefined
   skip: false
-String#to_date:
+Module#to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Module#to_param:
   types:
   - undefined
   skip: false
-String#to_datetime:
+Module#to_query:
   types:
   - undefined
   skip: false
-String#to_json:
-  types:
-  - undefined
-  skip: true
-String#to_param:
+Module#try:
   types:
   - undefined
   skip: false
-String#to_query:
+Module#try!:
   types:
   - undefined
   skip: false
-String#to_time:
-  types:
-  - undefined
-  skip: false
-String#truncate:
-  types:
-  - undefined
-  skip: false
-String#truncate_words:
-  types:
-  - undefined
-  skip: false
-String#try:
-  types:
-  - undefined
-  skip: false
-String#try!:
-  types:
-  - undefined
-  skip: false
-String#underscore:
-  types:
-  - undefined
-  skip: false
-String#upcase_first:
-  types:
-  - undefined
-  skip: false
-String#with_options:
+Module#with_options:
   types:
   - undefined
   skip: false
