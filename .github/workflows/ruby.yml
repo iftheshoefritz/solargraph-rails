@@ -37,10 +37,10 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "${{ matrix.ruby-version }}"
-          bundler-cache: true
+          ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
-          cache-version: 2
+          bundler-cache: true
+
 
       - name: Install child bundle
         run: |
@@ -58,22 +58,11 @@ jobs:
           path: |
             /home/runner/.cache
 
-      #- name: Setup upterm session
-      #  uses: lhotari/action-upterm@v1
-
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
 
-      - name: Cache yardoc
-        uses: actions/cache@v3
-        id: yardoc
-        with:
-          key: ${{ runner.os }}-yard-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
-          path: |
-            /home/runner/.yardoc
-
-      - name: Generate YARD docs
-        run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
+      #- name: Setup upterm session
+      #  uses: lhotari/action-upterm@v1
 
       - name: RSpec
         run: |
