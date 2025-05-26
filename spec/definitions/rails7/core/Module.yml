@@ -193,14 +193,13 @@ Module.thread_mattr_writer:
   skip: false
 Module.to_json:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Module.to_param:
   types:
   - undefined
@@ -399,14 +398,13 @@ Module#thread_mattr_writer:
   skip: false
 Module#to_json:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Module#to_param:
   types:
   - undefined

@@ -831,14 +831,13 @@ DateTime#to_i:
   skip: false
 DateTime#to_json:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 DateTime#to_param:
   types:
   - undefined

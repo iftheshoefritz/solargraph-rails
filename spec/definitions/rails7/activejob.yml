@@ -134,8 +134,7 @@ ActiveJob::Base.deprecate:
 ActiveJob::Base.descendants:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base.deserialize:
   types:
   - undefined
@@ -609,88 +608,71 @@ ActiveJob::Base.skip_callback:
 ActiveJob::Base#arguments:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#arguments=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#deserialize:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#enqueue:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#enqueue_error:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#enqueue_error=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#enqueued_at:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#enqueued_at=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#exception_executions:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#exception_executions=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#executions:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#executions=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#handler_for_rescue:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#job_id:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#job_id=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#locale:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#locale=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#logger:
   types:
   - undefined
@@ -714,33 +696,27 @@ ActiveJob::Base#logger=:
 ActiveJob::Base#perform:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#perform_now:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#priority:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#priority=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#provider_job_id:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#provider_job_id=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#queue_adapter:
   types:
   - undefined
@@ -754,13 +730,11 @@ ActiveJob::Base#queue_adapter:
 ActiveJob::Base#queue_name:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#queue_name=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#queue_name_prefix:
   types:
   - undefined
@@ -824,63 +798,51 @@ ActiveJob::Base#rescue_handlers?:
 ActiveJob::Base#rescue_with_handler:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#retry_job:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#run_callbacks:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#scheduled_at:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#scheduled_at=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#serialize:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#serialized_arguments=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#set:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#successfully_enqueued=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#successfully_enqueued?:
   types:
   - Boolean
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#timezone:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#timezone=:
   types:
   - undefined
-  skip:
-  - 0.54.6.alpha
+  skip: false
 ActiveJob::Base#to_param:
   types:
   - undefined
