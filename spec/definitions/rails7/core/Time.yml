@@ -4,6 +4,7 @@ Time.at:
   - Time
   skip:
   - 0.48.0
+  - 0.54.6.alpha
 Time.at_with_coercion:
   types:
   - undefined
@@ -64,6 +65,7 @@ Time#-:
   - Time
   skip:
   - 0.48.0
+  - 0.54.6.alpha
 Time#<=>:
   types:
   - Integer
