@@ -36,17 +36,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby-version }}
+          ruby-version: "${{ matrix.ruby-version }}"
           bundler-cache: true
           bundler: latest
           cache-version: 2
-      - uses: ruby/setup-ruby@v1
-        with:
-          working-directory: spec/rails${{ matrix.rails-version }}
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
 
       - name: cache gem annotations
         uses: actions/cache@v3
@@ -74,4 +70,5 @@ jobs:
         run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
 
       - name: RSpec
-        run: bundle exec rspec spec/solargraph-rails
+        run: |
+          bundle exec rspec spec/solargraph-rails
