@@ -16,8 +16,11 @@ jobs:
     strategy:
       matrix:
         ruby-version:
+          - "3.0"
           - "3.1"
           - "3.2"
+#          - "3.3"
+#          - "3.4"
         solargraph-version:
           - "0.48.0"
           - "0.49.0"
@@ -44,6 +47,7 @@ jobs:
           working-directory: spec/rails${{ matrix.rails-version }}
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
+
       - name: cache gem annotations
         uses: actions/cache@v3
         id: dot-cache
@@ -54,13 +58,6 @@ jobs:
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
-      - name: Test
-        run: |
-          bundle install
-          bundle exec rspec
-        with:
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
