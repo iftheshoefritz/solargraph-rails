@@ -1200,6 +1200,10 @@ ActiveJob::Base#serialize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base#set:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base#serialized_arguments=:
   types:
   - undefined
