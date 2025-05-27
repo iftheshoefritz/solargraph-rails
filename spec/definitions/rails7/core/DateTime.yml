@@ -281,7 +281,7 @@ DateTime#in_time_zone:
   skip: true
 DateTime#inspect:
   types:
-  - undefined
+  - String
   skip: false
 DateTime#instance_values:
   types:
