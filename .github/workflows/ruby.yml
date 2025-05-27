@@ -96,6 +96,7 @@ jobs:
       - name: Install child bundle
         run: |
           set -x
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           cd "spec/rails${{ matrix.rails-version }}"
           bundle install
