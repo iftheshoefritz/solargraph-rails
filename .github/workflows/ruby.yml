@@ -41,6 +41,7 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
+          cache-version: 4
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -49,7 +50,7 @@ jobs:
           bundler: latest
           # https://github.com/ruby/psych/discussions/607
           rubygems: latest
-          cache-version: 3
+          cache-version: 4
         env:
           BUNDLE_GEMFILE: ${{ github.workspace }}/spec/rails7/Gemfile
 
@@ -60,7 +61,7 @@ jobs:
         uses: actions/cache@v3
         id: dot-cache
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-2
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
           path: |
             /home/runner/.cache
 
