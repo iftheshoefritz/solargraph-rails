@@ -27,8 +27,8 @@ jobs:
           - "0.50.0"
           - "0.51.2"
           - "0.52.0"
-          - '0.55.alpha'
           - "0.54.6.alpha"
+          - '0.55.alpha'
         rails-version:
           - "7"
       fail-fast: false
