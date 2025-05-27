@@ -22,6 +22,11 @@ group :development, :test do
   gem 'byebug'
 end
 
+if rails_version == '7'
+  # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
+  gem "concurrent-ruby", '<=1.3.5'
+end
+
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
 

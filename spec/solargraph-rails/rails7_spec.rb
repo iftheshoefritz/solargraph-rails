@@ -49,10 +49,11 @@ RSpec.describe 'Rails 7 API' do
     map =
       use_workspace './spec/rails7' do |root|
         filename = root.write_file 'app/mailers/test_mailer.rb', <<~EOS
-        class TestMailer < ActionMailer::Base
-          defa
-          def welcome_email
-            ma
+          class TestMailer < ActionMailer::Base
+            defa
+            def welcome_email
+              ma
+            end
           end
         EOS
       end

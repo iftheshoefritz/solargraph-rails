@@ -137,12 +137,18 @@ Module.module_parents:
   skip: false
 Module.presence:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Module.presence_in:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Module.present?:
   types:
   - Boolean
@@ -342,12 +348,18 @@ Module#module_parents:
   skip: false
 Module#presence:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Module#presence_in:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Module#present?:
   types:
   - Boolean

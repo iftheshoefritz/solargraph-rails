@@ -38,8 +38,8 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
           bundler: latest
+          bundler-cache: true
           cache-version: 2
 
       - uses: ruby/setup-ruby@v1
@@ -72,35 +72,12 @@ jobs:
       - name: Generate YARD docs
         run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
 
-      - name: Install child bundle
-        run: |
-          set -x
-          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
-          export BUNDLE_PATH=$(pwd)/vendor/bundle
-          cd "spec/rails${{ matrix.rails-version }}"
-          bundle install
-
-      - name: cache gem annotations
-        uses: actions/cache@v3
-        id: dot-cache
-        with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
-         path: |
-            /home/runner/.cache
-
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
 
-      - name: Install child bundle
-        run: |
-          set -x
-          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
-          export BUNDLE_PATH=$(pwd)/vendor/bundle
-          cd "spec/rails${{ matrix.rails-version }}"
-          bundle install
 
       - name: RSpec
         run: |
@@ -113,11 +90,3 @@ jobs:
           bundle exec solargraph gems || true
           bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails
-
-      #- name: Setup upterm session
-      #  uses: lhotari/action-upterm@v1
-
-      - name: Test
-        run: |
-          bundle install
-          bundle exec rspec
