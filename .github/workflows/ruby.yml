@@ -61,23 +61,8 @@ jobs:
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
 
-      - name: Cache yardoc
-        uses: actions/cache@v3
-        id: yardoc
-        with:
-          key: ${{ runner.os }}-yard-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
-          path: |
-            /home/runner/.yardoc
-
-      - name: Generate YARD docs
-        run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
-
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
-
-      #- name: Setup upterm session
-      #  uses: lhotari/action-upterm@v1
-
 
       - name: RSpec
         run: |
