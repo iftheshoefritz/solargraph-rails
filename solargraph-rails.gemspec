@@ -4,7 +4,7 @@ require 'solargraph/rails/version'
 
 
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
-solargraph_version = solargraph_force_ci_version ? [solargraph_force_ci_version] : [">= 0.48.0", '<0.53.0']
+solargraph_version = solargraph_force_ci_version ? [solargraph_force_ci_version] : [">= 0.48.0"]
 
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
