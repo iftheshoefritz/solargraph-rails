@@ -73,7 +73,7 @@ module Helpers
       # Completion is found, but marked as skipped
       if pin
         effective_type = pin.typify(map).map(&:tag).sort.uniq
-        specified_type = data['types']
+        specified_type = data['types'].sort.uniq
 
         if effective_type != specified_type
           if update
@@ -102,7 +102,7 @@ module Helpers
       elsif update
         skipped += 1
         add_to_skip(data)
-      elsif data['skip']
+      elsif skip
         next
       else
         missing << meth

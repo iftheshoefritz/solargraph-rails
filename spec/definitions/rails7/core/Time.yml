@@ -24,10 +24,6 @@ Time.at:
   types:
   - Time
   skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
   - 0.54.6.alpha
 Time.at_with_coercion:
   types:
@@ -363,7 +359,6 @@ Time#+:
   types:
   - Time
   skip:
-  - 0.48.0
   - 0.54.6.alpha
 Time#-:
   types:

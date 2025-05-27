@@ -40,7 +40,7 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-          cache-version: 2
+          cache-version: 3
 
       - name: Install child bundle
         run: |
@@ -54,7 +54,7 @@ jobs:
         uses: actions/cache@v3
         id: dot-cache
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-2
           path: |
             /home/runner/.cache
 
