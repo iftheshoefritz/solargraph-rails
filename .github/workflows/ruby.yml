@@ -53,15 +53,6 @@ jobs:
         env:
           BUNDLE_GEMFILE: ${{ github.workspace }}/spec/rails7/Gemfile
 
-      - name: cache gem annotations
-        uses: actions/cache@v3
-        id: dot-cache
-        with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
-          path: |
-            /home/runner/.cache
-
-
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
 
