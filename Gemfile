@@ -18,7 +18,7 @@ end
 
 group :development, :test do
   gem 'bundler-audit'
-  gem 'byebug'
+  gem 'debug'
 end
 
 # Specify your gem's dependencies in solargraph_rails.gemspec
