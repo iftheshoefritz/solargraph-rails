@@ -16,3 +16,4 @@ spec/rails7/tmp/
 .rspec_status
 Gemfile.lock
 vendor
+/.Gemfile
