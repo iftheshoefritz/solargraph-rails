@@ -407,7 +407,7 @@ Integer#to_query:
   skip: false
 Integer#to_s:
   types:
-  - "String"
+  - String
   skip: false
 Integer#try:
   types:

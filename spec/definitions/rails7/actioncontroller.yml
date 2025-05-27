@@ -1217,7 +1217,7 @@ ActionController::Base#include_all_helpers?:
   skip: true
 ActionController::Base#inspect:
   types:
-  - "String"
+  - String
   skip: false
 ActionController::Base#instance_values:
   types:

@@ -459,7 +459,7 @@ Date#in_time_zone:
   skip: false
 Date#inspect:
   types:
-  - "String"
+  - String
   skip: false
 Date#instance_values:
   types:

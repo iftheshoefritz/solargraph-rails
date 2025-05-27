@@ -2880,7 +2880,7 @@ ActiveRecord::Base#initialize_internals_callback:
   skip: false
 ActiveRecord::Base#inspect:
   types:
-  - "String"
+  - String
   skip: false
 ActiveRecord::Base#instance_values:
   types:
