@@ -29,7 +29,7 @@ jobs:
           - "0.52.0"
         rails-version:
           - "7"
-      fail-fast: true
+      fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
@@ -86,6 +86,7 @@ jobs:
 #        with:
 #          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
 #          path: |
+#            /home/runner/.cache
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile

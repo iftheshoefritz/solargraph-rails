@@ -125,7 +125,7 @@ ActiveRecord::Base.anonymous?:
   skip: false
 ActiveRecord::Base.any?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.application_record_class:
   types:
@@ -1265,7 +1265,7 @@ ActiveRecord::Base.insert_all!:
   skip: false
 ActiveRecord::Base.inspect:
   types:
-  - "String"
+  - String
   skip: false
 ActiveRecord::Base.inspection_filter:
   types:
@@ -1481,7 +1481,7 @@ ActiveRecord::Base.none:
   skip: false
 ActiveRecord::Base.none?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.normalize_callback_params:
   types:
@@ -1493,7 +1493,7 @@ ActiveRecord::Base.offset:
   skip: false
 ActiveRecord::Base.one?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.only:
   types:
