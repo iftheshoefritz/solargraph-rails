@@ -20,6 +20,7 @@
 npm install -g act
 act pull_request
 ```
+
 ## Completion coverage tracking
 
 Solargraph-Rails uses a [set of yaml files](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/definitions) to track coverage of found completions.

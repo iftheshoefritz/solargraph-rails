@@ -84,9 +84,8 @@ jobs:
 #        uses: actions/cache@v3
 #        id: dot-cache
 #        with:
-#          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
+#          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
 #          path: |
-#            /home/runner/.cache
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
@@ -104,3 +103,12 @@ jobs:
           bundle install
           bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails
+
+      #- name: Setup upterm session
+      #  uses: lhotari/action-upterm@v1
+
+      - name: Test
+        run: |
+          gem install bundler
+          bundle install
+          bundle exec rspec
