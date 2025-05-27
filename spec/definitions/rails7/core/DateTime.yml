@@ -246,7 +246,6 @@ DateTime.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -257,7 +256,6 @@ DateTime.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1076,7 +1074,6 @@ DateTime#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1087,7 +1084,6 @@ DateTime#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2

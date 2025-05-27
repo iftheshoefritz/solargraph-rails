@@ -192,7 +192,6 @@ Date.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -203,7 +202,6 @@ Date.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -535,6 +533,8 @@ Date#compare_with_coercion:
   - 0.48.0
   - 0.49.0
   - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.54.6.alpha
 Date#days_ago:
   types:
@@ -720,7 +720,6 @@ Date#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -731,7 +730,6 @@ Date#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2

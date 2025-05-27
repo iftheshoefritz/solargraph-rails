@@ -139,12 +139,24 @@ Module.presence:
   types:
   - self
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.presence_in:
   types:
   - self
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.present?:
   types:
   - Boolean
@@ -346,12 +358,24 @@ Module#presence:
   types:
   - self
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#presence_in:
   types:
   - self
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#present?:
   types:
   - Boolean

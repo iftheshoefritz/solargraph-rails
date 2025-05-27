@@ -72,7 +72,6 @@ module Helpers
 
       # Completion is found, but marked as skipped
       if pin
-        effective_type = pin.return_type.map(&:tag)
         effective_type = pin.typify(map).map(&:tag).sort.uniq
         specified_type = data['types']
 
@@ -193,7 +192,10 @@ module Helpers
     pin = find_pin(query, map)
     expect(pin).to_not be_nil
     expect(pin.scope).to eq(:instance)
-    expect(pin.return_type.map(&:tag)).to eq(return_type)
+    pin_return_type = pin.return_type
+    pin_return_type = pin.typify map if pin_return_type.undefined?
+    pin_return_type = pin.probe map if pin_return_type.undefined?
+    expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
 
     yield pin if block_given?
   end

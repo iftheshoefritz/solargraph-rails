@@ -168,7 +168,6 @@ Integer.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -179,7 +178,6 @@ Integer.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -509,7 +507,6 @@ Integer#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -520,7 +517,6 @@ Integer#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2

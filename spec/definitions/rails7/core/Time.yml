@@ -23,7 +23,12 @@ Time.as_json:
 Time.at:
   types:
   - Time
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time.at_with_coercion:
   types:
   - undefined
@@ -220,7 +225,6 @@ Time.presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -231,7 +235,6 @@ Time.presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -359,7 +362,9 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.54.6.alpha
 Time#-:
   types:
   - self
@@ -376,6 +381,8 @@ Time#<=>:
   - nil
   skip:
   - 0.48.0
+  - 0.51.2
+  - 0.52.0
 Time#acts_like?:
   types:
   - Boolean
@@ -808,7 +815,6 @@ Time#presence:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -819,7 +825,6 @@ Time#presence_in:
   - nil
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
