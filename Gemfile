@@ -18,7 +18,7 @@ end
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
 
-solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION']) || "0.55.alpha"
+solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
 if solargraph_version == '0.55.alpha'
   gem 'solargraph',
