@@ -1,433 +1,429 @@
 ---
-Module.acts_like?:
+Class.acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
+Class.alias_attribute:
   types:
   - undefined
   skip: false
-Module.alias_attribute:
+Class.anonymous?:
+  types:
+  - "::Boolean"
+  skip: false
+Class.as_json:
   types:
   - undefined
   skip: false
-Module.anonymous?:
+Class.attr_internal:
   types:
   - undefined
   skip: false
-Module.as_json:
+Class.attr_internal_accessor:
+  types:
+  - void
+  skip: false
+Class.attr_internal_naming_format:
+  types:
+  - "::String"
+  skip: false
+Class.attr_internal_naming_format=:
+  types:
+  - "::String"
+  skip: false
+Class.attr_internal_reader:
+  types:
+  - void
+  skip: false
+Class.attr_internal_writer:
+  types:
+  - void
+  skip: false
+Class.blank?:
+  types:
+  - "::Boolean"
+  skip: false
+Class.cattr_accessor:
   types:
   - undefined
   skip: false
-Module.attr_internal:
+Class.cattr_reader:
   types:
   - undefined
   skip: false
-Module.attr_internal_accessor:
+Class.cattr_writer:
   types:
   - undefined
   skip: false
-Module.attr_internal_naming_format:
+Class.class_attribute:
   types:
   - undefined
   skip: false
-Module.attr_internal_naming_format=:
+Class.concern:
   types:
   - undefined
   skip: false
-Module.attr_internal_reader:
+Class.concerning:
   types:
   - undefined
   skip: false
-Module.attr_internal_writer:
+Class.deep_dup:
   types:
   - undefined
   skip: false
-Module.blank?:
+Class.delegate:
+  types:
+  - undefined
+  skip: false
+Class.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Class.deprecate:
+  types:
+  - undefined
+  skip: false
+Class.descendants:
+  types:
+  - undefined
+  skip: false
+Class.duplicable?:
   types:
   - 'true'
+  skip: false
+Class.html_safe?:
+  types:
   - 'false'
   skip: false
-Module.cattr_accessor:
+Class.in?:
+  types:
+  - "::Boolean"
+  skip: false
+Class.instance_values:
   types:
   - undefined
   skip: false
-Module.cattr_reader:
+Class.instance_variable_names:
   types:
   - undefined
   skip: false
-Module.cattr_writer:
+Class.mattr_accessor:
   types:
   - undefined
   skip: false
-Module.class_attribute:
+Class.mattr_reader:
   types:
   - undefined
   skip: false
-Module.concern:
+Class.mattr_writer:
   types:
   - undefined
   skip: false
-Module.concerning:
+Class.method_visibility:
   types:
   - undefined
   skip: false
-Module.deep_dup:
+Class.module_parent:
   types:
   - undefined
   skip: false
-Module.delegate:
+Class.module_parent_name:
   types:
   - undefined
   skip: false
-Module.delegate_missing_to:
+Class.module_parents:
   types:
   - undefined
   skip: false
-Module.deprecate:
+Class.presence:
   types:
-  - undefined
-  skip: false
-Module.descendants:
-  types:
-  - undefined
-  skip: false
-Module.duplicable?:
-  types:
-  - undefined
-  skip: false
-Module.html_safe?:
-  types:
-  - undefined
-  skip: false
-Module.in?:
-  types:
-  - undefined
-  skip: false
-Module.instance_values:
-  types:
-  - undefined
-  skip: false
-Module.instance_variable_names:
-  types:
-  - undefined
-  skip: false
-Module.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-Module.mattr_reader:
-  types:
-  - undefined
-  skip: false
-Module.mattr_writer:
-  types:
-  - undefined
-  skip: false
-Module.method_visibility:
-  types:
-  - undefined
-  skip: false
-Module.module_parent:
-  types:
-  - undefined
-  skip: false
-Module.module_parent_name:
-  types:
-  - undefined
-  skip: false
-Module.module_parents:
-  types:
-  - undefined
-  skip: false
-Module.presence:
-  types:
-  - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
-Module.presence_in:
-  types:
   - self
+  skip: false
+Class.presence_in:
+  types:
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
-Module.present?:
-  types:
-  - 'true'
-  - 'false'
+  - self
   skip: false
-Module.redefine_method:
+Class.present?:
+  types:
+  - "::Boolean"
+  skip: false
+Class.redefine_method:
   types:
   - undefined
   skip: false
-Module.redefine_singleton_method:
+Class.redefine_singleton_method:
   types:
   - undefined
   skip: false
-Module.remove_possible_method:
+Class.remove_possible_method:
   types:
   - undefined
   skip: false
-Module.remove_possible_singleton_method:
+Class.remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Module.silence_redefinition_of_method:
+Class.silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-Module.thread_cattr_accessor:
+Class.thread_cattr_accessor:
   types:
   - undefined
   skip: false
-Module.thread_cattr_reader:
+Class.thread_cattr_reader:
   types:
   - undefined
   skip: false
-Module.thread_cattr_writer:
+Class.thread_cattr_writer:
   types:
   - undefined
   skip: false
-Module.thread_mattr_accessor:
+Class.thread_mattr_accessor:
   types:
   - undefined
   skip: false
-Module.thread_mattr_reader:
+Class.thread_mattr_reader:
   types:
   - undefined
   skip: false
-Module.thread_mattr_writer:
+Class.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Module.to_json:
+Class.to_json:
   types:
   - undefined
   skip: true
-Module.to_param:
+Class.to_param:
   types:
   - undefined
   skip: false
-Module.to_query:
+Class.to_query:
+  types:
+  - "::String"
+  skip: false
+Class.try:
   types:
   - undefined
   skip: false
-Module.try:
+Class.try!:
   types:
   - undefined
   skip: false
-Module.try!:
+Class.with_options:
   types:
   - undefined
   skip: false
-Module.with_options:
+Class#acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#alias_attribute:
   types:
   - undefined
   skip: false
-Module#acts_like?:
+Class#anonymous?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#as_json:
   types:
   - undefined
   skip: false
-Module#alias_attribute:
+Class#attr_internal:
   types:
   - undefined
   skip: false
-Module#anonymous?:
+Class#attr_internal_accessor:
+  types:
+  - void
+  skip: false
+Class#attr_internal_reader:
+  types:
+  - void
+  skip: false
+Class#attr_internal_writer:
+  types:
+  - void
+  skip: false
+Class#blank?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#cattr_accessor:
   types:
   - undefined
   skip: false
-Module#as_json:
+Class#cattr_reader:
   types:
   - undefined
   skip: false
-Module#attr_internal:
+Class#cattr_writer:
   types:
   - undefined
   skip: false
-Module#attr_internal_accessor:
+Class#class_attribute:
   types:
   - undefined
   skip: false
-Module#attr_internal_reader:
+Class#concern:
   types:
   - undefined
   skip: false
-Module#attr_internal_writer:
+Class#concerning:
   types:
   - undefined
   skip: false
-Module#blank?:
+Class#deep_dup:
+  types:
+  - undefined
+  skip: false
+Class#delegate:
+  types:
+  - undefined
+  skip: false
+Class#delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Class#deprecate:
+  types:
+  - undefined
+  skip: false
+Class#descendants:
+  types:
+  - undefined
+  skip: false
+Class#duplicable?:
   types:
   - 'true'
+  skip: false
+Class#html_safe?:
+  types:
   - 'false'
   skip: false
-Module#cattr_accessor:
+Class#in?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#instance_values:
   types:
   - undefined
   skip: false
-Module#cattr_reader:
+Class#instance_variable_names:
   types:
   - undefined
   skip: false
-Module#cattr_writer:
+Class#mattr_accessor:
   types:
   - undefined
   skip: false
-Module#concern:
+Class#mattr_reader:
   types:
   - undefined
   skip: false
-Module#concerning:
+Class#mattr_writer:
   types:
   - undefined
   skip: false
-Module#deep_dup:
+Class#method_visibility:
   types:
   - undefined
   skip: false
-Module#delegate:
+Class#module_parent:
   types:
   - undefined
   skip: false
-Module#delegate_missing_to:
+Class#module_parent_name:
   types:
   - undefined
   skip: false
-Module#deprecate:
+Class#module_parents:
   types:
   - undefined
   skip: false
-Module#duplicable?:
+Class#presence:
   types:
-  - undefined
-  skip: false
-Module#html_safe?:
-  types:
-  - undefined
-  skip: false
-Module#in?:
-  types:
-  - undefined
-  skip: false
-Module#instance_values:
-  types:
-  - undefined
-  skip: false
-Module#instance_variable_names:
-  types:
-  - undefined
-  skip: false
-Module#mattr_accessor:
-  types:
-  - undefined
-  skip: false
-Module#mattr_reader:
-  types:
-  - undefined
-  skip: false
-Module#mattr_writer:
-  types:
-  - undefined
-  skip: false
-Module#method_visibility:
-  types:
-  - undefined
-  skip: false
-Module#module_parent:
-  types:
-  - undefined
-  skip: false
-Module#module_parent_name:
-  types:
-  - undefined
-  skip: false
-Module#module_parents:
-  types:
-  - undefined
-  skip: false
-Module#presence:
-  types:
-  - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
-Module#presence_in:
-  types:
   - self
+  skip: false
+Class#presence_in:
+  types:
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
-Module#present?:
-  types:
-  - 'true'
-  - 'false'
+  - self
   skip: false
-Module#redefine_method:
+Class#present?:
+  types:
+  - "::Boolean"
+  skip: false
+Class#redefine_method:
   types:
   - undefined
   skip: false
-Module#redefine_singleton_method:
+Class#redefine_singleton_method:
   types:
   - undefined
   skip: false
-Module#remove_possible_method:
+Class#remove_possible_method:
   types:
   - undefined
   skip: false
-Module#remove_possible_singleton_method:
+Class#remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Module#silence_redefinition_of_method:
+Class#silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-Module#thread_cattr_accessor:
+Class#thread_cattr_accessor:
   types:
   - undefined
   skip: false
-Module#thread_cattr_reader:
+Class#thread_cattr_reader:
   types:
   - undefined
   skip: false
-Module#thread_cattr_writer:
+Class#thread_cattr_writer:
   types:
   - undefined
   skip: false
-Module#thread_mattr_accessor:
+Class#thread_mattr_accessor:
   types:
   - undefined
   skip: false
-Module#thread_mattr_reader:
+Class#thread_mattr_reader:
   types:
   - undefined
   skip: false
-Module#thread_mattr_writer:
+Class#thread_mattr_writer:
   types:
   - undefined
   skip: false
-Module#to_json:
+Class#to_json:
   types:
   - undefined
   skip: true
-Module#to_param:
+Class#to_param:
   types:
   - undefined
   skip: false
-Module#to_query:
+Class#to_query:
+  types:
+  - "::String"
+  skip: false
+Class#try:
   types:
   - undefined
   skip: false
-Module#try:
+Class#try!:
   types:
   - undefined
   skip: false
-Module#try!:
-  types:
-  - undefined
-  skip: false
-Module#with_options:
+Class#with_options:
   types:
   - undefined
   skip: false

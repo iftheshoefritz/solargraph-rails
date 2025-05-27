@@ -1,4 +1,226 @@
 ---
+Integer.acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Integer.anonymous?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.as_json:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal_accessor:
+  types:
+  - void
+  skip: false
+Integer.attr_internal_reader:
+  types:
+  - void
+  skip: false
+Integer.attr_internal_writer:
+  types:
+  - void
+  skip: false
+Integer.blank?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.class_attribute:
+  types:
+  - undefined
+  skip: false
+Integer.concern:
+  types:
+  - undefined
+  skip: false
+Integer.concerning:
+  types:
+  - undefined
+  skip: false
+Integer.deep_dup:
+  types:
+  - undefined
+  skip: false
+Integer.delegate:
+  types:
+  - undefined
+  skip: false
+Integer.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Integer.deprecate:
+  types:
+  - undefined
+  skip: false
+Integer.descendants:
+  types:
+  - undefined
+  skip: false
+Integer.duplicable?:
+  types:
+  - 'true'
+  skip: false
+Integer.html_safe?:
+  types:
+  - 'false'
+  skip: false
+Integer.in?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.instance_values:
+  types:
+  - undefined
+  skip: false
+Integer.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.method_visibility:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Integer.module_parents:
+  types:
+  - undefined
+  skip: false
+Integer.presence:
+  types:
+  - nil
+  - self
+  skip: false
+Integer.presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Integer.present?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.redefine_method:
+  types:
+  - undefined
+  skip: false
+Integer.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.to_json:
+  types:
+  - undefined
+  skip: true
+Integer.to_param:
+  types:
+  - undefined
+  skip: false
+Integer.to_query:
+  types:
+  - "::String"
+  skip: false
+Integer.try:
+  types:
+  - undefined
+  skip: false
+Integer.try!:
+  types:
+  - undefined
+  skip: false
+Integer.with_options:
+  types:
+  - undefined
+  skip: false
+Integer#acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer#as_json:
+  types:
+  - undefined
+  skip: false
+Integer#blank?:
+  types:
+  - 'false'
+  skip: false
 Integer#byte:
   types:
   - undefined
@@ -17,7 +239,15 @@ Integer#day:
   skip: false
 Integer#days:
   types:
+  - "::ActiveSupport::Duration"
+  skip: false
+Integer#deep_dup:
+  types:
   - undefined
+  skip: false
+Integer#duplicable?:
+  types:
+  - 'true'
   skip: false
 Integer#exabyte:
   types:
@@ -33,7 +263,7 @@ Integer#fortnight:
   skip: false
 Integer#fortnights:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#gigabyte:
   types:
@@ -49,15 +279,15 @@ Integer#hour:
   skip: false
 Integer#hours:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#html_safe?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Integer#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer#in_milliseconds:
   types:
@@ -93,7 +323,7 @@ Integer#minute:
   skip: false
 Integer#minutes:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#month:
   types:
@@ -101,11 +331,11 @@ Integer#month:
   skip: false
 Integer#months:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#multiple_of?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Integer#ordinal:
   types:
@@ -125,22 +355,17 @@ Integer#petabytes:
   skip: false
 Integer#presence:
   types:
-  - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
+  - self
+  skip: false
 Integer#presence_in:
   types:
-  - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
+  - self
+  skip: false
 Integer#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Integer#second:
   types:
@@ -148,7 +373,7 @@ Integer#second:
   skip: false
 Integer#seconds:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
 Integer#terabyte:
   types:
@@ -176,12 +401,12 @@ Integer#to_param:
   skip: false
 Integer#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 Integer#to_s:
   types:
-  - String
-  skip: true
+  - "::String"
+  skip: false
 Integer#try:
   types:
   - undefined
@@ -196,6 +421,10 @@ Integer#week:
   skip: false
 Integer#weeks:
   types:
+  - "::ActiveSupport::Duration"
+  skip: false
+Integer#with_options:
+  types:
   - undefined
   skip: false
 Integer#year:
@@ -204,5 +433,5 @@ Integer#year:
   skip: false
 Integer#years:
   types:
-  - undefined
+  - "::ActiveSupport::Duration"
   skip: false
