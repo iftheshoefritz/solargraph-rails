@@ -359,8 +359,7 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip:
-  - 0.48.0
+  skip: false
 Time#-:
   types:
   - self
