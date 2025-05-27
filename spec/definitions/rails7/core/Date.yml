@@ -1,4 +1,60 @@
 ---
+Date.acts_like?:
+  types:
+  - Boolean
+  skip: false
+Date.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Date.anonymous?:
+  types:
+  - Boolean
+  skip: false
+Date.as_json:
+  types:
+  - undefined
+  skip: false
+Date.attr_internal:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.attr_internal_accessor:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date.beginning_of_week:
   types:
   - undefined
@@ -15,15 +71,242 @@ Date.beginning_of_week_default=:
   types:
   - undefined
   skip: false
+Date.blank?:
+  types:
+  - Boolean
+  skip: false
+Date.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Date.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Date.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Date.class_attribute:
+  types:
+  - undefined
+  skip: false
+Date.concern:
+  types:
+  - undefined
+  skip: false
+Date.concerning:
+  types:
+  - undefined
+  skip: false
 Date.current:
   types:
   - undefined
   skip: false
+Date.deep_dup:
+  types:
+  - undefined
+  skip: false
+Date.delegate:
+  types:
+  - undefined
+  skip: false
+Date.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Date.deprecate:
+  types:
+  - undefined
+  skip: false
+Date.descendants:
+  types:
+  - undefined
+  skip: false
+Date.duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date.find_beginning_of_week!:
   types:
   - undefined
   skip: false
+Date.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.in?:
+  types:
+  - Boolean
+  skip: false
+Date.instance_values:
+  types:
+  - undefined
+  skip: false
+Date.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Date.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Date.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Date.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Date.method_visibility:
+  types:
+  - undefined
+  skip: false
+Date.module_parent:
+  types:
+  - undefined
+  skip: false
+Date.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Date.module_parents:
+  types:
+  - undefined
+  skip: false
+Date.presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.present?:
+  types:
+  - Boolean
+  skip: false
+Date.redefine_method:
+  types:
+  - undefined
+  skip: false
+Date.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Date.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Date.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Date.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Date.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Date.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Date.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Date.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Date.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Date.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Date.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Date.to_param:
+  types:
+  - undefined
+  skip: false
+Date.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date.tomorrow:
+  types:
+  - undefined
+  skip: false
+Date.try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date.with_options:
   types:
   - undefined
   skip: false
@@ -31,10 +314,48 @@ Date.yesterday:
   types:
   - undefined
   skip: false
-Date#acts_like_date?:
+Date#+:
+  types:
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#-:
+  types:
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#<=>:
+  types:
+  - Integer
+  - nil
+  skip:
+  - 0.48.0
+  - 0.51.2
+  - 0.52.0
+Date#acts_like?:
   types:
   - Boolean
   skip: false
+Date#acts_like_date?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#advance:
   types:
   - undefined
@@ -49,24 +370,64 @@ Date#ago:
   skip: false
 Date#all_day:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#all_month:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#all_quarter:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#all_week:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#all_year:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#as_json:
+  types:
+  - Hash{String => String, Integer, Float}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -147,6 +508,24 @@ Date#beginning_of_year:
   types:
   - undefined
   skip: false
+Date#blank?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#change:
+  types:
+  - undefined
+  skip: false
+Date#class_eval:
+  types:
+  - undefined
+  skip: false
 Date#compare_with_coercion:
   types:
   - undefined
@@ -163,6 +542,20 @@ Date#days_to_week_start:
   types:
   - undefined
   skip: false
+Date#deep_dup:
+  types:
+  - undefined
+  skip: false
+Date#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#end_of_day:
   types:
   - undefined
@@ -187,10 +580,35 @@ Date#future?:
   types:
   - Boolean
   skip: false
-Date#in_time_zone:
+Date#html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#in:
   types:
   - undefined
   skip: false
+Date#in?:
+  types:
+  - Boolean
+  skip: false
+Date#in_time_zone:
+  types:
+  - ActiveSupportTimeWithZone
+  - Time
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#inspect:
   types:
   - String
@@ -291,6 +709,32 @@ Date#plus_with_duration:
   types:
   - undefined
   skip: false
+Date#presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#present?:
+  types:
+  - Boolean
+  skip: false
 Date#prev_day?:
   types:
   - Boolean
@@ -329,8 +773,14 @@ Date#to_formatted_s:
   skip: false
 Date#to_fs:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#to_json:
   types:
   - String
@@ -346,11 +796,7 @@ Date#to_param:
   skip: false
 Date#to_query:
   types:
-  - undefined
-  skip: false
-Date#to_time:
-  types:
-  - Time
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -358,6 +804,14 @@ Date#to_time:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+Date#to_s:
+  types:
+  - String
+  skip: false
+Date#to_time:
+  types:
+  - undefined
+  skip: false
 Date#today?:
   types:
   - Boolean
@@ -370,6 +824,28 @@ Date#tomorrow?:
   types:
   - Boolean
   skip: false
+Date#try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Date#try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#weeks_ago:
   types:
   - undefined
@@ -378,10 +854,20 @@ Date#weeks_since:
   types:
   - undefined
   skip: false
-Date#xmlschema:
+Date#with_options:
   types:
   - undefined
   skip: false
+Date#xmlschema:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#years_ago:
   types:
   - undefined

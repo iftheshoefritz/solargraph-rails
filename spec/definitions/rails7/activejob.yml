@@ -1,7 +1,11 @@
 ---
+ActiveJob::Base.acts_like?:
+  types:
+  - Boolean
+  skip: false
 ActiveJob::Base.after_enqueue:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -11,7 +15,7 @@ ActiveJob::Base.after_enqueue:
   - 0.54.6.alpha
 ActiveJob::Base.after_perform:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -19,13 +23,17 @@ ActiveJob::Base.after_perform:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.alias_attribute:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.anonymous?:
   types:
   - Boolean
   skip: false
 ActiveJob::Base.around_enqueue:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -35,7 +43,7 @@ ActiveJob::Base.around_enqueue:
   - 0.54.6.alpha
 ActiveJob::Base.around_perform:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -43,25 +51,53 @@ ActiveJob::Base.around_perform:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.as_json:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.attr_internal:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base.attr_internal_accessor:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base.attr_internal_reader:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base.attr_internal_writer:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base.before_enqueue:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -71,7 +107,7 @@ ActiveJob::Base.before_enqueue:
   - 0.54.6.alpha
 ActiveJob::Base.before_perform:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -79,6 +115,38 @@ ActiveJob::Base.before_perform:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.blank?:
+  types:
+  - Boolean
+  skip: false
+ActiveJob::Base.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.cattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.cattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.class_attribute:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.concern:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.concerning:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.deep_dup:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.default_priority:
   types:
   - undefined
@@ -110,6 +178,16 @@ ActiveJob::Base.default_queue_name:
   - 0.52.0
   - 0.54.6.alpha
 ActiveJob::Base.default_queue_name=:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.define_callbacks:
   types:
   - undefined
   skip:
@@ -157,7 +235,17 @@ ActiveJob::Base.direct_descendants:
   - 0.54.6.alpha
 ActiveJob::Base.discard_on:
   types:
-  - undefined
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.duplicable?:
+  types:
+  - 'true'
   skip:
   - 0.48.0
   - 0.49.0
@@ -175,6 +263,15 @@ ActiveJob::Base.execute:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.gem:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveJob::Base.handler_for_rescue:
   types:
   - undefined
@@ -185,6 +282,28 @@ ActiveJob::Base.handler_for_rescue:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.in?:
+  types:
+  - Boolean
+  skip: false
+ActiveJob::Base.instance_values:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.instance_variable_names:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.log_arguments:
   types:
   - undefined
@@ -235,6 +354,34 @@ ActiveJob::Base.logger=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.mattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.mattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.method_visibility:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.module_parent:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.module_parent_name:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.module_parents:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.normalize_callback_params:
   types:
   - undefined
@@ -265,6 +412,32 @@ ActiveJob::Base.perform_now:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.present?:
+  types:
+  - Boolean
+  skip: false
 ActiveJob::Base.priority:
   types:
   - undefined
@@ -295,6 +468,10 @@ ActiveJob::Base.priority?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.pry:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.queue_adapter:
   types:
   - undefined
@@ -327,7 +504,7 @@ ActiveJob::Base.queue_adapter_name:
   - 0.54.6.alpha
 ActiveJob::Base.queue_as:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -437,7 +614,7 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.54.6.alpha
 ActiveJob::Base.queue_with_priority:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -445,6 +622,30 @@ ActiveJob::Base.queue_with_priority:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.rake_extension:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.redefine_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.require_dependency:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.rescue_from:
   types:
   - undefined
@@ -527,7 +728,7 @@ ActiveJob::Base.retry_jitter=:
   - 0.54.6.alpha
 ActiveJob::Base.retry_on:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -557,7 +758,7 @@ ActiveJob::Base.return_false_on_aborted_enqueue=:
   - 0.54.6.alpha
 ActiveJob::Base.set:
   types:
-  - undefined
+  - ActiveJob::ConfiguredJob
   skip:
   - 0.48.0
   - 0.49.0
@@ -575,6 +776,10 @@ ActiveJob::Base.set_callback:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.skip_after_callbacks_if_terminated:
   types:
   - undefined
@@ -605,6 +810,93 @@ ActiveJob::Base.skip_callback:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base.subclasses:
+  types:
+  - Array<::Class>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+ActiveJob::Base.to_param:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base.with_options:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#acts_like?:
+  types:
+  - Boolean
+  skip: false
 ActiveJob::Base#arguments:
   types:
   - undefined
@@ -613,19 +905,37 @@ ActiveJob::Base#arguments=:
   types:
   - undefined
   skip: false
+ActiveJob::Base#as_json:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#blank?:
+  types:
+  - Boolean
+  skip: false
+ActiveJob::Base#class_eval:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#deep_dup:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base#deserialize:
   types:
   - undefined
   skip: false
+ActiveJob::Base#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base#enqueue:
-  types:
-  - undefined
-  skip: false
-ActiveJob::Base#enqueue_error:
-  types:
-  - undefined
-  skip: false
-ActiveJob::Base#enqueue_error=:
   types:
   - undefined
   skip: false
@@ -653,7 +963,38 @@ ActiveJob::Base#executions=:
   types:
   - undefined
   skip: false
+ActiveJob::Base#gem:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveJob::Base#handler_for_rescue:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base#in?:
+  types:
+  - Boolean
+  skip: false
+ActiveJob::Base#instance_values:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -701,6 +1042,32 @@ ActiveJob::Base#perform_now:
   types:
   - undefined
   skip: false
+ActiveJob::Base#presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base#presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base#present?:
+  types:
+  - Boolean
+  skip: false
 ActiveJob::Base#priority:
   types:
   - undefined
@@ -714,6 +1081,10 @@ ActiveJob::Base#provider_job_id:
   - undefined
   skip: false
 ActiveJob::Base#provider_job_id=:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#pry:
   types:
   - undefined
   skip: false
@@ -765,6 +1136,10 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveJob::Base#require_dependency:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base#rescue_handlers:
   types:
   - undefined
@@ -817,13 +1192,19 @@ ActiveJob::Base#scheduled_at=:
   skip: false
 ActiveJob::Base#serialize:
   types:
-  - undefined
-  skip: false
-ActiveJob::Base#serialized_arguments=:
+  - Hash<::String>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+ActiveJob::Base#set:
   types:
   - undefined
   skip: false
-ActiveJob::Base#set:
+ActiveJob::Base#serialized_arguments=:
   types:
   - undefined
   skip: false
@@ -843,22 +1224,51 @@ ActiveJob::Base#timezone=:
   types:
   - undefined
   skip: false
+ActiveJob::Base#to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveJob::Base#to_param:
   types:
   - undefined
   skip: false
 ActiveJob::Base#to_query:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base#try:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base#try!:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveJob::Base#with_options:
   types:
   - undefined

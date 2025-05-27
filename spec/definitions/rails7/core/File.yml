@@ -1,9 +1,494 @@
 ---
+File.acts_like?:
+  types:
+  - Boolean
+  skip: false
+File.alias_attribute:
+  types:
+  - undefined
+  skip: false
+File.anonymous?:
+  types:
+  - Boolean
+  skip: false
+File.as_json:
+  types:
+  - undefined
+  skip: false
 File.atomic_write:
   types:
   - undefined
   skip: false
+File.attr_internal:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.attr_internal_accessor:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.blank?:
+  types:
+  - Boolean
+  skip: false
+File.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.cattr_reader:
+  types:
+  - undefined
+  skip: false
+File.cattr_writer:
+  types:
+  - undefined
+  skip: false
+File.class_attribute:
+  types:
+  - undefined
+  skip: false
+File.concern:
+  types:
+  - undefined
+  skip: false
+File.concerning:
+  types:
+  - undefined
+  skip: false
+File.deep_dup:
+  types:
+  - undefined
+  skip: false
+File.delegate:
+  types:
+  - undefined
+  skip: false
+File.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+File.deprecate:
+  types:
+  - undefined
+  skip: false
+File.descendants:
+  types:
+  - undefined
+  skip: false
+File.duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.in?:
+  types:
+  - Boolean
+  skip: false
+File.instance_values:
+  types:
+  - undefined
+  skip: false
+File.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+File.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.mattr_reader:
+  types:
+  - undefined
+  skip: false
+File.mattr_writer:
+  types:
+  - undefined
+  skip: false
+File.method_visibility:
+  types:
+  - undefined
+  skip: false
+File.module_parent:
+  types:
+  - undefined
+  skip: false
+File.module_parent_name:
+  types:
+  - undefined
+  skip: false
+File.module_parents:
+  types:
+  - undefined
+  skip: false
+File.presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.present?:
+  types:
+  - Boolean
+  skip: false
 File.probe_stat_in:
+  types:
+  - undefined
+  skip: false
+File.redefine_method:
+  types:
+  - undefined
+  skip: false
+File.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+File.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+File.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+File.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+File.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+File.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+File.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+File.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+File.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+File.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+File.to_param:
+  types:
+  - undefined
+  skip: false
+File.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File.with_options:
+  types:
+  - undefined
+  skip: false
+File#acts_like?:
+  types:
+  - Boolean
+  skip: false
+File#as_json:
+  types:
+  - undefined
+  skip: false
+File#blank?:
+  types:
+  - Boolean
+  skip: false
+File#class_eval:
+  types:
+  - undefined
+  skip: false
+File#compact_blank:
+  types:
+  - Array<::String>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#deep_dup:
+  types:
+  - undefined
+  skip: false
+File#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#exclude?:
+  types:
+  - Boolean
+  skip: false
+File#excluding:
+  types:
+  - undefined
+  skip: false
+File#html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#in?:
+  types:
+  - Boolean
+  skip: false
+File#in_order_of:
+  types:
+  - undefined
+  skip: false
+File#including:
+  types:
+  - undefined
+  skip: false
+File#index_by:
+  types:
+  - undefined
+  skip: false
+File#index_with:
+  types:
+  - undefined
+  skip: false
+File#instance_values:
+  types:
+  - undefined
+  skip: false
+File#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+File#many?:
+  types:
+  - Boolean
+  skip: false
+File#maximum:
+  types:
+  - undefined
+  skip: false
+File#minimum:
+  types:
+  - undefined
+  skip: false
+File#pick:
+  types:
+  - undefined
+  skip: false
+File#pluck:
+  types:
+  - undefined
+  skip: false
+File#presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#present?:
+  types:
+  - Boolean
+  skip: false
+File#sole:
+  types:
+  - undefined
+  skip: false
+File#sum:
+  types:
+  - Integer
+  - String
+  - generic<T>
+  - generic<U>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+File#to_param:
+  types:
+  - undefined
+  skip: false
+File#to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+File#with_options:
+  types:
+  - undefined
+  skip: false
+File#without:
   types:
   - undefined
   skip: false

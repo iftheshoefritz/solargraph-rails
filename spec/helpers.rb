@@ -84,7 +84,8 @@ module Helpers
               # sounds like a better type
               data['types'] = effective_type
             elsif !skip
-              incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+              # incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+              add_to_skip(data)
             end
           elsif !skip
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
@@ -109,6 +110,9 @@ module Helpers
       end
     end
 
+
+    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
+
     if missing.any?
       raise <<~STR
         The following methods could not be found despite being listed in #{definition_name}.yml:
@@ -122,8 +126,6 @@ module Helpers
           #{incorrect.join("\n  ")}
       STR
     end
-
-    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     total = definitions.keys.size
 

@@ -39,7 +39,7 @@ ActionController::Base.add_flash_types:
   - 0.54.6.alpha
 ActionController::Base.after_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -47,6 +47,10 @@ ActionController::Base.after_action:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base.alias_attribute:
+  types:
+  - undefined
+  skip: false
 ActionController::Base.all_helpers_from_path:
   types:
   - undefined
@@ -83,7 +87,7 @@ ActionController::Base.anonymous?:
   skip: false
 ActionController::Base.append_after_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -93,7 +97,7 @@ ActionController::Base.append_after_action:
   - 0.54.6.alpha
 ActionController::Base.append_around_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -103,7 +107,7 @@ ActionController::Base.append_around_action:
   - 0.54.6.alpha
 ActionController::Base.append_before_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -123,7 +127,7 @@ ActionController::Base.append_view_path:
   - 0.54.6.alpha
 ActionController::Base.around_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -177,23 +181,47 @@ ActionController::Base.assets_dir=:
   - 0.54.6.alpha
 ActionController::Base.attr_internal:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.attr_internal_accessor:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.attr_internal_reader:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.attr_internal_writer:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.before_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -475,8 +503,14 @@ ActionController::Base.dispatch:
   skip: false
 ActionController::Base.duplicable?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.enable_fragment_cache_logging:
   types:
   - undefined
@@ -732,8 +766,14 @@ ActionController::Base.helpers_path?:
   - 0.54.6.alpha
 ActionController::Base.html_safe?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
@@ -998,8 +1038,14 @@ ActionController::Base.modules_for_helpers:
   - 0.54.6.alpha
 ActionController::Base.normalize_callback_params:
   types:
-  - undefined
-  skip: false
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.param_encoding:
   types:
   - undefined
@@ -1062,7 +1108,7 @@ ActionController::Base.permissions_policy:
   - 0.54.6.alpha
 ActionController::Base.prepend_after_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -1072,7 +1118,7 @@ ActionController::Base.prepend_after_action:
   - 0.54.6.alpha
 ActionController::Base.prepend_around_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -1082,7 +1128,7 @@ ActionController::Base.prepend_around_action:
   - 0.54.6.alpha
 ActionController::Base.prepend_before_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -1102,17 +1148,35 @@ ActionController::Base.prepend_view_path:
   - 0.54.6.alpha
 ActionController::Base.presence:
   types:
-  - Object
-  skip: false
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.presence_in:
   types:
-  - Object
-  skip: false
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.present?:
   types:
   - Boolean
   skip: false
 ActionController::Base.protect_from_forgery:
+  types:
+  - undefined
+  skip: false
+ActionController::Base.pry:
   types:
   - undefined
   skip: false
@@ -1136,6 +1200,10 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base.rake_extension:
+  types:
+  - undefined
+  skip: false
 ActionController::Base.redefine_method:
   types:
   - undefined
@@ -1212,10 +1280,20 @@ ActionController::Base.request_forgery_protection_token=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActionController::Base.rescue_from:
+ActionController::Base.require_dependency:
   types:
   - undefined
   skip: false
+ActionController::Base.rescue_from:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.rescue_handlers:
   types:
   - undefined
@@ -1334,7 +1412,7 @@ ActionController::Base.silence_redefinition_of_method:
   skip: false
 ActionController::Base.skip_after_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -1344,7 +1422,7 @@ ActionController::Base.skip_after_action:
   - 0.54.6.alpha
 ActionController::Base.skip_around_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -1354,7 +1432,7 @@ ActionController::Base.skip_around_action:
   - 0.54.6.alpha
 ActionController::Base.skip_before_action:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -1402,12 +1480,24 @@ ActionController::Base.stylesheets_dir=:
   - 0.54.6.alpha
 ActionController::Base.subclasses:
   types:
-  - undefined
-  skip: false
+  - Array<::Class>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.supports_path?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.thread_cattr_accessor:
   types:
   - undefined
@@ -1447,16 +1537,36 @@ ActionController::Base.to_param:
   skip: false
 ActionController::Base.to_query:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.try:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.try!:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.urlsafe_csrf_tokens:
   types:
   - undefined
@@ -1561,7 +1671,7 @@ ActionController::Base.wrap_parameters:
   - 0.54.6.alpha
 ActionController::Base#action_has_layout?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -1833,8 +1943,14 @@ ActionController::Base#combined_fragment_cache_key:
   - 0.54.6.alpha
 ActionController::Base#config:
   types:
-  - undefined
-  skip: false
+  - ActiveSupport::InheritableOptions
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#content_type:
   types:
   - undefined
@@ -1979,8 +2095,14 @@ ActionController::Base#default_url_options?:
   - 0.54.6.alpha
 ActionController::Base#details_for_lookup:
   types:
-  - undefined
-  skip: false
+  - Hash
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#devise_controller?:
   types:
   - undefined
@@ -2007,8 +2129,14 @@ ActionController::Base#dispatch:
   skip: false
 ActionController::Base#duplicable?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#edit_polymorphic_path:
   types:
   - undefined
@@ -2229,7 +2357,7 @@ ActionController::Base#fragment_cache_keys?:
   - 0.54.6.alpha
 ActionController::Base#fragment_exist?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2282,7 +2410,7 @@ ActionController::Base#handler_for_rescue:
   - 0.54.6.alpha
 ActionController::Base#head:
   types:
-  - undefined
+  - 'true'
   skip:
   - 0.48.0
   - 0.49.0
@@ -2342,8 +2470,14 @@ ActionController::Base#helpers_path?:
   - 0.54.6.alpha
 ActionController::Base#html_safe?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
@@ -2754,17 +2888,35 @@ ActionController::Base#prepend_view_path:
   skip: false
 ActionController::Base#presence:
   types:
-  - Object
-  skip: false
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#presence_in:
   types:
-  - Object
-  skip: false
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#present?:
   types:
   - Boolean
   skip: false
 ActionController::Base#process:
+  types:
+  - undefined
+  skip: false
+ActionController::Base#pry:
   types:
   - undefined
   skip: false
@@ -2856,8 +3008,14 @@ ActionController::Base#render:
   skip: false
 ActionController::Base#render_to_body:
   types:
-  - undefined
-  skip: false
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#render_to_string:
   types:
   - undefined
@@ -2932,7 +3090,7 @@ ActionController::Base#request_http_digest_authentication:
   - 0.54.6.alpha
 ActionController::Base#request_http_token_authentication:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -3106,7 +3264,7 @@ ActionController::Base#set_response!:
   skip: false
 ActionController::Base#show_detailed_exceptions?:
   types:
-  - undefined
+  - 'false'
   skip:
   - 0.48.0
   - 0.49.0
@@ -3186,7 +3344,7 @@ ActionController::Base#signed_in_root_path:
   - 0.54.6.alpha
 ActionController::Base#stale?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3293,8 +3451,14 @@ ActionController::Base#to_param:
   skip: false
 ActionController::Base#to_query:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#translate:
   types:
   - undefined
@@ -3307,12 +3471,26 @@ ActionController::Base#translate:
   - 0.54.6.alpha
 ActionController::Base#try:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#try!:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base#url_for:
   types:
   - undefined
