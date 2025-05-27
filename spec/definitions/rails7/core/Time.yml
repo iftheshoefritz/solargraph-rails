@@ -9,7 +9,7 @@ Time.acts_like?:
   skip: false
 Time.alias_attribute:
   types:
-  - undefined
+  - Time
   skip: false
 Time.anonymous?:
   types:
@@ -268,10 +268,11 @@ Time.zone_default=:
   skip: false
 Time#+:
   types:
-  - "Time"
+  - Time
   skip: false
 Time#-:
   types:
+  - Float
   - self
   skip: false
 Time#<=>:
