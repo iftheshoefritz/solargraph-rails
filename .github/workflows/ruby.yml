@@ -33,6 +33,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
@@ -42,6 +43,12 @@ jobs:
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          working-directory: spec/rails${{ matrix.rails-version }}
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
 
       - name: cache gem annotations
         uses: actions/cache@v3
