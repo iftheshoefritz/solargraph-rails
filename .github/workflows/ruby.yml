@@ -43,9 +43,6 @@ jobs:
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
 
-      - name: RSpec
-        run: bundle exec rspec spec/solargraph-rails
-
       - name: cache gem annotations
         uses: actions/cache@v3
         id: dot-cache
@@ -53,9 +50,26 @@ jobs:
           key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
           path: |
             /home/runner/.cache
+
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
-      - name: Test
-        run: |
-          bundle install
-          bundle exec rspec
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          working-directory: spec/rails${{ matrix.rails-version }}
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+
+      - name: Cache yardoc
+        uses: actions/cache@v3
+        id: yardoc
+        with:
+          key: ${{ runner.os }}-yard-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}
+          path: |
+            /home/runner/.yardoc
+
+      - name: Generate YARD docs
+        run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
+
+      - name: RSpec
+        run: bundle exec rspec spec/solargraph-rails
