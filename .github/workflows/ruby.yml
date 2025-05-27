@@ -58,11 +58,11 @@ jobs:
           path: |
             /home/runner/.cache
 
-      #- name: Setup upterm session
-      #  uses: lhotari/action-upterm@v1
-
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+
+      #- name: Setup upterm session
+      #  uses: lhotari/action-upterm@v1
 
       - name: RSpec
         run: |
