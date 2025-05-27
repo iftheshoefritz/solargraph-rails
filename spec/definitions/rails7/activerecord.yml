@@ -3086,7 +3086,8 @@ ActiveRecord::Base.pick:
   skip: false
 ActiveRecord::Base.pluck:
   types:
-  - undefined
+  - Array
+  - Array<Array>
   skip: false
 ActiveRecord::Base.pluralize_table_names:
   types:

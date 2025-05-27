@@ -139,16 +139,12 @@ Module.presence:
   types:
   - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
+  skip: false
 Module.presence_in:
   types:
   - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
+  skip: false
 Module.present?:
   types:
   - Boolean
@@ -350,16 +346,12 @@ Module#presence:
   types:
   - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
+  skip: false
 Module#presence_in:
   types:
   - self
   - nil
-  skip:
-    - "0.49.0"
-    - "0.50.0"
+  skip: false
 Module#present?:
   types:
   - Boolean

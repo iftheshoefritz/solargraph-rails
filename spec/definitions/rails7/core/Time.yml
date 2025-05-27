@@ -642,7 +642,7 @@ Time#eql?:
   skip: false
 Time#eql_with_coercion:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#formatted_offset:
   types:
