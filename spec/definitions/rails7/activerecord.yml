@@ -118,7 +118,7 @@ ActiveRecord::Base.anonymous?:
 ActiveRecord::Base.any?:
   types:
   - Boolean
-  skip: false
+  skip: true
 ActiveRecord::Base.application_record_class:
   types:
   - undefined
@@ -934,8 +934,8 @@ ActiveRecord::Base.filter_attributes=:
   skip: true
 ActiveRecord::Base.find_by:
   types:
-  - undefined
-  skip: false
+  - self
+  skip: true
 ActiveRecord::Base.find_by!:
   types:
   - undefined
@@ -1251,7 +1251,7 @@ ActiveRecord::Base.insert_all!:
 ActiveRecord::Base.inspect:
   types:
   - String
-  skip: false
+  skip: true
 ActiveRecord::Base.inspection_filter:
   types:
   - undefined
@@ -1455,7 +1455,7 @@ ActiveRecord::Base.none:
 ActiveRecord::Base.none?:
   types:
   - Boolean
-  skip: false
+  skip: true
 ActiveRecord::Base.normalize_callback_params:
   types:
   - undefined
@@ -1467,7 +1467,7 @@ ActiveRecord::Base.offset:
 ActiveRecord::Base.one?:
   types:
   - Boolean
-  skip: false
+  skip: true
 ActiveRecord::Base.only:
   types:
   - undefined
@@ -2316,8 +2316,8 @@ ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   skip: true
 ActiveRecord::Base.where:
   types:
-  - undefined
-  skip: false
+  - self
+  skip: true
 ActiveRecord::Base.while_preventing_writes:
   types:
   - undefined

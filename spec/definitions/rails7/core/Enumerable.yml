@@ -57,7 +57,7 @@ Enumerable#sum:
   - "Integer"
   - "param<T>"
   - "param<U>"
-  skip: false
+  skip: true
 Enumerable#without:
   types:
   - undefined

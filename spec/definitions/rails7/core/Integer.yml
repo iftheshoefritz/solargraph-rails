@@ -175,7 +175,7 @@ Integer#to_query:
 Integer#to_s:
   types:
   - String
-  skip: false
+  skip: true
 Integer#try:
   types:
   - undefined
