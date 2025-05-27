@@ -37,9 +37,11 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
+          cache-version: 2
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+
       - name: RSpec
         run: bundle exec rspec spec/solargraph-rails
 
