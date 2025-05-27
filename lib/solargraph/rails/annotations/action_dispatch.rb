@@ -19,6 +19,7 @@ module ActionDispatch
 
     class RouteSet
       # @yieldself [ActionDispatch::Routing::Mapper]
+      # @yieldreceiver [ActionDispatch::Routing::Mapper]
       def draw; end
     end
   end
