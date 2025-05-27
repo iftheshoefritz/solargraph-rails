@@ -1,8 +1,14 @@
 ---
 Enumerable#compact_blank:
   types:
-  - undefined
-  skip: false
+  - Array<generic<Elem>>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Enumerable#exclude?:
   types:
   - Boolean
@@ -62,6 +68,8 @@ Enumerable#sum:
   - 0.49.0
   - 0.50.0
   - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Enumerable#without:
   types:
   - undefined

@@ -1,4 +1,118 @@
 ---
+Hash.acts_like?:
+  types:
+  - Boolean
+  skip: false
+Hash.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Hash.anonymous?:
+  types:
+  - Boolean
+  skip: false
+Hash.as_json:
+  types:
+  - undefined
+  skip: false
+Hash.attr_internal:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.attr_internal_accessor:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.blank?:
+  types:
+  - Boolean
+  skip: false
+Hash.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.class_attribute:
+  types:
+  - undefined
+  skip: false
+Hash.concern:
+  types:
+  - undefined
+  skip: false
+Hash.concerning:
+  types:
+  - undefined
+  skip: false
+Hash.deep_dup:
+  types:
+  - undefined
+  skip: false
+Hash.delegate:
+  types:
+  - undefined
+  skip: false
+Hash.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Hash.deprecate:
+  types:
+  - undefined
+  skip: false
+Hash.descendants:
+  types:
+  - undefined
+  skip: false
+Hash.duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash.from_trusted_xml:
   types:
   - undefined
@@ -7,15 +121,212 @@ Hash.from_xml:
   types:
   - undefined
   skip: false
+Hash.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.in?:
+  types:
+  - Boolean
+  skip: false
+Hash.instance_values:
+  types:
+  - undefined
+  skip: false
+Hash.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Hash.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.method_visibility:
+  types:
+  - undefined
+  skip: false
+Hash.module_parent:
+  types:
+  - undefined
+  skip: false
+Hash.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Hash.module_parents:
+  types:
+  - undefined
+  skip: false
+Hash.presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.present?:
+  types:
+  - Boolean
+  skip: false
+Hash.redefine_method:
+  types:
+  - undefined
+  skip: false
+Hash.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Hash.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Hash.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Hash.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Hash.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Hash.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Hash.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Hash.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Hash.to_param:
+  types:
+  - undefined
+  skip: false
+Hash.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash.with_options:
+  types:
+  - undefined
+  skip: false
+Hash#acts_like?:
+  types:
+  - Boolean
+  skip: false
+Hash#as_json:
+  types:
+  - undefined
+  skip: false
 Hash#assert_valid_keys:
+  types:
+  - undefined
+  skip: false
+Hash#class_eval:
   types:
   - undefined
   skip: false
 Hash#compact_blank:
   types:
-  - undefined
-  skip: false
+  - Hash{generic<K> => generic<V>}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#compact_blank!:
+  types:
+  - Hash{generic<K> => generic<V>}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#deep_dup:
   types:
   - undefined
   skip: false
@@ -29,20 +340,44 @@ Hash#deep_merge!:
   skip: false
 Hash#deep_stringify_keys:
   types:
-  - undefined
-  skip: false
+  - Hash<String>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#deep_stringify_keys!:
   types:
-  - undefined
-  skip: false
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#deep_symbolize_keys:
   types:
-  - undefined
-  skip: false
+  - Hash<Symbol>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#deep_symbolize_keys!:
   types:
-  - undefined
-  skip: false
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#deep_transform_keys:
   types:
   - undefined
@@ -59,7 +394,25 @@ Hash#deep_transform_values!:
   types:
   - undefined
   skip: false
+Hash#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#except!:
+  types:
+  - undefined
+  skip: false
+Hash#exclude?:
+  types:
+  - Boolean
+  skip: false
+Hash#excluding:
   types:
   - undefined
   skip: false
@@ -71,9 +424,99 @@ Hash#extractable_options?:
   types:
   - Boolean
   skip: false
-Hash#nested_under_indifferent_access:
+Hash#html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#in?:
+  types:
+  - Boolean
+  skip: false
+Hash#in_order_of:
   types:
   - undefined
+  skip: false
+Hash#including:
+  types:
+  - undefined
+  skip: false
+Hash#index_by:
+  types:
+  - undefined
+  skip: false
+Hash#index_with:
+  types:
+  - undefined
+  skip: false
+Hash#instance_values:
+  types:
+  - undefined
+  skip: false
+Hash#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Hash#many?:
+  types:
+  - Boolean
+  skip: false
+Hash#maximum:
+  types:
+  - undefined
+  skip: false
+Hash#minimum:
+  types:
+  - undefined
+  skip: false
+Hash#nested_under_indifferent_access:
+  types:
+  - ActiveSupportHashWithIndifferentAccess<generic<K>, generic<V>>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#pick:
+  types:
+  - undefined
+  skip: false
+Hash#pluck:
+  types:
+  - undefined
+  skip: false
+Hash#presence:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#presence_in:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#present?:
+  types:
+  - Boolean
   skip: false
 Hash#reverse_merge:
   types:
@@ -91,34 +534,132 @@ Hash#slice!:
   types:
   - undefined
   skip: false
+Hash#sole:
+  types:
+  - undefined
+  skip: false
 Hash#stringify_keys:
   types:
-  - undefined
-  skip: false
+  - Hash{String => generic<V>}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#stringify_keys!:
   types:
-  - undefined
-  skip: false
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#sum:
+  types:
+  - Array
+  - Integer
+  - generic<T>
+  - generic<U>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#symbolize_keys:
   types:
-  - undefined
-  skip: false
+  - Hash{Symbol => generic<V>}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#symbolize_keys!:
   types:
-  - undefined
-  skip: false
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Hash#to_options:
   types:
-  - undefined
-  skip: false
+  - Hash{Symbol => generic<V>}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#to_options!:
+  types:
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#to_param:
   types:
   - undefined
   skip: false
+Hash#to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#to_xml:
   types:
   - undefined
   skip: false
+Hash#try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Hash#with_defaults:
   types:
   - undefined
@@ -128,6 +669,20 @@ Hash#with_defaults!:
   - undefined
   skip: false
 Hash#with_indifferent_access:
+  types:
+  - ActiveSupportHashWithIndifferentAccess<generic<K>, generic<V>>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Hash#with_options:
+  types:
+  - undefined
+  skip: false
+Hash#without:
   types:
   - undefined
   skip: false
