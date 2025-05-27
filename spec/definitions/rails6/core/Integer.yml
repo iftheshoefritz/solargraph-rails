@@ -1,476 +1,431 @@
 ---
-Hash.acts_like?:
+Integer.acts_like?:
   types:
   - "::Boolean"
   skip: false
-Hash.alias_attribute:
+Integer.alias_attribute:
   types:
   - undefined
   skip: false
-Hash.anonymous?:
+Integer.anonymous?:
   types:
   - "::Boolean"
   skip: false
-Hash.as_json:
+Integer.as_json:
   types:
   - undefined
   skip: false
-Hash.attr_internal:
-  types:
-  - undefined
-  skip: false
-Hash.attr_internal_accessor:
+Integer.attr_internal:
   types:
   - void
   skip: false
-Hash.attr_internal_reader:
+Integer.attr_internal_accessor:
   types:
   - void
   skip: false
-Hash.attr_internal_writer:
-  types:
-  - void
-  skip: false
-Hash.blank?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash.cattr_accessor:
-  types:
-  - undefined
-  skip: false
-Hash.cattr_reader:
-  types:
-  - undefined
-  skip: false
-Hash.cattr_writer:
-  types:
-  - undefined
-  skip: false
-Hash.class_attribute:
-  types:
-  - undefined
-  skip: false
-Hash.concern:
-  types:
-  - undefined
-  skip: false
-Hash.concerning:
-  types:
-  - undefined
-  skip: false
-Hash.deep_dup:
-  types:
-  - undefined
-  skip: false
-Hash.delegate:
-  types:
-  - undefined
-  skip: false
-Hash.delegate_missing_to:
-  types:
-  - undefined
-  skip: false
-Hash.deprecate:
-  types:
-  - undefined
-  skip: false
-Hash.descendants:
-  types:
-  - undefined
-  skip: false
-Hash.duplicable?:
-  types:
-  - 'true'
-  skip: false
-Hash.from_trusted_xml:
-  types:
-  - undefined
-  skip: false
-Hash.from_xml:
-  types:
-  - undefined
-  skip: false
-Hash.html_safe?:
-  types:
-  - 'false'
-  skip: false
-Hash.in?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash.instance_values:
-  types:
-  - undefined
-  skip: false
-Hash.instance_variable_names:
-  types:
-  - undefined
-  skip: false
-Hash.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-Hash.mattr_reader:
-  types:
-  - undefined
-  skip: false
-Hash.mattr_writer:
-  types:
-  - undefined
-  skip: false
-Hash.method_visibility:
-  types:
-  - undefined
-  skip: false
-Hash.module_parent:
-  types:
-  - undefined
-  skip: false
-Hash.module_parent_name:
-  types:
-  - undefined
-  skip: false
-Hash.module_parents:
-  types:
-  - undefined
-  skip: false
-Hash.presence:
-  types:
-  - nil
-  - self
-  skip: false
-Hash.presence_in:
-  types:
-  - nil
-  - self
-  skip: false
-Hash.present?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash.redefine_method:
-  types:
-  - undefined
-  skip: false
-Hash.redefine_singleton_method:
-  types:
-  - undefined
-  skip: false
-Hash.remove_possible_method:
-  types:
-  - undefined
-  skip: false
-Hash.remove_possible_singleton_method:
-  types:
-  - undefined
-  skip: false
-Hash.silence_redefinition_of_method:
-  types:
-  - undefined
-  skip: false
-Hash.thread_cattr_accessor:
-  types:
-  - undefined
-  skip: false
-Hash.thread_cattr_reader:
-  types:
-  - undefined
-  skip: false
-Hash.thread_cattr_writer:
-  types:
-  - undefined
-  skip: false
-Hash.thread_mattr_accessor:
-  types:
-  - undefined
-  skip: false
-Hash.thread_mattr_reader:
-  types:
-  - undefined
-  skip: false
-Hash.thread_mattr_writer:
-  types:
-  - undefined
-  skip: false
-Hash.to_json:
-  types:
-  - undefined
-  skip: true
-Hash.to_param:
-  types:
-  - undefined
-  skip: false
-Hash.to_query:
+Integer.attr_internal_reader:
   types:
   - "::String"
   skip: false
-Hash.try:
-  types:
-  - undefined
-  skip: false
-Hash.try!:
-  types:
-  - undefined
-  skip: false
-Hash.with_options:
-  types:
-  - undefined
-  skip: false
-Hash#acts_like?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash#as_json:
-  types:
-  - undefined
-  skip: false
-Hash#assert_valid_keys:
-  types:
-  - undefined
-  skip: false
-Hash#class_eval:
-  types:
-  - undefined
-  skip: false
-Hash#compact_blank:
-  types:
-  - "::Hash{generic<K> => generic<V>}"
-  skip: false
-Hash#compact_blank!:
-  types:
-  - "::Hash{generic<K> => generic<V>}"
-  skip: false
-Hash#deep_dup:
-  types:
-  - undefined
-  skip: false
-Hash#deep_merge:
-  types:
-  - undefined
-  skip: false
-Hash#deep_merge!:
-  types:
-  - undefined
-  skip: false
-Hash#deep_stringify_keys:
-  types:
-  - "::Hash<::String>"
-  skip: false
-Hash#deep_stringify_keys!:
-  types:
-  - self
-  skip: false
-Hash#deep_symbolize_keys:
-  types:
-  - "::Hash<::Symbol>"
-  skip: false
-Hash#deep_symbolize_keys!:
-  types:
-  - self
-  skip: false
-Hash#deep_transform_keys:
-  types:
-  - undefined
-  skip: false
-Hash#deep_transform_keys!:
-  types:
-  - undefined
-  skip: false
-Hash#deep_transform_values:
-  types:
-  - undefined
-  skip: false
-Hash#deep_transform_values!:
-  types:
-  - undefined
-  skip: false
-Hash#duplicable?:
-  types:
-  - 'true'
-  skip: false
-Hash#except!:
-  types:
-  - undefined
-  skip: false
-Hash#exclude?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash#excluding:
-  types:
-  - undefined
-  skip: false
-Hash#extract!:
-  types:
-  - undefined
-  skip: false
-Hash#extractable_options?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash#html_safe?:
-  types:
-  - 'false'
-  skip: false
-Hash#in?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash#in_order_of:
-  types:
-  - undefined
-  skip: false
-Hash#including:
-  types:
-  - undefined
-  skip: false
-Hash#index_by:
-  types:
-  - undefined
-  skip: false
-Hash#index_with:
-  types:
-  - undefined
-  skip: false
-Hash#instance_values:
-  types:
-  - undefined
-  skip: false
-Hash#instance_variable_names:
-  types:
-  - undefined
-  skip: false
-Hash#many?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash#maximum:
-  types:
-  - undefined
-  skip: false
-Hash#minimum:
-  types:
-  - undefined
-  skip: false
-Hash#nested_under_indifferent_access:
-  types:
-  - "::ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>"
-  skip: false
-Hash#pick:
-  types:
-  - undefined
-  skip: false
-Hash#pluck:
-  types:
-  - undefined
-  skip: false
-Hash#presence:
-  types:
-  - nil
-  - self
-  skip: false
-Hash#presence_in:
-  types:
-  - nil
-  - self
-  skip: false
-Hash#present?:
-  types:
-  - "::Boolean"
-  skip: false
-Hash#reverse_merge:
-  types:
-  - undefined
-  skip: false
-Hash#reverse_merge!:
-  types:
-  - undefined
-  skip: false
-Hash#reverse_update:
-  types:
-  - undefined
-  skip: false
-Hash#slice!:
-  types:
-  - undefined
-  skip: false
-Hash#sole:
-  types:
-  - "::Hash{::String => generic<V>}"
-  skip: false
-Hash#stringify_keys:
-  types:
-  - "::Hash{::String => generic<V>}"
-  skip: false
-Hash#stringify_keys!:
-  types:
-  - self
-  skip: false
-Hash#sum:
-  types:
-  - "::Array"
-  - "::Integer"
-  - generic<T>
-  - generic<U>
-  skip: false
-Hash#symbolize_keys:
-  types:
-  - "::Hash{::Symbol => generic<V>}"
-  skip: false
-Hash#symbolize_keys!:
-  types:
-  - self
-  skip: false
-Hash#to_json:
-  types:
-  - undefined
-  skip: true
-Hash#to_options:
-  types:
-  - "::Hash{::Symbol => generic<V>}"
-  skip: false
-Hash#to_options!:
-  types:
-  - undefined
-  skip: false
-Hash#to_param:
-  types:
-  - undefined
-  skip: false
-Hash#to_query:
+Integer.attr_internal_writer:
   types:
   - "::String"
   skip: false
-Hash#to_xml:
+Integer.blank?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.cattr_accessor:
   types:
   - undefined
   skip: false
-Hash#try:
+Integer.cattr_reader:
   types:
   - undefined
   skip: false
-Hash#try!:
+Integer.cattr_writer:
   types:
   - undefined
   skip: false
-Hash#with_defaults:
+Integer.class_attribute:
   types:
   - undefined
   skip: false
-Hash#with_defaults!:
+Integer.concern:
   types:
   - undefined
   skip: false
-Hash#with_indifferent_access:
-  types:
-  - "::ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>"
-  skip: false
-Hash#with_options:
+Integer.concerning:
   types:
   - undefined
   skip: false
-Hash#without:
+Integer.deep_dup:
+  types:
+  - undefined
+  skip: false
+Integer.delegate:
+  types:
+  - undefined
+  skip: false
+Integer.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Integer.deprecate:
+  types:
+  - undefined
+  skip: false
+Integer.descendants:
+  types:
+  - undefined
+  skip: false
+Integer.duplicable?:
+  types:
+  - 'true'
+  skip: false
+Integer.html_safe?:
+  types:
+  - 'false'
+  skip: false
+Integer.in?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.instance_values:
+  types:
+  - undefined
+  skip: false
+Integer.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.method_visibility:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Integer.module_parents:
+  types:
+  - undefined
+  skip: false
+Integer.presence:
+  types:
+  - nil
+  - self
+  skip: false
+Integer.presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Integer.present?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer.redefine_method:
+  types:
+  - undefined
+  skip: false
+Integer.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Integer.subclasses:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.to_json:
+  types:
+  - undefined
+  skip: true
+Integer.to_param:
+  types:
+  - undefined
+  skip: false
+Integer.to_query:
+  types:
+  - "::String"
+  skip: false
+Integer.try:
+  types:
+  - undefined
+  skip: false
+Integer.try!:
+  types:
+  - undefined
+  skip: false
+Integer.with_options:
+  types:
+  - undefined
+  skip: false
+Integer#acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer#as_json:
+  types:
+  - undefined
+  skip: false
+Integer#blank?:
+  types:
+  - 'false'
+  skip: false
+Integer#byte:
+  types:
+  - "::Boolean"
+  skip: false
+Integer#bytes:
+  types:
+  - undefined
+  skip: false
+Integer#class_eval:
+  types:
+  - void
+  skip: false
+Integer#day:
+  types:
+  - void
+  skip: false
+Integer#days:
+  types:
+  - void
+  skip: false
+Integer#deep_dup:
+  types:
+  - void
+  skip: false
+Integer#duplicable?:
+  types:
+  - undefined
+  skip: false
+Integer#exabyte:
+  types:
+  - undefined
+  skip: false
+Integer#exabytes:
+  types:
+  - undefined
+  skip: false
+Integer#fortnight:
+  types:
+  - undefined
+  skip: false
+Integer#fortnights:
+  types:
+  - undefined
+  skip: false
+Integer#gigabyte:
+  types:
+  - undefined
+  skip: false
+Integer#gigabytes:
+  types:
+  - undefined
+  skip: false
+Integer#hour:
+  types:
+  - undefined
+  skip: false
+Integer#hours:
+  types:
+  - undefined
+  skip: false
+Integer#html_safe?:
+  types:
+  - undefined
+  skip: false
+Integer#in?:
+  types:
+  - undefined
+  skip: false
+Integer#in_milliseconds:
+  types:
+  - undefined
+  skip: false
+Integer#instance_values:
+  types:
+  - undefined
+  skip: false
+Integer#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Integer#kilobyte:
+  types:
+  - undefined
+  skip: false
+Integer#kilobytes:
+  types:
+  - undefined
+  skip: false
+Integer#megabyte:
+  types:
+  - undefined
+  skip: false
+Integer#megabytes:
+  types:
+  - undefined
+  skip: false
+Integer#minute:
+  types:
+  - undefined
+  skip: false
+Integer#minutes:
+  types:
+  - undefined
+  skip: false
+Integer#month:
+  types:
+  - undefined
+  skip: false
+Integer#months:
+  types:
+  - undefined
+  skip: false
+Integer#multiple_of?:
+  types:
+  - undefined
+  skip: false
+Integer#ordinal:
+  types:
+  - undefined
+  skip: false
+Integer#ordinalize:
+  types:
+  - undefined
+  skip: false
+Integer#petabyte:
+  types:
+  - undefined
+  skip: false
+Integer#petabytes:
+  types:
+  - undefined
+  skip: false
+Integer#presence:
+  types:
+  - Object
+  skip: false
+Integer#presence_in:
+  types:
+  - Object
+  skip: false
+Integer#present?:
+  types:
+  - "::Boolean"
+  skip: false
+Integer#second:
+  types:
+  - undefined
+  skip: false
+Integer#seconds:
+  types:
+  - undefined
+  skip: false
+Integer#terabyte:
+  types:
+  - undefined
+  skip: false
+Integer#terabytes:
+  types:
+  - undefined
+  skip: false
+Integer#to_json:
+  types:
+  - undefined
+  skip: true
+Integer#to_param:
+  types:
+  - undefined
+  skip: false
+Integer#to_query:
+  types:
+  - "::String"
+  skip: false
+Integer#to_s:
+  types:
+  - undefined
+  skip: false
+Integer#try:
+  types:
+  - undefined
+  skip: false
+Integer#try!:
+  types:
+  - undefined
+  skip: false
+Integer#week:
+  types:
+  - undefined
+  skip: false
+Integer#weeks:
+  types:
+  - undefined
+  skip: false
+Integer#with_options:
+  types:
+  - undefined
+  skip: false
+Integer#year:
+  types:
+  - undefined
+  skip: false
+Integer#years:
   types:
   - undefined
   skip: false

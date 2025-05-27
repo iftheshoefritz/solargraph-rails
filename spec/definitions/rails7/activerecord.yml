@@ -125,8 +125,8 @@ ActiveRecord::Base.anonymous?:
   skip: false
 ActiveRecord::Base.any?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 ActiveRecord::Base.application_record_class:
   types:
   - undefined
@@ -185,7 +185,7 @@ ActiveRecord::Base.attachment_reflections?:
   skip: true
 ActiveRecord::Base.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base.attr_internal_accessor:
   types:
@@ -585,8 +585,9 @@ ActiveRecord::Base.content_columns:
   skip: false
 ActiveRecord::Base.count:
   types:
-  - undefined
-  skip: true
+  - "::Hash"
+  - "::Integer"
+  skip: false
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -1399,7 +1400,7 @@ ActiveRecord::Base.maintain_test_schema=:
   skip: true
 ActiveRecord::Base.many?:
   types:
-  - undefined
+  - "::Boolean"
   skip: true
 ActiveRecord::Base.mattr_accessor:
   types:
@@ -1479,8 +1480,8 @@ ActiveRecord::Base.none:
   skip: false
 ActiveRecord::Base.none?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 ActiveRecord::Base.normalize_callback_params:
   types:
   - "::Array"
@@ -1491,8 +1492,8 @@ ActiveRecord::Base.offset:
   skip: false
 ActiveRecord::Base.one?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 ActiveRecord::Base.only:
   types:
   - undefined
@@ -1815,7 +1816,8 @@ ActiveRecord::Base.rich_text_association_names:
   skip: false
 ActiveRecord::Base.sanitize_sql:
   types:
-  - undefined
+  - "::String"
+  - nil
   skip: false
 ActiveRecord::Base.sanitize_sql_array:
   types:

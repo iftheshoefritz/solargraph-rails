@@ -5,7 +5,8 @@ Array.acts_like?:
   skip: false
 Array.alias_attribute:
   types:
-  - undefined
+  - "::Array"
+  - "::Array<generic<T>>"
   skip: false
 Array.anonymous?:
   types:
