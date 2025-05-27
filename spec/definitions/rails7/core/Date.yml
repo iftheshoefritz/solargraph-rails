@@ -315,8 +315,7 @@ Date.yesterday:
 Date#+:
   types:
   - self
-  skip:
-  - 0.54.6.alpha
+  skip: false
 Date#-:
   types:
   - self
@@ -420,6 +419,7 @@ Date#as_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.54.6.alpha
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -866,6 +866,7 @@ Date#xmlschema:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.54.6.alpha
 Date#years_ago:
   types:
   - undefined

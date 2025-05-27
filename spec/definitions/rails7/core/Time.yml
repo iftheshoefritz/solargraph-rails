@@ -23,8 +23,7 @@ Time.as_json:
 Time.at:
   types:
   - Time
-  skip:
-  - 0.54.6.alpha
+  skip: false
 Time.at_with_coercion:
   types:
   - undefined
@@ -358,8 +357,6 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip:
-  - 0.54.6.alpha
 Time#-:
   types:
   - self
