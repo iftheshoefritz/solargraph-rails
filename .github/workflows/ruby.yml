@@ -49,6 +49,8 @@ jobs:
           working-directory: spec/rails${{ matrix.rails-version }}
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
+          bundler: latest
+          cache-version: 2
 
       - name: cache gem annotations
         uses: actions/cache@v3
@@ -60,12 +62,6 @@ jobs:
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
-
-      - uses: ruby/setup-ruby@v1
-        with:
-          working-directory: spec/rails${{ matrix.rails-version }}
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
 
       - name: Cache yardoc
         uses: actions/cache@v3
@@ -79,4 +75,5 @@ jobs:
         run: cd spec/rails${{ matrix.rails-version }} && bundle exec yard gems
 
       - name: RSpec
-        run: bundle exec rspec spec/solargraph-rails
+        run: |
+          bundle exec rspec spec/solargraph-rails
