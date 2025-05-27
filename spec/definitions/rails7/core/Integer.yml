@@ -125,12 +125,18 @@ Integer#petabytes:
   skip: false
 Integer#presence:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Integer#presence_in:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 Integer#present?:
   types:
   - 'true'

@@ -389,12 +389,18 @@ DateTime#plus_with_duration:
   skip: true
 DateTime#presence:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 DateTime#presence_in:
   types:
-  - Object
-  skip: false
+  - self
+  - nil
+  skip:
+    - "0.49.0"
+    - "0.50.0"
 DateTime#present?:
   types:
   - 'true'

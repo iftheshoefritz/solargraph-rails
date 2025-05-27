@@ -38,11 +38,18 @@ module Helpers
           instance_methods.find { |p| p.name == meth[1..-1] }
         end
 
+      skip = false
       typed += 1 if data['types'] != ['undefined']
-      skipped += 1 if data['skip']
+      if data['skip'] == true ||
+         data['skip'] == Solargraph::VERSION ||
+         (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
+        skip = true
+        skipped += 1
+      end
+
 
       # Completion is found, but marked as skipped
-      if pin && data['skip']
+      if pin && skip
         puts <<~STR
           #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
           Consider setting skip=false
