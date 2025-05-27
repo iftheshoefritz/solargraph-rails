@@ -25,6 +25,15 @@ end
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
 
+solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
+
+if solargraph_force_ci_version == '0.54.6.alpha'
+  gem 'solargraph',
+      github: 'apiology/solargraph',
+      branch: 'v54-alpha'
+    # path: '../solargraph'
+end
+
 # Local gemfile for development tools, etc.
 local_gemfile = File.expand_path(".Gemfile", __dir__)
 instance_eval File.read local_gemfile if File.exist? local_gemfile
