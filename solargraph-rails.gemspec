@@ -3,7 +3,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'solargraph/rails/version'
 
 
-solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION']) || "0.55.alpha"
+solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
+solargraph_version = solargraph_force_ci_version ? [solargraph_force_ci_version] : [">= 0.48.0", '<0.53.0']
 
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
@@ -30,7 +31,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
 
-  # TODO Add back exclusions
-  spec.add_runtime_dependency 'solargraph', solargraph_version
+  # Solargraph temporarily dropped support for Convention.global in
+  # 0.53 - this should be lifted after it returns:
+  #
+  # https://github.com/castwide/solargraph/pull/877
+  spec.add_runtime_dependency 'solargraph', *solargraph_version
+
   spec.add_runtime_dependency 'activesupport'
 end

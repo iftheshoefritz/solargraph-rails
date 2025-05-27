@@ -1,7 +1,7 @@
 ---
 Class.acts_like?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Class.alias_attribute:
   skip: false
 Class.anonymous?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class.as_json:
   types:
@@ -18,30 +18,66 @@ Class.as_json:
 Class.attr_internal:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.attr_internal_accessor:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.attr_internal_naming_format:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.attr_internal_naming_format=:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.attr_internal_reader:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.attr_internal_writer:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.blank?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class.cattr_accessor:
   types:
@@ -90,14 +126,26 @@ Class.descendants:
 Class.duplicable?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.html_safe?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.in?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class.instance_values:
   types:
@@ -139,15 +187,25 @@ Class.presence:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.presence_in:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.present?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class.redefine_method:
   types:
@@ -195,33 +253,56 @@ Class.thread_mattr_writer:
   skip: false
 Class.to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Class.to_param:
   types:
   - undefined
   skip: false
 Class.to_query:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.try:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.try!:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class.with_options:
   types:
   - undefined
   skip: false
 Class#acts_like?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class#alias_attribute:
   types:
@@ -229,7 +310,7 @@ Class#alias_attribute:
   skip: false
 Class#anonymous?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class#as_json:
   types:
@@ -238,22 +319,46 @@ Class#as_json:
 Class#attr_internal:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#attr_internal_accessor:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#attr_internal_reader:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#attr_internal_writer:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#blank?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class#cattr_accessor:
   types:
@@ -302,14 +407,26 @@ Class#descendants:
 Class#duplicable?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#html_safe?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#in?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class#instance_values:
   types:
@@ -351,15 +468,25 @@ Class#presence:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#presence_in:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#present?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Class#redefine_method:
   types:
@@ -407,26 +534,49 @@ Class#thread_mattr_writer:
   skip: false
 Class#to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Class#to_param:
   types:
   - undefined
   skip: false
 Class#to_query:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#try:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#try!:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Class#with_options:
   types:
   - undefined

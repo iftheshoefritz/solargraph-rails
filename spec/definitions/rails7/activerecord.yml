@@ -1,8 +1,9 @@
 ---
 ActiveRecord::Base.===:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
 ActiveRecord::Base.abstract_class:
   types:
   - undefined
@@ -10,95 +11,221 @@ ActiveRecord::Base.abstract_class:
 ActiveRecord::Base.abstract_class=:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.abstract_class?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.accepts_nested_attributes_for:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.action_on_strict_loading_violation:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.action_on_strict_loading_violation=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.acts_like?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.after_commit:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_create:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_create_commit:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_destroy:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_destroy_commit:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_find:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_initialize:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_rollback:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_save:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_save_commit:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_touch:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_update:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_update_commit:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.after_validation:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.aggregate_reflections:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.aggregate_reflections=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.aggregate_reflections?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.alias_attribute:
   types:
   - undefined
@@ -110,7 +237,13 @@ ActiveRecord::Base.all:
 ActiveRecord::Base.all_timestamp_attributes_in_model:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.and:
   types:
   - undefined
@@ -121,44 +254,92 @@ ActiveRecord::Base.annotate:
   skip: false
 ActiveRecord::Base.anonymous?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.any?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.application_record_class:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.application_record_class=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.application_record_class?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.arel_table:
   types:
-  - "Arel::Table"
-  skip: false
+  - Arel::Table
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.around_create:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.around_destroy:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.around_save:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.around_update:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.as_json:
   types:
   - undefined
@@ -166,99 +347,243 @@ ActiveRecord::Base.as_json:
 ActiveRecord::Base.asynchronous_queries_session:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.asynchronous_queries_tracker:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attachment_reflections:
   types:
-  - "Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
-  skip: false
+  - Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attachment_reflections=:
   types:
-  - "Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
-  skip: false
+  - Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attachment_reflections?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attr_internal:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attr_internal_accessor:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attr_internal_reader:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attr_internal_writer:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attr_readonly:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_alias:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_alias?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_aliases:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_aliases=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_aliases?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method_affix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method_matchers:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method_matchers=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method_matchers?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method_prefix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_method_suffix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_names:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attribute_types:
   types:
   - undefined
@@ -270,27 +595,63 @@ ActiveRecord::Base.attributes_builder:
 ActiveRecord::Base.attributes_to_define_after_schema_loads:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attributes_to_define_after_schema_loads=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.automatic_scope_inversing:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.automatic_scope_inversing=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.automatic_scope_inversing?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.average:
   types:
   - undefined
@@ -301,7 +662,7 @@ ActiveRecord::Base.base_class:
   skip: false
 ActiveRecord::Base.base_class?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.before_commit:
   types:
@@ -310,50 +671,110 @@ ActiveRecord::Base.before_commit:
 ActiveRecord::Base.before_create:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.before_destroy:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.before_remove_const:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.before_save:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.before_update:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.before_validation:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.belongs_to:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.belongs_to_required_by_default:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.belongs_to_required_by_default=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.belongs_to_required_by_default?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.benchmark:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.cache:
   types:
@@ -362,31 +783,73 @@ ActiveRecord::Base.cache:
 ActiveRecord::Base.cache_timestamp_format:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.cache_timestamp_format=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.cache_timestamp_format?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.cache_versioning:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.cache_versioning=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.cache_versioning?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.cached_find_by_statement:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.calculate:
   types:
   - undefined
@@ -410,11 +873,23 @@ ActiveRecord::Base.class_attribute:
 ActiveRecord::Base.clear_active_connections!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.clear_all_connections!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.clear_cache!:
   types:
   - undefined
@@ -426,15 +901,33 @@ ActiveRecord::Base.clear_query_caches_for_current_thread:
 ActiveRecord::Base.clear_reflections_cache:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.clear_reloadable_connections!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.clear_validators!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.collecting_queries_for_explain:
   types:
   - undefined
@@ -442,19 +935,43 @@ ActiveRecord::Base.collecting_queries_for_explain:
 ActiveRecord::Base.collection_cache_key:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.collection_cache_versioning:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.collection_cache_versioning=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.collection_cache_versioning?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.column_defaults:
   types:
   - undefined
@@ -469,8 +986,14 @@ ActiveRecord::Base.column_names:
   skip: false
 ActiveRecord::Base.columns:
   types:
-  - "Array"
-  skip: false
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.columns_hash:
   types:
   - undefined
@@ -478,7 +1001,13 @@ ActiveRecord::Base.columns_hash:
 ActiveRecord::Base.combine_signed_id_purposes:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.composed_of:
   types:
   - undefined
@@ -494,14 +1023,26 @@ ActiveRecord::Base.concerning:
 ActiveRecord::Base.configurations:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.configurations=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connected?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.connected_to:
   types:
@@ -509,7 +1050,7 @@ ActiveRecord::Base.connected_to:
   skip: false
 ActiveRecord::Base.connected_to?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.connected_to_many:
   types:
@@ -518,7 +1059,13 @@ ActiveRecord::Base.connected_to_many:
 ActiveRecord::Base.connected_to_stack:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connecting_to:
   types:
   - undefined
@@ -530,19 +1077,43 @@ ActiveRecord::Base.connection:
 ActiveRecord::Base.connection_class:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_class=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_class?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_class_for_self:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_db_config:
   types:
   - undefined
@@ -550,19 +1121,43 @@ ActiveRecord::Base.connection_db_config:
 ActiveRecord::Base.connection_handler:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_handler=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_handlers:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_handlers=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.connection_pool:
   types:
   - undefined
@@ -577,20 +1172,28 @@ ActiveRecord::Base.connection_specification_name=:
   skip: false
 ActiveRecord::Base.connects_to:
   types:
-  - "Array<::ActiveRecord::ConnectionAdapters::ConnectionPool>"
-  skip: false
+  - Array<::ActiveRecord::ConnectionAdapters::ConnectionPool>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.content_columns:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.count:
   types:
-  - Integer
   - Hash
+  - Integer
   skip:
-    - "0.48.0"
-    - "0.49.0"
-    - "0.50.0"
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -598,19 +1201,43 @@ ActiveRecord::Base.count_by_sql:
 ActiveRecord::Base.create:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.create!:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.create_or_find_by!:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.create_with:
   types:
   - undefined
@@ -618,39 +1245,93 @@ ActiveRecord::Base.create_with:
 ActiveRecord::Base.current_preventing_writes:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.current_role:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.current_scope:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.current_scope=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.current_shard:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.current_time_from_proper_timezone:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.dangerous_attribute_method?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.dangerous_class_method?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.decrement_counter:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.deep_dup:
   types:
   - undefined
@@ -658,15 +1339,33 @@ ActiveRecord::Base.deep_dup:
 ActiveRecord::Base.default_connection_handler:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_connection_handler=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_connection_handler?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_extensions:
   types:
   - undefined
@@ -674,23 +1373,53 @@ ActiveRecord::Base.default_extensions:
 ActiveRecord::Base.default_role:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_role=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_role?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_scope_override:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_scope_override=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_scoped:
   types:
   - undefined
@@ -698,67 +1427,163 @@ ActiveRecord::Base.default_scoped:
 ActiveRecord::Base.default_scopes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_scopes=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_scopes?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_shard:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_shard=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_shard?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_timezone:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.default_timezone=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.define_attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.define_attribute_method:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.define_attribute_methods:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.define_callbacks:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.defined_enums=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.defined_enums?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.delegate:
   types:
   - undefined
@@ -774,15 +1599,33 @@ ActiveRecord::Base.delegated_type:
 ActiveRecord::Base.delete:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.delete_all:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.delete_by:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.deprecate:
   types:
   - undefined
@@ -793,32 +1636,68 @@ ActiveRecord::Base.descendants:
   skip: false
 ActiveRecord::Base.descends_from_active_record?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.destroy:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.destroy_all:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.destroy_association_async_job:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.destroy_association_async_job=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.destroy_by:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.deterministic_encrypted_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.direct_descendants:
   types:
   - undefined
@@ -826,7 +1705,13 @@ ActiveRecord::Base.direct_descendants:
 ActiveRecord::Base.disallow_raw_sql!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.distinct:
   types:
   - undefined
@@ -834,19 +1719,43 @@ ActiveRecord::Base.distinct:
 ActiveRecord::Base.dump_schema_after_migration:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.dump_schema_after_migration=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.dump_schemas:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.dump_schemas=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.dup:
   types:
   - self
@@ -854,7 +1763,13 @@ ActiveRecord::Base.dup:
 ActiveRecord::Base.duplicable?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.eager_load:
   types:
   - undefined
@@ -862,44 +1777,104 @@ ActiveRecord::Base.eager_load:
 ActiveRecord::Base.encrypted_attributes:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.encrypted_attributes=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.encrypted_attributes?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.encrypts:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.enum:
   types:
   - undefined
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.enumerate_columns_in_select_statements=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.enumerate_columns_in_select_statements?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.error_on_ignored_order=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.establish_connection:
   types:
   - undefined
@@ -907,7 +1882,13 @@ ActiveRecord::Base.establish_connection:
 ActiveRecord::Base.except:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.excluding:
   types:
   - undefined
@@ -918,7 +1899,7 @@ ActiveRecord::Base.exec_explain:
   skip: false
 ActiveRecord::Base.exists?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.extending:
   types:
@@ -939,21 +1920,45 @@ ActiveRecord::Base.fifth!:
 ActiveRecord::Base.filter_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.filter_attributes=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find:
   types:
-  - "Array<self>"
+  - Array<self>
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_by:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_by!:
   types:
   - undefined
@@ -973,30 +1978,60 @@ ActiveRecord::Base.find_in_batches:
 ActiveRecord::Base.find_or_create_by:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_or_create_by!:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_or_initialize_by:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_signed:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_signed!:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.find_sole_by:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.finder_needs_type_condition?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.first:
   types:
@@ -1009,19 +2044,43 @@ ActiveRecord::Base.first!:
 ActiveRecord::Base.first_or_create:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.first_or_create!:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.first_or_initialize:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.flush_idle_connections!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.forty_two:
   types:
   - undefined
@@ -1052,8 +2111,13 @@ ActiveRecord::Base.full_table_name_suffix:
   skip: false
 ActiveRecord::Base.gem:
   types:
-  - undefined
-  skip: true
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.generate_relation_method:
   types:
   - undefined
@@ -1061,23 +2125,53 @@ ActiveRecord::Base.generate_relation_method:
 ActiveRecord::Base.generate_unique_secure_token:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.generated_association_methods:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.get_primary_key:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.global_current_scope:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.global_current_scope=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.group:
   types:
   - undefined
@@ -1088,48 +2182,114 @@ ActiveRecord::Base.has_and_belongs_to_many:
   skip: false
 ActiveRecord::Base.has_attribute?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_many:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_many_attached:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_many_inversing:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_many_inversing=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_many_inversing?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_one:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_one_attached:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_rich_text:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_secure_password:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.has_secure_token:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.having:
   types:
   - undefined
@@ -1137,7 +2297,13 @@ ActiveRecord::Base.having:
 ActiveRecord::Base.html_safe?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.human_attribute_name:
   types:
   - undefined
@@ -1145,7 +2311,13 @@ ActiveRecord::Base.human_attribute_name:
 ActiveRecord::Base.i18n_scope:
   types:
   - ":activerecord"
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.ids:
   types:
   - undefined
@@ -1161,30 +2333,66 @@ ActiveRecord::Base.ignored_columns=:
 ActiveRecord::Base.immutable_strings_by_default:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.immutable_strings_by_default=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.immutable_strings_by_default?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.implicit_order_column:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.implicit_order_column=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.implicit_order_column?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.in?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.in_batches:
   types:
@@ -1197,15 +2405,33 @@ ActiveRecord::Base.in_order_of:
 ActiveRecord::Base.include_root_in_json:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.include_root_in_json=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.include_root_in_json?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.includes:
   types:
   - undefined
@@ -1213,27 +2439,63 @@ ActiveRecord::Base.includes:
 ActiveRecord::Base.increment_counter:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.index_nested_attribute_errors:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.index_nested_attribute_errors=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.inheritance_column:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.inheritance_column=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.inheritance_column?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.inherited:
   types:
   - undefined
@@ -1241,11 +2503,23 @@ ActiveRecord::Base.inherited:
 ActiveRecord::Base.initialize_find_by_cache:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.initialize_generated_modules:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.initialize_relation_delegate_cache:
   types:
   - undefined
@@ -1253,31 +2527,67 @@ ActiveRecord::Base.initialize_relation_delegate_cache:
 ActiveRecord::Base.insert:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.insert!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.insert_all:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.insert_all!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.inspect:
   types:
-  - "String"
+  - String
   skip: false
 ActiveRecord::Base.inspection_filter:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.instance_method_already_implemented?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.instance_values:
   types:
   - undefined
@@ -1289,19 +2599,43 @@ ActiveRecord::Base.instance_variable_names:
 ActiveRecord::Base.instantiate:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.internal_metadata_table_name:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.internal_metadata_table_name=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.internal_metadata_table_name?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.invert_where:
   types:
   - undefined
@@ -1329,11 +2663,23 @@ ActiveRecord::Base.left_outer_joins:
 ActiveRecord::Base.legacy_connection_handling:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.legacy_connection_handling=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.limit:
   types:
   - undefined
@@ -1341,11 +2687,23 @@ ActiveRecord::Base.limit:
 ActiveRecord::Base.local_stored_attributes:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.local_stored_attributes=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.lock:
   types:
   - undefined
@@ -1353,39 +2711,93 @@ ActiveRecord::Base.lock:
 ActiveRecord::Base.lock_optimistically:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.lock_optimistically=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.lock_optimistically?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.locking_column:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.locking_column=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.locking_enabled?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.logger:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.logger=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.logger?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.lookup_ancestors:
   types:
   - undefined
@@ -1397,14 +2809,26 @@ ActiveRecord::Base.lookup_connection_handler:
 ActiveRecord::Base.maintain_test_schema:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.maintain_test_schema=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.many?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.mattr_accessor:
   types:
@@ -1425,11 +2849,23 @@ ActiveRecord::Base.maximum:
 ActiveRecord::Base.merge:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.method_defined_within?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.method_visibility:
   types:
   - undefined
@@ -1457,19 +2893,42 @@ ActiveRecord::Base.module_parents:
 ActiveRecord::Base.nested_attributes_options:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.nested_attributes_options=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.nested_attributes_options?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.new:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
@@ -1477,31 +2936,49 @@ ActiveRecord::Base.next_sequence_value:
 ActiveRecord::Base.no_touching:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.none:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.none?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.normalize_callback_params:
   types:
-  - "Array"
-  skip: false
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.offset:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.one?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.only:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.optimizer_hints:
   types:
   - undefined
@@ -1517,39 +2994,93 @@ ActiveRecord::Base.order:
 ActiveRecord::Base.partial_inserts:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_inserts=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_inserts?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_updates:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_updates=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_updates?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_writes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_writes=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.partial_writes?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.pick:
   types:
   - undefined
@@ -1559,19 +3090,37 @@ ActiveRecord::Base.pluck:
   - Array
   - Array<Array>
   skip:
-    - "0.48.0"
+  - 0.48.0
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.pluralize_table_names=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.pluralize_table_names?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.polymorphic_class_for:
   types:
   - undefined
@@ -1583,10 +3132,16 @@ ActiveRecord::Base.polymorphic_name:
 ActiveRecord::Base.predicate_builder:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.prefetch_primary_key?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.preload:
   types:
@@ -1594,50 +3149,92 @@ ActiveRecord::Base.preload:
   skip: false
 ActiveRecord::Base.presence:
   types:
-  - self
   - nil
+  - self
   skip:
-    - "0.49.0"
-    - "0.50.0"
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.presence_in:
   types:
-  - self
   - nil
+  - self
   skip:
-    - "0.49.0"
-    - "0.50.0"
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.present?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.primary_abstract_class:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.primary_class?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.primary_key:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.primary_key=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.primary_key_prefix_type:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.primary_key_prefix_type=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.primary_key_prefix_type?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.prohibit_shard_swapping:
   types:
   - undefined
@@ -1657,15 +3254,33 @@ ActiveRecord::Base.pry:
 ActiveRecord::Base.queues:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.queues=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.quoted_primary_key:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.quoted_table_name:
   types:
   - undefined
@@ -1677,23 +3292,47 @@ ActiveRecord::Base.rake_extension:
 ActiveRecord::Base.reading_role:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reading_role=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.readonly:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.readonly_attribute?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.readonly_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.real_inheritance_column=:
   types:
   - undefined
@@ -1701,15 +3340,33 @@ ActiveRecord::Base.real_inheritance_column=:
 ActiveRecord::Base.record_timestamps:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.record_timestamps=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.record_timestamps?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.redefine_method:
   types:
   - undefined
@@ -1725,37 +3382,85 @@ ActiveRecord::Base.references:
 ActiveRecord::Base.reflect_on_aggregation:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_all_aggregations:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_all_associations:
   types:
-  - "Array"
-  skip: false
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_all_attachments:
   types:
-  - "Array<::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection>"
-  skip: false
+  - Array<::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_all_autosave_associations:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_association:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_attachment:
   types:
-  - "ActiveStorage::Reflection::HasManyAttachedReflection"
-  - "ActiveStorage::Reflection::HasOneAttachedReflection"
+  - ActiveStorage::Reflection::HasManyAttachedReflection
+  - ActiveStorage::Reflection::HasOneAttachedReflection
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reflections:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.relation_delegate_class:
   types:
   - undefined
@@ -1787,7 +3492,13 @@ ActiveRecord::Base.reselect:
 ActiveRecord::Base.reset_callbacks:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reset_column_information:
   types:
   - undefined
@@ -1795,15 +3506,33 @@ ActiveRecord::Base.reset_column_information:
 ActiveRecord::Base.reset_counters:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reset_locking_column:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reset_primary_key:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.reset_sequence_name:
   types:
   - undefined
@@ -1822,70 +3551,166 @@ ActiveRecord::Base.rewhere:
   skip: false
 ActiveRecord::Base.rich_text_association_names:
   types:
-  - "Array<::String>"
-  skip: false
+  - Array<::String>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql:
   types:
-  - "String"
+  - String
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql_array:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql_for_assignment:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql_for_conditions:
   types:
-  - "String"
+  - String
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql_for_order:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql_hash_for_assignment:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sanitize_sql_like:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.schema_format:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.schema_format=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.schema_migrations_table_name:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.schema_migrations_table_name=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.schema_migrations_table_name?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.scope:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.scope_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.scope_attributes?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.scope_for_association:
   types:
   - undefined
@@ -1893,7 +3718,13 @@ ActiveRecord::Base.scope_for_association:
 ActiveRecord::Base.scope_registry:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.second:
   types:
   - undefined
@@ -1912,8 +3743,14 @@ ActiveRecord::Base.second_to_last!:
   skip: false
 ActiveRecord::Base.select:
   types:
-  - "Array<::String>"
-  skip: false
+  - Array<::String>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sequence_name:
   types:
   - undefined
@@ -1925,47 +3762,107 @@ ActiveRecord::Base.sequence_name=:
 ActiveRecord::Base.serialize:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.set_callback:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.shard_selector:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.shard_selector=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.shard_selector?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.shard_swapping_prohibited?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.signed_id_verifier:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.signed_id_verifier=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.signed_id_verifier_secret:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.signed_id_verifier_secret?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -1973,19 +3870,43 @@ ActiveRecord::Base.silence_redefinition_of_method:
 ActiveRecord::Base.skip_callback:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sole:
   types:
   - undefined
@@ -1993,7 +3914,13 @@ ActiveRecord::Base.sole:
 ActiveRecord::Base.source_attribute_from_preserved_attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sqlite3_connection:
   types:
   - undefined
@@ -2009,39 +3936,93 @@ ActiveRecord::Base.sti_name:
 ActiveRecord::Base.store:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_accessor:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_full_class_name:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_full_class_name=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_full_class_name?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_full_sti_class:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_full_sti_class=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.store_full_sti_class?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.stored_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.strict_loading:
   types:
   - undefined
@@ -2049,23 +4030,53 @@ ActiveRecord::Base.strict_loading:
 ActiveRecord::Base.strict_loading_by_default:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.strict_loading_by_default=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.strict_loading_by_default?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.strict_loading_violation!:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.subclasses:
   types:
-  - "Array<::Class>"
-  skip: false
+  - Array<::Class>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.sum:
   types:
   - undefined
@@ -2073,22 +4084,39 @@ ActiveRecord::Base.sum:
 ActiveRecord::Base.suppress:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.suppress_multiple_database_warning:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.suppress_multiple_database_warning=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.symbol_column_to_string:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.table_exists?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base.table_name:
   types:
@@ -2101,27 +4129,63 @@ ActiveRecord::Base.table_name=:
 ActiveRecord::Base.table_name_prefix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.table_name_prefix=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.table_name_prefix?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.table_name_suffix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.table_name_suffix=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.table_name_suffix?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.take:
   types:
   - undefined
@@ -2173,85 +4237,198 @@ ActiveRecord::Base.thread_mattr_writer:
 ActiveRecord::Base.time_zone_aware_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.time_zone_aware_attributes=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.time_zone_aware_attributes?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.time_zone_aware_types:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.time_zone_aware_types=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.time_zone_aware_types?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.timestamp_attributes_for_create_in_model:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.timestamp_attributes_for_update_in_model:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.timestamped_migrations:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.timestamped_migrations=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.to_adapter:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.to_param:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.to_query:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.touch_all:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.touch_attributes_with_time:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.transaction:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.try:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.try!:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.type_caster:
   types:
-  - "ActiveRecord::TypeCaster::Map"
-  skip: false
+  - ActiveRecord::TypeCaster::Map
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.type_for_attribute:
   types:
   - undefined
@@ -2263,7 +4440,13 @@ ActiveRecord::Base.uncached:
 ActiveRecord::Base.undefine_attribute_methods:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.unscope:
   types:
   - undefined
@@ -2271,133 +4454,325 @@ ActiveRecord::Base.unscope:
 ActiveRecord::Base.unscoped:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.update:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.update!:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.update_all:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.update_counters:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.upsert:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.upsert_all:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validate:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates!:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_absence_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_acceptance_of:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_associated:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_comparison_of:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_confirmation_of:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_each:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_exclusion_of:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_format_of:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_inclusion_of:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_length_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_numericality_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_presence_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_size_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_uniqueness_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates_with:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validators:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validators_on:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.verbose_query_logs:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.verbose_query_logs=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.warn_on_records_fetched_greater_than:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.where:
   types:
-  - "ActiveRecord::QueryMethods::WhereChain"
-  - "ActiveRecord::Relation"
+  - ActiveRecord::QueryMethods::WhereChain
+  - ActiveRecord::Relation
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.while_preventing_writes:
   types:
   - undefined
@@ -2405,7 +4780,13 @@ ActiveRecord::Base.while_preventing_writes:
 ActiveRecord::Base.with_all_rich_text:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.with_options:
   types:
   - undefined
@@ -2417,11 +4798,23 @@ ActiveRecord::Base.without:
 ActiveRecord::Base.writing_role:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.writing_role=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.yaml_encoder:
   types:
   - undefined
@@ -2430,10 +4823,16 @@ ActiveRecord::Base#<=>:
   types:
   - '0'
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#==:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#[]:
   types:
@@ -2449,16 +4848,28 @@ ActiveRecord::Base#accessed_fields:
   skip: false
 ActiveRecord::Base#acts_like?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#aggregate_reflections?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#as_json:
   types:
   - undefined
@@ -2473,36 +4884,78 @@ ActiveRecord::Base#association:
   skip: false
 ActiveRecord::Base#association_cached?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#attachment_changes:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_aliases:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_aliases?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_before_last_save:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_change_to_be_saved:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_changed?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_changed_in_place?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_for_inspect:
   types:
   - undefined
@@ -2510,15 +4963,33 @@ ActiveRecord::Base#attribute_for_inspect:
 ActiveRecord::Base#attribute_in_database:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_method_matchers:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_method_matchers?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_missing:
   types:
   - undefined
@@ -2529,20 +5000,38 @@ ActiveRecord::Base#attribute_names:
   skip: false
 ActiveRecord::Base#attribute_present?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#attribute_previously_changed?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_previously_was:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attribute_was:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attributes:
   types:
   - undefined
@@ -2554,23 +5043,53 @@ ActiveRecord::Base#attributes=:
 ActiveRecord::Base#attributes_before_type_cast:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attributes_for_database:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#attributes_in_database:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#automatic_scope_inversing:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#automatic_scope_inversing?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#becomes:
   types:
   - undefined
@@ -2586,7 +5105,13 @@ ActiveRecord::Base#before_committed!:
 ActiveRecord::Base#blank?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#cache_key:
   types:
   - undefined
@@ -2598,11 +5123,23 @@ ActiveRecord::Base#cache_key_with_version:
 ActiveRecord::Base#cache_timestamp_format:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#cache_timestamp_format?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#cache_version:
   types:
   - undefined
@@ -2610,43 +5147,97 @@ ActiveRecord::Base#cache_version:
 ActiveRecord::Base#cache_versioning:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#cache_versioning?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changed:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changed?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changed_attribute_names_to_save:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changed_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changed_for_autosave?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#changes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changes_applied:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#changes_to_save:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#ciphertext_for:
   types:
   - undefined
@@ -2658,23 +5249,53 @@ ActiveRecord::Base#class_eval:
 ActiveRecord::Base#clear_attribute_changes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#clear_changes_information:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#collection_cache_versioning:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#collection_cache_versioning?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#column_for_attribute:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#committed!:
   types:
   - undefined
@@ -2702,62 +5323,140 @@ ActiveRecord::Base#deep_dup:
 ActiveRecord::Base#default_connection_handler:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_connection_handler?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_role:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_role?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_scope_override:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_scopes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_shard:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#default_shard?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#defined_enums:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#defined_enums?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#delete:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#destroy:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#destroy!:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#destroy_association_async_job:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#destroyed?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#destroyed_by_association:
   types:
@@ -2770,7 +5469,13 @@ ActiveRecord::Base#destroyed_by_association=:
 ActiveRecord::Base#duplicable?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#encode_with:
   types:
   - undefined
@@ -2781,28 +5486,52 @@ ActiveRecord::Base#encrypt:
   skip: false
 ActiveRecord::Base#encrypted_attribute?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#encrypted_attributes:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#encrypted_attributes=:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#encrypted_attributes?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#eql?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#errors:
   types:
-  - "ActiveModel::Errors"
-  skip: false
+  - ActiveModel::Errors
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#freeze:
   types:
   - self
@@ -2813,68 +5542,140 @@ ActiveRecord::Base#from_json:
   skip: false
 ActiveRecord::Base#frozen?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#gem:
   types:
-  - undefined
-  skip: true
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#has_attribute?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#has_changes_to_save?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#hash:
   types:
-  - "Integer"
-  skip: false
+  - Integer
+  skip:
+  - 0.48.0
 ActiveRecord::Base#html_safe?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id_before_type_cast:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id_for_database:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id_in_database:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#id_was:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#in?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#include_root_in_json:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#include_root_in_json?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#increment:
   types:
   - undefined
@@ -2897,7 +5698,7 @@ ActiveRecord::Base#initialize_internals_callback:
   skip: false
 ActiveRecord::Base#inspect:
   types:
-  - "String"
+  - String
   skip: false
 ActiveRecord::Base#instance_values:
   types:
@@ -2909,7 +5710,7 @@ ActiveRecord::Base#instance_variable_names:
   skip: false
 ActiveRecord::Base#invalid?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#lock!:
   types:
@@ -2918,129 +5719,243 @@ ActiveRecord::Base#lock!:
 ActiveRecord::Base#lock_optimistically:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#lock_optimistically?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#locking_enabled?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#logger:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#logger?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#mark_for_destruction:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#marked_for_destruction?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#method_missing:
   types:
-  - undefined
-  skip: false
+  - BasicObject
+  skip:
+  - 0.48.0
 ActiveRecord::Base#model_name:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#nested_attributes_options:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#nested_attributes_options?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#new_record?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#no_touching?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#partial_inserts:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#partial_inserts?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#partial_updates:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#partial_updates?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#persisted?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#pluralize_table_names:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#pluralize_table_names?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#populate_with_current_scope_attributes:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#presence:
   types:
-  - self
   - nil
+  - self
   skip:
-    - "0.49.0"
-    - "0.50.0"
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#presence_in:
   types:
-  - self
   - nil
+  - self
   skip:
-    - "0.49.0"
-    - "0.50.0"
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#present?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#pretty_print:
   types:
-  - undefined
-  skip: false
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#previous_changes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#previously_new_record?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#previously_persisted?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#primary_key_prefix_type:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#primary_key_prefix_type?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#pry:
   types:
   - undefined
@@ -3048,35 +5963,71 @@ ActiveRecord::Base#pry:
 ActiveRecord::Base#query_attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#read_attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#read_attribute_before_type_cast:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#readonly!:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#readonly?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#record_timestamps:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#record_timestamps=:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#record_timestamps?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#reload:
   types:
   - undefined
@@ -3087,12 +6038,18 @@ ActiveRecord::Base#require_dependency:
   skip: false
 ActiveRecord::Base#respond_to?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#restore_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#rolledback!:
   types:
   - undefined
@@ -3100,31 +6057,73 @@ ActiveRecord::Base#rolledback!:
 ActiveRecord::Base#run_callbacks:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#save:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#save!:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#saved_change_to_attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#saved_change_to_attribute?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#saved_changes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#saved_changes?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#serializable_hash:
   types:
   - undefined
@@ -3136,46 +6135,106 @@ ActiveRecord::Base#signed_id:
 ActiveRecord::Base#signed_id_verifier_secret:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#signed_id_verifier_secret?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#slice:
   types:
-  - "ActiveSupport::HashWithIndifferentAccess<::Symbol>"
-  skip: false
+  - ActiveSupport::HashWithIndifferentAccess<::Symbol>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#store_full_class_name:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#store_full_class_name?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#store_full_sti_class:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#store_full_sti_class?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#strict_loading!:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#strict_loading?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#strict_loading_mode:
   types:
@@ -3183,56 +6242,127 @@ ActiveRecord::Base#strict_loading_mode:
   skip: false
 ActiveRecord::Base#strict_loading_n_plus_one_only?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#table_name_prefix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#table_name_prefix?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#table_name_suffix:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#table_name_suffix?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#time_zone_aware_attributes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#time_zone_aware_attributes?:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#time_zone_aware_types:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#time_zone_aware_types?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_gid:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_gid_param:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_global_id:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#to_key:
   types:
   - undefined
@@ -3251,20 +6381,44 @@ ActiveRecord::Base#to_partial_path:
   skip: false
 ActiveRecord::Base#to_query:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_sgid:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_sgid_param:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#to_signed_global_id:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#toggle:
   types:
   - undefined
@@ -3287,30 +6441,60 @@ ActiveRecord::Base#transaction:
   skip: false
 ActiveRecord::Base#trigger_transactional_callbacks?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#try:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#try!:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#type_for_attribute:
   types:
   - undefined
-  skip: true
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#update:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#update!:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#update_attribute:
   types:
   - undefined
@@ -3325,60 +6509,132 @@ ActiveRecord::Base#update_columns:
   skip: false
 ActiveRecord::Base#valid?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#validate:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#validate!:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_absence_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_acceptance_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_comparison_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_confirmation_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_exclusion_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_format_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_inclusion_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_length_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_numericality_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_presence_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_size_of:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#validates_with:
   types:
   - undefined
@@ -3386,15 +6642,33 @@ ActiveRecord::Base#validates_with:
 ActiveRecord::Base#validation_context:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#values_at:
   types:
-  - "Array"
-  skip: false
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#will_save_change_to_attribute?:
   types:
-  - "Boolean"
-  skip: false
+  - Boolean
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base#with_lock:
   types:
   - undefined
@@ -3410,4 +6684,10 @@ ActiveRecord::Base#with_transaction_returning_status:
 ActiveRecord::Base#write_attribute:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha

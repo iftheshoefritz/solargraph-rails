@@ -5,6 +5,26 @@ module Helpers
     source
   end
 
+  def add_to_skip(data)
+    unless data['skip'].is_a?(Array)
+      data['skip'] = []
+    end
+    data['skip'] << Solargraph::VERSION
+    data['skip'].sort!.uniq!
+  end
+
+  def remove_skip(data)
+    if data['skip'].is_a?(Array)
+      data['skip'].delete(Solargraph::VERSION)
+      data['skip'].sort!.uniq!
+      if data['skip'].empty?
+        data['skip'] = false
+      end
+    else
+      data['skip'] = false
+    end
+  end
+
   def assert_matches_definitions(map, class_name, definition_name, update: false)
     if ENV['FORCE_UPDATE'] == 'true'
       update = true
@@ -50,34 +70,47 @@ module Helpers
         skipped += 1
       end
 
-
       # Completion is found, but marked as skipped
-      if pin && skip
-        puts <<~STR
-          #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
-          Consider setting skip=false
-        STR
-      elsif pin
+      if pin
         effective_type = pin.typify(map).map(&:tag).sort.uniq
-        specified_type = data['types']
+        specified_type = data['types'].sort.uniq
 
         if effective_type != specified_type
           if update
-            data['types'] = effective_type
-          else
+            if effective_type == ['undefined']
+              add_to_skip(data)
+            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject')
+              # sounds like a better type
+              data['types'] = effective_type
+            elsif !skip
+              # incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+              add_to_skip(data)
+            end
+          elsif !skip
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
+        elsif skip
+          if update
+            remove_skip(data)
+          else
+            incorrect << <<~STR
+            #{class_name}#{meth} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
+            Consider setting skip=false
+          STR
+          end
         end
-        data['skip'] = false if update
       elsif update
         skipped += 1
-        data['skip'] = true
-      elsif data['skip']
+        add_to_skip(data)
+      elsif skip
         next
       else
         missing << meth
       end
     end
+
+
+    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     if missing.any?
       raise <<~STR
@@ -92,8 +125,6 @@ module Helpers
           #{incorrect.join("\n  ")}
       STR
     end
-
-    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     total = definitions.keys.size
 
@@ -162,6 +193,7 @@ module Helpers
     expect(pin).to_not be_nil, -> { "Could not find method in api_map via #{query}" }
     expect(pin.scope).to eq(:instance)
     pin_return_type = pin.return_type
+    pin_return_type = pin.typify map if pin_return_type.undefined?
     pin_return_type = pin.probe map if pin_return_type.undefined?
     expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
     unless args.nil?

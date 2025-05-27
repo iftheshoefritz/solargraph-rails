@@ -28,12 +28,14 @@ jobs:
           - "0.51.2"
           - "0.52.0"
           - '0.55.alpha'
+          - "0.54.6.alpha"
         rails-version:
           - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
@@ -47,7 +49,7 @@ jobs:
           bundler: latest
           # https://github.com/ruby/psych/discussions/607
           rubygems: latest
-          cache-version: 2
+          cache-version: 3
         env:
           BUNDLE_GEMFILE: ${{ github.workspace }}/spec/rails7/Gemfile
 
@@ -59,8 +61,17 @@ jobs:
           path: |
             /home/runner/.cache
 
+
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
+
+      - name: cache gem annotations
+        uses: actions/cache@v3
+        id: dot-cache
+        with:
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-2
+          path: |
+            /home/runner/.cache
 
       - name: bundle list
         run: bundle install && bundle list && cat Gemfile.lock && find vendor -name Gemfile
@@ -76,5 +87,6 @@ jobs:
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           ruby --version
           bundle install
+          bundle exec solargraph gems || true
           bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails

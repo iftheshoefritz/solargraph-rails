@@ -1,7 +1,7 @@
 ---
 Array.acts_like?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Array.alias_attribute:
   skip: false
 Array.anonymous?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array.as_json:
   types:
@@ -18,22 +18,46 @@ Array.as_json:
 Array.attr_internal:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.attr_internal_accessor:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.attr_internal_reader:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.attr_internal_writer:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.blank?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array.cattr_accessor:
   types:
@@ -82,14 +106,26 @@ Array.descendants:
 Array.duplicable?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.html_safe?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.in?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array.instance_values:
   types:
@@ -131,15 +167,25 @@ Array.presence:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.presence_in:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.present?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array.redefine_method:
   types:
@@ -187,38 +233,67 @@ Array.thread_mattr_writer:
   skip: false
 Array.to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Array.to_param:
   types:
   - undefined
   skip: false
 Array.to_query:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.try:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.try!:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array.with_options:
   types:
   - undefined
   skip: false
 Array.wrap:
   types:
-  - "Array"
-  - "Array<generic<T>>"
-  skip: false
+  - Array
+  - Array<generic<T>>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#acts_like?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array#as_json:
   types:
@@ -230,12 +305,24 @@ Array#class_eval:
   skip: false
 Array#compact_blank:
   types:
-  - "Array"
-  skip: false
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#compact_blank!:
   types:
-  - "Array<generic<Elem>>"
-  skip: false
+  - Array<generic<Elem>>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#deep_dup:
   types:
   - undefined
@@ -243,10 +330,16 @@ Array#deep_dup:
 Array#duplicable?:
   types:
   - 'true'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#exclude?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array#excluding:
   types:
@@ -279,10 +372,16 @@ Array#from:
 Array#html_safe?:
   types:
   - 'false'
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#in?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array#in_groups:
   types:
@@ -310,8 +409,14 @@ Array#index_with:
   skip: false
 Array#inquiry:
   types:
-  - "ActiveSupport::ArrayInquirer<generic<Elem>>"
-  skip: false
+  - ActiveSupportArrayInquirer<generic<Elem>>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#instance_values:
   types:
   - undefined
@@ -322,7 +427,7 @@ Array#instance_variable_names:
   skip: false
 Array#many?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array#maximum:
   types:
@@ -344,15 +449,25 @@ Array#presence:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#presence_in:
   types:
   - nil
   - self
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#present?:
   types:
-  - "Boolean"
+  - Boolean
   skip: false
 Array#second:
   types:
@@ -372,8 +487,17 @@ Array#split:
   skip: false
 Array#sum:
   types:
-  - undefined
-  skip: false
+  - Integer
+  - param<Elem>
+  - param<T>
+  - param<U>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#third:
   types:
   - undefined
@@ -388,27 +512,50 @@ Array#to:
   skip: false
 Array#to_formatted_s:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#to_fs:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Array#to_param:
   types:
   - undefined
   skip: false
 Array#to_query:
   types:
-  - "String"
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#to_s:
   types:
-  - "String"
+  - String
   skip: false
 Array#to_sentence:
   types:
@@ -422,12 +569,24 @@ Array#try:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#try!:
   types:
   - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Array#with_options:
   types:
   - undefined

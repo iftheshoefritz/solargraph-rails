@@ -10,3 +10,7 @@ require 'time'
 #   @return [-1, 0, 1, nil]
 # @!override Time.at
 #   @return [Time]
+# @!override Time#to_time
+#   @return [Time]
+# @!override Time#+
+#   @return [Time]
