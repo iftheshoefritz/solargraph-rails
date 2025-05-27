@@ -26,6 +26,24 @@ RSpec.describe 'Rails 7 API' do
     )
   end
 
+  it 'can auto-complete inside routes', skip: 'not working' do
+    map =
+      use_workspace './spec/rails7' do |root|
+        root.write_file 'config/routes.rb', <<~EOS
+        Rails.application.routes.draw do
+          res
+          resource :things do
+            res
+          end
+        end
+      EOS
+      end
+
+    filename = './config/routes.rb'
+    expect(completion_at(filename, [1, 5], map)).to include('resources')
+    expect(completion_at(filename, [3, 7], map)).to include('resources')
+  end
+
   it 'can auto-complete inside mailers' do
     map =
       use_workspace './spec/rails7' do |root|
