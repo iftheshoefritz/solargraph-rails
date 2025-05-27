@@ -19,4 +19,3 @@ RSpec.describe Solargraph::Rails::Storage do
     expect(completion_at(filename, [6, 20], map)).to include("attach")
   end
 end
-
