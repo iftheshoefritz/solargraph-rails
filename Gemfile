@@ -22,22 +22,8 @@ group :development, :test do
   gem 'byebug'
 end
 
-if rails_version == '7'
-  # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
-  gem "concurrent-ruby", '<=1.3.5'
-end
-
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
-
-solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
-
-if solargraph_force_ci_version == '0.54.6.alpha'
-  gem 'solargraph',
-      github: 'apiology/solargraph',
-      branch: 'v54-alpha'
-    # path: '../solargraph'
-end
 
 # Local gemfile for development tools, etc.
 local_gemfile = File.expand_path(".Gemfile", __dir__)
