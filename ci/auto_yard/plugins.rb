@@ -1,3 +1,3 @@
 Bundler::Plugin.add_hook('after-install-all') do
-  system('bundle exec yard gems')
+  system('bundle exec yard gems --plugin solargraph')
 end
