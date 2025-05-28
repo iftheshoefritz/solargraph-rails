@@ -70,7 +70,9 @@ module Helpers
         meh_types.none? { |meh_type| return_type_tags.include? meh_type }
       end
 
-      pin = (good_pins.sort + meh_pins.sort).first
+      # try hard to get a high quality and stable result
+      pin = (good_pins.sort_by { |p| p.typify(map).map(&:tag).sort } +
+             meh_pins.sort_by { |p| p.typify(map).map(&:tag).sort }).first
 
       skip = false
       typed += 1 if data['types'] != ['undefined']
