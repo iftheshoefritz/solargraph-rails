@@ -66,11 +66,11 @@ module Helpers
       meh_types = ['BasicObject', 'Object', 'undefined']
 
       good_pins, meh_pins = relevant_pins.partition do |p|
-        return_type_tags = p.return_type.map(&:tag)
+        return_type_tags = p.typify(map).map(&:tag)
         meh_types.none? { |meh_type| return_type_tags.include? meh_type }
       end
 
-      pin = (good_pins + meh_pins).first
+      pin = (good_pins.sort + meh_pins.sort).first
 
       skip = false
       typed += 1 if data['types'] != ['undefined']
