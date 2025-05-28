@@ -2,6 +2,33 @@
 
 ## Changes
 
+### v1.1.1
+
+New maintainer: @apiology
+
+Features / fixes:
+
+- support tsvector type columns in migrations (#55)
+- support recent Solargraph releases
+  - fix incorrect return type in Walker.normalize_ast
+  - limit Solargraph versions to those that support global conventions for now pending new Solargraph release (<0.53 for now)
+  - limit Solargraph versions to tested versions (>0.48)
+- additional built-in annotations for better completions and types
+- work around ActiveSupport 7.0.x core\_ext Logger bug
+
+Internal improvements:
+
+- revive and improve CI workflow for higher quality releases (Huge thanks to @grncdr!)
+  - cache YARD gem annotations for faster GitHub workflows via RubyGems plugin
+  - track definition skips by Solargraph version
+  - remove testing of Rails 5/6; retain and revive Rails 7 testing
+  - sync type definitions with current functionality
+  - switch to more recent Solargraph releases in CI matrix
+- support recent Solargraph versions in specs
+- use `Solargraph::ApiMap.load_with_cache` when available in specs for eager type loading
+- use .Gemfile pattern to allow local untracked Gemfile changes
+- better support for updating definitions
+
 ### v1.1.0
 
 - remove pinned solargraph version
