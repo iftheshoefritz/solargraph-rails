@@ -80,3 +80,14 @@ ruby script/generate_definitions.rb spec/rails7
 ```
 
 Make sure to review the script and uncomment relevant parts
+
+## Preparing a release (maintainers)
+
+1. Look up [most recent release](https://rubygems.org/gems/solargraph-rails)
+[done to here]
+2. Open up [commit list](https://github.com/iftheshoefritz/solargraph-rails/compare/v1.1.0...main)a
+3. Update [CHANGELOG.md](./CHANGELOG.md)
+4. Flip to 'files changed view' and refine updates
+5. Bump [version](./lib/solargraph/rails/version.rb) appropriately
+6. Create branch, commit and merge changes - "Prepare for vX.Y.Z release", branch: prepare_vX.Y.Z_release
+7. `git checkout master && git pull && bundle exec rake release`

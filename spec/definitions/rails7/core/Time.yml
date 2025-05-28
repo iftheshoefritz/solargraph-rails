@@ -219,22 +219,12 @@ Time.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Time.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Time.present?:
   types:
   - Boolean
@@ -357,6 +347,7 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
+  skip: false
 Time#-:
   types:
   - self
@@ -373,8 +364,6 @@ Time#<=>:
   - nil
   skip:
   - 0.48.0
-  - 0.51.2
-  - 0.52.0
 Time#acts_like?:
   types:
   - Boolean
@@ -453,8 +442,13 @@ Time#all_year:
   - 0.54.6.alpha
 Time#as_json:
   types:
-  - undefined
-  skip: false
+  - Hash{String => String, Integer}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Time#at_beginning_of_day:
   types:
   - undefined
@@ -806,22 +800,12 @@ Time#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Time#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Time#present?:
   types:
   - Boolean
