@@ -41,18 +41,15 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-          cache-version: 4
+          cache-version: 5
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "${{ matrix.ruby-version }}"
-          bundler-cache: true
-          bundler: latest
-          # https://github.com/ruby/psych/discussions/607
-          rubygems: latest
-          cache-version: 4
-        env:
-          BUNDLE_GEMFILE: ${{ github.workspace }}/spec/rails7/Gemfile
+      - name: Install child bundle
+        run: |
+          set -x
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          cd "spec/rails${{ matrix.rails-version }}"
+          bundle install
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
