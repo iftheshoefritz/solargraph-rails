@@ -1,24 +1,5 @@
 source 'https://rubygems.org'
 
-# Local gemfile for development tools, etc.
-local_gemfile = File.expand_path(".Gemfile", __dir__)
-instance_eval File.read local_gemfile if File.exist? local_gemfile
-source 'https://rubygems.org'
-
-solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
-
-# ensure that YARD docs get cached by ruby/setup-ruby in GitHub
-# Actions if using an older version of solargraph that needs user to
-# run `yard gems` manually
-if solargraph_version
-  solargraph_minor_version = solargraph_version.split('.')[1].to_i
-  solargraph_major_version = solargraph_version.split('.')[0].to_i
-  if solargraph_version && solargraph_major_version == 0 && solargraph_minor_version < 53
-    plugin 'auto_yard', path: File.expand_path('ci/auto_yard', __dir__)
-    STDERR.puts("Using auto_yard plugin at #{File.expand_path('ci/auto_yard', __dir__)}")
-  end
-end
-
 group :development, :test do
   gem 'bundler-audit'
   gem 'debug'
