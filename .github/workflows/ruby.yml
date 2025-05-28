@@ -34,31 +34,37 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
+          cache-version: ${{ matrix.solargraph-version }}-2025-04-28-11-51
 
-
-      - name: Install child bundle
-        run: |
-          set -x
-          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
-          export BUNDLE_PATH=$(pwd)/vendor/bundle
-          cd "spec/rails${{ matrix.rails-version }}"
-          bundle install
+      - uses: ruby/setup-ruby@v1
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          BUNDLE_GEMFILE: ${{ github.workspace }}/spec/rails${{ matrix.rails-version }}/Gemfile
+          BUNDLE_PATH: ${{ github.workspace }}/vendor/bundle
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler: latest
+          bundler-cache: true
+          cache-version: ${{ matrix.solargraph-version }}-2025-04-28-11-12
 
       - name: cache gem annotations
         uses: actions/cache@v3
         id: dot-cache
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
           path: |
             /home/runner/.cache
 
       - name: bundle list
-        run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        run: bundle install && bundle list && cat Gemfile.lock && find vendor -name Gemfile
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
