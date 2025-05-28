@@ -1942,6 +1942,7 @@ ActiveRecord::Base.find:
   - Array<self>
   - self
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1952,6 +1953,7 @@ ActiveRecord::Base.find_by:
   - nil
   - self
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -3150,11 +3152,9 @@ ActiveRecord::Base.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.presence_in:
   types:
   - nil
@@ -3162,9 +3162,6 @@ ActiveRecord::Base.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.present?:
   types:
   - Boolean
@@ -4765,6 +4762,7 @@ ActiveRecord::Base.where:
   - ActiveRecord::Relation
   - self
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -5881,11 +5879,9 @@ ActiveRecord::Base#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base#presence_in:
   types:
   - nil
@@ -5893,9 +5889,6 @@ ActiveRecord::Base#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base#present?:
   types:
   - 'true'

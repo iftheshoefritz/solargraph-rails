@@ -168,11 +168,9 @@ Integer.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Integer.presence_in:
   types:
   - nil
@@ -180,9 +178,6 @@ Integer.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Integer.present?:
   types:
   - Boolean
@@ -507,11 +502,9 @@ Integer#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Integer#presence_in:
   types:
   - nil
@@ -519,9 +512,6 @@ Integer#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Integer#present?:
   types:
   - Boolean

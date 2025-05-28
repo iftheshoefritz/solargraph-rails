@@ -192,11 +192,9 @@ Date.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Date.presence_in:
   types:
   - nil
@@ -204,9 +202,6 @@ Date.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Date.present?:
   types:
   - Boolean
@@ -711,11 +706,9 @@ Date#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Date#presence_in:
   types:
   - nil
@@ -723,9 +716,6 @@ Date#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Date#present?:
   types:
   - Boolean
@@ -753,7 +743,8 @@ Date#prev_weekday:
 Date#readable_inspect:
   types:
   - String
-  skip: false
+  skip:
+  - 0.54.6.alpha
 Date#since:
   types:
   - undefined
@@ -862,6 +853,7 @@ Date#xmlschema:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.54.6.alpha
 Date#years_ago:
   types:
   - undefined

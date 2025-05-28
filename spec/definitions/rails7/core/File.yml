@@ -172,11 +172,9 @@ File.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 File.presence_in:
   types:
   - nil
@@ -184,9 +182,6 @@ File.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 File.present?:
   types:
   - Boolean
@@ -399,11 +394,9 @@ File#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 File#presence_in:
   types:
   - nil
@@ -411,9 +404,6 @@ File#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 File#present?:
   types:
   - Boolean

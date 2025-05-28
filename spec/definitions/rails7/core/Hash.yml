@@ -176,11 +176,9 @@ Hash.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Hash.presence_in:
   types:
   - nil
@@ -188,9 +186,6 @@ Hash.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Hash.present?:
   types:
   - Boolean
@@ -495,11 +490,9 @@ Hash#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Hash#presence_in:
   types:
   - nil
@@ -507,9 +500,6 @@ Hash#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Hash#present?:
   types:
   - Boolean

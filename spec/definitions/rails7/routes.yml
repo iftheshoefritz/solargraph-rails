@@ -185,11 +185,9 @@ ActionDispatch::Routing::Mapper.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionDispatch::Routing::Mapper.presence_in:
   types:
   - nil
@@ -197,9 +195,6 @@ ActionDispatch::Routing::Mapper.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActionDispatch::Routing::Mapper.present?:
   types:
   - Boolean
@@ -516,11 +511,9 @@ ActionDispatch::Routing::Mapper#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionDispatch::Routing::Mapper#presence_in:
   types:
   - nil
@@ -528,9 +521,6 @@ ActionDispatch::Routing::Mapper#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActionDispatch::Routing::Mapper#present?:
   types:
   - Boolean

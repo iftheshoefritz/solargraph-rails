@@ -1151,11 +1151,9 @@ ActionController::Base.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base.presence_in:
   types:
   - nil
@@ -1163,9 +1161,6 @@ ActionController::Base.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base.present?:
   types:
   - Boolean
@@ -2883,11 +2878,9 @@ ActionController::Base#presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base#presence_in:
   types:
   - nil
@@ -2895,9 +2888,6 @@ ActionController::Base#presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base#present?:
   types:
   - Boolean

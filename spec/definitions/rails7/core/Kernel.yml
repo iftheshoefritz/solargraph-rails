@@ -164,11 +164,9 @@ Kernel.presence:
   - nil
   - self
   skip:
-  - 0.49.0
-  - 0.50.0
+  - 0.48.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Kernel.presence_in:
   types:
   - nil
@@ -176,9 +174,6 @@ Kernel.presence_in:
   skip:
   - 0.49.0
   - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Kernel.present?:
   types:
   - Boolean
