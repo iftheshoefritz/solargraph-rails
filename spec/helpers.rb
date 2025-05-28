@@ -54,6 +54,7 @@ module Helpers
     definitions.each do |meth, data|
       meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
 
+      # @type [Array<Solargraph::Pin::Base>]
       pins =
         if meth.start_with?('.')
           class_methods.select { |p| p.name == meth[1..-1] }
@@ -61,6 +62,7 @@ module Helpers
           instance_methods.select { |p| p.name == meth[1..-1] }
         end
 
+      # @type [Array<Solargraph::Pin::Base>] pins
       relevant_pins = pins.select { |p| p.path == pins.first.path }
 
       meh_types = ['BasicObject', 'Object', 'undefined']

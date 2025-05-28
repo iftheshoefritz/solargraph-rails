@@ -448,6 +448,7 @@ Time#as_json:
   - 0.49.0
   - 0.50.0
   - 0.51.2
+  - 0.52.0
 Time#at_beginning_of_day:
   types:
   - undefined
