@@ -54,12 +54,27 @@ module Helpers
     definitions.each do |meth, data|
       meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
 
-      pin =
+      # @type [Array<Solargraph::Pin::Base>]
+      pins =
         if meth.start_with?('.')
-          class_methods.find { |p| p.name == meth[1..-1] }
+          class_methods.select { |p| p.name == meth[1..-1] }
         elsif meth.start_with?('#')
-          instance_methods.find { |p| p.name == meth[1..-1] }
+          instance_methods.select { |p| p.name == meth[1..-1] }
         end
+
+      # @type [Array<Solargraph::Pin::Base>] pins
+      relevant_pins = pins.select { |p| p.path == pins.first.path }
+
+      meh_types = ['BasicObject', 'Object', 'undefined']
+
+      good_pins, meh_pins = relevant_pins.partition do |p|
+        return_type_tags = p.typify(map).map(&:tag)
+        meh_types.none? { |meh_type| return_type_tags.include? meh_type }
+      end
+
+      # try hard to get a high quality and stable result
+      pin = (good_pins.sort_by { |p| p.typify(map).map(&:tag).sort } +
+             meh_pins.sort_by { |p| p.typify(map).map(&:tag).sort }).first
 
       skip = false
       typed += 1 if data['types'] != ['undefined']
@@ -72,15 +87,14 @@ module Helpers
 
       # Completion is found, but marked as skipped
       if pin
-        effective_type = pin.return_type.map(&:tag)
         effective_type = pin.typify(map).map(&:tag).sort.uniq
-        specified_type = data['types']
+        specified_type = data['types'].sort.uniq
 
         if effective_type != specified_type
           if update
             if effective_type == ['undefined']
               add_to_skip(data)
-            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject')
+            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject') || specified_type.include?('Object')
               # sounds like a better type
               data['types'] = effective_type
             elsif !skip

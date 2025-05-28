@@ -1150,24 +1150,12 @@ ActionController::Base.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base.present?:
   types:
   - Boolean
@@ -1287,13 +1275,7 @@ ActionController::Base.require_dependency:
 ActionController::Base.rescue_from:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base.rescue_handlers:
   types:
   - undefined
@@ -2890,24 +2872,12 @@ ActionController::Base#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#present?:
   types:
   - Boolean

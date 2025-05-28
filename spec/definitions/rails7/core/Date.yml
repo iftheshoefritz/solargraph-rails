@@ -191,24 +191,12 @@ Date.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Date.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Date.present?:
   types:
   - Boolean
@@ -318,7 +306,6 @@ Date#+:
   types:
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -326,9 +313,9 @@ Date#+:
   - 0.54.6.alpha
 Date#-:
   types:
+  - Rational
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -427,7 +414,6 @@ Date#as_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -713,24 +699,12 @@ Date#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Date#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 Date#present?:
   types:
   - Boolean
@@ -757,7 +731,7 @@ Date#prev_weekday:
   skip: false
 Date#readable_inspect:
   types:
-  - undefined
+  - String
   skip: false
 Date#since:
   types:
@@ -810,7 +784,7 @@ Date#to_s:
   skip: false
 Date#to_time:
   types:
-  - undefined
+  - Time
   skip: false
 Date#today?:
   types:
@@ -863,11 +837,6 @@ Date#xmlschema:
   - String
   skip:
   - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 Date#years_ago:
   types:
   - undefined

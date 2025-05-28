@@ -5,70 +5,18 @@ module Solargraph
         @instance ||= self.new
       end
 
-      def global(yard_map)
-        return [] if yard_map.required.empty?
+      def extra_source_maps
+        @extra_source_maps ||= Dir[File.join(__dir__, 'annotations', '*.rb')].to_h do |path|
+          code = File.read(path)
+          source = Solargraph::Source.load_string(code, path)
+          map = Solargraph::SourceMap.map(source)
+          [File.basename(path, '.rb'), map]
+        end
+      end
 
-        ann = File.read(File.dirname(__FILE__) + '/annotations.rb')
-        source = Solargraph::Source.load_string(ann, 'annotations.rb')
-        map = Solargraph::SourceMap.map(source)
-
-        Solargraph.logger.debug(
-          "[Rails][Rails] found #{map.pins.size} pins in annotations"
-        )
-
-        overrides =
-          YAML
-            .load_file(File.dirname(__FILE__) + '/types.yml')
-            .map do |meth, data|
-              if data['return']
-                Util.method_return(meth, data['return'])
-              elsif data['yieldself']
-                Solargraph::Pin::Reference::Override.from_comment(
-                  meth,
-                  "@yieldself [#{data['yieldself'].join(',')}]"
-                )
-              elsif data['yieldparam']
-                Solargraph::Pin::Reference::Override.from_comment(
-                  meth,
-                  "@yieldparam [#{data['yieldparam'].join(',')}]"
-                )
-              end
-            end
-
-        ns =
-          Solargraph::Pin::Namespace.new(
-            name: 'ActionController::Base',
-            gates: ['ActionController::Base']
-          )
-
-        definitions = [
-          Util.build_public_method(
-            ns,
-            'response',
-            types: ['ActionDispatch::Response'],
-            location: Util.dummy_location('whatever.rb')
-          ),
-          Util.build_public_method(
-            ns,
-            'request',
-            types: ['ActionDispatch::Request'],
-            location: Util.dummy_location('whatever.rb')
-          ),
-          Util.build_public_method(
-            ns,
-            'session',
-            types: ['ActionDispatch::Request::Session'],
-            location: Util.dummy_location('whatever.rb')
-          ),
-          Util.build_public_method(
-            ns,
-            'flash',
-            types: ['ActionDispatch::Flash::FlashHash'],
-            location: Util.dummy_location('whatever.rb')
-          )
-        ]
-
-        map.pins + definitions + overrides
+      # @param yard_map [YardMap]
+      def global(_yard_map)
+        extra_source_maps.values.flat_map(&:pins)
       end
 
       def local(source_map, ns)

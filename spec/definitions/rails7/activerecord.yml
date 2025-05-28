@@ -1189,7 +1189,6 @@ ActiveRecord::Base.count:
   - Hash
   - Integer
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1943,6 +1942,7 @@ ActiveRecord::Base.find:
   - Array<self>
   - self
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1953,6 +1953,7 @@ ActiveRecord::Base.find_by:
   - nil
   - self
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -3086,8 +3087,10 @@ ActiveRecord::Base.pick:
   skip: false
 ActiveRecord::Base.pluck:
   types:
-  - undefined
-  skip: false
+  - Array
+  - Array<Array>
+  skip:
+  - 0.48.0
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
@@ -3148,24 +3151,12 @@ ActiveRecord::Base.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base.present?:
   types:
   - Boolean
@@ -4766,6 +4757,7 @@ ActiveRecord::Base.where:
   - ActiveRecord::Relation
   - self
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -5881,24 +5873,12 @@ ActiveRecord::Base#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base#present?:
   types:
   - 'true'

@@ -167,24 +167,12 @@ String.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 String.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 String.present?:
   types:
   - Boolean
@@ -313,7 +301,6 @@ String#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 String#camelcase:
   types:
   - String
@@ -525,24 +512,12 @@ String#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 String#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 String#present?:
   types:
   - Boolean
