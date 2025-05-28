@@ -23,7 +23,8 @@ Time.as_json:
 Time.at:
   types:
   - Time
-  skip: false
+  skip:
+  - 0.48.0
 Time.at_with_coercion:
   types:
   - undefined
@@ -352,7 +353,12 @@ Time.zone_default=:
 Time#+:
   types:
   - Time
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Time#-:
   types:
   - self
@@ -369,6 +375,8 @@ Time#<=>:
   - nil
   skip:
   - 0.48.0
+  - 0.51.2
+  - 0.52.0
 Time#acts_like?:
   types:
   - Boolean
@@ -636,7 +644,8 @@ Time#eql?:
 Time#eql_with_coercion:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.48.0
 Time#formatted_offset:
   types:
   - undefined
@@ -921,7 +930,8 @@ Time#to_s:
 Time#to_time:
   types:
   - Time
-  skip: false
+  skip:
+  - 0.48.0
 Time#today?:
   types:
   - Boolean
