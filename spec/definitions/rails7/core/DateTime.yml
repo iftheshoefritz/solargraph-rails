@@ -245,17 +245,12 @@ DateTime.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 DateTime.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
+  skip: false
 DateTime.present?:
   types:
   - Boolean
@@ -1068,17 +1063,12 @@ DateTime#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 DateTime#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
+  skip: false
 DateTime#present?:
   types:
   - Boolean
@@ -1146,13 +1136,7 @@ DateTime#prev_weekday:
 DateTime#readable_inspect:
   types:
   - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 DateTime#seconds_since_midnight:
   types:
   - undefined
@@ -1239,11 +1223,6 @@ DateTime#to_time:
   - Time
   skip:
   - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 DateTime#today?:
   types:
   - Boolean

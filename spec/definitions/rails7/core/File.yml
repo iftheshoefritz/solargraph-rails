@@ -171,17 +171,12 @@ File.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 File.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
+  skip: false
 File.present?:
   types:
   - Boolean
@@ -393,17 +388,12 @@ File#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.48.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 File#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
+  skip: false
 File#present?:
   types:
   - Boolean
