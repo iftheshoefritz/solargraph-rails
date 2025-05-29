@@ -60,6 +60,9 @@ module Solargraph
             types = ["Array(#{type}, #{type})"]
             pins << Util.build_public_method(ns, name, types: types, location: location)
           end
+          pins << Util.build_public_method(ns, "#{column}=", types: [type],
+                                           params: { 'value' => [type] },
+                                           location: location)
         end
 
         if pins.any?

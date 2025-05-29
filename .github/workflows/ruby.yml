@@ -36,11 +36,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: ruby/setup-ruby@v1
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-          cache-version: 3
+          cache-version: ${{ matrix.solargraph-version }}-2025-04-29
 
       - name: Install child bundle
         run: |
@@ -54,12 +56,14 @@ jobs:
         uses: actions/cache@v3
         id: dot-cache
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-2
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
           path: |
             /home/runner/.cache
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
