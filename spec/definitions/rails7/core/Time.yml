@@ -573,7 +573,10 @@ Time#class_eval:
   skip: false
 Time#compare_with_coercion:
   types:
-  - undefined
+  - "-1"
+  - '0'
+  - '1'
+  - nil
   skip: false
 Time#days_ago:
   types:
@@ -874,7 +877,7 @@ Time#sunday:
   skip: false
 Time#to_formatted_s:
   types:
-  - undefined
+  - String
   skip: false
 Time#to_fs:
   types:

@@ -493,10 +493,6 @@ ActionController::Base.devise_group:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActionController::Base.direct_descendants:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.dispatch:
   types:
   - undefined

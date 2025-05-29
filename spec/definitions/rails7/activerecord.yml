@@ -282,7 +282,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.54.6.alpha
 ActiveRecord::Base.application_record_class?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -1096,7 +1096,7 @@ ActiveRecord::Base.connection_class=:
   - 0.54.6.alpha
 ActiveRecord::Base.connection_class?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2795,10 +2795,6 @@ ActiveRecord::Base.logger?:
   - 0.52.0
   - 0.54.6.alpha
 ActiveRecord::Base.lookup_ancestors:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.lookup_connection_handler:
   types:
   - undefined
   skip: false
@@ -6451,6 +6447,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 ActiveRecord::Base#update:
   types:
   - Boolean

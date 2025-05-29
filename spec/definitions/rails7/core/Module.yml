@@ -17,27 +17,27 @@ Module.as_json:
   skip: false
 Module.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_naming_format:
   types:
-  - undefined
+  - String
   skip: false
 Module.attr_internal_naming_format=:
   types:
-  - undefined
+  - String
   skip: false
 Module.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Module.blank?:
   types:
@@ -208,7 +208,7 @@ Module.to_param:
   skip: false
 Module.to_query:
   types:
-  - undefined
+  - String
   skip: false
 Module.try:
   types:
@@ -240,19 +240,19 @@ Module#as_json:
   skip: false
 Module#attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 Module#attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 Module#attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Module#attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Module#blank?:
   types:
@@ -415,7 +415,7 @@ Module#to_param:
   skip: false
 Module#to_query:
   types:
-  - undefined
+  - String
   skip: false
 Module#try:
   types:
