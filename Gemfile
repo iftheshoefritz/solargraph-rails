@@ -2,6 +2,17 @@ source 'https://rubygems.org'
 
 solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
+# Kind of ugly, but works. The setup-ruby action forces gems to be installed to vendor/bundle
+# If we use it naively we end up with vendor/bundle  and spec/rails7/vendor/bundle, which
+# breaks all the tests because docs are generated in two different directories.
+#
+# So if we just install the rails deps at the same time, we have a single cache and a single
+# directory for gems.
+rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
+instance_eval File.read(File.expand_path("spec/rails#{rails_version}/Gemfile", __dir__))
+
+solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
+
 # ensure that YARD docs get cached by ruby/setup-ruby in GitHub
 # Actions if using an older version of solargraph that needs user to
 # run `yard gems` manually

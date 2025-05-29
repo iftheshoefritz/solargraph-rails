@@ -1150,22 +1150,12 @@ ActionController::Base.presence:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base.presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base.present?:
   types:
   - Boolean
@@ -1862,11 +1852,7 @@ ActionController::Base#authenticate_with_http_digest:
   - 0.52.0
   - 0.54.6.alpha
 ActionController::Base#authenticate_with_http_token:
-  # Awaiting either better definition in RBS (this should return a
-  # generic based on the block passed in) or an understanding of
-  # boolish type from solargraph
   types:
-#  - boolish
   - undefined
   skip:
   - 0.48.0
@@ -2821,13 +2807,7 @@ ActionController::Base#notice:
 ActionController::Base#params:
   types:
   - ActionController::Parameters
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#params=:
   types:
   - undefined
@@ -2892,22 +2872,12 @@ ActionController::Base#presence:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#presence_in:
   types:
   - nil
   - self
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#present?:
   types:
   - Boolean
