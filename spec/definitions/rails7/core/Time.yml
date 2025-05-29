@@ -1,4 +1,25 @@
 ---
+Time.===:
+  types:
+  - Boolean
+  skip:
+  - 0.48.0
+Time.acts_like?:
+  types:
+  - Boolean
+  skip: false
+Time.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Time.anonymous?:
+  types:
+  - Boolean
+  skip: false
+Time.as_json:
+  types:
+  - undefined
+  skip: false
 Time.at:
   types:
   - Time
@@ -7,10 +28,84 @@ Time.at_with_coercion:
   types:
   - undefined
   skip: false
-Time.current:
+Time.attr_internal:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.attr_internal_accessor:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.blank?:
+  types:
+  - Boolean
+  skip: false
+Time.cattr_accessor:
   types:
   - undefined
   skip: false
+Time.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.class_attribute:
+  types:
+  - undefined
+  skip: false
+Time.concern:
+  types:
+  - undefined
+  skip: false
+Time.concerning:
+  types:
+  - undefined
+  skip: false
+Time.current:
+  types:
+  - ActiveSupportTimeWithZone
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time.days_in_month:
   types:
   - undefined
@@ -19,15 +114,203 @@ Time.days_in_year:
   types:
   - undefined
   skip: false
-Time.find_zone:
+Time.deep_dup:
   types:
   - undefined
   skip: false
+Time.delegate:
+  types:
+  - undefined
+  skip: false
+Time.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Time.deprecate:
+  types:
+  - undefined
+  skip: false
+Time.descendants:
+  types:
+  - undefined
+  skip: false
+Time.duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.find_zone:
+  types:
+  - ActiveSupportTimeZone
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time.find_zone!:
+  types:
+  - ActiveSupportTimeZone
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.in?:
+  types:
+  - Boolean
+  skip: false
+Time.instance_values:
+  types:
+  - undefined
+  skip: false
+Time.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Time.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.method_visibility:
+  types:
+  - undefined
+  skip: false
+Time.module_parent:
+  types:
+  - undefined
+  skip: false
+Time.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Time.module_parents:
+  types:
+  - undefined
+  skip: false
+Time.presence:
+  types:
+  - nil
+  - self
+  skip: false
+Time.presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Time.present?:
+  types:
+  - Boolean
+  skip: false
+Time.redefine_method:
+  types:
+  - undefined
+  skip: false
+Time.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Time.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Time.remove_possible_singleton_method:
   types:
   - undefined
   skip: false
 Time.rfc3339:
+  types:
+  - Time
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Time.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Time.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Time.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Time.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Time.to_param:
+  types:
+  - undefined
+  skip: false
+Time.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time.try:
+  types:
+  - undefined
+  skip: false
+Time.try!:
   types:
   - undefined
   skip: false
@@ -35,10 +318,20 @@ Time.use_zone:
   types:
   - undefined
   skip: false
-Time.zone:
+Time.with_options:
   types:
   - undefined
   skip: false
+Time.zone:
+  types:
+  - ActiveSupportTimeZone
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time.zone=:
   types:
   - undefined
@@ -57,16 +350,34 @@ Time#+:
   skip: false
 Time#-:
   types:
-  - Float
-  - Time
+  - self
   skip:
   - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#<=>:
   types:
   - Integer
   - nil
   skip:
   - 0.48.0
+Time#acts_like?:
+  types:
+  - Boolean
+  skip: false
+Time#acts_like_time?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#advance:
   types:
   - undefined
@@ -81,28 +392,63 @@ Time#ago:
   skip: false
 Time#all_day:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#all_month:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#all_quarter:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#all_week:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#all_year:
   types:
-  - undefined
-  skip: false
+  - Range
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#as_json:
   types:
-  - undefined
-  skip: false
+  - Hash{String => String, Integer}
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Time#at_beginning_of_day:
   types:
   - undefined
@@ -207,7 +553,21 @@ Time#beginning_of_year:
   types:
   - undefined
   skip: false
+Time#blank?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#change:
+  types:
+  - undefined
+  skip: false
+Time#class_eval:
   types:
   - undefined
   skip: false
@@ -227,6 +587,20 @@ Time#days_to_week_start:
   types:
   - undefined
   skip: false
+Time#deep_dup:
+  types:
+  - undefined
+  skip: false
+Time#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#end_of_day:
   types:
   - undefined
@@ -255,9 +629,13 @@ Time#end_of_year:
   types:
   - undefined
   skip: false
+Time#eql?:
+  types:
+  - Boolean
+  skip: false
 Time#eql_with_coercion:
   types:
-  - undefined
+  - Boolean
   skip: false
 Time#formatted_offset:
   types:
@@ -267,7 +645,40 @@ Time#future?:
   types:
   - Boolean
   skip: false
+Time#html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time#in:
+  types:
+  - undefined
+  skip: false
+Time#in?:
+  types:
+  - Boolean
+  skip: false
 Time#in_time_zone:
+  types:
+  - ActiveSupportTimeWithZone
+  - Time
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time#instance_values:
+  types:
+  - undefined
+  skip: false
+Time#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -313,8 +724,14 @@ Time#minus_with_duration:
   skip: false
 Time#minus_without_coercion:
   types:
-  - undefined
-  skip: false
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#monday:
   types:
   - undefined
@@ -378,6 +795,20 @@ Time#past?:
 Time#plus_with_duration:
   types:
   - undefined
+  skip: false
+Time#presence:
+  types:
+  - nil
+  - self
+  skip: false
+Time#presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Time#present?:
+  types:
+  - Boolean
   skip: false
 Time#preserve_timezone:
   types:
@@ -447,7 +878,40 @@ Time#to_formatted_s:
   skip: false
 Time#to_fs:
   types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time#to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Time#to_param:
+  types:
   - undefined
+  skip: false
+Time#to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Time#to_s:
+  types:
+  - String
   skip: false
 Time#to_time:
   types:
@@ -465,6 +929,14 @@ Time#tomorrow?:
   types:
   - Boolean
   skip: false
+Time#try:
+  types:
+  - undefined
+  skip: false
+Time#try!:
+  types:
+  - undefined
+  skip: false
 Time#utc_to_local_returns_utc_offset_times:
   types:
   - undefined
@@ -480,6 +952,10 @@ Time#weeks_ago:
   - undefined
   skip: false
 Time#weeks_since:
+  types:
+  - undefined
+  skip: false
+Time#with_options:
   types:
   - undefined
   skip: false

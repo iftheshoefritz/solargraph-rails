@@ -1,21 +1,21 @@
 ---
-Array.acts_like?:
+Class.acts_like?:
   types:
   - Boolean
   skip: false
-Array.alias_attribute:
+Class.alias_attribute:
   types:
   - undefined
   skip: false
-Array.anonymous?:
+Class.anonymous?:
   types:
   - Boolean
   skip: false
-Array.as_json:
+Class.as_json:
   types:
   - undefined
   skip: false
-Array.attr_internal:
+Class.attr_internal:
   types:
   - void
   skip:
@@ -25,7 +25,7 @@ Array.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.attr_internal_accessor:
+Class.attr_internal_accessor:
   types:
   - void
   skip:
@@ -35,7 +35,27 @@ Array.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.attr_internal_reader:
+Class.attr_internal_naming_format:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Class.attr_internal_naming_format=:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Class.attr_internal_reader:
   types:
   - void
   skip:
@@ -45,7 +65,7 @@ Array.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.attr_internal_writer:
+Class.attr_internal_writer:
   types:
   - void
   skip:
@@ -55,55 +75,55 @@ Array.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.blank?:
+Class.blank?:
   types:
   - Boolean
   skip: false
-Array.cattr_accessor:
+Class.cattr_accessor:
   types:
   - undefined
   skip: false
-Array.cattr_reader:
+Class.cattr_reader:
   types:
   - undefined
   skip: false
-Array.cattr_writer:
+Class.cattr_writer:
   types:
   - undefined
   skip: false
-Array.class_attribute:
+Class.class_attribute:
   types:
   - undefined
   skip: false
-Array.concern:
+Class.concern:
   types:
   - undefined
   skip: false
-Array.concerning:
+Class.concerning:
   types:
   - undefined
   skip: false
-Array.deep_dup:
+Class.deep_dup:
   types:
   - undefined
   skip: false
-Array.delegate:
+Class.delegate:
   types:
   - undefined
   skip: false
-Array.delegate_missing_to:
+Class.delegate_missing_to:
   types:
   - undefined
   skip: false
-Array.deprecate:
+Class.deprecate:
   types:
   - undefined
   skip: false
-Array.descendants:
+Class.descendants:
   types:
   - undefined
   skip: false
-Array.duplicable?:
+Class.duplicable?:
   types:
   - 'true'
   skip:
@@ -113,7 +133,7 @@ Array.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.html_safe?:
+Class.html_safe?:
   types:
   - 'false'
   skip:
@@ -123,105 +143,105 @@ Array.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.in?:
+Class.in?:
   types:
   - Boolean
   skip: false
-Array.instance_values:
+Class.instance_values:
   types:
   - undefined
   skip: false
-Array.instance_variable_names:
+Class.instance_variable_names:
   types:
   - undefined
   skip: false
-Array.mattr_accessor:
+Class.mattr_accessor:
   types:
   - undefined
   skip: false
-Array.mattr_reader:
+Class.mattr_reader:
   types:
   - undefined
   skip: false
-Array.mattr_writer:
+Class.mattr_writer:
   types:
   - undefined
   skip: false
-Array.method_visibility:
+Class.method_visibility:
   types:
   - undefined
   skip: false
-Array.module_parent:
+Class.module_parent:
   types:
   - undefined
   skip: false
-Array.module_parent_name:
+Class.module_parent_name:
   types:
   - undefined
   skip: false
-Array.module_parents:
+Class.module_parents:
   types:
   - undefined
   skip: false
-Array.presence:
+Class.presence:
   types:
   - nil
   - self
   skip: false
-Array.presence_in:
+Class.presence_in:
   types:
   - nil
   - self
   skip: false
-Array.present?:
+Class.present?:
   types:
   - Boolean
   skip: false
-Array.redefine_method:
+Class.redefine_method:
   types:
   - undefined
   skip: false
-Array.redefine_singleton_method:
+Class.redefine_singleton_method:
   types:
   - undefined
   skip: false
-Array.remove_possible_method:
+Class.remove_possible_method:
   types:
   - undefined
   skip: false
-Array.remove_possible_singleton_method:
+Class.remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Array.silence_redefinition_of_method:
+Class.silence_redefinition_of_method:
   types:
   - undefined
   skip: false
-Array.thread_cattr_accessor:
+Class.thread_cattr_accessor:
   types:
   - undefined
   skip: false
-Array.thread_cattr_reader:
+Class.thread_cattr_reader:
   types:
   - undefined
   skip: false
-Array.thread_cattr_writer:
+Class.thread_cattr_writer:
   types:
   - undefined
   skip: false
-Array.thread_mattr_accessor:
+Class.thread_mattr_accessor:
   types:
   - undefined
   skip: false
-Array.thread_mattr_reader:
+Class.thread_mattr_reader:
   types:
   - undefined
   skip: false
-Array.thread_mattr_writer:
+Class.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Array.to_json:
+Class.to_json:
   types:
   - String
   skip:
@@ -230,11 +250,11 @@ Array.to_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-Array.to_param:
+Class.to_param:
   types:
   - undefined
   skip: false
-Array.to_query:
+Class.to_query:
   types:
   - String
   skip:
@@ -244,7 +264,7 @@ Array.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.try:
+Class.try:
   types:
   - generic<T>
   - undefined
@@ -255,7 +275,7 @@ Array.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.try!:
+Class.try!:
   types:
   - generic<T>
   - undefined
@@ -266,36 +286,29 @@ Array.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array.with_options:
+Class.with_options:
   types:
   - undefined
   skip: false
-Array.wrap:
-  types:
-  - Array
-  - Array<generic<T>>
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-Array#acts_like?:
+Class#acts_like?:
   types:
   - Boolean
   skip: false
-Array#as_json:
+Class#alias_attribute:
   types:
   - undefined
   skip: false
-Array#class_eval:
+Class#anonymous?:
+  types:
+  - Boolean
+  skip: false
+Class#as_json:
   types:
   - undefined
   skip: false
-Array#compact_blank:
+Class#attr_internal:
   types:
-  - Array
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -303,9 +316,9 @@ Array#compact_blank:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#compact_blank!:
+Class#attr_internal_accessor:
   types:
-  - Array<generic<Elem>>
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -313,11 +326,75 @@ Array#compact_blank!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#deep_dup:
+Class#attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Class#attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Class#blank?:
+  types:
+  - Boolean
+  skip: false
+Class#cattr_accessor:
   types:
   - undefined
   skip: false
-Array#duplicable?:
+Class#cattr_reader:
+  types:
+  - undefined
+  skip: false
+Class#cattr_writer:
+  types:
+  - undefined
+  skip: false
+Class#class_attribute:
+  types:
+  - undefined
+  skip: false
+Class#concern:
+  types:
+  - undefined
+  skip: false
+Class#concerning:
+  types:
+  - undefined
+  skip: false
+Class#deep_dup:
+  types:
+  - undefined
+  skip: false
+Class#delegate:
+  types:
+  - undefined
+  skip: false
+Class#delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Class#deprecate:
+  types:
+  - undefined
+  skip: false
+Class#descendants:
+  types:
+  - undefined
+  skip: false
+Class#duplicable?:
   types:
   - 'true'
   skip:
@@ -327,39 +404,7 @@ Array#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#exclude?:
-  types:
-  - Boolean
-  skip: false
-Array#excluding:
-  types:
-  - undefined
-  skip: false
-Array#extract!:
-  types:
-  - undefined
-  skip: false
-Array#extract_options!:
-  types:
-  - undefined
-  skip: false
-Array#fifth:
-  types:
-  - undefined
-  skip: false
-Array#forty_two:
-  types:
-  - undefined
-  skip: false
-Array#fourth:
-  types:
-  - undefined
-  skip: false
-Array#from:
-  types:
-  - undefined
-  skip: false
-Array#html_safe?:
+Class#html_safe?:
   types:
   - 'false'
   skip:
@@ -369,127 +414,118 @@ Array#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#in?:
+Class#in?:
   types:
   - Boolean
   skip: false
-Array#in_groups:
+Class#instance_values:
   types:
   - undefined
   skip: false
-Array#in_groups_of:
+Class#instance_variable_names:
   types:
   - undefined
   skip: false
-Array#in_order_of:
+Class#mattr_accessor:
   types:
   - undefined
   skip: false
-Array#including:
+Class#mattr_reader:
   types:
   - undefined
   skip: false
-Array#index_by:
+Class#mattr_writer:
   types:
   - undefined
   skip: false
-Array#index_with:
+Class#method_visibility:
   types:
   - undefined
   skip: false
-Array#inquiry:
-  types:
-  - ActiveSupportArrayInquirer<generic<Elem>>
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-Array#instance_values:
+Class#module_parent:
   types:
   - undefined
   skip: false
-Array#instance_variable_names:
+Class#module_parent_name:
   types:
   - undefined
   skip: false
-Array#many?:
-  types:
-  - Boolean
-  skip: false
-Array#maximum:
+Class#module_parents:
   types:
   - undefined
   skip: false
-Array#minimum:
-  types:
-  - undefined
-  skip: false
-Array#pick:
-  types:
-  - undefined
-  skip: false
-Array#pluck:
-  types:
-  - undefined
-  skip: false
-Array#presence:
+Class#presence:
   types:
   - nil
   - self
   skip: false
-Array#presence_in:
+Class#presence_in:
   types:
   - nil
   - self
   skip: false
-Array#present?:
+Class#present?:
   types:
   - Boolean
   skip: false
-Array#second:
+Class#redefine_method:
   types:
   - undefined
   skip: false
-Array#second_to_last:
+Class#redefine_singleton_method:
   types:
   - undefined
   skip: false
-Array#sole:
+Class#remove_possible_method:
   types:
   - undefined
   skip: false
-Array#split:
+Class#remove_possible_singleton_method:
   types:
   - undefined
   skip: false
-Array#sum:
+Class#silence_redefinition_of_method:
   types:
-  - Integer
-  - generic<Elem>
-  - generic<T>
-  - generic<U>
+  - undefined
+  skip: false
+Class#thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Class#thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Class#thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Class#thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Class#thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Class#thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Class#to_json:
+  types:
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
-  - 0.54.6.alpha
-Array#third:
+  - 0.52.0
+Class#to_param:
   types:
   - undefined
   skip: false
-Array#third_to_last:
-  types:
-  - undefined
-  skip: false
-Array#to:
-  types:
-  - undefined
-  skip: false
-Array#to_formatted_s:
+Class#to_query:
   types:
   - String
   skip:
@@ -499,52 +535,7 @@ Array#to_formatted_s:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#to_fs:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-Array#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-Array#to_param:
-  types:
-  - undefined
-  skip: false
-Array#to_query:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-Array#to_s:
-  types:
-  - String
-  skip: false
-Array#to_sentence:
-  types:
-  - undefined
-  skip: false
-Array#to_xml:
-  types:
-  - undefined
-  skip: false
-Array#try:
+Class#try:
   types:
   - generic<T>
   - undefined
@@ -555,7 +546,7 @@ Array#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#try!:
+Class#try!:
   types:
   - generic<T>
   - undefined
@@ -566,11 +557,7 @@ Array#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Array#with_options:
-  types:
-  - undefined
-  skip: false
-Array#without:
+Class#with_options:
   types:
   - undefined
   skip: false

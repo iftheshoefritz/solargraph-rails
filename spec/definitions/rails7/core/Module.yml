@@ -137,11 +137,13 @@ Module.module_parents:
   skip: false
 Module.presence:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module.presence_in:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module.present?:
   types:
@@ -342,11 +344,13 @@ Module#module_parents:
   skip: false
 Module#presence:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module#presence_in:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module#present?:
   types:
