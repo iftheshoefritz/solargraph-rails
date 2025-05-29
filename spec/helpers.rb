@@ -233,11 +233,35 @@ module Helpers
   end
 
   def find_pin(path, map = api_map)
-    find_pins(path, map).first
+    find_pin_by_path(map.pins, path, map)
   end
 
-  def find_pins(path, map = api_map)
-    map.pins.select { |p| p.path == path }
+  def find_pin_by_path(pins, path, map)
+    if pins.empty?
+      return nil
+    else
+      top_level_pins = pins.select { |p| p.path == path }
+      if top_level_pins.empty?
+        scope = nil
+        scope = :class
+        class_name, meth, rest = path.split('.')
+        raise "Did not understand path #{path}" unless rest.nil?
+        if meth.nil?
+          class_name, meth, rest = class_name.split('#')
+          raise "Did not understand path #{path}" unless rest.nil?
+          scope = :instance
+        end
+        return map.get_method_stack(class_name, meth, scope: scope).first
+      end
+      return_pin = top_level_pins.find do |pin|
+        pin_return_type = pin.return_type
+        pin_return_type = pin.typify map if pin_return_type.undefined?
+        pin_return_type = pin.probe map if pin_return_type.undefined?
+        pin_return_type.defined?
+      end
+      return_pin ||= top_level_pins.first
+      return_pin
+    end
   end
 
   def local_pins(map = api_map)
