@@ -210,7 +210,7 @@ module Helpers
     pin_return_type = pin.return_type
     pin_return_type = pin.typify map if pin_return_type.undefined?
     pin_return_type = pin.probe map if pin_return_type.undefined?
-    expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
+    expect(pin_return_type.map(&:tag)).to eq(return_type) # , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" 
 
     yield pin if block_given?
   end
