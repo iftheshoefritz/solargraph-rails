@@ -2,6 +2,20 @@
 
 ## Changes
 
+### v1.1.2
+
+Features / fixes:
+
+- fix bad gemspec solargraph dependency
+- additional pre-packaged Rails type definitions (Thanks, @grncdr!)
+
+Internal improvements:
+
+- Use normal ruby source for extra YARD annotations (Thanks, @grncdr!)
+- Speed up CI for recent Solargraph version fresh builds
+- spec reliability fixes
+-
+
 ### v1.1.1
 
 New maintainer: @apiology
