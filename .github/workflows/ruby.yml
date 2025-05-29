@@ -37,25 +37,21 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: ruby/setup-ruby@v1
-        # set env variable FOO=bar
         env:
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-2025-04-28-11-51
+          cache-version: ${{ matrix.solargraph-version }}-2025-04-28-20
 
-      - uses: ruby/setup-ruby@v1
-        env:
-          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
-          BUNDLE_GEMFILE: ${{ github.workspace }}/spec/rails${{ matrix.rails-version }}/Gemfile
-          BUNDLE_PATH: ${{ github.workspace }}/vendor/bundle
-        with:
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler: latest
-          bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-2025-04-28-11-12
+      - name: Install child bundle
+        run: |
+          set -x
+          export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
+          export BUNDLE_PATH=$(pwd)/vendor/bundle
+          cd "spec/rails${{ matrix.rails-version }}"
+          bundle install
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
@@ -69,7 +65,9 @@ jobs:
             /home/runner/.cache
 
       - name: bundle list
-        run: bundle install && bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1

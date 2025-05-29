@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
-
 # Kind of ugly, but works. The setup-ruby action forces gems to be installed to vendor/bundle
 # If we use it naively we end up with vendor/bundle  and spec/rails7/vendor/bundle, which
 # breaks all the tests because docs are generated in two different directories.
@@ -31,7 +29,6 @@ group :development, :test do
   gem 'byebug'
 end
 
-rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
 if rails_version == '7'
   # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
   gem "concurrent-ruby", '<=1.3.5'
@@ -51,6 +48,8 @@ elsif solargraph_force_ci_version == '0.54.6.alpha'
       github: 'apiology/solargraph',
       branch: 'v54-alpha'
       # path: '../solargraph'
+else
+  gem 'solargraph'
 end
 
 # Local gemfile for development tools, etc.
