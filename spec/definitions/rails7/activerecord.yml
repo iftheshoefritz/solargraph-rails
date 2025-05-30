@@ -282,7 +282,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.54.6.alpha
 ActiveRecord::Base.application_record_class?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
