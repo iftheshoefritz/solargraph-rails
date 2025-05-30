@@ -27,18 +27,22 @@ jobs:
           - "0.50.0"
           - "0.51.2"
           - "0.52.0"
+          - "0.54.6.alpha"
         rails-version:
           - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-
+          cache-version: ${{ matrix.solargraph-version }}-2025-04-29
 
       - name: Install child bundle
         run: |
@@ -48,17 +52,19 @@ jobs:
           cd "spec/rails${{ matrix.rails-version }}"
           bundle install
 
-# Enable once self-annotating versions of Solargraph are supported
-#      - name: cache gem annotations
-#        uses: actions/cache@v3
-#        id: dot-cache
-#        with:
-#          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}
-#          path: |
-#            /home/runner/.cache
+      - name: cache gem annotations
+        uses: actions/cache@v3
+        id: dot-cache
+        with:
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
+
+          path: |
+            /home/runner/.cache
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
@@ -71,5 +77,6 @@ jobs:
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           ruby --version
           bundle install
+          bundle exec solargraph gems || true
           bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails

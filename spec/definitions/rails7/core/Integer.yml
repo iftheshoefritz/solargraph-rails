@@ -1,4 +1,293 @@
 ---
+Integer.acts_like?:
+  types:
+  - Boolean
+  skip: false
+Integer.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Integer.anonymous?:
+  types:
+  - Boolean
+  skip: false
+Integer.as_json:
+  types:
+  - undefined
+  skip: false
+Integer.attr_internal:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.attr_internal_accessor:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.blank?:
+  types:
+  - Boolean
+  skip: false
+Integer.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.class_attribute:
+  types:
+  - undefined
+  skip: false
+Integer.concern:
+  types:
+  - undefined
+  skip: false
+Integer.concerning:
+  types:
+  - undefined
+  skip: false
+Integer.deep_dup:
+  types:
+  - undefined
+  skip: false
+Integer.delegate:
+  types:
+  - undefined
+  skip: false
+Integer.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Integer.deprecate:
+  types:
+  - undefined
+  skip: false
+Integer.descendants:
+  types:
+  - undefined
+  skip: false
+Integer.duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.in?:
+  types:
+  - Boolean
+  skip: false
+Integer.instance_values:
+  types:
+  - undefined
+  skip: false
+Integer.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.method_visibility:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent:
+  types:
+  - undefined
+  skip: false
+Integer.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Integer.module_parents:
+  types:
+  - undefined
+  skip: false
+Integer.presence:
+  types:
+  - nil
+  - self
+  skip: false
+Integer.presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Integer.present?:
+  types:
+  - Boolean
+  skip: false
+Integer.redefine_method:
+  types:
+  - undefined
+  skip: false
+Integer.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Integer.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Integer.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Integer.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Integer.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Integer.to_param:
+  types:
+  - undefined
+  skip: false
+Integer.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.try:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.try!:
+  types:
+  - generic<T>
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer.with_options:
+  types:
+  - undefined
+  skip: false
+Integer#acts_like?:
+  types:
+  - Boolean
+  skip: false
+Integer#as_json:
+  types:
+  - undefined
+  skip: false
+Integer#blank?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#byte:
   types:
   - undefined
@@ -13,12 +302,38 @@ Integer#class_eval:
   skip: false
 Integer#day:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#days:
+  types:
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer#deep_dup:
   types:
   - undefined
   skip: false
+Integer#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#exabyte:
   types:
   - undefined
@@ -29,12 +344,24 @@ Integer#exabytes:
   skip: false
 Integer#fortnight:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#fortnights:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#gigabyte:
   types:
   - undefined
@@ -45,19 +372,37 @@ Integer#gigabytes:
   skip: false
 Integer#hour:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#hours:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#html_safe?:
   types:
-  - undefined
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#in?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Integer#in_milliseconds:
   types:
@@ -89,23 +434,47 @@ Integer#megabytes:
   skip: false
 Integer#minute:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#minutes:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#month:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#months:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#multiple_of?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Integer#ordinal:
   types:
@@ -125,25 +494,38 @@ Integer#petabytes:
   skip: false
 Integer#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Integer#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Integer#present?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
 Integer#second:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#seconds:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#terabyte:
   types:
   - undefined
@@ -162,41 +544,94 @@ Integer#to_fs:
   skip: false
 Integer#to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Integer#to_param:
   types:
   - undefined
   skip: false
 Integer#to_query:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#to_s:
   types:
   - String
-  skip: true
+  skip: false
 Integer#try:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#try!:
   types:
+  - generic<T>
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#week:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#weeks:
+  types:
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Integer#with_options:
   types:
   - undefined
   skip: false
 Integer#year:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Integer#years:
   types:
-  - undefined
-  skip: false
+  - ActiveSupportDuration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha

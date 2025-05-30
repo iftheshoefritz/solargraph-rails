@@ -5,7 +5,30 @@ module Helpers
     source
   end
 
+  def add_to_skip(data)
+    unless data['skip'].is_a?(Array)
+      data['skip'] = []
+    end
+    data['skip'] << Solargraph::VERSION
+    data['skip'].sort!.uniq!
+  end
+
+  def remove_skip(data)
+    if data['skip'].is_a?(Array)
+      data['skip'].delete(Solargraph::VERSION)
+      data['skip'].sort!.uniq!
+      if data['skip'].empty?
+        data['skip'] = false
+      end
+    else
+      data['skip'] = false
+    end
+  end
+
   def assert_matches_definitions(map, class_name, definition_name, update: false)
+    if ENV['FORCE_UPDATE'] == 'true'
+      update = true
+    end
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
@@ -31,43 +54,78 @@ module Helpers
     definitions.each do |meth, data|
       meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
 
-      pin =
+      # @type [Array<Solargraph::Pin::Base>]
+      pins =
         if meth.start_with?('.')
-          class_methods.find { |p| p.name == meth[1..-1] }
+          class_methods.select { |p| p.name == meth[1..-1] }
         elsif meth.start_with?('#')
-          instance_methods.find { |p| p.name == meth[1..-1] }
+          instance_methods.select { |p| p.name == meth[1..-1] }
         end
 
+      # @type [Array<Solargraph::Pin::Base>] pins
+      relevant_pins = pins.select { |p| p.path == pins.first.path }
+
+      meh_types = ['BasicObject', 'Object', 'undefined']
+
+      good_pins, meh_pins = relevant_pins.partition do |p|
+        return_type_tags = p.typify(map).map(&:tag)
+        meh_types.none? { |meh_type| return_type_tags.include? meh_type }
+      end
+
+      # try hard to get a high quality and stable result
+      pin = (good_pins.sort_by { |p| p.typify(map).map(&:tag).sort } +
+             meh_pins.sort_by { |p| p.typify(map).map(&:tag).sort }).first
+
+      skip = false
       typed += 1 if data['types'] != ['undefined']
-      skipped += 1 if data['skip']
+      if data['skip'] == true ||
+         data['skip'] == Solargraph::VERSION ||
+         (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
+        skip = true
+        skipped += 1
+      end
 
       # Completion is found, but marked as skipped
-      if pin && data['skip']
-        puts <<~STR
-          #{class_name}#{meth} is marked as skipped in #{definitions_file}, but is actually present.
-          Consider setting skip=false
-        STR
-      elsif pin
-        effective_type = pin.return_type.map(&:tag)
-        specified_type = data['types']
+      if pin
+        effective_type = pin.typify(map).map(&:tag).sort.uniq
+        specified_type = data['types'].sort.uniq
 
         if effective_type != specified_type
           if update
-            data['types'] = effective_type
-          else
+            if effective_type == ['undefined']
+              add_to_skip(data)
+            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject') || specified_type.include?('Object')
+              # sounds like a better type
+              data['types'] = effective_type
+            elsif !skip
+              # incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+              add_to_skip(data)
+            end
+          elsif !skip
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
+        elsif skip
+          if update
+            remove_skip(data)
+          else
+            incorrect << <<~STR
+            #{class_name}#{meth} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
+            Consider setting skip=false
+          STR
+          end
         end
-        data['skip'] = false if update
       elsif update
         skipped += 1
-        data['skip'] = true
-      elsif data['skip']
+        add_to_skip(data)
+      elsif skip
         next
       else
         missing << meth
       end
     end
+
+
+    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     if missing.any?
       raise <<~STR
@@ -82,8 +140,6 @@ module Helpers
           #{incorrect.join("\n  ")}
       STR
     end
-
-    File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
     total = definitions.keys.size
 
@@ -136,18 +192,33 @@ module Helpers
 
     Dir.chdir folder do
       yield injector if block_given?
-      map = Solargraph::ApiMap.load('./')
+      if Solargraph::ApiMap.respond_to?(:load_with_cache)
+        map = Solargraph::ApiMap.load_with_cache('./', STDERR)
+      else
+        map = Solargraph::ApiMap.load('./')
+      end
       injector.files.each { |f| File.delete(f) }
     end
 
     map
   end
 
-  def assert_public_instance_method(map, query, return_type, &block)
+  def assert_public_instance_method(map, query, return_type, args: {}, &block)
     pin = find_pin(query, map)
     expect(pin).to_not be_nil
     expect(pin.scope).to eq(:instance)
-    expect(pin.return_type.map(&:tag)).to eq(return_type)
+    pin_return_type = pin.return_type
+    pin_return_type = pin.typify map if pin_return_type.undefined?
+    pin_return_type = pin.probe map if pin_return_type.undefined?
+    expect(pin_return_type.map(&:tag)).to eq(return_type) #     , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
+    args.each_pair do |name, type|
+      expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil
+      expect(parameter.return_type.tag).to eq(type)
+    end
+    pin.parameters.each do |param|
+      expect(args).to have_key(param.name.to_sym)
+      expect(param.return_type.tag).to eq(args[param.name.to_sym])
+    end
 
     yield pin if block_given?
   end
@@ -162,11 +233,35 @@ module Helpers
   end
 
   def find_pin(path, map = api_map)
-    find_pins(path, map).first
+    find_pin_by_path(map.pins, path, map)
   end
 
-  def find_pins(path, map = api_map)
-    map.pins.select { |p| p.path == path }
+  def find_pin_by_path(pins, path, map)
+    if pins.empty?
+      return nil
+    else
+      top_level_pins = pins.select { |p| p.path == path }
+      if top_level_pins.empty?
+        scope = nil
+        scope = :class
+        class_name, meth, rest = path.split('.')
+        raise "Did not understand path #{path}" unless rest.nil?
+        if meth.nil?
+          class_name, meth, rest = class_name.split('#')
+          raise "Did not understand path #{path}" unless rest.nil?
+          scope = :instance
+        end
+        return map.get_method_stack(class_name, meth, scope: scope).first
+      end
+      return_pin = top_level_pins.find do |pin|
+        pin_return_type = pin.return_type
+        pin_return_type = pin.typify map if pin_return_type.undefined?
+        pin_return_type = pin.probe map if pin_return_type.undefined?
+        pin_return_type.defined?
+      end
+      return_pin ||= top_level_pins.first
+      return_pin
+    end
   end
 
   def local_pins(map = api_map)

@@ -1,7 +1,7 @@
 ---
 Module.acts_like?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module.alias_attribute:
   types:
@@ -9,7 +9,7 @@ Module.alias_attribute:
   skip: false
 Module.anonymous?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module.as_json:
   types:
@@ -41,8 +41,7 @@ Module.attr_internal_writer:
   skip: false
 Module.blank?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
 Module.cattr_accessor:
   types:
@@ -90,15 +89,15 @@ Module.descendants:
   skip: false
 Module.duplicable?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module.html_safe?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module.in?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module.instance_values:
   types:
@@ -138,16 +137,17 @@ Module.module_parents:
   skip: false
 Module.presence:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module.presence_in:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module.present?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
 Module.redefine_method:
   types:
@@ -195,8 +195,13 @@ Module.thread_mattr_writer:
   skip: false
 Module.to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Module.to_param:
   types:
   - undefined
@@ -219,7 +224,7 @@ Module.with_options:
   skip: false
 Module#acts_like?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module#alias_attribute:
   types:
@@ -227,7 +232,7 @@ Module#alias_attribute:
   skip: false
 Module#anonymous?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module#as_json:
   types:
@@ -251,8 +256,7 @@ Module#attr_internal_writer:
   skip: false
 Module#blank?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
 Module#cattr_accessor:
   types:
@@ -292,15 +296,15 @@ Module#deprecate:
   skip: false
 Module#duplicable?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module#html_safe?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module#in?:
   types:
-  - undefined
+  - Boolean
   skip: false
 Module#instance_values:
   types:
@@ -340,16 +344,17 @@ Module#module_parents:
   skip: false
 Module#presence:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module#presence_in:
   types:
-  - Object
+  - self
+  - nil
   skip: false
 Module#present?:
   types:
-  - 'true'
-  - 'false'
+  - Boolean
   skip: false
 Module#redefine_method:
   types:
@@ -397,8 +402,13 @@ Module#thread_mattr_writer:
   skip: false
 Module#to_json:
   types:
-  - undefined
-  skip: true
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Module#to_param:
   types:
   - undefined
