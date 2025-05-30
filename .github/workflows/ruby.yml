@@ -28,12 +28,21 @@ jobs:
           - "0.51.2"
           - "0.52.0"
           - "0.54.6.alpha"
+          - "0.55.alpha"
         rails-version:
           - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: cache gemfile.lock for better cache stability
+        uses: actions/cache@v3
+        id: gemfilelock
+        with:
+          key: ${{ runner.os }}-gemfilelock-${{ matrix.ruby-version }}
+          path: |
+            ${{ env.GITHUB_WORKSPACE }}/Gemfile.lock
 
       - uses: ruby/setup-ruby@v1
         env:
