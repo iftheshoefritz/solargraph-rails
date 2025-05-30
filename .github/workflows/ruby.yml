@@ -49,8 +49,8 @@ jobs:
           set -x
           export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
-          cd "spec/rails${{ matrix.rails-version }}"
-          bundle install
+          # next line from README.md
+          cd spec/rails${{ matrix.rails-version }} && bundle install && rbs collection init && rbs collection install && cd ../../
 
       - name: cache gem annotations
         uses: actions/cache@v3
