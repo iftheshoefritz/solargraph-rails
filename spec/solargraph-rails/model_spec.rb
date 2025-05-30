@@ -72,7 +72,12 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
-    assert_class_method(api_map, 'Transaction.positive', ['Class<Transaction>'])
+    assert_class_method(
+      api_map,
+      'Transaction.positive',
+      ['Class<Transaction>'],
+      args: { arg: 'undefined' }
+    )
   end
 
   it 'handles primary_abstract_class without breaking' do
@@ -98,11 +103,9 @@ RSpec.describe Solargraph::Rails::Model do
     assert_class_method(
       api_map,
       'Person.taller_than',
-      ['Class<Person>']
-    ) do |pin|
-      expect(pin.parameters).not_to be_empty
-      expect(pin.parameters.first.name).to eq('min_height')
-    end
+      ['Class<Person>'],
+      args: { min_height: 'undefined' }
+    )
   end
 
   it 'does not generate methods for variable named scope' do
@@ -119,13 +122,12 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
+    # TODO: Does this test do the thing it says does?
     assert_class_method(
       api_map,
       'Person.taller_than',
-      ['Class<Person>']
-    ) do |pin|
-      expect(pin.parameters).not_to be_empty
-      expect(pin.parameters.first.name).to eq('min_height')
-    end
+      ['Class<Person>'],
+      args: { min_height: 'undefined' }
+    )
   end
 end

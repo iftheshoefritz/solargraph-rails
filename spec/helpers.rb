@@ -203,10 +203,10 @@ module Helpers
     map
   end
 
-  def assert_public_instance_method(map, query, return_type, args: {}, &block)
+  def assert_generic_method(map, query, return_type, args: {}, scope: map.includes?("#") ? :instance : :class, &block)
     pin = find_pin(query, map)
     expect(pin).to_not be_nil
-    expect(pin.scope).to eq(:instance)
+    expect(pin.scope).to eq(scope)
     pin_return_type = pin.return_type
     pin_return_type = pin.typify map if pin_return_type.undefined?
     pin_return_type = pin.probe map if pin_return_type.undefined?
@@ -219,17 +219,14 @@ module Helpers
       expect(args).to have_key(param.name.to_sym)
       expect(param.return_type.tag).to eq(args[param.name.to_sym])
     end
-
-    yield pin if block_given?
   end
 
-  def assert_class_method(map, query, return_type, &block)
-    pin = find_pin(query, map)
-    expect(pin).to_not be_nil
-    expect(pin.scope).to eq(:class)
-    expect(pin.return_type.map(&:tag)).to eq(return_type)
+  def assert_public_instance_method(map, query, return_type, args: {}, &block)
+    assert_generic_method(map, query, return_type, args: args, scope: :instance, &block)
+  end
 
-    yield pin if block_given?
+  def assert_class_method(map, query, return_type, args: {}, &block)
+    assert_generic_method(map, query, return_type, args: args, scope: :class, &block)
   end
 
   def find_pin(path, map = api_map)
