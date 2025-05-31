@@ -43,25 +43,26 @@ module Solargraph
 
         return [] unless table
 
-        pins = table.flat_map do |column, data|
-          ruby_type = RUBY_TYPES.fetch(data.type.to_sym)
+        pins = []
+        table.each do |column, data|
           location = Util.build_location(data.ast, 'db/schema.rb')
-
-          [
-            Util.build_public_method(
-              ns,
-              column,
-              types: [ruby_type],
-              location: location
-            ),
-            Util.build_public_method(
-              ns,
-              "#{column}=",
-              types: [ruby_type],
-              params: { 'value' => [ruby_type] },
-              location: location
-            ),
-          ]
+          type = RUBY_TYPES[data.type.to_sym] || 'String'
+          %w[% %_in_database %_before_last_save].each do |tpl|
+            name = tpl.sub('%', column)
+            pins << Util.build_public_method(ns, name, types: [type], location: location)
+          end
+          %w[%? %_changed? saved_change_to_%? will_save_change_to_%?].each do |tpl|
+            name = tpl.sub('%', column)
+            pins << Util.build_public_method(ns, name, types: ['Boolean'], location: location)
+          end
+          %w[%_change_to_be_saved saved_change_to_%].each do |tpl|
+            name = tpl.sub('%', column)
+            types = ["Array(#{type}, #{type})"]
+            pins << Util.build_public_method(ns, name, types: types, location: location)
+          end
+          pins << Util.build_public_method(ns, "#{column}=", types: [type],
+                                           params: { 'value' => [type] },
+                                           location: location)
         end
 
         if pins.any?

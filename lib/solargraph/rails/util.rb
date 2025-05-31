@@ -4,6 +4,8 @@ module Solargraph
       def self.build_public_method(
         ns,
         name,
+        comments: nil,
+        parameters: [],
         types: nil,
         params: {},
         location: nil,
@@ -12,22 +14,23 @@ module Solargraph
       )
         opts = {
           name: name,
+          parameters: parameters,
           location: location,
           closure: ns,
           scope: scope,
           attribute: attribute
         }
 
-        comments = []
+        comments_arr = [comments].compact
         params.each do |name, types|
-          comments << "@param [#{types.join(',')}] #{name}"
+          comments_arr << "@param [#{types.join(',')}] #{name}"
         end
-        comments << "@return [#{types.join(',')}]" if types
+        comments_arr << "@return [#{types.join(',')}]" if types
 
-        opts[:comments] = comments.join("\n")
+        opts[:comments] ||= comments_arr.join("\n")
 
         m = Solargraph::Pin::Method.new(**opts)
-        parameters = params.map do |name, type|
+        parameters = parameters + params.map do |name, type|
             Solargraph::Pin::Parameter.new(
               location: nil,
               closure: m,
