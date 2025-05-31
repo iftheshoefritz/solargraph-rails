@@ -50,7 +50,7 @@ module Solargraph
         pins += run_feature { Storage.instance.process(source_map, ns) }
         pins += run_feature { Autoload.instance.process(source_map, ns, ds) }
         pins += run_feature { Devise.instance.process(source_map, ns) }
-        pins += run_feature { Delegate.instance.process(source_map, ns) }
+        pins += run_feature { Delegate.instance.process(source_map, ns) } if Delegate.supported?
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
 
         Solargraph::Environ.new(pins: pins)

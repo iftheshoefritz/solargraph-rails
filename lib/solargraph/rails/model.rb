@@ -90,15 +90,10 @@ module Solargraph
       end
 
       def extract_custom_class_name(ast)
-        options = ast.children[3..-1].find { |n| n.type == :hash }
-        return unless options
+        node = Util.extract_option(ast, :class_name)
+        return unless node && node.type == :str
 
-        class_name_pair =
-          options.children.find do |n|
-            n.children[0].deconstruct == %i[sym class_name] &&
-              n.children[1].type == :str
-          end
-        class_name_pair && class_name_pair.children.last.children.last
+        node.children.last
       end
     end
   end
