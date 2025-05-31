@@ -4,6 +4,8 @@ module Solargraph
       def self.build_public_method(
         ns,
         name,
+        comments: nil,
+        parameters: [],
         types: nil,
         params: {},
         location: nil,
@@ -12,22 +14,23 @@ module Solargraph
       )
         opts = {
           name: name,
+          parameters: parameters,
           location: location,
           closure: ns,
           scope: scope,
           attribute: attribute
         }
 
-        comments = []
+        comments_arr = [comments].compact
         params.each do |name, types|
-          comments << "@param [#{types.join(',')}] #{name}"
+          comments_arr << "@param [#{types.join(',')}] #{name}"
         end
-        comments << "@return [#{types.join(',')}]" if types
+        comments_arr << "@return [#{types.join(',')}]" if types
 
-        opts[:comments] = comments.join("\n")
+        opts[:comments] ||= comments_arr.join("\n")
 
         m = Solargraph::Pin::Method.new(**opts)
-        parameters = params.map do |name, type|
+        parameters = parameters + params.map do |name, type|
             Solargraph::Pin::Parameter.new(
               location: nil,
               closure: m,
@@ -79,6 +82,27 @@ module Solargraph
 
       def self.method_return(path, type)
         Solargraph::Pin::Reference::Override.method_return(path, type)
+      end
+
+      # Extract the value of a given option from a :send syntax node.
+      #
+      # E.g. given an AST node for `foo(:bar, baz: qux)`, you can use
+      # `extract_option(node, :baz)` to get the AST node for `qux`.
+      #
+      # @param call_node [Node]
+      # @param option_name [Symbol]
+      # @return [Node, nil]
+      def self.extract_option(call_node, option_name)
+        options = call_node.children[3..-1].find { |n| n.type == :hash }
+        return unless options
+
+        pair =
+          options.children.find do |n|
+            n.children[0] && n.children[0].deconstruct == [:sym, option_name]
+          end
+        return unless pair
+
+        pair.children[1]
       end
     end
   end
