@@ -8,7 +8,8 @@ module Solargraph
         params: {},
         location: nil,
         attribute: false,
-        scope: :instance
+        scope: :instance,
+        return_docs: ''
       )
         opts = {
           name: name,
@@ -22,7 +23,15 @@ module Solargraph
         params.each do |name, types|
           comments << "@param [#{types.join(',')}] #{name}"
         end
-        comments << "@return [#{types.join(',')}]" if types
+
+        if types || !return_docs.empty?
+          ret = '@return '
+          ret += "[#{types.join(',')}] " if types
+          ret += return_docs
+
+          comments << ret.strip
+        end
+
 
         opts[:comments] = comments.join("\n")
 

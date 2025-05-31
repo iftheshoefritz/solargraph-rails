@@ -58,10 +58,13 @@ RSpec.describe Solargraph::Rails::Schema do
     assert_public_instance_method(map, "Account#balance=", ["BigDecimal"],
                                   args: { value: 'BigDecimal' })
     assert_public_instance_method(map, "Account#some_int", ["Integer"])
+    assert_public_instance_method(map, "Account#some_int?", ["Boolean"])
     assert_public_instance_method(map, "Account#some_date", ["Date"])
     assert_public_instance_method(map, "Account#some_big_id", ["Integer"])
     assert_public_instance_method(map, "Account#name", ["String"])
+    assert_class_method(map, "Account.find_by_name", ["Account", "nil"], args: { value: 'String' })
     assert_public_instance_method(map, "Account#active", ["Boolean"])
+    assert_public_instance_method(map, "Account#active?", ["Boolean"])
     assert_public_instance_method(map, "Account#notes", ["String"])
     assert_public_instance_method(map, "Account#some_ip", ["IPAddr"])
     assert_public_instance_method(map, "Account#uuid", ["String"])

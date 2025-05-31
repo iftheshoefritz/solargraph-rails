@@ -61,6 +61,21 @@ module Solargraph
               params: { 'value' => [ruby_type] },
               location: location
             ),
+            Util.build_public_method(
+              ns,
+              "#{column}?",
+              types: ['Boolean'],
+              location: location,
+              return_docs: 'The truthy value of the column - like present?, but returns false on 0'
+            ),
+            Util.build_public_method(
+              ns,
+              "find_by_#{column}",
+              types: [ns, 'nil'],
+              params: { 'value' => [ruby_type] },
+              location: location,
+              scope: :class
+            )
           ]
         end
 
