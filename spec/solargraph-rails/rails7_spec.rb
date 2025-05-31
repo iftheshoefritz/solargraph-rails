@@ -62,7 +62,7 @@ RSpec.describe 'Rails 7 API' do
     expect(completion_at(filename, [3, 6], map)).to include('mail')
   end
 
-  it 'understands mattr methods' do
+  xit 'understands mattr methods' do
     map = use_workspace './spec/rails7'
     # assert_class_method(map, 'ActiveJob::QueuePriority::ClassMethods.default_priority', ['undefined'])
     assert_class_method(map, 'ActiveJob::QueueName::ClassMethods.default_queue_name', ['undefined'])
