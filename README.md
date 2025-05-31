@@ -30,19 +30,19 @@ The various Ruby intellisense tools are ok at knowing that there are `Book` and 
 
 Since these attributes are only created at runtime, a simple static analysis of the `Book` class alone can't identify them. Your editor has no idea that these attributes exist, but they're amongst the most common things that you will work with in any Rails app.
 
-That's where this plugin for Solargraph comes in: it parses the database schema to give Solargraph some extra hints on top of Solargraph's use of YARD and RBS. For instance:
+That's where this plugin for Solargraph comes in: it understands db/schema.rb and any comments from the annotate\_models gem for models, and also supplies key annotations and Rails-specific context on top of what Solargraph pulls via YARD and RBS.   As a result, you have access to database attributes:
 
  ![Go to attribute schema definition](assets/sg_rails_1_0_go_to_attribute_definition.gif)
 
- ... or ActiveRecord finders:
+ ... and ActiveRecord finders:
 
  ![ActiveRecord method support](assets/sg_rails_1_0_activerecord_support.gif)
 
- ... or associations:
+ ... and associations:
 
  ![Association support](assets/sg_rails_1_0_association_completion.gif)
 
- ... or routes file:
+ ... and routes file syntax:
 
  ![Routes file support](assets/sg_rails_1_0_routes_support.gif)
 

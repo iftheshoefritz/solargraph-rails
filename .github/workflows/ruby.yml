@@ -53,16 +53,13 @@ jobs:
           cd "spec/rails${{ matrix.rails-version }}"
           bundle install
 
-      #- name: Setup upterm session
-      #  uses: lhotari/action-upterm@v1
-
-      - name: cache gem annotations
-        uses: actions/cache@v3
-        id: dot-cache
+      - name: Restore cache of gem annotations
+        id: dot-cache-restore
+        uses: actions/cache/restore@v4
         with:
           key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
           path: |
-            /home/runner/.cache
+            /home/runner/.cache/solargraph
 
       - name: bundle list
         run: bundle list && cat Gemfile.lock && find vendor -name Gemfile
@@ -83,3 +80,12 @@ jobs:
           bundle exec solargraph gems || true
           bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails
+
+      - name: Cache gem annotations
+        id: dot-cache-save
+        if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
+          path: |
+            /home/runner/.cache/solargraph
