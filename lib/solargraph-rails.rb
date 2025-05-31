@@ -11,6 +11,7 @@ require_relative 'solargraph/rails/model'
 require_relative 'solargraph/rails/devise'
 require_relative 'solargraph/rails/walker'
 require_relative 'solargraph/rails/rails_api'
+require_relative 'solargraph/rails/routes_dsl'
 require_relative 'solargraph/rails/delegate'
 require_relative 'solargraph/rails/storage'
 require_relative 'solargraph/rails/debug'
@@ -35,12 +36,13 @@ module Solargraph
       end
 
       def local(source_map)
+        run_feature { RoutesDsl.local(source_map) }
+
         pins = []
-        ds =
-          source_map.document_symbols.select do |n|
-            n.is_a?(Solargraph::Pin::Namespace)
-          end
-        ns = ds.first
+        ds = source_map.document_symbols.select do |n|
+          n.is_a?(Solargraph::Pin::Namespace)
+        end
+        ns = ds.find { |s| s.type == :class }
 
         return EMPTY_ENVIRON unless ns
 
