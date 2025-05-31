@@ -283,6 +283,7 @@ Date.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date.try!:
   types:
   - generic<T>
@@ -294,6 +295,7 @@ Date.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date.with_options:
   types:
   - undefined
@@ -329,6 +331,7 @@ Date#<=>:
   - 0.48.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
 Date#acts_like?:
   types:
   - Boolean
@@ -414,6 +417,7 @@ Date#as_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -604,6 +608,7 @@ Date#in_time_zone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date#inspect:
   types:
   - String
@@ -824,6 +829,7 @@ Date#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date#try!:
   types:
   - generic<T>
@@ -835,6 +841,7 @@ Date#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date#weeks_ago:
   types:
   - undefined
