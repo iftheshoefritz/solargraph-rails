@@ -169,15 +169,16 @@ module Solargraph
         RETURNS_RELATION.each do |method, params|
           next if OVERLOADED.key(method)
 
-          parameters = params.map do |name, type|
+          method = Util.build_public_method(namespace, method, scope: scope, parameters: [], types: [relation_type(model_class)])
+          params.each do |name, type|
             decl = :arg
             if name.start_with?("*")
               name = name[1..]
               decl = :restarg
             end
-            Solargraph::Pin::Parameter.new(name: name, decl: decl)
+            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method)
           end
-          pins << Util.build_public_method(namespace, method, scope: scope, parameters: parameters, types: [relation_type(model_class)])
+          pins << method
         end
 
         RETURNS_INSTANCE.each do |method|
@@ -202,7 +203,7 @@ module Solargraph
       end
 
       ANY_ARGS = {"*args" => nil}
-      
+
       RETURNS_RELATION = {
         "all" => {},
         "and" => {"other" => "ActiveRecord::Relation"},
