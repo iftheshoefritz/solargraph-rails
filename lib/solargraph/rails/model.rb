@@ -69,7 +69,7 @@ module Solargraph
             location = ast.children.last.location
             block_pin = source_map.locate_block_pin(location.line, location.column)
             parameters.concat(block_pin.parameters.clone)
-            block_pin.instance_variable_set(:@binder, relation)
+            block_pin.instance_variable_set(:@binder, ComplexType.parse(relation.path))
           end
 
           location = Util.build_location(ast, ns.filename)
@@ -164,18 +164,24 @@ module Solargraph
       # @return [Array<Solargraph::Pin::Method>]
       def relation_method_pins(namespace, scope, model_class)
         pins = []
-        finalize_type = -> (template) { template.gsub '$T', model_class }
-        RETURNS_RELATION.each do |method, params|
-          next if OVERLOADED.key(method)
+        finalize_type = ->(template) { template.gsub '$T', model_class }
+        RETURNS_RELATION.each do |method_name, params|
+          next if OVERLOADED.key(method_name)
 
-          method = Util.build_public_method(namespace, method, scope: scope, parameters: [], types: [relation_type(model_class)])
+          method = Util.build_public_method(namespace, method_name, scope: scope, parameters: [], types: [relation_type(model_class)])
           params.each do |name, type|
             decl = :arg
-            if name.start_with?("*")
+            # TODO: maybe I can remove this and go back to letting solargraph parse a comment block
+            # @see https://github.com/castwide/solargraph/pull/601
+            if name.start_with?('**')
+              name = name[2..]
+              decl = :kwrestarg
+            elsif name.start_with?('*')
               name = name[1..]
               decl = :restarg
             end
-            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method)
+            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method,
+                                                                comments: "@return [#{type}]")
           end
           pins << method
         end
