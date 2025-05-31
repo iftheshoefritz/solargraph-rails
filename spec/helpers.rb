@@ -234,8 +234,8 @@ module Helpers
     yield pin if block_given?
   end
 
-  def assert_class_method(map, query, return_type, args: {}, &block)
-    assert_method(map, query, return_type, args: {}, &block)
+  def assert_class_method(map, query, return_type, args: nil, &block)
+    assert_method(map, query, return_type, args: args, &block)
   end
 
   def find_pin(path, map = api_map)
