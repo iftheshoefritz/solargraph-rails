@@ -107,7 +107,6 @@ module Solargraph
           pins << Solargraph::Pin::DelegatedMethod.new(closure: relation, scope: :instance, method: pin)
         end
 
-
         unless abstract
           pins += relation_method_pins(ns, :class, ns.path)
           pins += relation_method_pins(relation, :instance, ns.path)
@@ -204,6 +203,12 @@ module Solargraph
 
       ANY_ARGS = {"*args" => nil}
 
+      # @todo can this be replaced with rbs_collection's
+      #   _ActiveRecord_Relation interface?  Potential leads:
+      #   https://github.com/pocke/rbs_rails
+      #   https://github.com/ruby/gem_rbs_collection/blob/6f2d93ab244008bec51db7b4fffae68b40232502/gems/paranoia/2.5/paranoia.rbs#L6C1-L7C1
+      #   https://github.com/ksss/orthoses-rails
+      #   https://github.com/PawCorp/walltaker/blob/728682baa56a267611aca1ddb9f44fdcd97f6c80/sig/rbs_rails/app/models/user.rbs#L2
       RETURNS_RELATION = {
         "all" => {},
         "and" => {"other" => "ActiveRecord::Relation"},
