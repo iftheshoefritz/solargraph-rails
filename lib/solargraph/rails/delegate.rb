@@ -37,14 +37,14 @@ module Solargraph
 
           prefix = nil
           if prefix_node
-            if prefix_node.type == :sym 
+            if prefix_node.type == :sym
               prefix = prefix_node.children[0]
             elsif prefix_node.type == :true && delegate_node.type == :sym
               prefix = delegate_node.children[0]
             end
           end
 
-          location = Util.build_location(delegate_node, ns.filename)
+          location = Util.build_location(ast, ns.filename)
           methods.each do |meth|
             method_name = meth.children[0]
             pins << Solargraph::Pin::DelegatedMethod.new(
@@ -54,6 +54,7 @@ module Solargraph
               node: meth,
               receiver: chain,
               receiver_method_name: method_name.to_s,
+              location: location
             )
           end
         end

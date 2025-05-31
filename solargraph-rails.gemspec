@@ -4,7 +4,7 @@ require 'solargraph/rails/version'
 
 
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
-solargraph_version = solargraph_force_ci_version ? [solargraph_force_ci_version] : [">= 0.48.0", '<0.53.0']
+solargraph_version = solargraph_force_ci_version ? [solargraph_force_ci_version] : [">= 0.48.0"]
 
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 2.3'
+  spec.add_development_dependency 'bundler', '~> 2'
   spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
 

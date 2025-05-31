@@ -4,10 +4,10 @@ module Solargraph
       def self.build_public_method(
         ns,
         name,
-        comments: nil,
-        parameters: [],
-        types: nil,
         params: {},
+        parameters: [],
+        comments: nil,
+        types: nil,
         location: nil,
         attribute: false,
         scope: :instance
@@ -73,9 +73,9 @@ module Solargraph
           File.expand_path(path),
           Solargraph::Range.from_to(
             ast.location.first_line,
-            0,
+            ast.location.column,
             ast.location.last_line,
-            ast.location.column
+            ast.location.last_column
           )
         )
       end
