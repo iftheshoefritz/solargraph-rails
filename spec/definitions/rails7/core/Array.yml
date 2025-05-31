@@ -399,7 +399,7 @@ Array#index_with:
   skip: false
 Array#inquiry:
   types:
-  - ActiveSupportArrayInquirer<generic<Elem>>
+  - ActiveSupport::ArrayInquirer<generic<Elem>>
   skip:
   - 0.48.0
   - 0.49.0

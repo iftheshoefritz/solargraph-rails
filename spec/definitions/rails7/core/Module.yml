@@ -18,7 +18,28 @@ Module.as_json:
 Module.attr_internal:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Module.used_modules:
+  types:
+  - Array<Module>
+  skip:
+  - 0.48.0
+Module.nesting:
+  types:
+  - Array<Module>
+  skip:
+  - 0.48.0
+Module.constants:
+  types:
+  - Array<Integer>
+  skip:
+  - 0.48.0
 Module.attr_internal_accessor:
   types:
   - void
@@ -89,12 +110,24 @@ Module.descendants:
   skip: false
 Module.duplicable?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.html_safe?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.in?:
   types:
   - Boolean
@@ -296,12 +329,24 @@ Module#deprecate:
   skip: false
 Module#duplicable?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#html_safe?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#in?:
   types:
   - Boolean

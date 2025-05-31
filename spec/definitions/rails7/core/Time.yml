@@ -98,7 +98,7 @@ Time.concerning:
   skip: false
 Time.current:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   skip:
   - 0.48.0
   - 0.49.0
@@ -146,7 +146,7 @@ Time.duplicable?:
   - 0.54.6.alpha
 Time.find_zone:
   types:
-  - ActiveSupportTimeZone
+  - ActiveSupport::TimeZone
   - nil
   skip:
   - 0.48.0
@@ -157,7 +157,7 @@ Time.find_zone:
   - 0.54.6.alpha
 Time.find_zone!:
   types:
-  - ActiveSupportTimeZone
+  - ActiveSupport::TimeZone
   skip:
   - 0.48.0
   - 0.49.0
@@ -324,7 +324,7 @@ Time.with_options:
   skip: false
 Time.zone:
   types:
-  - ActiveSupportTimeZone
+  - ActiveSupport::TimeZone
   skip:
   - 0.48.0
   - 0.49.0
@@ -668,7 +668,7 @@ Time#in?:
   skip: false
 Time#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   - Time
   skip:
   - 0.48.0

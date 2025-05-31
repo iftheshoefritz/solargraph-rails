@@ -1154,7 +1154,7 @@ ActiveRecord::Base.connection_specification_name=:
   skip: false
 ActiveRecord::Base.connects_to:
   types:
-  - Array<::ActiveRecord::ConnectionAdapters::ConnectionPool>
+  - Array<ActiveRecord::ConnectionAdapters::ConnectionPool>
   skip:
   - 0.48.0
   - 0.49.0
@@ -3369,7 +3369,7 @@ ActiveRecord::Base.reflect_on_all_associations:
   - 0.54.6.alpha
 ActiveRecord::Base.reflect_on_all_attachments:
   types:
-  - Array<::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection>
+  - Array<ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection>
   skip:
   - 0.48.0
   - 0.49.0
@@ -3509,7 +3509,7 @@ ActiveRecord::Base.rewhere:
   skip: false
 ActiveRecord::Base.rich_text_association_names:
   types:
-  - Array<::String>
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
@@ -3701,14 +3701,9 @@ ActiveRecord::Base.second_to_last!:
   skip: false
 ActiveRecord::Base.select:
   types:
-  - Array<::String>
+  - Array<String>
   skip:
   - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.sequence_name:
   types:
   - undefined
@@ -4027,14 +4022,8 @@ ActiveRecord::Base.strict_loading_violation!:
   - 0.54.6.alpha
 ActiveRecord::Base.subclasses:
   types:
-  - Array<::Class>
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  - Array<Class>
+  skip: false
 ActiveRecord::Base.sum:
   types:
   - undefined
@@ -6079,7 +6068,7 @@ ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   - 0.54.6.alpha
 ActiveRecord::Base#slice:
   types:
-  - ActiveSupport::HashWithIndifferentAccess<::Symbol>
+  - ActiveSupport::HashWithIndifferentAccess<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
