@@ -55,16 +55,16 @@ RSpec.describe Solargraph::Rails::Model do
     assert_public_instance_method(
       api_map,
       'Account#transactions',
-      ['ActiveRecord::Associations::CollectionProxy<Transaction>']
+      ['Transaction::ActiveRecord_Relation']
     )
     assert_public_instance_method(
       api_map,
       'Account#things',
-      ['ActiveRecord::Associations::CollectionProxy<Thing>']
+      ['Thing::ActiveRecord_Relation']
     )
   end
 
-  it 'generates methods for scope' do
+  it 'exposes scopes as class methods' do
     load_string 'app/models/transaction.rb',
                 <<-RUBY
                 class Transaction < ActiveRecord::Base
@@ -72,7 +72,23 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
-    assert_class_method(api_map, 'Transaction.positive', ['Class<Transaction>'])
+    assert_class_method(api_map, 'Transaction.positive', ['Transaction::ActiveRecord_Relation'])
+    assert_public_instance_method(api_map, 'Transaction::ActiveRecord_Relation#positive', ['Transaction::ActiveRecord_Relation'])
+  end
+
+  it 'exposes scopes as relation instance methods' do
+    load_string 'app/models/person.rb',
+      <<~RUBY
+      class Person < ActiveRecord::Base
+        scope :taller_than, ->(h) { where(height: h..) }
+      end
+      RUBY
+
+    assert_public_instance_method(
+      api_map,
+      'Person::ActiveRecord_Relation#taller_than',
+      ['Person::ActiveRecord_Relation']
+    )
   end
 
   it 'handles primary_abstract_class without breaking' do
@@ -98,7 +114,7 @@ RSpec.describe Solargraph::Rails::Model do
     assert_class_method(
       api_map,
       'Person.taller_than',
-      ['Class<Person>']
+      ['Person::ActiveRecord_Relation']
     ) do |pin|
       expect(pin.parameters).not_to be_empty
       expect(pin.parameters.first.name).to eq('min_height')
@@ -122,10 +138,27 @@ RSpec.describe Solargraph::Rails::Model do
     assert_class_method(
       api_map,
       'Person.taller_than',
-      ['Class<Person>']
+      ['Person::ActiveRecord_Relation']
     ) do |pin|
       expect(pin.parameters).not_to be_empty
       expect(pin.parameters.first.name).to eq('min_height')
     end
+  end
+
+  it 'exposes class methods as instance methods on relations', if: Solargraph::Rails::Delegate.supported? do
+    load_string 'app/models/person.rb',
+      <<~RUBY
+      class Person < ActiveRecord::Base
+        def self.taller_than(h)
+          where(height: h..)
+        end
+      end
+      RUBY
+
+    assert_public_instance_method(
+      api_map,
+      'Person::ActiveRecord_Relation#taller_than',
+      ['Person::ActiveRecord_Relation']
+    )
   end
 end
