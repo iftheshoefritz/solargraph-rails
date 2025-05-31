@@ -180,7 +180,8 @@ module Solargraph
               name = name[1..]
               decl = :restarg
             end
-            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method, return_type: type)
+            method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method,
+                                                                comments: "@return [#{type}]")
           end
           pins << method
         end
