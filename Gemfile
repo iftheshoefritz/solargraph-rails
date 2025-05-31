@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Kind of ugly, but works. The setup-ruby action forces gems to be installed to vendor/bundle
 # If we use it naively we end up with vendor/bundle  and spec/rails7/vendor/bundle, which
 # breaks all the tests because docs are generated in two different directories.
@@ -44,7 +43,14 @@ if solargraph_force_ci_version == '0.54.6.alpha'
   gem 'solargraph',
       github: 'apiology/solargraph',
       branch: 'v54-alpha'
-    # path: '../solargraph'
+      # path: '../solargraph'
+elsif solargraph_force_ci_version == '0.55.alpha'
+  gem 'solargraph',
+      github: 'apiology/solargraph',
+      branch: '2025-04-28'
+      # path: '../solargraph'
+else
+  gem 'solargraph'
 end
 
 # Local gemfile for development tools, etc.

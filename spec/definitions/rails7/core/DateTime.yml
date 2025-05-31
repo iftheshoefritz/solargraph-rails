@@ -834,7 +834,7 @@ DateTime#in?:
   skip: false
 DateTime#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   - Time
   skip:
   - 0.48.0

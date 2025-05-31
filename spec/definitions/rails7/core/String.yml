@@ -407,7 +407,7 @@ String#from:
   skip: false
 String#html_safe:
   types:
-  - ActiveSupportSafeBuffer
+  - ActiveSupport::SafeBuffer
   skip:
   - 0.48.0
   - 0.49.0
@@ -441,7 +441,7 @@ String#in?:
   skip: false
 String#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   - Time
   skip:
   - 0.48.0
@@ -460,7 +460,7 @@ String#indent!:
   skip: false
 String#inquiry:
   types:
-  - ActiveSupportStringInquirer
+  - ActiveSupport::StringInquirer
   skip:
   - 0.48.0
   - 0.49.0

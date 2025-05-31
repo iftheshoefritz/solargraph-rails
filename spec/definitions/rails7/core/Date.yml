@@ -514,8 +514,17 @@ Date#class_eval:
   skip: false
 Date#compare_with_coercion:
   types:
-  - undefined
-  skip: false
+  - "-1"
+  - '0'
+  - '1'
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#days_ago:
   types:
   - undefined
@@ -743,8 +752,14 @@ Date#sunday:
   skip: false
 Date#to_formatted_s:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#to_fs:
   types:
   - String

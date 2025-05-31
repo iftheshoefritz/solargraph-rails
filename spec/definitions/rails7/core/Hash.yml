@@ -464,7 +464,7 @@ Hash#minimum:
   skip: false
 Hash#nested_under_indifferent_access:
   types:
-  - ActiveSupportHashWithIndifferentAccess<generic<K>, generic<V>>
+  - ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>
   skip:
   - 0.48.0
   - 0.49.0
@@ -646,7 +646,7 @@ Hash#with_defaults!:
   skip: false
 Hash#with_indifferent_access:
   types:
-  - ActiveSupportHashWithIndifferentAccess<generic<K>, generic<V>>
+  - ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>
   skip:
   - 0.48.0
   - 0.49.0

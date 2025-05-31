@@ -313,7 +313,7 @@ ActionController::Base.concerning:
   skip: false
 ActionController::Base.config:
   types:
-  - undefined
+  - ActiveSupport::InheritableOptions
   skip:
   - 0.48.0
   - 0.49.0
@@ -1462,14 +1462,8 @@ ActionController::Base.stylesheets_dir=:
   - 0.54.6.alpha
 ActionController::Base.subclasses:
   types:
-  - Array<::Class>
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  - Array<Class>
+  skip: false
 ActionController::Base.supports_path?:
   types:
   - 'true'
