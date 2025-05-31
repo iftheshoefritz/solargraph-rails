@@ -21,7 +21,6 @@ module Solargraph
           attribute: attribute
         }
 
-
         comments_arr = [comments].compact
         params.each do |name, types|
           comments_arr << "@param [#{types.join(',')}] #{name}"

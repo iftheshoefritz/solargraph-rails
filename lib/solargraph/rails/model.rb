@@ -107,7 +107,6 @@ module Solargraph
           pins << Solargraph::Pin::DelegatedMethod.new(closure: relation, scope: :instance, method: pin)
         end
 
-
         unless abstract
           pins += relation_method_pins(ns, :class, ns.path)
           pins += relation_method_pins(relation, :instance, ns.path)
@@ -169,12 +168,7 @@ module Solargraph
         RETURNS_RELATION.each do |method_name, params|
           next if OVERLOADED.key(method_name)
 
-          method = Pin::Method.new(
-            closure: namespace,
-            scope: scope,
-            name: method_name,
-            comments: "@return [#{relation_type(model_class)}]"
-          )
+          method = Util.build_public_method(namespace, method_name, scope: scope, parameters: [], types: [relation_type(model_class)])
           params.each do |name, type|
             decl = :arg
             # TODO: maybe I can remove this and go back to letting solargraph parse a comment block
@@ -182,7 +176,7 @@ module Solargraph
             if name.start_with?('**')
               name = name[2..]
               decl = :kwrestarg
-            elsif name.start_with?('*')
+            elsif name.start_with?("*")
               name = name[1..]
               decl = :restarg
             end
@@ -191,8 +185,8 @@ module Solargraph
               closure: method,
               comments: "@return [#{type}]"
             )
-            pins << method
           end
+          pins << method
         end
 
         RETURNS_INSTANCE.each do |method|
@@ -218,6 +212,12 @@ module Solargraph
 
       ANY_ARGS = {"*args" => nil}
 
+      # @todo can this be replaced with rbs_collection's
+      #   _ActiveRecord_Relation interface?  Potential leads:
+      #   https://github.com/pocke/rbs_rails
+      #   https://github.com/ruby/gem_rbs_collection/blob/6f2d93ab244008bec51db7b4fffae68b40232502/gems/paranoia/2.5/paranoia.rbs#L6C1-L7C1
+      #   https://github.com/ksss/orthoses-rails
+      #   https://github.com/PawCorp/walltaker/blob/728682baa56a267611aca1ddb9f44fdcd97f6c80/sig/rbs_rails/app/models/user.rbs#L2
       RETURNS_RELATION = {
         "all" => {},
         "and" => {"other" => "ActiveRecord::Relation"},
