@@ -1025,7 +1025,6 @@ ActiveRecord::Base.combine_signed_id_purposes:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.composed_of:
   types:
   - undefined
@@ -2062,7 +2061,6 @@ ActiveRecord::Base.find_signed:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.find_signed!:
   types:
   - undefined
@@ -2073,7 +2071,6 @@ ActiveRecord::Base.find_signed!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.find_sole_by:
   types:
   - undefined
@@ -3891,7 +3888,6 @@ ActiveRecord::Base.signed_id_verifier:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.signed_id_verifier=:
   types:
   - undefined
@@ -3902,7 +3898,6 @@ ActiveRecord::Base.signed_id_verifier=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.signed_id_verifier_secret:
   types:
   - undefined
