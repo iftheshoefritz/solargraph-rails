@@ -73,7 +73,7 @@ RSpec.describe Solargraph::Rails::Schema do
     assert_public_instance_method(map, "Account#some_binary", ["String"])
     assert_public_instance_method(map, "Account#some_timestamp", ["ActiveSupport::TimeWithZone"])
 
-    assert_class_method(map, "Account.find_by_name", ["Account", "nil"], args: { value: 'String' })
+    assert_class_method(map, "Account.find_by_name", ["self", "nil"], args: { value: 'String' })
   end
 
   it 'infers prefixed table name' do
