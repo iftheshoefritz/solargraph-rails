@@ -59,7 +59,7 @@ jobs:
           export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           # next line from README.md
-          cd spec/rails${{ matrix.rails-version }} && bundle install && rbs collection init && rbs collection install && cd ../../
+          cd spec/rails${{ matrix.rails-version }} && bundle install && ( rbs collection init; rbs collection install) && cd ../../
 
       - name: Restore cache of gem annotations
         id: dot-cache-restore
