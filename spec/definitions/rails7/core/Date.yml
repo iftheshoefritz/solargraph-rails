@@ -528,7 +528,6 @@ Date#compare_with_coercion:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Date#days_ago:
   types:
   - undefined
