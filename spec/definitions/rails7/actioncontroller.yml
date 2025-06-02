@@ -3192,7 +3192,7 @@ ActionController::Base#run_callbacks:
   - 0.54.6.alpha
 ActionController::Base#send_action:
   types:
-  - undefined
+  - BasicObject
   skip: false
 ActionController::Base#send_data:
   types:

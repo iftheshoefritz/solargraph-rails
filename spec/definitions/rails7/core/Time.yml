@@ -360,7 +360,9 @@ Time#-:
   - 0.54.6.alpha
 Time#<=>:
   types:
-  - Integer
+  - "-1"
+  - "0"
+  - "1"
   - nil
   skip:
   - 0.48.0
@@ -562,7 +564,6 @@ Time#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Time#change:
   types:
   - undefined
@@ -573,7 +574,10 @@ Time#class_eval:
   skip: false
 Time#compare_with_coercion:
   types:
-  - undefined
+  - "-1"
+  - '0'
+  - '1'
+  - nil
   skip: false
 Time#days_ago:
   types:

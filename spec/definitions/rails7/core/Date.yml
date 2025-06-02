@@ -503,7 +503,6 @@ Date#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Date#change:
   types:
   - undefined
@@ -514,7 +513,10 @@ Date#class_eval:
   skip: false
 Date#compare_with_coercion:
   types:
-  - undefined
+  - "-1"
+  - '0'
+  - '1'
+  - nil
   skip: false
 Date#days_ago:
   types:
