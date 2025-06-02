@@ -65,7 +65,7 @@ jobs:
         id: dot-cache-restore
         uses: actions/cache/restore@v4
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-4
           path: |
             /home/runner/.cache/solargraph
 
@@ -95,6 +95,6 @@ jobs:
         if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
         uses: actions/cache/save@v4
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-4
           path: |
             /home/runner/.cache/solargraph
