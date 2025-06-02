@@ -3334,10 +3334,6 @@ ActionController::Base#response_body=:
   types:
   - undefined
   skip: false
-ActionController::Base#response_code:
-  types:
-  - undefined
-  skip: false
 ActionController::Base#route_for:
   types:
   - undefined
@@ -3354,8 +3350,13 @@ ActionController::Base#run_callbacks:
   - 0.54.6.alpha
 ActionController::Base#send_action:
   types:
-  - undefined
-  skip: false
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActionController::Base#send_data:
   types:
   - undefined

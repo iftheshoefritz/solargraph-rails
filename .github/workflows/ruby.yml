@@ -51,7 +51,7 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-2025-04-29
+          cache-version: ${{ matrix.solargraph-version }}-2025-06-02
 
       - name: Install child bundle
         run: |

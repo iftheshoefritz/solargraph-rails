@@ -63,6 +63,13 @@ module Solargraph
           pins << Util.build_public_method(ns, "#{column}=", types: [type],
                                            params: { 'value' => [type] },
                                            location: location)
+
+          # Note on this: its the starting step of dynamic filters. Technically, you can also do Model.find_by_col1_and_col2(val1, val2)
+          # However, if we start suggestion all of those possibilities, it will simply be bad UX because of having too many suggestions
+          pins << Util.build_public_method(ns, "find_by_#{column}", types: ['self', 'nil'],
+                                          params: { 'value' => [type] },
+                                          location: location,
+                                          scope: :class)
         end
 
         if pins.any?
