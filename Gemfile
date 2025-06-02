@@ -53,8 +53,6 @@ else
   gem 'solargraph'
 end
 
-gem 'rbs', '3.6.1'
-
 # Local gemfile for development tools, etc.
 local_gemfile = File.expand_path(".Gemfile", __dir__)
 instance_eval File.read local_gemfile if File.exist? local_gemfile

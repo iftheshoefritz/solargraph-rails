@@ -5,3 +5,5 @@ gem 'rails', '~> 7.0.4'
 gem 'sqlite3'
 gem 'pry'
 gem 'rake'
+# to maintain RBS collection
+gem 'rbs', '>=3.6'
