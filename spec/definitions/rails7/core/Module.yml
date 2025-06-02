@@ -42,24 +42,54 @@ Module.constants:
   - 0.48.0
 Module.attr_internal_accessor:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_naming_format:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_naming_format=:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_reader:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_writer:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.blank?:
   types:
   - Boolean
@@ -241,8 +271,14 @@ Module.to_param:
   skip: false
 Module.to_query:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.try:
   types:
   - undefined
@@ -273,20 +309,44 @@ Module#as_json:
   skip: false
 Module#attr_internal:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#attr_internal_accessor:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#attr_internal_reader:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#attr_internal_writer:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#blank?:
   types:
   - Boolean
@@ -460,8 +520,14 @@ Module#to_param:
   skip: false
 Module#to_query:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#try:
   types:
   - undefined

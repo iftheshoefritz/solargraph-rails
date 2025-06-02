@@ -358,6 +358,7 @@ Time#-:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#<=>:
   types:
   - "-1"
@@ -371,6 +372,7 @@ Time#<=>:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#acts_like?:
   types:
   - Boolean
@@ -746,6 +748,7 @@ Time#minus_without_coercion:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#monday:
   types:
   - undefined
@@ -834,6 +837,7 @@ Time#preserve_timezone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#prev_day:
   types:
   - undefined
@@ -888,8 +892,14 @@ Time#sunday:
   skip: false
 Time#to_formatted_s:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#to_fs:
   types:
   - String
@@ -961,6 +971,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#weeks_ago:
   types:
   - undefined

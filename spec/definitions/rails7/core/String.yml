@@ -255,6 +255,7 @@ String.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 String.try!:
   types:
   - generic<T>
@@ -266,6 +267,7 @@ String.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 String.with_options:
   types:
   - undefined
@@ -648,6 +650,7 @@ String#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 String#try!:
   types:
   - generic<T>
@@ -659,6 +662,7 @@ String#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 String#underscore:
   types:
   - String

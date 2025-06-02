@@ -255,6 +255,7 @@ Integer.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Integer.try!:
   types:
   - generic<T>
@@ -266,6 +267,7 @@ Integer.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Integer.with_options:
   types:
   - undefined
@@ -579,6 +581,7 @@ Integer#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Integer#try!:
   types:
   - generic<T>
@@ -590,6 +593,7 @@ Integer#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Integer#week:
   types:
   - ActiveSupport::Duration

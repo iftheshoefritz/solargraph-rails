@@ -283,6 +283,7 @@ Date.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date.try!:
   types:
   - generic<T>
@@ -294,6 +295,7 @@ Date.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date.with_options:
   types:
   - undefined
@@ -331,6 +333,7 @@ Date#<=>:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
 Date#acts_like?:
   types:
   - Boolean
@@ -604,6 +607,7 @@ Date#in_time_zone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date#inspect:
   types:
   - String
@@ -752,8 +756,14 @@ Date#sunday:
   skip: false
 Date#to_formatted_s:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Date#to_fs:
   types:
   - String
@@ -818,6 +828,7 @@ Date#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date#try!:
   types:
   - generic<T>
@@ -829,6 +840,7 @@ Date#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Date#weeks_ago:
   types:
   - undefined
