@@ -59,9 +59,9 @@ jobs:
           export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           # next linel from README.md
+          bundle exec rbs --version
           cd spec/rails${{ matrix.rails-version }}
           bundle install
-          bundle exec rbs --version
           ( rbs collection init; rbs collection install)
           rbs collection update
           cd ../..
