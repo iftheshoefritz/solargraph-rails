@@ -68,7 +68,6 @@ Enumerable#sum:
   - 0.49.0
   - 0.50.0
   - 0.51.2
-  - 0.55.alpha
 Enumerable#without:
   types:
   - undefined

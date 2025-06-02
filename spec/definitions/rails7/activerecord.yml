@@ -1197,7 +1197,6 @@ ActiveRecord::Base.connects_to:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.content_columns:
   types:
   - undefined
@@ -1852,7 +1851,6 @@ ActiveRecord::Base.encrypts:
   - 0.54.6.alpha
 ActiveRecord::Base.enum:
   types:
-  - undefined
   - void
   skip:
   - 0.48.0
@@ -1861,7 +1859,6 @@ ActiveRecord::Base.enum:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
   - undefined
@@ -4627,7 +4624,6 @@ ActiveRecord::Base.validates!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.validates_absence_of:
   types:
   - undefined
@@ -4688,7 +4684,6 @@ ActiveRecord::Base.validates_each:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.validates_exclusion_of:
   types:
   - undefined

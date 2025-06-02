@@ -451,7 +451,6 @@ Time#as_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.55.alpha
 Time#at_beginning_of_day:
   types:
   - undefined
