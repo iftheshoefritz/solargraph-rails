@@ -3172,10 +3172,6 @@ ActionController::Base#response_body=:
   types:
   - undefined
   skip: false
-ActionController::Base#response_code:
-  types:
-  - undefined
-  skip: false
 ActionController::Base#route_for:
   types:
   - undefined
