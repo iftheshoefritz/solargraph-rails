@@ -888,24 +888,16 @@ ActiveRecord::Base.clear_active_connections!:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
-  - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.clear_all_connections!:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
-  - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.clear_cache!:
   types:
   - undefined
@@ -928,13 +920,9 @@ ActiveRecord::Base.clear_reloadable_connections!:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
-  - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.clear_validators!:
   types:
   - undefined
@@ -2117,13 +2105,9 @@ ActiveRecord::Base.flush_idle_connections!:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
-  - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base.forty_two:
   types:
   - undefined
