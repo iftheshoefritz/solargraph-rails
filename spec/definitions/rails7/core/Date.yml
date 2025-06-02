@@ -323,10 +323,14 @@ Date#-:
   - 0.54.6.alpha
 Date#<=>:
   types:
-  - Integer
+  - "-1"
+  - '0'
+  - '1'
   - nil
   skip:
   - 0.48.0
+  - 0.49.0
+  - 0.50.0
   - 0.51.2
   - 0.52.0
 Date#acts_like?:
@@ -517,7 +521,12 @@ Date#compare_with_coercion:
   - '0'
   - '1'
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Date#days_ago:
   types:
   - undefined
