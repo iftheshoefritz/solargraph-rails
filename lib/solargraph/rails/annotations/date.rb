@@ -30,5 +30,5 @@ class DateTime
   def readable_inspect; end
 end
 
-# @!override Time#<=>
+# @!override Date#<=>
 #   @return [1, 0, -1, nil]
