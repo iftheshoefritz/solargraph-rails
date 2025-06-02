@@ -1,10 +1,14 @@
 class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
-  def create_table; end
+  # @return [void]
+  def create_table(table_name, id: nil, primary_key: nil, force: false, **options); end
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
-  def create_join_table; end
+  # @param column_options [Hash]
+  # @return [void]
+  def create_join_table(table_1, table_2, column_options: {}, **options); end
   # @yieldparam [ActiveRecord::ConnectionAdapters::Table]
-  def change_table; end
+  # @return [void]
+  def change_table(table_name, **options); end
 end
 
 # this module doesn't really exist, it's here to avoid repeating these mixins
@@ -52,3 +56,5 @@ end
 #   @return_single_parameter
 # @!override ActiveRecord::QueryMethods::WhereChain#associated
 #   @return_single_parameter
+# @!override ActiveRecord::ConnectionAdapters::SchemaStatements#create_table
+#   @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]

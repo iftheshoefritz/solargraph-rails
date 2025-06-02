@@ -68,7 +68,7 @@ RSpec.describe Solargraph::Rails::Model do
     load_string 'app/models/transaction.rb',
                 <<-RUBY
                 class Transaction < ActiveRecord::Base
-                  scope :positive, ->(arg) { where(foo: 'bar') }
+                  scope :positive, ->() { where(foo: 'bar') }
                 end
                 RUBY
 
@@ -87,7 +87,8 @@ RSpec.describe Solargraph::Rails::Model do
     assert_public_instance_method(
       api_map,
       'Person::ActiveRecord_Relation#taller_than',
-      ['Person::ActiveRecord_Relation']
+      ['Person::ActiveRecord_Relation'],
+      args: { h: 'undefined' }
     )
   end
 
@@ -114,11 +115,9 @@ RSpec.describe Solargraph::Rails::Model do
     assert_class_method(
       api_map,
       'Person.taller_than',
-      ['Person::ActiveRecord_Relation']
-    ) do |pin|
-      expect(pin.parameters).not_to be_empty
-      expect(pin.parameters.first.name).to eq('min_height')
-    end
+      ['Person::ActiveRecord_Relation'],
+      args: { min_height: 'undefined' }
+    )
   end
 
   it 'does not generate methods for variable named scope' do
@@ -135,20 +134,20 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
+    # TODO: Does this test do the thing it says does?
     assert_class_method(
       api_map,
       'Person.taller_than',
-      ['Person::ActiveRecord_Relation']
-    ) do |pin|
-      expect(pin.parameters).not_to be_empty
-      expect(pin.parameters.first.name).to eq('min_height')
-    end
+      ['Person::ActiveRecord_Relation'],
+      args: { min_height: 'undefined' }
+    )
   end
 
   it 'exposes class methods as instance methods on relations', if: Solargraph::Rails::Delegate.supported? do
     load_string 'app/models/person.rb',
       <<~RUBY
       class Person < ActiveRecord::Base
+        # @param h [Numeric]
         def self.taller_than(h)
           where(height: h..)
         end
@@ -158,7 +157,8 @@ RSpec.describe Solargraph::Rails::Model do
     assert_public_instance_method(
       api_map,
       'Person::ActiveRecord_Relation#taller_than',
-      ['Person::ActiveRecord_Relation']
+      ['Person::ActiveRecord_Relation'],
+      args: { h: 'Numeric' }
     )
   end
 end

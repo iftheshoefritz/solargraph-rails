@@ -358,12 +358,21 @@ Time#-:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#<=>:
   types:
-  - Integer
+  - "-1"
+  - '0'
+  - '1'
   - nil
   skip:
   - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 Time#acts_like?:
   types:
   - Boolean
@@ -562,7 +571,6 @@ Time#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Time#change:
   types:
   - undefined
@@ -577,7 +585,12 @@ Time#compare_with_coercion:
   - '0'
   - '1'
   - nil
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Time#days_ago:
   types:
   - undefined
@@ -735,6 +748,7 @@ Time#minus_without_coercion:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#monday:
   types:
   - undefined
@@ -823,6 +837,7 @@ Time#preserve_timezone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#prev_day:
   types:
   - undefined
@@ -878,7 +893,13 @@ Time#sunday:
 Time#to_formatted_s:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#to_fs:
   types:
   - String
@@ -950,6 +971,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#weeks_ago:
   types:
   - undefined

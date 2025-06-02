@@ -43,23 +43,53 @@ Module.constants:
 Module.attr_internal_accessor:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_naming_format:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_naming_format=:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_reader:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.attr_internal_writer:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.blank?:
   types:
   - Boolean
@@ -242,7 +272,13 @@ Module.to_param:
 Module.to_query:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module.try:
   types:
   - undefined
@@ -274,19 +310,43 @@ Module#as_json:
 Module#attr_internal:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#attr_internal_accessor:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#attr_internal_reader:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#attr_internal_writer:
   types:
   - void
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#blank?:
   types:
   - Boolean
@@ -461,7 +521,13 @@ Module#to_param:
 Module#to_query:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Module#try:
   types:
   - undefined

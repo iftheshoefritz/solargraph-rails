@@ -86,7 +86,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ifthes
 3. install dummy rails app deps:
 
 ```
-cd spec/rails7 && bundle install && bundle update solargraph && rbs collection init && rbs collection install && cd ../../
+cd spec/rails7 && bundle install && rbs collection init && rbs collection install && cd ../../
 ```
 
 4. now tests should pass locally and you can try different changes

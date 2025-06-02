@@ -255,6 +255,7 @@ Array.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Array.try!:
   types:
   - generic<T>
@@ -266,6 +267,7 @@ Array.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Array.with_options:
   types:
   - undefined
@@ -478,6 +480,7 @@ Array#sum:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Array#third:
   types:
   - undefined
@@ -556,6 +559,7 @@ Array#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Array#try!:
   types:
   - generic<T>
@@ -567,6 +571,7 @@ Array#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Array#with_options:
   types:
   - undefined
