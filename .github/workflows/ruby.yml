@@ -62,6 +62,7 @@ jobs:
           bundle exec rbs --version
           cd spec/rails${{ matrix.rails-version }}
           bundle install
+          rbs --version
           ( rbs collection init; rbs collection install)
           rbs collection update
           cd ../..
