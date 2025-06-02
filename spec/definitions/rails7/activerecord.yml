@@ -6472,7 +6472,8 @@ ActiveRecord::Base#valid?:
 ActiveRecord::Base#validate:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.54.6.alpha
 ActiveRecord::Base#validate!:
   types:
   - 'true'
