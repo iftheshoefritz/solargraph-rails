@@ -4500,16 +4500,6 @@ ActiveRecord::Base.upsert_all:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base.validate:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.validates:
   types:
   - void
