@@ -86,8 +86,9 @@ jobs:
           ruby --version
           bundle install
           bundle update solargraph
-          bundle exec solargraph gems || true
           bundle exec solargraph version
+          bundle info solargraph
+          bundle exec solargraph gems || true
           bundle exec rspec spec/solargraph-rails
 
       - name: Cache gem annotations
