@@ -85,6 +85,7 @@ jobs:
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           ruby --version
           bundle install
+          bundle update solargraph
           bundle exec solargraph gems || true
           bundle exec solargraph version
           bundle exec rspec spec/solargraph-rails
