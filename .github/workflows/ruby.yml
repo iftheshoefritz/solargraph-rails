@@ -63,8 +63,8 @@ jobs:
           cd spec/rails${{ matrix.rails-version }}
           bundle install
           rbs --version
-          ( bundle exec rbs collection init; bundle exec rbs collection install)
-          bundle exec rbs collection update
+          bundle exec rbs collection init || true;
+          bundle exec rbs collection install
           cd ../..
 
       - name: Restore cache of gem annotations
