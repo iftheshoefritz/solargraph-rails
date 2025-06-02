@@ -62,9 +62,14 @@ jobs:
           bundle exec rbs --version
           cd spec/rails${{ matrix.rails-version }}
           bundle install
-          bundle exec --gemfile ../../Gemfile rbs --version
-          bundle exec --gemfile ../../Gemfile rbs collection init || true
-          bundle exec --gemfile ../../Gemfile rbs collection install
+          # these solargraphs use rbs versions that are too old - and
+          # don't pay attention to the rbs collection regardless
+          if [[ "$MATRIX_SOLARGRAPH_VERSION" != "0.48.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.49.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.50.0" ]]
+          then
+            bundle exec --gemfile ../../Gemfile rbs --version
+            bundle exec --gemfile ../../Gemfile rbs collection init || true
+            bundle exec --gemfile ../../Gemfile rbs collection install
+          fi
           cd ../..
 
       - name: Restore cache of gem annotations
