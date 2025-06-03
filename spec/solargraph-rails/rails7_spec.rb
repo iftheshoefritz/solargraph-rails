@@ -26,7 +26,7 @@ RSpec.describe 'Rails 7 API' do
     )
   end
 
-  it 'can auto-complete inside routes', skip: 'not working' do
+  it 'can auto-complete inside routes' do
     filename = nil
     map =
       use_workspace './spec/rails7' do |root|
