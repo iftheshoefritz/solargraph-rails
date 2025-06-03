@@ -510,6 +510,11 @@ ActionController::Base.devise_group:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+ActionController::Base.direct_descendants:
+  types:
+  - undefined
+  skip: false
+  removed_in: 7.1
 ActionController::Base.dispatch:
   types:
   - undefined
@@ -2510,6 +2515,7 @@ ActionController::Base#headers:
   types:
   - undefined
   skip: false
+  added_in: 7.1
 ActionController::Base#helpers:
   types:
   - undefined
@@ -3310,6 +3316,7 @@ ActionController::Base#response=:
   types:
   - undefined
   skip: false
+  added_in: 7.1
 ActionController::Base#response_body:
   types:
   - undefined
