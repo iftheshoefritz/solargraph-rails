@@ -13,8 +13,8 @@ RSpec.describe Solargraph::Rails::Storage do
         Thing.new.image.att
         Thing.new.photos.att
       EOS
-
     end
+
     expect(completion_at(filename, [5, 19], map)).to include("attach")
     expect(completion_at(filename, [6, 20], map)).to include("attach")
   end
