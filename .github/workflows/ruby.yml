@@ -57,7 +57,7 @@ jobs:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-2025-06-02
+          cache-version: ${{ matrix.solargraph-version }}-${{ env.MATRIX_RAILS_VERSION }}-2025-06-02
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
