@@ -84,7 +84,7 @@ module Helpers
       rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
       if data['removed_in']
         rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
-        if data['removed_in'].to_f >= rails_major_and_minor_version.to_f
+        if data['removed_in'].to_f <= rails_major_and_minor_version.to_f
           skip = true
         end
       end
