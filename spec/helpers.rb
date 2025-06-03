@@ -125,7 +125,7 @@ module Helpers
             remove_skip(data)
           else
             incorrect << <<~STR
-            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
+            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.source} #{pin.best_location}.
             Consider setting skip=false
           STR
           end
