@@ -4,10 +4,10 @@ module Solargraph
       def self.build_public_method(
         ns,
         name,
-        params: {},
-        parameters: [],
         comments: nil,
+        parameters: [],
         types: nil,
+        params: {},
         location: nil,
         attribute: false,
         scope: :instance
