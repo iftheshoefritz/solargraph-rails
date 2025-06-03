@@ -1,3 +1,6 @@
+require 'logger'
+require 'rails'
+
 module Helpers
   def load_string(filename, str)
     source = Solargraph::Source.load_string(str, filename)
@@ -78,6 +81,18 @@ module Helpers
 
       skip = false
       typed += 1 if data['types'] != ['undefined']
+      rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
+      if data['removed_in']
+        rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
+        if data['removed_in'].to_f >= rails_major_and_minor_version.to_f
+          skip = true
+        end
+      end
+      if data['added_in']
+        if data['added_in'].to_f > rails_major_and_minor_version.to_f
+          skip = true
+        end
+      end
       if data['skip'] == true ||
          data['skip'] == Solargraph::VERSION ||
          (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
@@ -109,7 +124,7 @@ module Helpers
             remove_skip(data)
           else
             incorrect << <<~STR
-            #{class_name}#{meth} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
+            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
             Consider setting skip=false
           STR
           end
