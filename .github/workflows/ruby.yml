@@ -80,7 +80,6 @@ jobs:
           if [[ "$MATRIX_SOLARGRAPH_VERSION" != "0.48.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.49.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.50.0" ]]
           then
             bundle exec --gemfile ../../Gemfile rbs --version
-            bundle exec --gemfile ../../Gemfile rbs collection init || true
             bundle exec --gemfile ../../Gemfile rbs collection install
           fi
           cd ../..
