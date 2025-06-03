@@ -131,7 +131,6 @@ jobs:
           bundle update solargraph
           bundle exec solargraph version
           bundle info solargraph
-          bundle exec solargraph gems || true
           bundle exec rspec spec/solargraph-rails
         env:
           # Used in Gemfile/gemspec
