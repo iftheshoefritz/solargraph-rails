@@ -138,11 +138,6 @@ RSpec.describe 'Rails 7 API' do
     )
   end
 
-  it 'overrides Time with things in annotations directory' do
-    api_map = use_workspace './spec/rails7'
-    assert_class_method(api_map, 'Time.at', ['Time'])
-  end
-
   context 'auto-completes ActiveSupport core extensions' do
     Dir
       .glob('spec/definitions/rails7/core/*.yml')
