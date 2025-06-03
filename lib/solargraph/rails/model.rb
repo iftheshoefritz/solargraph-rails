@@ -176,7 +176,7 @@ module Solargraph
             if name.start_with?('**')
               name = name[2..]
               decl = :kwrestarg
-            elsif name.start_with?("*")
+            elsif name.start_with?('*')
               name = name[1..]
               decl = :restarg
             end
