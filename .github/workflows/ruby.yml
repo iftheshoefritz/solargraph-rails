@@ -54,7 +54,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby-version }}
+          ruby-version: ${{ matrix.versions.ruby }}
           bundler: latest
           bundler-cache: true
           cache-version: ${{ matrix.solargraph-version }}-2025-06-02
@@ -92,7 +92,7 @@ jobs:
         id: dot-cache-restore
         uses: actions/cache/restore@v4
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ env.RAILS_VERSION }}-${{ matrix.solargraph-version }}-4
+          key: ${{ runner.os }}-dot-cache-${{ matrix.versions.ruby }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ matrix.solargraph-version }}-4
           path: |
             /home/runner/.cache/solargraph
 
@@ -132,6 +132,6 @@ jobs:
         if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
         uses: actions/cache/save@v4
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-4
+          key: ${{ runner.os }}-dot-cache-${{ matrix.versions.ruby }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ matrix.solargraph-version }}-4
           path: |
             /home/runner/.cache/solargraph
