@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'devise'
-gem 'rails', "~> #{ENV.fetch('MATRIX_RAILS_VERSION'), '7.0'}.0"
+gem 'rails', "~> #{ENV.fetch('MATRIX_RAILS_VERSION', '7.0')}.0"
 gem 'sqlite3'
 gem 'pry'
 gem 'rake'
