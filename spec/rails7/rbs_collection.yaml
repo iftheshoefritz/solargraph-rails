@@ -3,7 +3,13 @@ sources:
   - type: git
     name: ruby/gem_rbs_collection
     remote: https://github.com/ruby/gem_rbs_collection.git
-    revision: main
+    # locked for test stability - you're encouraged to bump this and
+    # submit a PR with the definition changes!  we just don't want
+    # things failing after unrelated changes.
+    #
+    # https://github.com/ruby/gem_rbs_collection/commits/main/
+    revision: 82dee3528a0ce270528647979205a438c92ab20e
+    # revision: main
     repo_dir: gems
 
 # You can specify local directories as sources also.

@@ -6,8 +6,8 @@ source 'https://rubygems.org'
 #
 # So if we just install the rails deps at the same time, we have a single cache and a single
 # directory for gems.
-rails_version = ENV['MATRIX_RAILS_VERSION'] || '7'
-instance_eval File.read(File.expand_path("spec/rails#{rails_version}/Gemfile", __dir__))
+rails_major_version = ENV.fetch('MATRIX_RAILS_MAJOR_VERSION', '7')
+instance_eval File.read(File.expand_path("spec/rails#{rails_major_version}/Gemfile", __dir__))
 
 solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
@@ -29,7 +29,7 @@ group :development, :test do
   gem 'byebug'
 end
 
-if rails_version == '7'
+if rails_major_version == '7'
   # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
   gem "concurrent-ruby", '<=1.3.5'
 end

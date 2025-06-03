@@ -5934,7 +5934,7 @@ ActiveRecord::Base#present?:
   - 0.54.6.alpha
 ActiveRecord::Base#pretty_print:
   types:
-  - BasicObject
+  - IO
   skip:
   - 0.48.0
   - 0.49.0
