@@ -120,7 +120,7 @@ module Helpers
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
         # rbs-only definitions may cover multiple versions of Rails and cause false alarms
-        elsif skip && pin.source != :rbs
+        elsif skip && !(pin.method(:source)&.call == :rbs)
           if update
             remove_skip(data)
           else
