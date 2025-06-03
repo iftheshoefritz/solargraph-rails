@@ -119,7 +119,8 @@ module Helpers
           elsif !skip
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
-        elsif skip
+        # rbs-only definitions may cover multiple versions of Rails and cause false alarms
+        elsif skip && pin.source != :rbs
           if update
             remove_skip(data)
           else
