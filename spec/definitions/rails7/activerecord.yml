@@ -2863,10 +2863,6 @@ ActiveRecord::Base.lookup_ancestors:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.lookup_connection_handler:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.maintain_test_schema:
   types:
   - undefined
