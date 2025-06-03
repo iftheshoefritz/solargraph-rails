@@ -98,7 +98,7 @@ Time.concerning:
   skip: false
 Time.current:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   skip:
   - 0.48.0
   - 0.49.0
@@ -146,7 +146,7 @@ Time.duplicable?:
   - 0.54.6.alpha
 Time.find_zone:
   types:
-  - ActiveSupportTimeZone
+  - ActiveSupport::TimeZone
   - nil
   skip:
   - 0.48.0
@@ -157,7 +157,7 @@ Time.find_zone:
   - 0.54.6.alpha
 Time.find_zone!:
   types:
-  - ActiveSupportTimeZone
+  - ActiveSupport::TimeZone
   skip:
   - 0.48.0
   - 0.49.0
@@ -324,7 +324,7 @@ Time.with_options:
   skip: false
 Time.zone:
   types:
-  - ActiveSupportTimeZone
+  - ActiveSupport::TimeZone
   skip:
   - 0.48.0
   - 0.49.0
@@ -358,12 +358,21 @@ Time#-:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#<=>:
   types:
-  - Integer
+  - "-1"
+  - '0'
+  - '1'
   - nil
   skip:
   - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 Time#acts_like?:
   types:
   - Boolean
@@ -562,7 +571,6 @@ Time#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Time#change:
   types:
   - undefined
@@ -573,8 +581,16 @@ Time#class_eval:
   skip: false
 Time#compare_with_coercion:
   types:
-  - undefined
-  skip: false
+  - "-1"
+  - '0'
+  - '1'
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 Time#days_ago:
   types:
   - undefined
@@ -665,7 +681,7 @@ Time#in?:
   skip: false
 Time#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   - Time
   skip:
   - 0.48.0
@@ -732,6 +748,7 @@ Time#minus_without_coercion:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#monday:
   types:
   - undefined
@@ -820,6 +837,7 @@ Time#preserve_timezone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#prev_day:
   types:
   - undefined
@@ -874,8 +892,14 @@ Time#sunday:
   skip: false
 Time#to_formatted_s:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Time#to_fs:
   types:
   - String
@@ -947,6 +971,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Time#weeks_ago:
   types:
   - undefined

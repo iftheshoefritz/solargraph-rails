@@ -28,12 +28,21 @@ jobs:
           - "0.51.2"
           - "0.52.0"
           - "0.54.6.alpha"
+          - "0.55.alpha"
         rails-version:
           - "7"
       fail-fast: false
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: cache gemfile.lock for better cache stability
+        uses: actions/cache@v3
+        id: gemfilelock
+        with:
+          key: ${{ runner.os }}-gemfilelock-${{ matrix.ruby-version }}
+          path: |
+            ${{ env.GITHUB_WORKSPACE }}/Gemfile.lock
 
       - uses: ruby/setup-ruby@v1
         env:
@@ -42,21 +51,31 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-2025-04-29
+          cache-version: ${{ matrix.solargraph-version }}-2025-06-02
 
       - name: Install child bundle
         run: |
           set -x
           export MATRIX_SOLARGRAPH_VERSION="${{ matrix.solargraph-version }}"
           export BUNDLE_PATH=$(pwd)/vendor/bundle
-          cd "spec/rails${{ matrix.rails-version }}"
+          # next linel from README.md
+          cd spec/rails${{ matrix.rails-version }}
           bundle install
+          # these solargraphs use rbs versions that are too old - and
+          # don't pay attention to the rbs collection regardless
+          if [[ "$MATRIX_SOLARGRAPH_VERSION" != "0.48.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.49.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.50.0" ]]
+          then
+            bundle exec --gemfile ../../Gemfile rbs --version
+            bundle exec --gemfile ../../Gemfile rbs collection init || true
+            bundle exec --gemfile ../../Gemfile rbs collection install
+          fi
+          cd ../..
 
       - name: Restore cache of gem annotations
         id: dot-cache-restore
         uses: actions/cache/restore@v4
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-4
           path: |
             /home/runner/.cache/solargraph
 
@@ -76,8 +95,10 @@ jobs:
           export BUNDLE_PATH=$(pwd)/vendor/bundle
           ruby --version
           bundle install
-          bundle exec solargraph gems || true
+          bundle update solargraph
           bundle exec solargraph version
+          bundle info solargraph
+          bundle exec solargraph gems || true
           bundle exec rspec spec/solargraph-rails
 
       - name: Cache gem annotations
@@ -85,6 +106,6 @@ jobs:
         if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
         uses: actions/cache/save@v4
         with:
-          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-3
+          key: ${{ runner.os }}-dot-cache-${{ matrix.ruby-version }}-${{ matrix.solargraph-version }}-4
           path: |
             /home/runner/.cache/solargraph

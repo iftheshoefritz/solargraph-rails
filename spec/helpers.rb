@@ -203,39 +203,33 @@ module Helpers
     map
   end
 
-  def assert_public_instance_method(map, query, return_type, args: nil, &block)
-    assert_method(map, query, return_type, args: args, &block)
-  end
-
-  def assert_method(map, query, return_type, args: nil, &block)
+  def assert_generic_method(map, query, return_type, args: {}, scope: map.includes?("#") ? :instance : :class, &block)
     pin = find_pin(query, map)
-    expect(pin).to_not be_nil
-    if query.include?('#')
-      expect(pin.scope).to eq(:instance)
-    else
-      expect(pin.scope).to eq(:class)
-    end
+    expect(pin).to_not be_nil, "Expected #{query} to exist, but it doesn't"
+    expect(pin.scope).to eq(scope), "Expected #{query} to have scope #{scope}, but it has #{pin.scope}"
 
     pin_return_type = pin.return_type
     pin_return_type = pin.typify map if pin_return_type.undefined?
     pin_return_type = pin.probe map if pin_return_type.undefined?
-    expect(pin_return_type.map(&:tag)).to eq(return_type) #     , ->() { "Was expecting return_type=#{return_type} while processing #{pin.inspect}, got #{pin.return_type.map(&:tag)}" }
-    unless args.nil?
-      args.each_pair do |name, type|
-        expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil
-        expect(parameter.return_type.tag).to eq(type)
-      end
-      pin.parameters.each do |param|
-        expect(args).to have_key(param.name.to_sym)
-        expect(param.return_type.tag).to eq(args[param.name.to_sym])
-      end
-    end
+    expect(pin_return_type.map(&:tag)).to eq(return_type)
 
-    yield pin if block_given?
+    args.each_pair do |name, type|
+      expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil, "expected #{query} param #{name} to exist, but it doesn't"
+      expect(parameter.return_type.tag).to eq(type), "expected #{query} param #{name} to return #{type} but it returns #{parameter.return_type.tag}"
+    end
+    pin.parameters.each do |param|
+      expect(args).to have_key(param.name.to_sym), "expected #{query} param #{param.name} to be expected, but it isn't"
+      # TODO: Is this necesseray? It should already be expected earlier by the arg.each_pair block
+      expect(real_type = param.return_type.tag).to eq(args[param.name.to_sym]), "expected #{query} param #{param.name} to return #{args[param.name.to_sym]} but it returns #{real_type}"
+    end
   end
 
-  def assert_class_method(map, query, return_type, args: nil, &block)
-    assert_method(map, query, return_type, args: args, &block)
+  def assert_public_instance_method(map, query, return_type, args: {}, &block)
+    assert_generic_method(map, query, return_type, args: args, scope: :instance, &block)
+  end
+
+  def assert_class_method(map, query, return_type, args: {}, &block)
+    assert_generic_method(map, query, return_type, args: args, scope: :class, &block)
   end
 
   def find_pin(path, map = api_map)

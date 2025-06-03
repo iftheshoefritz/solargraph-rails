@@ -27,3 +27,8 @@ class ActionController::Cookies
   # @return [ActionDispatch::Cookies::CookieJar]
   def cookies; end
 end
+
+class ActionController::StrongParameters
+  # @return [ActionController::Parameters]
+  def params; end
+end

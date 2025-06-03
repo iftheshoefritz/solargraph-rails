@@ -263,6 +263,7 @@ Hash.try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Hash.try!:
   types:
   - generic<T>
@@ -274,6 +275,7 @@ Hash.try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Hash.with_options:
   types:
   - undefined
@@ -464,7 +466,7 @@ Hash#minimum:
   skip: false
 Hash#nested_under_indifferent_access:
   types:
-  - ActiveSupportHashWithIndifferentAccess<generic<K>, generic<V>>
+  - ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>
   skip:
   - 0.48.0
   - 0.49.0
@@ -625,6 +627,7 @@ Hash#try:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Hash#try!:
   types:
   - generic<T>
@@ -636,6 +639,7 @@ Hash#try!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
 Hash#with_defaults:
   types:
   - undefined
@@ -646,7 +650,7 @@ Hash#with_defaults!:
   skip: false
 Hash#with_indifferent_access:
   types:
-  - ActiveSupportHashWithIndifferentAccess<generic<K>, generic<V>>
+  - ActiveSupport::HashWithIndifferentAccess<generic<K>, generic<V>>
   skip:
   - 0.48.0
   - 0.49.0

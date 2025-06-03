@@ -24,7 +24,7 @@ class Time
 
   # @return [Time]
   def to_time; end
-
-  # @return [Time]
-  def +(other); end
 end
+
+# @!override Time#+
+#   @return [Time]
