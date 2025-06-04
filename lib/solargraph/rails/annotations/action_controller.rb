@@ -39,7 +39,7 @@ class ActionController::Base
   include HttpAuthentication::Token::ControllerMethods
   include DefaultHeaders
   include Logging
-  AbstractController::Callbacks,
+  include AbstractController::Callbacks
   extend AbstractController::Callbacks::ClassMethods
   include Rescue
   include Instrumentation
