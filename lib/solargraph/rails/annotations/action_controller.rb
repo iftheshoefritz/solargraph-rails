@@ -3,6 +3,7 @@ class ActionController::Base
   include ActionController::Redirecting
   include ActionController::Cookies
   include AbstractController::Rendering
+  extend AbstractController::Rendering::ClassMethods
   extend ActiveSupport::Callbacks::ClassMethods
   extend ActiveSupport::Rescuable::ClassMethods
   include ActiveSupport::Rescuable
