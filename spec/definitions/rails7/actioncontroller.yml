@@ -3186,23 +3186,11 @@ ActionController::Base#request_format:
 ActionController::Base#request_http_basic_authentication:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#request_http_digest_authentication:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#request_http_token_authentication:
   types:
   - void
@@ -3249,13 +3237,7 @@ ActionController::Base#rescue_handlers?:
 ActionController::Base#rescue_with_handler:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#reset_session:
   types:
   - undefined
