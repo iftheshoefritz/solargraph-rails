@@ -120,12 +120,12 @@ module Helpers
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
         # rbs-only definitions may cover multiple versions of Rails and cause false alarms
-        elsif skip && !(pin.method(:source)&.call == :rbs)
+        elsif skip && !(pin.respond_to?(:source) && pin.source == :rbs)
           if update
             remove_skip(data)
           else
             incorrect << <<~STR
-            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.source} #{pin.best_location}.
+            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
             Consider setting skip=false
           STR
           end
