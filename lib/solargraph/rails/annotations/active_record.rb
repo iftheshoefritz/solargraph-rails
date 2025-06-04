@@ -37,6 +37,7 @@ class ActiveRecord::Base
   extend ActiveRecord::Scoping::Named::ClassMethods
   extend ActiveRecord::RelationMethods
   include ActiveRecord::Persistence
+  extend ActiveModel::AttributeRegistration::ClassMethods
 end
 
 # @!override ActiveRecord::Batches#find_each
