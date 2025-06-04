@@ -2311,7 +2311,6 @@ ActiveRecord::Base.human_attribute_name:
   types:
   - undefined
   skip: false
-  removed_in: 7.2
 ActiveRecord::Base.i18n_scope:
   types:
   - ":activerecord"

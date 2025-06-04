@@ -43,6 +43,7 @@ class ActiveRecord::Base
   #  below
   include ActiveRecord::Callbacks
   extend ActiveRecord::Callbacks::ClassMethods
+  extend Translation
 
   def self.set_callback
   end
