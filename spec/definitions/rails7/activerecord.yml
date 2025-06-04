@@ -1544,13 +1544,7 @@ ActiveRecord::Base.define_callbacks:
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
