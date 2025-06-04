@@ -1976,13 +1976,8 @@ ActionController::Base#content_type:
 ActionController::Base#content_type=:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
+  added_in: 7.2
 ActionController::Base#controller_name:
   types:
   - undefined
@@ -2612,23 +2607,13 @@ ActionController::Base#localize:
 ActionController::Base#location:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
+  added_in: 7.2
 ActionController::Base#location=:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
+  added_in: 7.2
 ActionController::Base#log_warning_on_csrf_failure:
   types:
   - undefined
@@ -2691,13 +2676,8 @@ ActionController::Base#main_app:
 ActionController::Base#media_type:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
+  added_in: 7.2
 ActionController::Base#method_for_action:
   types:
   - undefined
@@ -3292,23 +3272,13 @@ ActionController::Base#stale?:
 ActionController::Base#status:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
+  added_in: 7.2
 ActionController::Base#status=:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
+  added_in: 7.2
 ActionController::Base#store_location_for:
   types:
   - undefined
