@@ -632,10 +632,6 @@ ActiveJob::Base.queue_with_priority:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveJob::Base.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActiveJob::Base.redefine_method:
   types:
   - undefined

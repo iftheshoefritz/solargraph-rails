@@ -1233,10 +1233,6 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
-ActionController::Base.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.redefine_method:
   types:
   - undefined

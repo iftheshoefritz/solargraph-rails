@@ -3286,10 +3286,6 @@ ActiveRecord::Base.quoted_table_name:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.reading_role:
   types:
   - undefined
