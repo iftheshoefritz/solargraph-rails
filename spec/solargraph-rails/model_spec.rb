@@ -21,7 +21,7 @@ RSpec.describe Solargraph::Rails::Model do
         File.expand_path('app/models/transaction.rb')
       )
       expect(pin.location.range.to_hash).to eq(
-        { start: { line: 1, character: 0 }, end: { line: 1, character: 2 } }
+        { start: { line: 1, character: 2 }, end: { line: 1, character: 21 } }
       )
     end
 

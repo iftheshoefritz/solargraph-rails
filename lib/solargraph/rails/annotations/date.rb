@@ -29,3 +29,6 @@ class DateTime
   # @return [String]
   def readable_inspect; end
 end
+
+# @!override Date#<=>
+#   @return [1, 0, -1, nil]

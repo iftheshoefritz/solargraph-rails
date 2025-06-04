@@ -28,3 +28,6 @@ end
 
 # @!override Time#+
 #   @return [Time]
+
+# @!override Time#<=>
+#   @return [1, 0, -1, nil]

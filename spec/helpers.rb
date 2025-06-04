@@ -221,9 +221,8 @@ module Helpers
 
   def assert_generic_method(map, query, return_type, args: {}, scope: map.includes?("#") ? :instance : :class, &block)
     pin = find_pin(query, map)
-    expect(pin).to_not be_nil, "Expected #{query} to exist, but it doesn't"
+    expect(pin).to_not be_nil, -> { "Could not find method in api_map via #{query}" }
     expect(pin.scope).to eq(scope), "Expected #{query} to have scope #{scope}, but it has #{pin.scope}"
-
     pin_return_type = pin.return_type
     pin_return_type = pin.typify map if pin_return_type.undefined?
     pin_return_type = pin.probe map if pin_return_type.undefined?
