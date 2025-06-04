@@ -31,6 +31,7 @@ class ActionController::Base
   extend RequestForgeryProtection::ClassMethods
   include ContentSecurityPolicy
   include PermissionsPolicy
+  extend PermissionsPolicy::ClassMethods
   include Streaming
   include DataStreaming
   include HttpAuthentication::Basic::ControllerMethods

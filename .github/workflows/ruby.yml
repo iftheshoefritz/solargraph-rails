@@ -29,10 +29,10 @@ jobs:
           - ruby: "3.0"
             rails-major: "7"
             rails-minor: "1"
-          # # ruby 3.1 is minimum Ruby supported by Rails 7.2
-          # - ruby: "3.1"
-          #   rails-major: "7"
-          #   rails-minor: "2"
+          # ruby 3.1 is minimum Ruby supported by Rails 7.2
+          - ruby: "3.1"
+            rails-major: "7"
+            rails-minor: "2"
           # # ruby 3.2 is minimum Ruby supported by Rails 8.0
           # - ruby: "3.2"
           #   rails-major: "8"

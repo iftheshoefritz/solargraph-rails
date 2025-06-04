@@ -451,16 +451,6 @@ ActiveRecord::Base.attr_readonly:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base.attribute:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.attribute_alias:
   types:
   - undefined
@@ -591,10 +581,6 @@ ActiveRecord::Base.attribute_names:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base.attribute_types:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.attributes_builder:
   types:
   - undefined
@@ -889,11 +875,13 @@ ActiveRecord::Base.clear_active_connections!:
   - undefined
   skip: false
   added_in: 7.1
+  removed_in: 7.2
 ActiveRecord::Base.clear_all_connections!:
   types:
   - undefined
   skip: false
   added_in: 7.1
+  removed_in: 7.2
 ActiveRecord::Base.clear_cache!:
   types:
   - undefined
@@ -917,6 +905,7 @@ ActiveRecord::Base.clear_reloadable_connections!:
   - undefined
   skip: false
   added_in: 7.1
+  removed_in: 7.2
 ActiveRecord::Base.clear_validators!:
   types:
   - undefined
@@ -1555,13 +1544,7 @@ ActiveRecord::Base.define_callbacks:
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
@@ -2094,6 +2077,7 @@ ActiveRecord::Base.flush_idle_connections!:
   - undefined
   skip: false
   added_in: 7.1
+  removed_in: 7.2
 ActiveRecord::Base.forty_two:
   types:
   - undefined
@@ -2323,10 +2307,6 @@ ActiveRecord::Base.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base.human_attribute_name:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.i18n_scope:
   types:
   - ":activerecord"
@@ -2895,10 +2875,6 @@ ActiveRecord::Base.method_visibility:
   - undefined
   skip: false
 ActiveRecord::Base.minimum:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.model_name:
   types:
   - undefined
   skip: false
@@ -3793,13 +3769,7 @@ ActiveRecord::Base.serialize:
 ActiveRecord::Base.set_callback:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base.shard_selector:
   types:
   - undefined
@@ -3948,10 +3918,6 @@ ActiveRecord::Base.source_attribute_from_preserved_attribute:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base.sqlite3_connection:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.sti_class_for:
   types:
   - undefined
