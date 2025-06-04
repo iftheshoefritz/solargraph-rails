@@ -2994,7 +2994,7 @@ ActionController::Base#render:
   skip: false
 ActionController::Base#render_to_body:
   types:
-  - nil
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
