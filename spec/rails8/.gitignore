@@ -32,3 +32,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/.gem_rbs_collection
+/rbs_collection.lock.yaml
