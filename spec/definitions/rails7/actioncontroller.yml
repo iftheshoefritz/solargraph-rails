@@ -811,13 +811,7 @@ ActionController::Base.html_safe?:
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base.in?:
   types:
   - Boolean
@@ -1886,23 +1880,11 @@ ActionController::Base#assets_dir=:
 ActionController::Base#authenticate_or_request_with_http_basic:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#authenticate_or_request_with_http_digest:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#authenticate_or_request_with_http_token:
   types:
   - undefined
@@ -1916,23 +1898,11 @@ ActionController::Base#authenticate_or_request_with_http_token:
 ActionController::Base#authenticate_with_http_basic:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#authenticate_with_http_digest:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#authenticate_with_http_token:
   types:
   - undefined
@@ -2572,13 +2542,7 @@ ActionController::Base#html_safe?:
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#http_cache_forever:
   types:
   - undefined
