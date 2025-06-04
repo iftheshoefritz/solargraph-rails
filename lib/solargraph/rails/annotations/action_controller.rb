@@ -7,6 +7,7 @@ class ActionController::Base
   extend ActiveSupport::Rescuable::ClassMethods
   extend AbstractController::Callbacks::ClassMethods
   extend ActionController::RequestForgeryProtection::ClassMethods
+  extend ActionController::HttpAuthentication::Basic::ControllerMethods::ClassMethods
 
   # @return [ActionDispatch::Response]
   def response; end
