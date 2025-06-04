@@ -2020,13 +2020,7 @@ ActionController::Base#default_asset_host_protocol=:
 ActionController::Base#default_form_builder:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#default_protect_from_forgery:
   types:
   - undefined
@@ -2052,13 +2046,7 @@ ActionController::Base#default_protect_from_forgery=:
 ActionController::Base#default_render:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#default_static_extension:
   types:
   - undefined
@@ -2283,23 +2271,11 @@ ActionController::Base#expire_fragment:
 ActionController::Base#expires_in:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#expires_now:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#flash:
   types:
   - ActionDispatch::Flash::FlashHash
@@ -2408,13 +2384,7 @@ ActionController::Base#fragment_exist?:
 ActionController::Base#fresh_when:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#full_url_for:
   types:
   - undefined
@@ -2431,13 +2401,7 @@ ActionController::Base#gem:
 ActionController::Base#handle_unverified_request:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#handler_for_rescue:
   types:
   - undefined
@@ -2460,13 +2424,7 @@ ActionController::Base#headers:
 ActionController::Base#helpers:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#helpers_path:
   types:
   - undefined
@@ -2517,13 +2475,7 @@ ActionController::Base#http_basic_authenticate_or_request_with:
 ActionController::Base#http_cache_forever:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#in?:
   types:
   - Boolean
@@ -2630,13 +2582,7 @@ ActionController::Base#javascripts_dir=:
 ActionController::Base#l:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#locale:
   types:
   - undefined
@@ -2662,13 +2608,7 @@ ActionController::Base#locale=:
 ActionController::Base#localize:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#location:
   types:
   - undefined
@@ -2853,13 +2793,7 @@ ActionController::Base#new_polymorphic_url:
 ActionController::Base#no_store:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#notice:
   types:
   - undefined
@@ -3055,14 +2989,8 @@ ActionController::Base#render:
   skip: false
 ActionController::Base#render_to_body:
   types:
-  - nil
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  - undefined
+  skip: false
 ActionController::Base#render_to_string:
   types:
   - undefined
@@ -3249,33 +3177,15 @@ ActionController::Base#route_for:
 ActionController::Base#run_callbacks:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#send_data:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#send_file:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#session:
   types:
   - ActionDispatch::Request::Session
@@ -3378,13 +3288,7 @@ ActionController::Base#signed_in_root_path:
 ActionController::Base#stale?:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#status:
   types:
   - undefined
@@ -3452,13 +3356,7 @@ ActionController::Base#stylesheets_dir=:
 ActionController::Base#t:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#template_exists?:
   types:
   - undefined
@@ -3500,13 +3398,7 @@ ActionController::Base#to_query:
 ActionController::Base#translate:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  skip: false
 ActionController::Base#try:
   types:
   - generic<T>
