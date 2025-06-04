@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'Rails 7 API' do
+RSpec.describe 'Rails API completion' do
   filename = nil
   it 'it provides Rails controller api' do
     map =
