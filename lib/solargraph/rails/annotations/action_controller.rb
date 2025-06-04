@@ -5,6 +5,10 @@ class ActionController::Base
   include AbstractController::Rendering
   extend AbstractController::Rendering::ClassMethods
   include ActionView::Layouts
+  include HttpAuthentication::Basic::ControllerMethods
+  extend HttpAuthentication::Basic::ControllerMethods::ClassMethods
+  include HttpAuthentication::Digest::ControllerMethods
+  include HttpAuthentication::Token::ControllerMethods
   extend ActiveSupport::Callbacks::ClassMethods
   extend ActiveSupport::Rescuable::ClassMethods
   include ActiveSupport::Rescuable
