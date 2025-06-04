@@ -53,8 +53,6 @@ class ActionController::Base
   extend ActiveSupport::Rescuable::ClassMethods
   include ActiveSupport::Rescuable
 
->>>>>>> Stashed changes
-
   # @return [ActionDispatch::Response]
   def response; end
   # @return [ActionDispatch::Request]
