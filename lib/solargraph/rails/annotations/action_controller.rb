@@ -9,6 +9,7 @@ class ActionController::Base
   extend ActionController::RequestForgeryProtection::ClassMethods
   extend ActionController::HttpAuthentication::Basic::ControllerMethods::ClassMethods
   include ActionController::HttpAuthentication::Basic::ControllerMethods
+  include ActionController::HttpAuthentication::Digest::ControllerMethods
 
   # @return [ActionDispatch::Response]
   def response; end
