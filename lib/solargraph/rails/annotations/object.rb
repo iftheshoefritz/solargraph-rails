@@ -4,7 +4,7 @@ class Object
 
   # @return [self, nil]
   def presence_in(x); end
-
-  # @return [Boolean]
-  def present?; end
 end
+
+# @!override Object#present?
+#   @return [Boolean]
