@@ -202,7 +202,11 @@ module Helpers
     end
   end
 
-  def use_workspace(folder, &block)
+  def rails_workspace(&block)
+    rails_version = ENV.fetch('MATRIX_RAILS_VERSION')
+    rails_major_version = rails_version.split('.').first.to_i
+    folder = "./spec/rails#{rails_major_version}"
+
     injector = Injector.new(folder)
     map = nil
 

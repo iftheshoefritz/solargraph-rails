@@ -1,19 +1,5 @@
 # Solargraph-Rails development guide
 
-## Contributing
-
-1. create fork and clone the repo
-2. install gem deps `bundle install`
-3. install dummy Rails app deps and build its yard cache
-
-    ```
-    $ cd spec/rails7
-    $ bundle install && yard gems
-    $ cd ../../
-    ```
-4. now tests should pass locally and you can try different changes
-5. submit PR
-
 ## Debugging workflow / test matrix issues locally
 
 ```sh
@@ -24,7 +10,7 @@ act pull_request
 ## Completion coverage tracking
 
 Solargraph-Rails uses a [set of yaml files](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/definitions) to track coverage of found completions.
-Those yaml files are generated at runtime from a dummy [Rails 7 app](https://github.com/iftheshoefritz/solargraph-rails/tree/master/spec/rails7).
+Those yaml files are generated at runtime from a dummy Rails apps in the spec/rails* directories.
 
 The main goal is to catch any regressions in case of any change. In case a method completion is marked completed and it is not found in solargraph completions, the tests will fail.
 
@@ -76,7 +62,7 @@ In case a new set of assertion files has to be created (for a new Rails version 
 All you have to do is execute the script and pass it a path to rails app:
 
 ```
-ruby script/generate_definitions.rb spec/rails7
+ruby script/generate_definitions.rb spec/rails8
 ```
 
 Make sure to review the script and uncomment relevant parts

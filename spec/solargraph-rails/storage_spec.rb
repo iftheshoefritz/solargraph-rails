@@ -3,7 +3,7 @@ require "spec_helper"
 RSpec.describe Solargraph::Rails::Storage do
   it "can auto-complete ActiveStorage" do
     filename = nil
-    map = use_workspace "./spec/rails7" do |root|
+    map = rails_workspace do |root|
       filename = root.write_file 'app/models/thing.rb', <<~EOS
         class Thing < ActiveRecord::Base
           has_one_attached :image
