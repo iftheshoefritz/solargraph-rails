@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Kind of ugly, but works. The setup-ruby action forces gems to be installed to vendor/bundle
-# If we use it naively we end up with vendor/bundle  and spec/rails7/vendor/bundle, which
+# If we use it naively we end up with vendor/bundle  and spec/rails*/vendor/bundle, which
 # breaks all the tests because docs are generated in two different directories.
 #
 # So if we just install the rails deps at the same time, we have a single cache and a single

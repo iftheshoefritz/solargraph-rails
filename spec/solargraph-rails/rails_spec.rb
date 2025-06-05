@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-RSpec.describe 'Rails 7 API' do
+RSpec.describe 'Rails API completion' do
   filename = nil
   it 'it provides Rails controller api' do
     map =
-      use_workspace './spec/rails7' do |root|
+      rails_workspace do |root|
         filename = root.write_file 'app/controllers/things_controller.rb', <<~EOS
           class ThingsController < ActionController::Base
             res
@@ -29,7 +29,7 @@ RSpec.describe 'Rails 7 API' do
   it 'can auto-complete inside routes', skip: 'not working' do
     filename = nil
     map =
-      use_workspace './spec/rails7' do |root|
+      rails_workspace do |root|
         filename = root.write_file 'config/routes.rb', <<~EOS
         Rails.application.routes.draw do
           res
@@ -47,7 +47,7 @@ RSpec.describe 'Rails 7 API' do
   it 'can auto-complete inside mailers' do
     filename = nil
     map =
-      use_workspace './spec/rails7' do |root|
+      rails_workspace do |root|
         filename = root.write_file 'app/mailers/test_mailer.rb', <<~EOS
         class TestMailer < ActionMailer::Base
           defa
@@ -63,7 +63,7 @@ RSpec.describe 'Rails 7 API' do
   end
 
   xit 'understands mattr methods' do
-    map = use_workspace './spec/rails7'
+    map = rails_workspace
     # assert_class_method(map, 'ActiveJob::QueuePriority::ClassMethods.default_priority', ['undefined'])
     assert_class_method(map, 'ActiveJob::QueueName::ClassMethods.default_queue_name', ['undefined'])
     # assert_public_instance_method(map, 'ActiveJob::QueueName::ClassMethods#default_queue_name', ['undefined'])
@@ -73,7 +73,7 @@ RSpec.describe 'Rails 7 API' do
   it 'can auto-complete inside migrations' do
     filename = nil
     map =
-      use_workspace './spec/rails7' do |root|
+      rails_workspace do |root|
         filename = root.write_file 'db/migrate/20130502114652_create_things.rb', <<~EOS
         class CreateThings < ActiveRecord::Migration[7.0]
           def self.up
@@ -104,50 +104,56 @@ RSpec.describe 'Rails 7 API' do
   end
 
   it 'provides completions for ActiveJob::Base' do
-    map = use_workspace './spec/rails7'
+    map = rails_workspace
 
     assert_matches_definitions(
       map,
       'ActiveJob::Base',
-      'rails7/activejob'
+      'activejob'
     )
   end
 
   it 'provides completions for ActionDispatch::Routing::Mapper' do
-    map = use_workspace './spec/rails7'
+    map = rails_workspace
 
     assert_matches_definitions(
       map,
       'ActionDispatch::Routing::Mapper',
-      'rails7/routes'
+      'routes'
     )
   end
 
   it 'provides completions for ActiveRecord::Base' do
-    map = use_workspace './spec/rails7'
+    map = rails_workspace
 
-    assert_matches_definitions(map, 'ActiveRecord::Base', 'rails7/activerecord')
+    assert_matches_definitions(map, 'ActiveRecord::Base', 'activerecord')
   end
 
   it 'provides completions for ActionController::Base' do
-    map = use_workspace './spec/rails7'
+    map = rails_workspace
     assert_matches_definitions(
       map,
       'ActionController::Base',
-      'rails7/actioncontroller'
+      'actioncontroller'
     )
+  end
+
+  # https://github.com/iftheshoefritz/solargraph-rails/issues/124
+  xit 'understands ActiveRecord::Base#validation_context' do
+    map = rails_workspace
+    assert_method(map, 'ActiveRecord::Base#validation_context', ['undefined'])
   end
 
   context 'auto-completes ActiveSupport core extensions' do
     Dir
-      .glob('spec/definitions/rails7/core/*.yml')
+      .glob('spec/definitions/core/*.yml')
       .each do |path|
       name = File.basename(path).split('.').first
 
       it "core/#{name}" do
-        map = use_workspace './spec/rails7'
+        map = rails_workspace
 
-        assert_matches_definitions(map, name, "rails7/core/#{name}")
+        assert_matches_definitions(map, name, "core/#{name}")
       end
     end
   end

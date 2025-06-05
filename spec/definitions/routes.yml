@@ -198,10 +198,6 @@ ActionDispatch::Routing::Mapper.pry:
   types:
   - undefined
   skip: false
-ActionDispatch::Routing::Mapper.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActionDispatch::Routing::Mapper.redefine_method:
   types:
   - undefined

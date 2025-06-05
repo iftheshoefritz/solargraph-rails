@@ -1,0 +1,24 @@
+# Download sources
+sources:
+  - type: git
+    name: ruby/gem_rbs_collection
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    # locked for test stability - you're encouraged to bump this and
+    # submit a PR with the definition changes!  we just don't want
+    # things failing after unrelated changes.
+    #
+    # https://github.com/ruby/gem_rbs_collection/commits/main/
+    revision: ed61b16bf0a42201814e6a3baa9663d9f3a69046
+    repo_dir: gems
+
+# You can specify local directories as sources also.
+# - type: local
+#   path: path/to/your/local/repository
+
+# A directory to install the downloaded RBSs
+path: .gem_rbs_collection
+
+# gems:
+#   # If you want to avoid installing rbs files for gems, you can specify them here.
+#   - name: GEM_NAME
+#     ignore: true

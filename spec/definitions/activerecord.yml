@@ -3286,10 +3286,6 @@ ActiveRecord::Base.quoted_table_name:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.reading_role:
   types:
   - undefined
@@ -6645,16 +6641,6 @@ ActiveRecord::Base#validates_with:
   types:
   - undefined
   skip: false
-ActiveRecord::Base#validation_context:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base#values_at:
   types:
   - Array
