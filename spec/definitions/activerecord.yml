@@ -6644,7 +6644,6 @@ ActiveRecord::Base#validates_with:
 ActiveRecord::Base#validation_context:
   types:
   - undefined
-  added_in: 8.0
 ActiveRecord::Base#values_at:
   types:
   - Array

@@ -138,6 +138,11 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
+  it 'understands ActiveRecord::Base#validation_context' do
+    map = rails_workspace
+    assert_method(map, 'ActiveRecord::Base#validation_context', ['undefined'])
+  end
+
   context 'auto-completes ActiveSupport core extensions' do
     Dir
       .glob('spec/definitions/core/*.yml')

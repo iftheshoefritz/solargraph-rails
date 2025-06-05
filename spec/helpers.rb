@@ -223,7 +223,7 @@ module Helpers
     map
   end
 
-  def assert_generic_method(map, query, return_type, args: {}, scope: map.includes?("#") ? :instance : :class, &block)
+  def assert_method(map, query, return_type, args: {}, scope: query.include?("#") ? :instance : :class, &block)
     pin = find_pin(query, map)
     expect(pin).to_not be_nil, "Expected #{query} to exist, but it doesn't"
     expect(pin.scope).to eq(scope), "Expected #{query} to have scope #{scope}, but it has #{pin.scope}"
@@ -245,11 +245,11 @@ module Helpers
   end
 
   def assert_public_instance_method(map, query, return_type, args: {}, &block)
-    assert_generic_method(map, query, return_type, args: args, scope: :instance, &block)
+    assert_method(map, query, return_type, args: args, scope: :instance, &block)
   end
 
   def assert_class_method(map, query, return_type, args: {}, &block)
-    assert_generic_method(map, query, return_type, args: args, scope: :class, &block)
+    assert_method(map, query, return_type, args: args, scope: :class, &block)
   end
 
   def find_pin(path, map = api_map)
