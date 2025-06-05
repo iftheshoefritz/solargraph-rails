@@ -6641,9 +6641,6 @@ ActiveRecord::Base#validates_with:
   types:
   - undefined
   skip: false
-ActiveRecord::Base#validation_context:
-  types:
-  - undefined
 ActiveRecord::Base#values_at:
   types:
   - Array
