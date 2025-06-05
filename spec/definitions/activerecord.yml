@@ -6644,13 +6644,7 @@ ActiveRecord::Base#validates_with:
 ActiveRecord::Base#validation_context:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
+  added_in: 8.0
 ActiveRecord::Base#values_at:
   types:
   - Array
