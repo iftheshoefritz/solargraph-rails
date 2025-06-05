@@ -109,7 +109,7 @@ RSpec.describe 'Rails API completion' do
     assert_matches_definitions(
       map,
       'ActiveJob::Base',
-      'rails7/activejob'
+      'activejob'
     )
   end
 
@@ -119,14 +119,14 @@ RSpec.describe 'Rails API completion' do
     assert_matches_definitions(
       map,
       'ActionDispatch::Routing::Mapper',
-      'rails7/routes'
+      'routes'
     )
   end
 
   it 'provides completions for ActiveRecord::Base' do
     map = use_workspace './spec/rails7'
 
-    assert_matches_definitions(map, 'ActiveRecord::Base', 'rails7/activerecord')
+    assert_matches_definitions(map, 'ActiveRecord::Base', 'activerecord')
   end
 
   it 'provides completions for ActionController::Base' do
@@ -134,20 +134,20 @@ RSpec.describe 'Rails API completion' do
     assert_matches_definitions(
       map,
       'ActionController::Base',
-      'rails7/actioncontroller'
+      'actioncontroller'
     )
   end
 
   context 'auto-completes ActiveSupport core extensions' do
     Dir
-      .glob('spec/definitions/rails7/core/*.yml')
+      .glob('spec/definitions/core/*.yml')
       .each do |path|
       name = File.basename(path).split('.').first
 
       it "core/#{name}" do
         map = use_workspace './spec/rails7'
 
-        assert_matches_definitions(map, name, "rails7/core/#{name}")
+        assert_matches_definitions(map, name, "core/#{name}")
       end
     end
   end

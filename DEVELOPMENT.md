@@ -48,7 +48,7 @@ What you will see in test output is reported coverage for classes that are track
 In case an improvement is made, and more completions are found then being asserted, tests will throw a warning:
 
 ```
-ActionDispatch::Routing::Mapper.try! is marked as skipped in spec/definitions/rails5/routes.yml, but is actually present.
+ActionDispatch::Routing::Mapper.try! is marked as skipped in spec/definitions/routes.yml, but is actually present.
 Consider setting skip=false
   provides completions for ActionDispatch::Routing::Mapper
 ```
