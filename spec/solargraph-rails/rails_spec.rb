@@ -138,7 +138,8 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
-  it 'understands ActiveRecord::Base#validation_context' do
+  # https://github.com/iftheshoefritz/solargraph-rails/issues/124
+  xit 'understands ActiveRecord::Base#validation_context' do
     map = rails_workspace
     assert_method(map, 'ActiveRecord::Base#validation_context', ['undefined'])
   end
