@@ -1,0 +1,70 @@
+---
+# To debug locally:
+#   npm install -g act
+#   act act pull_request
+#
+
+name: Typecheck
+
+on:
+  workflow_dispatch: {}
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - 'main'
+    tags:
+      - 'v*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler: latest
+          bundler-cache: true
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-02
+
+      - name: Restore cache of gem annotations
+        id: dot-cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          key: |
+            ${{ runner.os }}-dot-cache-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-dot-cache-
+          path: |
+            /home/runner/.cache/solargraph
+
+      - name: bundle list
+        run: |
+          # same as used by ruby/setup-ruby
+          BUNDLE_PATH="${GITHUB_WORKSPACE:?}/vendor/bundle"
+          export BUNDLE_PATH
+          bundle list && cat Gemfile.lock && find vendor -name Gemfile
+
+      #- name: Setup upterm session
+      #  uses: lhotari/action-upterm@v1
+
+      - name: Typecheck
+        run: |
+          set -x
+          # same as used by ruby/setup-ruby
+          ruby --version
+          bundle install
+          bundle update solargraph
+          bundle exec solargraph version
+          bundle exec solargraph typecheck --level normal
+
+      - name: Cache gem annotations
+        id: dot-cache-save
+        if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          key: |
+            ${{ runner.os }}-dot-cache-${{ hashFiles('Gemfile.lock') }}
+          path: |
+            /home/runner/.cache/solargraph
