@@ -49,26 +49,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: cache gemfile.lock for better cache stability
-        uses: actions/cache@v3
-        id: gemfilelock
-        with:
-          key: ${{ runner.os }}-gemfilelock-${{ matrix.versions.ruby }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}
-          path: |
-            ${{ env.GITHUB_WORKSPACE }}/Gemfile.lock
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-${{ env.MATRIX_RAILS_VERSION }}-2025-06-02
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-02
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
-          # Ensure that we share cache between spec/rails*/Gemfile and Gemfile in the root
-          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
-          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
 
       - name: Install child bundle
         run: |
