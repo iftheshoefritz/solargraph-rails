@@ -50,6 +50,10 @@ jobs:
           BUNDLE_PATH="${GITHUB_WORKSPACE:?}/vendor/bundle"
           export BUNDLE_PATH
           bundle list && cat Gemfile.lock && find vendor -name Gemfile
+        env:
+          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
+          MATRIX_RAILS_MAJOR_VERSION: "8"
+          MATRIX_RAILS_VERSION: "8.0"
 
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
@@ -64,6 +68,10 @@ jobs:
           bundle exec solargraph version
           # SOLARGRAPH_ASSERTS=on
           bundle exec solargraph typecheck --level strict
+        env:
+          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
+          MATRIX_RAILS_MAJOR_VERSION: "8"
+          MATRIX_RAILS_VERSION: "8.0"
 
       - name: Cache gem annotations
         id: dot-cache-save
