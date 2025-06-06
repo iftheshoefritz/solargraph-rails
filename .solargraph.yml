@@ -6,7 +6,10 @@ exclude:
 - lib/solargraph/rails/annotations/**/*
 - vendor/**/*
 - ".bundle/**/*"
-require: []
+require:
+  - solargraph
+  - active_support
+  - active_support/core_ext/string/inflections
 domains: []
 reporters: []
 formatter:
