@@ -63,6 +63,8 @@ module Helpers
           class_methods.select { |p| p.name == meth[1..-1] }
         elsif meth.start_with?('#')
           instance_methods.select { |p| p.name == meth[1..-1] }
+        else
+          raise "Bad method name in definitions: #{meth} in #{definitions_file}"
         end
 
       # @type [Array<Solargraph::Pin::Base>] pins
