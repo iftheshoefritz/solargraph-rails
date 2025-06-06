@@ -7,6 +7,7 @@ source 'https://rubygems.org'
 # So if we just install the rails deps at the same time, we have a single cache and a single
 # directory for gems.
 rails_version = ENV.fetch('MATRIX_RAILS_VERSION')
+STDERR.puts("Using Rails version: #{rails_version.inspect}")
 rails_major_version = rails_version.split('.').first
 instance_eval File.read(File.expand_path("spec/rails#{rails_major_version}/Gemfile", __dir__))
 
