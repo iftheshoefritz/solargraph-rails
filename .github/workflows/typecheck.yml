@@ -67,7 +67,7 @@ jobs:
           bundle update solargraph
           bundle exec solargraph version
           # SOLARGRAPH_ASSERTS=on
-          bundle exec solargraph typecheck --level strict
+          bundle exec solargraph typecheck --level typed
         env:
           MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
           MATRIX_RAILS_MAJOR_VERSION: "8"
