@@ -27,7 +27,11 @@ jobs:
           ruby-version: 3.4
           bundler: latest
           bundler-cache: true
-          cache-version: 2025-06-02
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
+        env:
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
 
       - name: Restore cache of gem annotations
         id: dot-cache-restore

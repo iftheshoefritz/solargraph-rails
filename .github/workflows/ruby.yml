@@ -54,10 +54,12 @@ jobs:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-02
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
 
       - name: Install child bundle
         run: |
