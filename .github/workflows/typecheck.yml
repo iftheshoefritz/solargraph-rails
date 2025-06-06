@@ -17,7 +17,7 @@ on:
       - 'v*'
 
 jobs:
-  test:
+  typecheck:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -58,7 +58,8 @@ jobs:
           bundle install
           bundle update solargraph
           bundle exec solargraph version
-          bundle exec solargraph typecheck --level normal
+          # SOLARGRAPH_ASSERTS=on
+          bundle exec solargraph typecheck --level strict
 
       - name: Cache gem annotations
         id: dot-cache-save

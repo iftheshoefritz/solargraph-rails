@@ -14,8 +14,8 @@ module Solargraph
         end
       end
 
-      # @param yard_map [YardMap]
-      def global(_yard_map)
+      # @param yard_map [Solargraph::DocMap]
+      def global(_doc_map)
         extra_source_maps.values.flat_map(&:pins)
       end
 
