@@ -7,9 +7,8 @@ exclude:
 - vendor/**/*
 - ".bundle/**/*"
 require:
+  # we generally assume a solargraph require has been made and don't make it explicitly
   - solargraph
-  - active_support
-  - active_support/core_ext/string/inflections
 domains: []
 reporters: []
 formatter:

@@ -47,9 +47,9 @@ if solargraph_force_ci_version == '0.54.6.alpha'
       # path: '../solargraph'
 elsif solargraph_force_ci_version == '0.55.alpha'
   gem 'solargraph',
-      github: 'apiology/solargraph',
-      branch: '2025-04-28'
-      # path: '../solargraph'
+      # github: 'apiology/solargraph',
+      # branch: '2025-04-28'
+      path: '../solargraph'
 else
   gem 'solargraph'
 end
