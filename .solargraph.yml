@@ -2,10 +2,13 @@
 include:
 - "**/*.rb"
 exclude:
-- test/**/*
+- spec/**/*
+- lib/solargraph/rails/annotations/**/*
 - vendor/**/*
 - ".bundle/**/*"
-require: []
+require:
+  # we generally assume a solargraph require has been made and don't make it explicitly
+  - solargraph
 domains: []
 reporters: []
 formatter:

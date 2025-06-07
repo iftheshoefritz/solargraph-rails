@@ -6,7 +6,8 @@ source 'https://rubygems.org'
 #
 # So if we just install the rails deps at the same time, we have a single cache and a single
 # directory for gems.
-rails_major_version = ENV.fetch('MATRIX_RAILS_MAJOR_VERSION', '7')
+rails_version = ENV.fetch('MATRIX_RAILS_VERSION')
+rails_major_version = rails_version.split('.').first
 instance_eval File.read(File.expand_path("spec/rails#{rails_major_version}/Gemfile", __dir__))
 
 solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])

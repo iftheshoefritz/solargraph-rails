@@ -89,9 +89,9 @@ module Solargraph
       # E.g. given an AST node for `foo(:bar, baz: qux)`, you can use
       # `extract_option(node, :baz)` to get the AST node for `qux`.
       #
-      # @param call_node [Node]
+      # @param call_node [AST::Node]
       # @param option_name [Symbol]
-      # @return [Node, nil]
+      # @return [AST::Node, nil]
       def self.extract_option(call_node, option_name)
         options = call_node.children[3..-1].find { |n| n.type == :hash }
         return unless options
