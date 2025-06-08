@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::Devise do
-  it "includes devise modules in rails7" do
+  it "includes devise modules" do
     filename = nil
-    map = use_workspace "./spec/rails7" do |root|
+    map = rails_workspace do |root|
       root.write_file 'app/models/awesome_user.rb', <<~RUBY
         class AwesomeUser < ActiveRecord::Base
           devise :registerable, :confirmable, :timeoutable, timeout_in: 12.hours

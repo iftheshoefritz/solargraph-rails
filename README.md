@@ -87,11 +87,14 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ifthes
 
 ```
 cd spec/rails7 && bundle install && rbs collection init && rbs collection install && cd ../../
+cd spec/rails8 && bundle install && rbs collection init && rbs collection install && cd ../../
 ```
 
 4. now tests should pass locally and you can try different changes
 
 5. submit PR
+
+See [DEVELOPMENT.md](./DEVELOPMENT.md) for more information
 
 ## License
 

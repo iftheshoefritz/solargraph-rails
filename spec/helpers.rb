@@ -1,3 +1,6 @@
+require 'logger'
+require 'rails'
+
 module Helpers
   def load_string(filename, str)
     source = Solargraph::Source.load_string(str, filename)
@@ -78,6 +81,18 @@ module Helpers
 
       skip = false
       typed += 1 if data['types'] != ['undefined']
+      rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
+      if data['removed_in']
+        rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
+        if data['removed_in'].to_f <= rails_major_and_minor_version.to_f
+          skip = true
+        end
+      end
+      if data['added_in']
+        if data['added_in'].to_f > rails_major_and_minor_version.to_f
+          skip = true
+        end
+      end
       if data['skip'] == true ||
          data['skip'] == Solargraph::VERSION ||
          (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
@@ -104,12 +119,13 @@ module Helpers
           elsif !skip
             incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
           end
-        elsif skip
+        # rbs-only definitions may cover multiple versions of Rails and cause false alarms
+        elsif skip && !(pin.respond_to?(:source) && pin.source == :rbs)
           if update
             remove_skip(data)
           else
             incorrect << <<~STR
-            #{class_name}#{meth} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct.
+            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
             Consider setting skip=false
           STR
           end
@@ -186,7 +202,11 @@ module Helpers
     end
   end
 
-  def use_workspace(folder, &block)
+  def rails_workspace(&block)
+    rails_version = ENV.fetch('MATRIX_RAILS_VERSION')
+    rails_major_version = rails_version.split('.').first.to_i
+    folder = "./spec/rails#{rails_major_version}"
+
     injector = Injector.new(folder)
     map = nil
 
@@ -203,7 +223,7 @@ module Helpers
     map
   end
 
-  def assert_generic_method(map, query, return_type, args: {}, scope: map.includes?("#") ? :instance : :class, &block)
+  def assert_method(map, query, return_type, args: {}, scope: query.include?("#") ? :instance : :class, &block)
     pin = find_pin(query, map)
     expect(pin).to_not be_nil, "Expected #{query} to exist, but it doesn't"
     expect(pin.scope).to eq(scope), "Expected #{query} to have scope #{scope}, but it has #{pin.scope}"
@@ -225,11 +245,11 @@ module Helpers
   end
 
   def assert_public_instance_method(map, query, return_type, args: {}, &block)
-    assert_generic_method(map, query, return_type, args: args, scope: :instance, &block)
+    assert_method(map, query, return_type, args: args, scope: :instance, &block)
   end
 
   def assert_class_method(map, query, return_type, args: {}, &block)
-    assert_generic_method(map, query, return_type, args: args, scope: :class, &block)
+    assert_method(map, query, return_type, args: args, scope: :class, &block)
   end
 
   def find_pin(path, map = api_map)

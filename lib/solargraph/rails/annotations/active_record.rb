@@ -37,6 +37,17 @@ class ActiveRecord::Base
   extend ActiveRecord::Scoping::Named::ClassMethods
   extend ActiveRecord::RelationMethods
   include ActiveRecord::Persistence
+  extend ActiveModel::AttributeRegistration::ClassMethods
+  # note: this supplies set_callback() - after Rails 7.1, this is no
+  #  longer used and is replaced entirely by ActiveRecord::Callbacks
+  #  below
+  include ActiveRecord::Callbacks
+  extend ActiveRecord::Callbacks::ClassMethods
+  extend Translation
+
+  def self.set_callback
+  end
+
 end
 
 # @!override ActiveRecord::Batches#find_each
