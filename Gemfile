@@ -30,6 +30,10 @@ group :development, :test do
   gem 'byebug'
 end
 
+group :development, :rubocop do
+  gem 'rubocop', require: false
+end
+
 if rails_major_version == '7'
   # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
   gem "concurrent-ruby", '<=1.3.5'
