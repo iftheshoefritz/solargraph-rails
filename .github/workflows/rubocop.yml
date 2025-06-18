@@ -23,6 +23,6 @@ jobs:
           skip_install: true
           use_bundler: true
           rubocop_extensions:
-            - rubocop-performance
-            - rubocop-rspec
-            - rubocop-rake
+            - rubocop-performance:gemfile
+            - rubocop-rspec:gemfile
+            - rubocop-rake:gemfile

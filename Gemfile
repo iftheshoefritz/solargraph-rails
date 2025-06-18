@@ -32,6 +32,9 @@ end
 
 group :development, :rubocop do
   gem 'rubocop', require: false
+  gem 'rubocop-rake', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-performance', require: false
 end
 
 if rails_major_version == '7'
