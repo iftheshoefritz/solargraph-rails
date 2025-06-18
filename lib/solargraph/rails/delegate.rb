@@ -20,7 +20,7 @@ module Solargraph
 
         walker.on :send, [nil, :delegate] do |ast|
           last_child = ast.children[-1]
-          next unless last_child.instance_of?(Parser::AST::Node) && last_child.type == :hash
+          next unless last_child.instance_of?(::Parser::AST::Node) && last_child.type == :hash
 
           methods = ast.children[2...-1].select { |c| c.type == :sym }
 
