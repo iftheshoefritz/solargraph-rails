@@ -6,7 +6,7 @@ source 'https://rubygems.org'
 #
 # So if we just install the rails deps at the same time, we have a single cache and a single
 # directory for gems.
-rails_version = ENV.fetch('MATRIX_RAILS_VERSION')
+rails_version = (ENV['CI'] && ENV['MATRIX_RAILS_VERSION']) || '7.2'
 rails_major_version = rails_version.split('.').first
 instance_eval File.read(File.expand_path("spec/rails#{rails_major_version}/Gemfile", __dir__))
 
@@ -28,6 +28,13 @@ group :development, :test do
   gem 'bundler-audit'
   gem 'debug'
   gem 'byebug'
+end
+
+group :development, :rubocop do
+  gem 'rubocop', require: false
+  gem 'rubocop-rake', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-performance', require: false
 end
 
 if rails_major_version == '7'
