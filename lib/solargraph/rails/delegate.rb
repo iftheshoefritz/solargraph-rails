@@ -1,3 +1,5 @@
+require 'parser'
+
 module Solargraph
   module Rails
     class Delegate
@@ -17,7 +19,8 @@ module Solargraph
         pins = []
 
         walker.on :send, [nil, :delegate] do |ast|
-          next unless ast.children[-1].type == :hash
+          last_child = ast.children[-1]
+          next unless last_child.instance_of?(::Parser::AST::Node) && last_child.type == :hash
 
           methods = ast.children[2...-1].select { |c| c.type == :sym }
 
@@ -37,7 +40,7 @@ module Solargraph
 
           prefix = nil
           if prefix_node
-            if prefix_node.type == :sym 
+            if prefix_node.type == :sym
               prefix = prefix_node.children[0]
             elsif prefix_node.type == :true && delegate_node.type == :sym
               prefix = delegate_node.children[0]
