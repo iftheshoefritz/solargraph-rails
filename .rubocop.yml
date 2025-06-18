@@ -314,6 +314,8 @@ Performance/Sum: # new in 1.8
   Enabled: true
 Performance/ZipWithoutBlock: # new in 1.24
   Enabled: true
+RSpec/IncludeExamples: # new in 3.6
+  Enabled: true
 
 plugins:
   - rubocop-performance
