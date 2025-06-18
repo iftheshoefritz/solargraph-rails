@@ -136,6 +136,12 @@ jobs:
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
 
+      - name: Code coverage check
+        uses: aki77/reviewdog-action-code-coverage@v2
+        with:
+          lcov_path: ./coverage/**/*.lcov
+        if: matrix.versions.run_coverage
+
       - name: Cache gem annotations
         id: dot-cache-save
         if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'

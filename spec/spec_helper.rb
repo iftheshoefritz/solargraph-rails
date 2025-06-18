@@ -1,5 +1,19 @@
 ENV['RAILS_ENV'] = 'test'
 
+require 'bundler/setup'
+unless ENV['SIMPLECOV_DISABLED']
+  # set up lcov reporting for undercover
+  require 'simplecov'
+  require 'simplecov-lcov'
+  SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
+  SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
+  SimpleCov.start do
+    add_filter(%r{^/spec/})
+    add_filter('/Rakefile')
+    enable_coverage(:branch)
+  end
+end
+
 # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
 require 'logger'
 require 'solargraph'
