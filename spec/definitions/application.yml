@@ -511,16 +511,6 @@ Rails::Application.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Rails::Application.to_yaml:
-  types:
-  - String
-  - generic<IO>
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.try:
   types:
   - undefined
@@ -1063,16 +1053,6 @@ Rails::Application#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Rails::Application#to_yaml:
-  types:
-  - String
-  - generic<IO>
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#try:
   types:
   - undefined
