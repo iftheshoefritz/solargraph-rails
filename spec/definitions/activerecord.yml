@@ -1397,6 +1397,7 @@ ActiveRecord::Base.current_transaction:
   types:
   - undefined
   skip: false
+  added_in: 7.2
 ActiveRecord::Base.dangerous_attribute_method?:
   types:
   - Boolean
@@ -3665,6 +3666,7 @@ ActiveRecord::Base.release_connection:
   types:
   - undefined
   skip: false
+  added_in: 7.2
 ActiveRecord::Base.remove_connection:
   types:
   - undefined
@@ -5003,6 +5005,7 @@ ActiveRecord::Base.with_connection:
   types:
   - undefined
   skip: false
+  added_in: 7.2
 ActiveRecord::Base.with_options:
   types:
   - undefined
@@ -6130,6 +6133,7 @@ ActiveRecord::Base#full_inspect:
   types:
   - undefined
   skip: false
+  added_in: 7.2
 ActiveRecord::Base#gem:
   types:
   - void
