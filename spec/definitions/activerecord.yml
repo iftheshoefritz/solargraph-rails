@@ -3019,10 +3019,6 @@ ActiveRecord::Base.minimum:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.model_name:
-  types:
-  - ActiveModel::Name
-  skip: false
 ActiveRecord::Base.module_parent:
   types:
   - undefined
