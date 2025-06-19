@@ -250,7 +250,7 @@ Rails::Application.in?:
   skip: false
 Rails::Application.inherited:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
 Rails::Application.initializer:
@@ -388,7 +388,7 @@ Rails::Application.pretty_inspect:
   - 0.52.0
 Rails::Application.pretty_print:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
@@ -397,7 +397,7 @@ Rails::Application.pretty_print:
   - 0.52.0
 Rails::Application.pretty_print_cycle:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
@@ -406,7 +406,7 @@ Rails::Application.pretty_print_cycle:
   - 0.52.0
 Rails::Application.pretty_print_inspect:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
@@ -956,7 +956,7 @@ Rails::Application#pretty_inspect:
   - 0.52.0
 Rails::Application#pretty_print:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
@@ -965,7 +965,7 @@ Rails::Application#pretty_print:
   - 0.52.0
 Rails::Application#pretty_print_cycle:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
@@ -974,7 +974,7 @@ Rails::Application#pretty_print_cycle:
   - 0.52.0
 Rails::Application#pretty_print_inspect:
   types:
-  - BasicObject
+  - undefined
   skip:
   - 0.48.0
   - 0.49.0
