@@ -519,10 +519,6 @@ Rails::Application.try!:
   types:
   - undefined
   skip: false
-Rails::Application.with:
-  types:
-  - undefined
-  skip: false
 Rails::Application.with_options:
   types:
   - undefined
@@ -655,6 +651,7 @@ Rails::Application#deprecators:
   types:
   - undefined
   skip: false
+  added_in: 7.1
 Rails::Application#duplicable?:
   types:
   - 'true'
@@ -698,6 +695,7 @@ Rails::Application#ensure_generator_templates_added:
   types:
   - undefined
   skip: false
+  added_in: 7.1
 Rails::Application#env_config:
   types:
   - undefined
@@ -842,6 +840,7 @@ Rails::Application#message_verifiers:
   types:
   - undefined
   skip: false
+  added_in: 7.1
 Rails::Application#middleware:
   types:
   - undefined
@@ -1071,10 +1070,6 @@ Rails::Application#watchable_args:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Rails::Application#with:
-  types:
-  - undefined
-  skip: false
 Rails::Application#with_options:
   types:
   - undefined
