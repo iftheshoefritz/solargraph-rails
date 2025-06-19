@@ -6880,6 +6880,7 @@ ActiveRecord::Base#strict_loading_all?:
   types:
   - Boolean
   skip: false
+  added_in: 7.1
 ActiveRecord::Base#strict_loading_mode:
   types:
   - undefined
@@ -7157,6 +7158,7 @@ ActiveRecord::Base#update_attribute!:
   types:
   - undefined
   skip: false
+  added_in: 7.1
 ActiveRecord::Base#update_column:
   types:
   - undefined
