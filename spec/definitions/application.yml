@@ -958,30 +958,15 @@ Rails::Application#pretty_inspect:
 Rails::Application#pretty_print:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 Rails::Application#pretty_print_cycle:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 Rails::Application#pretty_print_inspect:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 Rails::Application#pretty_print_instance_variables:
   types:
   - Array<Symbol>
