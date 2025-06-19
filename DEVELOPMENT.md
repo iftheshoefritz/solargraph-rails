@@ -64,8 +64,8 @@ All you have to do is execute the script and pass it a path to rails app:
 ```
 cd spec/rails8
 rails g model model
-rails db:migrate
-ruby ../../script/generate_definitions.rb .
+rails db:drop db:create db:migrate
+bundle exec ruby ../../script/generate_definitions.rb .
 ```
 
 Move .yml files into place, then make sure to review the script and uncomment relevant parts

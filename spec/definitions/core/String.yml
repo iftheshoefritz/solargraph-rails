@@ -375,6 +375,16 @@ String#demodulize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+String#downcase_first:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 String#duplicable?:
   types:
   - 'true'
@@ -389,6 +399,17 @@ String#exclude?:
   types:
   - Boolean
   skip: false
+String#ext:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 String#first:
   types:
   - undefined
@@ -500,6 +521,17 @@ String#parameterize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+String#pathmap:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 String#pluralize:
   types:
   - String
@@ -592,6 +624,15 @@ String#to:
   types:
   - undefined
   skip: false
+String#to_d:
+  types:
+  - BigDecimal
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 String#to_date:
   types:
   - undefined

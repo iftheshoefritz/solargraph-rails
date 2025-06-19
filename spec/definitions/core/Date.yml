@@ -609,6 +609,10 @@ Date#in_time_zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+Date#infinite?:
+  types:
+  - Boolean
+  skip: false
 Date#inspect:
   types:
   - String
@@ -740,6 +744,10 @@ Date#prev_week:
   - undefined
   skip: false
 Date#prev_weekday:
+  types:
+  - undefined
+  skip: false
+Date#quarter:
   types:
   - undefined
   skip: false

@@ -1,5 +1,7 @@
 require File.join(Dir.pwd, ARGV.first, 'config/environment')
 
+require 'method_source'
+
 def _instance_methods(klass, test = klass.new)
   klass
     .instance_methods(true)
@@ -9,14 +11,29 @@ def _instance_methods(klass, test = klass.new)
 end
 
 def own_instance_methods(klass, test = klass.new)
-  (_instance_methods(klass, test) - Object.methods).select do |m|
-    m.source_location && m.source_location.first.include?('gem')
+  reject_meth_names = (Module.methods + Module.private_methods + [:to_yaml]).to_set
+  _instance_methods(klass, test).select do |m|
+    !reject_meth_names.include?(m.name) &&
+      m.source_location &&
+      m.source_location.first.include?('gem') &&
+      m.source_location &&
+      m.source_location.first.include?('gem') &&
+      !m.source_location.first.include?('/pp-') &&
+      m.comment &&
+      !m.comment.empty? &&
+      m.comment != ':nodoc:'
   end
 end
 
 def own_class_methods(klass)
-  (class_methods(klass) - Object.methods).select do |m|
-    m.source_location && m.source_location.first.include?('gem')
+  reject_meth_names = (Module.methods + Module.private_methods + [:to_yaml]).to_set
+  class_methods(klass).select do |m|
+    !reject_meth_names.include?(m.name) &&
+      m.source_location &&
+      m.source_location.first.include?('gem') &&
+      m.comment &&
+      !m.comment.empty? &&
+      m.comment != ':nodoc:'
   end
 end
 
@@ -48,6 +65,18 @@ def build_report(klass, test: klass.new)
 
   pp distribution
   result
+end
+
+def add_new_methods(klass, test, yaml_filename)
+  new_report = build_report(klass, test: test)
+  existing_report ={}
+  existing_report = YAML.load_file(yaml_filename) if File.exist?(yaml_filename)
+  report = {**new_report, **existing_report}
+  class_methods, instance_methods = report.partition { |k, _| k.include?('.') }
+  class_methods = class_methods.sort_by { |k, _v| k }.to_h
+  instance_methods = instance_methods.sort_by { |k, _v| k }.to_h
+  report = {**class_methods, **instance_methods}
+  File.write(yaml_filename, report.deep_stringify_keys.to_yaml)
 end
 
 def core_ext_report(klass, test = klass.new)
@@ -89,26 +118,18 @@ def core_ext_report(klass, test = klass.new)
   result
 end
 
-report = build_report(ActiveRecord::Base, test: Model.new)
-File.write('activerecord.yml', report.deep_stringify_keys.to_yaml)
-
-report = build_report(ActionController::Base)
-File.write('actioncontroller.yml', report.deep_stringify_keys.to_yaml)
-
-report = build_report(ActiveJob::Base)
-File.write('activejob.yml', report.deep_stringify_keys.to_yaml)
+add_new_methods(ActiveRecord::Base, Model.new, '../definitions/activerecord.yml')
+add_new_methods(ActionController::Base, false, '../definitions/actioncontroller.yml')
+add_new_methods(ActiveJob::Base, false, '../definitions/activejob.yml')
 
 Rails.application.routes.draw do
-  report = build_report(self.class, test: false)
-  File.write('routes.yml', report.deep_stringify_keys.to_yaml)
+  add_new_methods(self.class, false, '../definitions/routes.yml')
 end
 
-report = build_report(Rails::Application, test: false)
-File.write('application.yml', report.deep_stringify_keys.to_yaml)
+add_new_methods(Rails::Application, false, '../definitions/application.yml')
 
 Rails.application.routes.draw do
-  report = build_report(self.class, test: false)
-  File.write('routes.yml', report.deep_stringify_keys.to_yaml)
+  add_new_methods(self.class, false, '../definitions/routes.yml')
 end
 
 [
@@ -139,8 +160,7 @@ end
       end
     end
 
-  report = core_ext_report(klass, test = test)
-  File.write("#{klass.to_s}.yml", report.deep_stringify_keys.to_yaml)
+  add_new_methods(klass, test, "../definitions/core/#{klass.to_s}.yml")
 end
 
 # binding.pry

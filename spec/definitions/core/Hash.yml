@@ -328,6 +328,10 @@ Hash#deep_merge!:
   types:
   - undefined
   skip: false
+Hash#deep_merge?:
+  types:
+  - Boolean
+  skip: false
 Hash#deep_stringify_keys:
   types:
   - Hash<String>

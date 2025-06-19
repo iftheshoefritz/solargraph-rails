@@ -926,6 +926,10 @@ Rails::Application#railties_initializers:
   types:
   - undefined
   skip: false
+Rails::Application#rake_tasks:
+  types:
+  - undefined
+  skip: false
 Rails::Application#reload_routes!:
   types:
   - undefined

@@ -859,6 +859,10 @@ Time#prev_year:
   types:
   - undefined
   skip: false
+Time#quarter:
+  types:
+  - undefined
+  skip: false
 Time#sec_fraction:
   types:
   - undefined

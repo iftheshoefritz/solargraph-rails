@@ -61,6 +61,17 @@ ActionController::Base.all_helpers_from_path:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base.allow_browser:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.2
 ActionController::Base.allow_forgery_protection:
   types:
   - undefined
@@ -366,6 +377,30 @@ ActionController::Base.controller_path:
   types:
   - undefined
   skip: false
+ActionController::Base.csrf_token_storage_strategy:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+  added_in: 7.1
+ActionController::Base.csrf_token_storage_strategy=:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+  added_in: 7.1
 ActionController::Base.deep_dup:
   types:
   - undefined
@@ -529,6 +564,10 @@ ActionController::Base.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base.eager_load!:
+  types:
+  - undefined
+  skip: false
 ActionController::Base.enable_fragment_cache_logging:
   types:
   - undefined
@@ -851,10 +890,13 @@ ActionController::Base.include_all_helpers?:
   - 0.55.alpha
 ActionController::Base.inherited:
   types:
-  - BasicObject
+  - undefined
   skip:
-  - 0.48.0
-  - 0.55.alpha
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.instance_values:
   types:
   - undefined
@@ -981,10 +1023,13 @@ ActionController::Base.mattr_writer:
   skip: false
 ActionController::Base.method_added:
   types:
-  - BasicObject
+  - undefined
   skip:
-  - 0.48.0
-  - 0.55.alpha
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.method_visibility:
   types:
   - undefined
@@ -1233,6 +1278,16 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+ActionController::Base.rate_limit:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActionController::Base.redefine_method:
   types:
   - undefined
@@ -1933,10 +1988,43 @@ ActionController::Base#cache_store=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base#cancel_registration_path:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActionController::Base#cancel_registration_url:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#class_eval:
   types:
   - undefined
   skip: false
+ActionController::Base#collect_mimes_from_class_level:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#combined_fragment_cache_key:
   types:
   - undefined
@@ -2442,6 +2530,17 @@ ActionController::Base#helpers_path?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+ActionController::Base#hotwire_native_app?:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#html_safe?:
   types:
   - 'false'
@@ -2918,6 +3017,28 @@ ActionController::Base#read_fragment:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base#recede_or_redirect_back_or_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActionController::Base#recede_or_redirect_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#redirect_back:
   types:
   - undefined
@@ -2930,6 +3051,28 @@ ActionController::Base#redirect_to:
   types:
   - undefined
   skip: false
+ActionController::Base#refresh_or_redirect_back_or_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActionController::Base#refresh_or_redirect_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#relative_url_root:
   types:
   - undefined
@@ -3033,6 +3176,10 @@ ActionController::Base#request_http_token_authentication:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActionController::Base#require_dependency:
+  types:
+  - undefined
+  skip: false
 ActionController::Base#rescue_handlers:
   types:
   - undefined
@@ -3139,6 +3286,32 @@ ActionController::Base#response_body=:
   types:
   - undefined
   skip: false
+ActionController::Base#response_code:
+  types:
+  - undefined
+  skip: false
+ActionController::Base#resume_or_redirect_back_or_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActionController::Base#resume_or_redirect_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#route_for:
   types:
   - undefined
@@ -3382,6 +3555,17 @@ ActionController::Base#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+ActionController::Base#turbo_native_app?:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActionController::Base#url_for:
   types:
   - undefined
@@ -3395,6 +3579,28 @@ ActionController::Base#url_options:
   - undefined
   skip: false
 ActionController::Base#urlsafe_csrf_tokens:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActionController::Base#verify_request_format!:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActionController::Base#verify_requested_format!:
   types:
   - undefined
   skip:

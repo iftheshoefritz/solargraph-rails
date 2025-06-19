@@ -64,3 +64,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# used in generate_definitions.rb
+gem 'method_source', require: false

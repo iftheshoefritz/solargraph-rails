@@ -84,10 +84,12 @@ module Helpers
       skip = false
       typed += 1 if data['types'] != ['undefined']
       rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
+      already_removed = false
       if data['removed_in']
         rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
         if data['removed_in'].to_f <= rails_major_and_minor_version.to_f
           skip = true
+          already_removed = true
         end
       end
       if data['added_in']
@@ -109,9 +111,21 @@ module Helpers
 
         if effective_type != specified_type
           if update
-            if effective_type == ['undefined']
-              add_to_skip(data)
-            elsif specified_type.include?('undefined') || specified_type.include?('BasicObject') || specified_type.include?('Object')
+            if specified_type == ['undefined']
+              if !effective_type.include?('BasicObject') && !effective_type.include?('Object')
+                # sounds like a better type
+                data['types'] = effective_type
+              elsif !skip
+                add_to_skip(data)
+              end
+            elsif specified_type == ['Object']
+              if !effective_type.include?('BasicObject')
+                # sounds like a better type
+                data['types'] = effective_type
+              elsif !skip
+                add_to_skip(data)
+              end
+            elsif specified_type == ['BasicObject']
               # sounds like a better type
               data['types'] = effective_type
             elsif !skip
@@ -132,7 +146,7 @@ module Helpers
           STR
           end
         end
-      elsif update
+      elsif update && !already_removed
         skipped += 1
         add_to_skip(data)
       elsif skip

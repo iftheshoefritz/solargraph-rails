@@ -337,6 +337,10 @@ ActionDispatch::Routing::Mapper#concerns:
   types:
   - undefined
   skip: false
+ActionDispatch::Routing::Mapper#connect:
+  types:
+  - undefined
+  skip: false
 ActionDispatch::Routing::Mapper#constraints:
   types:
   - undefined
