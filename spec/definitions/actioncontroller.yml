@@ -3277,10 +3277,6 @@ ActionController::Base#response_body=:
   types:
   - undefined
   skip: false
-ActionController::Base#response_code:
-  types:
-  - undefined
-  skip: false
 ActionController::Base#resume_or_redirect_back_or_to:
   types:
   - undefined
