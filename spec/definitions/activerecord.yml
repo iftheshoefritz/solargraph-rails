@@ -650,6 +650,7 @@ ActiveRecord::Base.authenticate_by:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.automatic_scope_inversing:
   types:
   - undefined
@@ -873,6 +874,7 @@ ActiveRecord::Base.build:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.cache:
   types:
   - undefined
@@ -2266,6 +2268,7 @@ ActiveRecord::Base.generates_token_for:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.get_primary_key:
   types:
   - undefined
@@ -3113,6 +3116,7 @@ ActiveRecord::Base.normalize_value_for:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.normalizes:
   types:
   - void
@@ -3123,6 +3127,7 @@ ActiveRecord::Base.normalizes:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.offset:
   types:
   - undefined
@@ -3433,6 +3438,7 @@ ActiveRecord::Base.query_constraints:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.queues:
   types:
   - undefined
@@ -6019,6 +6025,7 @@ ActiveRecord::Base#destroy_association_async_batch_size:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#destroyed?:
   types:
   - Boolean
@@ -6136,6 +6143,7 @@ ActiveRecord::Base#generate_token_for:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#has_attribute?:
   types:
   - Boolean
@@ -6399,6 +6407,7 @@ ActiveRecord::Base#normalize_attribute:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#param_delimiter=:
   types:
   - undefined
@@ -6596,6 +6605,7 @@ ActiveRecord::Base#read_attribute_for_database:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#readonly!:
   types:
   - undefined
