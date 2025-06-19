@@ -251,7 +251,12 @@ Rails::Application.in?:
 Rails::Application.inherited:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 Rails::Application.initializer:
   types:
   - undefined
@@ -411,19 +416,6 @@ Rails::Application.pry:
   - undefined
   skip: false
 Rails::Application.railtie_name:
-  types:
-  - undefined
-  skip: false
-Rails::Application.rake_extension:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-Rails::Application.rake_tasks:
   types:
   - undefined
   skip: false
@@ -984,10 +976,6 @@ Rails::Application#railties:
   - undefined
   skip: false
 Rails::Application#railties_initializers:
-  types:
-  - undefined
-  skip: false
-Rails::Application#rake_tasks:
   types:
   - undefined
   skip: false
