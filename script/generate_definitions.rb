@@ -1,10 +1,15 @@
 require File.join(Dir.pwd, ARGV.first, 'config/environment')
 
-class Model < ActiveRecord::Base
+def _instance_methods(klass, test = klass.new)
+  klass
+    .instance_methods(true)
+    .sort
+    .reject { |m| m.to_s.start_with?('_') || (test && !test.respond_to?(m)) }
+    .map { |m| klass.instance_method(m) }
 end
 
 def own_instance_methods(klass, test = klass.new)
-  (instance_methods(klass, test) - Object.methods).select do |m|
+  (_instance_methods(klass, test) - Object.methods).select do |m|
     m.source_location && m.source_location.first.include?('gem')
   end
 end
@@ -13,14 +18,6 @@ def own_class_methods(klass)
   (class_methods(klass) - Object.methods).select do |m|
     m.source_location && m.source_location.first.include?('gem')
   end
-end
-
-def instance_methods(klass, test = klass.new)
-  klass
-    .instance_methods(true)
-    .sort
-    .reject { |m| m.to_s.start_with?('_') || (test && !test.respond_to?(m)) }
-    .map { |m| klass.instance_method(m) }
 end
 
 def class_methods(klass)
@@ -73,7 +70,7 @@ def core_ext_report(klass, test = klass.new)
       }
     end
 
-  instance_methods(klass, test)
+  _instance_methods(klass, test)
     .select(&:source_location)
     .select do |meth|
       loc = meth.source_location.first
@@ -100,6 +97,14 @@ File.write('actioncontroller.yml', report.deep_stringify_keys.to_yaml)
 
 report = build_report(ActiveJob::Base)
 File.write('activejob.yml', report.deep_stringify_keys.to_yaml)
+
+Rails.application.routes.draw do
+  report = build_report(self.class, test: false)
+  File.write('routes.yml', report.deep_stringify_keys.to_yaml)
+end
+
+report = build_report(Rails::Application, test: false)
+File.write('application.yml', report.deep_stringify_keys.to_yaml)
 
 Rails.application.routes.draw do
   report = build_report(self.class, test: false)

@@ -62,10 +62,13 @@ In case a new set of assertion files has to be created (for a new Rails version 
 All you have to do is execute the script and pass it a path to rails app:
 
 ```
-ruby script/generate_definitions.rb spec/rails8
+cd spec/rails8
+rails g model model
+rails db:migrate
+ruby ../../script/generate_definitions.rb .
 ```
 
-Make sure to review the script and uncomment relevant parts
+Move .yml files into place, then make sure to review the script and uncomment relevant parts
 
 ## Preparing a release (maintainers)
 

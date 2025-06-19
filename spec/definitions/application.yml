@@ -1,0 +1,1189 @@
+---
+Rails::Application.<=>:
+  types:
+  - Integer
+  - nil
+  skip:
+  - 0.48.0
+Rails::Application.abstract_railtie?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.acts_like?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.add_lib_to_load_path!:
+  types:
+  - undefined
+  skip: false
+Rails::Application.alias_attribute:
+  types:
+  - undefined
+  skip: false
+Rails::Application.anonymous?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.as_json:
+  types:
+  - undefined
+  skip: false
+Rails::Application.attr_internal:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.attr_internal_accessor:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.attr_internal_reader:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.attr_internal_writer:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.blank?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.called_from:
+  types:
+  - undefined
+  skip: false
+Rails::Application.called_from=:
+  types:
+  - undefined
+  skip: false
+Rails::Application.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Rails::Application.cattr_reader:
+  types:
+  - undefined
+  skip: false
+Rails::Application.cattr_writer:
+  types:
+  - undefined
+  skip: false
+Rails::Application.class_attribute:
+  types:
+  - undefined
+  skip: false
+Rails::Application.concern:
+  types:
+  - undefined
+  skip: false
+Rails::Application.concerning:
+  types:
+  - undefined
+  skip: false
+Rails::Application.config:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application.configure:
+  types:
+  - undefined
+  skip: false
+Rails::Application.console:
+  types:
+  - undefined
+  skip: false
+Rails::Application.const_added:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+Rails::Application.create:
+  types:
+  - undefined
+  skip: false
+Rails::Application.debugger:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.deep_dup:
+  types:
+  - undefined
+  skip: false
+Rails::Application.define_callbacks:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.delegate:
+  types:
+  - undefined
+  skip: false
+Rails::Application.delegate_missing_to:
+  types:
+  - undefined
+  skip: false
+Rails::Application.deprecate:
+  types:
+  - undefined
+  skip: false
+Rails::Application.descendants:
+  types:
+  - undefined
+  skip: false
+Rails::Application.duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.eager_load!:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application.endpoint:
+  types:
+  - undefined
+  skip: false
+Rails::Application.engine_name:
+  types:
+  - undefined
+  skip: false
+Rails::Application.find:
+  types:
+  - undefined
+  skip: false
+Rails::Application.find_root:
+  types:
+  - undefined
+  skip: false
+Rails::Application.find_root_with_flag:
+  types:
+  - Pathname
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.gem:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.generators:
+  types:
+  - undefined
+  skip: false
+Rails::Application.html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.in?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.inherited:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+Rails::Application.initializer:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application.initializers:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application.initializers_chain:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application.initializers_for:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application.instance:
+  types:
+  - undefined
+  skip: false
+Rails::Application.instance_values:
+  types:
+  - undefined
+  skip: false
+Rails::Application.instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Rails::Application.isolate_namespace:
+  types:
+  - undefined
+  skip: false
+Rails::Application.isolated:
+  types:
+  - undefined
+  skip: false
+Rails::Application.isolated=:
+  types:
+  - undefined
+  skip: false
+Rails::Application.isolated?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Rails::Application.mattr_reader:
+  types:
+  - undefined
+  skip: false
+Rails::Application.mattr_writer:
+  types:
+  - undefined
+  skip: false
+Rails::Application.method_visibility:
+  types:
+  - undefined
+  skip: false
+Rails::Application.module_parent:
+  types:
+  - undefined
+  skip: false
+Rails::Application.module_parent_name:
+  types:
+  - undefined
+  skip: false
+Rails::Application.module_parents:
+  types:
+  - undefined
+  skip: false
+Rails::Application.normalize_callback_params:
+  types:
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.presence:
+  types:
+  - nil
+  - self
+  skip: false
+Rails::Application.presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Rails::Application.present?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application.pretty_inspect:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.pretty_print:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.pretty_print_cycle:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.pretty_print_inspect:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.pretty_print_instance_variables:
+  types:
+  - Array<Symbol>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.pry:
+  types:
+  - undefined
+  skip: false
+Rails::Application.railtie_name:
+  types:
+  - undefined
+  skip: false
+Rails::Application.rake_extension:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.rake_tasks:
+  types:
+  - undefined
+  skip: false
+Rails::Application.redefine_method:
+  types:
+  - undefined
+  skip: false
+Rails::Application.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+Rails::Application.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+Rails::Application.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+Rails::Application.require_dependency:
+  types:
+  - undefined
+  skip: false
+Rails::Application.reset_callbacks:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.runner:
+  types:
+  - undefined
+  skip: false
+Rails::Application.server:
+  types:
+  - undefined
+  skip: false
+Rails::Application.set_callback:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
+Rails::Application.skip_callback:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.subclasses:
+  types:
+  - Array<Class>
+  skip: false
+Rails::Application.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+Rails::Application.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+Rails::Application.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+Rails::Application.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+Rails::Application.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+Rails::Application.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+Rails::Application.to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.to_param:
+  types:
+  - undefined
+  skip: false
+Rails::Application.to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application.to_yaml:
+  types:
+  - String
+  - generic<IO>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application.try:
+  types:
+  - undefined
+  skip: false
+Rails::Application.try!:
+  types:
+  - undefined
+  skip: false
+Rails::Application.with:
+  types:
+  - undefined
+  skip: false
+Rails::Application.with_options:
+  types:
+  - undefined
+  skip: false
+Rails::Application.yaml_tag:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#acts_like?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#app:
+  types:
+  - undefined
+  skip: false
+Rails::Application#as_json:
+  types:
+  - undefined
+  skip: false
+Rails::Application#assets:
+  types:
+  - undefined
+  skip: false
+Rails::Application#assets=:
+  types:
+  - undefined
+  skip: false
+Rails::Application#autoloaders:
+  types:
+  - undefined
+  skip: false
+Rails::Application#blank?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#build_middleware_stack:
+  types:
+  - undefined
+  skip: false
+Rails::Application#call:
+  types:
+  - undefined
+  skip: false
+Rails::Application#class_eval:
+  types:
+  - undefined
+  skip: false
+Rails::Application#config:
+  types:
+  - undefined
+  skip: false
+Rails::Application#config=:
+  types:
+  - undefined
+  skip: false
+Rails::Application#config_for:
+  types:
+  - undefined
+  skip: false
+Rails::Application#configure:
+  types:
+  - undefined
+  skip: false
+Rails::Application#console:
+  types:
+  - undefined
+  skip: false
+Rails::Application#credentials:
+  types:
+  - undefined
+  skip: false
+Rails::Application#credentials=:
+  types:
+  - undefined
+  skip: false
+Rails::Application#debugger:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#deep_dup:
+  types:
+  - undefined
+  skip: false
+Rails::Application#default_middleware_stack:
+  types:
+  - ActionDispatch::MiddlewareStack
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application#default_url_options:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#default_url_options=:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#deprecators:
+  types:
+  - undefined
+  skip: false
+Rails::Application#duplicable?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application#eager_load!:
+  types:
+  - undefined
+  skip: false
+Rails::Application#encrypted:
+  types:
+  - ActiveSupport::EncryptedConfiguration
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application#endpoint:
+  types:
+  - undefined
+  skip: false
+Rails::Application#engine_name:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#ensure_generator_templates_added:
+  types:
+  - undefined
+  skip: false
+Rails::Application#env_config:
+  types:
+  - undefined
+  skip: false
+Rails::Application#executor:
+  types:
+  - undefined
+  skip: false
+Rails::Application#gem:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#generators:
+  types:
+  - undefined
+  skip: false
+Rails::Application#helpers:
+  types:
+  - undefined
+  skip: false
+Rails::Application#helpers_paths:
+  types:
+  - undefined
+  skip: false
+Rails::Application#html_safe?:
+  types:
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application#importmap:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#importmap=:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#in?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#initialize!:
+  types:
+  - undefined
+  skip: false
+Rails::Application#initialized?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#initializer:
+  types:
+  - undefined
+  skip: false
+Rails::Application#initializers:
+  types:
+  - undefined
+  skip: false
+Rails::Application#inspect:
+  types:
+  - String
+  skip: false
+Rails::Application#instance_values:
+  types:
+  - undefined
+  skip: false
+Rails::Application#instance_variable_names:
+  types:
+  - undefined
+  skip: false
+Rails::Application#isolate_namespace:
+  types:
+  - undefined
+  skip: false
+Rails::Application#isolated?:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#key_generator:
+  types:
+  - undefined
+  skip: false
+Rails::Application#load_console:
+  types:
+  - undefined
+  skip: false
+Rails::Application#load_generators:
+  types:
+  - undefined
+  skip: false
+Rails::Application#load_runner:
+  types:
+  - undefined
+  skip: false
+Rails::Application#load_seed:
+  types:
+  - undefined
+  skip: false
+Rails::Application#load_server:
+  types:
+  - undefined
+  skip: false
+Rails::Application#load_tasks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#message_verifier:
+  types:
+  - undefined
+  skip: false
+Rails::Application#message_verifiers:
+  types:
+  - undefined
+  skip: false
+Rails::Application#middleware:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#migration_railties:
+  types:
+  - undefined
+  skip: false
+Rails::Application#name:
+  types:
+  - undefined
+  skip: false
+Rails::Application#ordered_railties:
+  types:
+  - undefined
+  skip: false
+Rails::Application#paths:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#presence:
+  types:
+  - nil
+  - self
+  skip: false
+Rails::Application#presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+Rails::Application#present?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#pretty_inspect:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#pretty_print:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#pretty_print_cycle:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#pretty_print_inspect:
+  types:
+  - BasicObject
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#pretty_print_instance_variables:
+  types:
+  - Array<Symbol>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#pry:
+  types:
+  - undefined
+  skip: false
+Rails::Application#railtie_name:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#railtie_namespace:
+  types:
+  - undefined
+  skip: false
+Rails::Application#railties:
+  types:
+  - undefined
+  skip: false
+Rails::Application#railties_initializers:
+  types:
+  - undefined
+  skip: false
+Rails::Application#rake_tasks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#reload_routes!:
+  types:
+  - undefined
+  skip: false
+Rails::Application#reload_routes_unless_loaded:
+  types:
+  - undefined
+  skip: false
+Rails::Application#reloader:
+  types:
+  - undefined
+  skip: false
+Rails::Application#reloaders:
+  types:
+  - undefined
+  skip: false
+Rails::Application#require_dependency:
+  types:
+  - undefined
+  skip: false
+Rails::Application#require_environment!:
+  types:
+  - undefined
+  skip: false
+Rails::Application#root:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+Rails::Application#routes:
+  types:
+  - ActionDispatch::Routing::RouteSet
+  skip: false
+Rails::Application#routes?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#routes_reloader:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_callbacks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_console_blocks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_generators_blocks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_initializers:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_load_hooks!:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_runner_blocks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_server_blocks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#run_tasks_blocks:
+  types:
+  - undefined
+  skip: false
+Rails::Application#runner:
+  types:
+  - undefined
+  skip: false
+Rails::Application#sandbox:
+  types:
+  - undefined
+  skip: false
+Rails::Application#sandbox=:
+  types:
+  - undefined
+  skip: false
+Rails::Application#sandbox?:
+  types:
+  - Boolean
+  skip: false
+Rails::Application#secret_key_base:
+  types:
+  - undefined
+  skip: false
+Rails::Application#server:
+  types:
+  - undefined
+  skip: false
+Rails::Application#to_app:
+  types:
+  - undefined
+  skip: false
+Rails::Application#to_json:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#to_param:
+  types:
+  - undefined
+  skip: false
+Rails::Application#to_query:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application#to_yaml:
+  types:
+  - String
+  - generic<IO>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+Rails::Application#try:
+  types:
+  - undefined
+  skip: false
+Rails::Application#try!:
+  types:
+  - undefined
+  skip: false
+Rails::Application#watchable_args:
+  types:
+  - Array
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+Rails::Application#with:
+  types:
+  - undefined
+  skip: false
+Rails::Application#with_options:
+  types:
+  - undefined
+  skip: false

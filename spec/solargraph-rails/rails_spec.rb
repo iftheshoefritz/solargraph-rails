@@ -113,6 +113,16 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
+  it 'provides completions for Rails::Application' do
+    map = rails_workspace
+
+    assert_matches_definitions(
+      map,
+      'Rails::Application',
+      'application'
+    )
+  end
+
   it 'provides completions for ActionDispatch::Routing::Mapper' do
     map = rails_workspace
 
