@@ -251,8 +251,7 @@ Rails::Application.in?:
 Rails::Application.inherited:
   types:
   - undefined
-  skip:
-  - 0.48.0
+  skip: false
 Rails::Application.initializer:
   types:
   - undefined

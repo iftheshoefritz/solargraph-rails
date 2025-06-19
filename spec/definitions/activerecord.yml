@@ -2503,12 +2503,7 @@ ActiveRecord::Base.inheritance_column?:
 ActiveRecord::Base.inherited:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.54.6.alpha
+  skip: false
 ActiveRecord::Base.initialize_find_by_cache:
   types:
   - undefined
