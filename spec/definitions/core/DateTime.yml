@@ -139,38 +139,6 @@ DateTime.deep_dup:
   types:
   - undefined
   skip: false
-DateTime.find_beginning_of_week!:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
-DateTime.tomorrow:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
-DateTime#acts_like_date?:
-  types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 DateTime.delegate:
   types:
   - undefined
@@ -197,6 +165,17 @@ DateTime.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+DateTime.find_beginning_of_week!:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 DateTime.html_safe?:
   types:
   - 'false'
@@ -328,6 +307,17 @@ DateTime.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+DateTime.tomorrow:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 DateTime.try:
   types:
   - generic<T>
@@ -403,6 +393,16 @@ DateTime#acts_like?:
   types:
   - Boolean
   skip: false
+DateTime#acts_like_date?:
+  types:
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 DateTime#acts_like_time?:
   types:
   - 'true'
@@ -883,6 +883,17 @@ DateTime#in_time_zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+DateTime#infinite?:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 DateTime#inspect:
   types:
   - String
@@ -1186,6 +1197,18 @@ DateTime#prev_weekday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+DateTime#quarter:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+  added_in: 7.1
 DateTime#readable_inspect:
   types:
   - String

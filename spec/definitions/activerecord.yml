@@ -348,6 +348,16 @@ ActiveRecord::Base.as_json:
   types:
   - undefined
   skip: false
+ActiveRecord::Base.async_count_by_sql:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.1
+ActiveRecord::Base.async_find_by_sql:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.1
 ActiveRecord::Base.asynchronous_queries_session:
   types:
   - undefined
@@ -370,7 +380,7 @@ ActiveRecord::Base.asynchronous_queries_tracker:
   - 0.54.6.alpha
 ActiveRecord::Base.attachment_reflections:
   types:
-  - Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}
+  - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -381,7 +391,7 @@ ActiveRecord::Base.attachment_reflections:
   - 0.55.alpha
 ActiveRecord::Base.attachment_reflections=:
   types:
-  - Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}
+  - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -585,6 +595,17 @@ ActiveRecord::Base.attributes_builder:
   types:
   - undefined
   skip: false
+ActiveRecord::Base.attributes_for_inspect?:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActiveRecord::Base.attributes_to_define_after_schema_loads:
   types:
   - undefined
@@ -618,6 +639,18 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+ActiveRecord::Base.authenticate_by:
+  types:
+  - nil
+  - self
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.automatic_scope_inversing:
   types:
   - undefined
@@ -776,6 +809,72 @@ ActiveRecord::Base.blank?:
   types:
   - Boolean
   skip: false
+ActiveRecord::Base.broadcast_target_default:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base.broadcasts:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base.broadcasts_refreshes:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base.broadcasts_refreshes_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base.broadcasts_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base.build:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.cache:
   types:
   - undefined
@@ -1040,6 +1139,11 @@ ActiveRecord::Base.connected_to?:
   types:
   - Boolean
   skip: false
+ActiveRecord::Base.connected_to_all_shards:
+  types:
+  - undefined
+  skip: false
+  added_in: 8.0
 ActiveRecord::Base.connected_to_many:
   types:
   - undefined
@@ -1293,6 +1397,11 @@ ActiveRecord::Base.current_time_from_proper_timezone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base.current_transaction:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.2
 ActiveRecord::Base.dangerous_attribute_method?:
   types:
   - Boolean
@@ -1642,17 +1751,6 @@ ActiveRecord::Base.destroy:
   - 0.52.0
   - 0.54.6.alpha
 ActiveRecord::Base.destroy_all:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-  - 0.55.alpha
-ActiveRecord::Base.destroy_association_async_job=:
   types:
   - undefined
   skip:
@@ -2139,6 +2237,17 @@ ActiveRecord::Base.generated_association_methods:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base.generates_token_for:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.get_primary_key:
   types:
   - undefined
@@ -2656,6 +2765,17 @@ ActiveRecord::Base.last!:
   types:
   - undefined
   skip: false
+ActiveRecord::Base.lease_connection:
+  types:
+  - ActiveRecord::ConnectionAdapters::AbstractAdapter
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.2
 ActiveRecord::Base.left_joins:
   types:
   - undefined
@@ -2687,6 +2807,10 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.54.6.alpha
   - 0.55.alpha
 ActiveRecord::Base.limit:
+  types:
+  - undefined
+  skip: false
+ActiveRecord::Base.load_schema:
   types:
   - undefined
   skip: false
@@ -2961,6 +3085,28 @@ ActiveRecord::Base.normalize_callback_params:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base.normalize_value_for:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
+ActiveRecord::Base.normalizes:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.offset:
   types:
   - undefined
@@ -2992,6 +3138,17 @@ ActiveRecord::Base.order:
   types:
   - undefined
   skip: false
+ActiveRecord::Base.param_delimiter?:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActiveRecord::Base.partial_inserts:
   types:
   - undefined
@@ -3250,6 +3407,17 @@ ActiveRecord::Base.pry:
   types:
   - undefined
   skip: false
+ActiveRecord::Base.query_constraints:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base.queues:
   types:
   - undefined
@@ -3462,6 +3630,11 @@ ActiveRecord::Base.relation_delegate_class:
   types:
   - undefined
   skip: false
+ActiveRecord::Base.release_connection:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.2
 ActiveRecord::Base.remove_connection:
   types:
   - undefined
@@ -4101,6 +4274,17 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+ActiveRecord::Base.suppressing_turbo_broadcasts:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActiveRecord::Base.symbol_column_to_string:
   types:
   - undefined
@@ -4518,6 +4702,16 @@ ActiveRecord::Base.upsert_all:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base.validate:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
 ActiveRecord::Base.validates:
   types:
   - void
@@ -4775,6 +4969,11 @@ ActiveRecord::Base.with_all_rich_text:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base.with_connection:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.2
 ActiveRecord::Base.with_options:
   types:
   - undefined
@@ -5019,6 +5218,11 @@ ActiveRecord::Base#attribute_was:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base#attribute_writer_missing:
+  types:
+  - undefined
+  skip: false
+  added_in: 8.0
 ActiveRecord::Base#attributes:
   types:
   - undefined
@@ -5101,6 +5305,358 @@ ActiveRecord::Base#blank?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base#broadcast_action:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_action_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_action_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_action_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_after_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_append:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_append_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_append_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_append_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_before_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_prepend:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_prepend_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_prepend_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_prepend_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_refresh:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_refresh_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_refresh_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_refresh_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_remove:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_remove_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_render:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_render_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_render_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_render_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_replace:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_replace_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_replace_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_replace_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_update:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_update_later:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_update_later_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
+ActiveRecord::Base#broadcast_update_to:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActiveRecord::Base#cache_key:
   types:
   - undefined
@@ -5438,6 +5994,17 @@ ActiveRecord::Base#destroy!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base#destroy_association_async_batch_size:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#destroyed?:
   types:
   - Boolean
@@ -5531,6 +6098,11 @@ ActiveRecord::Base#frozen?:
   types:
   - Boolean
   skip: false
+ActiveRecord::Base#full_inspect:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.2
 ActiveRecord::Base#gem:
   types:
   - void
@@ -5540,6 +6112,17 @@ ActiveRecord::Base#gem:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+ActiveRecord::Base#generate_token_for:
+  types:
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#has_attribute?:
   types:
   - Boolean
@@ -5758,21 +6341,13 @@ ActiveRecord::Base#marked_for_destruction?:
   skip: false
 ActiveRecord::Base#method_missing:
   types:
-  - BasicObject
-  skip:
-  - 0.48.0
-  - 0.55.alpha
-ActiveRecord::Base#model_name:
-  types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.alpha
 ActiveRecord::Base#nested_attributes_options:
   types:
   - undefined
@@ -5801,6 +6376,28 @@ ActiveRecord::Base#no_touching?:
   types:
   - Boolean
   skip: false
+ActiveRecord::Base#normalize_attribute:
+  types:
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
+ActiveRecord::Base#param_delimiter=:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  - 0.55.alpha
 ActiveRecord::Base#partial_inserts:
   types:
   - undefined
@@ -5977,6 +6574,17 @@ ActiveRecord::Base#read_attribute_before_type_cast:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+ActiveRecord::Base#read_attribute_for_database:
+  types:
+  - undefined
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.54.6.alpha
+  added_in: 7.1
 ActiveRecord::Base#readonly!:
   types:
   - undefined
@@ -6227,6 +6835,11 @@ ActiveRecord::Base#strict_loading?:
   types:
   - Boolean
   skip: false
+ActiveRecord::Base#strict_loading_all?:
+  types:
+  - Boolean
+  skip: false
+  added_in: 7.1
 ActiveRecord::Base#strict_loading_mode:
   types:
   - undefined
@@ -6500,6 +7113,11 @@ ActiveRecord::Base#update_attribute:
   types:
   - undefined
   skip: false
+ActiveRecord::Base#update_attribute!:
+  types:
+  - undefined
+  skip: false
+  added_in: 7.1
 ActiveRecord::Base#update_column:
   types:
   - undefined
