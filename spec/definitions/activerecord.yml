@@ -380,7 +380,7 @@ ActiveRecord::Base.asynchronous_queries_tracker:
   - 0.54.6.alpha
 ActiveRecord::Base.attachment_reflections:
   types:
-  - Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}
+  - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -391,7 +391,7 @@ ActiveRecord::Base.attachment_reflections:
   - 0.55.alpha
 ActiveRecord::Base.attachment_reflections=:
   types:
-  - Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}
+  - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
   skip:
   - 0.48.0
   - 0.49.0
