@@ -2434,10 +2434,6 @@ ActiveRecord::Base.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base.human_attribute_name:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.i18n_scope:
   types:
   - ":activerecord"
@@ -6368,10 +6364,6 @@ ActiveRecord::Base#method_missing:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActiveRecord::Base#model_name:
-  types:
-  - ActiveModel::Name
-  skip: false
 ActiveRecord::Base#nested_attributes_options:
   types:
   - undefined

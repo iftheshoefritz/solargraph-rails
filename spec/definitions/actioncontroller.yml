@@ -1279,11 +1279,6 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
-ActionController::Base.rate_limit:
-  types:
-  - undefined
-  skip: false
-  added_in: 7.2
 ActionController::Base.redefine_method:
   types:
   - undefined
