@@ -24,6 +24,14 @@ PreCommit:
   Solargraph:
     enabled: true
 
+  # creates false positives in CI
+  AuthorName:
+    enabled: false
+
+  # creates false positives in CI
+  AuthorEmail:
+    enabled: false
+
 #
 #  TrailingWhitespace:
 #    enabled: true
