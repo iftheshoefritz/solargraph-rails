@@ -1,3 +1,5 @@
+#   npm install -g act
+#   act pull_release -j 'runner / rubocop'
 ---
 name: reviewdog
 on:

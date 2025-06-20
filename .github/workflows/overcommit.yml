@@ -1,0 +1,42 @@
+---
+# To debug locally:
+#   npm install -g act
+#   act pull_release -j overcommit
+#
+
+name: Overcommit
+
+on:
+  workflow_dispatch: {}
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - 'main'
+    tags:
+      - 'v*'
+
+jobs:
+  overcommit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.4
+          bundler: latest
+          bundler-cache: true
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
+        env:
+          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
+          MATRIX_RAILS_MAJOR_VERSION: "8"
+          MATRIX_RAILS_VERSION: "8.0"
+
+      - name: Overcommit
+        run: |
+          git --no-pager diff --name-only origin/main | xargs bundle exec overcommit --run
+        env:
+          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
+          MATRIX_RAILS_MAJOR_VERSION: "8"
+          MATRIX_RAILS_VERSION: "8.0"
