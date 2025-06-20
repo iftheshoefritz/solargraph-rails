@@ -141,6 +141,7 @@ jobs:
         uses: aki77/reviewdog-action-code-coverage@v2
         with:
           lcov_path: ./coverage/**/*.lcov
+          fail_level: warning
         if: matrix.versions.run_coverage
 
       - name: Cache gem annotations
