@@ -38,6 +38,7 @@ jobs:
 
       - name: Overcommit
         run: |
+          bundle exec overcommit --sign
           git --no-pager diff --name-only origin/main | xargs bundle exec overcommit --run
         env:
           MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
