@@ -18,7 +18,7 @@ class Author < ApplicationRecord
 end
 
 class Book < ApplicationRecord
-  belongs_to :book
+  belongs_to :author
 
   def label
     [author.sortable_name, title, isbn].join("\n")
