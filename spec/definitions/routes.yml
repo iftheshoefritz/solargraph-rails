@@ -281,6 +281,7 @@ ActionDispatch::Routing::Mapper.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActionDispatch::Routing::Mapper.try!:
   types:
   - generic<T>
@@ -293,6 +294,7 @@ ActionDispatch::Routing::Mapper.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActionDispatch::Routing::Mapper.with_options:
   types:
   - undefined
@@ -621,6 +623,7 @@ ActionDispatch::Routing::Mapper#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActionDispatch::Routing::Mapper#try!:
   types:
   - generic<T>
@@ -633,6 +636,7 @@ ActionDispatch::Routing::Mapper#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:
   - undefined

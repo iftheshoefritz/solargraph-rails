@@ -264,6 +264,7 @@ Hash.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Hash.try!:
   types:
   - generic<T>
@@ -276,6 +277,7 @@ Hash.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Hash.with_options:
   types:
   - undefined
@@ -628,6 +630,7 @@ Hash#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Hash#try!:
   types:
   - generic<T>
@@ -640,6 +643,7 @@ Hash#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Hash#with_defaults:
   types:
   - undefined

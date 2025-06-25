@@ -359,6 +359,7 @@ Time#-:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Time#<=>:
   types:
   - "-1"
@@ -373,6 +374,7 @@ Time#<=>:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Time#acts_like?:
   types:
   - Boolean
@@ -749,6 +751,7 @@ Time#minus_without_coercion:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Time#monday:
   types:
   - undefined
@@ -966,6 +969,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Time#weeks_ago:
   types:
   - undefined

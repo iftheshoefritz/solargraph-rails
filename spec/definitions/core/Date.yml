@@ -284,6 +284,7 @@ Date.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Date.try!:
   types:
   - generic<T>
@@ -296,6 +297,7 @@ Date.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Date.with_options:
   types:
   - undefined
@@ -335,6 +337,7 @@ Date#<=>:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Date#acts_like?:
   types:
   - Boolean
@@ -609,6 +612,7 @@ Date#in_time_zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Date#infinite?:
   types:
   - Boolean
@@ -839,6 +843,7 @@ Date#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Date#try!:
   types:
   - generic<T>
@@ -851,6 +856,7 @@ Date#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Date#weeks_ago:
   types:
   - undefined
