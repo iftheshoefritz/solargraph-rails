@@ -323,7 +323,7 @@ Hash#deep_merge!:
   skip: false
 Hash#deep_stringify_keys:
   types:
-  - Hash<String>
+  - Hash{String => undefined}
   skip:
   - 0.48.0
   - 0.49.0
@@ -331,9 +331,11 @@ Hash#deep_stringify_keys:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
+  - 0.56.alpha
 Hash#deep_stringify_keys!:
   types:
-  - self
+  - Hash{String => undefined}
   skip:
   - 0.48.0
   - 0.49.0
@@ -341,6 +343,8 @@ Hash#deep_stringify_keys!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
+  - 0.56.alpha
 Hash#deep_symbolize_keys:
   types:
   - Hash<Symbol>
