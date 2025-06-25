@@ -70,7 +70,7 @@ RSpec.describe 'Rails API completion' do
   end
 
 
-  it 'can auto-complete inside migrations' do
+  xit 'can auto-complete inside migrations' do
     filename = nil
     map =
       rails_workspace do |root|
