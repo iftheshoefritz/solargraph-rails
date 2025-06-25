@@ -869,15 +869,6 @@ ActiveJob::Base.thread_mattr_writer:
   types:
   - undefined
   skip: false
-ActiveJob::Base.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActiveJob::Base.to_param:
   types:
   - undefined
@@ -1266,15 +1257,6 @@ ActiveJob::Base#timezone=:
   types:
   - undefined
   skip: false
-ActiveJob::Base#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActiveJob::Base#to_param:
   types:
   - undefined

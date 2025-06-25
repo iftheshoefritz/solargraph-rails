@@ -4607,15 +4607,6 @@ ActiveRecord::Base.to_adapter:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.alpha
-ActiveRecord::Base.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActiveRecord::Base.to_param:
   types:
   - undefined
@@ -7110,15 +7101,6 @@ ActiveRecord::Base#to_global_id:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.alpha
-ActiveRecord::Base#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActiveRecord::Base#to_key:
   types:
   - undefined

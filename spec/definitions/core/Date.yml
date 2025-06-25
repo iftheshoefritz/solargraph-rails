@@ -245,15 +245,6 @@ Date.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Date.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Date.to_param:
   types:
   - undefined
@@ -788,15 +779,6 @@ Date#to_fs:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Date#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Date#to_param:
   types:
   - undefined

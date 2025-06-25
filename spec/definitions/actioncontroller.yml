@@ -1666,15 +1666,6 @@ ActionController::Base.thread_mattr_writer:
   types:
   - undefined
   skip: false
-ActionController::Base.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActionController::Base.to_param:
   types:
   - undefined
@@ -3669,15 +3660,6 @@ ActionController::Base#to_a:
   types:
   - undefined
   skip: false
-ActionController::Base#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActionController::Base#to_param:
   types:
   - undefined

@@ -283,15 +283,6 @@ Time.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Time.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Time.to_param:
   types:
   - undefined
@@ -907,15 +898,6 @@ Time#to_fs:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Time#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Time#to_param:
   types:
   - undefined
