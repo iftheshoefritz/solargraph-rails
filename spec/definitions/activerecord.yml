@@ -6809,6 +6809,7 @@ ActiveRecord::Base#slice:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActiveRecord::Base#store_full_class_name:
   types:
   - undefined
