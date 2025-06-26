@@ -288,16 +288,6 @@ ActiveRecord::Base.application_record_class=:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.alpha
-ActiveRecord::Base.application_record_class?:
-  types:
-  - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.arel_table:
   types:
   - Arel::Table
@@ -362,26 +352,6 @@ ActiveRecord::Base.async_find_by_sql:
   - undefined
   skip: false
   added_in: 7.1
-ActiveRecord::Base.asynchronous_queries_session:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-ActiveRecord::Base.asynchronous_queries_tracker:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.attachment_reflections:
   types:
   - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
@@ -1166,16 +1136,6 @@ ActiveRecord::Base.connected_to_many:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.connected_to_stack:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.connecting_to:
   types:
   - undefined
@@ -1184,46 +1144,6 @@ ActiveRecord::Base.connection:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.connection_class:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-ActiveRecord::Base.connection_class=:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-ActiveRecord::Base.connection_class?:
-  types:
-  - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-ActiveRecord::Base.connection_class_for_self:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.connection_db_config:
   types:
   - undefined
@@ -4297,16 +4217,6 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.alpha
-ActiveRecord::Base.strict_loading_violation!:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
 ActiveRecord::Base.subclasses:
   types:
   - Array<Class>
