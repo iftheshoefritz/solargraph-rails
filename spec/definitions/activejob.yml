@@ -1207,7 +1207,7 @@ ActiveJob::Base#scheduled_at=:
   skip: false
 ActiveJob::Base#serialize:
   types:
-  - Hash<String>
+  - Hash{String, undefined}
   skip:
   - 0.48.0
   - 0.49.0
