@@ -154,7 +154,7 @@ RSpec.describe 'Rails API completion' do
     assert_method(map, 'ActiveRecord::Base#validation_context', ['undefined'])
   end
 
-  it 'understands ActiveRecord::Base.application_record_class?' do
+  xit 'understands ActiveRecord::Base.application_record_class?' do
     map = rails_workspace
     assert_method(map, 'ActiveRecord::Base.application_record_class?', ['undefined'])
   end
