@@ -11,7 +11,7 @@ def _instance_methods(klass, test = klass.new)
 end
 
 def own_instance_methods(klass, test = klass.new)
-  reject_meth_names = (Module.methods + Module.private_methods + [:to_yaml]).to_set
+  reject_meth_names = (Module.methods + Module.private_methods + [:to_yaml, :to_json]).to_set
   _instance_methods(klass, test).select do |m|
     !reject_meth_names.include?(m.name) &&
       m.source_location &&
@@ -26,7 +26,7 @@ def own_instance_methods(klass, test = klass.new)
 end
 
 def own_class_methods(klass)
-  reject_meth_names = (Module.methods + Module.private_methods + [:to_yaml]).to_set
+  reject_meth_names = (Module.methods + Module.private_methods + [:to_yaml, :to_json]).to_set
   class_methods(klass).select do |m|
     !reject_meth_names.include?(m.name) &&
       m.source_location &&
@@ -69,13 +69,13 @@ end
 
 def add_new_methods(klass, test, yaml_filename)
   new_report = build_report(klass, test: test)
-  existing_report ={}
+  existing_report = {}
   existing_report = YAML.load_file(yaml_filename) if File.exist?(yaml_filename)
-  report = {**new_report, **existing_report}
+  report = { **new_report, **existing_report }
   class_methods, instance_methods = report.partition { |k, _| k.include?('.') }
   class_methods = class_methods.sort_by { |k, _v| k }.to_h
   instance_methods = instance_methods.sort_by { |k, _v| k }.to_h
-  report = {**class_methods, **instance_methods}
+  report = { **class_methods, **instance_methods }
   File.write(yaml_filename, report.deep_stringify_keys.to_yaml)
 end
 

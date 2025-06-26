@@ -256,15 +256,6 @@ Module.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Module.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Module.to_param:
   types:
   - undefined
@@ -505,15 +496,6 @@ Module#thread_mattr_writer:
   types:
   - undefined
   skip: false
-Module#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Module#to_param:
   types:
   - undefined

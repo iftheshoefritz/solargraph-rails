@@ -225,15 +225,6 @@ Kernel.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Kernel.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Kernel.to_param:
   types:
   - undefined
@@ -260,6 +251,7 @@ Kernel.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Kernel.try!:
   types:
   - generic<T>
@@ -272,6 +264,7 @@ Kernel.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Kernel.with_options:
   types:
   - undefined

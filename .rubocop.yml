@@ -316,6 +316,10 @@ Performance/ZipWithoutBlock: # new in 1.24
   Enabled: true
 RSpec/IncludeExamples: # new in 3.6
   Enabled: true
+Gemspec/AttributeAssignment: # new in 1.77
+  Enabled: true
+Style/CollectionQuerying: # new in 1.77
+  Enabled: true
 
 plugins:
   - rubocop-performance

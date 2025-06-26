@@ -46,6 +46,7 @@ Class.attr_internal_naming_format:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Class.attr_internal_naming_format=:
   types:
   - String
@@ -57,6 +58,7 @@ Class.attr_internal_naming_format=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Class.attr_internal_reader:
   types:
   - void
@@ -243,15 +245,6 @@ Class.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Class.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Class.to_param:
   types:
   - undefined
@@ -278,6 +271,7 @@ Class.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Class.try!:
   types:
   - generic<T>
@@ -290,6 +284,7 @@ Class.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Class.with_options:
   types:
   - undefined
@@ -516,15 +511,6 @@ Class#thread_mattr_writer:
   types:
   - undefined
   skip: false
-Class#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Class#to_param:
   types:
   - undefined
@@ -551,6 +537,7 @@ Class#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Class#try!:
   types:
   - generic<T>
@@ -563,6 +550,7 @@ Class#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Class#with_options:
   types:
   - undefined

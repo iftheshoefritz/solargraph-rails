@@ -116,6 +116,7 @@ Rails::Application.config:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application.configure:
   types:
   - undefined
@@ -135,15 +136,6 @@ Rails::Application.create:
   types:
   - undefined
   skip: false
-Rails::Application.debugger:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.deep_dup:
   types:
   - undefined
@@ -195,6 +187,7 @@ Rails::Application.eager_load!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application.endpoint:
   types:
   - undefined
@@ -221,15 +214,6 @@ Rails::Application.find_root_with_flag:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Rails::Application.gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.generators:
   types:
   - undefined
@@ -268,6 +252,7 @@ Rails::Application.initializer:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application.initializers:
   types:
   - undefined
@@ -279,6 +264,7 @@ Rails::Application.initializers:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application.initializers_chain:
   types:
   - undefined
@@ -290,6 +276,7 @@ Rails::Application.initializers_chain:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application.initializers_for:
   types:
   - undefined
@@ -301,6 +288,7 @@ Rails::Application.initializers_for:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application.instance:
   types:
   - undefined
@@ -381,15 +369,6 @@ Rails::Application.present?:
   types:
   - Boolean
   skip: false
-Rails::Application.pretty_inspect:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.pry:
   types:
   - undefined
@@ -488,15 +467,6 @@ Rails::Application.thread_mattr_writer:
   types:
   - undefined
   skip: false
-Rails::Application.to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.to_param:
   types:
   - undefined
@@ -534,6 +504,7 @@ Rails::Application.yaml_tag:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#acts_like?:
   types:
   - Boolean
@@ -602,15 +573,6 @@ Rails::Application#credentials=:
   types:
   - undefined
   skip: false
-Rails::Application#debugger:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#deep_dup:
   types:
   - undefined
@@ -636,6 +598,7 @@ Rails::Application#default_url_options:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#default_url_options=:
   types:
   - undefined
@@ -647,6 +610,7 @@ Rails::Application#default_url_options=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#deprecators:
   types:
   - undefined
@@ -691,6 +655,7 @@ Rails::Application#engine_name:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#ensure_generator_templates_added:
   types:
   - undefined
@@ -704,15 +669,6 @@ Rails::Application#executor:
   types:
   - undefined
   skip: false
-Rails::Application#gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#generators:
   types:
   - undefined
@@ -746,6 +702,7 @@ Rails::Application#importmap:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#importmap=:
   types:
   - undefined
@@ -757,6 +714,7 @@ Rails::Application#importmap=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#in?:
   types:
   - Boolean
@@ -804,6 +762,7 @@ Rails::Application#isolated?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#key_generator:
   types:
   - undefined
@@ -852,6 +811,7 @@ Rails::Application#middleware:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#migration_railties:
   types:
   - undefined
@@ -876,6 +836,7 @@ Rails::Application#paths:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#presence:
   types:
   - nil
@@ -890,15 +851,6 @@ Rails::Application#present?:
   types:
   - Boolean
   skip: false
-Rails::Application#pretty_inspect:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#pry:
   types:
   - undefined
@@ -914,6 +866,7 @@ Rails::Application#railtie_name:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#railtie_namespace:
   types:
   - undefined
@@ -961,6 +914,7 @@ Rails::Application#root:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 Rails::Application#routes:
   types:
   - ActionDispatch::Routing::RouteSet
@@ -1033,15 +987,6 @@ Rails::Application#to_app:
   types:
   - undefined
   skip: false
-Rails::Application#to_json:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#to_param:
   types:
   - undefined
