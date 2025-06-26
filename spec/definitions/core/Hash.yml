@@ -355,6 +355,8 @@ Hash#deep_symbolize_keys:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
+  - 0.56.alpha
 Hash#deep_symbolize_keys!:
   types:
   - Hash{Symbol, undefined}
@@ -365,6 +367,8 @@ Hash#deep_symbolize_keys!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.55.alpha
+  - 0.56.alpha
 Hash#deep_transform_keys:
   types:
   - undefined
