@@ -223,15 +223,6 @@ Rails::Application.find_root_with_flag:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-Rails::Application.gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.generators:
   types:
   - undefined

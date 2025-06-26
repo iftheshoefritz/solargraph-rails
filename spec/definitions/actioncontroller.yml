@@ -783,15 +783,6 @@ ActionController::Base.fragment_cache_keys?:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.alpha
-ActionController::Base.gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActionController::Base.handler_for_rescue:
   types:
   - undefined

@@ -2250,15 +2250,6 @@ ActiveRecord::Base.full_table_name_suffix:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActiveRecord::Base.generate_relation_method:
   types:
   - undefined

@@ -113,15 +113,6 @@ ActionDispatch::Routing::Mapper.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-ActionDispatch::Routing::Mapper.gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActionDispatch::Routing::Mapper.html_safe?:
   types:
   - 'false'
