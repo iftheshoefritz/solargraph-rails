@@ -2331,6 +2331,7 @@ ActiveRecord::Base.has_one_attached:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActiveRecord::Base.has_rich_text:
   types:
   - void
@@ -2342,6 +2343,7 @@ ActiveRecord::Base.has_rich_text:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActiveRecord::Base.has_secure_password:
   types:
   - undefined
@@ -2387,6 +2389,7 @@ ActiveRecord::Base.i18n_scope:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActiveRecord::Base.ids:
   types:
   - undefined
@@ -3710,6 +3713,7 @@ ActiveRecord::Base.rich_text_association_names:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActiveRecord::Base.sanitize_sql:
   types:
   - String

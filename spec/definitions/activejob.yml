@@ -1215,7 +1215,7 @@ ActiveJob::Base#serialize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
-  - 0.55.0.alpha
+  - 0.55.alpha
 ActiveJob::Base#serialized_arguments=:
   types:
   - undefined
