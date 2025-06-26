@@ -136,15 +136,6 @@ Rails::Application.create:
   types:
   - undefined
   skip: false
-Rails::Application.debugger:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.deep_dup:
   types:
   - undefined
@@ -378,15 +369,6 @@ Rails::Application.present?:
   types:
   - Boolean
   skip: false
-Rails::Application.pretty_inspect:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application.pry:
   types:
   - undefined
@@ -591,15 +573,6 @@ Rails::Application#credentials=:
   types:
   - undefined
   skip: false
-Rails::Application#debugger:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#deep_dup:
   types:
   - undefined
@@ -878,15 +851,6 @@ Rails::Application#present?:
   types:
   - Boolean
   skip: false
-Rails::Application#pretty_inspect:
-  types:
-  - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 Rails::Application#pry:
   types:
   - undefined
