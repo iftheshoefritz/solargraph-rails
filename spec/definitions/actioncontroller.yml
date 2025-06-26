@@ -2556,15 +2556,6 @@ ActionController::Base#full_url_for:
   types:
   - undefined
   skip: false
-ActionController::Base#gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActionController::Base#handle_unverified_request:
   types:
   - undefined

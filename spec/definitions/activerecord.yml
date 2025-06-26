@@ -6227,15 +6227,6 @@ ActiveRecord::Base#full_inspect:
   - undefined
   skip: false
   added_in: 7.2
-ActiveRecord::Base#gem:
-  types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 ActiveRecord::Base#generate_token_for:
   types:
   - String
