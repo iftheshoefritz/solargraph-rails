@@ -2274,6 +2274,7 @@ ActiveRecord::Base.has_many_attached:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.alpha
 ActiveRecord::Base.has_many_inversing:
   types:
   - undefined
