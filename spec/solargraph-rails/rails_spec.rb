@@ -154,17 +154,6 @@ RSpec.describe 'Rails API completion' do
     assert_method(map, 'ActiveRecord::Base#validation_context', ['undefined'])
   end
 
-  # defined as self method in 'included' block in ActiveRecord::Core
-  xit 'understands ActiveRecord::Base.current_preventing_writes' do
-    map = rails_workspace
-    assert_method(map, 'ActiveRecord::Base.current_preventing_writes', ['undefined'])
-  end
-
-  xit 'understands ActiveJob::Base#logger' do
-    map = rails_workspace
-    assert_method(map, 'ActiveJob::Base#logger', ['undefined'])
-  end
-
   context 'auto-completes ActiveSupport core extensions' do
     Dir
       .glob('spec/definitions/core/*.yml')
