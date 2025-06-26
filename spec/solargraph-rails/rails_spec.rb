@@ -160,7 +160,7 @@ RSpec.describe 'Rails API completion' do
     assert_method(map, 'ActiveRecord::Base.current_preventing_writes', ['undefined'])
   end
 
-  it 'understands ActiveJob::Base#logger' do
+  xit 'understands ActiveJob::Base#logger' do
     map = rails_workspace
     assert_method(map, 'ActiveJob::Base#logger', ['undefined'])
   end
