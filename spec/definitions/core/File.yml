@@ -87,28 +87,10 @@ File.concerning:
   types:
   - undefined
   skip: false
-File.console_size:
-  types:
-  - Array(Integer, Integer)
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 File.deep_dup:
   types:
   - undefined
   skip: false
-File.default_console_size:
-  types:
-  - Array(Integer, Integer)
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
 File.delegate:
   types:
   - undefined
