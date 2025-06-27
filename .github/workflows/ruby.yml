@@ -138,6 +138,12 @@ jobs:
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
 
+      - name: Upload coverage artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+        path: coverage
+
       - name: Code coverage check
         uses: aki77/reviewdog-action-code-coverage@v2
         with:
