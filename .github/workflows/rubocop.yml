@@ -25,5 +25,6 @@ jobs:
           skip_install: true
           use_bundler: true
           rubocop_extensions: 'rubocop-performance:gemfile rubocop-rspec:gemfile rubocop-rake:gemfile'
+          fail_on_error: true
           fail_level: warning
           rubocop_version: Gemfile
