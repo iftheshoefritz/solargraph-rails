@@ -43,3 +43,5 @@ jobs:
           yamllint_flags: '-d "{extends: default, rules: {truthy: disable}}" .'
   code-coverage:
     level: warning
+  rubocop:
+    level: warning
