@@ -38,6 +38,9 @@ group :development, :rubocop do
   gem 'overcommit',
       github: 'apiology/overcommit',
       branch: 'add_solargraph'
+  gem 'simplecov-lcov',
+      github: 'apiology/simplecov-lcov',
+      branch: 'avoid_blank_lines'
 end
 
 if rails_major_version == '7'
