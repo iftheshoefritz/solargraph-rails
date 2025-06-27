@@ -15,6 +15,7 @@ unless ENV['SIMPLECOV_DISABLED']
   SimpleCov.start do
     add_filter(%r{^/spec/})
     add_filter('/Rakefile')
+    track_files 'lib/**/*.rb'
     enable_coverage(:branch)
   end
 end
