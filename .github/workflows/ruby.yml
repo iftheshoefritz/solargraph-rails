@@ -37,7 +37,6 @@ jobs:
           - ruby: "3.2"
             rails-major: "8"
             rails-minor: "0"
-            run_coverage: true
         solargraph-version:
           - "0.48.0"
           - "0.49.0"
@@ -47,6 +46,13 @@ jobs:
           - "0.54.6.alpha"
           - "0.55.alpha"
           - "0.56.alpha"
+        include:
+          - versions:
+              - ruby: "3.2"
+                rails-major: "8"
+                rails-minor: "0"
+            solargraph-version: "0.56.alpha"
+            run_coverage: true
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
@@ -147,9 +153,8 @@ jobs:
       - name: Code coverage check
         uses: aki77/reviewdog-action-code-coverage@v2
         with:
-          lcov_path: ./coverage/**/*.lcov
-          fail_level: warning
-        if: matrix.versions.run_coverage
+          lcov_path: ./coverage/lcov/*.lcov
+        if: matrix.run_coverage
 
       - name: Cache gem annotations
         id: dot-cache-save
