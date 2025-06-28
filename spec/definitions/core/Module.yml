@@ -25,6 +25,7 @@ Module.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.used_modules:
   types:
   - Array<Module>
@@ -50,6 +51,7 @@ Module.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.attr_internal_naming_format:
   types:
   - String
@@ -60,6 +62,7 @@ Module.attr_internal_naming_format:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.attr_internal_naming_format=:
   types:
   - String
@@ -70,6 +73,7 @@ Module.attr_internal_naming_format=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.attr_internal_reader:
   types:
   - void
@@ -80,6 +84,7 @@ Module.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.attr_internal_writer:
   types:
   - void
@@ -90,6 +95,7 @@ Module.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.blank?:
   types:
   - Boolean
@@ -148,6 +154,7 @@ Module.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.html_safe?:
   types:
   - 'false'
@@ -158,6 +165,7 @@ Module.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.in?:
   types:
   - Boolean
@@ -270,6 +278,7 @@ Module.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module.try:
   types:
   - undefined
@@ -308,6 +317,7 @@ Module#attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#attr_internal_accessor:
   types:
   - void
@@ -318,6 +328,7 @@ Module#attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#attr_internal_reader:
   types:
   - void
@@ -328,6 +339,7 @@ Module#attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#attr_internal_writer:
   types:
   - void
@@ -338,6 +350,7 @@ Module#attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#blank?:
   types:
   - Boolean
@@ -388,6 +401,7 @@ Module#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#html_safe?:
   types:
   - 'false'
@@ -398,6 +412,7 @@ Module#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#in?:
   types:
   - Boolean
@@ -510,6 +525,7 @@ Module#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Module#try:
   types:
   - undefined

@@ -38,6 +38,7 @@ Time.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.attr_internal_accessor:
   types:
   - void
@@ -48,6 +49,7 @@ Time.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.attr_internal_reader:
   types:
   - void
@@ -58,6 +60,7 @@ Time.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.attr_internal_writer:
   types:
   - void
@@ -68,6 +71,7 @@ Time.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.blank?:
   types:
   - Boolean
@@ -106,6 +110,7 @@ Time.current:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.days_in_month:
   types:
   - undefined
@@ -144,6 +149,7 @@ Time.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.find_zone:
   types:
   - ActiveSupport::TimeZone
@@ -155,6 +161,7 @@ Time.find_zone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.find_zone!:
   types:
   - ActiveSupport::TimeZone
@@ -165,6 +172,7 @@ Time.find_zone!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.html_safe?:
   types:
   - 'false'
@@ -175,6 +183,7 @@ Time.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.in?:
   types:
   - Boolean
@@ -255,6 +264,7 @@ Time.rfc3339:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.silence_redefinition_of_method:
   types:
   - undefined
@@ -297,6 +307,7 @@ Time.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.try:
   types:
   - undefined
@@ -323,6 +334,7 @@ Time.zone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time.zone=:
   types:
   - undefined
@@ -350,6 +362,7 @@ Time#-:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Time#<=>:
   types:
@@ -365,6 +378,7 @@ Time#<=>:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Time#acts_like?:
   types:
@@ -380,6 +394,7 @@ Time#acts_like_time?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#advance:
   types:
   - undefined
@@ -402,6 +417,7 @@ Time#all_day:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#all_month:
   types:
   - Range
@@ -412,6 +428,7 @@ Time#all_month:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#all_quarter:
   types:
   - Range
@@ -422,6 +439,7 @@ Time#all_quarter:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#all_week:
   types:
   - Range
@@ -432,6 +450,7 @@ Time#all_week:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#all_year:
   types:
   - Range
@@ -442,6 +461,7 @@ Time#all_year:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#as_json:
   types:
   - String
@@ -453,6 +473,7 @@ Time#as_json:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Time#at_beginning_of_day:
   types:
@@ -613,6 +634,7 @@ Time#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#end_of_day:
   types:
   - undefined
@@ -667,6 +689,7 @@ Time#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#in:
   types:
   - undefined
@@ -686,6 +709,7 @@ Time#in_time_zone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#instance_values:
   types:
   - undefined
@@ -745,6 +769,7 @@ Time#minus_without_coercion:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Time#monday:
   types:
@@ -891,6 +916,7 @@ Time#to_formatted_s:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#to_fs:
   types:
   - String
@@ -901,6 +927,7 @@ Time#to_fs:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#to_param:
   types:
   - undefined
@@ -915,6 +942,7 @@ Time#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Time#to_s:
   types:
   - String
@@ -954,6 +982,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Time#weeks_ago:
   types:
