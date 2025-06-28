@@ -26,6 +26,7 @@ ActionDispatch::Routing::Mapper.attr_internal:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.attr_internal_accessor:
   types:
   - void
@@ -37,6 +38,7 @@ ActionDispatch::Routing::Mapper.attr_internal_accessor:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.attr_internal_reader:
   types:
   - void
@@ -48,6 +50,7 @@ ActionDispatch::Routing::Mapper.attr_internal_reader:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.attr_internal_writer:
   types:
   - void
@@ -59,6 +62,7 @@ ActionDispatch::Routing::Mapper.attr_internal_writer:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.blank?:
   types:
   - Boolean
@@ -118,6 +122,7 @@ ActionDispatch::Routing::Mapper.duplicable?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.html_safe?:
   types:
   - 'false'
@@ -129,6 +134,7 @@ ActionDispatch::Routing::Mapper.html_safe?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.in?:
   types:
   - Boolean
@@ -258,6 +264,7 @@ ActionDispatch::Routing::Mapper.to_query:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper.try:
   types:
   - generic<T>
@@ -271,6 +278,7 @@ ActionDispatch::Routing::Mapper.try:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 ActionDispatch::Routing::Mapper.try!:
   types:
@@ -285,6 +293,7 @@ ActionDispatch::Routing::Mapper.try!:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 ActionDispatch::Routing::Mapper.with_options:
   types:
@@ -418,6 +427,7 @@ ActionDispatch::Routing::Mapper#duplicable?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper#get:
   types:
   - undefined
@@ -437,6 +447,7 @@ ActionDispatch::Routing::Mapper#html_safe?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper#in?:
   types:
   - Boolean
@@ -533,6 +544,7 @@ ActionDispatch::Routing::Mapper#redirect:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper#require_dependency:
   types:
   - undefined
@@ -588,6 +600,7 @@ ActionDispatch::Routing::Mapper#to_query:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 ActionDispatch::Routing::Mapper#try:
   types:
   - generic<T>
@@ -601,6 +614,7 @@ ActionDispatch::Routing::Mapper#try:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 ActionDispatch::Routing::Mapper#try!:
   types:
@@ -615,6 +629,7 @@ ActionDispatch::Routing::Mapper#try!:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:

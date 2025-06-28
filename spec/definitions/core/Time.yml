@@ -39,6 +39,7 @@ Time.attr_internal:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.attr_internal_accessor:
   types:
   - void
@@ -50,6 +51,7 @@ Time.attr_internal_accessor:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.attr_internal_reader:
   types:
   - void
@@ -61,6 +63,7 @@ Time.attr_internal_reader:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.attr_internal_writer:
   types:
   - void
@@ -72,6 +75,7 @@ Time.attr_internal_writer:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.blank?:
   types:
   - Boolean
@@ -111,6 +115,7 @@ Time.current:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.days_in_month:
   types:
   - undefined
@@ -150,6 +155,7 @@ Time.duplicable?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.find_zone:
   types:
   - ActiveSupport::TimeZone
@@ -162,6 +168,7 @@ Time.find_zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.find_zone!:
   types:
   - ActiveSupport::TimeZone
@@ -173,6 +180,7 @@ Time.find_zone!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.html_safe?:
   types:
   - 'false'
@@ -184,6 +192,7 @@ Time.html_safe?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.in?:
   types:
   - Boolean
@@ -265,6 +274,7 @@ Time.rfc3339:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.silence_redefinition_of_method:
   types:
   - undefined
@@ -308,6 +318,7 @@ Time.to_query:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.try:
   types:
   - undefined
@@ -335,6 +346,7 @@ Time.zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time.zone=:
   types:
   - undefined
@@ -363,6 +375,7 @@ Time#-:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Time#<=>:
   types:
@@ -379,6 +392,7 @@ Time#<=>:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Time#acts_like?:
   types:
@@ -395,6 +409,7 @@ Time#acts_like_time?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#advance:
   types:
   - undefined
@@ -418,6 +433,7 @@ Time#all_day:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#all_month:
   types:
   - Range
@@ -429,6 +445,7 @@ Time#all_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#all_quarter:
   types:
   - Range
@@ -440,6 +457,7 @@ Time#all_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#all_week:
   types:
   - Range
@@ -451,6 +469,7 @@ Time#all_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#all_year:
   types:
   - Range
@@ -462,6 +481,7 @@ Time#all_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#as_json:
   types:
   - String
@@ -474,6 +494,7 @@ Time#as_json:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Time#at_beginning_of_day:
   types:
@@ -635,6 +656,7 @@ Time#duplicable?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#end_of_day:
   types:
   - undefined
@@ -690,6 +712,7 @@ Time#html_safe?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#in:
   types:
   - undefined
@@ -710,6 +733,7 @@ Time#in_time_zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#instance_values:
   types:
   - undefined
@@ -770,6 +794,7 @@ Time#minus_without_coercion:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Time#monday:
   types:
@@ -917,6 +942,7 @@ Time#to_formatted_s:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#to_fs:
   types:
   - String
@@ -928,6 +954,7 @@ Time#to_fs:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#to_param:
   types:
   - undefined
@@ -943,6 +970,7 @@ Time#to_query:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
 Time#to_s:
   types:
   - String
@@ -983,6 +1011,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Time#weeks_ago:
   types:
