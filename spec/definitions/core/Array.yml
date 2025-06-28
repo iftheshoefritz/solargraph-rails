@@ -25,6 +25,7 @@ Array.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.attr_internal_accessor:
   types:
   - void
@@ -35,6 +36,7 @@ Array.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.attr_internal_reader:
   types:
   - void
@@ -45,6 +47,7 @@ Array.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.attr_internal_writer:
   types:
   - void
@@ -55,6 +58,7 @@ Array.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.blank?:
   types:
   - Boolean
@@ -113,6 +117,7 @@ Array.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.html_safe?:
   types:
   - 'false'
@@ -123,6 +128,7 @@ Array.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.in?:
   types:
   - Boolean
@@ -235,6 +241,7 @@ Array.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array.try:
   types:
   - generic<T>
@@ -247,6 +254,7 @@ Array.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Array.try!:
   types:
@@ -260,6 +268,7 @@ Array.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Array.with_options:
   types:
@@ -276,6 +285,7 @@ Array.wrap:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#acts_like?:
   types:
   - Boolean
@@ -298,6 +308,7 @@ Array#compact_blank:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#compact_blank!:
   types:
   - Array<generic<Elem>>
@@ -308,6 +319,7 @@ Array#compact_blank!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#deep_dup:
   types:
   - undefined
@@ -322,6 +334,7 @@ Array#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#exclude?:
   types:
   - Boolean
@@ -364,6 +377,7 @@ Array#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#in?:
   types:
   - Boolean
@@ -402,6 +416,7 @@ Array#inquiry:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#instance_values:
   types:
   - undefined
@@ -491,6 +506,7 @@ Array#to_formatted_s:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#to_fs:
   types:
   - String
@@ -501,6 +517,7 @@ Array#to_fs:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#to_param:
   types:
   - undefined
@@ -515,6 +532,7 @@ Array#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Array#to_s:
   types:
   - String
@@ -539,6 +557,7 @@ Array#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Array#try!:
   types:
@@ -552,6 +571,7 @@ Array#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Array#with_options:
   types:

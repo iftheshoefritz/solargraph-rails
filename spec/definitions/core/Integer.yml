@@ -25,6 +25,7 @@ Integer.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.attr_internal_accessor:
   types:
   - void
@@ -35,6 +36,7 @@ Integer.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.attr_internal_reader:
   types:
   - void
@@ -45,6 +47,7 @@ Integer.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.attr_internal_writer:
   types:
   - void
@@ -55,6 +58,7 @@ Integer.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.blank?:
   types:
   - Boolean
@@ -113,6 +117,7 @@ Integer.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.html_safe?:
   types:
   - 'false'
@@ -123,6 +128,7 @@ Integer.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.in?:
   types:
   - Boolean
@@ -235,6 +241,7 @@ Integer.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer.try:
   types:
   - generic<T>
@@ -247,6 +254,7 @@ Integer.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Integer.try!:
   types:
@@ -260,6 +268,7 @@ Integer.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Integer.with_options:
   types:
@@ -304,6 +313,7 @@ Integer#day:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#days:
   types:
   - ActiveSupport::Duration
@@ -314,6 +324,7 @@ Integer#days:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#deep_dup:
   types:
   - undefined
@@ -328,6 +339,7 @@ Integer#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#exabyte:
   types:
   - undefined
@@ -346,6 +358,7 @@ Integer#fortnight:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#fortnights:
   types:
   - ActiveSupport::Duration
@@ -356,6 +369,7 @@ Integer#fortnights:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#gigabyte:
   types:
   - undefined
@@ -374,6 +388,7 @@ Integer#hour:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#hours:
   types:
   - ActiveSupport::Duration
@@ -384,6 +399,7 @@ Integer#hours:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#html_safe?:
   types:
   - 'true'
@@ -394,6 +410,7 @@ Integer#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#in?:
   types:
   - Boolean
@@ -436,6 +453,7 @@ Integer#minute:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#minutes:
   types:
   - ActiveSupport::Duration
@@ -446,6 +464,7 @@ Integer#minutes:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#month:
   types:
   - ActiveSupport::Duration
@@ -456,6 +475,7 @@ Integer#month:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#months:
   types:
   - ActiveSupport::Duration
@@ -466,6 +486,7 @@ Integer#months:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#multiple_of?:
   types:
   - Boolean
@@ -510,6 +531,7 @@ Integer#second:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#seconds:
   types:
   - ActiveSupport::Duration
@@ -520,6 +542,7 @@ Integer#seconds:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#terabyte:
   types:
   - undefined
@@ -560,6 +583,7 @@ Integer#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#to_s:
   types:
   - String
@@ -576,6 +600,7 @@ Integer#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Integer#try!:
   types:
@@ -589,6 +614,7 @@ Integer#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
   - 0.56.alpha
 Integer#week:
   types:
@@ -600,6 +626,7 @@ Integer#week:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#weeks:
   types:
   - ActiveSupport::Duration
@@ -610,6 +637,7 @@ Integer#weeks:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#with_options:
   types:
   - undefined
@@ -624,6 +652,7 @@ Integer#year:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#years:
   types:
   - ActiveSupport::Duration
@@ -634,6 +663,7 @@ Integer#years:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
 Integer#zettabyte:
   types:
   - undefined
