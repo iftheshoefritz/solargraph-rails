@@ -66,8 +66,6 @@ when '0.56.0.pre1'
       github: 'apiology/solargraph',
       branch: 'run_plugin_specs'
       # path: '../solargraph'
-else
-  gem 'solargraph'
 end
 
 # Local gemfile for development tools, etc.
