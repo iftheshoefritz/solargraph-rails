@@ -2300,7 +2300,6 @@ ActionController::Base#benchmark:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#blank?:
   types:
   - Boolean
@@ -2330,7 +2329,6 @@ ActionController::Base#cache_store:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#cache_store=:
   types:
   - undefined
@@ -2342,7 +2340,6 @@ ActionController::Base#cache_store=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#cancel_registration_path:
   types:
   - undefined
@@ -2400,7 +2397,6 @@ ActionController::Base#combined_fragment_cache_key:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#config:
   types:
   - ActiveSupport::InheritableOptions
@@ -2776,7 +2772,6 @@ ActionController::Base#expire_fragment:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#expires_in:
   types:
   - undefined
@@ -2914,7 +2909,6 @@ ActionController::Base#fragment_exist?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#fresh_when:
   types:
   - undefined
@@ -3097,7 +3091,6 @@ ActionController::Base#instrument_fragment_cache:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#is_flashing_format?:
   types:
   - undefined
@@ -3582,7 +3575,6 @@ ActionController::Base#read_fragment:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#recede_or_redirect_back_or_to:
   types:
   - undefined
@@ -4295,7 +4287,6 @@ ActionController::Base#view_cache_dependencies:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
 ActionController::Base#view_context:
   types:
   - undefined
@@ -4351,4 +4342,3 @@ ActionController::Base#write_fragment:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2

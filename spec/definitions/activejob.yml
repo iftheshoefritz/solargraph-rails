@@ -1171,7 +1171,6 @@ ActiveJob::Base#logger:
   - 0.52.0
   - 0.54.6.alpha
   - 0.56.0.pre1
-  - 0.56.0.pre2
   added_in: 7.2
 ActiveJob::Base#logger=:
   types:
