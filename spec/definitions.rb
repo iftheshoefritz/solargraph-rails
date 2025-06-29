@@ -29,9 +29,9 @@ class Definitions
       # @type [Array<Solargraph::Pin::Base>]
       pins =
         if meth.start_with?('.')
-          class_methods.select { |p| p.name == meth[1..-1] }
+          class_methods.select { |p| p.name == meth[1..] }
         elsif meth.start_with?('#')
-          instance_methods.select { |p| p.name == meth[1..-1] }
+          instance_methods.select { |p| p.name == meth[1..] }
         else
           raise "Bad method name in definitions: #{meth} in #{definitions_file}"
         end
