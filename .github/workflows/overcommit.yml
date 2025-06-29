@@ -39,7 +39,7 @@ jobs:
       - name: Overcommit
         run: |
           bundle exec overcommit --sign
-          bundle exec overcommit --run --diff
+          bundle exec overcommit --run --diff origin/main
         env:
           MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
           MATRIX_RAILS_MAJOR_VERSION: "8"
