@@ -1,5 +1,6 @@
 require 'logger'
 require 'rails'
+require_relative 'definitions'
 
 module Helpers
   def load_string(filename, str)
