@@ -1,8 +1,6 @@
 class Definitions
   def assert_matches_definitions(map, class_name, definition_name, update: false)
-    if ENV['FORCE_UPDATE'] == 'true'
-      update = true
-    end
+    update = true if ENV['FORCE_UPDATE'] == 'true'
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
 
@@ -26,8 +24,7 @@ class Definitions
     missing = []
 
     definitions.each do |meth, data|
-      orig_meth = meth
-      meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
+      meth = meth.gsub(class_name, '') unless meth.start_with?('.', '#')
 
       # @type [Array<Solargraph::Pin::Base>]
       pins =
@@ -42,7 +39,7 @@ class Definitions
       # @type [Array<Solargraph::Pin::Base>] pins
       relevant_pins = pins.select { |p| p.path == pins.first.path }
 
-      meh_types = ['BasicObject', 'Object', 'undefined']
+      meh_types = %w[BasicObject Object undefined]
 
       good_pins, meh_pins = relevant_pins.partition do |p|
         return_type_tags = p.typify(map).map(&:tag)
@@ -65,11 +62,9 @@ class Definitions
         end
       end
       not_added_yet = false
-      if data['added_in']
-        if data['added_in'].to_f > rails_major_and_minor_version.to_f
-          skip = true
-          not_added_yet = true
-        end
+      if data['added_in'] && (data['added_in'].to_f > rails_major_and_minor_version.to_f)
+        skip = true
+        not_added_yet = true
       end
       if data['skip'] == true ||
          data['skip'] == Solargraph::VERSION ||
@@ -115,9 +110,9 @@ class Definitions
             remove_skip(data)
           else
             incorrect << <<~STR
-            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
-            Consider setting skip=false
-          STR
+              #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
+              Consider setting skip=false
+            STR
           end
         end
       elsif update && !already_removed && !not_added_yet
@@ -129,7 +124,6 @@ class Definitions
         missing << meth
       end
     end
-
 
     File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
@@ -149,17 +143,17 @@ class Definitions
 
     total = definitions.keys.size
 
-    if ENV['PRINT_STATS'] != nil
-      puts(
-        {
-          class_name: class_name,
-          total: total,
-          covered: total - skipped,
-          typed: typed,
-          percent_covered: percent(total - skipped, total),
-          percent_typed: percent(typed, total)
-        }
-      )
-    end
+    return if ENV['PRINT_STATS'].nil?
+
+    puts(
+      {
+        class_name: class_name,
+        total: total,
+        covered: total - skipped,
+        typed: typed,
+        percent_covered: percent(total - skipped, total),
+        percent_typed: percent(typed, total)
+      }
+    )
   end
 end
