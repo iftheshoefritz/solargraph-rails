@@ -6,10 +6,16 @@ unless ENV['SIMPLECOV_DISABLED']
   require 'simplecov'
   require 'simplecov-lcov'
   SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
-  SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
+  SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new(
+    [
+      SimpleCov::Formatter::HTMLFormatter,
+      SimpleCov::Formatter::LcovFormatter
+    ]
+  )
   SimpleCov.start do
     add_filter(%r{^/spec/})
     add_filter('/Rakefile')
+    track_files 'lib/**/*.rb'
     enable_coverage(:branch)
   end
 end
