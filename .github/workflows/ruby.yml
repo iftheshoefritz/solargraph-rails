@@ -151,7 +151,7 @@ jobs:
           path: coverage
 
       - name: Code coverage check
-        uses: aki77/reviewdog-action-code-coverage@v2
+        uses: apiology/reviewdog-action-code-coverage@add_options
         with:
           lcov_path: ./coverage/lcov/*.lcov
         if: matrix.run_coverage && github.event_name == 'pull_request'
