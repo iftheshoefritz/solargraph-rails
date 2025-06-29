@@ -3,7 +3,14 @@ module Solargraph
     class Autoload
       def self.instance
         @instance ||= self.new
-        @instance ||= puts 'never runs'
+        if foo
+          @instance ||= puts 'never runs'
+        end
+        @instance
+      end
+
+      def self.foo
+        false
       end
 
       def process(source_map, ns, ds)
