@@ -154,7 +154,7 @@ jobs:
         uses: aki77/reviewdog-action-code-coverage@v2
         with:
           lcov_path: ./coverage/lcov/*.lcov
-        if: matrix.run_coverage
+        if: matrix.run_coverage && github.event_name == 'pull_request'
 
       - name: Cache gem annotations
         id: dot-cache-save
