@@ -171,9 +171,7 @@ class Definitions
   end
 
   def add_to_skip(data)
-    unless data['skip'].is_a?(Array)
-      data['skip'] = []
-    end
+    data['skip'] = [] unless data['skip'].is_a?(Array)
     data['skip'] << Solargraph::VERSION
     data['skip'].sort!.uniq!
   end
@@ -182,9 +180,7 @@ class Definitions
     if data['skip'].is_a?(Array)
       data['skip'].delete(Solargraph::VERSION)
       data['skip'].sort!.uniq!
-      if data['skip'].empty?
-        data['skip'] = false
-      end
+      data['skip'] = false if data['skip'].empty?
     else
       data['skip'] = false
     end
