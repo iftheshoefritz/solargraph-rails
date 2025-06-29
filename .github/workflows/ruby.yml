@@ -137,9 +137,11 @@ jobs:
           bundle update solargraph
           bundle exec solargraph version
           bundle info solargraph
+          set +e
           bundle info rbs
+          set -e
           bundle info yard
-          bundle exec rspec spec/solargraph-rails
+          bundle exec rake spec # bundle exec rspec spec/solargraph-rails
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
