@@ -9,32 +9,8 @@ module Helpers
     source
   end
 
-  def add_to_skip(data)
-    unless data['skip'].is_a?(Array)
-      data['skip'] = []
-    end
-    data['skip'] << Solargraph::VERSION
-    data['skip'].sort!.uniq!
-  end
-
-  def remove_skip(data)
-    if data['skip'].is_a?(Array)
-      data['skip'].delete(Solargraph::VERSION)
-      data['skip'].sort!.uniq!
-      if data['skip'].empty?
-        data['skip'] = false
-      end
-    else
-      data['skip'] = false
-    end
-  end
-
   def assert_matches_definitions(map, class_name, definition_name, update: false)
     Definitions.new(map, class_name, definition_name, update: update).assert_matches_definitions
-  end
-
-  def percent(a, b)
-    ((a.to_f / b) * 100).round(1)
   end
 
   class Injector

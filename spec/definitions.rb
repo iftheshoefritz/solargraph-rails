@@ -170,5 +170,29 @@ class Definitions
     end
   end
 
+  def add_to_skip(data)
+    unless data['skip'].is_a?(Array)
+      data['skip'] = []
+    end
+    data['skip'] << Solargraph::VERSION
+    data['skip'].sort!.uniq!
+  end
+
+  def remove_skip(data)
+    if data['skip'].is_a?(Array)
+      data['skip'].delete(Solargraph::VERSION)
+      data['skip'].sort!.uniq!
+      if data['skip'].empty?
+        data['skip'] = false
+      end
+    else
+      data['skip'] = false
+    end
+  end
+
+  def percent(a, b)
+    ((a.to_f / b) * 100).round(1)
+  end
+
   attr_reader :map, :class_name, :definition_name, :update
 end
