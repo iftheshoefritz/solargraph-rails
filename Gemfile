@@ -64,7 +64,7 @@ when '0.56.alpha'
       github: 'apiology/solargraph',
       branch: '2025-06-24'
       # path: '../solargraph'
-when '0.56.0.pre2'
+when '0.56.0.pre3'
   gem 'solargraph',
       github: 'apiology/solargraph',
       branch: 'run_plugin_specs'
