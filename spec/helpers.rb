@@ -55,6 +55,7 @@ module Helpers
     missing = []
 
     definitions.each do |meth, data|
+      orig_meth = meth
       meth = meth.gsub(class_name, '') unless meth.start_with?('.') || meth.start_with?('#')
 
       # @type [Array<Solargraph::Pin::Base>]
@@ -92,9 +93,11 @@ module Helpers
           already_removed = true
         end
       end
+      not_added_yet = false
       if data['added_in']
         if data['added_in'].to_f > rails_major_and_minor_version.to_f
           skip = true
+          not_added_yet = true
         end
       end
       if data['skip'] == true ||
@@ -146,7 +149,7 @@ module Helpers
           STR
           end
         end
-      elsif update && !already_removed
+      elsif update && !already_removed && !not_added_yet
         skipped += 1
         add_to_skip(data)
       elsif skip
