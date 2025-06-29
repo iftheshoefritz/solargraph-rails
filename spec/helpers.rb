@@ -30,7 +30,7 @@ module Helpers
   end
 
   def assert_matches_definitions(map, class_name, definition_name, update: false)
-    Definitions.new.assert_matches_definitions(map, class_name, definition_name, update: update)
+    Definitions.new(map, class_name, definition_name, update: update).assert_matches_definitions
   end
 
   def percent(a, b)

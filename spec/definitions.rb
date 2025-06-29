@@ -1,5 +1,12 @@
 class Definitions
-  def assert_matches_definitions(map, class_name, definition_name, update: false)
+  def initialize(map, class_name, definition_name, update: false)
+    @map = map
+    @class_name = class_name
+    @definition_name = definition_name
+    @update = update
+  end
+
+  def assert_matches_definitions
     update = true if ENV['FORCE_UPDATE'] == 'true'
     definitions_file = "spec/definitions/#{definition_name}.yml"
     definitions = YAML.load_file(definitions_file)
@@ -156,4 +163,8 @@ class Definitions
       }
     )
   end
+
+  private
+
+  attr_reader :map, :class_name, :definition_name, :update
 end
