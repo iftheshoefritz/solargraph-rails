@@ -151,16 +151,16 @@ class Definitions
           remove_skip(data)
         else
           @incorrect << <<~STR
-              #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
-              Consider setting skip=false
-            STR
+            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
+            Consider setting skip=false
+          STR
         end
       end
     elsif update && !already_removed && !not_added_yet
       @skipped += 1
       add_to_skip(data)
     elsif skip
-      return
+      nil
     else
       @missing << meth
     end
