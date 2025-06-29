@@ -36,6 +36,20 @@ jobs:
           MATRIX_RAILS_MAJOR_VERSION: "8"
           MATRIX_RAILS_VERSION: "8.0"
 
+      - name: Restore cache of gem annotations
+        id: dot-cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          key: |
+            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
+            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
+            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
+            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
+          path: |
+            /home/runner/.cache/solargraph
+
       - name: Overcommit
         run: |
           bundle exec overcommit --sign
