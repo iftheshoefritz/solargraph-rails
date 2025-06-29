@@ -154,6 +154,7 @@ jobs:
         uses: apiology/reviewdog-action-code-coverage@add_options
         with:
           lcov_path: ./coverage/lcov/*.lcov
+          fail_level: warning
         if: matrix.run_coverage && github.event_name == 'pull_request'
 
       - name: Cache gem annotations
