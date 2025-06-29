@@ -1,7 +1,7 @@
 module Solargraph
   module Rails
     class Annotate
-      def self.instance_test
+      def self.instance
         @instance ||= self.new
       end
 
