@@ -95,6 +95,7 @@ module Solargraph
 
         walker.walk
 
+
         # Class methods on the model are exposed as *instance* methods on the
         # hidden ActiveRecord_Relation class.
         #
