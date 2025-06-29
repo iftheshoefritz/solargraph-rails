@@ -3,10 +3,6 @@ module Solargraph
     class Autoload
       def self.instance
         @instance ||= self.new
-        if foo
-          @instance ||= puts 'never runs'
-        end
-        @instance
       end
 
       def self.foo
