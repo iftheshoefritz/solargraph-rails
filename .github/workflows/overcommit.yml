@@ -19,6 +19,17 @@ on:
 jobs:
   overcommit:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        versions:
+          # ruby 3.2 is minimum Ruby supported by Rails 8.0
+          - ruby: "3.2"
+            rails-major: "8"
+            rails-minor: "0"
+            run_coverage: true
+        solargraph-version:
+          - "0.56.alpha"
+      fail-fast: false
     steps:
       - uses: actions/checkout@v2
         # Number of commits to fetch. 0 indicates all history for all branches and tags.
@@ -32,9 +43,9 @@ jobs:
           bundler-cache: true
           cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
         env:
-          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
-          MATRIX_RAILS_MAJOR_VERSION: "8"
-          MATRIX_RAILS_VERSION: "8.0"
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
 
       - name: Restore cache of gem annotations
         id: dot-cache-restore
@@ -55,6 +66,6 @@ jobs:
           bundle exec overcommit --sign
           bundle exec overcommit --run --diff origin/main
         env:
-          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
-          MATRIX_RAILS_MAJOR_VERSION: "8"
-          MATRIX_RAILS_VERSION: "8.0"
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
