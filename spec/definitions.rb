@@ -7,8 +7,7 @@ class Definitions
   end
 
   def assert_matches_definitions
-    update = true if ENV['FORCE_UPDATE'] == 'true'
-    definitions_file = "spec/definitions/#{definition_name}.yml"
+    @update = true if ENV['FORCE_UPDATE'] == 'true'
 
     definitions = YAML.load_file(definitions_file)
 
@@ -54,6 +53,10 @@ class Definitions
   end
 
   private
+
+  def definitions_file
+    @definitions_file ||= "spec/definitions/#{definition_name}.yml"
+  end
 
   def instance_methods
     @instance_methods ||=
