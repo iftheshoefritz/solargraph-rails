@@ -27,6 +27,7 @@ Date.attr_internal:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.attr_internal_accessor:
   types:
   - void
@@ -39,6 +40,7 @@ Date.attr_internal_accessor:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.attr_internal_reader:
   types:
   - void
@@ -51,6 +53,7 @@ Date.attr_internal_reader:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.attr_internal_writer:
   types:
   - void
@@ -63,6 +66,7 @@ Date.attr_internal_writer:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.beginning_of_week:
   types:
   - undefined
@@ -143,6 +147,7 @@ Date.duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.find_beginning_of_week!:
   types:
   - undefined
@@ -159,6 +164,7 @@ Date.html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.in?:
   types:
   - Boolean
@@ -273,6 +279,7 @@ Date.to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date.tomorrow:
   types:
   - undefined
@@ -291,6 +298,7 @@ Date.try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date.try!:
   types:
@@ -306,6 +314,7 @@ Date.try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date.with_options:
   types:
@@ -348,6 +357,7 @@ Date#<=>:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date#acts_like?:
   types:
@@ -365,6 +375,7 @@ Date#acts_like_date?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#advance:
   types:
   - undefined
@@ -389,6 +400,7 @@ Date#all_day:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#all_month:
   types:
   - Range
@@ -401,6 +413,7 @@ Date#all_month:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#all_quarter:
   types:
   - Range
@@ -413,6 +426,7 @@ Date#all_quarter:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#all_week:
   types:
   - Range
@@ -425,6 +439,7 @@ Date#all_week:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#all_year:
   types:
   - Range
@@ -437,6 +452,7 @@ Date#all_year:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#as_json:
   types:
   - String
@@ -450,6 +466,7 @@ Date#as_json:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date#at_beginning_of_day:
   types:
@@ -588,6 +605,7 @@ Date#duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#end_of_day:
   types:
   - undefined
@@ -624,6 +642,7 @@ Date#html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#in:
   types:
   - undefined
@@ -646,6 +665,7 @@ Date#in_time_zone:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date#infinite?:
   types:
@@ -814,6 +834,7 @@ Date#to_formatted_s:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#to_fs:
   types:
   - String
@@ -826,6 +847,7 @@ Date#to_fs:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#to_param:
   types:
   - undefined
@@ -842,6 +864,7 @@ Date#to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Date#to_s:
   types:
   - String
@@ -876,6 +899,7 @@ Date#try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date#try!:
   types:
@@ -891,6 +915,7 @@ Date#try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Date#weeks_ago:
   types:

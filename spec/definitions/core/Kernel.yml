@@ -27,6 +27,7 @@ Kernel.attr_internal:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.attr_internal_accessor:
   types:
   - void
@@ -39,6 +40,7 @@ Kernel.attr_internal_accessor:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.attr_internal_reader:
   types:
   - void
@@ -51,6 +53,7 @@ Kernel.attr_internal_reader:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.attr_internal_writer:
   types:
   - void
@@ -63,6 +66,7 @@ Kernel.attr_internal_writer:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.blank?:
   types:
   - Boolean
@@ -115,6 +119,7 @@ Kernel.duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.enable_warnings:
   types:
   - undefined
@@ -131,6 +136,7 @@ Kernel.html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.in?:
   types:
   - Boolean
@@ -253,6 +259,7 @@ Kernel.to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Kernel.try:
   types:
   - generic<T>
@@ -267,6 +274,7 @@ Kernel.try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Kernel.try!:
   types:
@@ -282,6 +290,7 @@ Kernel.try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Kernel.with_options:
   types:

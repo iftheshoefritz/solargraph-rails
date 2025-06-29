@@ -27,6 +27,7 @@ DateTime.attr_internal:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.attr_internal_accessor:
   types:
   - void
@@ -39,6 +40,7 @@ DateTime.attr_internal_accessor:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.attr_internal_reader:
   types:
   - void
@@ -51,6 +53,7 @@ DateTime.attr_internal_reader:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.attr_internal_writer:
   types:
   - void
@@ -63,6 +66,7 @@ DateTime.attr_internal_writer:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.beginning_of_week:
   types:
   - undefined
@@ -76,6 +80,7 @@ DateTime.beginning_of_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.beginning_of_week=:
   types:
@@ -90,6 +95,7 @@ DateTime.beginning_of_week=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.beginning_of_week_default:
   types:
@@ -104,6 +110,7 @@ DateTime.beginning_of_week_default:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.beginning_of_week_default=:
   types:
@@ -118,6 +125,7 @@ DateTime.beginning_of_week_default=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.blank?:
   types:
@@ -187,6 +195,7 @@ DateTime.duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.find_beginning_of_week!:
   types:
   - undefined
@@ -200,6 +209,7 @@ DateTime.find_beginning_of_week!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.html_safe?:
   types:
@@ -213,6 +223,7 @@ DateTime.html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.in?:
   types:
   - Boolean
@@ -327,6 +338,7 @@ DateTime.to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime.tomorrow:
   types:
   - undefined
@@ -340,6 +352,7 @@ DateTime.tomorrow:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.try:
   types:
@@ -355,6 +368,7 @@ DateTime.try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.try!:
   types:
@@ -370,6 +384,7 @@ DateTime.try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime.with_options:
   types:
@@ -388,6 +403,7 @@ DateTime.yesterday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#+:
   types:
@@ -402,6 +418,7 @@ DateTime#+:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#-:
   types:
@@ -416,6 +433,7 @@ DateTime#-:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#<=>:
   types:
@@ -429,6 +447,7 @@ DateTime#<=>:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#acts_like?:
   types:
@@ -446,6 +465,7 @@ DateTime#acts_like_date?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#acts_like_time?:
   types:
   - 'true'
@@ -458,6 +478,7 @@ DateTime#acts_like_time?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#advance:
   types:
   - undefined
@@ -475,6 +496,7 @@ DateTime#after?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#ago:
   types:
@@ -493,6 +515,7 @@ DateTime#all_day:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#all_month:
   types:
@@ -507,6 +530,7 @@ DateTime#all_month:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#all_quarter:
   types:
@@ -521,6 +545,7 @@ DateTime#all_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#all_week:
   types:
@@ -535,6 +560,7 @@ DateTime#all_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#all_year:
   types:
@@ -549,6 +575,7 @@ DateTime#all_year:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#as_json:
   types:
@@ -563,6 +590,7 @@ DateTime#as_json:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_beginning_of_day:
   types:
@@ -589,6 +617,7 @@ DateTime#at_beginning_of_month:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_beginning_of_quarter:
   types:
@@ -603,6 +632,7 @@ DateTime#at_beginning_of_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_beginning_of_week:
   types:
@@ -617,6 +647,7 @@ DateTime#at_beginning_of_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_beginning_of_year:
   types:
@@ -631,6 +662,7 @@ DateTime#at_beginning_of_year:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_end_of_day:
   types:
@@ -657,6 +689,7 @@ DateTime#at_end_of_month:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_end_of_quarter:
   types:
@@ -671,6 +704,7 @@ DateTime#at_end_of_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_end_of_week:
   types:
@@ -685,6 +719,7 @@ DateTime#at_end_of_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_end_of_year:
   types:
@@ -699,6 +734,7 @@ DateTime#at_end_of_year:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#at_midday:
   types:
@@ -729,6 +765,7 @@ DateTime#before?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#beginning_of_day:
   types:
@@ -755,6 +792,7 @@ DateTime#beginning_of_month:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#beginning_of_quarter:
   types:
@@ -769,6 +807,7 @@ DateTime#beginning_of_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#beginning_of_week:
   types:
@@ -783,6 +822,7 @@ DateTime#beginning_of_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#beginning_of_year:
   types:
@@ -797,6 +837,7 @@ DateTime#beginning_of_year:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#blank?:
   types:
@@ -828,6 +869,7 @@ DateTime#compare_with_coercion:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#days_ago:
   types:
@@ -842,6 +884,7 @@ DateTime#days_ago:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#days_since:
   types:
@@ -856,6 +899,7 @@ DateTime#days_since:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#days_to_week_start:
   types:
@@ -870,6 +914,7 @@ DateTime#days_to_week_start:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#deep_dup:
   types:
@@ -887,6 +932,7 @@ DateTime#duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#end_of_day:
   types:
   - undefined
@@ -912,6 +958,7 @@ DateTime#end_of_month:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#end_of_quarter:
   types:
@@ -926,6 +973,7 @@ DateTime#end_of_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#end_of_week:
   types:
@@ -940,6 +988,7 @@ DateTime#end_of_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#end_of_year:
   types:
@@ -954,6 +1003,7 @@ DateTime#end_of_year:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#formatted_offset:
   types:
@@ -972,6 +1022,7 @@ DateTime#future?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#getgm:
   types:
@@ -1001,6 +1052,7 @@ DateTime#html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#in:
   types:
   - undefined
@@ -1023,6 +1075,7 @@ DateTime#in_time_zone:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#infinite?:
   types:
@@ -1037,6 +1090,7 @@ DateTime#infinite?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#inspect:
   types:
@@ -1063,6 +1117,7 @@ DateTime#last_month:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#last_quarter:
   types:
@@ -1077,6 +1132,7 @@ DateTime#last_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#last_week:
   types:
@@ -1091,6 +1147,7 @@ DateTime#last_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#last_weekday:
   types:
@@ -1105,6 +1162,7 @@ DateTime#last_weekday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#last_year:
   types:
@@ -1119,6 +1177,7 @@ DateTime#last_year:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#localtime:
   types:
@@ -1149,6 +1208,7 @@ DateTime#minus_with_duration:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#monday:
   types:
@@ -1163,6 +1223,7 @@ DateTime#monday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#months_ago:
   types:
@@ -1177,6 +1238,7 @@ DateTime#months_ago:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#months_since:
   types:
@@ -1191,6 +1253,7 @@ DateTime#months_since:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#next_day?:
   types:
@@ -1205,6 +1268,7 @@ DateTime#next_day?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#next_occurring:
   types:
@@ -1219,6 +1283,7 @@ DateTime#next_occurring:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#next_quarter:
   types:
@@ -1233,6 +1298,7 @@ DateTime#next_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#next_week:
   types:
@@ -1247,6 +1313,7 @@ DateTime#next_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#next_weekday:
   types:
@@ -1261,6 +1328,7 @@ DateTime#next_weekday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#noon:
   types:
@@ -1283,6 +1351,7 @@ DateTime#on_weekday?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#on_weekend?:
   types:
@@ -1297,6 +1366,7 @@ DateTime#on_weekend?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#past?:
   types:
@@ -1311,6 +1381,7 @@ DateTime#past?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#plus_with_duration:
   types:
@@ -1325,6 +1396,7 @@ DateTime#plus_with_duration:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#presence:
   types:
@@ -1353,6 +1425,7 @@ DateTime#prev_day?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#prev_occurring:
   types:
@@ -1367,6 +1440,7 @@ DateTime#prev_occurring:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#prev_quarter:
   types:
@@ -1381,6 +1455,7 @@ DateTime#prev_quarter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#prev_week:
   types:
@@ -1395,6 +1470,7 @@ DateTime#prev_week:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#prev_weekday:
   types:
@@ -1409,6 +1485,7 @@ DateTime#prev_weekday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#quarter:
   types:
@@ -1458,6 +1535,7 @@ DateTime#sunday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#to_f:
   types:
@@ -1475,6 +1553,7 @@ DateTime#to_formatted_s:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#to_fs:
   types:
   - String
@@ -1487,6 +1566,7 @@ DateTime#to_fs:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#to_i:
   types:
   - undefined
@@ -1507,6 +1587,7 @@ DateTime#to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 DateTime#to_s:
   types:
   - String
@@ -1529,6 +1610,7 @@ DateTime#today?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#tomorrow:
   types:
@@ -1543,6 +1625,7 @@ DateTime#tomorrow:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#tomorrow?:
   types:
@@ -1557,6 +1640,7 @@ DateTime#tomorrow?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#try:
   types:
@@ -1572,6 +1656,7 @@ DateTime#try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#try!:
   types:
@@ -1587,6 +1672,7 @@ DateTime#try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#usec:
   types:
@@ -1617,6 +1703,7 @@ DateTime#utc_to_local_returns_utc_offset_times:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#weeks_ago:
   types:
@@ -1631,6 +1718,7 @@ DateTime#weeks_ago:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#weeks_since:
   types:
@@ -1645,6 +1733,7 @@ DateTime#weeks_since:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#with_options:
   types:
@@ -1663,6 +1752,7 @@ DateTime#years_ago:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#years_since:
   types:
@@ -1677,6 +1767,7 @@ DateTime#years_since:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#yesterday:
   types:
@@ -1691,6 +1782,7 @@ DateTime#yesterday:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 DateTime#yesterday?:
   types:
@@ -1705,4 +1797,5 @@ DateTime#yesterday?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha

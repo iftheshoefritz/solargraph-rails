@@ -11,6 +11,7 @@ Enumerable#compact_blank:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Enumerable#exclude?:
   types:
   - Boolean

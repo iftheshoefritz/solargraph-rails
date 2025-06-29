@@ -41,6 +41,7 @@ Rails::Application.attr_internal:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.attr_internal_accessor:
   types:
   - void
@@ -53,6 +54,7 @@ Rails::Application.attr_internal_accessor:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.attr_internal_reader:
   types:
   - void
@@ -65,6 +67,7 @@ Rails::Application.attr_internal_reader:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.attr_internal_writer:
   types:
   - void
@@ -77,6 +80,7 @@ Rails::Application.attr_internal_writer:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.blank?:
   types:
   - Boolean
@@ -126,6 +130,7 @@ Rails::Application.config:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application.configure:
   types:
@@ -162,6 +167,7 @@ Rails::Application.define_callbacks:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.delegate:
   types:
   - undefined
@@ -190,6 +196,7 @@ Rails::Application.duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.eager_load!:
   types:
   - undefined
@@ -203,6 +210,7 @@ Rails::Application.eager_load!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application.endpoint:
   types:
@@ -232,6 +240,7 @@ Rails::Application.find_root_with_flag:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.generators:
   types:
   - undefined
@@ -248,6 +257,7 @@ Rails::Application.html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.in?:
   types:
   - Boolean
@@ -274,6 +284,7 @@ Rails::Application.initializer:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application.initializers:
   types:
@@ -288,6 +299,7 @@ Rails::Application.initializers:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application.initializers_chain:
   types:
@@ -302,6 +314,7 @@ Rails::Application.initializers_chain:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application.initializers_for:
   types:
@@ -316,6 +329,7 @@ Rails::Application.initializers_for:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application.instance:
   types:
@@ -385,6 +399,7 @@ Rails::Application.normalize_callback_params:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.presence:
   types:
   - nil
@@ -439,6 +454,7 @@ Rails::Application.reset_callbacks:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.runner:
   types:
   - undefined
@@ -459,6 +475,7 @@ Rails::Application.set_callback:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.silence_redefinition_of_method:
   types:
   - undefined
@@ -475,6 +492,7 @@ Rails::Application.skip_callback:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.subclasses:
   types:
   - Array<Class>
@@ -519,6 +537,7 @@ Rails::Application.to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application.try:
   types:
   - undefined
@@ -544,6 +563,7 @@ Rails::Application.yaml_tag:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#acts_like?:
   types:
@@ -629,6 +649,7 @@ Rails::Application#default_middleware_stack:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application#default_url_options:
   types:
   - undefined
@@ -642,6 +663,7 @@ Rails::Application#default_url_options:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#default_url_options=:
   types:
@@ -656,6 +678,7 @@ Rails::Application#default_url_options=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#deprecators:
   types:
@@ -674,6 +697,7 @@ Rails::Application#duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application#eager_load!:
   types:
   - undefined
@@ -690,6 +714,7 @@ Rails::Application#encrypted:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application#endpoint:
   types:
   - undefined
@@ -707,6 +732,7 @@ Rails::Application#engine_name:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#ensure_generator_templates_added:
   types:
@@ -745,6 +771,7 @@ Rails::Application#html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application#importmap:
   types:
   - undefined
@@ -758,6 +785,7 @@ Rails::Application#importmap:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#importmap=:
   types:
@@ -772,6 +800,7 @@ Rails::Application#importmap=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#in?:
   types:
@@ -822,6 +851,7 @@ Rails::Application#isolated?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#key_generator:
   types:
@@ -873,6 +903,7 @@ Rails::Application#middleware:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#migration_railties:
   types:
@@ -900,6 +931,7 @@ Rails::Application#paths:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#presence:
   types:
@@ -932,6 +964,7 @@ Rails::Application#railtie_name:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#railtie_namespace:
   types:
@@ -982,6 +1015,7 @@ Rails::Application#root:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Rails::Application#routes:
   types:
@@ -1071,6 +1105,7 @@ Rails::Application#to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application#try:
   types:
   - undefined
@@ -1091,6 +1126,7 @@ Rails::Application#watchable_args:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Rails::Application#with_options:
   types:
   - undefined

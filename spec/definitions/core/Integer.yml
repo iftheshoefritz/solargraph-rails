@@ -27,6 +27,7 @@ Integer.attr_internal:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.attr_internal_accessor:
   types:
   - void
@@ -39,6 +40,7 @@ Integer.attr_internal_accessor:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.attr_internal_reader:
   types:
   - void
@@ -51,6 +53,7 @@ Integer.attr_internal_reader:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.attr_internal_writer:
   types:
   - void
@@ -63,6 +66,7 @@ Integer.attr_internal_writer:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.blank?:
   types:
   - Boolean
@@ -123,6 +127,7 @@ Integer.duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.html_safe?:
   types:
   - 'false'
@@ -135,6 +140,7 @@ Integer.html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.in?:
   types:
   - Boolean
@@ -249,6 +255,7 @@ Integer.to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer.try:
   types:
   - generic<T>
@@ -263,6 +270,7 @@ Integer.try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Integer.try!:
   types:
@@ -278,6 +286,7 @@ Integer.try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Integer.with_options:
   types:
@@ -324,6 +333,7 @@ Integer#day:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#days:
   types:
   - ActiveSupport::Duration
@@ -336,6 +346,7 @@ Integer#days:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#deep_dup:
   types:
   - undefined
@@ -352,6 +363,7 @@ Integer#duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#exabyte:
   types:
   - undefined
@@ -372,6 +384,7 @@ Integer#fortnight:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#fortnights:
   types:
   - ActiveSupport::Duration
@@ -384,6 +397,7 @@ Integer#fortnights:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#gigabyte:
   types:
   - undefined
@@ -404,6 +418,7 @@ Integer#hour:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#hours:
   types:
   - ActiveSupport::Duration
@@ -416,6 +431,7 @@ Integer#hours:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#html_safe?:
   types:
   - 'true'
@@ -428,6 +444,7 @@ Integer#html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#in?:
   types:
   - Boolean
@@ -472,6 +489,7 @@ Integer#minute:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#minutes:
   types:
   - ActiveSupport::Duration
@@ -484,6 +502,7 @@ Integer#minutes:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#month:
   types:
   - ActiveSupport::Duration
@@ -496,6 +515,7 @@ Integer#month:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#months:
   types:
   - ActiveSupport::Duration
@@ -508,6 +528,7 @@ Integer#months:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#multiple_of?:
   types:
   - Boolean
@@ -554,6 +575,7 @@ Integer#second:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#seconds:
   types:
   - ActiveSupport::Duration
@@ -566,6 +588,7 @@ Integer#seconds:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#terabyte:
   types:
   - undefined
@@ -608,6 +631,7 @@ Integer#to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#to_s:
   types:
   - String
@@ -626,6 +650,7 @@ Integer#try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Integer#try!:
   types:
@@ -641,6 +666,7 @@ Integer#try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 Integer#week:
   types:
@@ -654,6 +680,7 @@ Integer#week:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#weeks:
   types:
   - ActiveSupport::Duration
@@ -666,6 +693,7 @@ Integer#weeks:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#with_options:
   types:
   - undefined
@@ -682,6 +710,7 @@ Integer#year:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#years:
   types:
   - ActiveSupport::Duration
@@ -694,6 +723,7 @@ Integer#years:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 Integer#zettabyte:
   types:
   - undefined
