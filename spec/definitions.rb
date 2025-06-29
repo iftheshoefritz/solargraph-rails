@@ -121,27 +121,7 @@ class Definitions
       specified_type = data['types'].sort.uniq
       if effective_type != specified_type
         if update
-          if specified_type == ['undefined']
-            if !effective_type.include?('BasicObject') && !effective_type.include?('Object')
-              # sounds like a better type
-              data['types'] = effective_type
-            elsif !skip
-              add_to_skip(data)
-            end
-          elsif specified_type == ['Object']
-            if !effective_type.include?('BasicObject')
-              # sounds like a better type
-              data['types'] = effective_type
-            elsif !skip
-              add_to_skip(data)
-            end
-          elsif specified_type == ['BasicObject']
-            # sounds like a better type
-            data['types'] = effective_type
-          elsif !skip
-            # @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
-            add_to_skip(data)
-          end
+          process_potential_update(specified_type, effective_type, data)
         elsif !skip
           @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
         end
@@ -163,6 +143,30 @@ class Definitions
       nil
     else
       @missing << meth
+    end
+  end
+
+  def process_potential_update(specified_type, effective_type, data)
+    if specified_type == ['undefined']
+      if !effective_type.include?('BasicObject') && !effective_type.include?('Object')
+        # sounds like a better type
+        data['types'] = effective_type
+      elsif !skip
+        add_to_skip(data)
+      end
+    elsif specified_type == ['Object']
+      if !effective_type.include?('BasicObject')
+        # sounds like a better type
+        data['types'] = effective_type
+      elsif !skip
+        add_to_skip(data)
+      end
+    elsif specified_type == ['BasicObject']
+      # sounds like a better type
+      data['types'] = effective_type
+    elsif !skip
+      # @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+      add_to_skip(data)
     end
   end
 
