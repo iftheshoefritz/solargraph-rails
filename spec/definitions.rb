@@ -186,8 +186,8 @@ class Definitions
     end
   end
 
-  def percent(a, b)
-    ((a.to_f / b) * 100).round(1)
+  def percent(num_a, num_b)
+    ((num_a.to_f / num_b) * 100).round(1)
   end
 
   attr_reader :map, :class_name, :definition_name, :update
