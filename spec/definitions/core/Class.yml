@@ -25,6 +25,8 @@ Class.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.attr_internal_accessor:
   types:
   - void
@@ -35,6 +37,8 @@ Class.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.attr_internal_naming_format:
   types:
   - String
@@ -46,6 +50,8 @@ Class.attr_internal_naming_format:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Class.attr_internal_naming_format=:
   types:
@@ -58,6 +64,8 @@ Class.attr_internal_naming_format=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Class.attr_internal_reader:
   types:
@@ -69,6 +77,8 @@ Class.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.attr_internal_writer:
   types:
   - void
@@ -79,6 +89,8 @@ Class.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.blank?:
   types:
   - Boolean
@@ -137,6 +149,8 @@ Class.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.html_safe?:
   types:
   - 'false'
@@ -147,6 +161,8 @@ Class.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.in?:
   types:
   - Boolean
@@ -259,6 +275,8 @@ Class.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class.try:
   types:
   - generic<T>
@@ -271,6 +289,8 @@ Class.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Class.try!:
   types:
@@ -284,6 +304,8 @@ Class.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Class.with_options:
   types:
@@ -315,6 +337,8 @@ Class#attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#attr_internal_accessor:
   types:
   - void
@@ -325,6 +349,8 @@ Class#attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#attr_internal_reader:
   types:
   - void
@@ -335,6 +361,8 @@ Class#attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#attr_internal_writer:
   types:
   - void
@@ -345,6 +373,8 @@ Class#attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#blank?:
   types:
   - Boolean
@@ -403,6 +433,8 @@ Class#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#html_safe?:
   types:
   - 'false'
@@ -413,6 +445,8 @@ Class#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#in?:
   types:
   - Boolean
@@ -525,6 +559,8 @@ Class#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 Class#try:
   types:
   - generic<T>
@@ -537,6 +573,8 @@ Class#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Class#try!:
   types:
@@ -550,6 +588,8 @@ Class#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 Class#with_options:
   types:

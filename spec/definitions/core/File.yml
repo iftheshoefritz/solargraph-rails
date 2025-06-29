@@ -29,6 +29,8 @@ File.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.attr_internal_accessor:
   types:
   - void
@@ -39,6 +41,8 @@ File.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.attr_internal_reader:
   types:
   - void
@@ -49,6 +53,8 @@ File.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.attr_internal_writer:
   types:
   - void
@@ -59,6 +65,8 @@ File.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.blank?:
   types:
   - Boolean
@@ -117,6 +125,8 @@ File.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.html_safe?:
   types:
   - 'false'
@@ -127,6 +137,8 @@ File.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.in?:
   types:
   - Boolean
@@ -243,6 +255,8 @@ File.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File.try:
   types:
   - generic<T>
@@ -255,6 +269,8 @@ File.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 File.try!:
   types:
@@ -268,6 +284,8 @@ File.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 File.with_options:
   types:
@@ -299,6 +317,8 @@ File#compact_blank:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File#deep_dup:
   types:
   - undefined
@@ -313,6 +333,8 @@ File#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File#exclude?:
   types:
   - Boolean
@@ -331,6 +353,8 @@ File#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File#in?:
   types:
   - Boolean
@@ -424,6 +448,8 @@ File#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 File#try:
   types:
   - generic<T>
@@ -436,6 +462,8 @@ File#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 File#try!:
   types:
@@ -449,6 +477,8 @@ File#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 File#with_options:
   types:

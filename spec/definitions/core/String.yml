@@ -25,6 +25,8 @@ String.attr_internal:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.attr_internal_accessor:
   types:
   - void
@@ -35,6 +37,8 @@ String.attr_internal_accessor:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.attr_internal_reader:
   types:
   - void
@@ -45,6 +49,8 @@ String.attr_internal_reader:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.attr_internal_writer:
   types:
   - void
@@ -55,6 +61,8 @@ String.attr_internal_writer:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.blank?:
   types:
   - Boolean
@@ -113,6 +121,8 @@ String.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.html_safe?:
   types:
   - 'false'
@@ -123,6 +133,8 @@ String.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.in?:
   types:
   - Boolean
@@ -235,6 +247,8 @@ String.to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String.try:
   types:
   - generic<T>
@@ -247,6 +261,8 @@ String.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 String.try!:
   types:
@@ -260,6 +276,8 @@ String.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 String.with_options:
   types:
@@ -279,6 +297,8 @@ String#acts_like_string?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#as_json:
   types:
   - undefined
@@ -306,6 +326,8 @@ String#camelcase:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#camelize:
   types:
   - String
@@ -316,6 +338,8 @@ String#camelize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#class_eval:
   types:
   - undefined
@@ -330,6 +354,8 @@ String#classify:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#constantize:
   types:
   - undefined
@@ -344,6 +370,8 @@ String#dasherize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#deconstantize:
   types:
   - String
@@ -354,6 +382,8 @@ String#deconstantize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#deep_dup:
   types:
   - undefined
@@ -368,6 +398,8 @@ String#demodulize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#downcase_first:
   types:
   - String
@@ -378,6 +410,8 @@ String#downcase_first:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#duplicable?:
   types:
   - 'true'
@@ -388,6 +422,8 @@ String#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#exclude?:
   types:
   - Boolean
@@ -403,6 +439,8 @@ String#ext:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 String#first:
   types:
@@ -418,6 +456,8 @@ String#foreign_key:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#from:
   types:
   - undefined
@@ -432,6 +472,8 @@ String#html_safe:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#html_safe?:
   types:
   - 'false'
@@ -442,6 +484,8 @@ String#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#humanize:
   types:
   - String
@@ -452,6 +496,8 @@ String#humanize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#in?:
   types:
   - Boolean
@@ -467,6 +513,8 @@ String#in_time_zone:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#indent:
   types:
   - undefined
@@ -485,6 +533,8 @@ String#inquiry:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#instance_values:
   types:
   - undefined
@@ -515,6 +565,8 @@ String#parameterize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#pathmap:
   types:
   - undefined
@@ -526,6 +578,8 @@ String#pathmap:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 String#pluralize:
   types:
@@ -537,6 +591,8 @@ String#pluralize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#presence:
   types:
   - nil
@@ -573,6 +629,8 @@ String#singularize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#squish:
   types:
   - undefined
@@ -595,6 +653,8 @@ String#tableize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#titlecase:
   types:
   - String
@@ -605,6 +665,8 @@ String#titlecase:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#titleize:
   types:
   - String
@@ -615,6 +677,8 @@ String#titleize:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#to:
   types:
   - undefined
@@ -651,6 +715,8 @@ String#to_query:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#to_time:
   types:
   - undefined
@@ -679,6 +745,8 @@ String#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 String#try!:
   types:
@@ -692,6 +760,8 @@ String#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
   - 0.56.alpha
 String#underscore:
   types:
@@ -703,6 +773,8 @@ String#underscore:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#upcase_first:
   types:
   - String
@@ -713,6 +785,8 @@ String#upcase_first:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0.pre1
+  - 0.56.0.pre2
 String#with_options:
   types:
   - undefined
