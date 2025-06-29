@@ -9,26 +9,13 @@ class Definitions
   def assert_matches_definitions
     update = true if ENV['FORCE_UPDATE'] == 'true'
     definitions_file = "spec/definitions/#{definition_name}.yml"
+
     definitions = YAML.load_file(definitions_file)
 
-    class_methods =
-      map.get_methods(
-        class_name,
-        scope: :class,
-        visibility: %i[public protected private]
-      )
-
-    instance_methods =
-      map.get_methods(
-        class_name,
-        scope: :instance,
-        visibility: %i[public protected private]
-      )
-
-    skipped = 0
-    typed = 0
-    incorrect = []
-    missing = []
+    @skipped = 0
+    @typed = 0
+    @incorrect = []
+    @missing = []
 
     definitions.each do |meth, data|
       process_single_definition(meth, data)
@@ -36,17 +23,17 @@ class Definitions
 
     File.write("spec/definitions/#{definition_name}.yml", definitions.to_yaml) if update
 
-    if missing.any?
+    if @missing.any?
       raise <<~STR
         The following methods could not be found despite being listed in #{definition_name}.yml:
-        #{missing}
+        #{@missing}
       STR
     end
 
-    if incorrect.any?
+    if @incorrect.any?
       raise <<~STR
         The return types of these methods did not match #{definition_name}.yml:
-          #{incorrect.join("\n  ")}
+          #{@incorrect.join("\n  ")}
       STR
     end
 
@@ -58,18 +45,36 @@ class Definitions
       {
         class_name: class_name,
         total: total,
-        covered: total - skipped,
-        typed: typed,
-        percent_covered: percent(total - skipped, total),
-        percent_typed: percent(typed, total)
+        covered: total - @skipped,
+        typed: @typed,
+        percent_covered: percent(total - @skipped, total),
+        percent_typed: percent(@typed, total)
       }
     )
   end
 
   private
 
+  def instance_methods
+    @instance_methods ||=
+      map.get_methods(
+        class_name,
+        scope: :instance,
+        visibility: %i[public protected private]
+      )
+  end
+
+  def class_methods
+    @class_methods ||= map.get_methods(
+      class_name,
+      scope: :class,
+      visibility: %i[public protected private]
+    )
+  end
+
   def process_single_definition(meth, data)
-    meth = meth.gsub(class_name, '') unless meth.start_with?('.', '#')      # @type [Array<Solargraph::Pin::Base>]
+    meth = meth.gsub(class_name, '') unless meth.start_with?('.', '#')
+    # @type [Array<Solargraph::Pin::Base>]
     pins =
       if meth.start_with?('.')
         class_methods.select { |p| p.name == meth[1..] }
@@ -87,8 +92,9 @@ class Definitions
     end
     # try hard to get a high quality and stable result
     pin = (good_pins.sort_by { |p| p.typify(map).map(&:tag).sort } +
-           meh_pins.sort_by { |p| p.typify(map).map(&:tag).sort }).first      skip = false
-    typed += 1 if data['types'] != ['undefined']
+           meh_pins.sort_by { |p| p.typify(map).map(&:tag).sort }).first
+    skip = false
+    @typed += 1 if data['types'] != ['undefined']
     rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
     already_removed = false
     if data['removed_in']
@@ -107,7 +113,7 @@ class Definitions
        data['skip'] == Solargraph::VERSION ||
        (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
       skip = true
-      skipped += 1
+      @skipped += 1
     end
     # Completion is found, but marked as skipped
     if pin
@@ -133,30 +139,30 @@ class Definitions
             # sounds like a better type
             data['types'] = effective_type
           elsif !skip
-            # incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+            # @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
             add_to_skip(data)
           end
         elsif !skip
-          incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+          @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
         end
       # rbs-only definitions may cover multiple versions of Rails and cause false alarms
       elsif skip && !(pin.respond_to?(:source) && pin.source == :rbs)
         if update
           remove_skip(data)
         else
-          incorrect << <<~STR
+          @incorrect << <<~STR
               #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
               Consider setting skip=false
             STR
         end
       end
     elsif update && !already_removed && !not_added_yet
-      skipped += 1
+      @skipped += 1
       add_to_skip(data)
     elsif skip
-      next
+      return
     else
-      missing << meth
+      @missing << meth
     end
   end
 
