@@ -137,6 +137,8 @@ jobs:
           bundle update solargraph
           bundle exec solargraph version
           bundle info solargraph
+          bundle info rbs
+          bundle info yard
           bundle exec rspec spec/solargraph-rails
         env:
           # Used in Gemfile/gemspec
