@@ -1238,17 +1238,7 @@ ActionController::Base.layout:
 ActionController::Base.log_at:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
+  skip: false
 ActionController::Base.log_process_action:
   types:
   - undefined
