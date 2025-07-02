@@ -47,11 +47,14 @@ class ActiveRecord::Base
 
   def self.set_callback
   end
+
+  # @return [self]
+  def reload(); end
 end
 
 module ActiveRecord::Validations
   # @return [Boolean]
-  def validate; end
+  def validate(); end
 end
 
 # @!override ActiveRecord::Batches#find_each
