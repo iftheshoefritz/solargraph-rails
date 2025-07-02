@@ -619,7 +619,7 @@ Rails::Application#class_eval:
   skip: false
 Rails::Application#config:
   types:
-  - undefined
+  - Rails::Application::Configuration
   skip: false
 Rails::Application#config=:
   types:
