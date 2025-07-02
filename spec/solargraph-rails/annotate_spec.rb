@@ -28,7 +28,7 @@ RSpec.describe Solargraph::Rails::Annotate do
 
     assert_method(api_map, 'MyModel#start_date', ['Date'])
     assert_method(api_map, 'MyModel#start_date=', ['Date'],
-                                  args: { value: 'Date' })
+                  args: { value: 'Date' })
     assert_method(
       api_map,
       'MyModel#living_expenses',

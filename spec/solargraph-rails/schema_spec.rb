@@ -56,7 +56,7 @@ RSpec.describe Solargraph::Rails::Schema do
 
     assert_method(map, "Account#balance", ["BigDecimal"])
     assert_method(map, "Account#balance=", ["BigDecimal"],
-                                  args: { value: 'BigDecimal' })
+                  args: { value: 'BigDecimal' })
     assert_method(map, "Account#some_int", ["Integer"])
     assert_method(map, "Account#some_int?", ["Boolean"])
     assert_method(map, "Account#some_date", ["Date"])
