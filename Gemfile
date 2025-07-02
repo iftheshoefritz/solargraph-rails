@@ -54,20 +54,10 @@ gemspec
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
 case solargraph_force_ci_version
-when '0.55.alpha'
-  gem 'solargraph',
-      github: 'apiology/solargraph',
-      branch: '2025-04-28'
-      # path: '../solargraph'
 when '0.56.alpha'
   gem 'solargraph',
       github: 'apiology/solargraph',
       branch: '2025-06-24'
-      # path: '../solargraph'
-when '0.56.0.pre2'
-  gem 'solargraph',
-      github: 'apiology/solargraph',
-      branch: 'run_plugin_specs'
       # path: '../solargraph'
 end
 
