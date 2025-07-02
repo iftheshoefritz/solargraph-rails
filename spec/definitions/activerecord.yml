@@ -8349,7 +8349,7 @@ ActiveRecord::Base#record_timestamps?:
   - 0.56.0.pre3
 ActiveRecord::Base#reload:
   types:
-  - undefined
+  - self
   skip: false
 ActiveRecord::Base#require_dependency:
   types:
