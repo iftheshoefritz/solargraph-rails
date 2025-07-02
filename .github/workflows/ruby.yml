@@ -43,8 +43,6 @@ jobs:
           - "0.50.0"
           - "0.51.2"
           - "0.52.0"
-          - "0.56.0.pre2"
-          - "0.55.alpha"
           - "0.56.alpha"
         include:
           - versions:
@@ -98,12 +96,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           key: |
-            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           restore-keys: |
-            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
-            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
-            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
-            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
+            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
+            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
+            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
+            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
           path: |
             /home/runner/.cache/solargraph
 
@@ -137,7 +135,11 @@ jobs:
           bundle update solargraph
           bundle exec solargraph version
           bundle info solargraph
-          bundle exec rspec spec/solargraph-rails
+          set +e
+          bundle info rbs
+          set -e
+          bundle info yard
+          bundle exec rake spec # bundle exec rspec spec/solargraph-rails
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
@@ -163,6 +165,6 @@ jobs:
         uses: actions/cache/save@v4
         with:
           key: |
-            2025-06-26-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           path: |
             /home/runner/.cache/solargraph

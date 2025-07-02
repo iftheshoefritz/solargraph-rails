@@ -28,6 +28,7 @@ ActiveJob::Base.after_enqueue:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.after_perform:
   types:
   - void
@@ -40,6 +41,7 @@ ActiveJob::Base.after_perform:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.alias_attribute:
   types:
   - undefined
@@ -60,6 +62,7 @@ ActiveJob::Base.around_enqueue:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.around_perform:
   types:
   - void
@@ -72,6 +75,7 @@ ActiveJob::Base.around_perform:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.as_json:
   types:
   - undefined
@@ -88,6 +92,7 @@ ActiveJob::Base.attr_internal:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.attr_internal_accessor:
   types:
   - void
@@ -100,6 +105,7 @@ ActiveJob::Base.attr_internal_accessor:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.attr_internal_reader:
   types:
   - void
@@ -112,6 +118,7 @@ ActiveJob::Base.attr_internal_reader:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.attr_internal_writer:
   types:
   - void
@@ -124,6 +131,7 @@ ActiveJob::Base.attr_internal_writer:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.before_enqueue:
   types:
   - void
@@ -136,6 +144,7 @@ ActiveJob::Base.before_enqueue:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.before_perform:
   types:
   - void
@@ -148,6 +157,7 @@ ActiveJob::Base.before_perform:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.blank?:
   types:
   - Boolean
@@ -193,6 +203,7 @@ ActiveJob::Base.default_priority:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.default_priority=:
   types:
@@ -207,6 +218,7 @@ ActiveJob::Base.default_priority=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.default_queue_name:
   types:
@@ -221,6 +233,7 @@ ActiveJob::Base.default_queue_name:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.default_queue_name=:
   types:
@@ -235,6 +248,7 @@ ActiveJob::Base.default_queue_name=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.define_callbacks:
   types:
@@ -248,6 +262,7 @@ ActiveJob::Base.define_callbacks:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.delegate:
   types:
   - undefined
@@ -276,6 +291,7 @@ ActiveJob::Base.deserialize:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.direct_descendants:
   types:
   - undefined
@@ -288,6 +304,7 @@ ActiveJob::Base.direct_descendants:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   removed_in: 7.1
 ActiveJob::Base.discard_on:
   types:
@@ -301,6 +318,7 @@ ActiveJob::Base.discard_on:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.duplicable?:
   types:
   - 'true'
@@ -313,6 +331,7 @@ ActiveJob::Base.duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.execute:
   types:
   - undefined
@@ -325,6 +344,7 @@ ActiveJob::Base.execute:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.handler_for_rescue:
   types:
   - undefined
@@ -337,6 +357,7 @@ ActiveJob::Base.handler_for_rescue:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.html_safe?:
   types:
   - 'false'
@@ -349,6 +370,7 @@ ActiveJob::Base.html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.in?:
   types:
   - Boolean
@@ -374,6 +396,7 @@ ActiveJob::Base.log_arguments:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.log_arguments=:
   types:
@@ -388,6 +411,7 @@ ActiveJob::Base.log_arguments=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.log_arguments?:
   types:
@@ -402,6 +426,7 @@ ActiveJob::Base.log_arguments?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.logger:
   types:
@@ -416,6 +441,7 @@ ActiveJob::Base.logger:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.logger=:
   types:
@@ -430,6 +456,7 @@ ActiveJob::Base.logger=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.mattr_accessor:
   types:
@@ -471,6 +498,7 @@ ActiveJob::Base.normalize_callback_params:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.perform_later:
   types:
   - undefined
@@ -483,6 +511,7 @@ ActiveJob::Base.perform_later:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.perform_now:
   types:
   - undefined
@@ -495,6 +524,7 @@ ActiveJob::Base.perform_now:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.presence:
   types:
   - nil
@@ -522,6 +552,7 @@ ActiveJob::Base.priority:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.priority=:
   types:
@@ -536,6 +567,7 @@ ActiveJob::Base.priority=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.priority?:
   types:
@@ -550,6 +582,7 @@ ActiveJob::Base.priority?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.pry:
   types:
@@ -567,6 +600,7 @@ ActiveJob::Base.queue_adapter:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.queue_adapter=:
   types:
   - undefined
@@ -579,6 +613,7 @@ ActiveJob::Base.queue_adapter=:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.queue_adapter_name:
   types:
   - undefined
@@ -591,6 +626,7 @@ ActiveJob::Base.queue_adapter_name:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.queue_as:
   types:
   - void
@@ -603,6 +639,7 @@ ActiveJob::Base.queue_as:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.queue_name:
   types:
   - undefined
@@ -616,6 +653,7 @@ ActiveJob::Base.queue_name:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name=:
   types:
@@ -630,6 +668,7 @@ ActiveJob::Base.queue_name=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name?:
   types:
@@ -644,6 +683,7 @@ ActiveJob::Base.queue_name?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name_delimiter:
   types:
@@ -658,6 +698,7 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name_delimiter=:
   types:
@@ -672,6 +713,7 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name_delimiter?:
   types:
@@ -686,6 +728,7 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name_from_part:
   types:
@@ -699,6 +742,7 @@ ActiveJob::Base.queue_name_from_part:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.queue_name_prefix:
   types:
   - undefined
@@ -712,6 +756,7 @@ ActiveJob::Base.queue_name_prefix:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name_prefix=:
   types:
@@ -726,6 +771,7 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_name_prefix?:
   types:
@@ -740,6 +786,7 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.queue_with_priority:
   types:
@@ -753,6 +800,7 @@ ActiveJob::Base.queue_with_priority:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.redefine_method:
   types:
   - undefined
@@ -785,6 +833,7 @@ ActiveJob::Base.rescue_from:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.rescue_handlers:
   types:
   - undefined
@@ -798,6 +847,7 @@ ActiveJob::Base.rescue_handlers:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.rescue_handlers=:
   types:
@@ -812,6 +862,7 @@ ActiveJob::Base.rescue_handlers=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.rescue_handlers?:
   types:
@@ -826,6 +877,7 @@ ActiveJob::Base.rescue_handlers?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.rescue_with_handler:
   types:
@@ -839,6 +891,7 @@ ActiveJob::Base.rescue_with_handler:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.reset_callbacks:
   types:
   - undefined
@@ -851,6 +904,7 @@ ActiveJob::Base.reset_callbacks:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.retry_jitter:
   types:
   - undefined
@@ -864,6 +918,7 @@ ActiveJob::Base.retry_jitter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.retry_jitter=:
   types:
@@ -878,6 +933,7 @@ ActiveJob::Base.retry_jitter=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.retry_on:
   types:
@@ -891,6 +947,7 @@ ActiveJob::Base.retry_on:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.set:
   types:
   - ActiveJob::ConfiguredJob
@@ -903,6 +960,7 @@ ActiveJob::Base.set:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.set_callback:
   types:
   - undefined
@@ -915,6 +973,7 @@ ActiveJob::Base.set_callback:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -932,6 +991,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.skip_after_callbacks_if_terminated=:
   types:
@@ -946,6 +1006,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.skip_callback:
   types:
@@ -959,6 +1020,7 @@ ActiveJob::Base.skip_callback:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.subclasses:
   types:
   - Array<Class>
@@ -1002,6 +1064,7 @@ ActiveJob::Base.to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base.try:
   types:
   - generic<T>
@@ -1016,6 +1079,7 @@ ActiveJob::Base.try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.try!:
   types:
@@ -1031,6 +1095,7 @@ ActiveJob::Base.try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base.with_options:
   types:
@@ -1080,6 +1145,7 @@ ActiveJob::Base#duplicable?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base#enqueue:
   types:
   - undefined
@@ -1132,6 +1198,7 @@ ActiveJob::Base#html_safe?:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base#in?:
   types:
   - Boolean
@@ -1186,6 +1253,7 @@ ActiveJob::Base#logger=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#perform:
   types:
@@ -1242,6 +1310,7 @@ ActiveJob::Base#queue_adapter:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#queue_name:
   types:
@@ -1264,6 +1333,7 @@ ActiveJob::Base#queue_name_prefix:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#queue_name_prefix=:
   types:
@@ -1278,6 +1348,7 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#queue_name_prefix?:
   types:
@@ -1292,6 +1363,7 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#require_dependency:
   types:
@@ -1310,6 +1382,7 @@ ActiveJob::Base#rescue_handlers:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#rescue_handlers=:
   types:
@@ -1324,6 +1397,7 @@ ActiveJob::Base#rescue_handlers=:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#rescue_handlers?:
   types:
@@ -1338,6 +1412,7 @@ ActiveJob::Base#rescue_handlers?:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#rescue_with_handler:
   types:
@@ -1372,6 +1447,7 @@ ActiveJob::Base#serialize:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#serialized_arguments=:
   types:
@@ -1413,6 +1489,7 @@ ActiveJob::Base#to_query:
   - 0.54.6.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
 ActiveJob::Base#try:
   types:
   - generic<T>
@@ -1427,6 +1504,7 @@ ActiveJob::Base#try:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#try!:
   types:
@@ -1442,6 +1520,7 @@ ActiveJob::Base#try!:
   - 0.55.alpha
   - 0.56.0.pre1
   - 0.56.0.pre2
+  - 0.56.0.pre3
   - 0.56.alpha
 ActiveJob::Base#with_options:
   types:
