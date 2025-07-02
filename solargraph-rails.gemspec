@@ -8,17 +8,19 @@ solargraph_version =
   if solargraph_force_ci_version
     [solargraph_force_ci_version]
   else
-    # below this isn't tested in CI
-    '>= 0.48.0',
-    # did not have support for global conventions
-    '!=0.53.0', '!=0.53.1', '!=0.53.2', '!=0.53.3', '!=0.53.4',
-    # did not have support for global conventions
-    '!=0.54.0', '!=0.54.1', '!=0.54.2', '!=0.54.3', '!=0.54.4', '!=0.54.5',
-    # did not have support for global conventions
-    '!=0.55.0', '!=0.55.1', '!=0.55.2', '!=0.55.3', '!=0.55.4', '!=0.55.5', '!=0.55.6', '!=0.55.7',
-    # above this hasn't been tested
-    '< 0.57'
-  ]
+    [
+      # below this isn't tested in CI
+      '>= 0.48.0',
+      # did not have support for global conventions
+      '!=0.53.0', '!=0.53.1', '!=0.53.2', '!=0.53.3', '!=0.53.4',
+      # did not have support for global conventions
+      '!=0.54.0', '!=0.54.1', '!=0.54.2', '!=0.54.3', '!=0.54.4', '!=0.54.5',
+      # did not have support for global conventions
+      '!=0.55.0', '!=0.55.1', '!=0.55.2', '!=0.55.3', '!=0.55.4', '!=0.55.5', '!=0.55.6', '!=0.55.7',
+      # above this hasn't been tested
+      '< 0.57'
+    ]
+  end
 
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
