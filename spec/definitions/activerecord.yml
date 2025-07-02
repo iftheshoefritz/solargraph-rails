@@ -49,6 +49,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -64,6 +65,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -341,6 +343,7 @@ ActiveRecord::Base.application_record_class:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -356,6 +359,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -478,6 +482,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -731,6 +736,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -746,6 +752,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -761,6 +768,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -776,6 +784,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -805,6 +814,7 @@ ActiveRecord::Base.automatic_scope_inversing:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -820,6 +830,7 @@ ActiveRecord::Base.automatic_scope_inversing=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -835,6 +846,7 @@ ActiveRecord::Base.automatic_scope_inversing?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -983,6 +995,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1006,6 +1019,7 @@ ActiveRecord::Base.broadcast_target_default:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1021,6 +1035,7 @@ ActiveRecord::Base.broadcasts:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1036,6 +1051,7 @@ ActiveRecord::Base.broadcasts_refreshes:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1051,6 +1067,7 @@ ActiveRecord::Base.broadcasts_refreshes_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1066,6 +1083,7 @@ ActiveRecord::Base.broadcasts_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1345,6 +1363,7 @@ ActiveRecord::Base.combine_signed_id_purposes:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1370,6 +1389,7 @@ ActiveRecord::Base.configurations:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1383,6 +1403,7 @@ ActiveRecord::Base.configurations=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1429,6 +1450,7 @@ ActiveRecord::Base.connection_handler:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1442,6 +1464,7 @@ ActiveRecord::Base.connection_handler=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1511,6 +1534,7 @@ ActiveRecord::Base.count:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1556,6 +1580,7 @@ ActiveRecord::Base.create_or_find_by:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1571,6 +1596,7 @@ ActiveRecord::Base.create_or_find_by!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1589,6 +1615,7 @@ ActiveRecord::Base.current_preventing_writes:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1641,6 +1668,7 @@ ActiveRecord::Base.current_shard:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1759,6 +1787,7 @@ ActiveRecord::Base.default_role:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1774,6 +1803,7 @@ ActiveRecord::Base.default_role=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1789,6 +1819,7 @@ ActiveRecord::Base.default_role?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1873,6 +1904,7 @@ ActiveRecord::Base.default_shard:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1888,6 +1920,7 @@ ActiveRecord::Base.default_shard=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1903,6 +1936,7 @@ ActiveRecord::Base.default_shard?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2064,6 +2098,7 @@ ActiveRecord::Base.delete_all:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2079,6 +2114,7 @@ ActiveRecord::Base.delete_by:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2119,6 +2155,7 @@ ActiveRecord::Base.destroy_all:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2134,6 +2171,7 @@ ActiveRecord::Base.destroy_by:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2257,6 +2295,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2272,6 +2311,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2287,6 +2327,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2328,6 +2369,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2343,6 +2385,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2358,6 +2401,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2403,6 +2447,7 @@ ActiveRecord::Base.except:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2473,6 +2518,7 @@ ActiveRecord::Base.find:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2489,6 +2535,7 @@ ActiveRecord::Base.find_by:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2520,6 +2567,7 @@ ActiveRecord::Base.find_or_create_by:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2535,6 +2583,7 @@ ActiveRecord::Base.find_or_create_by!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2550,6 +2599,7 @@ ActiveRecord::Base.find_or_initialize_by:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2564,6 +2614,7 @@ ActiveRecord::Base.find_signed:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2577,6 +2628,7 @@ ActiveRecord::Base.find_signed!:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2607,6 +2659,7 @@ ActiveRecord::Base.first_or_create:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2622,6 +2675,7 @@ ActiveRecord::Base.first_or_create!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2637,6 +2691,7 @@ ActiveRecord::Base.first_or_initialize:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2817,6 +2872,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2832,6 +2888,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2847,6 +2904,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2975,6 +3033,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -2990,6 +3049,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3005,6 +3065,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3179,6 +3240,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3407,6 +3469,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3422,6 +3485,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3444,6 +3508,7 @@ ActiveRecord::Base.local_stored_attributes:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3457,6 +3522,7 @@ ActiveRecord::Base.local_stored_attributes=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3579,6 +3645,7 @@ ActiveRecord::Base.logger?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3644,6 +3711,7 @@ ActiveRecord::Base.merge:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3812,6 +3880,7 @@ ActiveRecord::Base.only:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3839,6 +3908,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3854,6 +3924,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3869,6 +3940,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3884,6 +3956,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3899,6 +3972,7 @@ ActiveRecord::Base.partial_updates:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3914,6 +3988,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3929,6 +4004,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -3983,6 +4059,7 @@ ActiveRecord::Base.pluck:
   skip:
   - 0.48.0
   - 0.55.alpha
+  - 0.56.0
   - 0.56.alpha
 ActiveRecord::Base.pluralize_table_names:
   types:
@@ -4146,6 +4223,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4190,6 +4268,7 @@ ActiveRecord::Base.queues:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4205,6 +4284,7 @@ ActiveRecord::Base.queues=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4834,6 +4914,7 @@ ActiveRecord::Base.shard_selector:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4849,6 +4930,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4864,6 +4946,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4882,6 +4965,7 @@ ActiveRecord::Base.signed_id_verifier:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4895,6 +4979,7 @@ ActiveRecord::Base.signed_id_verifier=:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4909,6 +4994,7 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4924,6 +5010,7 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -4939,6 +5026,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5061,6 +5149,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5076,6 +5165,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5091,6 +5181,7 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5162,6 +5253,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5177,6 +5269,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5192,6 +5285,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5224,6 +5318,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5239,6 +5334,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5254,6 +5350,7 @@ ActiveRecord::Base.suppressing_turbo_broadcasts:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5437,6 +5534,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5543,6 +5641,7 @@ ActiveRecord::Base.to_adapter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5575,6 +5674,7 @@ ActiveRecord::Base.touch_all:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5617,6 +5717,7 @@ ActiveRecord::Base.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5633,6 +5734,7 @@ ActiveRecord::Base.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5725,6 +5827,7 @@ ActiveRecord::Base.update_all:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5830,6 +5933,7 @@ ActiveRecord::Base.validates_acceptance_of:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5856,6 +5960,7 @@ ActiveRecord::Base.validates_comparison_of:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5869,6 +5974,7 @@ ActiveRecord::Base.validates_confirmation_of:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5895,6 +6001,7 @@ ActiveRecord::Base.validates_exclusion_of:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5908,6 +6015,7 @@ ActiveRecord::Base.validates_format_of:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -5921,6 +6029,7 @@ ActiveRecord::Base.validates_inclusion_of:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6093,6 +6202,7 @@ ActiveRecord::Base.where:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6477,6 +6587,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6492,6 +6603,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6532,6 +6644,7 @@ ActiveRecord::Base#broadcast_action:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6547,6 +6660,7 @@ ActiveRecord::Base#broadcast_action_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6562,6 +6676,7 @@ ActiveRecord::Base#broadcast_action_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6577,6 +6692,7 @@ ActiveRecord::Base#broadcast_action_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6592,6 +6708,7 @@ ActiveRecord::Base#broadcast_after_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6607,6 +6724,7 @@ ActiveRecord::Base#broadcast_append:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6622,6 +6740,7 @@ ActiveRecord::Base#broadcast_append_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6637,6 +6756,7 @@ ActiveRecord::Base#broadcast_append_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6652,6 +6772,7 @@ ActiveRecord::Base#broadcast_append_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6667,6 +6788,7 @@ ActiveRecord::Base#broadcast_before_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6682,6 +6804,7 @@ ActiveRecord::Base#broadcast_prepend:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6697,6 +6820,7 @@ ActiveRecord::Base#broadcast_prepend_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6712,6 +6836,7 @@ ActiveRecord::Base#broadcast_prepend_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6727,6 +6852,7 @@ ActiveRecord::Base#broadcast_prepend_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6742,6 +6868,7 @@ ActiveRecord::Base#broadcast_refresh:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6757,6 +6884,7 @@ ActiveRecord::Base#broadcast_refresh_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6772,6 +6900,7 @@ ActiveRecord::Base#broadcast_refresh_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6787,6 +6916,7 @@ ActiveRecord::Base#broadcast_refresh_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6802,6 +6932,7 @@ ActiveRecord::Base#broadcast_remove:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6817,6 +6948,7 @@ ActiveRecord::Base#broadcast_remove_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6832,6 +6964,7 @@ ActiveRecord::Base#broadcast_render:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6847,6 +6980,7 @@ ActiveRecord::Base#broadcast_render_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6862,6 +6996,7 @@ ActiveRecord::Base#broadcast_render_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6877,6 +7012,7 @@ ActiveRecord::Base#broadcast_render_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6892,6 +7028,7 @@ ActiveRecord::Base#broadcast_replace:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6907,6 +7044,7 @@ ActiveRecord::Base#broadcast_replace_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6922,6 +7060,7 @@ ActiveRecord::Base#broadcast_replace_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6937,6 +7076,7 @@ ActiveRecord::Base#broadcast_replace_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6952,6 +7092,7 @@ ActiveRecord::Base#broadcast_update:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6967,6 +7108,7 @@ ActiveRecord::Base#broadcast_update_later:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6982,6 +7124,7 @@ ActiveRecord::Base#broadcast_update_later_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -6997,6 +7140,7 @@ ActiveRecord::Base#broadcast_update_to:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7231,6 +7375,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7296,6 +7441,7 @@ ActiveRecord::Base#default_role:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7311,6 +7457,7 @@ ActiveRecord::Base#default_role?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7352,6 +7499,7 @@ ActiveRecord::Base#default_shard:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7367,6 +7515,7 @@ ActiveRecord::Base#default_shard?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7488,6 +7637,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7503,6 +7653,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7518,6 +7669,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7819,6 +7971,7 @@ ActiveRecord::Base#logger?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7898,6 +8051,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7913,6 +8067,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7928,6 +8083,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7943,6 +8099,7 @@ ActiveRecord::Base#partial_updates:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -7958,6 +8115,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8030,6 +8188,7 @@ ActiveRecord::Base#pretty_print:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8079,6 +8238,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8324,6 +8484,7 @@ ActiveRecord::Base#signed_id_verifier_secret:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8338,6 +8499,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8379,6 +8541,7 @@ ActiveRecord::Base#slice:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8394,6 +8557,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8409,6 +8573,7 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8545,6 +8710,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8586,6 +8752,7 @@ ActiveRecord::Base#to_gid:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8601,6 +8768,7 @@ ActiveRecord::Base#to_gid_param:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8616,6 +8784,7 @@ ActiveRecord::Base#to_global_id:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8660,6 +8829,7 @@ ActiveRecord::Base#to_sgid:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8675,6 +8845,7 @@ ActiveRecord::Base#to_sgid_param:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8690,6 +8861,7 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8730,6 +8902,7 @@ ActiveRecord::Base#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8746,6 +8919,7 @@ ActiveRecord::Base#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -8761,6 +8935,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3

@@ -78,6 +78,7 @@ DateTime.beginning_of_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -93,6 +94,7 @@ DateTime.beginning_of_week=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -108,6 +110,7 @@ DateTime.beginning_of_week_default:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -123,6 +126,7 @@ DateTime.beginning_of_week_default=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -207,6 +211,7 @@ DateTime.find_beginning_of_week!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -350,6 +355,7 @@ DateTime.tomorrow:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -366,6 +372,7 @@ DateTime.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -382,6 +389,7 @@ DateTime.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -401,6 +409,7 @@ DateTime.yesterday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -416,6 +425,7 @@ DateTime#+:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -431,6 +441,7 @@ DateTime#-:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -445,6 +456,7 @@ DateTime#<=>:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -494,6 +506,7 @@ DateTime#after?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -513,6 +526,7 @@ DateTime#all_day:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -528,6 +542,7 @@ DateTime#all_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -543,6 +558,7 @@ DateTime#all_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -558,6 +574,7 @@ DateTime#all_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -573,6 +590,7 @@ DateTime#all_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -588,6 +606,7 @@ DateTime#as_json:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -615,6 +634,7 @@ DateTime#at_beginning_of_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -630,6 +650,7 @@ DateTime#at_beginning_of_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -645,6 +666,7 @@ DateTime#at_beginning_of_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -660,6 +682,7 @@ DateTime#at_beginning_of_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -687,6 +710,7 @@ DateTime#at_end_of_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -702,6 +726,7 @@ DateTime#at_end_of_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -717,6 +742,7 @@ DateTime#at_end_of_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -732,6 +758,7 @@ DateTime#at_end_of_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -763,6 +790,7 @@ DateTime#before?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -790,6 +818,7 @@ DateTime#beginning_of_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -805,6 +834,7 @@ DateTime#beginning_of_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -820,6 +850,7 @@ DateTime#beginning_of_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -835,6 +866,7 @@ DateTime#beginning_of_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -867,6 +899,7 @@ DateTime#compare_with_coercion:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -882,6 +915,7 @@ DateTime#days_ago:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -897,6 +931,7 @@ DateTime#days_since:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -912,6 +947,7 @@ DateTime#days_to_week_start:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -956,6 +992,7 @@ DateTime#end_of_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -971,6 +1008,7 @@ DateTime#end_of_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -986,6 +1024,7 @@ DateTime#end_of_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1001,6 +1040,7 @@ DateTime#end_of_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1020,6 +1060,7 @@ DateTime#future?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1073,6 +1114,7 @@ DateTime#in_time_zone:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1088,6 +1130,7 @@ DateTime#infinite?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1115,6 +1158,7 @@ DateTime#last_month:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1130,6 +1174,7 @@ DateTime#last_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1145,6 +1190,7 @@ DateTime#last_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1160,6 +1206,7 @@ DateTime#last_weekday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1175,6 +1222,7 @@ DateTime#last_year:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1206,6 +1254,7 @@ DateTime#minus_with_duration:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1221,6 +1270,7 @@ DateTime#monday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1236,6 +1286,7 @@ DateTime#months_ago:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1251,6 +1302,7 @@ DateTime#months_since:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1266,6 +1318,7 @@ DateTime#next_day?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1281,6 +1334,7 @@ DateTime#next_occurring:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1296,6 +1350,7 @@ DateTime#next_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1311,6 +1366,7 @@ DateTime#next_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1326,6 +1382,7 @@ DateTime#next_weekday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1349,6 +1406,7 @@ DateTime#on_weekday?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1364,6 +1422,7 @@ DateTime#on_weekend?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1379,6 +1438,7 @@ DateTime#past?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1394,6 +1454,7 @@ DateTime#plus_with_duration:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1423,6 +1484,7 @@ DateTime#prev_day?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1438,6 +1500,7 @@ DateTime#prev_occurring:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1453,6 +1516,7 @@ DateTime#prev_quarter:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1468,6 +1532,7 @@ DateTime#prev_week:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1483,6 +1548,7 @@ DateTime#prev_weekday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1533,6 +1599,7 @@ DateTime#sunday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1551,6 +1618,7 @@ DateTime#to_formatted_s:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1564,6 +1632,7 @@ DateTime#to_fs:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1608,6 +1677,7 @@ DateTime#today?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1623,6 +1693,7 @@ DateTime#tomorrow:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1638,6 +1709,7 @@ DateTime#tomorrow?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1654,6 +1726,7 @@ DateTime#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1670,6 +1743,7 @@ DateTime#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1701,6 +1775,7 @@ DateTime#utc_to_local_returns_utc_offset_times:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1716,6 +1791,7 @@ DateTime#weeks_ago:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1731,6 +1807,7 @@ DateTime#weeks_since:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1750,6 +1827,7 @@ DateTime#years_ago:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1765,6 +1843,7 @@ DateTime#years_since:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1780,6 +1859,7 @@ DateTime#yesterday:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1795,6 +1875,7 @@ DateTime#yesterday?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3

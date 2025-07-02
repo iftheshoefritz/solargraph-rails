@@ -35,9 +35,7 @@ group :development, :rubocop do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-performance', require: false
-  gem 'overcommit',
-      github: 'apiology/overcommit',
-      branch: 'add_solargraph'
+  gem 'overcommit'
   gem 'simplecov-lcov',
       github: 'apiology/simplecov-lcov',
       branch: 'avoid_blank_lines'
