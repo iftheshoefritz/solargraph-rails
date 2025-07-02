@@ -79,14 +79,6 @@ module Helpers
     end
   end
 
-  def assert_public_instance_method(map, query, return_type, args: {}, &block)
-    assert_method(map, query, return_type, args: args, scope: :instance, &block)
-  end
-
-  def assert_class_method(map, query, return_type, args: {}, &block)
-    assert_method(map, query, return_type, args: args, scope: :class, &block)
-  end
-
   def find_pin(path, map = api_map)
     find_pin_by_path(map.pins, path, map)
   end

@@ -47,33 +47,33 @@ RSpec.describe Solargraph::Rails::Schema do
       RUBY
     end
 
-    assert_public_instance_method(map, "Account#extra", ["Hash"]) do |pin|
+    assert_method(map, "Account#extra", ["Hash"]) do |pin|
       expect(pin.location.range.to_hash).to eq({
         :start => { :line => 5, :character => 0 },
         :end => { :line => 5, :character => 4 }
       })
     end
 
-    assert_public_instance_method(map, "Account#balance", ["BigDecimal"])
-    assert_public_instance_method(map, "Account#balance=", ["BigDecimal"],
+    assert_method(map, "Account#balance", ["BigDecimal"])
+    assert_method(map, "Account#balance=", ["BigDecimal"],
                                   args: { value: 'BigDecimal' })
-    assert_public_instance_method(map, "Account#some_int", ["Integer"])
-    assert_public_instance_method(map, "Account#some_int?", ["Boolean"])
-    assert_public_instance_method(map, "Account#some_date", ["Date"])
-    assert_public_instance_method(map, "Account#some_big_id", ["Integer"])
-    assert_public_instance_method(map, "Account#name", ["String"])
-    assert_public_instance_method(map, "Account#active", ["Boolean"])
-    assert_public_instance_method(map, "Account#active?", ["Boolean"])
-    assert_public_instance_method(map, "Account#notes", ["String"])
-    assert_public_instance_method(map, "Account#some_ip", ["IPAddr"])
-    assert_public_instance_method(map, "Account#uuid", ["String"])
-    assert_public_instance_method(map, "Account#old_school_json", ["Hash"])
-    assert_public_instance_method(map, "Account#new_school_json", ["Hash"])
-    assert_public_instance_method(map, "Account#some_citext", ["String"])
-    assert_public_instance_method(map, "Account#some_binary", ["String"])
-    assert_public_instance_method(map, "Account#some_timestamp", ["ActiveSupport::TimeWithZone"])
+    assert_method(map, "Account#some_int", ["Integer"])
+    assert_method(map, "Account#some_int?", ["Boolean"])
+    assert_method(map, "Account#some_date", ["Date"])
+    assert_method(map, "Account#some_big_id", ["Integer"])
+    assert_method(map, "Account#name", ["String"])
+    assert_method(map, "Account#active", ["Boolean"])
+    assert_method(map, "Account#active?", ["Boolean"])
+    assert_method(map, "Account#notes", ["String"])
+    assert_method(map, "Account#some_ip", ["IPAddr"])
+    assert_method(map, "Account#uuid", ["String"])
+    assert_method(map, "Account#old_school_json", ["Hash"])
+    assert_method(map, "Account#new_school_json", ["Hash"])
+    assert_method(map, "Account#some_citext", ["String"])
+    assert_method(map, "Account#some_binary", ["String"])
+    assert_method(map, "Account#some_timestamp", ["ActiveSupport::TimeWithZone"])
 
-    assert_class_method(map, "Account.find_by_name", ["self", "nil"], args: { value: 'String' })
+    assert_method(map, "Account.find_by_name", ["self", "nil"], args: { value: 'String' })
   end
 
   it 'infers prefixed table name' do
@@ -92,7 +92,7 @@ RSpec.describe Solargraph::Rails::Schema do
       RUBY
     end
 
-    assert_public_instance_method(map, "Accounting::Invoice#amount", ["BigDecimal"])
+    assert_method(map, "Accounting::Invoice#amount", ["BigDecimal"])
   end
 
   it 'falls back unprefixed tables even if model is namespaced' do
@@ -112,7 +112,7 @@ RSpec.describe Solargraph::Rails::Schema do
     end
 
     # resolves to accounts table
-    assert_public_instance_method(map, "Accounting::Invoice#amount", ["BigDecimal"])
+    assert_method(map, "Accounting::Invoice#amount", ["BigDecimal"])
   end
 
   it 'uses explicit table name if defined' do
@@ -132,6 +132,6 @@ RSpec.describe Solargraph::Rails::Schema do
       RUBY
     end
 
-    assert_public_instance_method(map, 'Invoice#amount', ['BigDecimal'])
+    assert_method(map, 'Invoice#amount', ['BigDecimal'])
   end
 end
