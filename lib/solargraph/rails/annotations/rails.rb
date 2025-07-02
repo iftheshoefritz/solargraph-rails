@@ -11,4 +11,6 @@ end
 class Rails::Application
   # @return [ActionDispatch::Routing::RouteSet]
   def routes; end
+  # @return [Rails::Application::Configuration]
+  def config; end
 end
