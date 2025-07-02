@@ -2,6 +2,42 @@
 
 ## Changes
 
+### v1.2
+
+Most of these are courtesy of @grndr, with integration work by
+@iftheshoefritz and @apiology
+
+Features / fixes:
+- Unlock support for Solargraph ~>0.56.0, with [major
+  improvements](https://github.com/castwide/solargraph/blob/master/CHANGELOG.md)
+  across the board
+- Support writers in Rails models
+- Support `gem_rbs_collection` for better quality Rails types
+- Use Solargraph::Pin::DelegatedMethod to define delegate methods
+- Include overloads and parameter types for ActiveRecord methods
+- Improve private relation support for ActiveRecord
+- Add find_by_column methods, clean up spec (Thanks, @ShadiestGoat!)
+- Annotation improvements driven by testing
+
+
+Internal improvements:
+- Many CI, linting and testing improvements
+  - Extract Util.extract_option helper
+  - Remove Rails 5 & Rails 6 specs
+  - Configure test app to behave like a real app
+  - Use ruby/setup-ruby action and test app Gemfile for CI
+  - Add a plugin that generates yard docs after bundle install
+  - Update test pin definitions and exclusions to be Solargraph and
+    Rails version-focused in a single location
+  - Working build matrix with heavy caching
+  - Add typecheck workflow
+- Use Solargraph::Pin::DelegatedMethod to define delegate methods
+- Update README introduction
+- Update model spec to expect private relation types
+- Fix undefined closure for generated parameter pins
+- Add Rails 7.1, 7.2 and 8.0 to test matrix
+- README.md example bug fix (Thanks, @snuggs!)
+
 ### v1.1.2
 
 Features / fixes:
@@ -14,7 +50,6 @@ Internal improvements:
 - Use normal ruby source for extra YARD annotations (Thanks, @grncdr!)
 - Speed up CI for recent Solargraph version fresh builds
 - spec reliability fixes
--
 
 ### v1.1.1
 
