@@ -128,6 +128,7 @@ Rails::Application.config:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -165,6 +166,7 @@ Rails::Application.define_callbacks:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -208,6 +210,7 @@ Rails::Application.eager_load!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -282,6 +285,7 @@ Rails::Application.initializer:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -297,6 +301,7 @@ Rails::Application.initializers:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -312,6 +317,7 @@ Rails::Application.initializers_chain:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -327,6 +333,7 @@ Rails::Application.initializers_for:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -397,6 +404,7 @@ Rails::Application.normalize_callback_params:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -452,6 +460,7 @@ Rails::Application.reset_callbacks:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -473,6 +482,7 @@ Rails::Application.set_callback:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -490,6 +500,7 @@ Rails::Application.skip_callback:
   - 0.51.2
   - 0.52.0
   - 0.54.6.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -561,6 +572,7 @@ Rails::Application.yaml_tag:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -661,6 +673,7 @@ Rails::Application#default_url_options:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -676,6 +689,7 @@ Rails::Application#default_url_options=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -730,6 +744,7 @@ Rails::Application#engine_name:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -783,6 +798,7 @@ Rails::Application#importmap:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -798,6 +814,7 @@ Rails::Application#importmap=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -849,6 +866,7 @@ Rails::Application#isolated?:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -901,6 +919,7 @@ Rails::Application#middleware:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -929,6 +948,7 @@ Rails::Application#paths:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -962,6 +982,7 @@ Rails::Application#railtie_name:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -1013,6 +1034,7 @@ Rails::Application#root:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3

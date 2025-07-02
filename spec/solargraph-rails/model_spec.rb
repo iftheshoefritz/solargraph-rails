@@ -12,7 +12,7 @@ RSpec.describe Solargraph::Rails::Model do
       end
     RUBY
 
-    assert_public_instance_method(
+    assert_method(
       api_map,
       'Transaction#account',
       ['Account']
@@ -25,7 +25,7 @@ RSpec.describe Solargraph::Rails::Model do
       )
     end
 
-    assert_public_instance_method(api_map, 'Transaction#category', ['Category'])
+    assert_method(api_map, 'Transaction#category', ['Category'])
   end
 
   it 'generates methods for association with custom class_name' do
@@ -36,7 +36,7 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
-    assert_public_instance_method(
+    assert_method(
       api_map,
       'Transaction#account',
       ['CustomAccount']
@@ -52,12 +52,12 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
-    assert_public_instance_method(
+    assert_method(
       api_map,
       'Account#transactions',
       ['Transaction::ActiveRecord_Relation']
     )
-    assert_public_instance_method(
+    assert_method(
       api_map,
       'Account#things',
       ['Thing::ActiveRecord_Relation']
@@ -72,8 +72,8 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
-    assert_class_method(api_map, 'Transaction.positive', ['Transaction::ActiveRecord_Relation'])
-    assert_public_instance_method(api_map, 'Transaction::ActiveRecord_Relation#positive', ['Transaction::ActiveRecord_Relation'])
+    assert_method(api_map, 'Transaction.positive', ['Transaction::ActiveRecord_Relation'])
+    assert_method(api_map, 'Transaction::ActiveRecord_Relation#positive', ['Transaction::ActiveRecord_Relation'])
   end
 
   it 'exposes scopes as relation instance methods' do
@@ -84,7 +84,7 @@ RSpec.describe Solargraph::Rails::Model do
       end
       RUBY
 
-    assert_public_instance_method(
+    assert_method(
       api_map,
       'Person::ActiveRecord_Relation#taller_than',
       ['Person::ActiveRecord_Relation'],
@@ -112,7 +112,7 @@ RSpec.describe Solargraph::Rails::Model do
                 end
                 RUBY
 
-    assert_class_method(
+    assert_method(
       api_map,
       'Person.taller_than',
       ['Person::ActiveRecord_Relation'],
@@ -135,7 +135,7 @@ RSpec.describe Solargraph::Rails::Model do
                 RUBY
 
     # TODO: Does this test do the thing it says does?
-    assert_class_method(
+    assert_method(
       api_map,
       'Person.taller_than',
       ['Person::ActiveRecord_Relation'],
@@ -154,7 +154,7 @@ RSpec.describe Solargraph::Rails::Model do
       end
       RUBY
 
-    assert_public_instance_method(
+    assert_method(
       api_map,
       'Person::ActiveRecord_Relation#taller_than',
       ['Person::ActiveRecord_Relation'],

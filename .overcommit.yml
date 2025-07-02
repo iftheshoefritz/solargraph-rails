@@ -23,6 +23,11 @@ PreCommit:
 
   Solargraph:
     enabled: true
+    exclude:
+      - 'spec/**/*'
+      - lib/solargraph/rails/annotations/**/*
+      - vendor/**/*
+      - ".bundle/**/*"
 
   # creates false positives in CI
   AuthorName:

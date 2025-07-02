@@ -35,9 +35,7 @@ group :development, :rubocop do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-performance', require: false
-  gem 'overcommit',
-      github: 'apiology/overcommit',
-      branch: 'add_solargraph'
+  gem 'overcommit'
   gem 'simplecov-lcov',
       github: 'apiology/simplecov-lcov',
       branch: 'avoid_blank_lines'
@@ -54,20 +52,10 @@ gemspec
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
 case solargraph_force_ci_version
-when '0.55.alpha'
-  gem 'solargraph',
-      github: 'apiology/solargraph',
-      branch: '2025-04-28'
-      # path: '../solargraph'
 when '0.56.alpha'
   gem 'solargraph',
       github: 'apiology/solargraph',
       branch: '2025-06-24'
-      # path: '../solargraph'
-when '0.56.0.pre3'
-  gem 'solargraph',
-      github: 'apiology/solargraph',
-      branch: 'run_plugin_specs'
       # path: '../solargraph'
 end
 

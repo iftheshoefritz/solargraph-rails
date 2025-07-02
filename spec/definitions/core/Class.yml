@@ -52,6 +52,7 @@ Class.attr_internal_naming_format:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -67,6 +68,7 @@ Class.attr_internal_naming_format=:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -298,6 +300,7 @@ Class.try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -314,6 +317,7 @@ Class.try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -591,6 +595,7 @@ Class#try:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3
@@ -607,6 +612,7 @@ Class#try!:
   - 0.52.0
   - 0.54.6.alpha
   - 0.55.alpha
+  - 0.56.0
   - 0.56.0.pre1
   - 0.56.0.pre2
   - 0.56.0.pre3

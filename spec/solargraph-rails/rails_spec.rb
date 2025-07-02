@@ -64,11 +64,10 @@ RSpec.describe 'Rails API completion' do
 
   xit 'understands mattr methods' do
     map = rails_workspace
-    # assert_class_method(map, 'ActiveJob::QueuePriority::ClassMethods.default_priority', ['undefined'])
-    assert_class_method(map, 'ActiveJob::QueueName::ClassMethods.default_queue_name', ['undefined'])
-    # assert_public_instance_method(map, 'ActiveJob::QueueName::ClassMethods#default_queue_name', ['undefined'])
+    # assert_method(map, 'ActiveJob::QueuePriority::ClassMethods.default_priority', ['undefined'])
+    assert_method(map, 'ActiveJob::QueueName::ClassMethods.default_queue_name', ['undefined'])
+    # assert_method(map, 'ActiveJob::QueueName::ClassMethods#default_queue_name', ['undefined'])
   end
-
 
   it 'can auto-complete inside migrations' do
     filename = nil

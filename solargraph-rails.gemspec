@@ -4,7 +4,23 @@ require 'solargraph/rails/version'
 
 
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
-solargraph_version = solargraph_force_ci_version ? [solargraph_force_ci_version] : [">= 0.48.0", '<0.53.0']
+solargraph_version =
+  if solargraph_force_ci_version
+    [solargraph_force_ci_version]
+  else
+    [
+      # below this isn't tested in CI
+      '>= 0.48.0',
+      # did not have support for global conventions
+      '!=0.53.0', '!=0.53.1', '!=0.53.2', '!=0.53.3', '!=0.53.4',
+      # did not have support for global conventions
+      '!=0.54.0', '!=0.54.1', '!=0.54.2', '!=0.54.3', '!=0.54.4', '!=0.54.5',
+      # did not have support for global conventions
+      '!=0.55.0', '!=0.55.1', '!=0.55.2', '!=0.55.3', '!=0.55.4', '!=0.55.5', '!=0.55.6', '!=0.55.7',
+      # above this hasn't been tested
+      '< 0.57'
+    ]
+  end
 
 Gem::Specification.new do |spec|
   spec.name = 'solargraph-rails'
@@ -34,10 +50,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov', '~> 0.22.0'
   spec.add_development_dependency 'simplecov-lcov', '~> 0.8.0'
 
-  # Solargraph temporarily dropped support for Convention.global in
-  # 0.53 - this should be lifted after it returns:
-  #
-  # https://github.com/castwide/solargraph/pull/877
   spec.add_runtime_dependency 'solargraph', *solargraph_version
 
   spec.add_runtime_dependency 'activesupport'
