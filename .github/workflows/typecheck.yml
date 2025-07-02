@@ -27,9 +27,8 @@ jobs:
           ruby-version: 3.4
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
+          cache-version: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
         env:
-          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
           MATRIX_RAILS_MAJOR_VERSION: "8"
           MATRIX_RAILS_VERSION: "8.0"
 
@@ -51,7 +50,6 @@ jobs:
           export BUNDLE_PATH
           bundle list && cat Gemfile.lock && find vendor -name Gemfile
         env:
-          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
           MATRIX_RAILS_MAJOR_VERSION: "8"
           MATRIX_RAILS_VERSION: "8.0"
 
@@ -69,7 +67,6 @@ jobs:
           # SOLARGRAPH_ASSERTS=on
           bundle exec solargraph typecheck --level typed
         env:
-          MATRIX_SOLARGRAPH_VERSION: '0.55.alpha'
           MATRIX_RAILS_MAJOR_VERSION: "8"
           MATRIX_RAILS_VERSION: "8.0"
 
