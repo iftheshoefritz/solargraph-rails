@@ -6,9 +6,12 @@ class Definitions
     @update = update
   end
 
+  def inspect
+    to_s
+  end
+
   def assert_matches_definitions
-    update = true if ENV['FORCE_UPDATE'] == 'true'
-    definitions_file = "spec/definitions/#{definition_name}.yml"
+    @update = true if ENV['FORCE_UPDATE'] == 'true'
 
     definitions = YAML.load_file(definitions_file)
 
@@ -54,6 +57,10 @@ class Definitions
   end
 
   private
+
+  def definitions_file
+    @definitions_file ||= "spec/definitions/#{definition_name}.yml"
+  end
 
   def instance_methods
     @instance_methods ||=
@@ -121,7 +128,7 @@ class Definitions
       specified_type = data['types'].sort.uniq
       if effective_type != specified_type
         if update
-          process_potential_update(specified_type, effective_type, data)
+          process_potential_update(specified_type, effective_type, data, skip)
         elsif !skip
           @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
         end
@@ -146,7 +153,7 @@ class Definitions
     end
   end
 
-  def process_potential_update(specified_type, effective_type, data)
+  def process_potential_update(specified_type, effective_type, data, skip)
     if specified_type == ['undefined']
       if !effective_type.include?('BasicObject') && !effective_type.include?('Object')
         # sounds like a better type
