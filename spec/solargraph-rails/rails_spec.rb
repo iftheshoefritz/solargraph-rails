@@ -69,6 +69,11 @@ RSpec.describe 'Rails API completion' do
     # assert_public_instance_method(map, 'ActiveJob::QueueName::ClassMethods#default_queue_name', ['undefined'])
   end
 
+  it 'understands ActionController::Base.log_at' do
+    map = rails_workspace
+    assert_class_method(map, 'ActionController::Base.log_at', ['void'])
+  end
+
 
   it 'can auto-complete inside migrations' do
     filename = nil
