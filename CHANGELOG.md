@@ -4,7 +4,7 @@
 
 ### v1.2
 
-Most of these are courtesy of @grndr, with integration work by
+Most of these are courtesy of @grncdr, with integration work by
 @iftheshoefritz and @apiology
 
 Features / fixes:
