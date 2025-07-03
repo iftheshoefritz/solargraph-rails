@@ -1,7 +1,7 @@
 #   npm install -g act
 #   act pull_release -j 'runner / rubocop'
 ---
-name: reviewdog
+name: rubocop
 on:
   pull_request:
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#permissions
@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 jobs:
   rubocop:
-    name: runner / rubocop
+    name: rubocop
     runs-on: ubuntu-latest
     env:
       BUNDLE_ONLY: rubocop
@@ -21,11 +21,10 @@ jobs:
           bundler-cache: true
       - uses: reviewdog/action-rubocop@fcb74ba274da10b18d038d0bcddaae3518739634 # v2.21.2
         with:
-          reporter: github-pr-review # Default is github-pr-check
+          reporter: github-pr-check # Default is github-pr-check
           skip_install: true
           use_bundler: true
           rubocop_extensions: 'rubocop-performance:gemfile rubocop-rspec:gemfile rubocop-rake:gemfile'
-          fail_on_error: true
           fail_level: info
           rubocop_version: Gemfile
           level: info
