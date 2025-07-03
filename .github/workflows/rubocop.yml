@@ -5,6 +5,7 @@ name: reviewdog
 on:
   pull_request:
 permissions:
+  issues: write
   contents: read
   pull-requests: write
 jobs:
