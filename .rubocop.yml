@@ -325,3 +325,4 @@ plugins:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-rake
+  - rubocop-yard

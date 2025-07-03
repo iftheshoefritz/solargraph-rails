@@ -3,7 +3,7 @@
 #   act pull_request
 #
 
-name: Ruby
+name: Test
 
 on:
   workflow_dispatch: {}
@@ -16,7 +16,7 @@ on:
       - 'v*'
 
 jobs:
-  test:
+  rspec:
     runs-on: ubuntu-latest
     strategy:
       matrix:
