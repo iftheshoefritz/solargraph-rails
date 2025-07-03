@@ -5,10 +5,6 @@ module Solargraph
         @instance ||= self.new
       end
 
-      def foo
-        DoesNotExist
-      end
-
       def process(source_map, ns)
         if Model.valid_filename?(source_map.filename)
           process_model(source_map.source, ns)
