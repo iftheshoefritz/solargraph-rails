@@ -8,6 +8,7 @@ permissions:
   issues: write
   contents: read
   pull-requests: write
+  reviews: write
 jobs:
   rubocop:
     name: runner / rubocop
