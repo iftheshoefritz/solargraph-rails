@@ -16,6 +16,11 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  issues: write
+  contents: read
+  pull-requests: write
+
 jobs:
   overcommit:
     runs-on: ubuntu-latest

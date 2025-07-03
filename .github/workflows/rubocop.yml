@@ -4,7 +4,10 @@
 name: reviewdog
 on:
   pull_request:
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#permissions
 permissions:
+  checks: write
+  issues: write
   contents: read
   pull-requests: write
 jobs:
