@@ -35,6 +35,7 @@ group :development, :rubocop do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-performance', require: false
+  gem 'rubocop-yard', require: true
   gem 'overcommit'
   gem 'simplecov-lcov',
       github: 'apiology/simplecov-lcov',
