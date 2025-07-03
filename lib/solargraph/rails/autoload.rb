@@ -6,7 +6,6 @@ module Solargraph
       end
 
 
-
       def process(source_map, ns, ds)
         return [] unless ds.size == 1 && ns.path.include?('::')
         Solargraph.logger.debug(
