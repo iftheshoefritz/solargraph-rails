@@ -17,8 +17,8 @@ on:
       - 'v*'
 
 permissions:
-  issues: write
-  contents: read
+#  issues: write
+#  contents: read
   pull-requests: write
 
 jobs:
