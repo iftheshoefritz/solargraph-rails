@@ -13,4 +13,6 @@ class Rails::Application
   def routes; end
   # @return [Rails::Application::Configuration]
   def config; end
+  # @return [Rails::Application::Configuration]
+  def self.config; end
 end
