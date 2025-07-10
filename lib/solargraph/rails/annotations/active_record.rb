@@ -3,6 +3,8 @@ class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @return [void]
   def create_table(table_name, id: nil, primary_key: nil, force: false, **options); end
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
+  # @param table_1 [String, Symbol]
+  # @param table_2 [String, Symbol]
   # @param column_options [Hash]
   # @return [void]
   def create_join_table(table_1, table_2, column_options: {}, **options); end
@@ -47,9 +49,13 @@ class ActiveRecord::Base
   include ::ActiveStorage::Attached::Model
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
-  # included in ActiveRecordExtensions
-  # @return [Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}]
-  attr_accessor self.attachment_reflections
+
+  class << self
+    # included in ActiveRecordExtensions
+    # @return [Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}]
+    attr_accessor attachment_reflections
+  end
+
   extend ::ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
 
   def self.set_callback
