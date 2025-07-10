@@ -48,7 +48,8 @@ class ActiveRecord::Base
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
   # included in ActiveRecordExtensions
-  attr_accessor self.attachment_reflections: Hash[String, ActiveStorage::Reflection::HasOneAttachedReflection | ActiveStorage::Reflection::HasManyAttachedReflection]
+  # @return [Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}]
+  attr_accessor self.attachment_reflections
   extend ::ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
 
   def self.set_callback
