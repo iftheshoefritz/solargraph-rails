@@ -6,6 +6,7 @@ class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @param table_1 [String, Symbol]
   # @param table_2 [String, Symbol]
   # @param column_options [Hash]
+  # @param options [Hash{Symbol => undefined}]
   # @return [void]
   def create_join_table(table_1, table_2, column_options: {}, **options); end
   # @yieldparam [ActiveRecord::ConnectionAdapters::Table]
