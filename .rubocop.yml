@@ -118,6 +118,9 @@ Naming/BlockForwarding: # new in 1.24
   Enabled: true
 Naming/PredicateMethod: # new in 1.76
   Enabled: true
+Naming/PredicatePrefix:
+  Exclude:
+    - lib/solargraph/rails/annotations/**/*.rb
 Security/CompoundHash: # new in 1.28
   Enabled: true
 Security/IoMethods: # new in 1.22
@@ -218,6 +221,9 @@ Style/OpenStructUse: # new in 1.23
   Enabled: true
 Style/OperatorMethodCall: # new in 1.37
   Enabled: true
+Style/OptionalBooleanParameter:
+  Exclude:
+    - lib/solargraph/rails/annotations/**/*.rb
 Style/QuotedSymbols: # new in 1.16
   Enabled: true
 Style/RedundantArgument: # new in 1.4
