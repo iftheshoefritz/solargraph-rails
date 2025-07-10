@@ -249,6 +249,7 @@ File.try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 File.try!:
   types:
   - generic<T>
@@ -262,6 +263,7 @@ File.try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 File.with_options:
   types:
   - undefined
@@ -425,6 +427,7 @@ File#try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 File#try!:
   types:
   - generic<T>
@@ -438,6 +441,7 @@ File#try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 File#with_options:
   types:
   - undefined

@@ -103,7 +103,7 @@ Rails::Application.concerning:
   skip: false
 Rails::Application.config:
   types:
-  - undefined
+  - Rails::Application::Configuration
   skip:
   - 0.48.0
   - 0.49.0
@@ -183,6 +183,7 @@ Rails::Application.eager_load!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application.endpoint:
   types:
   - undefined
@@ -245,6 +246,7 @@ Rails::Application.initializer:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application.initializers:
   types:
   - undefined
@@ -257,6 +259,7 @@ Rails::Application.initializers:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application.initializers_chain:
   types:
   - undefined
@@ -269,6 +272,7 @@ Rails::Application.initializers_chain:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application.initializers_for:
   types:
   - undefined
@@ -281,6 +285,7 @@ Rails::Application.initializers_for:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application.instance:
   types:
   - undefined
@@ -496,6 +501,7 @@ Rails::Application.yaml_tag:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#acts_like?:
   types:
   - Boolean
@@ -589,6 +595,7 @@ Rails::Application#default_url_options:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#default_url_options=:
   types:
   - undefined
@@ -601,6 +608,7 @@ Rails::Application#default_url_options=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#deprecators:
   types:
   - undefined
@@ -644,6 +652,7 @@ Rails::Application#engine_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#ensure_generator_templates_added:
   types:
   - undefined
@@ -690,6 +699,7 @@ Rails::Application#importmap:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#importmap=:
   types:
   - undefined
@@ -702,6 +712,7 @@ Rails::Application#importmap=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#in?:
   types:
   - Boolean
@@ -750,6 +761,7 @@ Rails::Application#isolated?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#key_generator:
   types:
   - undefined
@@ -799,6 +811,7 @@ Rails::Application#middleware:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#migration_railties:
   types:
   - undefined
@@ -824,6 +837,7 @@ Rails::Application#paths:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#presence:
   types:
   - nil
@@ -854,6 +868,7 @@ Rails::Application#railtie_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#railtie_namespace:
   types:
   - undefined
@@ -902,6 +917,7 @@ Rails::Application#root:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Rails::Application#routes:
   types:
   - ActionDispatch::Routing::RouteSet

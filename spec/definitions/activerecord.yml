@@ -42,6 +42,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.action_on_strict_loading_violation=:
   types:
   - undefined
@@ -54,6 +55,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.acts_like?:
   types:
   - Boolean
@@ -256,6 +258,7 @@ ActiveRecord::Base.application_record_class:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.application_record_class=:
   types:
   - undefined
@@ -268,6 +271,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.arel_table:
   types:
   - Arel::Table
@@ -359,6 +363,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.attr_internal:
   types:
   - void
@@ -537,6 +542,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.attributes_to_define_after_schema_loads:
   types:
   - undefined
@@ -549,6 +555,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.attributes_to_define_after_schema_loads=:
   types:
   - undefined
@@ -561,6 +568,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   types:
   - undefined
@@ -573,6 +581,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.authenticate_by:
   types:
   - nil
@@ -596,6 +605,7 @@ ActiveRecord::Base.automatic_scope_inversing:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.automatic_scope_inversing=:
   types:
   - undefined
@@ -608,6 +618,7 @@ ActiveRecord::Base.automatic_scope_inversing=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.automatic_scope_inversing?:
   types:
   - undefined
@@ -620,6 +631,7 @@ ActiveRecord::Base.automatic_scope_inversing?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.average:
   types:
   - undefined
@@ -729,6 +741,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.benchmark:
   types:
   - undefined
@@ -749,6 +762,7 @@ ActiveRecord::Base.broadcast_target_default:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.broadcasts:
   types:
   - undefined
@@ -761,6 +775,7 @@ ActiveRecord::Base.broadcasts:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.broadcasts_refreshes:
   types:
   - undefined
@@ -773,6 +788,7 @@ ActiveRecord::Base.broadcasts_refreshes:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.broadcasts_refreshes_to:
   types:
   - undefined
@@ -785,6 +801,7 @@ ActiveRecord::Base.broadcasts_refreshes_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.broadcasts_to:
   types:
   - undefined
@@ -797,6 +814,7 @@ ActiveRecord::Base.broadcasts_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.build:
   types:
   - undefined
@@ -1153,6 +1171,7 @@ ActiveRecord::Base.count:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -1187,6 +1206,7 @@ ActiveRecord::Base.create_or_find_by:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.create_or_find_by!:
   types:
   - undefined
@@ -1199,6 +1219,7 @@ ActiveRecord::Base.create_or_find_by!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.create_with:
   types:
   - undefined
@@ -1338,6 +1359,7 @@ ActiveRecord::Base.default_role:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.default_role=:
   types:
   - undefined
@@ -1350,6 +1372,7 @@ ActiveRecord::Base.default_role=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.default_role?:
   types:
   - undefined
@@ -1362,6 +1385,7 @@ ActiveRecord::Base.default_role?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.default_scope_override:
   types:
   - undefined
@@ -1423,6 +1447,7 @@ ActiveRecord::Base.default_shard:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.default_shard=:
   types:
   - undefined
@@ -1435,6 +1460,7 @@ ActiveRecord::Base.default_shard=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.default_shard?:
   types:
   - undefined
@@ -1447,6 +1473,7 @@ ActiveRecord::Base.default_shard?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.default_timezone:
   types:
   - undefined
@@ -1565,6 +1592,7 @@ ActiveRecord::Base.delete_all:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.delete_by:
   types:
   - undefined
@@ -1577,6 +1605,7 @@ ActiveRecord::Base.delete_by:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.deprecate:
   types:
   - undefined
@@ -1610,6 +1639,7 @@ ActiveRecord::Base.destroy_all:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.destroy_by:
   types:
   - undefined
@@ -1622,6 +1652,7 @@ ActiveRecord::Base.destroy_by:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.deterministic_encrypted_attributes:
   types:
   - undefined
@@ -1714,6 +1745,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.encrypted_attributes=:
   types:
   - undefined
@@ -1726,6 +1758,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.encrypted_attributes?:
   types:
   - undefined
@@ -1738,6 +1771,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.encrypts:
   types:
   - undefined
@@ -1768,6 +1802,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.enumerate_columns_in_select_statements=:
   types:
   - undefined
@@ -1780,6 +1815,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.enumerate_columns_in_select_statements?:
   types:
   - undefined
@@ -1792,6 +1828,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
@@ -1826,6 +1863,7 @@ ActiveRecord::Base.except:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.excluding:
   types:
   - undefined
@@ -1885,6 +1923,7 @@ ActiveRecord::Base.find:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.find_by:
   types:
   - nil
@@ -1898,6 +1937,7 @@ ActiveRecord::Base.find_by:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.find_by!:
   types:
   - undefined
@@ -1926,6 +1966,7 @@ ActiveRecord::Base.find_or_create_by:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.find_or_create_by!:
   types:
   - undefined
@@ -1938,6 +1979,7 @@ ActiveRecord::Base.find_or_create_by!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.find_or_initialize_by:
   types:
   - undefined
@@ -1950,6 +1992,7 @@ ActiveRecord::Base.find_or_initialize_by:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.find_signed:
   types:
   - undefined
@@ -1998,6 +2041,7 @@ ActiveRecord::Base.first_or_create:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.first_or_create!:
   types:
   - undefined
@@ -2010,6 +2054,7 @@ ActiveRecord::Base.first_or_create!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.first_or_initialize:
   types:
   - undefined
@@ -2022,6 +2067,7 @@ ActiveRecord::Base.first_or_initialize:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.flush_idle_connections!:
   types:
   - undefined
@@ -2164,6 +2210,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.has_many_inversing=:
   types:
   - undefined
@@ -2176,6 +2223,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.has_many_inversing?:
   types:
   - undefined
@@ -2188,6 +2236,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.has_one:
   types:
   - void
@@ -2285,6 +2334,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.immutable_strings_by_default=:
   types:
   - undefined
@@ -2297,6 +2347,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.immutable_strings_by_default?:
   types:
   - undefined
@@ -2309,6 +2360,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.implicit_order_column:
   types:
   - undefined
@@ -2436,6 +2488,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.inherited:
   types:
   - undefined
@@ -2610,6 +2663,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.legacy_connection_handling=:
   types:
   - undefined
@@ -2622,6 +2676,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.limit:
   types:
   - undefined
@@ -2738,6 +2793,7 @@ ActiveRecord::Base.logger?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.lookup_ancestors:
   types:
   - undefined
@@ -2792,6 +2848,7 @@ ActiveRecord::Base.merge:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.method_defined_within?:
   types:
   - Boolean
@@ -2927,6 +2984,7 @@ ActiveRecord::Base.only:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.optimizer_hints:
   types:
   - undefined
@@ -2951,6 +3009,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_inserts:
   types:
   - undefined
@@ -2963,6 +3022,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_inserts=:
   types:
   - undefined
@@ -2975,6 +3035,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_inserts?:
   types:
   - undefined
@@ -2987,6 +3048,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_updates:
   types:
   - undefined
@@ -2999,6 +3061,7 @@ ActiveRecord::Base.partial_updates:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_updates=:
   types:
   - undefined
@@ -3011,6 +3074,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_updates?:
   types:
   - undefined
@@ -3023,6 +3087,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.partial_writes:
   types:
   - undefined
@@ -3063,6 +3128,7 @@ ActiveRecord::Base.pluck:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
@@ -3190,6 +3256,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.prohibit_shard_swapping:
   types:
   - undefined
@@ -3228,6 +3295,7 @@ ActiveRecord::Base.queues:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.queues=:
   types:
   - undefined
@@ -3240,6 +3308,7 @@ ActiveRecord::Base.queues=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.quoted_primary_key:
   types:
   - undefined
@@ -3714,6 +3783,7 @@ ActiveRecord::Base.shard_selector:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.shard_selector=:
   types:
   - undefined
@@ -3726,6 +3796,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.shard_selector?:
   types:
   - undefined
@@ -3738,6 +3809,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.shard_swapping_prohibited?:
   types:
   - Boolean
@@ -3774,6 +3846,7 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined
@@ -3786,6 +3859,7 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.signed_id_verifier_secret?:
   types:
   - undefined
@@ -3798,6 +3872,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -3889,6 +3964,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.store_full_class_name=:
   types:
   - undefined
@@ -3901,6 +3977,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.store_full_class_name?:
   types:
   - undefined
@@ -3913,6 +3990,7 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.store_full_sti_class:
   types:
   - undefined
@@ -3965,6 +4043,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.strict_loading_by_default=:
   types:
   - undefined
@@ -3977,6 +4056,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.strict_loading_by_default?:
   types:
   - undefined
@@ -3989,6 +4069,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.subclasses:
   types:
   - Array<Class>
@@ -4018,6 +4099,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.suppress_multiple_database_warning=:
   types:
   - undefined
@@ -4030,6 +4112,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - undefined
@@ -4042,6 +4125,7 @@ ActiveRecord::Base.suppressing_turbo_broadcasts:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.symbol_column_to_string:
   types:
   - undefined
@@ -4190,6 +4274,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.time_zone_aware_types:
   types:
   - undefined
@@ -4265,6 +4350,7 @@ ActiveRecord::Base.to_adapter:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.to_param:
   types:
   - undefined
@@ -4290,6 +4376,7 @@ ActiveRecord::Base.touch_all:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.touch_attributes_with_time:
   types:
   - undefined
@@ -4321,6 +4408,7 @@ ActiveRecord::Base.try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.try!:
   types:
   - generic<T>
@@ -4334,6 +4422,7 @@ ActiveRecord::Base.try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.type_caster:
   types:
   - ActiveRecord::TypeCaster::Map
@@ -4403,6 +4492,7 @@ ActiveRecord::Base.update_all:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.update_counters:
   types:
   - undefined
@@ -4666,6 +4756,7 @@ ActiveRecord::Base.where:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.while_preventing_writes:
   types:
   - undefined
@@ -4963,6 +5054,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#automatic_scope_inversing?:
   types:
   - undefined
@@ -4975,6 +5067,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#becomes:
   types:
   - undefined
@@ -5008,6 +5101,7 @@ ActiveRecord::Base#broadcast_action:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_action_later:
   types:
   - undefined
@@ -5020,6 +5114,7 @@ ActiveRecord::Base#broadcast_action_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_action_later_to:
   types:
   - undefined
@@ -5032,6 +5127,7 @@ ActiveRecord::Base#broadcast_action_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_action_to:
   types:
   - undefined
@@ -5044,6 +5140,7 @@ ActiveRecord::Base#broadcast_action_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_after_to:
   types:
   - undefined
@@ -5056,6 +5153,7 @@ ActiveRecord::Base#broadcast_after_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_append:
   types:
   - undefined
@@ -5068,6 +5166,7 @@ ActiveRecord::Base#broadcast_append:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_append_later:
   types:
   - undefined
@@ -5080,6 +5179,7 @@ ActiveRecord::Base#broadcast_append_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_append_later_to:
   types:
   - undefined
@@ -5092,6 +5192,7 @@ ActiveRecord::Base#broadcast_append_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_append_to:
   types:
   - undefined
@@ -5104,6 +5205,7 @@ ActiveRecord::Base#broadcast_append_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_before_to:
   types:
   - undefined
@@ -5116,6 +5218,7 @@ ActiveRecord::Base#broadcast_before_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_prepend:
   types:
   - undefined
@@ -5128,6 +5231,7 @@ ActiveRecord::Base#broadcast_prepend:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_prepend_later:
   types:
   - undefined
@@ -5140,6 +5244,7 @@ ActiveRecord::Base#broadcast_prepend_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
   - undefined
@@ -5152,6 +5257,7 @@ ActiveRecord::Base#broadcast_prepend_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_prepend_to:
   types:
   - undefined
@@ -5164,6 +5270,7 @@ ActiveRecord::Base#broadcast_prepend_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_refresh:
   types:
   - undefined
@@ -5176,6 +5283,7 @@ ActiveRecord::Base#broadcast_refresh:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_refresh_later:
   types:
   - undefined
@@ -5188,6 +5296,7 @@ ActiveRecord::Base#broadcast_refresh_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_refresh_later_to:
   types:
   - undefined
@@ -5200,6 +5309,7 @@ ActiveRecord::Base#broadcast_refresh_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_refresh_to:
   types:
   - undefined
@@ -5212,6 +5322,7 @@ ActiveRecord::Base#broadcast_refresh_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_remove:
   types:
   - undefined
@@ -5224,6 +5335,7 @@ ActiveRecord::Base#broadcast_remove:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_remove_to:
   types:
   - undefined
@@ -5236,6 +5348,7 @@ ActiveRecord::Base#broadcast_remove_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_render:
   types:
   - undefined
@@ -5248,6 +5361,7 @@ ActiveRecord::Base#broadcast_render:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_render_later:
   types:
   - undefined
@@ -5260,6 +5374,7 @@ ActiveRecord::Base#broadcast_render_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_render_later_to:
   types:
   - undefined
@@ -5272,6 +5387,7 @@ ActiveRecord::Base#broadcast_render_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_render_to:
   types:
   - undefined
@@ -5284,6 +5400,7 @@ ActiveRecord::Base#broadcast_render_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_replace:
   types:
   - undefined
@@ -5296,6 +5413,7 @@ ActiveRecord::Base#broadcast_replace:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_replace_later:
   types:
   - undefined
@@ -5308,6 +5426,7 @@ ActiveRecord::Base#broadcast_replace_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
   - undefined
@@ -5320,6 +5439,7 @@ ActiveRecord::Base#broadcast_replace_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_replace_to:
   types:
   - undefined
@@ -5332,6 +5452,7 @@ ActiveRecord::Base#broadcast_replace_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_update:
   types:
   - undefined
@@ -5344,6 +5465,7 @@ ActiveRecord::Base#broadcast_update:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_update_later:
   types:
   - undefined
@@ -5356,6 +5478,7 @@ ActiveRecord::Base#broadcast_update_later:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_update_later_to:
   types:
   - undefined
@@ -5368,6 +5491,7 @@ ActiveRecord::Base#broadcast_update_later_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#broadcast_update_to:
   types:
   - undefined
@@ -5380,6 +5504,7 @@ ActiveRecord::Base#broadcast_update_to:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#cache_key:
   types:
   - undefined
@@ -5551,6 +5676,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#committed!:
   types:
   - undefined
@@ -5605,6 +5731,7 @@ ActiveRecord::Base#default_role:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#default_role?:
   types:
   - undefined
@@ -5617,6 +5744,7 @@ ActiveRecord::Base#default_role?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#default_scope_override:
   types:
   - undefined
@@ -5647,6 +5775,7 @@ ActiveRecord::Base#default_shard:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#default_shard?:
   types:
   - undefined
@@ -5659,6 +5788,7 @@ ActiveRecord::Base#default_shard?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#defined_enums:
   types:
   - undefined
@@ -5755,6 +5885,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#encrypted_attributes=:
   types:
   - undefined
@@ -5767,6 +5898,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#encrypted_attributes?:
   types:
   - undefined
@@ -5779,6 +5911,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#eql?:
   types:
   - Boolean
@@ -6014,6 +6147,7 @@ ActiveRecord::Base#logger?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#mark_for_destruction:
   types:
   - undefined
@@ -6078,6 +6212,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#partial_inserts:
   types:
   - undefined
@@ -6090,6 +6225,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#partial_inserts?:
   types:
   - undefined
@@ -6102,6 +6238,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#partial_updates:
   types:
   - undefined
@@ -6114,6 +6251,7 @@ ActiveRecord::Base#partial_updates:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#partial_updates?:
   types:
   - undefined
@@ -6126,6 +6264,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#persisted?:
   types:
   - Boolean
@@ -6183,6 +6322,7 @@ ActiveRecord::Base#pretty_print:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#previous_changes:
   types:
   - undefined
@@ -6221,6 +6361,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#pry:
   types:
   - undefined
@@ -6415,6 +6556,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   types:
   - undefined
@@ -6457,6 +6599,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#store_full_class_name?:
   types:
   - undefined
@@ -6469,6 +6612,7 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#store_full_sti_class:
   types:
   - undefined
@@ -6503,7 +6647,8 @@ ActiveRecord::Base#strict_loading?:
 ActiveRecord::Base#strict_loading_all?:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.57.alpha
   added_in: 7.1
 ActiveRecord::Base#strict_loading_mode:
   types:
@@ -6570,6 +6715,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#time_zone_aware_types:
   types:
   - undefined
@@ -6600,6 +6746,7 @@ ActiveRecord::Base#to_gid:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#to_gid_param:
   types:
   - undefined
@@ -6612,6 +6759,7 @@ ActiveRecord::Base#to_gid_param:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#to_global_id:
   types:
   - undefined
@@ -6624,6 +6772,7 @@ ActiveRecord::Base#to_global_id:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#to_key:
   types:
   - undefined
@@ -6661,6 +6810,7 @@ ActiveRecord::Base#to_sgid:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#to_sgid_param:
   types:
   - undefined
@@ -6673,6 +6823,7 @@ ActiveRecord::Base#to_sgid_param:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#to_signed_global_id:
   types:
   - undefined
@@ -6685,6 +6836,7 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#toggle:
   types:
   - undefined
@@ -6722,6 +6874,7 @@ ActiveRecord::Base#try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#try!:
   types:
   - generic<T>
@@ -6735,6 +6888,7 @@ ActiveRecord::Base#try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#type_for_attribute:
   types:
   - undefined
@@ -6747,6 +6901,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base#update:
   types:
   - Boolean

@@ -241,6 +241,7 @@ String.try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 String.try!:
   types:
   - generic<T>
@@ -254,6 +255,7 @@ String.try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 String.with_options:
   types:
   - undefined
@@ -388,6 +390,7 @@ String#ext:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 String#first:
   types:
   - undefined
@@ -504,6 +507,7 @@ String#pathmap:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 String#pluralize:
   types:
   - String
@@ -651,6 +655,7 @@ String#try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 String#try!:
   types:
   - generic<T>
@@ -664,6 +669,7 @@ String#try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 String#underscore:
   types:
   - String
