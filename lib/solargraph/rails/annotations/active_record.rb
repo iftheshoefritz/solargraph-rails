@@ -41,9 +41,15 @@ class ActiveRecord::Base
   # note: this supplies set_callback() - after Rails 7.1, this is no
   #  longer used and is replaced entirely by ActiveRecord::Callbacks
   #  below
-  include ActiveRecord::Callbacks
-  extend ActiveRecord::Callbacks::ClassMethods
-  extend Translation
+
+  # copied from .gem_rbs_collection/activestorage/7.0/lib/engine.rbs
+  # which for some reason does not get included
+  include ::ActiveStorage::Attached::Model
+  extend ::ActiveStorage::Attached::Model::ClassMethods
+  include ::ActiveStorage::Reflection::ActiveRecordExtensions
+  # included in ActiveRecordExtensions
+  attr_accessor self.attachment_reflections: Hash[String, ActiveStorage::Reflection::HasOneAttachedReflection | ActiveStorage::Reflection::HasManyAttachedReflection]
+  extend ::ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
 
   def self.set_callback
   end
