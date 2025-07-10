@@ -28,10 +28,6 @@ File.attr_internal:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.attr_internal_accessor:
   types:
   - void
@@ -41,10 +37,6 @@ File.attr_internal_accessor:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.attr_internal_reader:
   types:
   - void
@@ -54,10 +46,6 @@ File.attr_internal_reader:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.attr_internal_writer:
   types:
   - void
@@ -67,10 +55,6 @@ File.attr_internal_writer:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.blank?:
   types:
   - Boolean
@@ -128,10 +112,6 @@ File.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.html_safe?:
   types:
   - 'false'
@@ -141,10 +121,6 @@ File.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.in?:
   types:
   - Boolean
@@ -260,10 +236,6 @@ File.to_query:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File.try:
   types:
   - generic<T>
@@ -274,12 +246,8 @@ File.try:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 File.try!:
   types:
@@ -291,12 +259,8 @@ File.try!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 File.with_options:
   types:
@@ -327,10 +291,6 @@ File#compact_blank:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File#deep_dup:
   types:
   - undefined
@@ -344,10 +304,6 @@ File#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File#exclude?:
   types:
   - Boolean
@@ -365,10 +321,6 @@ File#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File#in?:
   types:
   - Boolean
@@ -447,7 +399,6 @@ File#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 File#to_param:
   types:
   - undefined
@@ -461,10 +412,6 @@ File#to_query:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 File#try:
   types:
   - generic<T>
@@ -475,12 +422,8 @@ File#try:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 File#try!:
   types:
@@ -492,12 +435,8 @@ File#try!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 File#with_options:
   types:

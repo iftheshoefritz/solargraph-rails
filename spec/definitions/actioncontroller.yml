@@ -36,10 +36,6 @@ ActionController::Base.add_flash_types:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.after_action:
   types:
   - void
@@ -49,10 +45,6 @@ ActionController::Base.after_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.alias_attribute:
   types:
   - undefined
@@ -66,10 +58,6 @@ ActionController::Base.all_helpers_from_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.allow_browser:
   types:
   - void
@@ -79,9 +67,6 @@ ActionController::Base.allow_browser:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
   added_in: 7.2
 ActionController::Base.allow_forgery_protection:
   types:
@@ -92,12 +77,8 @@ ActionController::Base.allow_forgery_protection:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.allow_forgery_protection=:
   types:
@@ -108,12 +89,8 @@ ActionController::Base.allow_forgery_protection=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.anonymous?:
   types:
@@ -128,10 +105,6 @@ ActionController::Base.append_after_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.append_around_action:
   types:
   - void
@@ -141,10 +114,6 @@ ActionController::Base.append_around_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.append_before_action:
   types:
   - void
@@ -154,10 +123,6 @@ ActionController::Base.append_before_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.append_view_path:
   types:
   - undefined
@@ -167,11 +132,7 @@ ActionController::Base.append_view_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.around_action:
   types:
   - void
@@ -181,10 +142,6 @@ ActionController::Base.around_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.as_json:
   types:
   - undefined
@@ -198,12 +155,8 @@ ActionController::Base.asset_host:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.asset_host=:
   types:
@@ -214,12 +167,8 @@ ActionController::Base.asset_host=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.assets_dir:
   types:
@@ -230,12 +179,8 @@ ActionController::Base.assets_dir:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.assets_dir=:
   types:
@@ -246,12 +191,8 @@ ActionController::Base.assets_dir=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.attr_internal:
   types:
@@ -262,10 +203,6 @@ ActionController::Base.attr_internal:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.attr_internal_accessor:
   types:
   - void
@@ -275,10 +212,6 @@ ActionController::Base.attr_internal_accessor:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.attr_internal_reader:
   types:
   - void
@@ -288,10 +221,6 @@ ActionController::Base.attr_internal_reader:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.attr_internal_writer:
   types:
   - void
@@ -301,10 +230,6 @@ ActionController::Base.attr_internal_writer:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.before_action:
   types:
   - void
@@ -314,10 +239,6 @@ ActionController::Base.before_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.blank?:
   types:
   - Boolean
@@ -331,11 +252,7 @@ ActionController::Base.build_view_context_class:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.cache_store:
   types:
   - undefined
@@ -345,11 +262,7 @@ ActionController::Base.cache_store:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.cache_store=:
   types:
   - undefined
@@ -359,11 +272,7 @@ ActionController::Base.cache_store=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.cattr_accessor:
   types:
   - undefined
@@ -393,10 +302,6 @@ ActionController::Base.clear_helpers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.clear_respond_to:
   types:
   - undefined
@@ -406,12 +311,8 @@ ActionController::Base.clear_respond_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.concern:
   types:
@@ -430,11 +331,7 @@ ActionController::Base.config:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.configure:
   types:
   - void
@@ -444,11 +341,7 @@ ActionController::Base.configure:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.content_security_policy:
   types:
   - undefined
@@ -458,10 +351,6 @@ ActionController::Base.content_security_policy:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.content_security_policy_report_only:
   types:
   - undefined
@@ -471,10 +360,6 @@ ActionController::Base.content_security_policy_report_only:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.controller_name:
   types:
   - undefined
@@ -492,11 +377,8 @@ ActionController::Base.csrf_token_storage_strategy:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
   - 0.56.alpha
   added_in: 7.1
 ActionController::Base.csrf_token_storage_strategy=:
@@ -508,11 +390,8 @@ ActionController::Base.csrf_token_storage_strategy=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
   - 0.56.alpha
   added_in: 7.1
 ActionController::Base.deep_dup:
@@ -528,12 +407,8 @@ ActionController::Base.default_asset_host_protocol:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_asset_host_protocol=:
   types:
@@ -544,12 +419,8 @@ ActionController::Base.default_asset_host_protocol=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_form_builder:
   types:
@@ -560,10 +431,6 @@ ActionController::Base.default_form_builder:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.default_protect_from_forgery:
   types:
   - undefined
@@ -573,12 +440,8 @@ ActionController::Base.default_protect_from_forgery:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_protect_from_forgery=:
   types:
@@ -589,12 +452,8 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_static_extension:
   types:
@@ -605,12 +464,8 @@ ActionController::Base.default_static_extension:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_static_extension=:
   types:
@@ -621,12 +476,8 @@ ActionController::Base.default_static_extension=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_url_options:
   types:
@@ -637,12 +488,8 @@ ActionController::Base.default_url_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_url_options=:
   types:
@@ -653,12 +500,8 @@ ActionController::Base.default_url_options=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.default_url_options?:
   types:
@@ -669,12 +512,8 @@ ActionController::Base.default_url_options?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.define_callbacks:
   types:
@@ -705,12 +544,8 @@ ActionController::Base.devise_group:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.direct_descendants:
   types:
@@ -730,10 +565,6 @@ ActionController::Base.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.enable_fragment_cache_logging:
   types:
   - undefined
@@ -743,12 +574,8 @@ ActionController::Base.enable_fragment_cache_logging:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.enable_fragment_cache_logging=:
   types:
@@ -759,12 +586,8 @@ ActionController::Base.enable_fragment_cache_logging=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.etag:
   types:
@@ -775,10 +598,6 @@ ActionController::Base.etag:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.etag_with_template_digest:
   types:
   - undefined
@@ -788,12 +607,8 @@ ActionController::Base.etag_with_template_digest:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.etag_with_template_digest=:
   types:
@@ -804,12 +619,8 @@ ActionController::Base.etag_with_template_digest=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.etag_with_template_digest?:
   types:
@@ -820,12 +631,8 @@ ActionController::Base.etag_with_template_digest?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.etaggers:
   types:
@@ -836,12 +643,8 @@ ActionController::Base.etaggers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.etaggers=:
   types:
@@ -852,12 +655,8 @@ ActionController::Base.etaggers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.etaggers?:
   types:
@@ -868,12 +667,8 @@ ActionController::Base.etaggers?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.forgery_protection_origin_check:
   types:
@@ -884,12 +679,8 @@ ActionController::Base.forgery_protection_origin_check:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.forgery_protection_origin_check=:
   types:
@@ -900,12 +691,8 @@ ActionController::Base.forgery_protection_origin_check=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.forgery_protection_strategy:
   types:
@@ -916,12 +703,8 @@ ActionController::Base.forgery_protection_strategy:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.forgery_protection_strategy=:
   types:
@@ -932,12 +715,8 @@ ActionController::Base.forgery_protection_strategy=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.fragment_cache_key:
   types:
@@ -948,10 +727,6 @@ ActionController::Base.fragment_cache_key:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.fragment_cache_keys:
   types:
   - undefined
@@ -961,12 +736,8 @@ ActionController::Base.fragment_cache_keys:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.fragment_cache_keys=:
   types:
@@ -977,12 +748,8 @@ ActionController::Base.fragment_cache_keys=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.fragment_cache_keys?:
   types:
@@ -993,12 +760,8 @@ ActionController::Base.fragment_cache_keys?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.handler_for_rescue:
   types:
@@ -1013,10 +776,6 @@ ActionController::Base.helper:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.helper_attr:
   types:
   - undefined
@@ -1026,10 +785,6 @@ ActionController::Base.helper_attr:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.helper_method:
   types:
   - undefined
@@ -1039,10 +794,6 @@ ActionController::Base.helper_method:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.helpers:
   types:
   - undefined
@@ -1052,10 +803,6 @@ ActionController::Base.helpers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.helpers_path:
   types:
   - undefined
@@ -1065,11 +812,7 @@ ActionController::Base.helpers_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.helpers_path=:
   types:
   - undefined
@@ -1079,11 +822,7 @@ ActionController::Base.helpers_path=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.helpers_path?:
   types:
   - undefined
@@ -1093,12 +832,8 @@ ActionController::Base.helpers_path?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.html_safe?:
   types:
@@ -1109,10 +844,6 @@ ActionController::Base.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
@@ -1130,12 +861,8 @@ ActionController::Base.include_all_helpers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.include_all_helpers=:
   types:
@@ -1146,12 +873,8 @@ ActionController::Base.include_all_helpers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.include_all_helpers?:
   types:
@@ -1162,12 +885,8 @@ ActionController::Base.include_all_helpers?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.inherited:
   types:
@@ -1177,7 +896,6 @@ ActionController::Base.inherited:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base.instance_values:
   types:
   - undefined
@@ -1199,12 +917,8 @@ ActionController::Base.javascripts_dir:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.javascripts_dir=:
   types:
@@ -1215,12 +929,8 @@ ActionController::Base.javascripts_dir=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.layout:
   types:
@@ -1231,10 +941,6 @@ ActionController::Base.layout:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.log_at:
   types:
   - undefined
@@ -1248,10 +954,6 @@ ActionController::Base.log_process_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.log_warning_on_csrf_failure:
   types:
   - undefined
@@ -1261,12 +963,8 @@ ActionController::Base.log_warning_on_csrf_failure:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.log_warning_on_csrf_failure=:
   types:
@@ -1277,12 +975,8 @@ ActionController::Base.log_warning_on_csrf_failure=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.logger:
   types:
@@ -1293,12 +987,8 @@ ActionController::Base.logger:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.logger=:
   types:
@@ -1309,12 +999,8 @@ ActionController::Base.logger=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.make_response!:
   types:
@@ -1340,7 +1026,6 @@ ActionController::Base.method_added:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 ActionController::Base.method_visibility:
   types:
   - undefined
@@ -1358,12 +1043,8 @@ ActionController::Base.middleware_stack:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.middleware_stack=:
   types:
@@ -1374,12 +1055,8 @@ ActionController::Base.middleware_stack=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.middleware_stack?:
   types:
@@ -1390,12 +1067,8 @@ ActionController::Base.middleware_stack?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.mimes_for_respond_to:
   types:
@@ -1406,12 +1079,8 @@ ActionController::Base.mimes_for_respond_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.mimes_for_respond_to=:
   types:
@@ -1422,12 +1091,8 @@ ActionController::Base.mimes_for_respond_to=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.mimes_for_respond_to?:
   types:
@@ -1438,12 +1103,8 @@ ActionController::Base.mimes_for_respond_to?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.module_parent:
   types:
@@ -1466,10 +1127,6 @@ ActionController::Base.modules_for_helpers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.normalize_callback_params:
   types:
   - Array
@@ -1479,10 +1136,6 @@ ActionController::Base.normalize_callback_params:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.param_encoding:
   types:
   - undefined
@@ -1492,10 +1145,6 @@ ActionController::Base.param_encoding:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.per_form_csrf_tokens:
   types:
   - undefined
@@ -1505,12 +1154,8 @@ ActionController::Base.per_form_csrf_tokens:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.per_form_csrf_tokens=:
   types:
@@ -1521,12 +1166,8 @@ ActionController::Base.per_form_csrf_tokens=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.perform_caching:
   types:
@@ -1537,12 +1178,8 @@ ActionController::Base.perform_caching:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.perform_caching=:
   types:
@@ -1553,12 +1190,8 @@ ActionController::Base.perform_caching=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.permissions_policy:
   types:
@@ -1573,10 +1206,6 @@ ActionController::Base.prepend_after_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.prepend_around_action:
   types:
   - void
@@ -1586,10 +1215,6 @@ ActionController::Base.prepend_around_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.prepend_before_action:
   types:
   - void
@@ -1599,10 +1224,6 @@ ActionController::Base.prepend_before_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.prepend_view_path:
   types:
   - undefined
@@ -1612,11 +1233,7 @@ ActionController::Base.prepend_view_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.presence:
   types:
   - nil
@@ -1648,12 +1265,8 @@ ActionController::Base.raise_on_open_redirects:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.raise_on_open_redirects=:
   types:
@@ -1664,12 +1277,8 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.redefine_method:
   types:
@@ -1688,12 +1297,8 @@ ActionController::Base.relative_url_root:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.relative_url_root=:
   types:
@@ -1704,12 +1309,8 @@ ActionController::Base.relative_url_root=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.remove_possible_method:
   types:
@@ -1728,12 +1329,8 @@ ActionController::Base.render:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.renderer:
   types:
@@ -1744,10 +1341,6 @@ ActionController::Base.renderer:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.request_forgery_protection_token:
   types:
   - undefined
@@ -1757,12 +1350,8 @@ ActionController::Base.request_forgery_protection_token:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.request_forgery_protection_token=:
   types:
@@ -1773,12 +1362,8 @@ ActionController::Base.request_forgery_protection_token=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.require_dependency:
   types:
@@ -1797,12 +1382,8 @@ ActionController::Base.rescue_handlers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.rescue_handlers=:
   types:
@@ -1813,12 +1394,8 @@ ActionController::Base.rescue_handlers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.rescue_handlers?:
   types:
@@ -1829,12 +1406,8 @@ ActionController::Base.rescue_handlers?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.rescue_with_handler:
   types:
@@ -1853,12 +1426,8 @@ ActionController::Base.respond_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.responder:
   types:
@@ -1869,12 +1438,8 @@ ActionController::Base.responder:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.responder=:
   types:
@@ -1885,12 +1450,8 @@ ActionController::Base.responder=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.responder?:
   types:
@@ -1901,12 +1462,8 @@ ActionController::Base.responder?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.responders:
   types:
@@ -1917,12 +1474,8 @@ ActionController::Base.responders:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.set_callback:
   types:
@@ -1937,10 +1490,6 @@ ActionController::Base.setup_param_encode:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.setup_renderer!:
   types:
   - undefined
@@ -1950,10 +1499,6 @@ ActionController::Base.setup_renderer!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -1967,10 +1512,6 @@ ActionController::Base.skip_after_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.skip_around_action:
   types:
   - void
@@ -1980,10 +1521,6 @@ ActionController::Base.skip_around_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.skip_before_action:
   types:
   - void
@@ -1993,10 +1530,6 @@ ActionController::Base.skip_before_action:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.skip_callback:
   types:
   - undefined
@@ -2014,10 +1547,6 @@ ActionController::Base.skip_parameter_encoding:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.stylesheets_dir:
   types:
   - undefined
@@ -2027,12 +1556,8 @@ ActionController::Base.stylesheets_dir:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.stylesheets_dir=:
   types:
@@ -2043,12 +1568,8 @@ ActionController::Base.stylesheets_dir=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.subclasses:
   types:
@@ -2063,10 +1584,6 @@ ActionController::Base.supports_path?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.thread_cattr_accessor:
   types:
   - undefined
@@ -2104,10 +1621,6 @@ ActionController::Base.to_query:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.try:
   types:
   - generic<T>
@@ -2118,12 +1631,8 @@ ActionController::Base.try:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.try!:
   types:
@@ -2135,12 +1644,8 @@ ActionController::Base.try!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.urlsafe_csrf_tokens:
   types:
@@ -2151,12 +1656,8 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.urlsafe_csrf_tokens=:
   types:
@@ -2167,12 +1668,8 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base.use:
   types:
@@ -2187,11 +1684,7 @@ ActionController::Base.use_renderer:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.use_renderers:
   types:
   - undefined
@@ -2201,11 +1694,7 @@ ActionController::Base.use_renderers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.view_cache_dependency:
   types:
   - undefined
@@ -2215,10 +1704,6 @@ ActionController::Base.view_cache_dependency:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.view_context_class:
   types:
   - undefined
@@ -2228,11 +1713,7 @@ ActionController::Base.view_context_class:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.view_paths:
   types:
   - undefined
@@ -2242,11 +1723,7 @@ ActionController::Base.view_paths:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.view_paths=:
   types:
   - undefined
@@ -2256,11 +1733,7 @@ ActionController::Base.view_paths=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base.with_options:
   types:
   - undefined
@@ -2278,10 +1751,6 @@ ActionController::Base.wrap_parameters:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#action_has_layout?:
   types:
   - Boolean
@@ -2303,10 +1772,6 @@ ActionController::Base#action_name=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#acts_like?:
   types:
   - Boolean
@@ -2320,12 +1785,8 @@ ActionController::Base#after_sign_in_path_for:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#after_sign_out_path_for:
   types:
@@ -2336,12 +1797,8 @@ ActionController::Base#after_sign_out_path_for:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#alert:
   types:
@@ -2352,12 +1809,8 @@ ActionController::Base#alert:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#allow_forgery_protection:
   types:
@@ -2368,12 +1821,8 @@ ActionController::Base#allow_forgery_protection:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#allow_forgery_protection=:
   types:
@@ -2384,12 +1833,8 @@ ActionController::Base#allow_forgery_protection=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#allow_params_authentication!:
   types:
@@ -2400,12 +1845,8 @@ ActionController::Base#allow_params_authentication!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#any_templates?:
   types:
@@ -2416,12 +1857,8 @@ ActionController::Base#any_templates?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#append_view_path:
   types:
@@ -2440,12 +1877,8 @@ ActionController::Base#asset_host:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#asset_host=:
   types:
@@ -2456,12 +1889,8 @@ ActionController::Base#asset_host=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#assets_dir:
   types:
@@ -2472,12 +1901,8 @@ ActionController::Base#assets_dir:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#assets_dir=:
   types:
@@ -2488,12 +1913,8 @@ ActionController::Base#assets_dir=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#authenticate_or_request_with_http_basic:
   types:
@@ -2532,10 +1953,6 @@ ActionController::Base#benchmark:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#blank?:
   types:
   - Boolean
@@ -2549,12 +1966,8 @@ ActionController::Base#bypass_sign_in:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#cache_store:
   types:
@@ -2565,10 +1978,6 @@ ActionController::Base#cache_store:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#cache_store=:
   types:
   - undefined
@@ -2578,10 +1987,6 @@ ActionController::Base#cache_store=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#cancel_registration_path:
   types:
   - undefined
@@ -2591,12 +1996,8 @@ ActionController::Base#cancel_registration_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#cancel_registration_url:
   types:
@@ -2607,12 +2008,8 @@ ActionController::Base#cancel_registration_url:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#class_eval:
   types:
@@ -2627,12 +2024,8 @@ ActionController::Base#collect_mimes_from_class_level:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#combined_fragment_cache_key:
   types:
@@ -2643,10 +2036,6 @@ ActionController::Base#combined_fragment_cache_key:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#config:
   types:
   - ActiveSupport::InheritableOptions
@@ -2656,10 +2045,6 @@ ActionController::Base#config:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#content_type:
   types:
   - undefined
@@ -2691,12 +2076,8 @@ ActionController::Base#default_asset_host_protocol:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_asset_host_protocol=:
   types:
@@ -2707,12 +2088,8 @@ ActionController::Base#default_asset_host_protocol=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_form_builder:
   types:
@@ -2727,12 +2104,8 @@ ActionController::Base#default_protect_from_forgery:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_protect_from_forgery=:
   types:
@@ -2743,12 +2116,8 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_render:
   types:
@@ -2763,12 +2132,8 @@ ActionController::Base#default_static_extension:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_static_extension=:
   types:
@@ -2779,12 +2144,8 @@ ActionController::Base#default_static_extension=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_url_options:
   types:
@@ -2795,12 +2156,8 @@ ActionController::Base#default_url_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_url_options=:
   types:
@@ -2811,12 +2168,8 @@ ActionController::Base#default_url_options=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#default_url_options?:
   types:
@@ -2827,12 +2180,8 @@ ActionController::Base#default_url_options?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#details_for_lookup:
   types:
@@ -2843,10 +2192,6 @@ ActionController::Base#details_for_lookup:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#devise_controller?:
   types:
   - undefined
@@ -2856,12 +2201,8 @@ ActionController::Base#devise_controller?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#devise_parameter_sanitizer:
   types:
@@ -2872,12 +2213,8 @@ ActionController::Base#devise_parameter_sanitizer:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#dispatch:
   types:
@@ -2892,10 +2229,6 @@ ActionController::Base#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#edit_polymorphic_path:
   types:
   - undefined
@@ -2905,12 +2238,8 @@ ActionController::Base#edit_polymorphic_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#edit_polymorphic_url:
   types:
@@ -2921,12 +2250,8 @@ ActionController::Base#edit_polymorphic_url:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#enable_fragment_cache_logging:
   types:
@@ -2937,12 +2262,8 @@ ActionController::Base#enable_fragment_cache_logging:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#enable_fragment_cache_logging=:
   types:
@@ -2953,12 +2274,8 @@ ActionController::Base#enable_fragment_cache_logging=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#etag_with_template_digest:
   types:
@@ -2969,12 +2286,8 @@ ActionController::Base#etag_with_template_digest:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#etag_with_template_digest=:
   types:
@@ -2985,12 +2298,8 @@ ActionController::Base#etag_with_template_digest=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#etag_with_template_digest?:
   types:
@@ -3001,12 +2310,8 @@ ActionController::Base#etag_with_template_digest?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#etaggers:
   types:
@@ -3017,12 +2322,8 @@ ActionController::Base#etaggers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#etaggers=:
   types:
@@ -3033,12 +2334,8 @@ ActionController::Base#etaggers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#etaggers?:
   types:
@@ -3049,12 +2346,8 @@ ActionController::Base#etaggers?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#expire_fragment:
   types:
@@ -3065,10 +2358,6 @@ ActionController::Base#expire_fragment:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#expires_in:
   types:
   - undefined
@@ -3090,12 +2379,8 @@ ActionController::Base#forgery_protection_origin_check:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#forgery_protection_origin_check=:
   types:
@@ -3106,12 +2391,8 @@ ActionController::Base#forgery_protection_origin_check=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#forgery_protection_strategy:
   types:
@@ -3122,12 +2403,8 @@ ActionController::Base#forgery_protection_strategy:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#forgery_protection_strategy=:
   types:
@@ -3138,12 +2415,8 @@ ActionController::Base#forgery_protection_strategy=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#formats:
   types:
@@ -3158,10 +2431,6 @@ ActionController::Base#formats=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#fragment_cache_keys:
   types:
   - undefined
@@ -3171,12 +2440,8 @@ ActionController::Base#fragment_cache_keys:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#fragment_cache_keys=:
   types:
@@ -3187,12 +2452,8 @@ ActionController::Base#fragment_cache_keys=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#fragment_cache_keys?:
   types:
@@ -3203,12 +2464,8 @@ ActionController::Base#fragment_cache_keys?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#fragment_exist?:
   types:
@@ -3219,10 +2476,6 @@ ActionController::Base#fragment_exist?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#fresh_when:
   types:
   - undefined
@@ -3248,10 +2501,6 @@ ActionController::Base#head:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#headers:
   types:
   - undefined
@@ -3270,12 +2519,8 @@ ActionController::Base#helpers_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#helpers_path=:
   types:
@@ -3286,12 +2531,8 @@ ActionController::Base#helpers_path=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#helpers_path?:
   types:
@@ -3302,12 +2543,8 @@ ActionController::Base#helpers_path?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#hotwire_native_app?:
   types:
@@ -3318,12 +2555,8 @@ ActionController::Base#hotwire_native_app?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#html_safe?:
   types:
@@ -3334,10 +2567,6 @@ ActionController::Base#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
@@ -3359,12 +2588,8 @@ ActionController::Base#include_all_helpers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#include_all_helpers=:
   types:
@@ -3375,12 +2600,8 @@ ActionController::Base#include_all_helpers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#include_all_helpers?:
   types:
@@ -3391,12 +2612,8 @@ ActionController::Base#include_all_helpers?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#inspect:
   types:
@@ -3419,10 +2636,6 @@ ActionController::Base#instrument_fragment_cache:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#is_flashing_format?:
   types:
   - undefined
@@ -3432,12 +2645,8 @@ ActionController::Base#is_flashing_format?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#is_navigational_format?:
   types:
@@ -3448,12 +2657,8 @@ ActionController::Base#is_navigational_format?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#javascripts_dir:
   types:
@@ -3464,12 +2669,8 @@ ActionController::Base#javascripts_dir:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#javascripts_dir=:
   types:
@@ -3480,12 +2681,8 @@ ActionController::Base#javascripts_dir=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#l:
   types:
@@ -3500,12 +2697,8 @@ ActionController::Base#locale:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#locale=:
   types:
@@ -3516,12 +2709,8 @@ ActionController::Base#locale=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#localize:
   types:
@@ -3546,12 +2735,8 @@ ActionController::Base#log_warning_on_csrf_failure:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#log_warning_on_csrf_failure=:
   types:
@@ -3562,12 +2747,8 @@ ActionController::Base#log_warning_on_csrf_failure=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#logger:
   types:
@@ -3578,12 +2759,8 @@ ActionController::Base#logger:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#logger=:
   types:
@@ -3594,12 +2771,8 @@ ActionController::Base#logger=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#lookup_context:
   types:
@@ -3614,12 +2787,8 @@ ActionController::Base#main_app:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#media_type:
   types:
@@ -3639,12 +2808,8 @@ ActionController::Base#middleware_stack:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#middleware_stack=:
   types:
@@ -3655,12 +2820,8 @@ ActionController::Base#middleware_stack=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#middleware_stack?:
   types:
@@ -3671,12 +2832,8 @@ ActionController::Base#middleware_stack?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#mimes_for_respond_to:
   types:
@@ -3687,12 +2844,8 @@ ActionController::Base#mimes_for_respond_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#mimes_for_respond_to=:
   types:
@@ -3703,12 +2856,8 @@ ActionController::Base#mimes_for_respond_to=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#mimes_for_respond_to?:
   types:
@@ -3719,12 +2868,8 @@ ActionController::Base#mimes_for_respond_to?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#new_polymorphic_path:
   types:
@@ -3735,12 +2880,8 @@ ActionController::Base#new_polymorphic_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#new_polymorphic_url:
   types:
@@ -3751,12 +2892,8 @@ ActionController::Base#new_polymorphic_url:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#no_store:
   types:
@@ -3771,12 +2908,8 @@ ActionController::Base#notice:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#params:
   types:
@@ -3795,12 +2928,8 @@ ActionController::Base#per_form_csrf_tokens:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#per_form_csrf_tokens=:
   types:
@@ -3811,12 +2940,8 @@ ActionController::Base#per_form_csrf_tokens=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#perform_caching:
   types:
@@ -3827,12 +2952,8 @@ ActionController::Base#perform_caching:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#perform_caching=:
   types:
@@ -3843,12 +2964,8 @@ ActionController::Base#perform_caching=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#performed?:
   types:
@@ -3897,12 +3014,8 @@ ActionController::Base#raise_on_missing_translations:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#raise_on_missing_translations=:
   types:
@@ -3913,12 +3026,8 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#raise_on_open_redirects:
   types:
@@ -3929,12 +3038,8 @@ ActionController::Base#raise_on_open_redirects:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#raise_on_open_redirects=:
   types:
@@ -3945,12 +3050,8 @@ ActionController::Base#raise_on_open_redirects=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#read_fragment:
   types:
@@ -3961,10 +3062,6 @@ ActionController::Base#read_fragment:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#recede_or_redirect_back_or_to:
   types:
   - undefined
@@ -3974,12 +3071,8 @@ ActionController::Base#recede_or_redirect_back_or_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#recede_or_redirect_to:
   types:
@@ -3990,12 +3083,8 @@ ActionController::Base#recede_or_redirect_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#redirect_back:
   types:
@@ -4018,12 +3107,8 @@ ActionController::Base#refresh_or_redirect_back_or_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#refresh_or_redirect_to:
   types:
@@ -4034,12 +3119,8 @@ ActionController::Base#refresh_or_redirect_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#relative_url_root:
   types:
@@ -4050,12 +3131,8 @@ ActionController::Base#relative_url_root:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#relative_url_root=:
   types:
@@ -4066,12 +3143,8 @@ ActionController::Base#relative_url_root=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#render:
   types:
@@ -4102,10 +3175,6 @@ ActionController::Base#request=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#request_forgery_protection_token:
   types:
   - undefined
@@ -4115,12 +3184,8 @@ ActionController::Base#request_forgery_protection_token:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#request_forgery_protection_token=:
   types:
@@ -4131,12 +3196,8 @@ ActionController::Base#request_forgery_protection_token=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#request_format:
   types:
@@ -4147,12 +3208,8 @@ ActionController::Base#request_format:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#request_http_basic_authentication:
   types:
@@ -4171,10 +3228,6 @@ ActionController::Base#request_http_token_authentication:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#require_dependency:
   types:
   - undefined
@@ -4188,12 +3241,8 @@ ActionController::Base#rescue_handlers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#rescue_handlers=:
   types:
@@ -4204,12 +3253,8 @@ ActionController::Base#rescue_handlers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#rescue_handlers?:
   types:
@@ -4220,12 +3265,8 @@ ActionController::Base#rescue_handlers?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#rescue_with_handler:
   types:
@@ -4248,12 +3289,8 @@ ActionController::Base#respond_with:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#responder:
   types:
@@ -4264,12 +3301,8 @@ ActionController::Base#responder:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#responder=:
   types:
@@ -4280,12 +3313,8 @@ ActionController::Base#responder=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#responder?:
   types:
@@ -4296,12 +3325,8 @@ ActionController::Base#responder?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#response:
   types:
@@ -4329,12 +3354,8 @@ ActionController::Base#resume_or_redirect_back_or_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#resume_or_redirect_to:
   types:
@@ -4345,12 +3366,8 @@ ActionController::Base#resume_or_redirect_to:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#route_for:
   types:
@@ -4389,10 +3406,6 @@ ActionController::Base#show_detailed_exceptions?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#sign_in:
   types:
   - undefined
@@ -4402,12 +3415,8 @@ ActionController::Base#sign_in:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#sign_in_and_redirect:
   types:
@@ -4418,12 +3427,8 @@ ActionController::Base#sign_in_and_redirect:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#sign_out:
   types:
@@ -4434,12 +3439,8 @@ ActionController::Base#sign_out:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#sign_out_all_scopes:
   types:
@@ -4450,12 +3451,8 @@ ActionController::Base#sign_out_all_scopes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#sign_out_and_redirect:
   types:
@@ -4466,12 +3463,8 @@ ActionController::Base#sign_out_and_redirect:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#signed_in?:
   types:
@@ -4482,12 +3475,8 @@ ActionController::Base#signed_in?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#signed_in_root_path:
   types:
@@ -4498,12 +3487,8 @@ ActionController::Base#signed_in_root_path:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#stale?:
   types:
@@ -4528,12 +3513,8 @@ ActionController::Base#store_location_for:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#stored_location_for:
   types:
@@ -4544,12 +3525,8 @@ ActionController::Base#stored_location_for:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#stylesheets_dir:
   types:
@@ -4560,12 +3537,8 @@ ActionController::Base#stylesheets_dir:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#stylesheets_dir=:
   types:
@@ -4576,12 +3549,8 @@ ActionController::Base#stylesheets_dir=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#t:
   types:
@@ -4596,12 +3565,8 @@ ActionController::Base#template_exists?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#to_a:
   types:
@@ -4620,10 +3585,6 @@ ActionController::Base#to_query:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#translate:
   types:
   - undefined
@@ -4638,12 +3599,8 @@ ActionController::Base#try:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#try!:
   types:
@@ -4655,12 +3612,8 @@ ActionController::Base#try!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#turbo_native_app?:
   types:
@@ -4671,12 +3624,8 @@ ActionController::Base#turbo_native_app?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#url_for:
   types:
@@ -4699,12 +3648,8 @@ ActionController::Base#urlsafe_csrf_tokens:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#verify_request_format!:
   types:
@@ -4715,12 +3660,8 @@ ActionController::Base#verify_request_format!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#verify_requested_format!:
   types:
@@ -4731,12 +3672,8 @@ ActionController::Base#verify_requested_format!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#view_assigns:
   types:
@@ -4751,10 +3688,6 @@ ActionController::Base#view_cache_dependencies:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 ActionController::Base#view_context:
   types:
   - undefined
@@ -4772,12 +3705,8 @@ ActionController::Base#view_paths:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#view_renderer:
   types:
@@ -4792,12 +3721,8 @@ ActionController::Base#warden:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 ActionController::Base#with_options:
   types:
@@ -4812,7 +3737,3 @@ ActionController::Base#write_fragment:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3

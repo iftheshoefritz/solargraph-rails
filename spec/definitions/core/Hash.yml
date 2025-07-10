@@ -24,10 +24,6 @@ Hash.attr_internal:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.attr_internal_accessor:
   types:
   - void
@@ -37,10 +33,6 @@ Hash.attr_internal_accessor:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.attr_internal_reader:
   types:
   - void
@@ -50,10 +42,6 @@ Hash.attr_internal_reader:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.attr_internal_writer:
   types:
   - void
@@ -63,10 +51,6 @@ Hash.attr_internal_writer:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.blank?:
   types:
   - Boolean
@@ -124,10 +108,6 @@ Hash.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.from_trusted_xml:
   types:
   - undefined
@@ -145,10 +125,6 @@ Hash.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.in?:
   types:
   - Boolean
@@ -260,10 +236,6 @@ Hash.to_query:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash.try:
   types:
   - generic<T>
@@ -274,12 +246,8 @@ Hash.try:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash.try!:
   types:
@@ -291,12 +259,8 @@ Hash.try!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash.with_options:
   types:
@@ -327,10 +291,6 @@ Hash#compact_blank:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#compact_blank!:
   types:
   - Hash{generic<K> => generic<V>}
@@ -340,10 +300,6 @@ Hash#compact_blank!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#deep_dup:
   types:
   - undefined
@@ -365,12 +321,8 @@ Hash#deep_stringify_keys:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash#deep_stringify_keys!:
   types:
@@ -381,12 +333,8 @@ Hash#deep_stringify_keys!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash#deep_symbolize_keys:
   types:
@@ -397,12 +345,8 @@ Hash#deep_symbolize_keys:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash#deep_symbolize_keys!:
   types:
@@ -413,12 +357,8 @@ Hash#deep_symbolize_keys!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash#deep_transform_keys:
   types:
@@ -445,10 +385,6 @@ Hash#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#except!:
   types:
   - undefined
@@ -478,10 +414,6 @@ Hash#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#in?:
   types:
   - Boolean
@@ -531,10 +463,6 @@ Hash#nested_under_indifferent_access:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#pick:
   types:
   - undefined
@@ -586,10 +514,6 @@ Hash#stringify_keys:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#stringify_keys!:
   types:
   - self
@@ -599,10 +523,6 @@ Hash#stringify_keys!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#sum:
   types:
   - Array
@@ -615,7 +535,6 @@ Hash#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
 Hash#symbolize_keys:
   types:
   - Hash{Symbol => generic<V>}
@@ -625,10 +544,6 @@ Hash#symbolize_keys:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#symbolize_keys!:
   types:
   - self
@@ -638,10 +553,6 @@ Hash#symbolize_keys!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#to_options:
   types:
   - Hash{Symbol => generic<V>}
@@ -651,10 +562,6 @@ Hash#to_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#to_options!:
   types:
   - self
@@ -664,10 +571,6 @@ Hash#to_options!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#to_param:
   types:
   - undefined
@@ -681,10 +584,6 @@ Hash#to_query:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#to_xml:
   types:
   - undefined
@@ -699,12 +598,8 @@ Hash#try:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash#try!:
   types:
@@ -716,12 +611,8 @@ Hash#try!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
   - 0.55.alpha
   - 0.56.0
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
   - 0.56.alpha
 Hash#with_defaults:
   types:
@@ -740,10 +631,6 @@ Hash#with_indifferent_access:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.54.6.alpha
-  - 0.56.0.pre1
-  - 0.56.0.pre2
-  - 0.56.0.pre3
 Hash#with_options:
   types:
   - undefined
