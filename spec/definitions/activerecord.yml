@@ -2190,14 +2190,7 @@ ActiveRecord::Base.has_many:
 ActiveRecord::Base.has_many_attached:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.alpha
+  skip: false
 ActiveRecord::Base.has_many_inversing:
   types:
   - undefined
@@ -2249,14 +2242,7 @@ ActiveRecord::Base.has_one:
 ActiveRecord::Base.has_one_attached:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.alpha
+  skip: false
 ActiveRecord::Base.has_rich_text:
   types:
   - void
