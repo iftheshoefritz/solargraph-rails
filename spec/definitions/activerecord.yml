@@ -334,13 +334,7 @@ ActiveRecord::Base.async_find_by_sql:
 ActiveRecord::Base.attachment_reflections:
   types:
   - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
+  skip: false
 ActiveRecord::Base.attachment_reflections=:
   types:
   - Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}
@@ -348,7 +342,16 @@ ActiveRecord::Base.attachment_reflections=:
 ActiveRecord::Base.attachment_reflections?:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.55.alpha
+  - 0.56.0
+  - 0.56.alpha
+  - 0.57.alpha
 ActiveRecord::Base.attr_internal:
   types:
   - void
