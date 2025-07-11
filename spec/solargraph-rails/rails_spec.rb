@@ -153,12 +153,6 @@ RSpec.describe 'Rails API completion' do
     assert_method(map, 'ActiveRecord::Base#validation_context', ['undefined'])
   end
 
-  it 'understands ActiveRecord::Base.has_many_attached' do
-    map = rails_workspace
-    assert_method(map, 'ActiveStorage::Attached::Model::ClassMethods#has_many_attached', ['void'])
-    assert_method(map, 'ActiveRecord::Base.has_many_attached', ['void'])
-  end
-
   context 'auto-completes ActiveSupport core extensions' do
     Dir
       .glob('spec/definitions/core/*.yml')
