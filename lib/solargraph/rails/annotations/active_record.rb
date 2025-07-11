@@ -1,3 +1,5 @@
+require 'active_record'
+
 class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
   # @return [void]
@@ -52,7 +54,7 @@ class ActiveRecord::Base
   #  below
   include ActiveRecord::Callbacks
   extend ActiveRecord::Callbacks::ClassMethods
-  extend Translation
+  extend ActiveRecord::Translation
 
   # copied from .gem_rbs_collection/activestorage/7.0/lib/engine.rbs
   # which for some reason does not get included
@@ -63,13 +65,15 @@ class ActiveRecord::Base
   class << self
     # included in ActiveRecordExtensions
     # @return [Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}]
-    attr_accessor attachment_reflections
+    attr_accessor :attachment_reflections
   end
 
   extend ::ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
 
-  def self.set_callback
-  end
+  def self.set_callback; end
+
+  # @return [:activerecord]
+  def self.i18n_scope; end
 
   # @return [self]
   def reload(); end
