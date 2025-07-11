@@ -1,6 +1,9 @@
 ---
 include:
 - "**/*.rb"
+- "Gemfile"
+- "Rakefile"
+- "*.gemspec"
 exclude:
 - spec/**/*
 - lib/solargraph/rails/annotations/**/*

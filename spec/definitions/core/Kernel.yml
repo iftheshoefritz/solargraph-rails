@@ -245,6 +245,7 @@ Kernel.try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Kernel.try!:
   types:
   - generic<T>
@@ -258,6 +259,7 @@ Kernel.try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Kernel.with_options:
   types:
   - undefined

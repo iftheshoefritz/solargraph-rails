@@ -249,6 +249,7 @@ Hash.try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash.try!:
   types:
   - generic<T>
@@ -262,6 +263,7 @@ Hash.try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash.with_options:
   types:
   - undefined
@@ -324,6 +326,7 @@ Hash#deep_stringify_keys:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash#deep_stringify_keys!:
   types:
   - Hash{String => undefined}
@@ -336,6 +339,7 @@ Hash#deep_stringify_keys!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash#deep_symbolize_keys:
   types:
   - Hash{Symbol, undefined}
@@ -348,6 +352,7 @@ Hash#deep_symbolize_keys:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash#deep_symbolize_keys!:
   types:
   - Hash{Symbol, undefined}
@@ -360,6 +365,7 @@ Hash#deep_symbolize_keys!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash#deep_transform_keys:
   types:
   - undefined
@@ -601,6 +607,7 @@ Hash#try:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash#try!:
   types:
   - generic<T>
@@ -614,6 +621,7 @@ Hash#try!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
+  - 0.57.alpha
 Hash#with_defaults:
   types:
   - undefined

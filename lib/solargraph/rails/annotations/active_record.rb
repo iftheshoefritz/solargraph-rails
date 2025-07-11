@@ -1,14 +1,25 @@
+require 'active_record'
+
 class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
   # @return [void]
   def create_table(table_name, id: nil, primary_key: nil, force: false, **options); end
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
+  # @param table_1 [String, Symbol]
+  # @param table_2 [String, Symbol]
   # @param column_options [Hash]
+  # @param options [Hash{Symbol => undefined}]
   # @return [void]
   def create_join_table(table_1, table_2, column_options: {}, **options); end
   # @yieldparam [ActiveRecord::ConnectionAdapters::Table]
   # @return [void]
   def change_table(table_name, **options); end
+end
+
+module ActiveRecord::Core
+  # @param methods [Symbol]
+  # @return [ActiveSupport::HashWithIndifferentAccess<Symbol>]
+  def slice(*methods); end
 end
 
 # this module doesn't really exist, it's here to avoid repeating these mixins
@@ -43,10 +54,26 @@ class ActiveRecord::Base
   #  below
   include ActiveRecord::Callbacks
   extend ActiveRecord::Callbacks::ClassMethods
-  extend Translation
+  extend ActiveRecord::Translation
 
-  def self.set_callback
+  # copied from .gem_rbs_collection/activestorage/7.0/lib/engine.rbs
+  # which for some reason does not get included
+  include ::ActiveStorage::Attached::Model
+  extend ::ActiveStorage::Attached::Model::ClassMethods
+  include ::ActiveStorage::Reflection::ActiveRecordExtensions
+
+  class << self
+    # included in ActiveRecordExtensions
+    # @return [Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}]
+    attr_accessor :attachment_reflections
   end
+
+  extend ::ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
+
+  def self.set_callback; end
+
+  # @return [:activerecord]
+  def self.i18n_scope; end
 
   # @return [self]
   def reload(); end
