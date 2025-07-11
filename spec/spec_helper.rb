@@ -13,9 +13,10 @@ unless ENV['SIMPLECOV_DISABLED']
     ]
   )
   SimpleCov.start do
-    add_filter(%r{^/spec/})
-    add_filter('/Rakefile')
+    add_filter %r{^/spec/}
+    add_filter '/Rakefile'
     track_files 'lib/**/*.rb'
+    add_filter 'lib/solargraph/rails/annotations/**/*.rb'
     enable_coverage(:branch)
   end
 end
