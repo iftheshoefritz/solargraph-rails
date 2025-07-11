@@ -68,6 +68,15 @@ jobs:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
 
+      - name: Update solargraph from branch if needed
+        run: |
+          bundle update solargraph
+        env:
+          # Used in Gemfile/gemspec
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+
       - name: Install child bundle
         run: |
           set -x
