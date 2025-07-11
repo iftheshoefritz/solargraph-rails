@@ -2,7 +2,7 @@ module ActiveStorage
   # Provides the class-level DSL for declaring an Active Record model's attachments.
   module Attached
     module Model
-      # note: the below would normally be in a ClassMethods module -
+      # NOTE: the below would normally be in a ClassMethods module -
       #   but Solargraph currently uses yard-activesupport-concern,
       #   which jams the method in as class methods under this module.
       #
