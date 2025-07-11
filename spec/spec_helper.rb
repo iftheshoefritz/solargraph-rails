@@ -16,7 +16,7 @@ unless ENV['SIMPLECOV_DISABLED']
     add_filter %r{^/spec/}
     add_filter '/Rakefile'
     track_files 'lib/**/*.rb'
-    add_filter 'lib/solargraph/rails/annotations/**/*.rb'
+    add_filter %r{lib/solargraph/rails/annotations}
     enable_coverage(:branch)
   end
 end
