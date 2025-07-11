@@ -14,6 +14,12 @@ class ActiveRecord::ConnectionAdapters::SchemaStatements
   def change_table(table_name, **options); end
 end
 
+module ActiveRecord::Core
+  # @param methods [Symbol]
+  # @return [ActiveSupport::HashWithIndifferentAccess<Symbol>]
+  def slice(*methods); end
+end
+
 # this module doesn't really exist, it's here to avoid repeating these mixins
 module ActiveRecord::RelationMethods
   include Enumerable
