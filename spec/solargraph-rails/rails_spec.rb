@@ -69,6 +69,11 @@ RSpec.describe 'Rails API completion' do
     # assert_method(map, 'ActiveJob::QueueName::ClassMethods#default_queue_name', ['undefined'])
   end
 
+  it 'understands ActiveRecord::Base.i18n_scope' do
+    map = rails_workspace
+    assert_method(map, 'ActiveRecord::Base.i18n_scope', [':activerecord'])
+  end
+
   it 'can auto-complete inside migrations' do
     filename = nil
     map =
