@@ -57,7 +57,7 @@ when '0.57.alpha'
   gem "solargraph",
       github: 'apiology/solargraph',
       branch: '2025-07-02'
-      # path: '../solargraph'
+  #   path: '../solargraph'
 end
 
 # Local gemfile for development tools, etc.
