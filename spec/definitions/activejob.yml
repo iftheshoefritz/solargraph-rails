@@ -254,6 +254,8 @@ ActiveJob::Base.direct_descendants:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   removed_in: 7.1
 ActiveJob::Base.discard_on:
   types:
