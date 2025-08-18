@@ -338,6 +338,8 @@ Time#-:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Time#<=>:
@@ -354,6 +356,8 @@ Time#<=>:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Time#acts_like?:
@@ -437,6 +441,8 @@ Time#as_json:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Time#at_beginning_of_day:
@@ -727,6 +733,8 @@ Time#minus_without_coercion:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Time#monday:
@@ -934,6 +942,8 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Time#weeks_ago:
