@@ -1113,6 +1113,8 @@ ActiveJob::Base#logger:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   added_in: 7.2
 ActiveJob::Base#logger=:
   types:
