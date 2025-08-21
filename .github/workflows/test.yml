@@ -70,9 +70,9 @@ jobs:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
 
-      - name: Update solargraph from branch if needed
+      - name: Update solargraph from branch if needed, and rbs to latest possible
         run: |
-          bundle update solargraph
+          bundle update solargraph rbs
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
