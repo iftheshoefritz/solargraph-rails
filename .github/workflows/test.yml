@@ -70,9 +70,9 @@ jobs:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
 
-      - name: Update solargraph from branch if needed, and rbs to latest possible
+      - name: Update solargraph from branch if needed
         run: |
-          bundle update solargraph rbs
+          bundle update solargraph
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
@@ -93,6 +93,9 @@ jobs:
           # don't pay attention to the rbs collection regardless
           if [[ "$MATRIX_SOLARGRAPH_VERSION" != "0.48.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.49.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.50.0" ]]
           then
+            cd ../..
+            bundle update rbs
+            cd ${RAILS_DIR}
             bundle exec --gemfile ../../Gemfile rbs --version
             bundle exec --gemfile ../../Gemfile rbs collection update
           fi
