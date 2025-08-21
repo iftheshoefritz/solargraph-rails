@@ -2,6 +2,21 @@
 
 ## Changes
 
+### v1.2.1
+
+Features / fixes:
+- Add annotation for ActiveRecord::Base#reload
+- Add annotation for Rails::Application.config
+- Add static Rails::Application.config method annotation
+- Retire earlier version expectations
+- Fix changelog typo
+
+Internal improvements:
+- CI/testing improvements:
+  - Add PR comments, rubocop-yard
+  - Update rbs collection in specs
+  - Test current Solargraph pre-release PRs
+
 ### v1.2
 
 Most of these are courtesy of @grncdr, with integration work by
