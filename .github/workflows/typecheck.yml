@@ -62,6 +62,8 @@ jobs:
           # same as used by ruby/setup-ruby
           ruby --version
           bundle install
+          # reject known bad versions
+          echo 'gem solargraph, ["!= 0.62.0", "!= 0.62.1", "!= 0.62.2"]' >> .Gemfile
           bundle update solargraph
           bundle exec solargraph version
           # SOLARGRAPH_ASSERTS=on
