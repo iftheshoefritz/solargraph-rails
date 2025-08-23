@@ -145,7 +145,6 @@ jobs:
           bundle update solargraph
           bundle exec solargraph version
           bundle info solargraph
-          bundle update rbs # use latest possible
           set +e
           bundle info rbs
           set -e
