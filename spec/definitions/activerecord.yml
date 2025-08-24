@@ -17,6 +17,7 @@ ActiveRecord::Base.abstract_class=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.alpha
 ActiveRecord::Base.abstract_class?:
   types:
   - Boolean

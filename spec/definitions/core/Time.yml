@@ -875,12 +875,7 @@ Time#sunday:
 Time#to_formatted_s:
   types:
   - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 Time#to_fs:
   types:
   - String
