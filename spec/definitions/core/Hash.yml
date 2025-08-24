@@ -326,7 +326,6 @@ Hash#deep_stringify_keys:
   - 0.55.alpha
   - 0.56.0
   - 0.56.alpha
-  - 0.57.alpha
 Hash#deep_stringify_keys!:
   types:
   - Hash{String => undefined}
