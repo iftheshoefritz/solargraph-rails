@@ -33,7 +33,7 @@ jobs:
           - ruby: "3.1"
             rails-major: "7"
             rails-minor: "2"
-          # # ruby 3.2 is minimum Ruby supported by Rails 8.0
+          # ruby 3.2 is minimum Ruby supported by Rails 8.0
           - ruby: "3.2"
             rails-major: "8"
             rails-minor: "0"

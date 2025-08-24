@@ -74,6 +74,7 @@ plugins:
 ```
 
 ### Build YARD docs
+
 In the project root, run `yard gems`.
 
 ## Contributing

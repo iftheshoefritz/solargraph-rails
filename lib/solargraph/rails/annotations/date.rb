@@ -23,9 +23,17 @@ class Date
 
   # @return [::Time]
   def to_time; end
+
+  # @param format [Symbol]
+  # @return [String]
+  def to_formatted_s(format = :some_default); end
 end
 
 class DateTime
   # @return [String]
   def readable_inspect; end
+
+  # @param format [Symbol]
+  # @return [String]
+  def to_formatted_s(format = :some_default); end
 end
