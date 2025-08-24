@@ -248,6 +248,8 @@ File.try:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 File.try!:
@@ -262,6 +264,8 @@ File.try!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 File.with_options:
@@ -426,6 +430,8 @@ File#try:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 File#try!:
@@ -440,6 +446,8 @@ File#try!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 File#with_options:

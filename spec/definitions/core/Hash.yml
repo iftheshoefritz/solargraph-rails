@@ -248,6 +248,8 @@ Hash.try:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash.try!:
@@ -262,6 +264,8 @@ Hash.try!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash.with_options:
@@ -325,6 +329,8 @@ Hash#deep_stringify_keys:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
 Hash#deep_stringify_keys!:
   types:
@@ -337,6 +343,8 @@ Hash#deep_stringify_keys!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash#deep_symbolize_keys:
@@ -350,6 +358,8 @@ Hash#deep_symbolize_keys:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash#deep_symbolize_keys!:
@@ -363,6 +373,8 @@ Hash#deep_symbolize_keys!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash#deep_transform_keys:
@@ -605,6 +617,8 @@ Hash#try:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash#try!:
@@ -619,6 +633,8 @@ Hash#try!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 Hash#with_defaults:

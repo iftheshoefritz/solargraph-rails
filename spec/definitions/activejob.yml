@@ -158,6 +158,8 @@ ActiveJob::Base.default_priority:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.default_priority=:
@@ -171,6 +173,8 @@ ActiveJob::Base.default_priority=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.default_queue_name:
@@ -184,6 +188,8 @@ ActiveJob::Base.default_queue_name:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.default_queue_name=:
@@ -197,6 +203,8 @@ ActiveJob::Base.default_queue_name=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.define_callbacks:
@@ -209,6 +217,8 @@ ActiveJob::Base.define_callbacks:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.delegate:
   types:
   - undefined
@@ -244,6 +254,8 @@ ActiveJob::Base.direct_descendants:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   removed_in: 7.1
 ActiveJob::Base.discard_on:
   types:
@@ -282,6 +294,8 @@ ActiveJob::Base.handler_for_rescue:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.html_safe?:
   types:
   - 'false'
@@ -314,6 +328,8 @@ ActiveJob::Base.log_arguments:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.log_arguments=:
@@ -327,6 +343,8 @@ ActiveJob::Base.log_arguments=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.log_arguments?:
@@ -340,6 +358,8 @@ ActiveJob::Base.log_arguments?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.logger:
@@ -353,6 +373,8 @@ ActiveJob::Base.logger:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.logger=:
@@ -366,6 +388,8 @@ ActiveJob::Base.logger=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.mattr_accessor:
@@ -406,6 +430,8 @@ ActiveJob::Base.normalize_callback_params:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.perform_later:
   types:
   - undefined
@@ -449,6 +475,8 @@ ActiveJob::Base.priority:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.priority=:
@@ -462,6 +490,8 @@ ActiveJob::Base.priority=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.priority?:
@@ -475,6 +505,8 @@ ActiveJob::Base.priority?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.pry:
@@ -528,6 +560,8 @@ ActiveJob::Base.queue_name:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name=:
@@ -541,6 +575,8 @@ ActiveJob::Base.queue_name=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name?:
@@ -554,6 +590,8 @@ ActiveJob::Base.queue_name?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name_delimiter:
@@ -567,6 +605,8 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name_delimiter=:
@@ -580,6 +620,8 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name_delimiter?:
@@ -593,6 +635,8 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name_from_part:
@@ -615,6 +659,8 @@ ActiveJob::Base.queue_name_prefix:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name_prefix=:
@@ -628,6 +674,8 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_name_prefix?:
@@ -641,6 +689,8 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.queue_with_priority:
@@ -682,6 +732,8 @@ ActiveJob::Base.rescue_from:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.rescue_handlers:
   types:
   - undefined
@@ -693,6 +745,8 @@ ActiveJob::Base.rescue_handlers:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.rescue_handlers=:
@@ -706,6 +760,8 @@ ActiveJob::Base.rescue_handlers=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.rescue_handlers?:
@@ -719,6 +775,8 @@ ActiveJob::Base.rescue_handlers?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.rescue_with_handler:
@@ -731,6 +789,8 @@ ActiveJob::Base.rescue_with_handler:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.reset_callbacks:
   types:
   - undefined
@@ -741,6 +801,8 @@ ActiveJob::Base.reset_callbacks:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.retry_jitter:
   types:
   - undefined
@@ -752,6 +814,8 @@ ActiveJob::Base.retry_jitter:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.retry_jitter=:
@@ -765,6 +829,8 @@ ActiveJob::Base.retry_jitter=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.retry_on:
@@ -795,6 +861,8 @@ ActiveJob::Base.set_callback:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -810,6 +878,8 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.skip_after_callbacks_if_terminated=:
@@ -823,6 +893,8 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.skip_callback:
@@ -835,6 +907,8 @@ ActiveJob::Base.skip_callback:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
 ActiveJob::Base.subclasses:
   types:
   - Array<Class>
@@ -887,6 +961,8 @@ ActiveJob::Base.try:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.try!:
@@ -901,6 +977,8 @@ ActiveJob::Base.try!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base.with_options:
@@ -1035,6 +1113,8 @@ ActiveJob::Base#logger:
   - 0.51.2
   - 0.52.0
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   added_in: 7.2
 ActiveJob::Base#logger=:
   types:
@@ -1047,6 +1127,8 @@ ActiveJob::Base#logger=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#perform:
@@ -1102,6 +1184,8 @@ ActiveJob::Base#queue_adapter:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#queue_name:
@@ -1123,6 +1207,8 @@ ActiveJob::Base#queue_name_prefix:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#queue_name_prefix=:
@@ -1136,6 +1222,8 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#queue_name_prefix?:
@@ -1149,6 +1237,8 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#require_dependency:
@@ -1166,6 +1256,8 @@ ActiveJob::Base#rescue_handlers:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#rescue_handlers=:
@@ -1179,6 +1271,8 @@ ActiveJob::Base#rescue_handlers=:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#rescue_handlers?:
@@ -1192,6 +1286,8 @@ ActiveJob::Base#rescue_handlers?:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#rescue_with_handler:
@@ -1225,6 +1321,8 @@ ActiveJob::Base#serialize:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#serialized_arguments=:
@@ -1276,6 +1374,8 @@ ActiveJob::Base#try:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#try!:
@@ -1290,6 +1390,8 @@ ActiveJob::Base#try!:
   - 0.52.0
   - 0.55.alpha
   - 0.56.0
+  - 0.56.1
+  - 0.56.2
   - 0.56.alpha
   - 0.57.alpha
 ActiveJob::Base#with_options:
