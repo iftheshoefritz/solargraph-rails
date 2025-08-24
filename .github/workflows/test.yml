@@ -93,6 +93,9 @@ jobs:
           # don't pay attention to the rbs collection regardless
           if [[ "$MATRIX_SOLARGRAPH_VERSION" != "0.48.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.49.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.50.0" ]]
           then
+            cd ../..
+            bundle update rbs
+            cd ${RAILS_DIR}
             bundle exec --gemfile ../../Gemfile rbs --version
             bundle exec --gemfile ../../Gemfile rbs collection update
           fi
