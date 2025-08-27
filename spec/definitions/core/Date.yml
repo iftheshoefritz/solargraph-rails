@@ -270,6 +270,7 @@ Date.try:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date.try!:
@@ -286,6 +287,7 @@ Date.try!:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date.with_options:
@@ -329,6 +331,7 @@ Date#<=>:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date#acts_like?:
@@ -414,6 +417,7 @@ Date#as_json:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date#at_beginning_of_day:
@@ -605,6 +609,7 @@ Date#in_time_zone:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date#infinite?:
@@ -822,6 +827,7 @@ Date#try:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date#try!:
@@ -838,6 +844,7 @@ Date#try!:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Date#weeks_ago:
