@@ -76,8 +76,10 @@ Move .yml files into place, then make sure to review the script and uncomment re
 2. Open up [commit list](https://github.com/iftheshoefritz/solargraph-rails/compare/v1.2.0...main)
 3. Update [CHANGELOG.md](./CHANGELOG.md)
 4. Flip to 'files changed view' and refine updates
-5. Bump [version](./lib/solargraph/rails/version.rb) appropriately
+o5. Bump [version](./lib/solargraph/rails/version.rb) appropriately
 6. Create branch, commit and merge changes - "Prepare for vX.Y.Z release", branch: prepare_vX.Y.Z_release
 7. `git config branch.main.remote`
 8. Ensure your local main branch is directly from iftheshoefritz:
-9. `git checkout main && git pull && bundle exec rake release`
+9. `direnv block`
+10. `git checkout main && git pull && bundle exec rake release`
+11. `direnv allow`
