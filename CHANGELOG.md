@@ -2,6 +2,14 @@
 
 ## Changes
 
+### v1.2.2
+
+Features / fixes:
+- Fix bad gem release
+
+Internal improvements:
+- Fix checklist to avoid future
+
 ### v1.2.1
 
 Features / fixes:
