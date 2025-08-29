@@ -250,6 +250,7 @@ Hash.try:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash.try!:
@@ -266,6 +267,7 @@ Hash.try!:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash.with_options:
@@ -345,6 +347,7 @@ Hash#deep_stringify_keys!:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash#deep_symbolize_keys:
@@ -360,6 +363,7 @@ Hash#deep_symbolize_keys:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash#deep_symbolize_keys!:
@@ -375,6 +379,7 @@ Hash#deep_symbolize_keys!:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash#deep_transform_keys:
@@ -542,8 +547,8 @@ Hash#stringify_keys!:
   - 0.52.0
 Hash#sum:
   types:
-  - Array
   - Integer
+  - generic<Elem>
   - generic<T>
   - generic<U>
   skip:
@@ -552,6 +557,12 @@ Hash#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
+  - 0.56.0
+  - 0.56.1
+  - 0.56.2
+  - 0.56.alpha
+  - 0.57.alpha
 Hash#symbolize_keys:
   types:
   - Hash{Symbol => generic<V>}
@@ -619,6 +630,7 @@ Hash#try:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash#try!:
@@ -635,6 +647,7 @@ Hash#try!:
   - 0.56.0
   - 0.56.1
   - 0.56.2
+  - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
 Hash#with_defaults:

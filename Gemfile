@@ -58,6 +58,10 @@ when '0.57.alpha'
       github: 'apiology/solargraph',
       branch: '2025-07-02'
   #   path: '../solargraph'
+when '0.56.2-post'
+  gem "solargraph",
+      github: 'apiology/solargraph',
+      branch: 'run_plugin_specs'
 end
 
 # Local gemfile for development tools, etc.
