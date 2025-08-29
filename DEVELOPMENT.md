@@ -73,11 +73,11 @@ Move .yml files into place, then make sure to review the script and uncomment re
 ## Preparing a release (maintainers)
 
 1. Look up [most recent release](https://rubygems.org/gems/solargraph-rails)
-2. Open up [commit list](https://github.com/iftheshoefritz/solargraph-rails/compare/v1.2.1...main)
+2. Open up [commit list](https://github.com/iftheshoefritz/solargraph-rails/compare/v1.2.2...main)
 3. Update [CHANGELOG.md](./CHANGELOG.md)
 4. Flip to 'files changed view' and refine updates
 5. Bump [version](./lib/solargraph/rails/version.rb) appropriately
-6. Create branch, commit and merge changes - "Prepare for vX.Y.Z release", branch: prepare_vX.Y.Z_release
+6. Create branch, commit aand merge changes - "Prepare for vX.Y.Z release", branch: `prepare_vX.Y.Z_release`
 7. `git config branch.main.remote`
 8. Ensure your local main branch is directly from iftheshoefritz
 9. `direnv block`

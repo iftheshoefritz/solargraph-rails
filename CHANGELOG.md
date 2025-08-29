@@ -2,6 +2,12 @@
 
 ## Changes
 
+### v1.2.3
+
+Internal improvements:
+- Add notional 0.56.2 release to support regression testing in main
+  Solargraph project
+
 ### v1.2.2
 
 Features / fixes:
