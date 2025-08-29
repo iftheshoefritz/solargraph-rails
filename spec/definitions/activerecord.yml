@@ -7102,8 +7102,6 @@ ActiveRecord::Base#strict_loading?:
 ActiveRecord::Base#strict_loading_all?:
   types:
   - Boolean
-  skip:
-  - 0.56.2-post
   added_in: 7.1
 ActiveRecord::Base#strict_loading_mode:
   types:
