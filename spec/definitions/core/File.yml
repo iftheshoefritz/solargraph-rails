@@ -292,13 +292,17 @@ File#class_eval:
   skip: false
 File#compact_blank:
   types:
-  - Array<String>
+  - Array<generic<Elem>>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
+  - 0.56.0
+  - 0.56.1
+  - 0.56.2
 File#deep_dup:
   types:
   - undefined
@@ -399,6 +403,7 @@ File#sum:
   types:
   - Integer
   - String
+  - generic<Elem>
   - generic<T>
   - generic<U>
   skip:
@@ -407,6 +412,12 @@ File#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
+  - 0.56.0
+  - 0.56.1
+  - 0.56.2
+  - 0.56.alpha
+  - 0.57.alpha
 File#to_param:
   types:
   - undefined

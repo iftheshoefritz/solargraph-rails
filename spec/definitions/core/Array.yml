@@ -290,13 +290,17 @@ Array#class_eval:
   skip: false
 Array#compact_blank:
   types:
-  - Array
+  - Array<generic<Elem>>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.55.alpha
+  - 0.56.0
+  - 0.56.1
+  - 0.56.2
 Array#compact_blank!:
   types:
   - Array<generic<Elem>>
