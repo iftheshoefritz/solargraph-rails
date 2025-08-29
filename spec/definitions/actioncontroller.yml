@@ -370,7 +370,6 @@ ActionController::Base.config:
   - 0.56.0
   - 0.56.1
   - 0.56.2
-  - 0.56.2-post
 ActionController::Base.configure:
   types:
   - void
@@ -383,7 +382,6 @@ ActionController::Base.configure:
   - 0.56.0
   - 0.56.1
   - 0.56.2
-  - 0.56.2-post
 ActionController::Base.content_security_policy:
   types:
   - undefined

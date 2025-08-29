@@ -2463,7 +2463,6 @@ ActiveRecord::Base.i18n_scope:
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
-  - 0.56.2-post
   - 0.56.alpha
 ActiveRecord::Base.ids:
   types:

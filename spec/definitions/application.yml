@@ -363,7 +363,6 @@ Rails::Application.normalize_callback_params:
   - 0.56.0
   - 0.56.1
   - 0.56.2
-  - 0.56.2-post
 Rails::Application.presence:
   types:
   - nil
