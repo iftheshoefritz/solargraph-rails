@@ -402,7 +402,6 @@ File#sole:
 File#sum:
   types:
   - Integer
-  - String
   - generic<Elem>
   - generic<T>
   - generic<U>

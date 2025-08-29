@@ -547,7 +547,6 @@ Hash#stringify_keys!:
   - 0.52.0
 Hash#sum:
   types:
-  - Array
   - Integer
   - generic<Elem>
   - generic<T>
