@@ -5,7 +5,7 @@ require 'solargraph/rails/version'
 
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 solargraph_version =
-  if solargraph_force_ci_version
+  if solargraph_force_ci_version && !solargraph_force_ci_version.start_with?('branch-')
     [solargraph_force_ci_version]
   else
     [
