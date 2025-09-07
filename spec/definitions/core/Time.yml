@@ -946,6 +946,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 Time#weeks_ago:
   types:
   - undefined

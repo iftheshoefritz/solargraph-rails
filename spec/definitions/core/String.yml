@@ -400,6 +400,7 @@ String#ext:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 String#first:
   types:
   - undefined
@@ -520,6 +521,7 @@ String#pathmap:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 String#pluralize:
   types:
   - String
