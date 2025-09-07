@@ -20,6 +20,7 @@ class Definitions
     @typed = 0
     @incorrect = []
     @missing = []
+    @congrats = []
 
     definitions.each do |meth, data|
       process_single_definition(meth, data)
@@ -39,6 +40,10 @@ class Definitions
         The return types of these methods did not match #{definition_name}.yml:
           #{@incorrect.join("\n  ")}
       STR
+    end
+
+    @congrats.each do |message|
+      $stdout.puts message
     end
 
     total = definitions.keys.size
