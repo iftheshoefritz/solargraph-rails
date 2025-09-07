@@ -134,9 +134,9 @@ class Definitions
        data['skip'] == solargraph_version || # in case of branches with specific excludes
        (data['skip'] == 'branch-master' && solargraph_version.start_with?('branch-')) ||
 #       (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION)) ||
-       (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version))
-      (data['skip'].respond_to?(:include?) && data['skip'].include?('branch-master')
-       && solargraph_version.start_with?('branch-'))
+       (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version)) ||
+       (data['skip'].respond_to?(:include?) && data['skip'].include?('branch-master')
+        && solargraph_version.start_with?('branch-'))
       skip = true
       @skipped += 1
     end
