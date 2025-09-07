@@ -54,6 +54,7 @@ jobs:
           - "branch-improve_selfy_type_pin_combination_case"
           - "branch-gemfile_fixes"
           - "branch-define_method"
+          - "branch-reference-handling"
         include:
           - versions:
               ruby: "3.2"
