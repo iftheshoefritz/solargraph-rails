@@ -12,6 +12,7 @@ class Definitions
 
   def assert_matches_definitions
     @update = true if ENV['FORCE_UPDATE'] == 'true'
+    @allow_improvements = true if ENV['ALLOW_IMPROVEMENTS'] == 'true' || solargraph_version == 'branch-master'
 
     definitions = YAML.load_file(definitions_file)
 
@@ -79,12 +80,12 @@ class Definitions
     )
   end
 
-    def solargraph_version
-      solargraph_force_ci_version = ENV.fetch('CI', nil) && ENV.fetch('MATRIX_SOLARGRAPH_VERSION', nil)
-      return solargraph_force_ci_version if solargraph_force_ci_version
+  def solargraph_version
+    solargraph_force_ci_version = ENV.fetch('CI', nil) && ENV.fetch('MATRIX_SOLARGRAPH_VERSION', nil)
+    return solargraph_force_ci_version if solargraph_force_ci_version
 
-      Solargraph::VERSION
-    end
+    Solargraph::VERSION
+  end
 
   def process_single_definition(meth, data)
     meth = meth.gsub(class_name, '') unless meth.start_with?('.', '#')
@@ -126,7 +127,8 @@ class Definitions
     if data['skip'] == true ||
        data['skip'] == Solargraph::VERSION || # in case of branches relying on existing version excludes
        data['skip'] == solargraph_version || # in case of branches with specific excludes
-       (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
+       (data['skip'] == 'branch-master' && solargraph_version.start_with?('branch-')) ||
+       (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION)) ||
        (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version))
       skip = true
       @skipped += 1
@@ -145,11 +147,13 @@ class Definitions
       elsif skip && !(pin.respond_to?(:source) && pin.source == :rbs)
         if update
           remove_skip(data)
-        else
+        elsif !@allow_improvements
           @incorrect << <<~STR
             #{pin.path} is marked as skipped in #{definitions_file} for #{solargraph_version}, but is actually present and correct - see #{pin.inspect}.
             Consider setting skip=false
           STR
+        else
+          @congrats << "#{pin.path} is now present and correct, despite being marked as skipped"
         end
       end
     elsif update && !already_removed && !not_added_yet
