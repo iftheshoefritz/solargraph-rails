@@ -47,6 +47,7 @@ jobs:
           - "0.56.1"
           - "0.56.2"
           - "0.56.2-post"
+          - "branch-improve_pin_caching"
         include:
           - versions:
               ruby: "3.2"

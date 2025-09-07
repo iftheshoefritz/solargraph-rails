@@ -62,6 +62,10 @@ when '0.56.2-post'
   gem "solargraph",
       github: 'apiology/solargraph',
       branch: 'run_plugin_specs'
+when /branch-(.*)/
+  gem "solargraph",
+      github: 'apiology/solargraph',
+      branch: Regexp.last_match(1)
 end
 
 # Local gemfile for development tools, etc.
