@@ -15,7 +15,7 @@ solargraph_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 # ensure that YARD docs get cached by ruby/setup-ruby in GitHub
 # Actions if using an older version of solargraph that needs user to
 # run `yard gems` manually
-if solargraph_version
+if solargraph_version && !solargraph_version.start_with?('branch-')
   solargraph_minor_version = solargraph_version.split('.')[1].to_i
   solargraph_major_version = solargraph_version.split('.')[0].to_i
   if solargraph_version && solargraph_major_version == 0 && solargraph_minor_version < 53
@@ -62,6 +62,10 @@ when '0.56.2-post'
   gem "solargraph",
       github: 'apiology/solargraph',
       branch: 'run_plugin_specs'
+when /branch-(.*)/
+  gem "solargraph",
+      github: 'apiology/solargraph',
+      branch: Regexp.last_match(1)
 end
 
 # Local gemfile for development tools, etc.

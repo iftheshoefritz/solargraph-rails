@@ -12,6 +12,7 @@ class Definitions
 
   def assert_matches_definitions
     @update = true if ENV['FORCE_UPDATE'] == 'true'
+    @allow_improvements = true if ENV['ALLOW_IMPROVEMENTS'] == 'true' || solargraph_version.start_with?('branch-')
 
     definitions = YAML.load_file(definitions_file)
 
@@ -19,6 +20,7 @@ class Definitions
     @typed = 0
     @incorrect = []
     @missing = []
+    @congrats = []
 
     definitions.each do |meth, data|
       process_single_definition(meth, data)
@@ -38,6 +40,10 @@ class Definitions
         The return types of these methods did not match #{definition_name}.yml:
           #{@incorrect.join("\n  ")}
       STR
+    end
+
+    @congrats.each do |message|
+      $stdout.puts message
     end
 
     total = definitions.keys.size
@@ -79,6 +85,13 @@ class Definitions
     )
   end
 
+  def solargraph_version
+    solargraph_force_ci_version = ENV.fetch('CI', nil) && ENV.fetch('MATRIX_SOLARGRAPH_VERSION', nil)
+    return solargraph_force_ci_version if solargraph_force_ci_version
+
+    Solargraph::VERSION
+  end
+
   def process_single_definition(meth, data)
     meth = meth.gsub(class_name, '') unless meth.start_with?('.', '#')
     # @type [Array<Solargraph::Pin::Base>]
@@ -117,8 +130,11 @@ class Definitions
       not_added_yet = true
     end
     if data['skip'] == true ||
-       data['skip'] == Solargraph::VERSION ||
-       (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
+       data['skip'] == solargraph_version || # in case of branches with specific excludes
+       (data['skip'] == 'branch-master' && solargraph_version.start_with?('branch-')) ||
+       (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version)) ||
+       (data['skip'].respond_to?(:include?) && data['skip'].include?('branch-master') &&
+        solargraph_version.start_with?('branch-'))
       skip = true
       @skipped += 1
     end
@@ -136,11 +152,13 @@ class Definitions
       elsif skip && !(pin.respond_to?(:source) && pin.source == :rbs)
         if update
           remove_skip(data)
-        else
+        elsif !@allow_improvements
           @incorrect << <<~STR
-            #{pin.path} is marked as skipped in #{definitions_file} for #{Solargraph::VERSION}, but is actually present and correct - see #{pin.inspect}.
+            #{pin.path} is marked as skipped in #{definitions_file} for #{solargraph_version}, but is actually present and correct - see #{pin.inspect}.
             Consider setting skip=false
           STR
+        else
+          @congrats << "#{pin.path} is now present and correct, despite being marked as skipped"
         end
       end
     elsif update && !already_removed && !not_added_yet
@@ -179,13 +197,13 @@ class Definitions
 
   def add_to_skip(data)
     data['skip'] = [] unless data['skip'].is_a?(Array)
-    data['skip'] << Solargraph::VERSION
+    data['skip'] << solargraph_version
     data['skip'].sort!.uniq!
   end
 
   def remove_skip(data)
     if data['skip'].is_a?(Array)
-      data['skip'].delete(Solargraph::VERSION)
+      data['skip'].delete(solargraph_version)
       data['skip'].sort!.uniq!
       data['skip'] = false if data['skip'].empty?
     else

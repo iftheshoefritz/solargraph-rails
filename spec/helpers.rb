@@ -20,7 +20,7 @@ module Helpers
       @files = []
     end
 
-    def solargraph_version
+    def solargraph_version_numeric
       Solargraph::VERSION.split('.')[0..1].join('.').to_f
     end
 
@@ -30,7 +30,7 @@ module Helpers
       @files << path
       # Older Solargraph versions store relative paths; return those
       # so we can fetch them by the same names later
-      if solargraph_version < 0.51
+      if solargraph_version_numeric < 0.51
         "./" + path
       else
         File.expand_path(path)
@@ -74,7 +74,7 @@ module Helpers
     end
     pin.parameters.each do |param|
       expect(args).to have_key(param.name.to_sym), "expected #{query} param #{param.name} to be expected, but it isn't"
-      # TODO: Is this necesseray? It should already be expected earlier by the arg.each_pair block
+      # TODO: Is this necessary? It should already be expected earlier by the arg.each_pair block
       expect(real_type = param.return_type.tag).to eq(args[param.name.to_sym]), "expected #{query} param #{param.name} to return #{args[param.name.to_sym]} but it returns #{real_type}"
     end
   end
