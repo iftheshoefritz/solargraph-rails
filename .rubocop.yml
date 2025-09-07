@@ -326,6 +326,8 @@ Gemspec/AttributeAssignment: # new in 1.77
   Enabled: true
 Style/CollectionQuerying: # new in 1.77
   Enabled: true
+Layout/EmptyLinesAfterModuleInclusion: # new in 1.79
+  Enabled: true
 
 plugins:
   - rubocop-performance
