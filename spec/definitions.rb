@@ -130,10 +130,8 @@ class Definitions
       not_added_yet = true
     end
     if data['skip'] == true ||
-#       data['skip'] == Solargraph::VERSION || # in case of branches relying on existing version excludes
        data['skip'] == solargraph_version || # in case of branches with specific excludes
        (data['skip'] == 'branch-master' && solargraph_version.start_with?('branch-')) ||
-#       (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION)) ||
        (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version)) ||
        (data['skip'].respond_to?(:include?) && data['skip'].include?('branch-master') &&
         solargraph_version.start_with?('branch-'))
