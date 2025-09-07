@@ -1246,6 +1246,7 @@ ActiveRecord::Base.count:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -2081,6 +2082,7 @@ ActiveRecord::Base.find:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.find_by:
   types:
   - nil
@@ -2098,6 +2100,7 @@ ActiveRecord::Base.find_by:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.find_by!:
   types:
   - undefined
@@ -3400,6 +3403,7 @@ ActiveRecord::Base.pluck:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
@@ -4771,6 +4775,7 @@ ActiveRecord::Base.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.try!:
   types:
   - generic<T>
@@ -4788,6 +4793,7 @@ ActiveRecord::Base.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.type_caster:
   types:
   - ActiveRecord::TypeCaster::Map
@@ -5141,6 +5147,7 @@ ActiveRecord::Base.where:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base.while_preventing_writes:
   types:
   - undefined
@@ -6904,6 +6911,7 @@ ActiveRecord::Base#pretty_print:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base#previous_changes:
   types:
   - undefined
@@ -7497,6 +7505,7 @@ ActiveRecord::Base#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base#try!:
   types:
   - generic<T>
@@ -7514,6 +7523,7 @@ ActiveRecord::Base#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActiveRecord::Base#type_for_attribute:
   types:
   - undefined

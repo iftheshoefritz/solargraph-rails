@@ -279,6 +279,7 @@ Class.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 Class.try!:
   types:
   - generic<T>
@@ -296,6 +297,7 @@ Class.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 Class.with_options:
   types:
   - undefined
@@ -546,6 +548,7 @@ Class#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 Class#try!:
   types:
   - generic<T>
@@ -563,6 +566,7 @@ Class#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 Class#with_options:
   types:
   - undefined

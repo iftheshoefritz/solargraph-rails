@@ -355,6 +355,7 @@ DateTime.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 DateTime.try!:
   types:
   - generic<T>
@@ -372,6 +373,7 @@ DateTime.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 DateTime.with_options:
   types:
   - undefined
@@ -442,6 +444,7 @@ DateTime#<=>:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 DateTime#acts_like?:
   types:
   - Boolean
@@ -590,6 +593,7 @@ DateTime#as_json:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 DateTime#at_beginning_of_day:
   types:
   - undefined
@@ -1737,6 +1741,7 @@ DateTime#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 DateTime#try!:
   types:
   - generic<T>
@@ -1754,6 +1759,7 @@ DateTime#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 DateTime#usec:
   types:
   - undefined

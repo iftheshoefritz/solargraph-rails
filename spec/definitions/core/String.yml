@@ -245,6 +245,7 @@ String.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 String.try!:
   types:
   - generic<T>
@@ -262,6 +263,7 @@ String.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 String.with_options:
   types:
   - undefined
@@ -673,6 +675,7 @@ String#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 String#try!:
   types:
   - generic<T>
@@ -690,6 +693,7 @@ String#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 String#underscore:
   types:
   - String

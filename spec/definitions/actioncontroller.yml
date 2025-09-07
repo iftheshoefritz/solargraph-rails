@@ -2011,6 +2011,7 @@ ActionController::Base.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActionController::Base.try!:
   types:
   - generic<T>
@@ -2028,6 +2029,7 @@ ActionController::Base.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActionController::Base.urlsafe_csrf_tokens:
   types:
   - undefined
@@ -4547,6 +4549,7 @@ ActionController::Base#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActionController::Base#try!:
   types:
   - generic<T>
@@ -4564,6 +4567,7 @@ ActionController::Base#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
+  - branch-master
 ActionController::Base#turbo_native_app?:
   types:
   - undefined
