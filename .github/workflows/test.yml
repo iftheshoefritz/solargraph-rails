@@ -49,6 +49,11 @@ jobs:
           - "0.56.2-post"
           - "branch-master"
           - "branch-improve_pin_caching"
+          - "branch-cache_uncache_gem"
+          - "branch-pin_cache_refactor"
+          - "branch-improve_selfy_type_pin_combination_case"
+          - "branch-gemfile_fixes"
+          - "branch-define_method"
         include:
           - versions:
               ruby: "3.2"
