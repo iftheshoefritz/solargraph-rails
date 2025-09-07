@@ -12,7 +12,7 @@ class Definitions
 
   def assert_matches_definitions
     @update = true if ENV['FORCE_UPDATE'] == 'true'
-    @allow_improvements = true if ENV['ALLOW_IMPROVEMENTS'] == 'true' || solargraph_version == 'branch-master'
+    @allow_improvements = true if ENV['ALLOW_IMPROVEMENTS'] == 'true' || solargraph_version.start_with?('branch-')
 
     definitions = YAML.load_file(definitions_file)
 
