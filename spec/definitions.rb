@@ -126,6 +126,7 @@ class Definitions
     if data['skip'] == true ||
        data['skip'] == Solargraph::VERSION || # in case of branches relying on existing version excludes
        data['skip'] == solargraph_version || # in case of branches with specific excludes
+       (data['skip'].respond_to?(:include?) && data['skip'].include?(Solargraph::VERSION))
        (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version))
       skip = true
       @skipped += 1
