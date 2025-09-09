@@ -57,11 +57,10 @@ when '0.57.alpha'
   gem "solargraph",
       github: 'apiology/solargraph',
       branch: '2025-07-02'
-  #   path: '../solargraph'
-when '0.56.2-post'
+when /branch-castwide-(.*)/
   gem "solargraph",
-      github: 'apiology/solargraph',
-      branch: 'run_plugin_specs'
+      github: 'castwide/solargraph',
+      branch: Regexp.last_match(1)
 when /branch-(.*)/
   gem "solargraph",
       github: 'apiology/solargraph',

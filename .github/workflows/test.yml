@@ -46,8 +46,8 @@ jobs:
           - "0.56.0"
           - "0.56.1"
           - "0.56.2"
-          - "branch-master"
-          - "branch-reference-handling"
+          - "branch-castwide-master"
+          - "branch-castwide-reference-handling"
         include:
           - versions:
               ruby: "3.2"
@@ -181,6 +181,6 @@ jobs:
         uses: actions/cache/save@v4
         with:
           key: |
-            2025-06-29-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           path: |
             /home/runner/.cache/solargraph
