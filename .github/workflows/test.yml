@@ -48,6 +48,7 @@ jobs:
           - "0.56.2"
           - "0.56.2-post"
           - "branch-master"
+          - "branch-reference-handling"
         include:
           - versions:
               ruby: "3.2"
