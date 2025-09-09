@@ -46,7 +46,6 @@ jobs:
           - "0.56.0"
           - "0.56.1"
           - "0.56.2"
-          - "0.56.2-post"
           - "branch-master"
           - "branch-reference-handling"
         include:
@@ -65,7 +64,7 @@ jobs:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: latest
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-09-09
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
