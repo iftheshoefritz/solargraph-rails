@@ -273,7 +273,7 @@ Date.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date.try!:
   types:
   - generic<T>
@@ -291,7 +291,7 @@ Date.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date.with_options:
   types:
   - undefined
@@ -336,7 +336,7 @@ Date#<=>:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date#acts_like?:
   types:
   - Boolean
@@ -423,7 +423,7 @@ Date#as_json:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -616,7 +616,7 @@ Date#in_time_zone:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date#infinite?:
   types:
   - Boolean
@@ -835,7 +835,7 @@ Date#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date#try!:
   types:
   - generic<T>
@@ -853,7 +853,7 @@ Date#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Date#weeks_ago:
   types:
   - undefined

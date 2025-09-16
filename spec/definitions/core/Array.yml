@@ -245,7 +245,7 @@ Array.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Array.try!:
   types:
   - generic<T>
@@ -263,7 +263,7 @@ Array.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Array.with_options:
   types:
   - undefined
@@ -536,7 +536,7 @@ Array#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Array#try!:
   types:
   - generic<T>
@@ -554,7 +554,7 @@ Array#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Array#with_options:
   types:
   - undefined

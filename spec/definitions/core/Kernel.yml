@@ -249,7 +249,7 @@ Kernel.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Kernel.try!:
   types:
   - generic<T>
@@ -267,7 +267,7 @@ Kernel.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Kernel.with_options:
   types:
   - undefined

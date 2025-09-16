@@ -253,7 +253,7 @@ Hash.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash.try!:
   types:
   - generic<T>
@@ -271,7 +271,7 @@ Hash.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash.with_options:
   types:
   - undefined
@@ -352,7 +352,7 @@ Hash#deep_stringify_keys!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash#deep_symbolize_keys:
   types:
   - Hash{Symbol, undefined}
@@ -369,7 +369,7 @@ Hash#deep_symbolize_keys:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash#deep_symbolize_keys!:
   types:
   - Hash{Symbol, undefined}
@@ -386,7 +386,7 @@ Hash#deep_symbolize_keys!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash#deep_transform_keys:
   types:
   - undefined
@@ -638,7 +638,7 @@ Hash#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash#try!:
   types:
   - generic<T>
@@ -656,7 +656,7 @@ Hash#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Hash#with_defaults:
   types:
   - undefined

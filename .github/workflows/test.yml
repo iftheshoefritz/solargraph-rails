@@ -46,8 +46,7 @@ jobs:
           - "0.56.0"
           - "0.56.1"
           - "0.56.2"
-          - "branch-master"
-          - "branch-castwide-reference-handling"
+          - "branch-castwide-master"
         include:
           - versions:
               ruby: "3.2"
