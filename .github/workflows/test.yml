@@ -160,6 +160,7 @@ jobs:
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          PRINT_STATS: true
 
       - name: Upload coverage artifacts
         uses: actions/upload-artifact@v4
