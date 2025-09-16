@@ -31,7 +31,7 @@ jobs:
             rails-minor: "0"
             run_coverage: true
         solargraph-version:
-          - "branch-master"
+          - "branch-castwide-master"
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
