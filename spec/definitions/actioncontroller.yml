@@ -83,6 +83,7 @@ ActionController::Base.allow_forgery_protection:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.allow_forgery_protection=:
@@ -100,6 +101,7 @@ ActionController::Base.allow_forgery_protection=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.anonymous?:
@@ -173,6 +175,7 @@ ActionController::Base.asset_host:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.asset_host=:
@@ -190,6 +193,7 @@ ActionController::Base.asset_host=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.assets_dir:
@@ -207,6 +211,7 @@ ActionController::Base.assets_dir:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.assets_dir=:
@@ -224,6 +229,7 @@ ActionController::Base.assets_dir=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.attr_internal:
@@ -355,6 +361,7 @@ ActionController::Base.clear_respond_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.concern:
@@ -430,6 +437,7 @@ ActionController::Base.csrf_token_storage_strategy:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
   added_in: 7.1
@@ -448,6 +456,7 @@ ActionController::Base.csrf_token_storage_strategy=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
   added_in: 7.1
@@ -470,6 +479,7 @@ ActionController::Base.default_asset_host_protocol:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_asset_host_protocol=:
@@ -487,6 +497,7 @@ ActionController::Base.default_asset_host_protocol=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_form_builder:
@@ -513,6 +524,7 @@ ActionController::Base.default_protect_from_forgery:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_protect_from_forgery=:
@@ -530,6 +542,7 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_static_extension:
@@ -547,6 +560,7 @@ ActionController::Base.default_static_extension:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_static_extension=:
@@ -564,6 +578,7 @@ ActionController::Base.default_static_extension=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_url_options:
@@ -581,6 +596,7 @@ ActionController::Base.default_url_options:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_url_options=:
@@ -598,6 +614,7 @@ ActionController::Base.default_url_options=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.default_url_options?:
@@ -615,6 +632,7 @@ ActionController::Base.default_url_options?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.define_callbacks:
@@ -652,6 +670,7 @@ ActionController::Base.devise_group:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.direct_descendants:
@@ -687,6 +706,7 @@ ActionController::Base.enable_fragment_cache_logging:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.enable_fragment_cache_logging=:
@@ -704,6 +724,7 @@ ActionController::Base.enable_fragment_cache_logging=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.etag:
@@ -730,6 +751,7 @@ ActionController::Base.etag_with_template_digest:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.etag_with_template_digest=:
@@ -747,6 +769,7 @@ ActionController::Base.etag_with_template_digest=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.etag_with_template_digest?:
@@ -764,6 +787,7 @@ ActionController::Base.etag_with_template_digest?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.etaggers:
@@ -781,6 +805,7 @@ ActionController::Base.etaggers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.etaggers=:
@@ -798,6 +823,7 @@ ActionController::Base.etaggers=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.etaggers?:
@@ -815,6 +841,7 @@ ActionController::Base.etaggers?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.forgery_protection_origin_check:
@@ -832,6 +859,7 @@ ActionController::Base.forgery_protection_origin_check:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.forgery_protection_origin_check=:
@@ -849,6 +877,7 @@ ActionController::Base.forgery_protection_origin_check=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.forgery_protection_strategy:
@@ -866,6 +895,7 @@ ActionController::Base.forgery_protection_strategy:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.forgery_protection_strategy=:
@@ -883,6 +913,7 @@ ActionController::Base.forgery_protection_strategy=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.fragment_cache_key:
@@ -909,6 +940,7 @@ ActionController::Base.fragment_cache_keys:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.fragment_cache_keys=:
@@ -926,6 +958,7 @@ ActionController::Base.fragment_cache_keys=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.fragment_cache_keys?:
@@ -943,6 +976,7 @@ ActionController::Base.fragment_cache_keys?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.handler_for_rescue:
@@ -1024,6 +1058,7 @@ ActionController::Base.helpers_path?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.html_safe?:
@@ -1058,6 +1093,7 @@ ActionController::Base.include_all_helpers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.include_all_helpers=:
@@ -1075,6 +1111,7 @@ ActionController::Base.include_all_helpers=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.include_all_helpers?:
@@ -1092,6 +1129,7 @@ ActionController::Base.include_all_helpers?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.inherited:
@@ -1129,6 +1167,7 @@ ActionController::Base.javascripts_dir:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.javascripts_dir=:
@@ -1146,6 +1185,7 @@ ActionController::Base.javascripts_dir=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.layout:
@@ -1185,6 +1225,7 @@ ActionController::Base.log_warning_on_csrf_failure:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.log_warning_on_csrf_failure=:
@@ -1202,6 +1243,7 @@ ActionController::Base.log_warning_on_csrf_failure=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.logger:
@@ -1219,6 +1261,7 @@ ActionController::Base.logger:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.logger=:
@@ -1236,6 +1279,7 @@ ActionController::Base.logger=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.make_response!:
@@ -1285,6 +1329,7 @@ ActionController::Base.middleware_stack:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.middleware_stack=:
@@ -1302,6 +1347,7 @@ ActionController::Base.middleware_stack=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.middleware_stack?:
@@ -1319,6 +1365,7 @@ ActionController::Base.middleware_stack?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.mimes_for_respond_to:
@@ -1336,6 +1383,7 @@ ActionController::Base.mimes_for_respond_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.mimes_for_respond_to=:
@@ -1353,6 +1401,7 @@ ActionController::Base.mimes_for_respond_to=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.mimes_for_respond_to?:
@@ -1370,6 +1419,7 @@ ActionController::Base.mimes_for_respond_to?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.module_parent:
@@ -1426,6 +1476,7 @@ ActionController::Base.per_form_csrf_tokens:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.per_form_csrf_tokens=:
@@ -1443,6 +1494,7 @@ ActionController::Base.per_form_csrf_tokens=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.perform_caching:
@@ -1460,6 +1512,7 @@ ActionController::Base.perform_caching:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.perform_caching=:
@@ -1477,6 +1530,7 @@ ActionController::Base.perform_caching=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.permissions_policy:
@@ -1559,6 +1613,7 @@ ActionController::Base.raise_on_open_redirects:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.raise_on_open_redirects=:
@@ -1576,6 +1631,7 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.redefine_method:
@@ -1601,6 +1657,7 @@ ActionController::Base.relative_url_root:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.relative_url_root=:
@@ -1618,6 +1675,7 @@ ActionController::Base.relative_url_root=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.remove_possible_method:
@@ -1643,6 +1701,7 @@ ActionController::Base.render:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.renderer:
@@ -1669,6 +1728,7 @@ ActionController::Base.request_forgery_protection_token:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.request_forgery_protection_token=:
@@ -1686,6 +1746,7 @@ ActionController::Base.request_forgery_protection_token=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.require_dependency:
@@ -1711,6 +1772,7 @@ ActionController::Base.rescue_handlers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.rescue_handlers=:
@@ -1728,6 +1790,7 @@ ActionController::Base.rescue_handlers=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.rescue_handlers?:
@@ -1745,6 +1808,7 @@ ActionController::Base.rescue_handlers?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.rescue_with_handler:
@@ -1770,6 +1834,7 @@ ActionController::Base.respond_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.responder:
@@ -1787,6 +1852,7 @@ ActionController::Base.responder:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.responder=:
@@ -1804,6 +1870,7 @@ ActionController::Base.responder=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.responder?:
@@ -1821,6 +1888,7 @@ ActionController::Base.responder?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.responders:
@@ -1838,6 +1906,7 @@ ActionController::Base.responders:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.set_callback:
@@ -1925,6 +1994,7 @@ ActionController::Base.stylesheets_dir:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.stylesheets_dir=:
@@ -1942,6 +2012,7 @@ ActionController::Base.stylesheets_dir=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.subclasses:
@@ -2010,6 +2081,7 @@ ActionController::Base.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.try!:
@@ -2028,6 +2100,7 @@ ActionController::Base.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.urlsafe_csrf_tokens:
@@ -2045,6 +2118,7 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.urlsafe_csrf_tokens=:
@@ -2062,6 +2136,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base.use:
@@ -2194,6 +2269,7 @@ ActionController::Base#after_sign_in_path_for:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#after_sign_out_path_for:
@@ -2211,6 +2287,7 @@ ActionController::Base#after_sign_out_path_for:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#alert:
@@ -2228,6 +2305,7 @@ ActionController::Base#alert:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#allow_forgery_protection:
@@ -2245,6 +2323,7 @@ ActionController::Base#allow_forgery_protection:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#allow_forgery_protection=:
@@ -2262,6 +2341,7 @@ ActionController::Base#allow_forgery_protection=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#allow_params_authentication!:
@@ -2279,6 +2359,7 @@ ActionController::Base#allow_params_authentication!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#any_templates?:
@@ -2296,6 +2377,7 @@ ActionController::Base#any_templates?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#append_view_path:
@@ -2321,6 +2403,7 @@ ActionController::Base#asset_host:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#asset_host=:
@@ -2338,6 +2421,7 @@ ActionController::Base#asset_host=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#assets_dir:
@@ -2355,6 +2439,7 @@ ActionController::Base#assets_dir:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#assets_dir=:
@@ -2372,6 +2457,7 @@ ActionController::Base#assets_dir=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#authenticate_or_request_with_http_basic:
@@ -2430,6 +2516,7 @@ ActionController::Base#bypass_sign_in:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#cache_store:
@@ -2465,6 +2552,7 @@ ActionController::Base#cancel_registration_path:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#cancel_registration_url:
@@ -2482,6 +2570,7 @@ ActionController::Base#cancel_registration_url:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#class_eval:
@@ -2503,6 +2592,7 @@ ActionController::Base#collect_mimes_from_class_level:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#combined_fragment_cache_key:
@@ -2560,6 +2650,7 @@ ActionController::Base#default_asset_host_protocol:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_asset_host_protocol=:
@@ -2577,6 +2668,7 @@ ActionController::Base#default_asset_host_protocol=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_form_builder:
@@ -2598,6 +2690,7 @@ ActionController::Base#default_protect_from_forgery:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_protect_from_forgery=:
@@ -2615,6 +2708,7 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_render:
@@ -2636,6 +2730,7 @@ ActionController::Base#default_static_extension:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_static_extension=:
@@ -2653,6 +2748,7 @@ ActionController::Base#default_static_extension=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_url_options:
@@ -2670,6 +2766,7 @@ ActionController::Base#default_url_options:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_url_options=:
@@ -2687,6 +2784,7 @@ ActionController::Base#default_url_options=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#default_url_options?:
@@ -2704,6 +2802,7 @@ ActionController::Base#default_url_options?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#details_for_lookup:
@@ -2730,6 +2829,7 @@ ActionController::Base#devise_controller?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#devise_parameter_sanitizer:
@@ -2747,6 +2847,7 @@ ActionController::Base#devise_parameter_sanitizer:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#dispatch:
@@ -2777,6 +2878,7 @@ ActionController::Base#edit_polymorphic_path:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#edit_polymorphic_url:
@@ -2794,6 +2896,7 @@ ActionController::Base#edit_polymorphic_url:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#enable_fragment_cache_logging:
@@ -2811,6 +2914,7 @@ ActionController::Base#enable_fragment_cache_logging:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#enable_fragment_cache_logging=:
@@ -2828,6 +2932,7 @@ ActionController::Base#enable_fragment_cache_logging=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#etag_with_template_digest:
@@ -2845,6 +2950,7 @@ ActionController::Base#etag_with_template_digest:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#etag_with_template_digest=:
@@ -2862,6 +2968,7 @@ ActionController::Base#etag_with_template_digest=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#etag_with_template_digest?:
@@ -2879,6 +2986,7 @@ ActionController::Base#etag_with_template_digest?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#etaggers:
@@ -2896,6 +3004,7 @@ ActionController::Base#etaggers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#etaggers=:
@@ -2913,6 +3022,7 @@ ActionController::Base#etaggers=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#etaggers?:
@@ -2930,6 +3040,7 @@ ActionController::Base#etaggers?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#expire_fragment:
@@ -2968,6 +3079,7 @@ ActionController::Base#forgery_protection_origin_check:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#forgery_protection_origin_check=:
@@ -2985,6 +3097,7 @@ ActionController::Base#forgery_protection_origin_check=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#forgery_protection_strategy:
@@ -3002,6 +3115,7 @@ ActionController::Base#forgery_protection_strategy:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#forgery_protection_strategy=:
@@ -3019,6 +3133,7 @@ ActionController::Base#forgery_protection_strategy=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#formats:
@@ -3049,6 +3164,7 @@ ActionController::Base#fragment_cache_keys:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#fragment_cache_keys=:
@@ -3066,6 +3182,7 @@ ActionController::Base#fragment_cache_keys=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#fragment_cache_keys?:
@@ -3083,6 +3200,7 @@ ActionController::Base#fragment_cache_keys?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#fragment_exist?:
@@ -3143,6 +3261,7 @@ ActionController::Base#helpers_path:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#helpers_path=:
@@ -3160,6 +3279,7 @@ ActionController::Base#helpers_path=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#helpers_path?:
@@ -3177,6 +3297,7 @@ ActionController::Base#helpers_path?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#hotwire_native_app?:
@@ -3194,6 +3315,7 @@ ActionController::Base#hotwire_native_app?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#html_safe?:
@@ -3232,6 +3354,7 @@ ActionController::Base#include_all_helpers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#include_all_helpers=:
@@ -3249,6 +3372,7 @@ ActionController::Base#include_all_helpers=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#include_all_helpers?:
@@ -3266,6 +3390,7 @@ ActionController::Base#include_all_helpers?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#inspect:
@@ -3304,6 +3429,7 @@ ActionController::Base#is_flashing_format?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#is_navigational_format?:
@@ -3321,6 +3447,7 @@ ActionController::Base#is_navigational_format?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#javascripts_dir:
@@ -3338,6 +3465,7 @@ ActionController::Base#javascripts_dir:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#javascripts_dir=:
@@ -3355,6 +3483,7 @@ ActionController::Base#javascripts_dir=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#l:
@@ -3376,6 +3505,7 @@ ActionController::Base#locale:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#locale=:
@@ -3393,6 +3523,7 @@ ActionController::Base#locale=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#localize:
@@ -3424,6 +3555,7 @@ ActionController::Base#log_warning_on_csrf_failure:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#log_warning_on_csrf_failure=:
@@ -3441,6 +3573,7 @@ ActionController::Base#log_warning_on_csrf_failure=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#logger:
@@ -3458,6 +3591,7 @@ ActionController::Base#logger:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#logger=:
@@ -3475,6 +3609,7 @@ ActionController::Base#logger=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#lookup_context:
@@ -3496,6 +3631,7 @@ ActionController::Base#main_app:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#media_type:
@@ -3522,6 +3658,7 @@ ActionController::Base#middleware_stack:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#middleware_stack=:
@@ -3539,6 +3676,7 @@ ActionController::Base#middleware_stack=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#middleware_stack?:
@@ -3556,6 +3694,7 @@ ActionController::Base#middleware_stack?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#mimes_for_respond_to:
@@ -3573,6 +3712,7 @@ ActionController::Base#mimes_for_respond_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#mimes_for_respond_to=:
@@ -3590,6 +3730,7 @@ ActionController::Base#mimes_for_respond_to=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#mimes_for_respond_to?:
@@ -3607,6 +3748,7 @@ ActionController::Base#mimes_for_respond_to?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#new_polymorphic_path:
@@ -3624,6 +3766,7 @@ ActionController::Base#new_polymorphic_path:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#new_polymorphic_url:
@@ -3641,6 +3784,7 @@ ActionController::Base#new_polymorphic_url:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#no_store:
@@ -3662,6 +3806,7 @@ ActionController::Base#notice:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#params:
@@ -3687,6 +3832,7 @@ ActionController::Base#per_form_csrf_tokens:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#per_form_csrf_tokens=:
@@ -3704,6 +3850,7 @@ ActionController::Base#per_form_csrf_tokens=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#perform_caching:
@@ -3721,6 +3868,7 @@ ActionController::Base#perform_caching:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#perform_caching=:
@@ -3738,6 +3886,7 @@ ActionController::Base#perform_caching=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#performed?:
@@ -3793,6 +3942,7 @@ ActionController::Base#raise_on_missing_translations:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#raise_on_missing_translations=:
@@ -3810,6 +3960,7 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#raise_on_open_redirects:
@@ -3827,6 +3978,7 @@ ActionController::Base#raise_on_open_redirects:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#raise_on_open_redirects=:
@@ -3844,6 +3996,7 @@ ActionController::Base#raise_on_open_redirects=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#read_fragment:
@@ -3870,6 +4023,7 @@ ActionController::Base#recede_or_redirect_back_or_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#recede_or_redirect_to:
@@ -3887,6 +4041,7 @@ ActionController::Base#recede_or_redirect_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#redirect_back:
@@ -3916,6 +4071,7 @@ ActionController::Base#refresh_or_redirect_back_or_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#refresh_or_redirect_to:
@@ -3933,6 +4089,7 @@ ActionController::Base#refresh_or_redirect_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#relative_url_root:
@@ -3950,6 +4107,7 @@ ActionController::Base#relative_url_root:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#relative_url_root=:
@@ -3967,6 +4125,7 @@ ActionController::Base#relative_url_root=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#render:
@@ -4013,6 +4172,7 @@ ActionController::Base#request_forgery_protection_token:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#request_forgery_protection_token=:
@@ -4030,6 +4190,7 @@ ActionController::Base#request_forgery_protection_token=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#request_format:
@@ -4047,6 +4208,7 @@ ActionController::Base#request_format:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#request_http_basic_authentication:
@@ -4085,6 +4247,7 @@ ActionController::Base#rescue_handlers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#rescue_handlers=:
@@ -4102,6 +4265,7 @@ ActionController::Base#rescue_handlers=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#rescue_handlers?:
@@ -4119,6 +4283,7 @@ ActionController::Base#rescue_handlers?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#rescue_with_handler:
@@ -4148,6 +4313,7 @@ ActionController::Base#respond_with:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#responder:
@@ -4165,6 +4331,7 @@ ActionController::Base#responder:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#responder=:
@@ -4182,6 +4349,7 @@ ActionController::Base#responder=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#responder?:
@@ -4199,6 +4367,7 @@ ActionController::Base#responder?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#response:
@@ -4233,6 +4402,7 @@ ActionController::Base#resume_or_redirect_back_or_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#resume_or_redirect_to:
@@ -4250,6 +4420,7 @@ ActionController::Base#resume_or_redirect_to:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#route_for:
@@ -4304,6 +4475,7 @@ ActionController::Base#sign_in:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#sign_in_and_redirect:
@@ -4321,6 +4493,7 @@ ActionController::Base#sign_in_and_redirect:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#sign_out:
@@ -4338,6 +4511,7 @@ ActionController::Base#sign_out:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#sign_out_all_scopes:
@@ -4355,6 +4529,7 @@ ActionController::Base#sign_out_all_scopes:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#sign_out_and_redirect:
@@ -4372,6 +4547,7 @@ ActionController::Base#sign_out_and_redirect:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#signed_in?:
@@ -4389,6 +4565,7 @@ ActionController::Base#signed_in?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#signed_in_root_path:
@@ -4406,6 +4583,7 @@ ActionController::Base#signed_in_root_path:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#stale?:
@@ -4437,6 +4615,7 @@ ActionController::Base#store_location_for:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#stored_location_for:
@@ -4454,6 +4633,7 @@ ActionController::Base#stored_location_for:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#stylesheets_dir:
@@ -4471,6 +4651,7 @@ ActionController::Base#stylesheets_dir:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#stylesheets_dir=:
@@ -4488,6 +4669,7 @@ ActionController::Base#stylesheets_dir=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#t:
@@ -4509,6 +4691,7 @@ ActionController::Base#template_exists?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#to_a:
@@ -4548,6 +4731,7 @@ ActionController::Base#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#try!:
@@ -4566,6 +4750,7 @@ ActionController::Base#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#turbo_native_app?:
@@ -4583,6 +4768,7 @@ ActionController::Base#turbo_native_app?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#url_for:
@@ -4612,6 +4798,7 @@ ActionController::Base#urlsafe_csrf_tokens:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#verify_request_format!:
@@ -4629,6 +4816,7 @@ ActionController::Base#verify_request_format!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#verify_requested_format!:
@@ -4646,6 +4834,7 @@ ActionController::Base#verify_requested_format!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#view_assigns:
@@ -4684,6 +4873,7 @@ ActionController::Base#view_paths:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#view_renderer:
@@ -4705,6 +4895,7 @@ ActionController::Base#warden:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 ActionController::Base#with_options:

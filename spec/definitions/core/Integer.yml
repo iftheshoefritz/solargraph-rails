@@ -244,6 +244,7 @@ Integer.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Integer.try!:
@@ -262,6 +263,7 @@ Integer.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Integer.with_options:
@@ -569,6 +571,7 @@ Integer#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Integer#try!:
@@ -587,6 +590,7 @@ Integer#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Integer#week:

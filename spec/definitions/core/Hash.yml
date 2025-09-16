@@ -252,6 +252,7 @@ Hash.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash.try!:
@@ -270,6 +271,7 @@ Hash.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash.with_options:
@@ -351,6 +353,7 @@ Hash#deep_stringify_keys!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash#deep_symbolize_keys:
@@ -368,6 +371,7 @@ Hash#deep_symbolize_keys:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash#deep_symbolize_keys!:
@@ -385,6 +389,7 @@ Hash#deep_symbolize_keys!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash#deep_transform_keys:
@@ -637,6 +642,7 @@ Hash#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash#try!:
@@ -655,6 +661,7 @@ Hash#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Hash#with_defaults:

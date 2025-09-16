@@ -48,6 +48,7 @@ Class.attr_internal_naming_format:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Class.attr_internal_naming_format=:
@@ -65,6 +66,7 @@ Class.attr_internal_naming_format=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Class.attr_internal_reader:
@@ -278,6 +280,7 @@ Class.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Class.try!:
@@ -296,6 +299,7 @@ Class.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Class.with_options:
@@ -547,6 +551,7 @@ Class#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Class#try!:
@@ -565,6 +570,7 @@ Class#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Class#with_options:

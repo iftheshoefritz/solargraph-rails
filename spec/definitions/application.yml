@@ -180,6 +180,7 @@ Rails::Application.eager_load!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application.endpoint:
@@ -247,6 +248,7 @@ Rails::Application.initializer:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application.initializers:
@@ -264,6 +266,7 @@ Rails::Application.initializers:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application.initializers_chain:
@@ -281,6 +284,7 @@ Rails::Application.initializers_chain:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application.initializers_for:
@@ -298,6 +302,7 @@ Rails::Application.initializers_for:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application.instance:
@@ -526,6 +531,7 @@ Rails::Application.yaml_tag:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#acts_like?:
@@ -624,6 +630,7 @@ Rails::Application#default_url_options:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#default_url_options=:
@@ -641,6 +648,7 @@ Rails::Application#default_url_options=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#deprecators:
@@ -689,6 +697,7 @@ Rails::Application#engine_name:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#ensure_generator_templates_added:
@@ -740,6 +749,7 @@ Rails::Application#importmap:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#importmap=:
@@ -757,6 +767,7 @@ Rails::Application#importmap=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#in?:
@@ -810,6 +821,7 @@ Rails::Application#isolated?:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#key_generator:
@@ -864,6 +876,7 @@ Rails::Application#middleware:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#migration_railties:
@@ -894,6 +907,7 @@ Rails::Application#paths:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#presence:
@@ -929,6 +943,7 @@ Rails::Application#railtie_name:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#railtie_namespace:
@@ -982,6 +997,7 @@ Rails::Application#root:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
 Rails::Application#routes:
