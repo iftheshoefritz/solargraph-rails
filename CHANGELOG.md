@@ -2,6 +2,14 @@
 
 ## Changes
 
+### v1.2.4
+
+Features / fixes:
+- Enable support for Solargraph 0.74.x with annotation fixes
+
+Internal improvements:
+- CI improvements for easier Solargraph pre-release regression testing
+
 ### v1.2.3
 
 Internal improvements:
