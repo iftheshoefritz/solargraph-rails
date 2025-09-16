@@ -342,8 +342,9 @@ Time#-:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Time#<=>:
   types:
   - "-1"
@@ -362,8 +363,9 @@ Time#<=>:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Time#acts_like?:
   types:
   - Boolean
@@ -449,8 +451,9 @@ Time#as_json:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Time#at_beginning_of_day:
   types:
   - undefined
@@ -743,8 +746,9 @@ Time#minus_without_coercion:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Time#monday:
   types:
   - undefined
@@ -949,8 +953,9 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Time#weeks_ago:
   types:
   - undefined

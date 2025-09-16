@@ -252,8 +252,9 @@ File.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 File.try!:
   types:
   - generic<T>
@@ -270,8 +271,9 @@ File.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 File.with_options:
   types:
   - undefined
@@ -448,8 +450,9 @@ File#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 File#try!:
   types:
   - generic<T>
@@ -466,8 +469,9 @@ File#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 File#with_options:
   types:
   - undefined

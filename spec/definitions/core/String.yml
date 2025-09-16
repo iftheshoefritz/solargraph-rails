@@ -244,8 +244,9 @@ String.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 String.try!:
   types:
   - generic<T>
@@ -262,8 +263,9 @@ String.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 String.with_options:
   types:
   - undefined
@@ -401,8 +403,9 @@ String#ext:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 String#first:
   types:
   - undefined
@@ -522,8 +525,9 @@ String#pathmap:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 String#pluralize:
   types:
   - String
@@ -674,8 +678,9 @@ String#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 String#try!:
   types:
   - generic<T>
@@ -692,8 +697,9 @@ String#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 String#underscore:
   types:
   - String

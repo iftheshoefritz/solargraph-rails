@@ -260,8 +260,9 @@ ActionDispatch::Routing::Mapper.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper.try!:
   types:
   - generic<T>
@@ -278,8 +279,9 @@ ActionDispatch::Routing::Mapper.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper.with_options:
   types:
   - undefined
@@ -590,8 +592,9 @@ ActionDispatch::Routing::Mapper#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper#try!:
   types:
   - generic<T>
@@ -608,8 +611,9 @@ ActionDispatch::Routing::Mapper#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:
   - undefined

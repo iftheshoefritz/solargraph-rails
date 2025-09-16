@@ -48,8 +48,9 @@ Class.attr_internal_naming_format:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Class.attr_internal_naming_format=:
   types:
   - String
@@ -65,8 +66,9 @@ Class.attr_internal_naming_format=:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Class.attr_internal_reader:
   types:
   - void
@@ -278,8 +280,9 @@ Class.try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Class.try!:
   types:
   - generic<T>
@@ -296,8 +299,9 @@ Class.try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Class.with_options:
   types:
   - undefined
@@ -547,8 +551,9 @@ Class#try:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Class#try!:
   types:
   - generic<T>
@@ -565,8 +570,9 @@ Class#try!:
   - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
+  - 0.57.0
   - 0.57.alpha
-  - branch-master
+  - branch-castwide-master
 Class#with_options:
   types:
   - undefined

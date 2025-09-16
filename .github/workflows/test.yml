@@ -46,14 +46,14 @@ jobs:
           - "0.56.0"
           - "0.56.1"
           - "0.56.2"
-          - "branch-master"
-          - "branch-castwide-reference-handling"
+          - "0.57.0"
+          - "branch-castwide-master"
         include:
           - versions:
               ruby: "3.2"
               rails-major: "8"
               rails-minor: "0"
-            solargraph-version: "branch-master"
+            solargraph-version: "branch-castwide-master"
             run_coverage: true
       fail-fast: false
     steps:
@@ -70,7 +70,6 @@ jobs:
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
-
       - name: Update solargraph from branch if needed
         run: |
           bundle update solargraph
