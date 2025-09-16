@@ -12,7 +12,7 @@ solargraph_version =
       # below this isn't tested in CI
       '>= 0.48.0',
       # above this hasn't been tested
-      '< 0.57'
+      '<= 0.57'
     ]
   end
 
