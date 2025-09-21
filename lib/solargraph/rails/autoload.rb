@@ -40,6 +40,7 @@ module Solargraph
               name: name,
               comments: ns.comments,
               visibility: :public,
+              source: :solargraph_rspec_autoload,
               gates: gates[1..-1]
             )
 

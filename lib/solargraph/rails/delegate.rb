@@ -57,6 +57,7 @@ module Solargraph
               node: meth,
               receiver: chain,
               receiver_method_name: method_name.to_s,
+              source: :solargraph_rails_delegate,
             )
           end
         end
