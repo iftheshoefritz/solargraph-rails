@@ -19,7 +19,7 @@ module Solargraph
           closure: ns,
           scope: scope,
           attribute: attribute,
-          source: :solargraph_rails_util,
+          source: :solargraph_rails_util
         }
 
         comments_arr = [comments].compact
@@ -40,7 +40,7 @@ module Solargraph
               presence: nil,
               decl: :arg,
               asgn_code: nil,
-              source: :solargraph_rails_util,
+              source: :solargraph_rails_util
             )
         end
         m.parameters.concat(parameters)
