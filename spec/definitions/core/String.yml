@@ -247,6 +247,7 @@ String.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 String.try!:
   types:
   - generic<T>
@@ -266,6 +267,7 @@ String.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 String.with_options:
   types:
   - undefined
@@ -406,6 +408,7 @@ String#ext:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 String#first:
   types:
   - undefined
@@ -528,6 +531,7 @@ String#pathmap:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 String#pluralize:
   types:
   - String
@@ -681,6 +685,7 @@ String#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 String#try!:
   types:
   - generic<T>
@@ -700,6 +705,7 @@ String#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 String#underscore:
   types:
   - String

@@ -51,6 +51,7 @@ Class.attr_internal_naming_format:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 Class.attr_internal_naming_format=:
   types:
   - String
@@ -69,6 +70,7 @@ Class.attr_internal_naming_format=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 Class.attr_internal_reader:
   types:
   - void
@@ -283,6 +285,7 @@ Class.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 Class.try!:
   types:
   - generic<T>
@@ -302,6 +305,7 @@ Class.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 Class.with_options:
   types:
   - undefined
@@ -554,6 +558,7 @@ Class#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 Class#try!:
   types:
   - generic<T>
@@ -573,6 +578,7 @@ Class#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-fix_assignment_handling
 Class#with_options:
   types:
   - undefined
