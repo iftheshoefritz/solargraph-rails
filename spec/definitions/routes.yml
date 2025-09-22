@@ -263,6 +263,7 @@ ActionDispatch::Routing::Mapper.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionDispatch::Routing::Mapper.try!:
   types:
@@ -283,6 +284,7 @@ ActionDispatch::Routing::Mapper.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionDispatch::Routing::Mapper.with_options:
   types:
@@ -597,6 +599,7 @@ ActionDispatch::Routing::Mapper#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionDispatch::Routing::Mapper#try!:
   types:
@@ -617,6 +620,7 @@ ActionDispatch::Routing::Mapper#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:

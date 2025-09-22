@@ -345,6 +345,7 @@ Time#-:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 Time#<=>:
   types:
@@ -367,6 +368,7 @@ Time#<=>:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 Time#acts_like?:
   types:
@@ -456,6 +458,7 @@ Time#as_json:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 Time#at_beginning_of_day:
   types:
@@ -752,6 +755,7 @@ Time#minus_without_coercion:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 Time#monday:
   types:
@@ -960,6 +964,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 Time#weeks_ago:
   types:

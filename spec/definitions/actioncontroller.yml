@@ -86,6 +86,7 @@ ActionController::Base.allow_forgery_protection:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.allow_forgery_protection=:
   types:
@@ -105,6 +106,7 @@ ActionController::Base.allow_forgery_protection=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.anonymous?:
   types:
@@ -180,6 +182,7 @@ ActionController::Base.asset_host:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.asset_host=:
   types:
@@ -199,6 +202,7 @@ ActionController::Base.asset_host=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.assets_dir:
   types:
@@ -218,6 +222,7 @@ ActionController::Base.assets_dir:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.assets_dir=:
   types:
@@ -237,6 +242,7 @@ ActionController::Base.assets_dir=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.attr_internal:
   types:
@@ -370,6 +376,7 @@ ActionController::Base.clear_respond_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.concern:
   types:
@@ -447,6 +454,7 @@ ActionController::Base.csrf_token_storage_strategy:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
   added_in: 7.1
 ActionController::Base.csrf_token_storage_strategy=:
@@ -467,6 +475,7 @@ ActionController::Base.csrf_token_storage_strategy=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
   added_in: 7.1
 ActionController::Base.deep_dup:
@@ -491,6 +500,7 @@ ActionController::Base.default_asset_host_protocol:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_asset_host_protocol=:
   types:
@@ -510,6 +520,7 @@ ActionController::Base.default_asset_host_protocol=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_form_builder:
   types:
@@ -538,6 +549,7 @@ ActionController::Base.default_protect_from_forgery:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_protect_from_forgery=:
   types:
@@ -557,6 +569,7 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_static_extension:
   types:
@@ -576,6 +589,7 @@ ActionController::Base.default_static_extension:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_static_extension=:
   types:
@@ -595,6 +609,7 @@ ActionController::Base.default_static_extension=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_url_options:
   types:
@@ -614,6 +629,7 @@ ActionController::Base.default_url_options:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_url_options=:
   types:
@@ -633,6 +649,7 @@ ActionController::Base.default_url_options=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.default_url_options?:
   types:
@@ -652,6 +669,7 @@ ActionController::Base.default_url_options?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.define_callbacks:
   types:
@@ -691,6 +709,7 @@ ActionController::Base.devise_group:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.direct_descendants:
   types:
@@ -728,6 +747,7 @@ ActionController::Base.enable_fragment_cache_logging:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.enable_fragment_cache_logging=:
   types:
@@ -747,6 +767,7 @@ ActionController::Base.enable_fragment_cache_logging=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.etag:
   types:
@@ -775,6 +796,7 @@ ActionController::Base.etag_with_template_digest:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.etag_with_template_digest=:
   types:
@@ -794,6 +816,7 @@ ActionController::Base.etag_with_template_digest=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.etag_with_template_digest?:
   types:
@@ -813,6 +836,7 @@ ActionController::Base.etag_with_template_digest?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.etaggers:
   types:
@@ -832,6 +856,7 @@ ActionController::Base.etaggers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.etaggers=:
   types:
@@ -851,6 +876,7 @@ ActionController::Base.etaggers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.etaggers?:
   types:
@@ -870,6 +896,7 @@ ActionController::Base.etaggers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.forgery_protection_origin_check:
   types:
@@ -889,6 +916,7 @@ ActionController::Base.forgery_protection_origin_check:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.forgery_protection_origin_check=:
   types:
@@ -908,6 +936,7 @@ ActionController::Base.forgery_protection_origin_check=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.forgery_protection_strategy:
   types:
@@ -927,6 +956,7 @@ ActionController::Base.forgery_protection_strategy:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.forgery_protection_strategy=:
   types:
@@ -946,6 +976,7 @@ ActionController::Base.forgery_protection_strategy=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.fragment_cache_key:
   types:
@@ -974,6 +1005,7 @@ ActionController::Base.fragment_cache_keys:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.fragment_cache_keys=:
   types:
@@ -993,6 +1025,7 @@ ActionController::Base.fragment_cache_keys=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.fragment_cache_keys?:
   types:
@@ -1012,6 +1045,7 @@ ActionController::Base.fragment_cache_keys?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.handler_for_rescue:
   types:
@@ -1095,6 +1129,7 @@ ActionController::Base.helpers_path?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.html_safe?:
   types:
@@ -1131,6 +1166,7 @@ ActionController::Base.include_all_helpers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.include_all_helpers=:
   types:
@@ -1150,6 +1186,7 @@ ActionController::Base.include_all_helpers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.include_all_helpers?:
   types:
@@ -1169,6 +1206,7 @@ ActionController::Base.include_all_helpers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.inherited:
   types:
@@ -1208,6 +1246,7 @@ ActionController::Base.javascripts_dir:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.javascripts_dir=:
   types:
@@ -1227,6 +1266,7 @@ ActionController::Base.javascripts_dir=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.layout:
   types:
@@ -1268,6 +1308,7 @@ ActionController::Base.log_warning_on_csrf_failure:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.log_warning_on_csrf_failure=:
   types:
@@ -1287,6 +1328,7 @@ ActionController::Base.log_warning_on_csrf_failure=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.logger:
   types:
@@ -1306,6 +1348,7 @@ ActionController::Base.logger:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.logger=:
   types:
@@ -1325,6 +1368,7 @@ ActionController::Base.logger=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.make_response!:
   types:
@@ -1376,6 +1420,7 @@ ActionController::Base.middleware_stack:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.middleware_stack=:
   types:
@@ -1395,6 +1440,7 @@ ActionController::Base.middleware_stack=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.middleware_stack?:
   types:
@@ -1414,6 +1460,7 @@ ActionController::Base.middleware_stack?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.mimes_for_respond_to:
   types:
@@ -1433,6 +1480,7 @@ ActionController::Base.mimes_for_respond_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.mimes_for_respond_to=:
   types:
@@ -1452,6 +1500,7 @@ ActionController::Base.mimes_for_respond_to=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.mimes_for_respond_to?:
   types:
@@ -1471,6 +1520,7 @@ ActionController::Base.mimes_for_respond_to?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.module_parent:
   types:
@@ -1529,6 +1579,7 @@ ActionController::Base.per_form_csrf_tokens:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.per_form_csrf_tokens=:
   types:
@@ -1548,6 +1599,7 @@ ActionController::Base.per_form_csrf_tokens=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.perform_caching:
   types:
@@ -1567,6 +1619,7 @@ ActionController::Base.perform_caching:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.perform_caching=:
   types:
@@ -1586,6 +1639,7 @@ ActionController::Base.perform_caching=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.permissions_policy:
   types:
@@ -1670,6 +1724,7 @@ ActionController::Base.raise_on_open_redirects:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.raise_on_open_redirects=:
   types:
@@ -1689,6 +1744,7 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.redefine_method:
   types:
@@ -1716,6 +1772,7 @@ ActionController::Base.relative_url_root:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.relative_url_root=:
   types:
@@ -1735,6 +1792,7 @@ ActionController::Base.relative_url_root=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.remove_possible_method:
   types:
@@ -1762,6 +1820,7 @@ ActionController::Base.render:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.renderer:
   types:
@@ -1790,6 +1849,7 @@ ActionController::Base.request_forgery_protection_token:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.request_forgery_protection_token=:
   types:
@@ -1809,6 +1869,7 @@ ActionController::Base.request_forgery_protection_token=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.require_dependency:
   types:
@@ -1836,6 +1897,7 @@ ActionController::Base.rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.rescue_handlers=:
   types:
@@ -1855,6 +1917,7 @@ ActionController::Base.rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.rescue_handlers?:
   types:
@@ -1874,6 +1937,7 @@ ActionController::Base.rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.rescue_with_handler:
   types:
@@ -1901,6 +1965,7 @@ ActionController::Base.respond_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.responder:
   types:
@@ -1920,6 +1985,7 @@ ActionController::Base.responder:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.responder=:
   types:
@@ -1939,6 +2005,7 @@ ActionController::Base.responder=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.responder?:
   types:
@@ -1958,6 +2025,7 @@ ActionController::Base.responder?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.responders:
   types:
@@ -1977,6 +2045,7 @@ ActionController::Base.responders:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.set_callback:
   types:
@@ -2066,6 +2135,7 @@ ActionController::Base.stylesheets_dir:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.stylesheets_dir=:
   types:
@@ -2085,6 +2155,7 @@ ActionController::Base.stylesheets_dir=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.subclasses:
   types:
@@ -2155,6 +2226,7 @@ ActionController::Base.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.try!:
   types:
@@ -2175,6 +2247,7 @@ ActionController::Base.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.urlsafe_csrf_tokens:
   types:
@@ -2194,6 +2267,7 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.urlsafe_csrf_tokens=:
   types:
@@ -2213,6 +2287,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base.use:
   types:
@@ -2347,6 +2422,7 @@ ActionController::Base#after_sign_in_path_for:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#after_sign_out_path_for:
   types:
@@ -2366,6 +2442,7 @@ ActionController::Base#after_sign_out_path_for:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#alert:
   types:
@@ -2385,6 +2462,7 @@ ActionController::Base#alert:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#allow_forgery_protection:
   types:
@@ -2404,6 +2482,7 @@ ActionController::Base#allow_forgery_protection:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#allow_forgery_protection=:
   types:
@@ -2423,6 +2502,7 @@ ActionController::Base#allow_forgery_protection=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#allow_params_authentication!:
   types:
@@ -2442,6 +2522,7 @@ ActionController::Base#allow_params_authentication!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#any_templates?:
   types:
@@ -2461,6 +2542,7 @@ ActionController::Base#any_templates?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#append_view_path:
   types:
@@ -2488,6 +2570,7 @@ ActionController::Base#asset_host:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#asset_host=:
   types:
@@ -2507,6 +2590,7 @@ ActionController::Base#asset_host=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#assets_dir:
   types:
@@ -2526,6 +2610,7 @@ ActionController::Base#assets_dir:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#assets_dir=:
   types:
@@ -2545,6 +2630,7 @@ ActionController::Base#assets_dir=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#authenticate_or_request_with_http_basic:
   types:
@@ -2605,6 +2691,7 @@ ActionController::Base#bypass_sign_in:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#cache_store:
   types:
@@ -2642,6 +2729,7 @@ ActionController::Base#cancel_registration_path:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#cancel_registration_url:
   types:
@@ -2661,6 +2749,7 @@ ActionController::Base#cancel_registration_url:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#class_eval:
   types:
@@ -2684,6 +2773,7 @@ ActionController::Base#collect_mimes_from_class_level:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#combined_fragment_cache_key:
   types:
@@ -2743,6 +2833,7 @@ ActionController::Base#default_asset_host_protocol:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_asset_host_protocol=:
   types:
@@ -2762,6 +2853,7 @@ ActionController::Base#default_asset_host_protocol=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_form_builder:
   types:
@@ -2785,6 +2877,7 @@ ActionController::Base#default_protect_from_forgery:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_protect_from_forgery=:
   types:
@@ -2804,6 +2897,7 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_render:
   types:
@@ -2827,6 +2921,7 @@ ActionController::Base#default_static_extension:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_static_extension=:
   types:
@@ -2846,6 +2941,7 @@ ActionController::Base#default_static_extension=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_url_options:
   types:
@@ -2865,6 +2961,7 @@ ActionController::Base#default_url_options:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_url_options=:
   types:
@@ -2884,6 +2981,7 @@ ActionController::Base#default_url_options=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#default_url_options?:
   types:
@@ -2903,6 +3001,7 @@ ActionController::Base#default_url_options?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#details_for_lookup:
   types:
@@ -2931,6 +3030,7 @@ ActionController::Base#devise_controller?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#devise_parameter_sanitizer:
   types:
@@ -2950,6 +3050,7 @@ ActionController::Base#devise_parameter_sanitizer:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#dispatch:
   types:
@@ -2982,6 +3083,7 @@ ActionController::Base#edit_polymorphic_path:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#edit_polymorphic_url:
   types:
@@ -3001,6 +3103,7 @@ ActionController::Base#edit_polymorphic_url:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#enable_fragment_cache_logging:
   types:
@@ -3020,6 +3123,7 @@ ActionController::Base#enable_fragment_cache_logging:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#enable_fragment_cache_logging=:
   types:
@@ -3039,6 +3143,7 @@ ActionController::Base#enable_fragment_cache_logging=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#etag_with_template_digest:
   types:
@@ -3058,6 +3163,7 @@ ActionController::Base#etag_with_template_digest:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#etag_with_template_digest=:
   types:
@@ -3077,6 +3183,7 @@ ActionController::Base#etag_with_template_digest=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#etag_with_template_digest?:
   types:
@@ -3096,6 +3203,7 @@ ActionController::Base#etag_with_template_digest?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#etaggers:
   types:
@@ -3115,6 +3223,7 @@ ActionController::Base#etaggers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#etaggers=:
   types:
@@ -3134,6 +3243,7 @@ ActionController::Base#etaggers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#etaggers?:
   types:
@@ -3153,6 +3263,7 @@ ActionController::Base#etaggers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#expire_fragment:
   types:
@@ -3193,6 +3304,7 @@ ActionController::Base#forgery_protection_origin_check:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#forgery_protection_origin_check=:
   types:
@@ -3212,6 +3324,7 @@ ActionController::Base#forgery_protection_origin_check=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#forgery_protection_strategy:
   types:
@@ -3231,6 +3344,7 @@ ActionController::Base#forgery_protection_strategy:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#forgery_protection_strategy=:
   types:
@@ -3250,6 +3364,7 @@ ActionController::Base#forgery_protection_strategy=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#formats:
   types:
@@ -3282,6 +3397,7 @@ ActionController::Base#fragment_cache_keys:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#fragment_cache_keys=:
   types:
@@ -3301,6 +3417,7 @@ ActionController::Base#fragment_cache_keys=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#fragment_cache_keys?:
   types:
@@ -3320,6 +3437,7 @@ ActionController::Base#fragment_cache_keys?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#fragment_exist?:
   types:
@@ -3382,6 +3500,7 @@ ActionController::Base#helpers_path:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#helpers_path=:
   types:
@@ -3401,6 +3520,7 @@ ActionController::Base#helpers_path=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#helpers_path?:
   types:
@@ -3420,6 +3540,7 @@ ActionController::Base#helpers_path?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#hotwire_native_app?:
   types:
@@ -3439,6 +3560,7 @@ ActionController::Base#hotwire_native_app?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#html_safe?:
   types:
@@ -3479,6 +3601,7 @@ ActionController::Base#include_all_helpers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#include_all_helpers=:
   types:
@@ -3498,6 +3621,7 @@ ActionController::Base#include_all_helpers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#include_all_helpers?:
   types:
@@ -3517,6 +3641,7 @@ ActionController::Base#include_all_helpers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#inspect:
   types:
@@ -3557,6 +3682,7 @@ ActionController::Base#is_flashing_format?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#is_navigational_format?:
   types:
@@ -3576,6 +3702,7 @@ ActionController::Base#is_navigational_format?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#javascripts_dir:
   types:
@@ -3595,6 +3722,7 @@ ActionController::Base#javascripts_dir:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#javascripts_dir=:
   types:
@@ -3614,6 +3742,7 @@ ActionController::Base#javascripts_dir=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#l:
   types:
@@ -3637,6 +3766,7 @@ ActionController::Base#locale:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#locale=:
   types:
@@ -3656,6 +3786,7 @@ ActionController::Base#locale=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#localize:
   types:
@@ -3689,6 +3820,7 @@ ActionController::Base#log_warning_on_csrf_failure:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#log_warning_on_csrf_failure=:
   types:
@@ -3708,6 +3840,7 @@ ActionController::Base#log_warning_on_csrf_failure=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#logger:
   types:
@@ -3727,6 +3860,7 @@ ActionController::Base#logger:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#logger=:
   types:
@@ -3746,6 +3880,7 @@ ActionController::Base#logger=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#lookup_context:
   types:
@@ -3769,6 +3904,7 @@ ActionController::Base#main_app:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#media_type:
   types:
@@ -3797,6 +3933,7 @@ ActionController::Base#middleware_stack:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#middleware_stack=:
   types:
@@ -3816,6 +3953,7 @@ ActionController::Base#middleware_stack=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#middleware_stack?:
   types:
@@ -3835,6 +3973,7 @@ ActionController::Base#middleware_stack?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#mimes_for_respond_to:
   types:
@@ -3854,6 +3993,7 @@ ActionController::Base#mimes_for_respond_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#mimes_for_respond_to=:
   types:
@@ -3873,6 +4013,7 @@ ActionController::Base#mimes_for_respond_to=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#mimes_for_respond_to?:
   types:
@@ -3892,6 +4033,7 @@ ActionController::Base#mimes_for_respond_to?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#new_polymorphic_path:
   types:
@@ -3911,6 +4053,7 @@ ActionController::Base#new_polymorphic_path:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#new_polymorphic_url:
   types:
@@ -3930,6 +4073,7 @@ ActionController::Base#new_polymorphic_url:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#no_store:
   types:
@@ -3953,6 +4097,7 @@ ActionController::Base#notice:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#params:
   types:
@@ -3980,6 +4125,7 @@ ActionController::Base#per_form_csrf_tokens:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#per_form_csrf_tokens=:
   types:
@@ -3999,6 +4145,7 @@ ActionController::Base#per_form_csrf_tokens=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#perform_caching:
   types:
@@ -4018,6 +4165,7 @@ ActionController::Base#perform_caching:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#perform_caching=:
   types:
@@ -4037,6 +4185,7 @@ ActionController::Base#perform_caching=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#performed?:
   types:
@@ -4094,6 +4243,7 @@ ActionController::Base#raise_on_missing_translations:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#raise_on_missing_translations=:
   types:
@@ -4113,6 +4263,7 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#raise_on_open_redirects:
   types:
@@ -4132,6 +4283,7 @@ ActionController::Base#raise_on_open_redirects:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#raise_on_open_redirects=:
   types:
@@ -4151,6 +4303,7 @@ ActionController::Base#raise_on_open_redirects=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#read_fragment:
   types:
@@ -4179,6 +4332,7 @@ ActionController::Base#recede_or_redirect_back_or_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#recede_or_redirect_to:
   types:
@@ -4198,6 +4352,7 @@ ActionController::Base#recede_or_redirect_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#redirect_back:
   types:
@@ -4229,6 +4384,7 @@ ActionController::Base#refresh_or_redirect_back_or_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#refresh_or_redirect_to:
   types:
@@ -4248,6 +4404,7 @@ ActionController::Base#refresh_or_redirect_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#relative_url_root:
   types:
@@ -4267,6 +4424,7 @@ ActionController::Base#relative_url_root:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#relative_url_root=:
   types:
@@ -4286,6 +4444,7 @@ ActionController::Base#relative_url_root=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#render:
   types:
@@ -4334,6 +4493,7 @@ ActionController::Base#request_forgery_protection_token:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#request_forgery_protection_token=:
   types:
@@ -4353,6 +4513,7 @@ ActionController::Base#request_forgery_protection_token=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#request_format:
   types:
@@ -4372,6 +4533,7 @@ ActionController::Base#request_format:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#request_http_basic_authentication:
   types:
@@ -4412,6 +4574,7 @@ ActionController::Base#rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#rescue_handlers=:
   types:
@@ -4431,6 +4594,7 @@ ActionController::Base#rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#rescue_handlers?:
   types:
@@ -4450,6 +4614,7 @@ ActionController::Base#rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#rescue_with_handler:
   types:
@@ -4481,6 +4646,7 @@ ActionController::Base#respond_with:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#responder:
   types:
@@ -4500,6 +4666,7 @@ ActionController::Base#responder:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#responder=:
   types:
@@ -4519,6 +4686,7 @@ ActionController::Base#responder=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#responder?:
   types:
@@ -4538,6 +4706,7 @@ ActionController::Base#responder?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#response:
   types:
@@ -4574,6 +4743,7 @@ ActionController::Base#resume_or_redirect_back_or_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#resume_or_redirect_to:
   types:
@@ -4593,6 +4763,7 @@ ActionController::Base#resume_or_redirect_to:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#route_for:
   types:
@@ -4649,6 +4820,7 @@ ActionController::Base#sign_in:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#sign_in_and_redirect:
   types:
@@ -4668,6 +4840,7 @@ ActionController::Base#sign_in_and_redirect:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#sign_out:
   types:
@@ -4687,6 +4860,7 @@ ActionController::Base#sign_out:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#sign_out_all_scopes:
   types:
@@ -4706,6 +4880,7 @@ ActionController::Base#sign_out_all_scopes:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#sign_out_and_redirect:
   types:
@@ -4725,6 +4900,7 @@ ActionController::Base#sign_out_and_redirect:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#signed_in?:
   types:
@@ -4744,6 +4920,7 @@ ActionController::Base#signed_in?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#signed_in_root_path:
   types:
@@ -4763,6 +4940,7 @@ ActionController::Base#signed_in_root_path:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#stale?:
   types:
@@ -4796,6 +4974,7 @@ ActionController::Base#store_location_for:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#stored_location_for:
   types:
@@ -4815,6 +4994,7 @@ ActionController::Base#stored_location_for:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#stylesheets_dir:
   types:
@@ -4834,6 +5014,7 @@ ActionController::Base#stylesheets_dir:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#stylesheets_dir=:
   types:
@@ -4853,6 +5034,7 @@ ActionController::Base#stylesheets_dir=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#t:
   types:
@@ -4876,6 +5058,7 @@ ActionController::Base#template_exists?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#to_a:
   types:
@@ -4917,6 +5100,7 @@ ActionController::Base#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#try!:
   types:
@@ -4937,6 +5121,7 @@ ActionController::Base#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#turbo_native_app?:
   types:
@@ -4956,6 +5141,7 @@ ActionController::Base#turbo_native_app?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#url_for:
   types:
@@ -4987,6 +5173,7 @@ ActionController::Base#urlsafe_csrf_tokens:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#verify_request_format!:
   types:
@@ -5006,6 +5193,7 @@ ActionController::Base#verify_request_format!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#verify_requested_format!:
   types:
@@ -5025,6 +5213,7 @@ ActionController::Base#verify_requested_format!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#view_assigns:
   types:
@@ -5065,6 +5254,7 @@ ActionController::Base#view_paths:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#view_renderer:
   types:
@@ -5088,6 +5278,7 @@ ActionController::Base#warden:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActionController::Base#with_options:
   types:

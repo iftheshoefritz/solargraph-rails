@@ -63,8 +63,7 @@ Similarly, if you want to test against a new version of Solargraph, you will get
 Example:
 
 ```sh
-cd spec/definitions
-gsed -i.bak -e 's/^  - branch-castwide-master$/  - branch-castwide-master\n  - branch-NEW-BRANCH-NAME-HERE/g' *.yml */*.yml
+cd spec/definitions && gsed -i.bak -e 's/^  - branch-castwide-master$/  - branch-castwide-master\n  - branch-NEW-BRANCH-NAME-HERE/g' *.yml */*.yml
 ```
 
 ### Generating assertions

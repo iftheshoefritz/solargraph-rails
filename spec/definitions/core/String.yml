@@ -247,6 +247,7 @@ String.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 String.try!:
   types:
@@ -267,6 +268,7 @@ String.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 String.with_options:
   types:
@@ -408,6 +410,7 @@ String#ext:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 String#first:
   types:
@@ -531,6 +534,7 @@ String#pathmap:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 String#pluralize:
   types:
@@ -685,6 +689,7 @@ String#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 String#try!:
   types:
@@ -705,6 +710,7 @@ String#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 String#underscore:
   types:

@@ -165,6 +165,7 @@ ActiveJob::Base.default_priority:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.default_priority=:
   types:
@@ -184,6 +185,7 @@ ActiveJob::Base.default_priority=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.default_queue_name:
   types:
@@ -203,6 +205,7 @@ ActiveJob::Base.default_queue_name:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.default_queue_name=:
   types:
@@ -222,6 +225,7 @@ ActiveJob::Base.default_queue_name=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.define_callbacks:
   types:
@@ -351,6 +355,7 @@ ActiveJob::Base.log_arguments:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.log_arguments=:
   types:
@@ -370,6 +375,7 @@ ActiveJob::Base.log_arguments=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.log_arguments?:
   types:
@@ -389,6 +395,7 @@ ActiveJob::Base.log_arguments?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.logger:
   types:
@@ -408,6 +415,7 @@ ActiveJob::Base.logger:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.logger=:
   types:
@@ -427,6 +435,7 @@ ActiveJob::Base.logger=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.mattr_accessor:
   types:
@@ -518,6 +527,7 @@ ActiveJob::Base.priority:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.priority=:
   types:
@@ -537,6 +547,7 @@ ActiveJob::Base.priority=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.priority?:
   types:
@@ -556,6 +567,7 @@ ActiveJob::Base.priority?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.pry:
   types:
@@ -615,6 +627,7 @@ ActiveJob::Base.queue_name:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name=:
   types:
@@ -634,6 +647,7 @@ ActiveJob::Base.queue_name=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name?:
   types:
@@ -653,6 +667,7 @@ ActiveJob::Base.queue_name?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name_delimiter:
   types:
@@ -672,6 +687,7 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name_delimiter=:
   types:
@@ -691,6 +707,7 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name_delimiter?:
   types:
@@ -710,6 +727,7 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name_from_part:
   types:
@@ -738,6 +756,7 @@ ActiveJob::Base.queue_name_prefix:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name_prefix=:
   types:
@@ -757,6 +776,7 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_name_prefix?:
   types:
@@ -776,6 +796,7 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.queue_with_priority:
   types:
@@ -836,6 +857,7 @@ ActiveJob::Base.rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.rescue_handlers=:
   types:
@@ -855,6 +877,7 @@ ActiveJob::Base.rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.rescue_handlers?:
   types:
@@ -874,6 +897,7 @@ ActiveJob::Base.rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.rescue_with_handler:
   types:
@@ -917,6 +941,7 @@ ActiveJob::Base.retry_jitter:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.retry_jitter=:
   types:
@@ -936,6 +961,7 @@ ActiveJob::Base.retry_jitter=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.retry_on:
   types:
@@ -989,6 +1015,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.skip_after_callbacks_if_terminated=:
   types:
@@ -1008,6 +1035,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.skip_callback:
   types:
@@ -1080,6 +1108,7 @@ ActiveJob::Base.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.try!:
   types:
@@ -1100,6 +1129,7 @@ ActiveJob::Base.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base.with_options:
   types:
@@ -1254,6 +1284,7 @@ ActiveJob::Base#logger=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#perform:
   types:
@@ -1315,6 +1346,7 @@ ActiveJob::Base#queue_adapter:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#queue_name:
   types:
@@ -1342,6 +1374,7 @@ ActiveJob::Base#queue_name_prefix:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#queue_name_prefix=:
   types:
@@ -1361,6 +1394,7 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#queue_name_prefix?:
   types:
@@ -1380,6 +1414,7 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#require_dependency:
   types:
@@ -1403,6 +1438,7 @@ ActiveJob::Base#rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#rescue_handlers=:
   types:
@@ -1422,6 +1458,7 @@ ActiveJob::Base#rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#rescue_handlers?:
   types:
@@ -1441,6 +1478,7 @@ ActiveJob::Base#rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#rescue_with_handler:
   types:
@@ -1480,6 +1518,7 @@ ActiveJob::Base#serialize:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#serialized_arguments=:
   types:
@@ -1537,6 +1576,7 @@ ActiveJob::Base#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#try!:
   types:
@@ -1557,6 +1597,7 @@ ActiveJob::Base#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
   - branch-fix_assignment_handling
 ActiveJob::Base#with_options:
   types:
