@@ -13,6 +13,7 @@ require_relative 'solargraph/rails/walker'
 require_relative 'solargraph/rails/rails_api'
 require_relative 'solargraph/rails/delegate'
 require_relative 'solargraph/rails/storage'
+require_relative 'solargraph/rails/puma'
 require_relative 'solargraph/rails/debug'
 require_relative 'solargraph/rails/version'
 
@@ -23,6 +24,9 @@ module Solargraph
     end
 
     class Convention < Solargraph::Convention::Base
+      # @param yard_map [Solargraph::DocMap]
+      #
+      # @return [Solargraph::Environ]
       def global(yard_map)
         Solargraph::Environ.new(
           pins: Solargraph::Rails::RailsApi.instance.global(yard_map)
@@ -34,6 +38,9 @@ module Solargraph
         EMPTY_ENVIRON
       end
 
+      # @param source_map [Solargraph::SourceMap]
+      #
+      # @return [Solargraph::Environ]
       def local(source_map)
         pins = []
         ds =
@@ -42,7 +49,12 @@ module Solargraph
           end
         ns = ds.first
 
-        return EMPTY_ENVIRON unless ns
+        basename = File.basename(source_map.filename)
+
+        environ = Solargraph::Environ.new
+        Puma.instance.add_dsl(environ, basename)
+
+        return environ unless ns
 
         pins += run_feature { Schema.instance.process(source_map, ns) }
         pins += run_feature { Annotate.instance.process(source_map, ns) }
@@ -53,11 +65,16 @@ module Solargraph
         pins += run_feature { Delegate.instance.process(source_map, ns) } if Delegate.supported?
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
 
-        Solargraph::Environ.new(pins: pins)
+        environ = Solargraph::Environ.new(pins: pins)
+        Puma.instance.add_dsl(environ, basename)
+        environ
       end
 
       private
 
+      # @yieldreturn [Array<Solargraph::Pin::Base>]
+      #
+      # @return [Array<Solargraph::Pin::Base>]
       def run_feature(&block)
         yield
       rescue => error
