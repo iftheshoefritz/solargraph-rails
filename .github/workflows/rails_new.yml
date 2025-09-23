@@ -61,7 +61,7 @@ jobs:
         run: |
           set -ex
           bundle update solargraph
-          gem install rails -v '~> ${{ matrix.rails }}.0'
+          gem install rails -v '~> ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}.0'
           pwd
           cd ..
           rails --version
