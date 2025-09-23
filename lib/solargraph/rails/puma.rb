@@ -5,15 +5,15 @@ module Solargraph
     class Puma
       EMPTY_ENVIRON = Environ.new
 
+      # @return [Solargraph::Rails::Puma]
       def self.instance
         @instance ||= new
       end
 
       # @param environ [Solargraph::Environ]
-      # @param source_map [Solargraph::SourceMap]
+      # @param basename [String]
       #
       # @return [void]
-      # @param [Object] basename
       def add_dsl(environ, basename)
         return unless basename == 'puma.rb'
 

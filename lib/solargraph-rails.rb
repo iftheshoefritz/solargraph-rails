@@ -24,6 +24,9 @@ module Solargraph
     end
 
     class Convention < Solargraph::Convention::Base
+      # @param yard_map [Solargraph::DocMap]
+      #
+      # @return [Solargraph::Environ]
       def global(yard_map)
         Solargraph::Environ.new(
           pins: Solargraph::Rails::RailsApi.instance.global(yard_map)
@@ -35,6 +38,9 @@ module Solargraph
         EMPTY_ENVIRON
       end
 
+      # @param source_map [Solargraph::SourceMap]
+      #
+      # @return [Solargraph::Environ]
       def local(source_map)
         pins = []
         ds =
@@ -66,6 +72,9 @@ module Solargraph
 
       private
 
+      # @yieldreturn [Array<Solargraph::Pin::Base>]
+      #
+      # @return [Array<Solargraph::Pin::Base>]
       def run_feature(&block)
         yield
       rescue => error
