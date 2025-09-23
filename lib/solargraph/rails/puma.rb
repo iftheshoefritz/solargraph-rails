@@ -8,7 +8,8 @@ module Solargraph
       end
 
       # @param source_map [Solargraph::SourceMap]
-      def local(source_map)
+      # @param ns [Solargraph::Pin::Namespace]
+      def process(source_map, ns)
         basename = File.basename(source_map.filename)
         return EMPTY_ENVIRON unless basename == 'puma.rb'
 
