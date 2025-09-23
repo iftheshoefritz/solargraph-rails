@@ -62,7 +62,7 @@ jobs:
           set -ex
           bundle update solargraph
           gem install rails -v '~> ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}.0'
-          gem uninstall -f concurrent-ruby
+          gem uninstall -I concurrent-ruby
           # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
           gem install concurrent-ruby -v 1.3.4
           pwd
