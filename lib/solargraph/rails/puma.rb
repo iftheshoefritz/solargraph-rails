@@ -5,6 +5,7 @@ module Solargraph
     class Puma
       EMPTY_ENVIRON = Environ.new
 
+      # @return [Solargraph::Rails::Puma]
       def self.instance
         @instance ||= new
       end
