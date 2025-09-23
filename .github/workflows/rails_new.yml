@@ -56,8 +56,8 @@ jobs:
           version: 1.0
       - name: Typecheck default 'rails new' code
         run: |
-          bundle update solargraph
           set -e
+          bundle update solargraph
           gem install rails
           pwd
           cd ..
