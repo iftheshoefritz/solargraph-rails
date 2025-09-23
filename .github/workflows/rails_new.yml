@@ -49,7 +49,7 @@ jobs:
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
-      - name: Update solargraph from branch if needed
+      - name: Typecheck default 'rails new' code
         run: |
           bundle update solargraph
           set -e
@@ -59,8 +59,8 @@ jobs:
           rails --version
           rails new test-project
           cd test-project
-          echo 'gem solargraph-rails, path: "../solargraph-rails"' >> Gemfile
-          echo 'gem solargraph, "${{ matrix.solargraph-version }}"' >> Gemfile
+          echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
+          echo 'gem "solargraph", "${{ matrix.solargraph-version }}"' >> Gemfile
           bundle add solargraph solargraph-rails
           bundle install
           bundle exec rbs collection install
