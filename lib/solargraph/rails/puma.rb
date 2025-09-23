@@ -6,20 +6,23 @@ module Solargraph
       EMPTY_ENVIRON = Environ.new
 
       def self.instance
-        @instance ||= self.new
+        @instance ||= new
       end
 
       # @param environ [Solargraph::Environ]
       # @param source_map [Solargraph::SourceMap]
       #
       # @return [void]
-      def add_dsl(environ, source_map)
-        basename = File.basename(source_map.filename)
-
+      # @param [Object] basename
+      def add_dsl(environ, basename)
         return unless basename == 'puma.rb'
 
-        environ.requires += 'puma'
-        environ.domains += '::Puma::DSL'
+        environ.requires.push('puma')
+        environ.domains.push('Puma::DSL')
+
+        Solargraph.logger.warn(
+          "[Rails][Puma] added DSL to environ: #{environ.inspect}"
+        )
       end
     end
   end

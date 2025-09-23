@@ -43,7 +43,12 @@ module Solargraph
           end
         ns = ds.first
 
-        return EMPTY_ENVIRON unless ns
+        basename = File.basename(source_map.filename)
+
+        environ = Solargraph::Environ.new
+        Puma.instance.add_dsl(environ, basename)
+
+        return environ unless ns
 
         pins += run_feature { Schema.instance.process(source_map, ns) }
         pins += run_feature { Annotate.instance.process(source_map, ns) }
@@ -55,7 +60,7 @@ module Solargraph
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
 
         environ = Solargraph::Environ.new(pins: pins)
-        Puma.instance.add_dsl(environ, source_map)
+        Puma.instance.add_dsl(environ, basename)
         environ
       end
 
