@@ -9,16 +9,17 @@ module Solargraph
         @instance ||= self.new
       end
 
+      # @param environ [Solargraph::Environ]
       # @param source_map [Solargraph::SourceMap]
-      # @param ns [Solargraph::Pin::Namespace]
-      def process(source_map, ns)
+      #
+      # @return [void]
+      def add_dsl(environ, source_map)
         basename = File.basename(source_map.filename)
-        return EMPTY_ENVIRON unless basename == 'puma.rb'
 
-        @local ||= Environ.new(
-          requires: ['puma'],
-          domains: ['::Puma::DSL']
-        )
+        return unless basename == 'puma.rb'
+
+        environ.requires += 'puma'
+        environ.domains += '::Puma::DSL'
       end
     end
   end

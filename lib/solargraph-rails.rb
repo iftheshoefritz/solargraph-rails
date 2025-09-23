@@ -51,11 +51,12 @@ module Solargraph
         pins += run_feature { Storage.instance.process(source_map, ns) }
         pins += run_feature { Autoload.instance.process(source_map, ns, ds) }
         pins += run_feature { Devise.instance.process(source_map, ns) }
-        pins += run_feature { Puma.instance.process(source_map, ns) }
         pins += run_feature { Delegate.instance.process(source_map, ns) } if Delegate.supported?
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
 
-        Solargraph::Environ.new(pins: pins)
+        environ = Solargraph::Environ.new(pins: pins)
+        Puma.instance.add_dsl(environ, source_map)
+        environ
       end
 
       private
