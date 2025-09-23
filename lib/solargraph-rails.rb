@@ -13,6 +13,7 @@ require_relative 'solargraph/rails/walker'
 require_relative 'solargraph/rails/rails_api'
 require_relative 'solargraph/rails/delegate'
 require_relative 'solargraph/rails/storage'
+require_relative 'solargraph/rails/puma'
 require_relative 'solargraph/rails/debug'
 require_relative 'solargraph/rails/version'
 
@@ -50,6 +51,7 @@ module Solargraph
         pins += run_feature { Storage.instance.process(source_map, ns) }
         pins += run_feature { Autoload.instance.process(source_map, ns, ds) }
         pins += run_feature { Devise.instance.process(source_map, ns) }
+        pins += run_feature { Puma.instance.process(source_map, ns) }
         pins += run_feature { Delegate.instance.process(source_map, ns) } if Delegate.supported?
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
 
