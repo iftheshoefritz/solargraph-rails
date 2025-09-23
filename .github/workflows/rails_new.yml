@@ -1,0 +1,47 @@
+name: rails new
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+permissions:
+  contents: read
+
+jobs:
+  rails_new:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['head']
+        rbs-version: ['4.0.0.dev.4']
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: false
+    - name: Set rbs version
+      run: echo "gem 'rbs', '${{ matrix.rbs-version }}'" >> .Gemfile
+    #  /home/runner/.rubies/ruby-head/lib/ruby/gems/3.5.0+2/gems/rbs-3.9.4/lib/rbs.rb:11:
+    #    warning: tsort was loaded from the standard library,
+    #    but will no longer be part of the default gems
+    #    starting from Ruby 3.6.0
+    - name: Work around legacy rbs deprecation on ruby > 3.4
+      run: echo "gem 'tsort'" >> .Gemfile
+    - name: Install gems
+      run: |
+        bundle install
+        bundle update rbs # use latest available for this Ruby version
+    - name: Run tests
+      run: |
+        set -e
+        gem install rails
+        rails new test-project
+        cd test-project
+        bundle add solargraph solargraph-rails
+        bundle install
+        bundle exec rbs collection install
+        bundle exec solargraph typecheck --level strong
