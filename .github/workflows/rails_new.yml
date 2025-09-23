@@ -16,7 +16,8 @@ on:
       - 'v*'
 
 jobs:
-  rails_new:
+  typecheck_strong:
+    name: strong typecheck
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -61,7 +62,6 @@ jobs:
           cd test-project
           echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
           echo 'gem "solargraph", "${{ matrix.solargraph-version }}"' >> Gemfile
-          bundle add solargraph solargraph-rails
           bundle install
           bundle exec rbs collection install
           bundle exec solargraph typecheck --level strong
