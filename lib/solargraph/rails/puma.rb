@@ -2,7 +2,7 @@
 
 module Solargraph
   module Convention
-    class Rakefile < Base
+    class Puma < Base
       # @param source_map [Solargraph::SourceMap]
       def local(source_map)
         basename = File.basename(source_map.filename)
