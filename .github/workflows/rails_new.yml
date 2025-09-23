@@ -60,13 +60,13 @@ jobs:
           rails --version
           rails new test-project
           cd test-project
-          bundle exec solargraph init
-          yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
           echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
           echo 'gem "solargraph", "${{ matrix.solargraph-version }}"' >> Gemfile
           bundle install
           bundle exec rbs collection init
           bundle exec rbs collection install
+          bundle exec solargraph init
+          yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
           bundle exec solargraph typecheck --level strong
         env:
           # Used in Gemfile/gemspec
