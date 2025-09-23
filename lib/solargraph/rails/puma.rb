@@ -10,7 +10,7 @@ module Solargraph
 
         @local ||= Environ.new(
           requires: ['puma'],
-          domains: ['Puma::DSL']
+          domains: ['::Puma::DSL']
         )
       end
     end
