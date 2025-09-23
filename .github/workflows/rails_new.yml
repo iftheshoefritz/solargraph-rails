@@ -82,3 +82,12 @@ jobs:
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+      - name: Cache gem annotations
+        id: dot-cache-save
+        if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          key: |
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+          path: |
+            /home/runner/.cache/solargraph
