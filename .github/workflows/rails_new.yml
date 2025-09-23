@@ -39,6 +39,7 @@ jobs:
       run: |
         set -e
         gem install rails
+        rails --version
         rails new test-project
         cd test-project
         bundle add solargraph solargraph-rails
