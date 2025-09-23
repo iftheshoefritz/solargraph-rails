@@ -60,6 +60,8 @@ jobs:
           rails --version
           rails new test-project
           cd test-project
+          bundle exec solargraph init
+          yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
           echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
           echo 'gem "solargraph", "${{ matrix.solargraph-version }}"' >> Gemfile
           bundle install
