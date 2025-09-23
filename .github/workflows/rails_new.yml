@@ -1,48 +1,72 @@
-name: rails new
+# To debug locally:
+#   npm install -g act
+#   act pull_request
+#
+
+name: New Rails project
 
 on:
-  push:
-    branches: [ master ]
+  workflow_dispatch: {}
   pull_request:
-    branches: [ master ]
-
-permissions:
-  contents: read
+    branches: [main]
+  push:
+    branches:
+      - 'main'
+    tags:
+      - 'v*'
 
 jobs:
   rails_new:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['head']
-        rbs-version: ['4.0.0.dev.4']
+        versions:
+          # ruby 3.2 is minimum Ruby supported by Rails 8.0
+          - ruby: "3.2"
+            rails-major: "8"
+            rails-minor: "0"
+        solargraph-version:
+          - "0.57.0"
+          - "branch-castwide-master"
+        include:
+          - versions:
+              ruby: "3.2"
+              rails-major: "8"
+              rails-minor: "0"
+            solargraph-version: "branch-castwide-master"
+            run_coverage: true
+      fail-fast: false
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: false
-    - name: Set rbs version
-      run: echo "gem 'rbs', '${{ matrix.rbs-version }}'" >> .Gemfile
-    #  /home/runner/.rubies/ruby-head/lib/ruby/gems/3.5.0+2/gems/rbs-3.9.4/lib/rbs.rb:11:
-    #    warning: tsort was loaded from the standard library,
-    #    but will no longer be part of the default gems
-    #    starting from Ruby 3.6.0
-    - name: Work around legacy rbs deprecation on ruby > 3.4
-      run: echo "gem 'tsort'" >> .Gemfile
-    - name: Install gems
-      run: |
-        bundle install
-        bundle update rbs # use latest available for this Ruby version
-    - name: Run tests
-      run: |
-        set -e
-        gem install rails
-        rails --version
-        rails new test-project
-        cd test-project
-        bundle add solargraph solargraph-rails
-        bundle install
-        bundle exec rbs collection install
-        bundle exec solargraph typecheck --level strong
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.versions.ruby }}
+          bundler: latest
+          bundler-cache: true
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-09-09
+        env:
+          # Used in Gemfile/gemspec
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+      - name: Update solargraph from branch if needed
+        run: |
+          bundle update solargraph
+          set -e
+          gem install rails
+          pwd
+          cd ..
+          rails --version
+          rails new test-project
+          cd test-project
+          echo 'gem solargraph-rails, path: "../solargraph-rails"' >> Gemfile
+          echo 'gem solargraph, "${{ matrix.solargraph-version }}"' >> Gemfile
+          bundle add solargraph solargraph-rails
+          bundle install
+          bundle exec rbs collection install
+          bundle exec solargraph typecheck --level strong
+        env:
+          # Used in Gemfile/gemspec
+          MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
