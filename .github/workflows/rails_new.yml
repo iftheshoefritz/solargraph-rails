@@ -57,6 +57,20 @@ jobs:
         with:
           packages: yq
           version: 1.0
+      - name: Restore cache of gem annotations
+        id: dot-cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          key: |
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
+          path: |
+            /home/runner/.cache/solargraph
+
       - name: Typecheck default 'rails new' code
         run: |
           set -ex
