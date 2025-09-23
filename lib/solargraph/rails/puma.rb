@@ -2,7 +2,11 @@
 
 module Solargraph
   module Rails
-    class Puma < Base
+    class Puma
+      def self.instance
+        @instance ||= self.new
+      end
+
       # @param source_map [Solargraph::SourceMap]
       def local(source_map)
         basename = File.basename(source_map.filename)
