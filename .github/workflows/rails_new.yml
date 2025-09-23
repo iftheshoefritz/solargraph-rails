@@ -69,6 +69,8 @@ jobs:
           cd test-project
           echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
           echo 'gem "solargraph", "${{ matrix.solargraph-version }}"' >> Gemfile
+          # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
+          echo "gem 'concurrent-ruby', '1.3.4'" >> Gemfile
           bundle install
           bundle exec rbs collection init
           bundle exec rbs collection install
