@@ -64,7 +64,6 @@ jobs:
           gem install rails -v '~> ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}.0'
           pwd
           cd ..
-          rails --version
           rails new test-project
           cd test-project
           echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
@@ -72,6 +71,7 @@ jobs:
           # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
           echo "gem 'concurrent-ruby', '1.3.4'" >> Gemfile
           bundle install
+          bin/rails --version
           bundle exec rbs collection init
           bundle exec rbs collection install
           bundle exec solargraph config
