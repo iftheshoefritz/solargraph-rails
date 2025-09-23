@@ -3,6 +3,8 @@
 module Solargraph
   module Rails
     class Puma
+      EMPTY_ENVIRON = Environ.new
+
       def self.instance
         @instance ||= self.new
       end
