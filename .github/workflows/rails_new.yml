@@ -50,6 +50,10 @@ jobs:
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: yq
+          version: 1.0
       - name: Typecheck default 'rails new' code
         run: |
           bundle update solargraph
@@ -65,7 +69,7 @@ jobs:
           bundle install
           bundle exec rbs collection init
           bundle exec rbs collection install
-          bundle exec solargraph init
+          bundle exec solargraph config
           yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
           bundle exec solargraph typecheck --level strong
         env:
