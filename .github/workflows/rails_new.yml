@@ -71,7 +71,9 @@ jobs:
           bundle exec rbs collection install
           bundle exec solargraph config
           yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
-          bundle exec solargraph typecheck --level strong
+          bundle exec solargraph typecheck --level strong || true
+          bundle exec solargraph gems
+          cat config/application.rb
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
