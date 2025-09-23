@@ -63,6 +63,7 @@ jobs:
           echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
           echo 'gem "solargraph", "${{ matrix.solargraph-version }}"' >> Gemfile
           bundle install
+          bundle exec rbs collection init
           bundle exec rbs collection install
           bundle exec solargraph typecheck --level strong
         env:
