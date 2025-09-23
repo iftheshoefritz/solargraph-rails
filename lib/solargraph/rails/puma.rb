@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Solargraph
-  module Convention
+  module Rails
     class Puma < Base
       # @param source_map [Solargraph::SourceMap]
       def local(source_map)
