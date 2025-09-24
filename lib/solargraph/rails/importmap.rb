@@ -5,7 +5,7 @@ module Solargraph
     class Importmap
       EMPTY_ENVIRON = Environ.new
 
-      # @return [Solargraph::Rails::Puma]
+      # @return [Solargraph::Rails::Importmap]
       def self.instance
         @instance ||= new
       end
