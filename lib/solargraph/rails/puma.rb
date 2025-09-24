@@ -20,7 +20,7 @@ module Solargraph
         environ.requires.push('puma')
         environ.domains.push('Puma::DSL')
 
-        Solargraph.logger.warn(
+        Solargraph.logger.debug(
           "[Rails][Puma] added DSL to environ: #{environ.inspect}"
         )
       end
