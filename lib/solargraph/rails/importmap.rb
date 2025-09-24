@@ -2,10 +2,10 @@
 
 module Solargraph
   module Rails
-    class Puma
+    class Importmap
       EMPTY_ENVIRON = Environ.new
 
-      # @return [Solargraph::Rails::Puma]
+      # @return [Solargraph::Rails::Importmap]
       def self.instance
         @instance ||= new
       end
@@ -15,13 +15,13 @@ module Solargraph
       #
       # @return [void]
       def add_dsl(environ, basename)
-        return unless basename == 'puma.rb'
+        return unless basename == 'importmap.rb'
 
-        environ.requires.push('puma')
-        environ.domains.push('Puma::DSL')
+        environ.requires.push('importmap-rails')
+        environ.domains.push('Importmap::Map')
 
         Solargraph.logger.debug(
-          "[Rails][Puma] added DSL to environ: #{environ.inspect}"
+          "[Rails][Importmap] added DSL to environ: #{environ.inspect}"
         )
       end
     end
