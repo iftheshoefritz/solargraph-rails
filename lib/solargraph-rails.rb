@@ -14,6 +14,7 @@ require_relative 'solargraph/rails/rails_api'
 require_relative 'solargraph/rails/delegate'
 require_relative 'solargraph/rails/storage'
 require_relative 'solargraph/rails/puma'
+require_relative 'solargraph/rails/importmap'
 require_relative 'solargraph/rails/debug'
 require_relative 'solargraph/rails/version'
 
@@ -53,6 +54,7 @@ module Solargraph
 
         environ = Solargraph::Environ.new
         Puma.instance.add_dsl(environ, basename)
+        Importmap.instance.add_dsl(environ, basename)
 
         return environ unless ns
 
