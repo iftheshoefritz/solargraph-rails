@@ -255,6 +255,8 @@ File.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 File.try!:
   types:
   - generic<T>
@@ -274,6 +276,8 @@ File.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 File.with_options:
   types:
   - undefined
@@ -453,6 +457,8 @@ File#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 File#try!:
   types:
   - generic<T>
@@ -472,6 +478,8 @@ File#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 File#with_options:
   types:
   - undefined

@@ -255,6 +255,8 @@ Hash.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash.try!:
   types:
   - generic<T>
@@ -274,6 +276,8 @@ Hash.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash.with_options:
   types:
   - undefined
@@ -356,6 +360,8 @@ Hash#deep_stringify_keys!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash#deep_symbolize_keys:
   types:
   - Hash{Symbol, undefined}
@@ -374,6 +380,8 @@ Hash#deep_symbolize_keys:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash#deep_symbolize_keys!:
   types:
   - Hash{Symbol, undefined}
@@ -392,6 +400,8 @@ Hash#deep_symbolize_keys!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash#deep_transform_keys:
   types:
   - undefined
@@ -645,6 +655,8 @@ Hash#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash#try!:
   types:
   - generic<T>
@@ -664,6 +676,8 @@ Hash#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Hash#with_defaults:
   types:
   - undefined

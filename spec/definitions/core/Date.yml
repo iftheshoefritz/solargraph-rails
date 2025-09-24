@@ -275,6 +275,8 @@ Date.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date.try!:
   types:
   - generic<T>
@@ -294,6 +296,8 @@ Date.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date.with_options:
   types:
   - undefined
@@ -340,6 +344,8 @@ Date#<=>:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date#acts_like?:
   types:
   - Boolean
@@ -428,6 +434,8 @@ Date#as_json:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -622,6 +630,8 @@ Date#in_time_zone:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date#infinite?:
   types:
   - Boolean
@@ -842,6 +852,8 @@ Date#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date#try!:
   types:
   - generic<T>
@@ -861,6 +873,8 @@ Date#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Date#weeks_ago:
   types:
   - undefined

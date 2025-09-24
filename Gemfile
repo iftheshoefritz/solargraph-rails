@@ -57,6 +57,12 @@ when '0.57.alpha'
   gem "solargraph",
       github: 'apiology/solargraph',
       branch: '2025-07-02'
+# 2025-09-21: temporarily overridden while specs failing on
+# castwide/master
+when 'branch-castwide-master'
+  gem "solargraph",
+      github: 'apiology/solargraph',
+      branch: 'master'
 when /branch-castwide-(.*)/
   gem "solargraph",
       github: 'castwide/solargraph',

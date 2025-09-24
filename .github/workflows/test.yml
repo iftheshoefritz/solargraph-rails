@@ -48,6 +48,7 @@ jobs:
           - "0.56.2"
           - "0.57.0"
           - "branch-castwide-master"
+          - "branch-2025-09-22"
         include:
           - versions:
               ruby: "3.2"

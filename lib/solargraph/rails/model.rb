@@ -24,17 +24,20 @@ module Solargraph
           type: :class,
           visibility: :private,
           closure: ns,
+          source: :solargraph_rails_model,
         )
         pins << Solargraph::Pin::Reference::Superclass.new(
           name: "ActiveRecord::Relation",
           closure: relation,
+          source: :solargraph_rails_model,
         )
 
         pins << Solargraph::Pin::Method.new(
           name: 'model',
           scope: :instance,
           closure: relation,
-          comments: "@return [Class<#{ns.name}>]"
+          comments: "@return [Class<#{ns.name}>]",
+          source: :solargraph_rails_model,
         )
 
         walker = Walker.from_source(source_map.source)
@@ -104,7 +107,12 @@ module Solargraph
           next unless Delegate.supported?
           next unless pin.is_a?(Solargraph::Pin::Method) && pin.scope == :class && pin.closure == ns
 
-          pins << Solargraph::Pin::DelegatedMethod.new(closure: relation, scope: :instance, method: pin)
+          pins << Solargraph::Pin::DelegatedMethod.new(
+            closure: relation,
+            scope: :instance,
+            method: pin,
+            source: :solargraph_rails_model,
+          )
         end
 
         unless abstract
@@ -181,6 +189,7 @@ module Solargraph
               decl = :restarg
             end
             method.parameters << Solargraph::Pin::Parameter.new(name: name, decl: decl, closure: method,
+                                                                source: :solargraph_rails_model,
                                                                 comments: "@return [#{type}]")
           end
           pins << method

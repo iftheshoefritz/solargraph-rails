@@ -39,7 +39,7 @@ Consider setting skip=false
   provides completions for ActionDispatch::Routing::Mapper
 ```
 
-In this case there are 2 options:
+In this case there are 3 options:
 1. Manually updating yml file and setting `skip: false` for that method
 2. Updating yml file in place by passing `update: true` to assertion:
 
@@ -52,8 +52,19 @@ In this case there are 2 options:
      )
    end
 ```
+3. Set `FORCE_UPDATE=true` while running specs.
 
 In case of option 2, don't forget to remove the flag after yml file has been updated. Also review git diff, to make sure that no regressions have been set (skip=true was set for entries which previously had skip=false)
+
+### Adding branch to test
+
+Similarly, if you want to test against a new version of Solargraph, you will get a variety of errors.  The best thing to do in that case is to copy existing definitions of the master branch into your new expectations, then adjust any failures from there.
+
+Example:
+
+```sh
+cd spec/definitions && gsed -i.bak -e 's/^  - branch-castwide-master$/  - branch-castwide-master\n  - branch-NEW-BRANCH-NAME-HERE/g' *.yml */*.yml
+```
 
 ### Generating assertions
 

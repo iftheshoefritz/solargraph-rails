@@ -247,6 +247,8 @@ Array.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Array.try!:
   types:
   - generic<T>
@@ -266,6 +268,8 @@ Array.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Array.with_options:
   types:
   - undefined
@@ -540,6 +544,8 @@ Array#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Array#try!:
   types:
   - generic<T>
@@ -559,6 +565,8 @@ Array#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
+  - branch-fix_assignment_handling
 Array#with_options:
   types:
   - undefined

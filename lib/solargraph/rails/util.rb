@@ -18,7 +18,8 @@ module Solargraph
           location: location,
           closure: ns,
           scope: scope,
-          attribute: attribute
+          attribute: attribute,
+          source: :solargraph_rails_util
         }
 
         comments_arr = [comments].compact
@@ -38,7 +39,8 @@ module Solargraph
               name: name,
               presence: nil,
               decl: :arg,
-              asgn_code: nil
+              asgn_code: nil,
+              source: :solargraph_rails_util
             )
         end
         m.parameters.concat(parameters)
@@ -49,7 +51,8 @@ module Solargraph
         Solargraph::Pin::Reference::Include.new(
           closure: ns,
           name: module_name,
-          location: location
+          location: location,
+          source: :solargraph_rails_util
         )
       end
 
@@ -57,7 +60,8 @@ module Solargraph
         Solargraph::Pin::Reference::Extend.new(
           closure: ns,
           name: module_name,
-          location: location
+          location: location,
+          source: :solargraph_rails_util
         )
       end
 
