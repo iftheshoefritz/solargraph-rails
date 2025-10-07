@@ -165,6 +165,7 @@ ActiveJob::Base.default_priority:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.default_priority=:
   types:
   - undefined
@@ -183,6 +184,7 @@ ActiveJob::Base.default_priority=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.default_queue_name:
   types:
   - undefined
@@ -201,6 +203,7 @@ ActiveJob::Base.default_queue_name:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.default_queue_name=:
   types:
   - undefined
@@ -219,6 +222,7 @@ ActiveJob::Base.default_queue_name=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.define_callbacks:
   types:
   - undefined
@@ -347,6 +351,7 @@ ActiveJob::Base.log_arguments:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.log_arguments=:
   types:
   - undefined
@@ -365,6 +370,7 @@ ActiveJob::Base.log_arguments=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.log_arguments?:
   types:
   - undefined
@@ -383,6 +389,7 @@ ActiveJob::Base.log_arguments?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.logger:
   types:
   - undefined
@@ -401,6 +408,7 @@ ActiveJob::Base.logger:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.logger=:
   types:
   - undefined
@@ -419,6 +427,7 @@ ActiveJob::Base.logger=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.mattr_accessor:
   types:
   - undefined
@@ -509,6 +518,7 @@ ActiveJob::Base.priority:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.priority=:
   types:
   - undefined
@@ -527,6 +537,7 @@ ActiveJob::Base.priority=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.priority?:
   types:
   - undefined
@@ -545,6 +556,7 @@ ActiveJob::Base.priority?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.pry:
   types:
   - undefined
@@ -603,6 +615,7 @@ ActiveJob::Base.queue_name:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name=:
   types:
   - undefined
@@ -621,6 +634,7 @@ ActiveJob::Base.queue_name=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name?:
   types:
   - undefined
@@ -639,6 +653,7 @@ ActiveJob::Base.queue_name?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name_delimiter:
   types:
   - undefined
@@ -657,6 +672,7 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name_delimiter=:
   types:
   - undefined
@@ -675,6 +691,7 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name_delimiter?:
   types:
   - undefined
@@ -693,6 +710,7 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name_from_part:
   types:
   - undefined
@@ -720,6 +738,7 @@ ActiveJob::Base.queue_name_prefix:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name_prefix=:
   types:
   - undefined
@@ -738,6 +757,7 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_name_prefix?:
   types:
   - undefined
@@ -756,6 +776,7 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.queue_with_priority:
   types:
   - void
@@ -815,6 +836,7 @@ ActiveJob::Base.rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.rescue_handlers=:
   types:
   - undefined
@@ -833,6 +855,7 @@ ActiveJob::Base.rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.rescue_handlers?:
   types:
   - undefined
@@ -851,6 +874,7 @@ ActiveJob::Base.rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.rescue_with_handler:
   types:
   - undefined
@@ -893,6 +917,7 @@ ActiveJob::Base.retry_jitter:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.retry_jitter=:
   types:
   - undefined
@@ -911,6 +936,7 @@ ActiveJob::Base.retry_jitter=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.retry_on:
   types:
   - void
@@ -963,6 +989,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.skip_after_callbacks_if_terminated=:
   types:
   - undefined
@@ -981,6 +1008,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.skip_callback:
   types:
   - undefined
@@ -1052,6 +1080,7 @@ ActiveJob::Base.try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.try!:
   types:
   - generic<T>
@@ -1071,6 +1100,7 @@ ActiveJob::Base.try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base.with_options:
   types:
   - undefined
@@ -1224,6 +1254,7 @@ ActiveJob::Base#logger=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#perform:
   types:
   - undefined
@@ -1284,6 +1315,7 @@ ActiveJob::Base#queue_adapter:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#queue_name:
   types:
   - undefined
@@ -1310,6 +1342,7 @@ ActiveJob::Base#queue_name_prefix:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#queue_name_prefix=:
   types:
   - undefined
@@ -1328,6 +1361,7 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#queue_name_prefix?:
   types:
   - undefined
@@ -1346,6 +1380,7 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#require_dependency:
   types:
   - undefined
@@ -1368,6 +1403,7 @@ ActiveJob::Base#rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#rescue_handlers=:
   types:
   - undefined
@@ -1386,6 +1422,7 @@ ActiveJob::Base#rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#rescue_handlers?:
   types:
   - undefined
@@ -1404,6 +1441,7 @@ ActiveJob::Base#rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#rescue_with_handler:
   types:
   - undefined
@@ -1442,6 +1480,7 @@ ActiveJob::Base#serialize:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#serialized_arguments=:
   types:
   - undefined
@@ -1498,6 +1537,7 @@ ActiveJob::Base#try:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#try!:
   types:
   - generic<T>
@@ -1517,6 +1557,7 @@ ActiveJob::Base#try!:
   - 0.57.0
   - 0.57.alpha
   - branch-castwide-master
+  - branch-2025-09-22
 ActiveJob::Base#with_options:
   types:
   - undefined
