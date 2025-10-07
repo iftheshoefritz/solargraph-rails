@@ -16,6 +16,129 @@ class ActiveRecord::ConnectionAdapters::SchemaStatements
   def change_table(table_name, **options); end
 end
 
+class ActiveRecord::ConnectionAdapters::ColumnMethods
+  # included do
+  #   define_column_methods :bigint, :binary, :boolean, :date, :datetime, :decimal,
+  #     :float, :integer, :json, :string, :text, :time, :timestamp, :virtual
+  #   alias :blob :binary
+  #   alias :numeric :decimal
+  # end
+
+  # def define_column_methods(*column_types) # :nodoc:
+  #   column_types.each do |column_type|
+  #     module_eval <<-RUBY, __FILE__, __LINE__ + 1
+  #       def #{column_type}(*names, **options)
+  #         raise ArgumentError, "Missing column name(s) for #{column_type}" if names.empty?
+  #         names.each { |name| column(name, :#{column_type}, **options) }
+  #       end
+  #     RUBY
+  #   end
+
+  # decimal
+  #
+  # @param names [Array<Symbol, String>]
+  # @param precision [Integer, nil]
+  # @param scale [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def decimal(*names, precision: nil, scale: nil, **options); end
+  # bigint
+  #
+  # @param names [Array<Symbol, String>]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def bigint(*names, **options); end
+  # virtual
+  #
+  # @param names [Array<Symbol, String>]
+  # @param type [Symbol, String]
+  # @param as [String]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def virtual(*names, type, as:, **options); end
+  # json
+  #
+  # @param names [Array<Symbol, String>]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def json(*names, **options); end
+  # jsonb
+  #
+  # @param names [Array<Symbol, String>]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def jsonb(*names, **options); end
+  # boolean
+  #
+  # @param names [Array<Symbol, String>]
+  # @param options [Hash{Symbol => undefined}]
+  # @param names [Array<Symbol, String>]
+  # @return [void]
+  def boolean(*names, **options); end
+  # string
+  #
+  # @param names [Array<Symbol, String>]
+  # @param limit [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def string(*names, limit: nil, **options); end
+  # text
+  #
+  # @param names [Array<Symbol, String>]
+  # @param limit [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def text(*names, limit: nil, **options); end
+  # integer
+  #
+  # @param names [Array<Symbol, String>]
+  # @param limit [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def integer(*names, limit: nil, **options); end
+  # float
+  #
+  # @param names [Array<Symbol, String>]
+  # @param limit [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def float(*names, limit: nil, **options); end
+  # binary
+  #
+  # @param names [Array<Symbol, String>]
+  # @param limit [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def binary(*names, limit: nil, **options); end
+  # date
+  #
+  # @param names [Array<Symbol, String>]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def date(*names, **options); end
+  # datetime
+  #
+  # @param names [Array<Symbol, String>]
+  # @param precision [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def datetime(*names, precision: nil, **options); end
+  # time
+  #
+  # @param names [Array<Symbol, String>]
+  # @param precision [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def time(*names, precision: nil, **options); end
+  # timestamp
+  #
+  # @param names [Array<Symbol, String>]
+  # @param precision [Integer, nil]
+  # @param options [Hash{Symbol => undefined}]
+  # @return [void]
+  def timestamp(*names, precision: nil, **options); end
+end
+
 module ActiveRecord::Core
   # @param methods [Symbol]
   # @return [ActiveSupport::HashWithIndifferentAccess<Symbol>]
@@ -33,6 +156,18 @@ end
 
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
+end
+
+module ActiveRecord
+  class Schema
+    # @param version [Numeric]
+    #
+    # @return [Class<ActiveRecord::Schema>]
+    def self.[](version); end
+
+    # @yieldreceiver [ActiveRecord::ConnectionAdapters::SchemaStatements]
+    def self.define(info = {}, &block); end
+  end
 end
 
 class ActiveRecord::Base
