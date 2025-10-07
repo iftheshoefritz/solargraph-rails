@@ -79,7 +79,8 @@ jobs:
           # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
           echo "gem 'concurrent-ruby', '1.3.4'" >> Gemfile
           bundle install
-          bundle info solargraph solargraph-rails
+          bundle info solargraph
+          bundle info solargraph-rails
           bin/rails --version
           bundle exec rbs collection init
           bundle exec rbs collection install
