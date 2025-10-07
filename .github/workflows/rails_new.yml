@@ -1,47 +1,101 @@
-name: rails new
+# To debug locally:
+#   npm install -g act
+#   act pull_request
+#
+
+name: New Rails project
 
 on:
-  push:
-    branches: [ master ]
+  workflow_dispatch: {}
   pull_request:
-    branches: [ master ]
-
-permissions:
-  contents: read
+    branches: [main]
+  push:
+    branches:
+      - 'main'
+    tags:
+      - 'v*'
 
 jobs:
-  rails_new:
+  typecheck_strong:
+    name: strong typecheck
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['head']
-        rbs-version: ['4.0.0.dev.4']
+        versions:
+          # ruby 3.2 is minimum Ruby supported by Rails 8.0
+          - ruby: "3.2"
+            rails-major: "8"
+            rails-minor: "0"
+          - ruby: "3.2"
+            rails-major: "7"
+            rails-minor: "0"
+          - ruby: "3.2"
+            rails-major: "7"
+            rails-minor: "1"
+      fail-fast: false
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: false
-    - name: Set rbs version
-      run: echo "gem 'rbs', '${{ matrix.rbs-version }}'" >> .Gemfile
-    #  /home/runner/.rubies/ruby-head/lib/ruby/gems/3.5.0+2/gems/rbs-3.9.4/lib/rbs.rb:11:
-    #    warning: tsort was loaded from the standard library,
-    #    but will no longer be part of the default gems
-    #    starting from Ruby 3.6.0
-    - name: Work around legacy rbs deprecation on ruby > 3.4
-      run: echo "gem 'tsort'" >> .Gemfile
-    - name: Install gems
-      run: |
-        bundle install
-        bundle update rbs # use latest available for this Ruby version
-    - name: Run tests
-      run: |
-        set -e
-        gem install rails
-        rails new test-project
-        cd test-project
-        bundle add solargraph solargraph-rails
-        bundle install
-        bundle exec rbs collection install
-        bundle exec solargraph typecheck --level strong
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.versions.ruby }}
+          bundler: latest
+          bundler-cache: true
+          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-09-09
+        env:
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: yq
+          version: 1.0
+      - name: Restore cache of gem annotations
+        id: dot-cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          key: |
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
+          path: |
+            /home/runner/.cache/solargraph
+
+      - name: Typecheck default 'rails new' code
+        run: |
+          set -ex
+          bundle update solargraph
+          gem install rails -v '~> ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}.0'
+          gem uninstall -I concurrent-ruby
+          # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
+          gem install concurrent-ruby -v 1.3.4
+          pwd
+          cd ..
+          rails new test-project
+          cd test-project
+          echo 'gem "solargraph-rails", path: "../solargraph-rails"' >> Gemfile
+          echo 'gem "solargraph", github: "castwide/solargraph", branch: "master"' >> Gemfile
+          # https://stackoverflow.com/questions/79360526/uninitialized-constant-activesupportloggerthreadsafelevellogger-nameerror
+          echo "gem 'concurrent-ruby', '1.3.4'" >> Gemfile
+          bundle install
+          bundle info solargraph
+          bundle info solargraph-rails
+          bin/rails --version
+          bundle exec rbs collection init
+          bundle exec rbs collection install
+          bundle exec solargraph config
+          yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
+          bundle exec solargraph typecheck --level strong
+        env:
+          MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
+          MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+      - name: Cache gem annotations
+        id: dot-cache-save
+        if: always() && steps.dot-cache-restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          key: |
+            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+          path: |
+            /home/runner/.cache/solargraph
