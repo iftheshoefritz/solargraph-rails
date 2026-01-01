@@ -6,14 +6,10 @@ require 'solargraph/rails/version'
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 solargraph_version =
   if solargraph_force_ci_version && !solargraph_force_ci_version.start_with?('branch-')
-    [solargraph_force_ci_version]
+    solargraph_force_ci_version
   else
-    [
-      # below this isn't tested in CI
-      '>= 0.48.0',
-      # above this hasn't been tested
-      '<= 0.57'
-    ]
+    # below this isn't tested in CI
+    '>= 0.48.0'
   end
 
 Gem::Specification.new do |spec|
