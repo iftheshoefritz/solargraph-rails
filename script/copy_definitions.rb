@@ -44,12 +44,15 @@ files.each do |path|
 
   file_entries_changed = 0
 
+  # @param entry [Hash]
   data.each_value do |entry|
     next unless entry.is_a?(Hash)
 
+    # @type [Array<String>]
     skip = entry["skip"]
     next unless skip.is_a?(Array)
 
+    # @param idx [Integer, nil]
     idx = skip.index(from_version)
     next if idx.nil?
     next if skip.include?(to_version)
