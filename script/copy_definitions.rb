@@ -35,12 +35,7 @@ total_files_changed = 0
 total_entries_changed = 0
 
 files.each do |path|
-  begin
-    data = YAML.load_file(path)
-  rescue => e
-    warn "Skipping #{path}: YAML parse error (#{e.class}: #{e.message})"
-    next
-  end
+  data = YAML.load_file(path)
 
   unless data.is_a?(Hash)
     warn "Skipping #{path}: expected top-level mapping (Hash), got #{data.class}"
