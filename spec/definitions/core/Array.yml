@@ -307,8 +307,6 @@ Array#compact_blank:
   - 0.52.0
   - 0.55.alpha
   - 0.57.0
-  - 0.58.0
-  - branch-castwide-master
 Array#compact_blank!:
   types:
   - Array<generic<Elem>>

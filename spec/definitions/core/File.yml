@@ -308,8 +308,6 @@ File#compact_blank:
   - 0.51.2
   - 0.52.0
   - 0.57.0
-  - 0.58.0
-  - branch-castwide-master
 File#deep_dup:
   types:
   - undefined
