@@ -49,6 +49,7 @@ Class.attr_internal_naming_format:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -68,6 +69,7 @@ Class.attr_internal_naming_format=:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -283,6 +285,7 @@ Class.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -303,6 +306,7 @@ Class.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -556,6 +560,7 @@ Class#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -576,6 +581,7 @@ Class#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

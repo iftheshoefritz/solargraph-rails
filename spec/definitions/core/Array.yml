@@ -245,6 +245,7 @@ Array.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -265,6 +266,7 @@ Array.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -305,6 +307,7 @@ Array#compact_blank:
   - 0.52.0
   - 0.55.alpha
   - 0.57.0
+  - 0.58.0
   - branch-castwide-master
 Array#compact_blank!:
   types:
@@ -539,6 +542,7 @@ Array#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -559,6 +563,7 @@ Array#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

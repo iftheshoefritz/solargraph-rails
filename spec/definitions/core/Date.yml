@@ -273,6 +273,7 @@ Date.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -293,6 +294,7 @@ Date.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -340,6 +342,7 @@ Date#<=>:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -429,6 +432,7 @@ Date#as_json:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -624,6 +628,7 @@ Date#in_time_zone:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -845,6 +850,7 @@ Date#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -865,6 +871,7 @@ Date#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

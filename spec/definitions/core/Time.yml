@@ -343,6 +343,7 @@ Time#-:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -365,6 +366,7 @@ Time#<=>:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -454,6 +456,7 @@ Time#as_json:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -750,6 +753,7 @@ Time#minus_without_coercion:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -958,6 +962,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.58.0
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

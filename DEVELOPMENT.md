@@ -55,6 +55,12 @@ In this case there are 2 options:
 
 In case of option 2, don't forget to remove the flag after yml file has been updated. Also review git diff, to make sure that no regressions have been set (skip=true was set for entries which previously had skip=false)
 
+A quick way if you want to just start with the existing items:
+
+```
+script/copy_definitions.rb 0.57.0 0.58.0
+```
+
 ### Generating assertions
 
 In case a new set of assertion files has to be created (for a new Rails version for example), a script can be used - https://github.com/iftheshoefritz/solargraph-rails/blob/master/script/generate_definitions.rb.
