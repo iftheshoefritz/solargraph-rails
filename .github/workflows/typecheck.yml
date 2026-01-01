@@ -25,7 +25,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.4
-          bundler: 2.7.2
+          bundler: Gemfile.lock
           bundler-cache: true
           cache-version: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-06-06
         env:
