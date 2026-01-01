@@ -73,7 +73,7 @@ Move .yml files into place, then make sure to review the script and uncomment re
 ## Preparing a release (maintainers)
 
 1. Look up [most recent release](https://rubygems.org/gems/solargraph-rails)
-2. Open up [commit list](https://github.com/iftheshoefritz/solargraph-rails/compare/v1.2.3...main)
+2. Open up [commit list](https://github.com/iftheshoefritz/solargraph-rails/compare/v1.2.4...main)
 3. Update [CHANGELOG.md](./CHANGELOG.md)
 4. Flip to 'files changed view' and refine updates
 5. Bump [version](./lib/solargraph/rails/version.rb) appropriately

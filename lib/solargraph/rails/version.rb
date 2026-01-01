@@ -1,5 +1,5 @@
 module Solargraph
   module Rails
-    VERSION = '1.2.4'
+    VERSION = '1.3'
   end
 end

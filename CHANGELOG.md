@@ -2,6 +2,17 @@
 
 ## Changes
 
+### v1.3
+
+Features/fixes:
+- Add support for Puma DSL
+- Add support for importmap.rb DSL
+- Type annotations for schema.rb
+- Remove Solargraph upper limit in gemspec
+
+Internal improvements:
+- Create a 'rails new' GitHub Actions workflow
+
 ### v1.2.4
 
 Features / fixes:
