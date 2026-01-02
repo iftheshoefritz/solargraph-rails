@@ -182,6 +182,7 @@ Rails::Application.eager_load!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -252,6 +253,7 @@ Rails::Application.initializer:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -272,6 +274,7 @@ Rails::Application.initializers:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -292,6 +295,7 @@ Rails::Application.initializers_chain:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -312,6 +316,7 @@ Rails::Application.initializers_for:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -543,6 +548,7 @@ Rails::Application.yaml_tag:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -644,6 +650,7 @@ Rails::Application#default_url_options:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -664,6 +671,7 @@ Rails::Application#default_url_options=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -715,6 +723,7 @@ Rails::Application#engine_name:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -769,6 +778,7 @@ Rails::Application#importmap:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -789,6 +799,7 @@ Rails::Application#importmap=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -845,6 +856,7 @@ Rails::Application#isolated?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -902,6 +914,7 @@ Rails::Application#middleware:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -935,6 +948,7 @@ Rails::Application#paths:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -973,6 +987,7 @@ Rails::Application#railtie_name:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1029,6 +1044,7 @@ Rails::Application#root:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

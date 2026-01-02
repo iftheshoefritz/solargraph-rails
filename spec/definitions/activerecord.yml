@@ -48,6 +48,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -68,6 +69,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -278,6 +280,7 @@ ActiveRecord::Base.application_record_class:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -298,6 +301,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -385,6 +389,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -571,6 +576,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -591,6 +597,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -611,6 +618,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -631,6 +639,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -662,6 +671,7 @@ ActiveRecord::Base.automatic_scope_inversing:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -682,6 +692,7 @@ ActiveRecord::Base.automatic_scope_inversing=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -702,6 +713,7 @@ ActiveRecord::Base.automatic_scope_inversing?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -819,6 +831,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -847,6 +860,7 @@ ActiveRecord::Base.broadcast_target_default:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -867,6 +881,7 @@ ActiveRecord::Base.broadcasts:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -887,6 +902,7 @@ ActiveRecord::Base.broadcasts_refreshes:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -907,6 +923,7 @@ ActiveRecord::Base.broadcasts_refreshes_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -927,6 +944,7 @@ ActiveRecord::Base.broadcasts_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1301,6 +1319,7 @@ ActiveRecord::Base.count:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1343,6 +1362,7 @@ ActiveRecord::Base.create_or_find_by:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1363,6 +1383,7 @@ ActiveRecord::Base.create_or_find_by!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1514,6 +1535,7 @@ ActiveRecord::Base.default_role:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1534,6 +1556,7 @@ ActiveRecord::Base.default_role=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1554,6 +1577,7 @@ ActiveRecord::Base.default_role?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1623,6 +1647,7 @@ ActiveRecord::Base.default_shard:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1643,6 +1668,7 @@ ActiveRecord::Base.default_shard=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1663,6 +1689,7 @@ ActiveRecord::Base.default_shard?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1789,6 +1816,7 @@ ActiveRecord::Base.delete_all:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1809,6 +1837,7 @@ ActiveRecord::Base.delete_by:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1850,6 +1879,7 @@ ActiveRecord::Base.destroy_all:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1870,6 +1900,7 @@ ActiveRecord::Base.destroy_by:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1970,6 +2001,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1990,6 +2022,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2010,6 +2043,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2048,6 +2082,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2068,6 +2103,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2088,6 +2124,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2130,6 +2167,7 @@ ActiveRecord::Base.except:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2197,6 +2235,7 @@ ActiveRecord::Base.find:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2218,6 +2257,7 @@ ActiveRecord::Base.find_by:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2254,6 +2294,7 @@ ActiveRecord::Base.find_or_create_by:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2274,6 +2315,7 @@ ActiveRecord::Base.find_or_create_by!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2294,6 +2336,7 @@ ActiveRecord::Base.find_or_initialize_by:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2354,6 +2397,7 @@ ActiveRecord::Base.first_or_create:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2374,6 +2418,7 @@ ActiveRecord::Base.first_or_create!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2394,6 +2439,7 @@ ActiveRecord::Base.first_or_initialize:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2544,6 +2590,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2564,6 +2611,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2584,6 +2632,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2689,6 +2738,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2709,6 +2759,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2729,6 +2780,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2864,6 +2916,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3046,6 +3099,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3066,6 +3120,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3194,6 +3249,7 @@ ActiveRecord::Base.logger?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3256,6 +3312,7 @@ ActiveRecord::Base.merge:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3399,6 +3456,7 @@ ActiveRecord::Base.only:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3431,6 +3489,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3451,6 +3510,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3471,6 +3531,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3491,6 +3552,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3511,6 +3573,7 @@ ActiveRecord::Base.partial_updates:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3531,6 +3594,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3551,6 +3615,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3599,6 +3664,7 @@ ActiveRecord::Base.pluck:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3734,6 +3800,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3780,6 +3847,7 @@ ActiveRecord::Base.queues:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3800,6 +3868,7 @@ ActiveRecord::Base.queues=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4282,6 +4351,7 @@ ActiveRecord::Base.shard_selector:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4302,6 +4372,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4322,6 +4393,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4370,6 +4442,7 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4390,6 +4463,7 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4410,6 +4484,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4509,6 +4584,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4529,6 +4605,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4549,6 +4626,7 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4609,6 +4687,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4629,6 +4708,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4649,6 +4729,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4686,6 +4767,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4706,6 +4788,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4726,6 +4809,7 @@ ActiveRecord::Base.suppressing_turbo_broadcasts:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4882,6 +4966,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4965,6 +5050,7 @@ ActiveRecord::Base.to_adapter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4998,6 +5084,7 @@ ActiveRecord::Base.touch_all:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5037,6 +5124,7 @@ ActiveRecord::Base.try:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5058,6 +5146,7 @@ ActiveRecord::Base.try!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5135,6 +5224,7 @@ ActiveRecord::Base.update_all:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5418,6 +5508,7 @@ ActiveRecord::Base.where:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5723,6 +5814,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5743,6 +5835,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5784,6 +5877,7 @@ ActiveRecord::Base#broadcast_action:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5804,6 +5898,7 @@ ActiveRecord::Base#broadcast_action_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5824,6 +5919,7 @@ ActiveRecord::Base#broadcast_action_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5844,6 +5940,7 @@ ActiveRecord::Base#broadcast_action_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5864,6 +5961,7 @@ ActiveRecord::Base#broadcast_after_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5884,6 +5982,7 @@ ActiveRecord::Base#broadcast_append:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5904,6 +6003,7 @@ ActiveRecord::Base#broadcast_append_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5924,6 +6024,7 @@ ActiveRecord::Base#broadcast_append_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5944,6 +6045,7 @@ ActiveRecord::Base#broadcast_append_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5964,6 +6066,7 @@ ActiveRecord::Base#broadcast_before_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5984,6 +6087,7 @@ ActiveRecord::Base#broadcast_prepend:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6004,6 +6108,7 @@ ActiveRecord::Base#broadcast_prepend_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6024,6 +6129,7 @@ ActiveRecord::Base#broadcast_prepend_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6044,6 +6150,7 @@ ActiveRecord::Base#broadcast_prepend_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6064,6 +6171,7 @@ ActiveRecord::Base#broadcast_refresh:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6084,6 +6192,7 @@ ActiveRecord::Base#broadcast_refresh_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6104,6 +6213,7 @@ ActiveRecord::Base#broadcast_refresh_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6124,6 +6234,7 @@ ActiveRecord::Base#broadcast_refresh_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6144,6 +6255,7 @@ ActiveRecord::Base#broadcast_remove:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6164,6 +6276,7 @@ ActiveRecord::Base#broadcast_remove_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6184,6 +6297,7 @@ ActiveRecord::Base#broadcast_render:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6204,6 +6318,7 @@ ActiveRecord::Base#broadcast_render_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6224,6 +6339,7 @@ ActiveRecord::Base#broadcast_render_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6244,6 +6360,7 @@ ActiveRecord::Base#broadcast_render_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6264,6 +6381,7 @@ ActiveRecord::Base#broadcast_replace:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6284,6 +6402,7 @@ ActiveRecord::Base#broadcast_replace_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6304,6 +6423,7 @@ ActiveRecord::Base#broadcast_replace_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6324,6 +6444,7 @@ ActiveRecord::Base#broadcast_replace_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6344,6 +6465,7 @@ ActiveRecord::Base#broadcast_update:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6364,6 +6486,7 @@ ActiveRecord::Base#broadcast_update_later:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6384,6 +6507,7 @@ ActiveRecord::Base#broadcast_update_later_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6404,6 +6528,7 @@ ActiveRecord::Base#broadcast_update_to:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6583,6 +6708,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6645,6 +6771,7 @@ ActiveRecord::Base#default_role:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6665,6 +6792,7 @@ ActiveRecord::Base#default_role?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6703,6 +6831,7 @@ ActiveRecord::Base#default_shard:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6723,6 +6852,7 @@ ActiveRecord::Base#default_shard?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6829,6 +6959,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6849,6 +6980,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -6869,6 +7001,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7112,6 +7245,7 @@ ActiveRecord::Base#logger?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7184,6 +7318,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7204,6 +7339,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7224,6 +7360,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7244,6 +7381,7 @@ ActiveRecord::Base#partial_updates:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7264,6 +7402,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7329,6 +7468,7 @@ ActiveRecord::Base#pretty_print:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7375,6 +7515,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7579,6 +7720,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7621,6 +7763,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7641,6 +7784,7 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7749,6 +7893,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7787,6 +7932,7 @@ ActiveRecord::Base#to_gid:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7807,6 +7953,7 @@ ActiveRecord::Base#to_gid_param:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7827,6 +7974,7 @@ ActiveRecord::Base#to_global_id:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7872,6 +8020,7 @@ ActiveRecord::Base#to_sgid:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7892,6 +8041,7 @@ ActiveRecord::Base#to_sgid_param:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7912,6 +8062,7 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7957,6 +8108,7 @@ ActiveRecord::Base#try:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7978,6 +8130,7 @@ ActiveRecord::Base#try!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -7998,6 +8151,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

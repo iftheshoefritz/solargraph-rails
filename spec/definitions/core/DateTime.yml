@@ -68,6 +68,7 @@ DateTime.beginning_of_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -88,6 +89,7 @@ DateTime.beginning_of_week=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -108,6 +110,7 @@ DateTime.beginning_of_week_default:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -128,6 +131,7 @@ DateTime.beginning_of_week_default=:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -213,6 +217,7 @@ DateTime.find_beginning_of_week!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -353,6 +358,7 @@ DateTime.tomorrow:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -374,6 +380,7 @@ DateTime.try:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -395,6 +402,7 @@ DateTime.try!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -419,6 +427,7 @@ DateTime.yesterday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -439,6 +448,7 @@ DateTime#+:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -459,6 +469,7 @@ DateTime#-:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -478,6 +489,7 @@ DateTime#<=>:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -524,6 +536,7 @@ DateTime#after?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -548,6 +561,7 @@ DateTime#all_day:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -568,6 +582,7 @@ DateTime#all_month:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -588,6 +603,7 @@ DateTime#all_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -608,6 +624,7 @@ DateTime#all_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -628,6 +645,7 @@ DateTime#all_year:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -648,6 +666,7 @@ DateTime#as_json:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -680,6 +699,7 @@ DateTime#at_beginning_of_month:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -700,6 +720,7 @@ DateTime#at_beginning_of_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -720,6 +741,7 @@ DateTime#at_beginning_of_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -740,6 +762,7 @@ DateTime#at_beginning_of_year:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -772,6 +795,7 @@ DateTime#at_end_of_month:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -792,6 +816,7 @@ DateTime#at_end_of_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -812,6 +837,7 @@ DateTime#at_end_of_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -832,6 +858,7 @@ DateTime#at_end_of_year:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -868,6 +895,7 @@ DateTime#before?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -900,6 +928,7 @@ DateTime#beginning_of_month:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -920,6 +949,7 @@ DateTime#beginning_of_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -940,6 +970,7 @@ DateTime#beginning_of_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -960,6 +991,7 @@ DateTime#beginning_of_year:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -997,6 +1029,7 @@ DateTime#compare_with_coercion:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1017,6 +1050,7 @@ DateTime#days_ago:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1037,6 +1071,7 @@ DateTime#days_since:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1057,6 +1092,7 @@ DateTime#days_to_week_start:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1102,6 +1138,7 @@ DateTime#end_of_month:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1122,6 +1159,7 @@ DateTime#end_of_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1142,6 +1180,7 @@ DateTime#end_of_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1162,6 +1201,7 @@ DateTime#end_of_year:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1186,6 +1226,7 @@ DateTime#future?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1240,6 +1281,7 @@ DateTime#in_time_zone:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1260,6 +1302,7 @@ DateTime#infinite?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1292,6 +1335,7 @@ DateTime#last_month:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1312,6 +1356,7 @@ DateTime#last_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1332,6 +1377,7 @@ DateTime#last_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1352,6 +1398,7 @@ DateTime#last_weekday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1372,6 +1419,7 @@ DateTime#last_year:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1408,6 +1456,7 @@ DateTime#minus_with_duration:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1428,6 +1477,7 @@ DateTime#monday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1448,6 +1498,7 @@ DateTime#months_ago:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1468,6 +1519,7 @@ DateTime#months_since:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1488,6 +1540,7 @@ DateTime#next_day?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1508,6 +1561,7 @@ DateTime#next_occurring:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1528,6 +1582,7 @@ DateTime#next_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1548,6 +1603,7 @@ DateTime#next_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1568,6 +1624,7 @@ DateTime#next_weekday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1596,6 +1653,7 @@ DateTime#on_weekday?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1616,6 +1674,7 @@ DateTime#on_weekend?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1636,6 +1695,7 @@ DateTime#past?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1656,6 +1716,7 @@ DateTime#plus_with_duration:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1690,6 +1751,7 @@ DateTime#prev_day?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1710,6 +1772,7 @@ DateTime#prev_occurring:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1730,6 +1793,7 @@ DateTime#prev_quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1750,6 +1814,7 @@ DateTime#prev_week:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1770,6 +1835,7 @@ DateTime#prev_weekday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1790,6 +1856,7 @@ DateTime#quarter:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1831,6 +1898,7 @@ DateTime#sunday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1894,6 +1962,7 @@ DateTime#today?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1914,6 +1983,7 @@ DateTime#tomorrow:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1934,6 +2004,7 @@ DateTime#tomorrow?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1955,6 +2026,7 @@ DateTime#try:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1976,6 +2048,7 @@ DateTime#try!:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2012,6 +2085,7 @@ DateTime#utc_to_local_returns_utc_offset_times:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2032,6 +2106,7 @@ DateTime#weeks_ago:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2052,6 +2127,7 @@ DateTime#weeks_since:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2076,6 +2152,7 @@ DateTime#years_ago:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2096,6 +2173,7 @@ DateTime#years_since:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2116,6 +2194,7 @@ DateTime#yesterday:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2136,6 +2215,7 @@ DateTime#yesterday?:
   - 0.56.alpha
   - 0.57.0
   - 0.58.0
+  - 0.58.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
