@@ -15,4 +15,6 @@ class Rails::Application
   def config; end
   # @return [Rails::Application::Configuration]
   def self.config; end
+  # @yieldreceiver [self]
+  def configure; end
 end
