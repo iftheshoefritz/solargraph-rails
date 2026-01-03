@@ -86,6 +86,12 @@ jobs:
           bundle exec rbs collection install
           bundle exec solargraph config
           yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
+
+          bundle exec solargraph pin 'Rails.application'
+          bundle exec solargraph pin 'Rails::Application#configure'
+          bundle exec solargraph pin 'Rails::Application#config'
+          bundle exec solargraph pin 'Rails::Application::Configuration'
+
           bundle exec solargraph typecheck --level strong
         env:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
