@@ -86,6 +86,7 @@ jobs:
           bundle exec rbs collection install
           bundle exec solargraph config
           yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
+
           bundle exec solargraph typecheck --level strong
         env:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
