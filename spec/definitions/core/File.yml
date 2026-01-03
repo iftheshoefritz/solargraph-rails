@@ -255,6 +255,7 @@ File.try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -277,6 +278,7 @@ File.try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -424,6 +426,7 @@ File#sum:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - branch-better_signature_combination
   - branch-castwide-master
 File#to_param:
   types:
@@ -457,6 +460,7 @@ File#try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -479,6 +483,7 @@ File#try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
