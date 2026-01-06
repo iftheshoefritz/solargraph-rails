@@ -275,6 +275,7 @@ Date.try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -297,6 +298,7 @@ Date.try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -346,6 +348,7 @@ Date#<=>:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -437,6 +440,7 @@ Date#as_json:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -617,7 +621,7 @@ Date#in?:
   skip: false
 Date#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   - Time
   skip:
   - 0.48.0
@@ -634,6 +638,7 @@ Date#in_time_zone:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -857,6 +862,7 @@ Date#try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -879,6 +885,7 @@ Date#try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

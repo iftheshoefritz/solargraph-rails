@@ -86,6 +86,7 @@ ActionController::Base.allow_forgery_protection:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -107,6 +108,7 @@ ActionController::Base.allow_forgery_protection=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -184,6 +186,7 @@ ActionController::Base.asset_host:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -205,6 +208,7 @@ ActionController::Base.asset_host=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -226,6 +230,7 @@ ActionController::Base.assets_dir:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -247,6 +252,7 @@ ActionController::Base.assets_dir=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -382,6 +388,7 @@ ActionController::Base.clear_respond_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -461,6 +468,7 @@ ActionController::Base.csrf_token_storage_strategy:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -483,6 +491,7 @@ ActionController::Base.csrf_token_storage_strategy=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -509,6 +518,7 @@ ActionController::Base.default_asset_host_protocol:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -530,6 +540,7 @@ ActionController::Base.default_asset_host_protocol=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -560,6 +571,7 @@ ActionController::Base.default_protect_from_forgery:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -581,6 +593,7 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -602,6 +615,7 @@ ActionController::Base.default_static_extension:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -623,6 +637,7 @@ ActionController::Base.default_static_extension=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -644,6 +659,7 @@ ActionController::Base.default_url_options:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -665,6 +681,7 @@ ActionController::Base.default_url_options=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -686,6 +703,7 @@ ActionController::Base.default_url_options?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -727,6 +745,7 @@ ActionController::Base.devise_group:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -766,6 +785,7 @@ ActionController::Base.enable_fragment_cache_logging:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -787,6 +807,7 @@ ActionController::Base.enable_fragment_cache_logging=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -817,6 +838,7 @@ ActionController::Base.etag_with_template_digest:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -838,6 +860,7 @@ ActionController::Base.etag_with_template_digest=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -859,6 +882,7 @@ ActionController::Base.etag_with_template_digest?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -880,6 +904,7 @@ ActionController::Base.etaggers:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -901,6 +926,7 @@ ActionController::Base.etaggers=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -922,6 +948,7 @@ ActionController::Base.etaggers?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -943,6 +970,7 @@ ActionController::Base.forgery_protection_origin_check:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -964,6 +992,7 @@ ActionController::Base.forgery_protection_origin_check=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -985,6 +1014,7 @@ ActionController::Base.forgery_protection_strategy:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1006,6 +1036,7 @@ ActionController::Base.forgery_protection_strategy=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1036,6 +1067,7 @@ ActionController::Base.fragment_cache_keys:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1057,6 +1089,7 @@ ActionController::Base.fragment_cache_keys=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1078,6 +1111,7 @@ ActionController::Base.fragment_cache_keys?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1163,6 +1197,7 @@ ActionController::Base.helpers_path?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1201,6 +1236,7 @@ ActionController::Base.include_all_helpers:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1222,6 +1258,7 @@ ActionController::Base.include_all_helpers=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1243,6 +1280,7 @@ ActionController::Base.include_all_helpers?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1284,6 +1322,7 @@ ActionController::Base.javascripts_dir:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1305,6 +1344,7 @@ ActionController::Base.javascripts_dir=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1348,6 +1388,7 @@ ActionController::Base.log_warning_on_csrf_failure:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1369,6 +1410,7 @@ ActionController::Base.log_warning_on_csrf_failure=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1390,6 +1432,7 @@ ActionController::Base.logger:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1411,6 +1454,7 @@ ActionController::Base.logger=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1464,6 +1508,7 @@ ActionController::Base.middleware_stack:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1485,6 +1530,7 @@ ActionController::Base.middleware_stack=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1506,6 +1552,7 @@ ActionController::Base.middleware_stack?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1527,6 +1574,7 @@ ActionController::Base.mimes_for_respond_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1548,6 +1596,7 @@ ActionController::Base.mimes_for_respond_to=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1569,6 +1618,7 @@ ActionController::Base.mimes_for_respond_to?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1629,6 +1679,7 @@ ActionController::Base.per_form_csrf_tokens:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1650,6 +1701,7 @@ ActionController::Base.per_form_csrf_tokens=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1671,6 +1723,7 @@ ActionController::Base.perform_caching:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1692,6 +1745,7 @@ ActionController::Base.perform_caching=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1778,6 +1832,7 @@ ActionController::Base.raise_on_open_redirects:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1799,6 +1854,7 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1828,6 +1884,7 @@ ActionController::Base.relative_url_root:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1849,6 +1906,7 @@ ActionController::Base.relative_url_root=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1878,6 +1936,7 @@ ActionController::Base.render:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1908,6 +1967,7 @@ ActionController::Base.request_forgery_protection_token:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1929,6 +1989,7 @@ ActionController::Base.request_forgery_protection_token=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1958,6 +2019,7 @@ ActionController::Base.rescue_handlers:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -1979,6 +2041,7 @@ ActionController::Base.rescue_handlers=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2000,6 +2063,7 @@ ActionController::Base.rescue_handlers?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2029,6 +2093,7 @@ ActionController::Base.respond_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2050,6 +2115,7 @@ ActionController::Base.responder:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2071,6 +2137,7 @@ ActionController::Base.responder=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2092,6 +2159,7 @@ ActionController::Base.responder?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2113,6 +2181,7 @@ ActionController::Base.responders:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2204,6 +2273,7 @@ ActionController::Base.stylesheets_dir:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2225,6 +2295,7 @@ ActionController::Base.stylesheets_dir=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2297,6 +2368,7 @@ ActionController::Base.try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2319,6 +2391,7 @@ ActionController::Base.try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2340,6 +2413,7 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2361,6 +2435,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2497,6 +2572,7 @@ ActionController::Base#after_sign_in_path_for:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2518,6 +2594,7 @@ ActionController::Base#after_sign_out_path_for:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2539,6 +2616,7 @@ ActionController::Base#alert:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2560,6 +2638,7 @@ ActionController::Base#allow_forgery_protection:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2581,6 +2660,7 @@ ActionController::Base#allow_forgery_protection=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2602,6 +2682,7 @@ ActionController::Base#allow_params_authentication!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2623,6 +2704,7 @@ ActionController::Base#any_templates?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2652,6 +2734,7 @@ ActionController::Base#asset_host:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2673,6 +2756,7 @@ ActionController::Base#asset_host=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2694,6 +2778,7 @@ ActionController::Base#assets_dir:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2715,6 +2800,7 @@ ActionController::Base#assets_dir=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2777,6 +2863,7 @@ ActionController::Base#bypass_sign_in:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2816,6 +2903,7 @@ ActionController::Base#cancel_registration_path:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2837,6 +2925,7 @@ ActionController::Base#cancel_registration_url:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2862,6 +2951,7 @@ ActionController::Base#collect_mimes_from_class_level:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2923,6 +3013,7 @@ ActionController::Base#default_asset_host_protocol:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2944,6 +3035,7 @@ ActionController::Base#default_asset_host_protocol=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2969,6 +3061,7 @@ ActionController::Base#default_protect_from_forgery:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -2990,6 +3083,7 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3015,6 +3109,7 @@ ActionController::Base#default_static_extension:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3036,6 +3131,7 @@ ActionController::Base#default_static_extension=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3057,6 +3153,7 @@ ActionController::Base#default_url_options:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3078,6 +3175,7 @@ ActionController::Base#default_url_options=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3099,6 +3197,7 @@ ActionController::Base#default_url_options?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3129,6 +3228,7 @@ ActionController::Base#devise_controller?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3150,6 +3250,7 @@ ActionController::Base#devise_parameter_sanitizer:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3184,6 +3285,7 @@ ActionController::Base#edit_polymorphic_path:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3205,6 +3307,7 @@ ActionController::Base#edit_polymorphic_url:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3226,6 +3329,7 @@ ActionController::Base#enable_fragment_cache_logging:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3247,6 +3351,7 @@ ActionController::Base#enable_fragment_cache_logging=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3268,6 +3373,7 @@ ActionController::Base#etag_with_template_digest:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3289,6 +3395,7 @@ ActionController::Base#etag_with_template_digest=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3310,6 +3417,7 @@ ActionController::Base#etag_with_template_digest?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3331,6 +3439,7 @@ ActionController::Base#etaggers:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3352,6 +3461,7 @@ ActionController::Base#etaggers=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3373,6 +3483,7 @@ ActionController::Base#etaggers?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3415,6 +3526,7 @@ ActionController::Base#forgery_protection_origin_check:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3436,6 +3548,7 @@ ActionController::Base#forgery_protection_origin_check=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3457,6 +3570,7 @@ ActionController::Base#forgery_protection_strategy:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3478,6 +3592,7 @@ ActionController::Base#forgery_protection_strategy=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3512,6 +3627,7 @@ ActionController::Base#fragment_cache_keys:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3533,6 +3649,7 @@ ActionController::Base#fragment_cache_keys=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3554,6 +3671,7 @@ ActionController::Base#fragment_cache_keys?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3618,6 +3736,7 @@ ActionController::Base#helpers_path:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3639,6 +3758,7 @@ ActionController::Base#helpers_path=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3660,6 +3780,7 @@ ActionController::Base#helpers_path?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3681,6 +3802,7 @@ ActionController::Base#hotwire_native_app?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3723,6 +3845,7 @@ ActionController::Base#include_all_helpers:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3744,6 +3867,7 @@ ActionController::Base#include_all_helpers=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3765,6 +3889,7 @@ ActionController::Base#include_all_helpers?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3807,6 +3932,7 @@ ActionController::Base#is_flashing_format?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3828,6 +3954,7 @@ ActionController::Base#is_navigational_format?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3849,6 +3976,7 @@ ActionController::Base#javascripts_dir:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3870,6 +3998,7 @@ ActionController::Base#javascripts_dir=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3895,6 +4024,7 @@ ActionController::Base#locale:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3916,6 +4046,7 @@ ActionController::Base#locale=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3951,6 +4082,7 @@ ActionController::Base#log_warning_on_csrf_failure:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3972,6 +4104,7 @@ ActionController::Base#log_warning_on_csrf_failure=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -3993,6 +4126,7 @@ ActionController::Base#logger:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4014,6 +4148,7 @@ ActionController::Base#logger=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4039,6 +4174,7 @@ ActionController::Base#main_app:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4069,6 +4205,7 @@ ActionController::Base#middleware_stack:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4090,6 +4227,7 @@ ActionController::Base#middleware_stack=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4111,6 +4249,7 @@ ActionController::Base#middleware_stack?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4132,6 +4271,7 @@ ActionController::Base#mimes_for_respond_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4153,6 +4293,7 @@ ActionController::Base#mimes_for_respond_to=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4174,6 +4315,7 @@ ActionController::Base#mimes_for_respond_to?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4195,6 +4337,7 @@ ActionController::Base#new_polymorphic_path:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4216,6 +4359,7 @@ ActionController::Base#new_polymorphic_url:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4241,6 +4385,7 @@ ActionController::Base#notice:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4270,6 +4415,7 @@ ActionController::Base#per_form_csrf_tokens:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4291,6 +4437,7 @@ ActionController::Base#per_form_csrf_tokens=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4312,6 +4459,7 @@ ActionController::Base#perform_caching:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4333,6 +4481,7 @@ ActionController::Base#perform_caching=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4392,6 +4541,7 @@ ActionController::Base#raise_on_missing_translations:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4413,6 +4563,7 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4434,6 +4585,7 @@ ActionController::Base#raise_on_open_redirects:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4455,6 +4607,7 @@ ActionController::Base#raise_on_open_redirects=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4485,6 +4638,7 @@ ActionController::Base#recede_or_redirect_back_or_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4506,6 +4660,7 @@ ActionController::Base#recede_or_redirect_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4539,6 +4694,7 @@ ActionController::Base#refresh_or_redirect_back_or_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4560,6 +4716,7 @@ ActionController::Base#refresh_or_redirect_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4581,6 +4738,7 @@ ActionController::Base#relative_url_root:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4602,6 +4760,7 @@ ActionController::Base#relative_url_root=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4652,6 +4811,7 @@ ActionController::Base#request_forgery_protection_token:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4673,6 +4833,7 @@ ActionController::Base#request_forgery_protection_token=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4694,6 +4855,7 @@ ActionController::Base#request_format:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4736,6 +4898,7 @@ ActionController::Base#rescue_handlers:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4757,6 +4920,7 @@ ActionController::Base#rescue_handlers=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4778,6 +4942,7 @@ ActionController::Base#rescue_handlers?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4811,6 +4976,7 @@ ActionController::Base#respond_with:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4832,6 +4998,7 @@ ActionController::Base#responder:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4853,6 +5020,7 @@ ActionController::Base#responder=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4874,6 +5042,7 @@ ActionController::Base#responder?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4912,6 +5081,7 @@ ActionController::Base#resume_or_redirect_back_or_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4933,6 +5103,7 @@ ActionController::Base#resume_or_redirect_to:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -4991,6 +5162,7 @@ ActionController::Base#sign_in:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5012,6 +5184,7 @@ ActionController::Base#sign_in_and_redirect:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5033,6 +5206,7 @@ ActionController::Base#sign_out:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5054,6 +5228,7 @@ ActionController::Base#sign_out_all_scopes:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5075,6 +5250,7 @@ ActionController::Base#sign_out_and_redirect:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5096,6 +5272,7 @@ ActionController::Base#signed_in?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5117,6 +5294,7 @@ ActionController::Base#signed_in_root_path:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5152,6 +5330,7 @@ ActionController::Base#store_location_for:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5173,6 +5352,7 @@ ActionController::Base#stored_location_for:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5194,6 +5374,7 @@ ActionController::Base#stylesheets_dir:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5215,6 +5396,7 @@ ActionController::Base#stylesheets_dir=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5240,6 +5422,7 @@ ActionController::Base#template_exists?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5283,6 +5466,7 @@ ActionController::Base#try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5305,6 +5489,7 @@ ActionController::Base#try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5326,6 +5511,7 @@ ActionController::Base#turbo_native_app?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5359,6 +5545,7 @@ ActionController::Base#urlsafe_csrf_tokens:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5380,6 +5567,7 @@ ActionController::Base#verify_request_format!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5401,6 +5589,7 @@ ActionController::Base#verify_requested_format!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5443,6 +5632,7 @@ ActionController::Base#view_paths:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -5468,6 +5658,7 @@ ActionController::Base#warden:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22

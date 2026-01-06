@@ -345,6 +345,7 @@ Time#-:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -369,6 +370,7 @@ Time#<=>:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -460,6 +462,7 @@ Time#as_json:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -758,6 +761,7 @@ Time#minus_without_coercion:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.59.0.dev.1
   - 0.57.alpha
   - branch-castwide-master
   - branch-2025-09-22
@@ -950,27 +954,6 @@ Time#try!:
   types:
   - undefined
   skip: false
-Time#utc_to_local_returns_utc_offset_times:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.58.0
-  - 0.58.1
-  - 0.57.alpha
-  - branch-castwide-master
-  - branch-2025-09-22
 Time#weeks_ago:
   types:
   - undefined
