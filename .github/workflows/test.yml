@@ -65,7 +65,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libsqlite3-dev
 
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1.286.0
         with:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: Gemfile.lock
