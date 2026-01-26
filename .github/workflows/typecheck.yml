@@ -64,7 +64,7 @@ jobs:
           bundle install
           # reject known bad versions
           echo 'gem "solargraph", ["!= 0.56.2"]' >> .Gemfile
-          bundle update solargraph
+          bundle update solargraph --dev
           bundle exec solargraph version
           # SOLARGRAPH_ASSERTS=on
           bundle exec solargraph typecheck --level typed
