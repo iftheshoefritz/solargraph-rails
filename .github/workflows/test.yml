@@ -60,6 +60,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install libsqlite3-dev
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsqlite3-dev
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.versions.ruby }}
@@ -162,7 +167,6 @@ jobs:
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           PRINT_STATS: true
-
       - name: Upload coverage artifacts
         uses: actions/upload-artifact@v4
         with:
