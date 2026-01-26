@@ -68,7 +68,7 @@ jobs:
       - uses: ruby/setup-ruby@v1.286.0
         with:
           ruby-version: ${{ matrix.versions.ruby }}
-          bundler: Gemfile.lock
+          bundler: 2.5.23
           bundler-cache: true
           cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-09-09
         env:
