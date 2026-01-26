@@ -91,13 +91,13 @@ jobs:
           RAILS_DIR="${GITHUB_WORKSPACE:?}/spec/rails${{ matrix.versions.rails-major }}"
           export RAILS_DIR
           cd ${RAILS_DIR}
-          bundle install
+          bundle _2.7.2_ install
           # these solargraphs use rbs versions that are too old - and
           # don't pay attention to the rbs collection regardless
           if [[ "$MATRIX_SOLARGRAPH_VERSION" != "0.48.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.49.0" && "$MATRIX_SOLARGRAPH_VERSION" != "0.50.0" ]]
           then
             cd ../..
-            bundle update rbs
+            bundle _2.7.2_ update rbs
             cd ${RAILS_DIR}
             bundle exec --gemfile ../../Gemfile rbs --version
             bundle exec --gemfile ../../Gemfile rbs collection update
@@ -130,7 +130,7 @@ jobs:
           export BUNDLE_PATH
           RAILS_DIR="${GITHUB_WORKSPACE:?}/spec/rails${{ matrix.versions.rails-major }}"
           export RAILS_DIR
-          bundle list && cat Gemfile.lock && find vendor -name Gemfile
+          bundle _2.7.2_ list && cat Gemfile.lock && find vendor -name Gemfile
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
@@ -149,15 +149,15 @@ jobs:
           RAILS_DIR="${GITHUB_WORKSPACE:?}/spec/rails${{ matrix.versions.rails-major }}"
           export RAILS_DIR
           ruby --version
-          bundle install
-          bundle update solargraph
-          bundle exec solargraph version
-          bundle info solargraph
+          bundle _2.7.2_ install
+          bundle _2.7.2_ update solargraph
+          bundle _2.7.2_ exec solargraph version
+          bundle _2.7.2_ info solargraph
           set +e
-          bundle info rbs
+          bundle _2.7.2_ info rbs
           set -e
-          bundle info yard
-          bundle exec rake spec # bundle exec rspec spec/solargraph-rails
+          bundle _2.7.2_ info yard
+          bundle _2.7.2_ exec rake spec # bundle exec rspec spec/solargraph-rails
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}

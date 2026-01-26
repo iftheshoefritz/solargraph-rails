@@ -63,8 +63,8 @@ jobs:
           ruby --version
           bundle install
           # reject known bad versions
-          echo 'gem "solargraph", ["!= 0.56.2"]' >> .Gemfile
-          bundle update solargraph --dev
+          echo 'gem "solargraph", ["!= 0.56.2", ">=0.59.0"]' >> .Gemfile
+          bundle update solargraph
           bundle exec solargraph version
           # SOLARGRAPH_ASSERTS=on
           bundle exec solargraph typecheck --level typed
