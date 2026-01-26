@@ -50,9 +50,6 @@ end
 # Specify your gem's dependencies in solargraph_rails.gemspec
 gemspec
 
-# https://github.com/iftheshoefritz/solargraph-rails/actions/runs/21359481969/job/61474824821?pr=194
-gem 'sqlite3', '!=2.0.4'
-
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
 case solargraph_force_ci_version
