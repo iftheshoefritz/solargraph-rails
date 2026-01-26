@@ -65,8 +65,6 @@ jobs:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: Gemfile.lock
           bundler-cache: true
-          # https://github.com/iftheshoefritz/solargraph-rails/actions/runs/21358102354/job/61470254654?pr=194
-          rubygems: latest
           cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-09-09
         env:
           # Used in Gemfile/gemspec
