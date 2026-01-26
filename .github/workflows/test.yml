@@ -46,6 +46,8 @@ jobs:
           - "0.56.2"
           - "0.57.0"
           - "0.58.1"
+          - "0.58.2"
+          - "0.59.0.dev.1"
           - "branch-castwide-master"
         include:
           - versions:
@@ -58,12 +60,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ruby/setup-ruby@v1
+      - name: Install libsqlite3-dev
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsqlite3-dev
+
+      - uses: ruby/setup-ruby@v1.286.0
         with:
           ruby-version: ${{ matrix.versions.ruby }}
-          bundler: Gemfile.lock
+          bundler: 2.5.23
           bundler-cache: true
-          cache-version: ${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}-2025-09-09
+          cache-version: 2026-01-26-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
@@ -160,7 +167,6 @@ jobs:
           MATRIX_RAILS_VERSION: ${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
           PRINT_STATS: true
-
       - name: Upload coverage artifacts
         uses: actions/upload-artifact@v4
         with:

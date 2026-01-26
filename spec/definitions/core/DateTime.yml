@@ -69,6 +69,7 @@ DateTime.beginning_of_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -92,6 +93,7 @@ DateTime.beginning_of_week=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -115,6 +117,7 @@ DateTime.beginning_of_week_default:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -138,6 +141,7 @@ DateTime.beginning_of_week_default=:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -226,6 +230,7 @@ DateTime.find_beginning_of_week!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -369,6 +374,7 @@ DateTime.tomorrow:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -393,6 +399,7 @@ DateTime.try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -417,6 +424,7 @@ DateTime.try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -444,6 +452,7 @@ DateTime.yesterday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -467,6 +476,7 @@ DateTime#+:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -490,6 +500,7 @@ DateTime#-:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -512,6 +523,7 @@ DateTime#<=>:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -561,6 +573,7 @@ DateTime#after?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -588,6 +601,7 @@ DateTime#all_day:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -611,6 +625,7 @@ DateTime#all_month:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -634,6 +649,7 @@ DateTime#all_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -657,6 +673,7 @@ DateTime#all_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -680,6 +697,7 @@ DateTime#all_year:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -703,6 +721,7 @@ DateTime#as_json:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -738,6 +757,7 @@ DateTime#at_beginning_of_month:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -761,6 +781,7 @@ DateTime#at_beginning_of_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -784,6 +805,7 @@ DateTime#at_beginning_of_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -807,6 +829,7 @@ DateTime#at_beginning_of_year:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -842,6 +865,7 @@ DateTime#at_end_of_month:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -865,6 +889,7 @@ DateTime#at_end_of_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -888,6 +913,7 @@ DateTime#at_end_of_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -911,6 +937,7 @@ DateTime#at_end_of_year:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -950,6 +977,7 @@ DateTime#before?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -985,6 +1013,7 @@ DateTime#beginning_of_month:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1008,6 +1037,7 @@ DateTime#beginning_of_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1031,6 +1061,7 @@ DateTime#beginning_of_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1054,6 +1085,7 @@ DateTime#beginning_of_year:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1094,6 +1126,7 @@ DateTime#compare_with_coercion:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1117,6 +1150,7 @@ DateTime#days_ago:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1140,6 +1174,7 @@ DateTime#days_since:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1163,6 +1198,7 @@ DateTime#days_to_week_start:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1211,6 +1247,7 @@ DateTime#end_of_month:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1234,6 +1271,7 @@ DateTime#end_of_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1257,6 +1295,7 @@ DateTime#end_of_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1280,6 +1319,7 @@ DateTime#end_of_year:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1307,6 +1347,7 @@ DateTime#future?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1364,6 +1405,7 @@ DateTime#in_time_zone:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1387,6 +1429,7 @@ DateTime#infinite?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1422,6 +1465,7 @@ DateTime#last_month:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1445,6 +1489,7 @@ DateTime#last_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1468,6 +1513,7 @@ DateTime#last_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1491,6 +1537,7 @@ DateTime#last_weekday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1514,6 +1561,7 @@ DateTime#last_year:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1553,6 +1601,7 @@ DateTime#minus_with_duration:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1576,6 +1625,7 @@ DateTime#monday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1599,6 +1649,7 @@ DateTime#months_ago:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1622,6 +1673,7 @@ DateTime#months_since:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1645,6 +1697,7 @@ DateTime#next_day?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1668,6 +1721,7 @@ DateTime#next_occurring:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1691,6 +1745,7 @@ DateTime#next_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1714,6 +1769,7 @@ DateTime#next_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1737,6 +1793,7 @@ DateTime#next_weekday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1768,6 +1825,7 @@ DateTime#on_weekday?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1791,6 +1849,7 @@ DateTime#on_weekend?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1814,6 +1873,7 @@ DateTime#past?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1837,6 +1897,7 @@ DateTime#plus_with_duration:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1874,6 +1935,7 @@ DateTime#prev_day?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1897,6 +1959,7 @@ DateTime#prev_occurring:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1920,6 +1983,7 @@ DateTime#prev_quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1943,6 +2007,7 @@ DateTime#prev_week:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1966,6 +2031,7 @@ DateTime#prev_weekday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -1989,6 +2055,7 @@ DateTime#quarter:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2033,6 +2100,7 @@ DateTime#sunday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2099,6 +2167,7 @@ DateTime#today?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2122,6 +2191,7 @@ DateTime#tomorrow:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2145,6 +2215,7 @@ DateTime#tomorrow?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2169,6 +2240,7 @@ DateTime#try:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2193,6 +2265,7 @@ DateTime#try!:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2232,6 +2305,7 @@ DateTime#utc_to_local_returns_utc_offset_times:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2255,6 +2329,7 @@ DateTime#weeks_ago:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2278,6 +2353,7 @@ DateTime#weeks_since:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2305,6 +2381,7 @@ DateTime#years_ago:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2328,6 +2405,7 @@ DateTime#years_since:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2351,6 +2429,7 @@ DateTime#yesterday:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
@@ -2374,6 +2453,7 @@ DateTime#yesterday?:
   - 0.57.0
   - 0.58.0
   - 0.58.1
+  - 0.58.2
   - 0.59.0.dev.1
   - branch-better_signature_combination
   - 0.57.alpha
