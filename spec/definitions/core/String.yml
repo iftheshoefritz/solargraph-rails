@@ -249,6 +249,7 @@ String.try:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -274,6 +275,7 @@ String.try!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -420,6 +422,7 @@ String#ext:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -548,6 +551,7 @@ String#pathmap:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -706,6 +710,7 @@ String#try:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -731,6 +736,7 @@ String#try!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master

@@ -51,6 +51,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -75,6 +76,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -289,6 +291,7 @@ ActiveRecord::Base.application_record_class:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -313,6 +316,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -404,6 +408,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -594,6 +599,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -618,6 +624,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -642,6 +649,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -666,6 +674,7 @@ ActiveRecord::Base.attributes_to_define_after_schema_loads?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -701,6 +710,7 @@ ActiveRecord::Base.automatic_scope_inversing:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -725,6 +735,7 @@ ActiveRecord::Base.automatic_scope_inversing=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -749,6 +760,7 @@ ActiveRecord::Base.automatic_scope_inversing?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -870,6 +882,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -902,6 +915,7 @@ ActiveRecord::Base.broadcast_target_default:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -926,6 +940,7 @@ ActiveRecord::Base.broadcasts:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -950,6 +965,7 @@ ActiveRecord::Base.broadcasts_refreshes:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -974,6 +990,7 @@ ActiveRecord::Base.broadcasts_refreshes_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -998,6 +1015,7 @@ ActiveRecord::Base.broadcasts_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1376,6 +1394,7 @@ ActiveRecord::Base.count:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1422,6 +1441,7 @@ ActiveRecord::Base.create_or_find_by:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1446,6 +1466,7 @@ ActiveRecord::Base.create_or_find_by!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1601,6 +1622,7 @@ ActiveRecord::Base.default_role:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1625,6 +1647,7 @@ ActiveRecord::Base.default_role=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1649,6 +1672,7 @@ ActiveRecord::Base.default_role?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1722,6 +1746,7 @@ ActiveRecord::Base.default_shard:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1746,6 +1771,7 @@ ActiveRecord::Base.default_shard=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1770,6 +1796,7 @@ ActiveRecord::Base.default_shard?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1900,6 +1927,7 @@ ActiveRecord::Base.delete_all:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1924,6 +1952,7 @@ ActiveRecord::Base.delete_by:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1969,6 +1998,7 @@ ActiveRecord::Base.destroy_all:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1993,6 +2023,7 @@ ActiveRecord::Base.destroy_by:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2097,6 +2128,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2121,6 +2153,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2145,6 +2178,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2187,6 +2221,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2211,6 +2246,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2235,6 +2271,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2281,6 +2318,7 @@ ActiveRecord::Base.except:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2352,6 +2390,7 @@ ActiveRecord::Base.find:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2377,6 +2416,7 @@ ActiveRecord::Base.find_by:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2417,6 +2457,7 @@ ActiveRecord::Base.find_or_create_by:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2441,6 +2482,7 @@ ActiveRecord::Base.find_or_create_by!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2465,6 +2507,7 @@ ActiveRecord::Base.find_or_initialize_by:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2529,6 +2572,7 @@ ActiveRecord::Base.first_or_create:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2553,6 +2597,7 @@ ActiveRecord::Base.first_or_create!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2577,6 +2622,7 @@ ActiveRecord::Base.first_or_initialize:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2731,6 +2777,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2755,6 +2802,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2779,6 +2827,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2888,6 +2937,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2912,6 +2962,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -2936,6 +2987,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3075,6 +3127,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3261,6 +3314,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3285,6 +3339,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3417,6 +3472,7 @@ ActiveRecord::Base.logger?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3483,6 +3539,7 @@ ActiveRecord::Base.merge:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3630,6 +3687,7 @@ ActiveRecord::Base.only:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3666,6 +3724,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3690,6 +3749,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3714,6 +3774,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3738,6 +3799,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3762,6 +3824,7 @@ ActiveRecord::Base.partial_updates:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3786,6 +3849,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3810,6 +3874,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -3862,6 +3927,7 @@ ActiveRecord::Base.pluck:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4001,6 +4067,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4051,6 +4118,7 @@ ActiveRecord::Base.queues:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4075,6 +4143,7 @@ ActiveRecord::Base.queues=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4561,6 +4630,7 @@ ActiveRecord::Base.shard_selector:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4585,6 +4655,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4609,6 +4680,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4661,6 +4733,7 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4685,6 +4758,7 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4709,6 +4783,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4812,6 +4887,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4836,6 +4912,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4860,6 +4937,7 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4924,6 +5002,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4948,6 +5027,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -4972,6 +5052,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5013,6 +5094,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5037,6 +5119,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5061,6 +5144,7 @@ ActiveRecord::Base.suppressing_turbo_broadcasts:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5221,6 +5305,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5308,6 +5393,7 @@ ActiveRecord::Base.to_adapter:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5345,6 +5431,7 @@ ActiveRecord::Base.touch_all:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5388,6 +5475,7 @@ ActiveRecord::Base.try:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5413,6 +5501,7 @@ ActiveRecord::Base.try!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5494,6 +5583,7 @@ ActiveRecord::Base.update_all:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -5781,6 +5871,7 @@ ActiveRecord::Base.where:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6090,6 +6181,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6114,6 +6206,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6159,6 +6252,7 @@ ActiveRecord::Base#broadcast_action:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6183,6 +6277,7 @@ ActiveRecord::Base#broadcast_action_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6207,6 +6302,7 @@ ActiveRecord::Base#broadcast_action_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6231,6 +6327,7 @@ ActiveRecord::Base#broadcast_action_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6255,6 +6352,7 @@ ActiveRecord::Base#broadcast_after_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6279,6 +6377,7 @@ ActiveRecord::Base#broadcast_append:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6303,6 +6402,7 @@ ActiveRecord::Base#broadcast_append_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6327,6 +6427,7 @@ ActiveRecord::Base#broadcast_append_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6351,6 +6452,7 @@ ActiveRecord::Base#broadcast_append_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6375,6 +6477,7 @@ ActiveRecord::Base#broadcast_before_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6399,6 +6502,7 @@ ActiveRecord::Base#broadcast_prepend:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6423,6 +6527,7 @@ ActiveRecord::Base#broadcast_prepend_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6447,6 +6552,7 @@ ActiveRecord::Base#broadcast_prepend_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6471,6 +6577,7 @@ ActiveRecord::Base#broadcast_prepend_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6495,6 +6602,7 @@ ActiveRecord::Base#broadcast_refresh:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6519,6 +6627,7 @@ ActiveRecord::Base#broadcast_refresh_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6543,6 +6652,7 @@ ActiveRecord::Base#broadcast_refresh_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6567,6 +6677,7 @@ ActiveRecord::Base#broadcast_refresh_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6591,6 +6702,7 @@ ActiveRecord::Base#broadcast_remove:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6615,6 +6727,7 @@ ActiveRecord::Base#broadcast_remove_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6639,6 +6752,7 @@ ActiveRecord::Base#broadcast_render:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6663,6 +6777,7 @@ ActiveRecord::Base#broadcast_render_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6687,6 +6802,7 @@ ActiveRecord::Base#broadcast_render_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6711,6 +6827,7 @@ ActiveRecord::Base#broadcast_render_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6735,6 +6852,7 @@ ActiveRecord::Base#broadcast_replace:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6759,6 +6877,7 @@ ActiveRecord::Base#broadcast_replace_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6783,6 +6902,7 @@ ActiveRecord::Base#broadcast_replace_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6807,6 +6927,7 @@ ActiveRecord::Base#broadcast_replace_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6831,6 +6952,7 @@ ActiveRecord::Base#broadcast_update:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6855,6 +6977,7 @@ ActiveRecord::Base#broadcast_update_later:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6879,6 +7002,7 @@ ActiveRecord::Base#broadcast_update_later_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -6903,6 +7027,7 @@ ActiveRecord::Base#broadcast_update_to:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7086,6 +7211,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7152,6 +7278,7 @@ ActiveRecord::Base#default_role:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7176,6 +7303,7 @@ ActiveRecord::Base#default_role?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7218,6 +7346,7 @@ ActiveRecord::Base#default_shard:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7242,6 +7371,7 @@ ActiveRecord::Base#default_shard?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7352,6 +7482,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7376,6 +7507,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7400,6 +7532,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7647,6 +7780,7 @@ ActiveRecord::Base#logger?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7723,6 +7857,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7747,6 +7882,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7771,6 +7907,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7795,6 +7932,7 @@ ActiveRecord::Base#partial_updates:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7819,6 +7957,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7888,6 +8027,7 @@ ActiveRecord::Base#pretty_print:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -7938,6 +8078,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8146,6 +8287,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8192,6 +8334,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8216,6 +8359,7 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8328,6 +8472,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8370,6 +8515,7 @@ ActiveRecord::Base#to_gid:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8394,6 +8540,7 @@ ActiveRecord::Base#to_gid_param:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8418,6 +8565,7 @@ ActiveRecord::Base#to_global_id:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8467,6 +8615,7 @@ ActiveRecord::Base#to_sgid:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8491,6 +8640,7 @@ ActiveRecord::Base#to_sgid_param:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8515,6 +8665,7 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8564,6 +8715,7 @@ ActiveRecord::Base#try:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8589,6 +8741,7 @@ ActiveRecord::Base#try!:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -8613,6 +8766,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master

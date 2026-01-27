@@ -347,6 +347,7 @@ Time#-:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -374,6 +375,7 @@ Time#<=>:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -468,6 +470,7 @@ Time#as_json:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -769,6 +772,7 @@ Time#minus_without_coercion:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -982,6 +986,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.58.1
   - 0.58.2
   - 0.59.0.dev.1
+  - 0.59.0.dev.2
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
