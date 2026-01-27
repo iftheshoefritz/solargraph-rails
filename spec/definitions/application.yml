@@ -186,6 +186,7 @@ Rails::Application.eager_load!:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -261,6 +262,7 @@ Rails::Application.initializer:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -286,6 +288,7 @@ Rails::Application.initializers:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -311,6 +314,7 @@ Rails::Application.initializers_chain:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -336,6 +340,7 @@ Rails::Application.initializers_for:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -572,6 +577,7 @@ Rails::Application.yaml_tag:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -678,6 +684,7 @@ Rails::Application#default_url_options:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -703,6 +710,7 @@ Rails::Application#default_url_options=:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -759,6 +767,7 @@ Rails::Application#engine_name:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -818,6 +827,7 @@ Rails::Application#importmap:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -843,6 +853,7 @@ Rails::Application#importmap=:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -904,6 +915,7 @@ Rails::Application#isolated?:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -966,6 +978,7 @@ Rails::Application#middleware:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1004,6 +1017,7 @@ Rails::Application#paths:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1047,6 +1061,7 @@ Rails::Application#railtie_name:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
@@ -1108,6 +1123,7 @@ Rails::Application#root:
   - 0.58.2
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.59.0
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
