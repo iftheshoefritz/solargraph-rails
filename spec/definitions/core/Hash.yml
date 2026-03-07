@@ -238,58 +238,12 @@ Hash.to_query:
   - 0.52.0
 Hash.try:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
-  - branch-2025-09-22
+  skip: false
 Hash.try!:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
-  - branch-2025-09-22
+  skip: false
 Hash.with_options:
   types:
   - undefined
@@ -663,58 +617,12 @@ Hash#to_xml:
   skip: false
 Hash#try:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
-  - branch-2025-09-22
+  skip: false
 Hash#try!:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
-  - branch-2025-09-22
+  skip: false
 Hash#with_defaults:
   types:
   - undefined
