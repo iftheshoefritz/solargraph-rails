@@ -26,7 +26,7 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
-  it 'can auto-complete inside routes', skip: 'not working' do
+  1it 'can auto-complete inside routes', skip: 'not working' do
     filename = nil
     map =
       rails_workspace do |root|
