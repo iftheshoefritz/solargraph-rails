@@ -67,8 +67,6 @@ DateTime.beginning_of_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -88,8 +86,6 @@ DateTime.beginning_of_week=:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -109,8 +105,6 @@ DateTime.beginning_of_week_default:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -130,8 +124,6 @@ DateTime.beginning_of_week_default=:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -216,8 +208,6 @@ DateTime.find_beginning_of_week!:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -357,8 +347,6 @@ DateTime.tomorrow:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -390,8 +378,6 @@ DateTime.yesterday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -518,8 +504,6 @@ DateTime#after?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -548,8 +532,6 @@ DateTime#all_day:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -574,8 +556,6 @@ DateTime#all_month:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -600,8 +580,6 @@ DateTime#all_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -626,8 +604,6 @@ DateTime#all_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -652,8 +628,6 @@ DateTime#all_year:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -712,8 +686,6 @@ DateTime#at_beginning_of_month:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -733,8 +705,6 @@ DateTime#at_beginning_of_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -754,8 +724,6 @@ DateTime#at_beginning_of_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -775,8 +743,6 @@ DateTime#at_beginning_of_year:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -808,8 +774,6 @@ DateTime#at_end_of_month:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -829,8 +793,6 @@ DateTime#at_end_of_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -850,8 +812,6 @@ DateTime#at_end_of_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -871,8 +831,6 @@ DateTime#at_end_of_year:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -908,8 +866,6 @@ DateTime#before?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -941,8 +897,6 @@ DateTime#beginning_of_month:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -962,8 +916,6 @@ DateTime#beginning_of_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -983,8 +935,6 @@ DateTime#beginning_of_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1004,8 +954,6 @@ DateTime#beginning_of_year:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1050,8 +998,6 @@ DateTime#compare_with_coercion:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1072,8 +1018,6 @@ DateTime#days_ago:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1093,8 +1037,6 @@ DateTime#days_since:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1114,8 +1056,6 @@ DateTime#days_to_week_start:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1160,8 +1100,6 @@ DateTime#end_of_month:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1181,8 +1119,6 @@ DateTime#end_of_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1202,8 +1138,6 @@ DateTime#end_of_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1223,8 +1157,6 @@ DateTime#end_of_year:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1248,8 +1180,6 @@ DateTime#future?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1308,8 +1238,6 @@ DateTime#in_time_zone:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1329,8 +1257,6 @@ DateTime#infinite?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1363,8 +1289,6 @@ DateTime#last_month:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1384,8 +1308,6 @@ DateTime#last_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1405,8 +1327,6 @@ DateTime#last_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1426,8 +1346,6 @@ DateTime#last_weekday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1447,8 +1365,6 @@ DateTime#last_year:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1484,8 +1400,6 @@ DateTime#minus_with_duration:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1505,8 +1419,6 @@ DateTime#monday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1526,8 +1438,6 @@ DateTime#months_ago:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1547,8 +1457,6 @@ DateTime#months_since:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1568,8 +1476,6 @@ DateTime#next_day?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1589,8 +1495,6 @@ DateTime#next_occurring:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1610,8 +1514,6 @@ DateTime#next_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1631,8 +1533,6 @@ DateTime#next_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1652,8 +1552,6 @@ DateTime#next_weekday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1681,8 +1579,6 @@ DateTime#on_weekday?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1702,8 +1598,6 @@ DateTime#on_weekend?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1723,8 +1617,6 @@ DateTime#past?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1744,8 +1636,6 @@ DateTime#plus_with_duration:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1779,8 +1669,6 @@ DateTime#prev_day?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1800,8 +1688,6 @@ DateTime#prev_occurring:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1821,8 +1707,6 @@ DateTime#prev_quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1842,8 +1726,6 @@ DateTime#prev_week:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1863,8 +1745,6 @@ DateTime#prev_weekday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1884,8 +1764,6 @@ DateTime#quarter:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1926,8 +1804,6 @@ DateTime#sunday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1989,8 +1865,6 @@ DateTime#today?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2010,8 +1884,6 @@ DateTime#tomorrow:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2031,8 +1903,6 @@ DateTime#tomorrow?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2103,8 +1973,6 @@ DateTime#weeks_ago:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2124,8 +1992,6 @@ DateTime#weeks_since:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2149,8 +2015,6 @@ DateTime#years_ago:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2170,8 +2034,6 @@ DateTime#years_since:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2191,8 +2053,6 @@ DateTime#yesterday:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2212,8 +2072,6 @@ DateTime#yesterday?:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
