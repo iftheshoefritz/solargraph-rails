@@ -398,7 +398,6 @@ Date#as_json:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 Date#at_beginning_of_day:
   types:
   - undefined

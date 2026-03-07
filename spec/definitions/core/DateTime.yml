@@ -633,7 +633,7 @@ DateTime#all_year:
   - branch-castwide-master
 DateTime#as_json:
   types:
-  - Hash{String => String, Integer, Float}
+  - String
   skip: false
 DateTime#at_beginning_of_day:
   types:

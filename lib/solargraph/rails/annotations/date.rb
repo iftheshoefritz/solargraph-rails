@@ -37,3 +37,8 @@ class DateTime < Date
   # @return [String]
   def to_formatted_s(format = :some_default); end
 end
+
+# annotation is wrong in RBS, so use an override instead of a class
+
+# @!override DateTime#as_json
+#   @return [String]
