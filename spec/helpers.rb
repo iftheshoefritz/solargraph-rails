@@ -53,6 +53,11 @@ module Helpers
       else
         map = Solargraph::ApiMap.load('./')
       end
+      # add some requires for the things we test that aren't already in a default rails project
+      external_requires = ['date', 'time']
+      bench = Solargraph::Bench.new(external_requires: external_requires, workspace: Solargraph::Workspace.new('.'))
+      map.catalog bench
+
       injector.files.each { |f| File.delete(f) }
     end
 
