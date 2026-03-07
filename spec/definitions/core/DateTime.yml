@@ -55,7 +55,6 @@ DateTime.beginning_of_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -77,12 +76,10 @@ DateTime.beginning_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime.beginning_of_week=:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -104,12 +101,10 @@ DateTime.beginning_of_week=:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime.beginning_of_week_default:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -131,12 +126,10 @@ DateTime.beginning_of_week_default:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime.beginning_of_week_default=:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -158,7 +151,6 @@ DateTime.beginning_of_week_default=:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime.blank?:
   types:
   - Boolean
@@ -228,7 +220,6 @@ DateTime.find_beginning_of_week!:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -250,7 +241,6 @@ DateTime.find_beginning_of_week!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime.html_safe?:
   types:
   - 'false'
@@ -375,7 +365,6 @@ DateTime.tomorrow:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -397,7 +386,6 @@ DateTime.tomorrow:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime.try:
   types:
   - undefined
@@ -414,7 +402,6 @@ DateTime.yesterday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -436,12 +423,10 @@ DateTime.yesterday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#+:
   types:
   - self
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -547,7 +532,6 @@ DateTime#after?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -569,7 +553,6 @@ DateTime#after?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#ago:
   types:
   - undefined
@@ -600,7 +583,6 @@ DateTime#all_day:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#all_month:
   types:
   - Range
@@ -627,7 +609,6 @@ DateTime#all_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#all_quarter:
   types:
   - Range
@@ -654,7 +635,6 @@ DateTime#all_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#all_week:
   types:
   - Range
@@ -681,7 +661,6 @@ DateTime#all_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#all_year:
   types:
   - Range
@@ -708,7 +687,6 @@ DateTime#all_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#as_json:
   types:
   - String
@@ -752,7 +730,6 @@ DateTime#at_beginning_of_month:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -774,12 +751,10 @@ DateTime#at_beginning_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_beginning_of_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -801,12 +776,10 @@ DateTime#at_beginning_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_beginning_of_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -828,12 +801,10 @@ DateTime#at_beginning_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_beginning_of_year:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -855,7 +826,6 @@ DateTime#at_beginning_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_end_of_day:
   types:
   - undefined
@@ -872,7 +842,6 @@ DateTime#at_end_of_month:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -894,12 +863,10 @@ DateTime#at_end_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_end_of_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -921,12 +888,10 @@ DateTime#at_end_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_end_of_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -948,12 +913,10 @@ DateTime#at_end_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_end_of_year:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -975,7 +938,6 @@ DateTime#at_end_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#at_midday:
   types:
   - undefined
@@ -996,7 +958,6 @@ DateTime#before?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1018,7 +979,6 @@ DateTime#before?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#beginning_of_day:
   types:
   - undefined
@@ -1035,7 +995,6 @@ DateTime#beginning_of_month:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1057,12 +1016,10 @@ DateTime#beginning_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#beginning_of_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1084,12 +1041,10 @@ DateTime#beginning_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#beginning_of_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1111,12 +1066,10 @@ DateTime#beginning_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#beginning_of_year:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1138,7 +1091,6 @@ DateTime#beginning_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#blank?:
   types:
   - 'false'
@@ -1158,7 +1110,10 @@ DateTime#class_eval:
   skip: false
 DateTime#compare_with_coercion:
   types:
-  - undefined
+  - "-1"
+  - '0'
+  - '1'
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
@@ -1187,7 +1142,6 @@ DateTime#days_ago:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1209,12 +1163,10 @@ DateTime#days_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#days_since:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1236,12 +1188,10 @@ DateTime#days_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#days_to_week_start:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1263,7 +1213,6 @@ DateTime#days_to_week_start:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#deep_dup:
   types:
   - undefined
@@ -1293,7 +1242,6 @@ DateTime#end_of_month:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1315,12 +1263,10 @@ DateTime#end_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#end_of_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1342,12 +1288,10 @@ DateTime#end_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#end_of_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1369,12 +1313,10 @@ DateTime#end_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#end_of_year:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1396,7 +1338,6 @@ DateTime#end_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#formatted_offset:
   types:
   - undefined
@@ -1405,7 +1346,6 @@ DateTime#future?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1427,7 +1367,6 @@ DateTime#future?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#getgm:
   types:
   - undefined
@@ -1488,12 +1427,10 @@ DateTime#in_time_zone:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#infinite?:
   types:
-  - undefined
+  - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1532,7 +1469,6 @@ DateTime#last_month:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1554,12 +1490,10 @@ DateTime#last_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#last_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1581,12 +1515,10 @@ DateTime#last_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#last_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1608,12 +1540,10 @@ DateTime#last_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#last_weekday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1635,12 +1565,10 @@ DateTime#last_weekday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#last_year:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1662,7 +1590,6 @@ DateTime#last_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#localtime:
   types:
   - undefined
@@ -1683,7 +1610,6 @@ DateTime#minus_with_duration:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1705,12 +1631,10 @@ DateTime#minus_with_duration:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#monday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1732,12 +1656,10 @@ DateTime#monday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#months_ago:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1759,12 +1681,10 @@ DateTime#months_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#months_since:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1786,12 +1706,10 @@ DateTime#months_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#next_day?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1813,12 +1731,10 @@ DateTime#next_day?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#next_occurring:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1840,12 +1756,10 @@ DateTime#next_occurring:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#next_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1867,12 +1781,10 @@ DateTime#next_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#next_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1894,12 +1806,10 @@ DateTime#next_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#next_weekday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1921,7 +1831,6 @@ DateTime#next_weekday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#noon:
   types:
   - undefined
@@ -1934,7 +1843,6 @@ DateTime#on_weekday?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1956,12 +1864,10 @@ DateTime#on_weekday?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#on_weekend?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -1983,12 +1889,10 @@ DateTime#on_weekend?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#past?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2010,12 +1914,10 @@ DateTime#past?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#plus_with_duration:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2037,7 +1939,6 @@ DateTime#plus_with_duration:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#presence:
   types:
   - nil
@@ -2056,7 +1957,6 @@ DateTime#prev_day?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2078,12 +1978,10 @@ DateTime#prev_day?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#prev_occurring:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2105,12 +2003,10 @@ DateTime#prev_occurring:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#prev_quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2132,12 +2028,10 @@ DateTime#prev_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#prev_week:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2159,12 +2053,10 @@ DateTime#prev_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#prev_weekday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2186,12 +2078,10 @@ DateTime#prev_weekday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#quarter:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2213,7 +2103,6 @@ DateTime#quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
   added_in: 7.1
 DateTime#readable_inspect:
   types:
@@ -2239,7 +2128,6 @@ DateTime#sunday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2261,7 +2149,6 @@ DateTime#sunday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#to_f:
   types:
   - undefined
@@ -2303,13 +2190,11 @@ DateTime#to_s:
 DateTime#to_time:
   types:
   - Time
-  skip:
-  - 0.48.0
+  skip: false
 DateTime#today?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2331,12 +2216,10 @@ DateTime#today?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#tomorrow:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2358,12 +2241,10 @@ DateTime#tomorrow:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#tomorrow?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2385,7 +2266,6 @@ DateTime#tomorrow?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#try:
   types:
   - undefined
@@ -2441,7 +2321,6 @@ DateTime#weeks_ago:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2463,12 +2342,10 @@ DateTime#weeks_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#weeks_since:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2490,7 +2367,6 @@ DateTime#weeks_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#with_options:
   types:
   - undefined
@@ -2499,7 +2375,6 @@ DateTime#years_ago:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2521,12 +2396,10 @@ DateTime#years_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#years_since:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2548,12 +2421,10 @@ DateTime#years_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#yesterday:
   types:
   - undefined
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2575,12 +2446,10 @@ DateTime#yesterday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 DateTime#yesterday?:
   types:
   - Boolean
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
@@ -2602,4 +2471,3 @@ DateTime#yesterday?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
