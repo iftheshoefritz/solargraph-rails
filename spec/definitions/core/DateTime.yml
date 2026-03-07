@@ -55,7 +55,6 @@ DateTime.beginning_of_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -79,7 +78,6 @@ DateTime.beginning_of_week=:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -103,7 +101,6 @@ DateTime.beginning_of_week_default:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -127,7 +124,6 @@ DateTime.beginning_of_week_default=:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -216,7 +212,6 @@ DateTime.find_beginning_of_week!:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -360,7 +355,6 @@ DateTime.tomorrow:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -396,7 +390,6 @@ DateTime.yesterday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -476,6 +469,7 @@ DateTime#<=>:
   skip:
   - 0.48.0
   - 0.49.0
+  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -526,7 +520,6 @@ DateTime#after?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -723,7 +716,6 @@ DateTime#at_beginning_of_month:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -747,7 +739,6 @@ DateTime#at_beginning_of_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -771,7 +762,6 @@ DateTime#at_beginning_of_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -795,7 +785,6 @@ DateTime#at_beginning_of_year:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -831,7 +820,6 @@ DateTime#at_end_of_month:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -855,7 +843,6 @@ DateTime#at_end_of_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -879,7 +866,6 @@ DateTime#at_end_of_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -903,7 +889,6 @@ DateTime#at_end_of_year:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -943,7 +928,6 @@ DateTime#before?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -979,7 +963,6 @@ DateTime#beginning_of_month:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1003,7 +986,6 @@ DateTime#beginning_of_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1027,7 +1009,6 @@ DateTime#beginning_of_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1051,7 +1032,6 @@ DateTime#beginning_of_year:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1122,7 +1102,6 @@ DateTime#days_ago:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1146,7 +1125,6 @@ DateTime#days_since:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1170,7 +1148,6 @@ DateTime#days_to_week_start:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1219,7 +1196,6 @@ DateTime#end_of_month:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1243,7 +1219,6 @@ DateTime#end_of_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1267,7 +1242,6 @@ DateTime#end_of_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1291,7 +1265,6 @@ DateTime#end_of_year:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1319,7 +1292,6 @@ DateTime#future?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1403,7 +1375,6 @@ DateTime#infinite?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1440,7 +1411,6 @@ DateTime#last_month:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1464,7 +1434,6 @@ DateTime#last_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1488,7 +1457,6 @@ DateTime#last_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1512,7 +1480,6 @@ DateTime#last_weekday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1536,7 +1503,6 @@ DateTime#last_year:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1576,7 +1542,6 @@ DateTime#minus_with_duration:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1600,7 +1565,6 @@ DateTime#monday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1624,7 +1588,6 @@ DateTime#months_ago:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1648,7 +1611,6 @@ DateTime#months_since:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1672,7 +1634,6 @@ DateTime#next_day?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1696,7 +1657,6 @@ DateTime#next_occurring:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1720,7 +1680,6 @@ DateTime#next_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1744,7 +1703,6 @@ DateTime#next_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1768,7 +1726,6 @@ DateTime#next_weekday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1800,7 +1757,6 @@ DateTime#on_weekday?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1824,7 +1780,6 @@ DateTime#on_weekend?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1848,7 +1803,6 @@ DateTime#past?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1872,7 +1826,6 @@ DateTime#plus_with_duration:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1910,7 +1863,6 @@ DateTime#prev_day?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1934,7 +1886,6 @@ DateTime#prev_occurring:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1958,7 +1909,6 @@ DateTime#prev_quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -1982,7 +1932,6 @@ DateTime#prev_week:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2006,7 +1955,6 @@ DateTime#prev_weekday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2030,7 +1978,6 @@ DateTime#quarter:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2075,7 +2022,6 @@ DateTime#sunday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2141,7 +2087,6 @@ DateTime#today?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2165,7 +2110,6 @@ DateTime#tomorrow:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2189,7 +2133,6 @@ DateTime#tomorrow?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2264,7 +2207,6 @@ DateTime#weeks_ago:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2288,7 +2230,6 @@ DateTime#weeks_since:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2316,7 +2257,6 @@ DateTime#years_ago:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2340,7 +2280,6 @@ DateTime#years_since:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2364,7 +2303,6 @@ DateTime#yesterday:
   types:
   - undefined
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
@@ -2388,7 +2326,6 @@ DateTime#yesterday?:
   types:
   - Boolean
   skip:
-  - 0.50.0
   - 0.51.2
   - 0.52.0
   - 0.55.alpha
