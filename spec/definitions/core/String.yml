@@ -255,6 +255,7 @@ String.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 String.try!:
   types:
   - generic<T>
@@ -282,6 +283,7 @@ String.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 String.with_options:
   types:
   - undefined
@@ -430,6 +432,7 @@ String#ext:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 String#first:
   types:
   - undefined
@@ -560,6 +563,7 @@ String#pathmap:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 String#pluralize:
   types:
   - String
@@ -715,6 +719,7 @@ String#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 String#try!:
   types:
   - generic<T>
@@ -742,6 +747,7 @@ String#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 String#underscore:
   types:
   - String

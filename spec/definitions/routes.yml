@@ -271,6 +271,7 @@ ActionDispatch::Routing::Mapper.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 ActionDispatch::Routing::Mapper.try!:
   types:
   - generic<T>
@@ -298,6 +299,7 @@ ActionDispatch::Routing::Mapper.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 ActionDispatch::Routing::Mapper.with_options:
   types:
   - undefined
@@ -619,6 +621,7 @@ ActionDispatch::Routing::Mapper#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 ActionDispatch::Routing::Mapper#try!:
   types:
   - generic<T>
@@ -646,6 +649,7 @@ ActionDispatch::Routing::Mapper#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 ActionDispatch::Routing::Mapper#unauthenticated:
   types:
   - undefined

@@ -263,6 +263,7 @@ Hash.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash.try!:
   types:
   - generic<T>
@@ -290,6 +291,7 @@ Hash.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash.with_options:
   types:
   - undefined
@@ -380,6 +382,7 @@ Hash#deep_stringify_keys!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash#deep_symbolize_keys:
   types:
   - Hash{Symbol, undefined}
@@ -406,6 +409,7 @@ Hash#deep_symbolize_keys:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash#deep_symbolize_keys!:
   types:
   - Hash{Symbol, undefined}
@@ -432,6 +436,7 @@ Hash#deep_symbolize_keys!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash#deep_transform_keys:
   types:
   - undefined
@@ -688,6 +693,7 @@ Hash#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash#try!:
   types:
   - generic<T>
@@ -715,6 +721,7 @@ Hash#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Hash#with_defaults:
   types:
   - undefined

@@ -59,7 +59,7 @@ files.each do |path|
     next if idx.nil?
     next if skip.include?(to_version)
 
-    skip.add(to_version)
+    skip.append(to_version)
     skip.sort!.uniq!
 
     file_entries_changed += 1

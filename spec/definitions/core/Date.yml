@@ -283,6 +283,7 @@ Date.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date.try!:
   types:
   - generic<T>
@@ -310,6 +311,7 @@ Date.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date.with_options:
   types:
   - undefined
@@ -347,6 +349,7 @@ Date#<=>:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date#acts_like?:
   types:
   - Boolean
@@ -443,6 +446,7 @@ Date#as_json:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date#at_beginning_of_day:
   types:
   - undefined
@@ -645,6 +649,7 @@ Date#in_time_zone:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date#infinite?:
   types:
   - Boolean
@@ -873,6 +878,7 @@ Date#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date#try!:
   types:
   - generic<T>
@@ -900,6 +906,7 @@ Date#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Date#weeks_ago:
   types:
   - undefined

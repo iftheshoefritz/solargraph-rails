@@ -77,6 +77,7 @@ DateTime.beginning_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.beginning_of_week=:
   types:
   - undefined
@@ -103,6 +104,7 @@ DateTime.beginning_of_week=:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.beginning_of_week_default:
   types:
   - undefined
@@ -129,6 +131,7 @@ DateTime.beginning_of_week_default:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.beginning_of_week_default=:
   types:
   - undefined
@@ -155,6 +158,7 @@ DateTime.beginning_of_week_default=:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.blank?:
   types:
   - Boolean
@@ -246,6 +250,7 @@ DateTime.find_beginning_of_week!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.html_safe?:
   types:
   - 'false'
@@ -392,6 +397,7 @@ DateTime.tomorrow:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.try:
   types:
   - generic<T>
@@ -419,6 +425,7 @@ DateTime.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.try!:
   types:
   - generic<T>
@@ -446,6 +453,7 @@ DateTime.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime.with_options:
   types:
   - undefined
@@ -476,6 +484,7 @@ DateTime.yesterday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#+:
   types:
   - self
@@ -502,6 +511,7 @@ DateTime#+:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#-:
   types:
   - self
@@ -528,6 +538,7 @@ DateTime#-:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#<=>:
   types:
   - Integer
@@ -553,6 +564,7 @@ DateTime#<=>:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#acts_like?:
   types:
   - Boolean
@@ -605,6 +617,7 @@ DateTime#after?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#ago:
   types:
   - undefined
@@ -635,6 +648,7 @@ DateTime#all_day:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#all_month:
   types:
   - Range
@@ -661,6 +675,7 @@ DateTime#all_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#all_quarter:
   types:
   - Range
@@ -687,6 +702,7 @@ DateTime#all_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#all_week:
   types:
   - Range
@@ -713,6 +729,7 @@ DateTime#all_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#all_year:
   types:
   - Range
@@ -739,6 +756,7 @@ DateTime#all_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#as_json:
   types:
   - String
@@ -765,6 +783,7 @@ DateTime#as_json:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_beginning_of_day:
   types:
   - undefined
@@ -803,6 +822,7 @@ DateTime#at_beginning_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_beginning_of_quarter:
   types:
   - undefined
@@ -829,6 +849,7 @@ DateTime#at_beginning_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_beginning_of_week:
   types:
   - undefined
@@ -855,6 +876,7 @@ DateTime#at_beginning_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_beginning_of_year:
   types:
   - undefined
@@ -881,6 +903,7 @@ DateTime#at_beginning_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_end_of_day:
   types:
   - undefined
@@ -919,6 +942,7 @@ DateTime#at_end_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_end_of_quarter:
   types:
   - undefined
@@ -945,6 +969,7 @@ DateTime#at_end_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_end_of_week:
   types:
   - undefined
@@ -971,6 +996,7 @@ DateTime#at_end_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_end_of_year:
   types:
   - undefined
@@ -997,6 +1023,7 @@ DateTime#at_end_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#at_midday:
   types:
   - undefined
@@ -1039,6 +1066,7 @@ DateTime#before?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#beginning_of_day:
   types:
   - undefined
@@ -1077,6 +1105,7 @@ DateTime#beginning_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#beginning_of_quarter:
   types:
   - undefined
@@ -1103,6 +1132,7 @@ DateTime#beginning_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#beginning_of_week:
   types:
   - undefined
@@ -1129,6 +1159,7 @@ DateTime#beginning_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#beginning_of_year:
   types:
   - undefined
@@ -1155,6 +1186,7 @@ DateTime#beginning_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#blank?:
   types:
   - 'false'
@@ -1198,6 +1230,7 @@ DateTime#compare_with_coercion:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#days_ago:
   types:
   - undefined
@@ -1224,6 +1257,7 @@ DateTime#days_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#days_since:
   types:
   - undefined
@@ -1250,6 +1284,7 @@ DateTime#days_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#days_to_week_start:
   types:
   - undefined
@@ -1276,6 +1311,7 @@ DateTime#days_to_week_start:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#deep_dup:
   types:
   - undefined
@@ -1327,6 +1363,7 @@ DateTime#end_of_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#end_of_quarter:
   types:
   - undefined
@@ -1353,6 +1390,7 @@ DateTime#end_of_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#end_of_week:
   types:
   - undefined
@@ -1379,6 +1417,7 @@ DateTime#end_of_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#end_of_year:
   types:
   - undefined
@@ -1405,6 +1444,7 @@ DateTime#end_of_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#formatted_offset:
   types:
   - undefined
@@ -1435,6 +1475,7 @@ DateTime#future?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#getgm:
   types:
   - undefined
@@ -1495,6 +1536,7 @@ DateTime#in_time_zone:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#infinite?:
   types:
   - undefined
@@ -1521,6 +1563,7 @@ DateTime#infinite?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#inspect:
   types:
   - String
@@ -1559,6 +1602,7 @@ DateTime#last_month:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#last_quarter:
   types:
   - undefined
@@ -1585,6 +1629,7 @@ DateTime#last_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#last_week:
   types:
   - undefined
@@ -1611,6 +1656,7 @@ DateTime#last_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#last_weekday:
   types:
   - undefined
@@ -1637,6 +1683,7 @@ DateTime#last_weekday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#last_year:
   types:
   - undefined
@@ -1663,6 +1710,7 @@ DateTime#last_year:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#localtime:
   types:
   - undefined
@@ -1705,6 +1753,7 @@ DateTime#minus_with_duration:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#monday:
   types:
   - undefined
@@ -1731,6 +1780,7 @@ DateTime#monday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#months_ago:
   types:
   - undefined
@@ -1757,6 +1807,7 @@ DateTime#months_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#months_since:
   types:
   - undefined
@@ -1783,6 +1834,7 @@ DateTime#months_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#next_day?:
   types:
   - Boolean
@@ -1809,6 +1861,7 @@ DateTime#next_day?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#next_occurring:
   types:
   - undefined
@@ -1835,6 +1888,7 @@ DateTime#next_occurring:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#next_quarter:
   types:
   - undefined
@@ -1861,6 +1915,7 @@ DateTime#next_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#next_week:
   types:
   - undefined
@@ -1887,6 +1942,7 @@ DateTime#next_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#next_weekday:
   types:
   - undefined
@@ -1913,6 +1969,7 @@ DateTime#next_weekday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#noon:
   types:
   - undefined
@@ -1947,6 +2004,7 @@ DateTime#on_weekday?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#on_weekend?:
   types:
   - Boolean
@@ -1973,6 +2031,7 @@ DateTime#on_weekend?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#past?:
   types:
   - Boolean
@@ -1999,6 +2058,7 @@ DateTime#past?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#plus_with_duration:
   types:
   - undefined
@@ -2025,6 +2085,7 @@ DateTime#plus_with_duration:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#presence:
   types:
   - nil
@@ -2065,6 +2126,7 @@ DateTime#prev_day?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#prev_occurring:
   types:
   - undefined
@@ -2091,6 +2153,7 @@ DateTime#prev_occurring:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#prev_quarter:
   types:
   - undefined
@@ -2117,6 +2180,7 @@ DateTime#prev_quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#prev_week:
   types:
   - undefined
@@ -2143,6 +2207,7 @@ DateTime#prev_week:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#prev_weekday:
   types:
   - undefined
@@ -2169,6 +2234,7 @@ DateTime#prev_weekday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#quarter:
   types:
   - undefined
@@ -2195,6 +2261,7 @@ DateTime#quarter:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
   added_in: 7.1
 DateTime#readable_inspect:
   types:
@@ -2242,6 +2309,7 @@ DateTime#sunday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#to_f:
   types:
   - undefined
@@ -2311,6 +2379,7 @@ DateTime#today?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#tomorrow:
   types:
   - undefined
@@ -2337,6 +2406,7 @@ DateTime#tomorrow:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#tomorrow?:
   types:
   - Boolean
@@ -2363,6 +2433,7 @@ DateTime#tomorrow?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#try:
   types:
   - generic<T>
@@ -2390,6 +2461,7 @@ DateTime#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#try!:
   types:
   - generic<T>
@@ -2417,6 +2489,7 @@ DateTime#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#usec:
   types:
   - undefined
@@ -2459,6 +2532,7 @@ DateTime#utc_to_local_returns_utc_offset_times:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#weeks_ago:
   types:
   - undefined
@@ -2485,6 +2559,7 @@ DateTime#weeks_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#weeks_since:
   types:
   - undefined
@@ -2511,6 +2586,7 @@ DateTime#weeks_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#with_options:
   types:
   - undefined
@@ -2541,6 +2617,7 @@ DateTime#years_ago:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#years_since:
   types:
   - undefined
@@ -2567,6 +2644,7 @@ DateTime#years_since:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#yesterday:
   types:
   - undefined
@@ -2593,6 +2671,7 @@ DateTime#yesterday:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 DateTime#yesterday?:
   types:
   - Boolean
@@ -2619,3 +2698,4 @@ DateTime#yesterday?:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
