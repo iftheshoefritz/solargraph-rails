@@ -27,7 +27,7 @@ Rails::Application.anonymous?:
   skip: false
 Rails::Application.as_json:
   types:
-  - undefined
+  - String
   skip: false
 Rails::Application.attr_internal:
   types:

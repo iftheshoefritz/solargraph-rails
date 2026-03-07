@@ -176,7 +176,7 @@ ActionController::Base.around_action:
   - 0.52.0
 ActionController::Base.as_json:
   types:
-  - undefined
+  - String
   skip: false
 ActionController::Base.asset_host:
   types:
@@ -2706,60 +2706,12 @@ ActionController::Base.to_query:
   - 0.52.0
 ActionController::Base.try:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActionController::Base.try!:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActionController::Base.urlsafe_csrf_tokens:
   types:
   - undefined
@@ -6364,60 +6316,12 @@ ActionController::Base#translate:
   skip: false
 ActionController::Base#try:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActionController::Base#try!:
   types:
-  - generic<T>
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActionController::Base#turbo_native_app?:
   types:
   - undefined

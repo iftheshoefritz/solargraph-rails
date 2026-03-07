@@ -29,7 +29,7 @@ class Date
   def to_formatted_s(format = :some_default); end
 end
 
-class DateTime
+class DateTime < Date
   # @return [String]
   def readable_inspect; end
 
