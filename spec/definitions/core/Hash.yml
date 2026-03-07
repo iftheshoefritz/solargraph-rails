@@ -333,6 +333,7 @@ Hash#deep_stringify_keys!:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Hash#deep_symbolize_keys:
   types:
@@ -359,6 +360,7 @@ Hash#deep_symbolize_keys:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Hash#deep_symbolize_keys!:
   types:
@@ -385,6 +387,7 @@ Hash#deep_symbolize_keys!:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Hash#deep_transform_keys:
   types:

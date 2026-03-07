@@ -190,6 +190,7 @@ Rails::Application.eager_load!:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application.endpoint:
   types:
@@ -266,6 +267,7 @@ Rails::Application.initializer:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application.initializers:
   types:
@@ -292,6 +294,7 @@ Rails::Application.initializers:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application.initializers_chain:
   types:
@@ -318,6 +321,7 @@ Rails::Application.initializers_chain:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application.initializers_for:
   types:
@@ -344,6 +348,7 @@ Rails::Application.initializers_for:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application.instance:
   types:
@@ -581,6 +586,7 @@ Rails::Application.yaml_tag:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#acts_like?:
   types:
@@ -688,6 +694,7 @@ Rails::Application#default_url_options:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#default_url_options=:
   types:
@@ -714,6 +721,7 @@ Rails::Application#default_url_options=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#deprecators:
   types:
@@ -771,6 +779,7 @@ Rails::Application#engine_name:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#ensure_generator_templates_added:
   types:
@@ -831,6 +840,7 @@ Rails::Application#importmap:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#importmap=:
   types:
@@ -857,6 +867,7 @@ Rails::Application#importmap=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#in?:
   types:
@@ -919,6 +930,7 @@ Rails::Application#isolated?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#key_generator:
   types:
@@ -982,6 +994,7 @@ Rails::Application#middleware:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#migration_railties:
   types:
@@ -1021,6 +1034,7 @@ Rails::Application#paths:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#presence:
   types:
@@ -1065,6 +1079,7 @@ Rails::Application#railtie_name:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#railtie_namespace:
   types:
@@ -1127,6 +1142,7 @@ Rails::Application#root:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 Rails::Application#routes:
   types:

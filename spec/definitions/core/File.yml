@@ -394,6 +394,7 @@ File#sum:
   - 0.59.0
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 File#to_param:
   types:
   - undefined

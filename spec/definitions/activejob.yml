@@ -172,6 +172,7 @@ ActiveJob::Base.default_priority:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.default_priority=:
   types:
@@ -198,6 +199,7 @@ ActiveJob::Base.default_priority=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.default_queue_name:
   types:
@@ -224,6 +226,7 @@ ActiveJob::Base.default_queue_name:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.default_queue_name=:
   types:
@@ -250,6 +253,7 @@ ActiveJob::Base.default_queue_name=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.define_callbacks:
   types:
@@ -386,6 +390,7 @@ ActiveJob::Base.log_arguments:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.log_arguments=:
   types:
@@ -412,6 +417,7 @@ ActiveJob::Base.log_arguments=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.log_arguments?:
   types:
@@ -438,6 +444,7 @@ ActiveJob::Base.log_arguments?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.logger:
   types:
@@ -464,6 +471,7 @@ ActiveJob::Base.logger:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.logger=:
   types:
@@ -490,6 +498,7 @@ ActiveJob::Base.logger=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.mattr_accessor:
   types:
@@ -588,6 +597,7 @@ ActiveJob::Base.priority:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.priority=:
   types:
@@ -614,6 +624,7 @@ ActiveJob::Base.priority=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.priority?:
   types:
@@ -640,6 +651,7 @@ ActiveJob::Base.priority?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.pry:
   types:
@@ -706,6 +718,7 @@ ActiveJob::Base.queue_name:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name=:
   types:
@@ -732,6 +745,7 @@ ActiveJob::Base.queue_name=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name?:
   types:
@@ -758,6 +772,7 @@ ActiveJob::Base.queue_name?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name_delimiter:
   types:
@@ -784,6 +799,7 @@ ActiveJob::Base.queue_name_delimiter:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name_delimiter=:
   types:
@@ -810,6 +826,7 @@ ActiveJob::Base.queue_name_delimiter=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name_delimiter?:
   types:
@@ -836,6 +853,7 @@ ActiveJob::Base.queue_name_delimiter?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name_from_part:
   types:
@@ -871,6 +889,7 @@ ActiveJob::Base.queue_name_prefix:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name_prefix=:
   types:
@@ -897,6 +916,7 @@ ActiveJob::Base.queue_name_prefix=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_name_prefix?:
   types:
@@ -923,6 +943,7 @@ ActiveJob::Base.queue_name_prefix?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.queue_with_priority:
   types:
@@ -990,6 +1011,7 @@ ActiveJob::Base.rescue_handlers:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.rescue_handlers=:
   types:
@@ -1016,6 +1038,7 @@ ActiveJob::Base.rescue_handlers=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.rescue_handlers?:
   types:
@@ -1042,6 +1065,7 @@ ActiveJob::Base.rescue_handlers?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.rescue_with_handler:
   types:
@@ -1092,6 +1116,7 @@ ActiveJob::Base.retry_jitter:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.retry_jitter=:
   types:
@@ -1118,6 +1143,7 @@ ActiveJob::Base.retry_jitter=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.retry_on:
   types:
@@ -1178,6 +1204,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.skip_after_callbacks_if_terminated=:
   types:
@@ -1204,6 +1231,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base.skip_callback:
   types:
@@ -1425,6 +1453,7 @@ ActiveJob::Base#logger=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#perform:
   types:
@@ -1493,6 +1522,7 @@ ActiveJob::Base#queue_adapter:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#queue_name:
   types:
@@ -1527,6 +1557,7 @@ ActiveJob::Base#queue_name_prefix:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#queue_name_prefix=:
   types:
@@ -1553,6 +1584,7 @@ ActiveJob::Base#queue_name_prefix=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#queue_name_prefix?:
   types:
@@ -1579,6 +1611,7 @@ ActiveJob::Base#queue_name_prefix?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#require_dependency:
   types:
@@ -1609,6 +1642,7 @@ ActiveJob::Base#rescue_handlers:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#rescue_handlers=:
   types:
@@ -1635,6 +1669,7 @@ ActiveJob::Base#rescue_handlers=:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#rescue_handlers?:
   types:
@@ -1661,6 +1696,7 @@ ActiveJob::Base#rescue_handlers?:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#rescue_with_handler:
   types:
@@ -1707,6 +1743,7 @@ ActiveJob::Base#serialize:
   - branch-better_signature_combination
   - 0.57.alpha
   - branch-castwide-master
+  - branch-castwide-v0.59
   - branch-2025-09-22
 ActiveJob::Base#serialized_arguments=:
   types:
