@@ -353,6 +353,7 @@ Time#-:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Time#<=>:
   types:
   - "-1"
@@ -382,6 +383,7 @@ Time#<=>:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Time#acts_like?:
   types:
   - Boolean
@@ -478,6 +480,7 @@ Time#as_json:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Time#at_beginning_of_day:
   types:
   - undefined
@@ -781,6 +784,7 @@ Time#minus_without_coercion:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Time#monday:
   types:
   - undefined
@@ -996,6 +1000,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Time#weeks_ago:
   types:
   - undefined

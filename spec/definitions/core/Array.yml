@@ -255,6 +255,7 @@ Array.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Array.try!:
   types:
   - generic<T>
@@ -282,6 +283,7 @@ Array.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Array.with_options:
   types:
   - undefined
@@ -562,6 +564,7 @@ Array#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Array#try!:
   types:
   - generic<T>
@@ -589,6 +592,7 @@ Array#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Array#with_options:
   types:
   - undefined

@@ -59,6 +59,7 @@ Class.attr_internal_naming_format:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Class.attr_internal_naming_format=:
   types:
   - String
@@ -85,6 +86,7 @@ Class.attr_internal_naming_format=:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Class.attr_internal_reader:
   types:
   - void
@@ -307,6 +309,7 @@ Class.try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Class.try!:
   types:
   - generic<T>
@@ -334,6 +337,7 @@ Class.try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Class.with_options:
   types:
   - undefined
@@ -594,6 +598,7 @@ Class#try:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Class#try!:
   types:
   - generic<T>
@@ -621,6 +626,7 @@ Class#try!:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
+  - branch-castwide-v0.59
 Class#with_options:
   types:
   - undefined
