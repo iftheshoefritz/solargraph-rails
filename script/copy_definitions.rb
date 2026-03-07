@@ -65,7 +65,7 @@ files.each do |path|
     file_entries_changed += 1
   end
 
-  # next if file_entries_changed.zero?
+  next if file_entries_changed.zero?
 
   total_files_changed += 1
   total_entries_changed += file_entries_changed
