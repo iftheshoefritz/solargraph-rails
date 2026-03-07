@@ -230,7 +230,6 @@ Integer.to_query:
   - 0.52.0
 Integer.try:
   types:
-  - generic<T>
   - undefined
   skip: false
 Integer.try!:
