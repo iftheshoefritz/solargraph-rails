@@ -439,6 +439,7 @@ DateTime#<=>:
   - '-1'
   - '0'
   - '1'
+  - 'Integer'
   - nil
   skip:
   - 0.48.0
