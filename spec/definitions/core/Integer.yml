@@ -245,16 +245,16 @@ Integer.try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
   - branch-2025-09-22
+  - branch-better_signature_combination
+  - branch-castwide-master
 Integer.try!:
   types:
   - generic<T>
@@ -272,16 +272,16 @@ Integer.try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
   - branch-2025-09-22
+  - branch-better_signature_combination
+  - branch-castwide-master
 Integer.with_options:
   types:
   - undefined
@@ -581,16 +581,16 @@ Integer#try:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
   - branch-2025-09-22
+  - branch-better_signature_combination
+  - branch-castwide-master
 Integer#try!:
   types:
   - generic<T>
@@ -608,16 +608,16 @@ Integer#try!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
-  - branch-better_signature_combination
-  - 0.57.alpha
-  - branch-castwide-master
   - branch-2025-09-22
+  - branch-better_signature_combination
+  - branch-castwide-master
 Integer#week:
   types:
   - ActiveSupport::Duration

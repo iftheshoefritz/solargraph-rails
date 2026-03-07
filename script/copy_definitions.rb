@@ -52,13 +52,16 @@ files.each do |path|
     skip = entry["skip"]
     next unless skip.is_a?(Array)
 
+    skip.sort!.uniq!
+
     # @param idx [Integer, nil]
     idx = skip.index(from_version)
     next if idx.nil?
     next if skip.include?(to_version)
 
-    # Insert TO immediately after FROM
-    skip.insert(idx + 1, to_version)
+    skip.add(to_version)
+    skip.sort!.uniq!
+
     file_entries_changed += 1
   end
 
