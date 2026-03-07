@@ -376,7 +376,7 @@ ActiveRecord::Base.around_update:
   - 0.52.0
 ActiveRecord::Base.as_json:
   types:
-  - String
+  - undefined
   skip: false
 ActiveRecord::Base.async_count_by_sql:
   types:
