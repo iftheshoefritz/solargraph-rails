@@ -18,7 +18,7 @@ Time.anonymous?:
   skip: false
 Time.as_json:
   types:
-  - undefined
+  - String
   skip: false
 Time.at:
   types:

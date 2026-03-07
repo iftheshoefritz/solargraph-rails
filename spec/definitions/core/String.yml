@@ -13,7 +13,7 @@ String.anonymous?:
   skip: false
 String.as_json:
   types:
-  - undefined
+  - String
   skip: false
 String.attr_internal:
   types:
@@ -255,7 +255,7 @@ String#acts_like_string?:
   - 0.52.0
 String#as_json:
   types:
-  - undefined
+  - String
   skip: false
 String#at:
   types:

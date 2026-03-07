@@ -176,7 +176,7 @@ ActionController::Base.around_action:
   - 0.52.0
 ActionController::Base.as_json:
   types:
-  - undefined
+  - String
   skip: false
 ActionController::Base.asset_host:
   types:

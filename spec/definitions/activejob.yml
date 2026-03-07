@@ -59,7 +59,7 @@ ActiveJob::Base.around_perform:
   - 0.52.0
 ActiveJob::Base.as_json:
   types:
-  - undefined
+  - String
   skip: false
 ActiveJob::Base.attr_internal:
   types:

@@ -13,7 +13,7 @@ Integer.anonymous?:
   skip: false
 Integer.as_json:
   types:
-  - undefined
+  - String
   skip: false
 Integer.attr_internal:
   types:
