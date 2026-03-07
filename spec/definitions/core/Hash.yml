@@ -324,17 +324,17 @@ Hash#deep_stringify_keys!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Hash#deep_symbolize_keys:
   types:
   - Hash{Symbol, undefined}
@@ -351,17 +351,17 @@ Hash#deep_symbolize_keys:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Hash#deep_symbolize_keys!:
   types:
   - Hash{Symbol, undefined}
@@ -378,17 +378,17 @@ Hash#deep_symbolize_keys!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Hash#deep_transform_keys:
   types:
   - undefined

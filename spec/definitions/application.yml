@@ -181,17 +181,17 @@ Rails::Application.eager_load!:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application.endpoint:
   types:
   - undefined
@@ -258,17 +258,17 @@ Rails::Application.initializer:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application.initializers:
   types:
   - undefined
@@ -285,17 +285,17 @@ Rails::Application.initializers:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application.initializers_chain:
   types:
   - undefined
@@ -312,17 +312,17 @@ Rails::Application.initializers_chain:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application.initializers_for:
   types:
   - undefined
@@ -339,17 +339,17 @@ Rails::Application.initializers_for:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application.instance:
   types:
   - undefined
@@ -577,17 +577,17 @@ Rails::Application.yaml_tag:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#acts_like?:
   types:
   - Boolean
@@ -685,17 +685,17 @@ Rails::Application#default_url_options:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#default_url_options=:
   types:
   - undefined
@@ -712,17 +712,17 @@ Rails::Application#default_url_options=:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#deprecators:
   types:
   - undefined
@@ -770,17 +770,17 @@ Rails::Application#engine_name:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#ensure_generator_templates_added:
   types:
   - undefined
@@ -831,17 +831,17 @@ Rails::Application#importmap:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#importmap=:
   types:
   - undefined
@@ -858,17 +858,17 @@ Rails::Application#importmap=:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#in?:
   types:
   - Boolean
@@ -921,17 +921,17 @@ Rails::Application#isolated?:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#key_generator:
   types:
   - undefined
@@ -985,17 +985,17 @@ Rails::Application#middleware:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#migration_railties:
   types:
   - undefined
@@ -1025,17 +1025,17 @@ Rails::Application#paths:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#presence:
   types:
   - nil
@@ -1070,17 +1070,17 @@ Rails::Application#railtie_name:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#railtie_namespace:
   types:
   - undefined
@@ -1133,17 +1133,17 @@ Rails::Application#root:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Rails::Application#routes:
   types:
   - ActionDispatch::Routing::RouteSet

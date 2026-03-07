@@ -343,17 +343,17 @@ Time#-:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Time#<=>:
   types:
   - "-1"
@@ -373,17 +373,17 @@ Time#<=>:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Time#acts_like?:
   types:
   - Boolean
@@ -470,17 +470,17 @@ Time#as_json:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Time#at_beginning_of_day:
   types:
   - undefined
@@ -774,17 +774,17 @@ Time#minus_without_coercion:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Time#monday:
   types:
   - undefined
@@ -990,17 +990,17 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
+  - 0.57.alpha
   - 0.58.0
   - 0.58.1
   - 0.58.2
+  - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
-  - 0.59.0
+  - branch-2025-09-22
   - branch-better_signature_combination
-  - 0.57.alpha
   - branch-castwide-master
   - branch-castwide-v0.59
-  - branch-2025-09-22
 Time#weeks_ago:
   types:
   - undefined
