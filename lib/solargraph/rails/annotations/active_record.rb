@@ -227,6 +227,7 @@ class ActiveRecord::Base
   extend ActiveModel::Validations::ClassMethods
 
   extend ActiveRecord::Core
+  extend ActiveRecord::Core::ClassMethods
 
   class << self
     # included in ActiveRecordExtensions
