@@ -85,6 +85,8 @@ module ActionController
     include ActiveSupport::Rescuable
     include AbstractController::Helpers
     extend AbstractController::Helpers::ClassMethods
+    include AbstractController::Caching
+    include AbstractController::Caching::ClassMethods
 
     # @return [ActionDispatch::Response]
     def response; end
