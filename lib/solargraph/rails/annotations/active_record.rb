@@ -215,6 +215,9 @@ class ActiveRecord::Base
   include ActiveRecord::SignedId
   extend ActiveRecord::SignedId::ClassMethods
 
+  include ActiveRecord::Timestamp
+  extend ActiveRecord::Timestamp::ClassMethods
+
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
 
