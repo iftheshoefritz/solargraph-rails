@@ -1772,7 +1772,6 @@ ActiveRecord::Base.enum:
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
   - undefined
-  added_in: 8.0
   skip:
   - 0.48.0
   - 0.49.0
