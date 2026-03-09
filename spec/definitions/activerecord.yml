@@ -1802,11 +1802,6 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2779,10 +2774,6 @@ ActiveRecord::Base.locking_column=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-ActiveRecord::Base.locking_enabled?:
-  types:
-  - Boolean
-  skip: false
 ActiveRecord::Base.logger:
   types:
   - undefined
