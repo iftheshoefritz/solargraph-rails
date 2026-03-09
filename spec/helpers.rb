@@ -56,7 +56,8 @@ module Helpers
       bench = Solargraph::Bench.new(source_maps: library_bench.source_maps,
                                     workspace: workspace,
                                     external_requires:
-                                      library_bench.external_requires + %w[date time json])
+                                      library_bench.external_requires +
+                                      %w[date time json turbo-rails])
       map.catalog bench
       map.cache_all_for_doc_map!(out: $stderr) if map.respond_to? :cache_all_for_doc_map!
       map.catalog bench
