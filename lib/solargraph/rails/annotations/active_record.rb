@@ -1,4 +1,5 @@
 require 'active_record'
+require 'turbo'
 
 class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
@@ -182,6 +183,7 @@ class ActiveRecord::Base
   extend ActiveRecord::Transactions::ClassMethods
   extend ActiveRecord::Scoping::Named::ClassMethods
   extend ActiveRecord::RelationMethods
+  extend ActiveRecord::Relation
   include ActiveRecord::Persistence
   extend ActiveModel::AttributeRegistration::ClassMethods
   # note: this supplies set_callback() - after Rails 7.1, this is no
@@ -196,6 +198,9 @@ class ActiveRecord::Base
   include ::ActiveStorage::Attached::Model
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
+
+  # include ActiveRecord::Core
+  include ::Turbo::Broadcastable
 
   class << self
     # included in ActiveRecordExtensions

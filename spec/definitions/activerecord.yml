@@ -627,87 +627,6 @@ ActiveRecord::Base.authenticate_by:
   - 0.51.2
   - 0.52.0
   added_in: 7.1
-ActiveRecord::Base.automatic_scope_inversing:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
-ActiveRecord::Base.automatic_scope_inversing=:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
-ActiveRecord::Base.automatic_scope_inversing?:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
 ActiveRecord::Base.average:
   types:
   - undefined
@@ -843,138 +762,15 @@ ActiveRecord::Base.blank?:
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
-ActiveRecord::Base.broadcasts:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.broadcasts_refreshes:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
-ActiveRecord::Base.broadcasts_refreshes_to:
-  types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.broadcasts_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.build:
   types:
   - undefined
@@ -1331,31 +1127,8 @@ ActiveRecord::Base.content_columns:
   skip: false
 ActiveRecord::Base.count:
   types:
-  - Hash
   - Integer
-  skip:
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -1381,57 +1154,11 @@ ActiveRecord::Base.create!:
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.create_or_find_by!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.create_with:
   types:
   - undefined
@@ -1883,57 +1610,11 @@ ActiveRecord::Base.delete:
 ActiveRecord::Base.delete_all:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.delete_by:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.deprecate:
   types:
   - undefined
@@ -1958,57 +1639,11 @@ ActiveRecord::Base.destroy:
 ActiveRecord::Base.destroy_all:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.destroy_by:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.deterministic_encrypted_attributes:
   types:
   - undefined
@@ -2294,30 +1929,7 @@ ActiveRecord::Base.establish_connection:
 ActiveRecord::Base.except:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.excluding:
   types:
   - undefined
@@ -2439,84 +2051,15 @@ ActiveRecord::Base.find_in_batches:
 ActiveRecord::Base.find_or_create_by:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.find_or_create_by!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.find_or_initialize_by:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.find_signed:
   types:
   - undefined
@@ -2560,84 +2103,15 @@ ActiveRecord::Base.first!:
 ActiveRecord::Base.first_or_create:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.first_or_create!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.first_or_initialize:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.flush_idle_connections!:
   types:
   - undefined
@@ -3553,30 +3027,7 @@ ActiveRecord::Base.maximum:
 ActiveRecord::Base.merge:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.method_defined_within?:
   types:
   - Boolean
@@ -3703,30 +3154,7 @@ ActiveRecord::Base.one?:
 ActiveRecord::Base.only:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.optimizer_hints:
   types:
   - undefined
@@ -5212,30 +4640,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.symbol_column_to_string:
   types:
   - undefined
@@ -5505,30 +4910,7 @@ ActiveRecord::Base.to_query:
 ActiveRecord::Base.touch_all:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.touch_attributes_with_time:
   types:
   - undefined
@@ -5615,30 +4997,7 @@ ActiveRecord::Base.update!:
 ActiveRecord::Base.update_all:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base.update_counters:
   types:
   - undefined
@@ -6292,867 +5651,131 @@ ActiveRecord::Base#blank?:
 ActiveRecord::Base#broadcast_action:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_action_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_action_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_action_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_after_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_append:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_append_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_append_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_append_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_before_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_prepend:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_prepend_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_prepend_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_refresh:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_refresh_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_refresh_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_refresh_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_remove:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_remove_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_render:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_render_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_render_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_render_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_replace:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_replace_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_replace_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_update:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_update_later:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_update_later_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#broadcast_update_to:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActiveRecord::Base#cache_key:
   types:
   - undefined
