@@ -48,23 +48,11 @@ module Helpers
 
     Dir.chdir folder do
       yield injector if block_given?
-      map = Solargraph::ApiMap.new
-      workspace = Solargraph::Workspace.new('.')
-      library = Solargraph::Library.new(workspace)
-      library.map!
-      library_bench = library.bench
-      bench = Solargraph::Bench.new(source_maps: library_bench.source_maps,
-                                    workspace: workspace,
-                                    external_requires:
-                                      library_bench.external_requires +
-                                      %w[date time json turbo-rails])
-      map.catalog bench
-      if map.respond_to? :cache_all_for_doc_map!
-        map.cache_all_for_doc_map!(out: $stderr)
+      if Solargraph::ApiMap.respond_to?(:load_with_cache)
+        map = Solargraph::ApiMap.load_with_cache('./', STDERR)
       else
-        STDERR.puts("Could not find cache method: #{map.methods.sort - Object.methods.sort}")
+        map = Solargraph::ApiMap.load('./')
       end
-      map.catalog bench
 
       injector.files.each { |f| File.delete(f) }
     end
