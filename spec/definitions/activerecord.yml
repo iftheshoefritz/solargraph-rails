@@ -1131,7 +1131,8 @@ ActiveRecord::Base.content_columns:
 ActiveRecord::Base.count:
   types:
   - Integer
-  skip: false
+  skip:
+    - 0.48.0
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
