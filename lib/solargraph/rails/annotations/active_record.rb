@@ -191,13 +191,18 @@ class ActiveRecord::Base
   extend ActiveRecord::Associations::CollectionProxy
   extend ActiveRecord::Associations::ClassMethods
   extend ActiveRecord::Inheritance::ClassMethods
+  include ActiveRecord::ModelSchema
   extend ActiveRecord::ModelSchema::ClassMethods
+  include ActiveRecord::Transactions
   extend ActiveRecord::Transactions::ClassMethods
+  include ActiveRecord::Scoping::Named
   extend ActiveRecord::Scoping::Named::ClassMethods
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
   include ActiveRecord::Persistence
+  include ActiveRecord::Persistence
   extend ActiveRecord::Persistence::ClassMethods
+  include ActiveModel::AttributeRegistration
   extend ActiveModel::AttributeRegistration::ClassMethods
   # note: this supplies set_callback() - after Rails 7.1, this is no
   #  longer used and is replaced entirely by ActiveRecord::Callbacks
