@@ -2684,12 +2684,7 @@ ActiveRecord::Base.instance_variable_names:
 ActiveRecord::Base.instantiate:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.internal_metadata_table_name:
   types:
   - undefined
@@ -3525,12 +3520,7 @@ ActiveRecord::Base.pry:
 ActiveRecord::Base.query_constraints:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
   added_in: 7.1
 ActiveRecord::Base.queues:
   types:
