@@ -745,10 +745,6 @@ ActiveRecord::Base.blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.56.2
-  - 0.57.0
-  - 0.58.1
-  - 0.58.2
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
@@ -893,12 +889,7 @@ ActiveRecord::Base.clear_reloadable_connections!:
 ActiveRecord::Base.clear_validators!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.collecting_queries_for_explain:
   types:
   - undefined
@@ -967,12 +958,7 @@ ActiveRecord::Base.columns_hash:
 ActiveRecord::Base.combine_signed_id_purposes:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.composed_of:
   types:
   - undefined
@@ -1793,18 +1779,6 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
@@ -4015,21 +3989,11 @@ ActiveRecord::Base.shard_swapping_prohibited?:
 ActiveRecord::Base.signed_id_verifier:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.signed_id_verifier=:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.signed_id_verifier_secret:
   types:
   - undefined
@@ -4731,12 +4695,7 @@ ActiveRecord::Base.touch_all:
 ActiveRecord::Base.touch_attributes_with_time:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.transaction:
   types:
   - generic<T>
@@ -4995,21 +4954,11 @@ ActiveRecord::Base.validates_with:
 ActiveRecord::Base.validators:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.validators_on:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.verbose_query_logs:
   types:
   - undefined
