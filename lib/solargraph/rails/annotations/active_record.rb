@@ -211,7 +211,9 @@ class ActiveRecord::Base
   include ::ActiveStorage::Attached::Model
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
-  extend ActiveStorage::Blob
+
+  include ActiveRecord::SignedId
+  extend ActiveRecord::SignedId::ClassMethods
 
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods

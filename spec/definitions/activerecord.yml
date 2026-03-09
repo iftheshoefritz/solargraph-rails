@@ -742,7 +742,7 @@ ActiveRecord::Base.benchmark:
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - Boolean
+  - 'false'
   skip:
   - 0.48.0
   - 0.49.0
@@ -1970,21 +1970,11 @@ ActiveRecord::Base.find_or_initialize_by:
 ActiveRecord::Base.find_signed:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.find_signed!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.find_sole_by:
   types:
   - undefined
@@ -3331,8 +3321,13 @@ ActiveRecord::Base.presence_in:
   skip: false
 ActiveRecord::Base.present?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.primary_abstract_class:
   types:
   - void
