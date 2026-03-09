@@ -758,7 +758,12 @@ ActiveRecord::Base.benchmark:
 ActiveRecord::Base.blank?:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
@@ -7483,11 +7488,21 @@ ActiveRecord::Base#type_for_attribute:
 ActiveRecord::Base#update:
   types:
   - Boolean
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#update!:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#update_attribute:
   types:
   - undefined
