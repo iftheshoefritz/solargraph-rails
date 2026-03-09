@@ -250,10 +250,6 @@ ActiveRecord::Base.all:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.all_timestamp_attributes_in_model:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.and:
   types:
   - undefined
@@ -2566,10 +2562,6 @@ ActiveRecord::Base.insert_all!:
 ActiveRecord::Base.inspect:
   types:
   - String
-  skip: false
-ActiveRecord::Base.inspection_filter:
-  types:
-  - undefined
   skip: false
 ActiveRecord::Base.instance_method_already_implemented?:
   types:
@@ -6348,10 +6340,6 @@ ActiveRecord::Base#lock_optimistically?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-ActiveRecord::Base#locking_enabled?:
-  types:
-  - Boolean
-  skip: false
 ActiveRecord::Base#logger:
   types:
   - undefined

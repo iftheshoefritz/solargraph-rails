@@ -218,8 +218,15 @@ class ActiveRecord::Base
   include ActiveRecord::Timestamp
   extend ActiveRecord::Timestamp::ClassMethods
 
+  extend ActiveRecord::AttributeMethods
+
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
+
+  include ActiveModel::Validations
+  extend ActiveModel::Validations::ClassMethods
+
+  extend ActiveRecord::Core
 
   class << self
     # included in ActiveRecordExtensions
