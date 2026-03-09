@@ -74,7 +74,7 @@ jobs:
           # https://github.com/iftheshoefritz/solargraph-rails/actions/runs/22801832654/job/66144629310?pr=196
           rubygems: latest
           bundler-cache: true
-          cache-version: 2026-03-07-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+          cache-version: 2026-03-09-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
@@ -121,12 +121,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           key: |
-            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2026-03-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           restore-keys: |
-            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
-            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
-            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
-            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
+            2026-03-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
+            2026-03-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
+            2026-03-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
+            2026-03-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-
           path: |
             /home/runner/.cache/solargraph
 
@@ -190,6 +190,6 @@ jobs:
         uses: actions/cache/save@v4
         with:
           key: |
-            2025-09-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2026-03-09-${{ runner.os }}-dot-cache-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           path: |
             /home/runner/.cache/solargraph

@@ -1778,6 +1778,7 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.56.2
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
