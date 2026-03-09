@@ -2527,12 +2527,7 @@ ActionController::Base#collect_mimes_from_class_level:
 ActionController::Base#combined_fragment_cache_key:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#config:
   types:
   - ActiveSupport::InheritableOptions
@@ -3110,12 +3105,7 @@ ActionController::Base#etaggers?:
 ActionController::Base#expire_fragment:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#expires_in:
   types:
   - undefined
@@ -3333,12 +3323,7 @@ ActionController::Base#fragment_cache_keys?:
 ActionController::Base#fragment_exist?:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#fresh_when:
   types:
   - undefined
@@ -3598,12 +3583,7 @@ ActionController::Base#instance_variable_names:
 ActionController::Base#instrument_fragment_cache:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#is_flashing_format?:
   types:
   - undefined
@@ -4344,12 +4324,7 @@ ActionController::Base#raise_on_open_redirects=:
 ActionController::Base#read_fragment:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#recede_or_redirect_back_or_to:
   types:
   - undefined
@@ -5389,12 +5364,7 @@ ActionController::Base#view_assigns:
 ActionController::Base#view_cache_dependencies:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#view_context:
   types:
   - undefined
@@ -5468,9 +5438,4 @@ ActionController::Base#with_options:
 ActionController::Base#write_fragment:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
