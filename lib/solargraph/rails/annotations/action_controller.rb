@@ -95,6 +95,11 @@ module ActionController
   end
 end
 
+class AbstractController::Base
+  include Rails::Application::Configuration
+  extend Rails::Application::Configuration
+end
+
 class ActionController::Metal
   # @return [ActionController::Parameters]
   def params; end
