@@ -203,8 +203,7 @@ class ActiveRecord::Base
   include ::ActiveStorage::Attached::Model
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
-  include ActiveStorage::Blob
-  extend ActiveStorage::Blob::ClassMethods
+  extend ActiveStorage::Blob
 
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
