@@ -10,6 +10,7 @@ require:
   - time
   - json
   - turbo-rails
+  - devise
 domains: []
 reporters: []
 formatter:
