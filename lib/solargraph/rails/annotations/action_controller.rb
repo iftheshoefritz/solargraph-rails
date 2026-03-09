@@ -83,6 +83,8 @@ module ActionController
     extend ActiveSupport::Callbacks::ClassMethods
     extend ActiveSupport::Rescuable::ClassMethods
     include ActiveSupport::Rescuable
+    include AbstractController::Helpers
+    extend AbstractController::Helpers::ClassMethods
 
     # @return [ActionDispatch::Response]
     def response; end
