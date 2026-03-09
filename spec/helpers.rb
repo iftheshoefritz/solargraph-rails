@@ -59,7 +59,11 @@ module Helpers
                                       library_bench.external_requires +
                                       %w[date time json turbo-rails])
       map.catalog bench
-      map.cache_all_for_doc_map!(out: $stderr) if map.respond_to? :cache_all_for_doc_map!
+      if map.respond_to? :cache_all_for_doc_map!
+        map.cache_all_for_doc_map!(out: $stderr)
+      else
+        STDERR.puts("Could not find cache method: #{map.methods.sort - Object.methods.sort}")
+      end
       map.catalog bench
 
       injector.files.each { |f| File.delete(f) }
