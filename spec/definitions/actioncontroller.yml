@@ -48,6 +48,7 @@ ActionController::Base.all_helpers_from_path:
   types:
   - undefined
   skip: false
+  removed_in: 7.2
 ActionController::Base.allow_browser:
   types:
   - void
