@@ -30,12 +30,7 @@ ActionController::Base.acts_like?:
 ActionController::Base.add_flash_types:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.after_action:
   types:
   - void
@@ -52,12 +47,7 @@ ActionController::Base.alias_attribute:
 ActionController::Base.all_helpers_from_path:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.allow_browser:
   types:
   - void
@@ -462,21 +452,11 @@ ActionController::Base.configure:
 ActionController::Base.content_security_policy:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.content_security_policy_report_only:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.controller_name:
   types:
   - undefined
@@ -602,12 +582,7 @@ ActionController::Base.default_asset_host_protocol=:
 ActionController::Base.default_form_builder:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.default_protect_from_forgery:
   types:
   - undefined
@@ -919,12 +894,7 @@ ActionController::Base.enable_fragment_cache_logging=:
 ActionController::Base.etag:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.etag_with_template_digest:
   types:
   - undefined
@@ -1301,12 +1271,7 @@ ActionController::Base.helper:
 ActionController::Base.helper_attr:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.helper_method:
   types:
   - undefined
@@ -1319,12 +1284,7 @@ ActionController::Base.helper_method:
 ActionController::Base.helpers:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.helpers_path:
   types:
   - undefined
@@ -1551,12 +1511,7 @@ ActionController::Base.javascripts_dir=:
 ActionController::Base.layout:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.log_at:
   types:
   - undefined
@@ -1564,12 +1519,7 @@ ActionController::Base.log_at:
 ActionController::Base.log_process_action:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.log_warning_on_csrf_failure:
   types:
   - undefined
@@ -1887,12 +1837,7 @@ ActionController::Base.module_parents:
 ActionController::Base.modules_for_helpers:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.normalize_callback_params:
   types:
   - Array
@@ -1905,12 +1850,7 @@ ActionController::Base.normalize_callback_params:
 ActionController::Base.param_encoding:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.per_form_csrf_tokens:
   types:
   - undefined
@@ -2238,12 +2178,7 @@ ActionController::Base.render:
 ActionController::Base.renderer:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.request_forgery_protection_token:
   types:
   - undefined
@@ -2537,21 +2472,11 @@ ActionController::Base.set_callback:
 ActionController::Base.setup_param_encode:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.setup_renderer!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -2594,12 +2519,7 @@ ActionController::Base.skip_forgery_protection:
 ActionController::Base.skip_parameter_encoding:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.stylesheets_dir:
   types:
   - undefined
@@ -2797,12 +2717,7 @@ ActionController::Base.use_renderers:
 ActionController::Base.view_cache_dependency:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.view_context_class:
   types:
   - undefined
@@ -2850,12 +2765,7 @@ ActionController::Base.without_modules:
 ActionController::Base.wrap_parameters:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base#action_has_layout?:
   types:
   - Boolean
