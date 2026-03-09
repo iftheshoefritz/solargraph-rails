@@ -47,12 +47,7 @@ ActionController::Base.alias_attribute:
 ActionController::Base.all_helpers_from_path:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
   removed_in: 8.0
 ActionController::Base.allow_browser:
   types:
@@ -1214,12 +1209,7 @@ ActionController::Base.helper_attr:
 ActionController::Base.helper_method:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActionController::Base.helpers:
   types:
   - undefined
