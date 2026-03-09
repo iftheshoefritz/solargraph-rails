@@ -186,6 +186,7 @@ class ActiveRecord::Base
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
   include ActiveRecord::Persistence
+  extend ActiveRecord::Persistence::ClassMethods
   extend ActiveModel::AttributeRegistration::ClassMethods
   # note: this supplies set_callback() - after Rails 7.1, this is no
   #  longer used and is replaced entirely by ActiveRecord::Callbacks
@@ -199,6 +200,8 @@ class ActiveRecord::Base
   include ::ActiveStorage::Attached::Model
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
+  include ActiveStorage::Blob
+  extend ActiveStorage::Blob::ClassMethods
 
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
