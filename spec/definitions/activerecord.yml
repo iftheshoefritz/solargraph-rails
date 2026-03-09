@@ -253,12 +253,7 @@ ActiveRecord::Base.all:
 ActiveRecord::Base.all_timestamp_attributes_in_model:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.and:
   types:
   - undefined
@@ -516,12 +511,7 @@ ActiveRecord::Base.attribute_aliases?:
 ActiveRecord::Base.attribute_method?:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.attribute_method_affix:
   types:
   - undefined
@@ -579,12 +569,7 @@ ActiveRecord::Base.attribute_method_suffix:
 ActiveRecord::Base.attribute_names:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.attributes_builder:
   types:
   - undefined
@@ -1064,11 +1049,6 @@ ActiveRecord::Base.connection_handler:
   types:
   - undefined
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
   - 0.56.0
   - 0.56.1
   - 0.56.2
@@ -1139,12 +1119,7 @@ ActiveRecord::Base.count_by_sql:
 ActiveRecord::Base.create:
   types:
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.create!:
   types:
   - self
@@ -1220,12 +1195,7 @@ ActiveRecord::Base.current_shard:
 ActiveRecord::Base.current_time_from_proper_timezone:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.current_transaction:
   types:
   - undefined
@@ -1837,12 +1807,9 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 ActiveRecord::Base.enumerate_columns_in_select_statements=:
   types:
   - undefined
@@ -2205,12 +2172,7 @@ ActiveRecord::Base.has_and_belongs_to_many:
 ActiveRecord::Base.has_attribute?:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.has_many:
   types:
   - void
@@ -2669,12 +2631,7 @@ ActiveRecord::Base.inspect:
 ActiveRecord::Base.inspection_filter:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.instance_method_already_implemented?:
   types:
   - Boolean
@@ -2895,12 +2852,7 @@ ActiveRecord::Base.locking_column=:
 ActiveRecord::Base.locking_enabled?:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.logger:
   types:
   - undefined
@@ -4179,8 +4131,6 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.58.1
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4789,21 +4739,11 @@ ActiveRecord::Base.time_zone_aware_types?:
 ActiveRecord::Base.timestamp_attributes_for_create_in_model:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.timestamp_attributes_for_update_in_model:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.timestamped_migrations:
   types:
   - undefined
@@ -5129,12 +5069,7 @@ ActiveRecord::Base.validates_uniqueness_of:
 ActiveRecord::Base.validates_with:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.validators:
   types:
   - undefined
