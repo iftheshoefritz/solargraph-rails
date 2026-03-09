@@ -1,4 +1,5 @@
 require 'active_record'
+require 'turbo'
 
 class ActiveRecord::ConnectionAdapters::SchemaStatements
   # @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
@@ -156,6 +157,17 @@ end
 
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
+
+  # @return [self]
+  def build(attributes = nil, &block); end
+end
+
+class ActiveRecord::Persistence::ClassMethods
+  # @return [self]
+  def create(attributes = nil, &block); end
+
+  # @return [self]
+  def build(attributes = nil, &block); end
 end
 
 module ActiveRecord
@@ -176,13 +188,16 @@ class ActiveRecord::Base
   extend ActiveRecord::FinderMethods
   extend ActiveRecord::Calculations
   extend ActiveRecord::Batches
+  extend ActiveRecord::Associations::CollectionProxy
   extend ActiveRecord::Associations::ClassMethods
   extend ActiveRecord::Inheritance::ClassMethods
   extend ActiveRecord::ModelSchema::ClassMethods
   extend ActiveRecord::Transactions::ClassMethods
   extend ActiveRecord::Scoping::Named::ClassMethods
   extend ActiveRecord::RelationMethods
+  extend ActiveRecord::Relation
   include ActiveRecord::Persistence
+  extend ActiveRecord::Persistence::ClassMethods
   extend ActiveModel::AttributeRegistration::ClassMethods
   # note: this supplies set_callback() - after Rails 7.1, this is no
   #  longer used and is replaced entirely by ActiveRecord::Callbacks
@@ -196,6 +211,22 @@ class ActiveRecord::Base
   include ::ActiveStorage::Attached::Model
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
+
+  include ActiveRecord::SignedId
+  extend ActiveRecord::SignedId::ClassMethods
+
+  include ActiveRecord::Timestamp
+  extend ActiveRecord::Timestamp::ClassMethods
+
+  extend ActiveRecord::AttributeMethods
+
+  include ::Turbo::Broadcastable
+  extend ::Turbo::Broadcastable::ClassMethods
+
+  include ActiveModel::Validations
+  extend ActiveModel::Validations::ClassMethods
+
+  extend ActiveRecord::Core
 
   class << self
     # included in ActiveRecordExtensions

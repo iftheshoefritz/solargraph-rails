@@ -4,7 +4,12 @@ exclude:
 - test/**/*
 - vendor/**/*
 - ".bundle/**/*"
-require: []
+require:
+  # assume we've included these in rails app before using them
+  - date
+  - time
+  - json
+  - turbo-rails
 domains: []
 reporters: []
 formatter:
