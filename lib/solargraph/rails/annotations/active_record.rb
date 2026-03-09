@@ -177,6 +177,7 @@ class ActiveRecord::Base
   extend ActiveRecord::FinderMethods
   extend ActiveRecord::Calculations
   extend ActiveRecord::Batches
+  extend ActiveRecord::Associations::CollectionProxy
   extend ActiveRecord::Associations::ClassMethods
   extend ActiveRecord::Inheritance::ClassMethods
   extend ActiveRecord::ModelSchema::ClassMethods
@@ -199,8 +200,8 @@ class ActiveRecord::Base
   extend ::ActiveStorage::Attached::Model::ClassMethods
   include ::ActiveStorage::Reflection::ActiveRecordExtensions
 
-  # include ActiveRecord::Core
   include ::Turbo::Broadcastable
+  extend ::Turbo::Broadcastable::ClassMethods
 
   class << self
     # included in ActiveRecordExtensions
