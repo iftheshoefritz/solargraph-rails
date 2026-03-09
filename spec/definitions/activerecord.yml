@@ -777,12 +777,7 @@ ActiveRecord::Base.broadcasts_to:
 ActiveRecord::Base.build:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
   added_in: 7.1
 ActiveRecord::Base.cache:
   types:
@@ -1604,12 +1599,7 @@ ActiveRecord::Base.delegated_type:
 ActiveRecord::Base.delete:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.delete_all:
   types:
   - undefined
@@ -1633,12 +1623,7 @@ ActiveRecord::Base.descends_from_active_record?:
 ActiveRecord::Base.destroy:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.destroy_all:
   types:
   - undefined
@@ -2066,27 +2051,11 @@ ActiveRecord::Base.find_or_initialize_by:
 ActiveRecord::Base.find_signed:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
+  skip: false
 ActiveRecord::Base.find_signed!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2
+  skip: false
 ActiveRecord::Base.find_sole_by:
   types:
   - undefined
@@ -2663,39 +2632,19 @@ ActiveRecord::Base.initialize_relation_delegate_cache:
 ActiveRecord::Base.insert:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.insert!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.insert_all:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.insert_all!:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.inspect:
   types:
   - String
@@ -3452,12 +3401,7 @@ ActiveRecord::Base.polymorphic_name:
 ActiveRecord::Base.predicate_builder:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.prefetch_primary_key?:
   types:
   - Boolean
@@ -5005,30 +4949,15 @@ ActiveRecord::Base.update_all:
 ActiveRecord::Base.update_counters:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.upsert:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.upsert_all:
   types:
   - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.validate:
   types:
   - void
@@ -7564,21 +7493,11 @@ ActiveRecord::Base#type_for_attribute:
 ActiveRecord::Base#update:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base#update!:
   types:
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base#update_attribute:
   types:
   - undefined
