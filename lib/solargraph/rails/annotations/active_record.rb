@@ -162,6 +162,11 @@ class ActiveRecord::Relation
   def build(attributes = nil, &block); end
 end
 
+class ActiveRecord::Persistence::ClassMethods
+  # @return [self]
+  def create(attributes = nil, &block); end
+end
+
 module ActiveRecord
   class Schema
     # @param version [Numeric]
