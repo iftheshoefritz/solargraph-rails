@@ -157,6 +157,9 @@ end
 
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
+
+  # @return [self]
+  def build(attributes = nil, &block); end
 end
 
 module ActiveRecord
