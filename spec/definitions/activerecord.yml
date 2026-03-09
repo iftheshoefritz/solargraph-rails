@@ -1111,7 +1111,7 @@ ActiveRecord::Base.count:
   types:
   - Integer
   skip:
-    - 0.48.0
+  - 0.48.0
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -4134,7 +4134,6 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
-  - branch-castwide-v0.59
 ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined

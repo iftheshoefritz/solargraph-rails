@@ -165,6 +165,9 @@ end
 class ActiveRecord::Persistence::ClassMethods
   # @return [self]
   def create(attributes = nil, &block); end
+
+  # @return [self]
+  def build(attributes = nil, &block); end
 end
 
 module ActiveRecord
