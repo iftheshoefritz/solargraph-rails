@@ -1034,7 +1034,6 @@ ActiveRecord::Base.connection_handler:
   skip:
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveRecord::Base.connection_handler=:
   types:
   - undefined
