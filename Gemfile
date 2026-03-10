@@ -53,6 +53,10 @@ gemspec
 solargraph_force_ci_version = (ENV['CI'] && ENV['MATRIX_SOLARGRAPH_VERSION'])
 
 case solargraph_force_ci_version
+when 'branch-apiology-use_forked_yard_active_support_concern'
+  gem 'yard-activesupport-concern-apiology',
+      github: 'apiology/yard-activesupport-concern',
+      branch: 'fork_project'
 when '0.57.alpha'
   gem "solargraph",
       github: 'apiology/solargraph',

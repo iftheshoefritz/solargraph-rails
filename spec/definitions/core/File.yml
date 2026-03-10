@@ -392,6 +392,7 @@ File#sum:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59

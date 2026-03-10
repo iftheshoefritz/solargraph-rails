@@ -55,6 +55,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -82,6 +83,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -290,6 +292,7 @@ ActiveRecord::Base.application_record_class:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -317,6 +320,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -411,6 +415,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -594,6 +599,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -729,6 +735,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1264,6 +1271,7 @@ ActiveRecord::Base.default_role:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1291,6 +1299,7 @@ ActiveRecord::Base.default_role=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1318,6 +1327,7 @@ ActiveRecord::Base.default_role?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1394,6 +1404,7 @@ ActiveRecord::Base.default_shard:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1421,6 +1432,7 @@ ActiveRecord::Base.default_shard=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1448,6 +1460,7 @@ ActiveRecord::Base.default_shard?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1688,6 +1701,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1715,6 +1729,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1742,6 +1757,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1860,6 +1876,7 @@ ActiveRecord::Base.find:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1888,6 +1905,7 @@ ActiveRecord::Base.find_by:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2099,6 +2117,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2126,6 +2145,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2153,6 +2173,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2265,6 +2286,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2292,6 +2314,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2319,6 +2342,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2461,6 +2485,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2606,6 +2631,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2633,6 +2659,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2759,6 +2786,7 @@ ActiveRecord::Base.logger?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2971,6 +2999,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -2998,6 +3027,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3025,6 +3055,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3052,6 +3083,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3079,6 +3111,7 @@ ActiveRecord::Base.partial_updates:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3106,6 +3139,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3133,6 +3167,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3188,6 +3223,7 @@ ActiveRecord::Base.pluck:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3330,6 +3366,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3378,6 +3415,7 @@ ActiveRecord::Base.queues:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3405,6 +3443,7 @@ ActiveRecord::Base.queues=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3894,6 +3933,7 @@ ActiveRecord::Base.shard_selector:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3921,6 +3961,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -3948,6 +3989,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4014,6 +4056,7 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4041,6 +4084,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4147,6 +4191,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4174,6 +4219,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4201,6 +4247,7 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4268,6 +4315,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4295,6 +4343,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4322,6 +4371,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4366,6 +4416,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4393,6 +4444,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4561,6 +4613,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4641,6 +4694,7 @@ ActiveRecord::Base.to_adapter:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -4990,6 +5044,7 @@ ActiveRecord::Base.where:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5302,6 +5357,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5329,6 +5385,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5696,6 +5753,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5765,6 +5823,7 @@ ActiveRecord::Base#default_role:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5792,6 +5851,7 @@ ActiveRecord::Base#default_role?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5837,6 +5897,7 @@ ActiveRecord::Base#default_shard:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5864,6 +5925,7 @@ ActiveRecord::Base#default_shard?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -5977,6 +6039,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6004,6 +6067,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6031,6 +6095,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6277,6 +6342,7 @@ ActiveRecord::Base#logger?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6356,6 +6422,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6383,6 +6450,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6410,6 +6478,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6437,6 +6506,7 @@ ActiveRecord::Base#partial_updates:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6464,6 +6534,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6536,6 +6607,7 @@ ActiveRecord::Base#pretty_print:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6589,6 +6661,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6800,6 +6873,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6849,6 +6923,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6876,6 +6951,7 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -6991,6 +7067,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7036,6 +7113,7 @@ ActiveRecord::Base#to_gid:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7063,6 +7141,7 @@ ActiveRecord::Base#to_gid_param:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7090,6 +7169,7 @@ ActiveRecord::Base#to_global_id:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7142,6 +7222,7 @@ ActiveRecord::Base#to_sgid:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7169,6 +7250,7 @@ ActiveRecord::Base#to_sgid_param:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7196,6 +7278,7 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -7255,6 +7338,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59

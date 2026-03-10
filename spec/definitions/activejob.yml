@@ -171,6 +171,7 @@ ActiveJob::Base.default_priority:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -198,6 +199,7 @@ ActiveJob::Base.default_priority=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -225,6 +227,7 @@ ActiveJob::Base.default_queue_name:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -252,6 +255,7 @@ ActiveJob::Base.default_queue_name=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -389,6 +393,7 @@ ActiveJob::Base.log_arguments:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -416,6 +421,7 @@ ActiveJob::Base.log_arguments=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -443,6 +449,7 @@ ActiveJob::Base.log_arguments?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -470,6 +477,7 @@ ActiveJob::Base.logger:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -497,6 +505,7 @@ ActiveJob::Base.logger=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -596,6 +605,7 @@ ActiveJob::Base.priority:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -623,6 +633,7 @@ ActiveJob::Base.priority=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -650,6 +661,7 @@ ActiveJob::Base.priority?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -717,6 +729,7 @@ ActiveJob::Base.queue_name:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -744,6 +757,7 @@ ActiveJob::Base.queue_name=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -771,6 +785,7 @@ ActiveJob::Base.queue_name?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -798,6 +813,7 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -825,6 +841,7 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -852,6 +869,7 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -888,6 +906,7 @@ ActiveJob::Base.queue_name_prefix:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -915,6 +934,7 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -942,6 +962,7 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1010,6 +1031,7 @@ ActiveJob::Base.rescue_handlers:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1037,6 +1059,7 @@ ActiveJob::Base.rescue_handlers=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1064,6 +1087,7 @@ ActiveJob::Base.rescue_handlers?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1115,6 +1139,7 @@ ActiveJob::Base.retry_jitter:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1142,6 +1167,7 @@ ActiveJob::Base.retry_jitter=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1203,6 +1229,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1230,6 +1257,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1452,6 +1480,7 @@ ActiveJob::Base#logger=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1521,6 +1550,7 @@ ActiveJob::Base#queue_adapter:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1556,6 +1586,7 @@ ActiveJob::Base#queue_name_prefix:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1583,6 +1614,7 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1610,6 +1642,7 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1641,6 +1674,7 @@ ActiveJob::Base#rescue_handlers:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1668,6 +1702,7 @@ ActiveJob::Base#rescue_handlers=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1695,6 +1730,7 @@ ActiveJob::Base#rescue_handlers?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1742,6 +1778,7 @@ ActiveJob::Base#serialize:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
