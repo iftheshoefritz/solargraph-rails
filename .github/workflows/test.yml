@@ -51,6 +51,7 @@ jobs:
           - "0.59.0.dev.2"
           - "branch-castwide-master"
           - "branch-castwide-v0.59"
+          - "branch-apiology-use_forked_yard_active_support_concern"
         include:
           - versions:
               ruby: "3.2"

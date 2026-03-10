@@ -351,6 +351,7 @@ Time#-:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -381,6 +382,7 @@ Time#<=>:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -478,6 +480,7 @@ Time#as_json:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -782,6 +785,7 @@ Time#minus_without_coercion:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -998,6 +1002,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59

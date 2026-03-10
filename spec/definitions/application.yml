@@ -189,6 +189,7 @@ Rails::Application.eager_load!:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -266,6 +267,7 @@ Rails::Application.initializer:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -293,6 +295,7 @@ Rails::Application.initializers:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -320,6 +323,7 @@ Rails::Application.initializers_chain:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -347,6 +351,7 @@ Rails::Application.initializers_for:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -585,6 +590,7 @@ Rails::Application.yaml_tag:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -693,6 +699,7 @@ Rails::Application#default_url_options:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -720,6 +727,7 @@ Rails::Application#default_url_options=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -778,6 +786,7 @@ Rails::Application#engine_name:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -839,6 +848,7 @@ Rails::Application#importmap:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -866,6 +876,7 @@ Rails::Application#importmap=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -929,6 +940,7 @@ Rails::Application#isolated?:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -993,6 +1005,7 @@ Rails::Application#middleware:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1033,6 +1046,7 @@ Rails::Application#paths:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1078,6 +1092,7 @@ Rails::Application#railtie_name:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
@@ -1141,6 +1156,7 @@ Rails::Application#root:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - branch-2025-09-22
+  - branch-apiology-use_forked_yard_active_support_concern
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
