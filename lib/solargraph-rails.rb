@@ -11,6 +11,7 @@ require_relative 'solargraph/rails/model'
 require_relative 'solargraph/rails/devise'
 require_relative 'solargraph/rails/walker'
 require_relative 'solargraph/rails/rails_api'
+require_relative 'solargraph/rails/routes_dsl'
 require_relative 'solargraph/rails/delegate'
 require_relative 'solargraph/rails/storage'
 require_relative 'solargraph/rails/puma'
@@ -43,6 +44,8 @@ module Solargraph
       #
       # @return [Solargraph::Environ]
       def local(source_map)
+        run_feature { RoutesDsl.local(source_map) }
+
         pins = []
         ds =
           source_map.document_symbols.select do |n|
