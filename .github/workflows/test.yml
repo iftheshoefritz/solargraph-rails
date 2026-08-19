@@ -51,6 +51,19 @@ jobs:
           - "0.59.0.dev.2"
           - "branch-castwide-master"
           - "branch-castwide-v0.59"
+        exclude:
+          # castwide/solargraph master sets required_ruby_version = '>= 3.1',
+          # so bundler cannot resolve it on Ruby 3.0
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "0"
+            solargraph-version: "branch-castwide-master"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "branch-castwide-master"
         include:
           - versions:
               ruby: "3.2"
