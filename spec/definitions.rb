@@ -129,6 +129,13 @@ class Definitions
       skip = true
       not_added_yet = true
     end
+    # Some declarations only take their current form from a given rbs onward -
+    # e.g. rbs 4.0 renamed Enumerable's type parameter from Elem to E.
+    if data['min_rbs'] && Gem::Version.new(RBS::VERSION) < Gem::Version.new(data['min_rbs'])
+      skip = true
+      @skipped += 1
+      return
+    end
     if data['skip'] == true ||
        data['skip'] == solargraph_version || # in case of branches with specific excludes
        (data['skip'] == 'branch-castwide-master' && solargraph_version.start_with?('branch-')) ||
