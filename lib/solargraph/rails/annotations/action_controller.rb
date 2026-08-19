@@ -102,6 +102,10 @@ end
 class AbstractController::Base
   include Rails::Application::Configuration
   extend Rails::Application::Configuration
+
+  # @param method_name [Symbol]
+  # @return [void]
+  def self.method_added(method_name); end
 end
 
 class ActionController::Metal

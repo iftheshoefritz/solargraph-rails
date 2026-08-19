@@ -17,4 +17,8 @@ class Rails::Application
   def self.config; end
   # @yieldreceiver [self]
   def configure; end
+
+  # @param subclass [Class]
+  # @return [void]
+  def self.inherited(subclass); end
 end
