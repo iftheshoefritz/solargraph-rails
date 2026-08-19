@@ -105,7 +105,9 @@ class AbstractController::Base
 
   # @param method_name [Symbol]
   # @return [void]
+  # rubocop:disable Lint/MissingSuper
   def self.method_added(method_name); end
+  # rubocop:enable Lint/MissingSuper
 end
 
 class ActionController::Metal

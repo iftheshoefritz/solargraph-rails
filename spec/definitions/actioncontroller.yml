@@ -1412,18 +1412,7 @@ ActionController::Base.mattr_writer:
 ActionController::Base.method_added:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.56.2
-  - 0.57.0
-  - 0.58.1
-  - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
+  skip: false
 ActionController::Base.method_visibility:
   types:
   - undefined

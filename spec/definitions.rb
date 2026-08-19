@@ -23,6 +23,8 @@ class Definitions
     @congrats = []
 
     definitions.each do |meth, data|
+      next if rbs_too_old?(data)
+
       process_single_definition(meth, data)
     end
 
@@ -92,6 +94,16 @@ class Definitions
     Solargraph::VERSION
   end
 
+  # Some declarations only take their current form from a given rbs onward -
+  # e.g. rbs 4.0 renamed Enumerable's type parameter from Elem to E.
+  def rbs_too_old?(data)
+    return false unless data['min_rbs']
+    return false unless Gem::Version.new(RBS::VERSION) < Gem::Version.new(data['min_rbs'])
+
+    @skipped += 1
+    true
+  end
+
   def process_single_definition(meth, data)
     meth = meth.gsub(class_name, '') unless meth.start_with?('.', '#')
     # @type [Array<Solargraph::Pin::Base>]
@@ -128,13 +140,6 @@ class Definitions
     if data['added_in'] && (data['added_in'].to_f > rails_major_and_minor_version.to_f)
       skip = true
       not_added_yet = true
-    end
-    # Some declarations only take their current form from a given rbs onward -
-    # e.g. rbs 4.0 renamed Enumerable's type parameter from Elem to E.
-    if data['min_rbs'] && Gem::Version.new(RBS::VERSION) < Gem::Version.new(data['min_rbs'])
-      skip = true
-      @skipped += 1
-      return
     end
     if data['skip'] == true ||
        data['skip'] == solargraph_version || # in case of branches with specific excludes
