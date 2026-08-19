@@ -87,14 +87,9 @@ jobs:
           bundle exec solargraph config
           yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
 
-          # ENV[] and ENV.fetch do not resolve: YARD derives a Class<ENV>
-          # namespace pin from `class << ENV` in pp, which reaches every Rails
-          # app via railties -> irb -> pp, and it shadows the RBS constant.
-          # Broken since 0.59.0.dev.1; last good release 0.58.3.
-          # https://github.com/castwide/solargraph/pull/1279 fixes it. Drop this
-          # once that merges and master reports a version carrying the fix.
+          # Skipped while solargraph reports 0.60.3: castwide/solargraph#1279 (ENV) and #1288 (yieldreceiver pins).
           if [ "$(bundle exec ruby -e 'require "solargraph"; print Solargraph::VERSION')" = "0.60.3" ]; then
-            yq -yi '.exclude += ["config/boot.rb", "config/puma.rb", "config/environments/*.rb"]' .solargraph.yml
+            yq -yi '.exclude += ["config/boot.rb", "config/puma.rb", "config/environments/*.rb", "config/routes.rb", "db/*_schema.rb"]' .solargraph.yml
           fi
 
           bundle exec solargraph typecheck --level strong
