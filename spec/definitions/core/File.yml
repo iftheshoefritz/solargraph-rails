@@ -271,6 +271,7 @@ File#class_eval:
 File#compact_blank:
   types:
   - Array<String>
+  min_rbs: '4.0'
   skip:
   - 0.48.0
   - 0.49.0

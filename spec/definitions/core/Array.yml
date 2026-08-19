@@ -269,6 +269,7 @@ Array#class_eval:
 Array#compact_blank:
   types:
   - Array
+  min_rbs: '4.0'
   skip:
   - 0.48.0
   - 0.49.0
