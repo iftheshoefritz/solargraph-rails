@@ -108,6 +108,7 @@ Array.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Array.html_safe?:
   types:
   - 'false'
@@ -117,6 +118,7 @@ Array.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Array.in?:
   types:
   - Boolean
@@ -273,6 +275,7 @@ Array#compact_blank:
   - 0.52.0
   - 0.55.alpha
   - 0.57.0
+  - 0.60.3
 Array#compact_blank!:
   types:
   - Array<generic<Elem>>
@@ -295,6 +298,7 @@ Array#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Array#exclude?:
   types:
   - Boolean
@@ -336,6 +340,7 @@ Array#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Array#in?:
   types:
   - Boolean

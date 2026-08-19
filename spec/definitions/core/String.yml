@@ -108,6 +108,7 @@ String.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 String.html_safe?:
   types:
   - 'false'
@@ -117,6 +118,7 @@ String.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 String.in?:
   types:
   - Boolean
@@ -253,6 +255,7 @@ String#acts_like_string?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 String#as_json:
   types:
   - String
@@ -354,6 +357,7 @@ String#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 String#exclude?:
   types:
   - Boolean
@@ -421,6 +425,7 @@ String#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 String#humanize:
   types:
   - String

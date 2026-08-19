@@ -138,6 +138,7 @@ Time.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time.find_zone:
   types:
   - ActiveSupport::TimeZone
@@ -166,6 +167,7 @@ Time.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time.in?:
   types:
   - Boolean
@@ -399,6 +401,7 @@ Time#acts_like_time?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time#advance:
   types:
   - undefined
@@ -597,6 +600,7 @@ Time#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time#change:
   types:
   - undefined
@@ -617,6 +621,7 @@ Time#compare_with_coercion:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time#days_ago:
   types:
   - undefined
@@ -642,6 +647,7 @@ Time#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time#end_of_day:
   types:
   - undefined
@@ -695,6 +701,7 @@ Time#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Time#in:
   types:
   - undefined

@@ -39,6 +39,7 @@ Module.constants:
   - Array<Integer>
   skip:
   - 0.48.0
+  - 0.60.3
 Module.attr_internal_accessor:
   types:
   - void
@@ -141,6 +142,7 @@ Module.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Module.html_safe?:
   types:
   - 'false'
@@ -150,6 +152,7 @@ Module.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Module.in?:
   types:
   - Boolean
@@ -374,6 +377,7 @@ Module#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Module#html_safe?:
   types:
   - 'false'
@@ -383,6 +387,7 @@ Module#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Module#in?:
   types:
   - Boolean

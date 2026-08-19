@@ -196,6 +196,7 @@ DateTime.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime.find_beginning_of_week!:
   types:
   - undefined
@@ -225,6 +226,7 @@ DateTime.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime.in?:
   types:
   - Boolean
@@ -485,6 +487,7 @@ DateTime#acts_like_date?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime#acts_like_time?:
   types:
   - 'true'
@@ -494,6 +497,7 @@ DateTime#acts_like_time?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime#advance:
   types:
   - undefined
@@ -995,6 +999,7 @@ DateTime#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime#change:
   types:
   - undefined
@@ -1105,6 +1110,7 @@ DateTime#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime#end_of_day:
   types:
   - undefined
@@ -1246,6 +1252,7 @@ DateTime#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 DateTime#in:
   types:
   - undefined

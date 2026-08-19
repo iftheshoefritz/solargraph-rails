@@ -752,6 +752,7 @@ ActiveRecord::Base.blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
@@ -1673,6 +1674,7 @@ ActiveRecord::Base.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base.eager_load:
   types:
   - undefined
@@ -2239,6 +2241,7 @@ ActiveRecord::Base.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base.i18n_scope:
   types:
   - ":activerecord"
@@ -2250,6 +2253,7 @@ ActiveRecord::Base.i18n_scope:
   - 0.52.0
   - 0.55.alpha
   - 0.56.alpha
+  - 0.60.3
 ActiveRecord::Base.ids:
   types:
   - undefined
@@ -3293,6 +3297,7 @@ ActiveRecord::Base.present?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base.primary_abstract_class:
   types:
   - void
@@ -3672,6 +3677,7 @@ ActiveRecord::Base.reset_counters:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base.reset_locking_column:
   types:
   - undefined
@@ -5107,6 +5113,7 @@ ActiveRecord::Base#<=>:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base#==:
   types:
   - Boolean
@@ -5411,6 +5418,7 @@ ActiveRecord::Base#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base#broadcast_action:
   types:
   - undefined
@@ -6004,6 +6012,7 @@ ActiveRecord::Base#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base#encode_with:
   types:
   - undefined
@@ -6167,6 +6176,7 @@ ActiveRecord::Base#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base#id:
   types:
   - undefined
@@ -6584,6 +6594,7 @@ ActiveRecord::Base#present?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base#pretty_print:
   types:
   - IO
@@ -7394,6 +7405,7 @@ ActiveRecord::Base#validate!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActiveRecord::Base#validates_absence_of:
   types:
   - undefined

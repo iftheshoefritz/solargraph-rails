@@ -691,6 +691,7 @@ ActionController::Base.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base.enable_fragment_cache_logging:
   types:
   - undefined
@@ -1205,6 +1206,7 @@ ActionController::Base.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
@@ -1407,12 +1409,19 @@ ActionController::Base.mattr_writer:
   skip: false
 ActionController::Base.method_added:
   types:
-  - undefined
+  - void
   skip:
+  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.56.2
+  - 0.57.0
+  - 0.58.1
+  - 0.58.2
+  - 0.59.0.dev.1
+  - 0.59.0.dev.2
 ActionController::Base.method_visibility:
   types:
   - undefined
@@ -2011,6 +2020,7 @@ ActionController::Base.supports_path?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base.thread_cattr_accessor:
   types:
   - undefined
@@ -2444,7 +2454,8 @@ ActionController::Base#authenticate_with_http_digest:
 ActionController::Base#authenticate_with_http_token:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.60.3
 ActionController::Base#available_action?:
   types:
   - Boolean
@@ -2903,6 +2914,7 @@ ActionController::Base#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base#edit_polymorphic_path:
   types:
   - undefined
@@ -3437,6 +3449,7 @@ ActionController::Base#head:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base#headers:
   types:
   - undefined
@@ -3567,6 +3580,7 @@ ActionController::Base#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
@@ -5028,6 +5042,7 @@ ActionController::Base#show_detailed_exceptions?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 ActionController::Base#sign_in:
   types:
   - undefined

@@ -164,6 +164,7 @@ Class.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Class.html_safe?:
   types:
   - 'false'
@@ -173,6 +174,7 @@ Class.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Class.in?:
   types:
   - Boolean
@@ -405,6 +407,7 @@ Class#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Class#html_safe?:
   types:
   - 'false'
@@ -414,6 +417,7 @@ Class#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Class#in?:
   types:
   - Boolean

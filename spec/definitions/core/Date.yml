@@ -128,6 +128,7 @@ Date.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date.find_beginning_of_week!:
   types:
   - undefined
@@ -141,6 +142,7 @@ Date.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date.in?:
   types:
   - Boolean
@@ -316,6 +318,7 @@ Date#acts_like_date?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date#advance:
   types:
   - undefined
@@ -489,6 +492,7 @@ Date#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date#change:
   types:
   - undefined
@@ -509,6 +513,7 @@ Date#compare_with_coercion:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date#days_ago:
   types:
   - undefined
@@ -534,6 +539,7 @@ Date#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date#end_of_day:
   types:
   - undefined
@@ -567,6 +573,7 @@ Date#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Date#in:
   types:
   - undefined

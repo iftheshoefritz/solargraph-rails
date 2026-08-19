@@ -108,6 +108,7 @@ Hash.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Hash.from_trusted_xml:
   types:
   - undefined
@@ -125,6 +126,7 @@ Hash.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Hash.in?:
   types:
   - Boolean
@@ -417,6 +419,7 @@ Hash#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Hash#except!:
   types:
   - undefined
@@ -446,6 +449,7 @@ Hash#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
 Hash#in?:
   types:
   - Boolean
