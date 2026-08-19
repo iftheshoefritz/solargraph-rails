@@ -87,6 +87,14 @@ jobs:
           bundle exec solargraph config
           yq -yi '.plugins += ["solargraph-rails"]' .solargraph.yml
 
+          # ENV[] and ENV.fetch do not resolve: YARD derives a Class<ENV>
+          # namespace pin from `class << ENV` in pp, which reaches every Rails
+          # app via railties -> irb -> pp, and it shadows the RBS constant.
+          # Broken since 0.59.0.dev.1; last good release 0.58.3.
+          # https://github.com/castwide/solargraph/pull/1279 fixes it. Drop this
+          # once that merges and master reports a version carrying the fix.
+          yq -yi '.exclude += ["config/boot.rb", "config/puma.rb", "config/environments/*.rb"]' .solargraph.yml
+
           bundle exec solargraph typecheck --level strong
         env:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}
