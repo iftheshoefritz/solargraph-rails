@@ -109,6 +109,7 @@ Integer.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Integer.html_safe?:
   types:
   - 'false'
@@ -119,6 +120,7 @@ Integer.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Integer.in?:
   types:
   - Boolean
@@ -260,6 +262,7 @@ Integer#blank?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Integer#byte:
   types:
   - undefined
@@ -304,6 +307,7 @@ Integer#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Integer#exabyte:
   types:
   - undefined
@@ -366,6 +370,7 @@ Integer#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Integer#in?:
   types:
   - Boolean

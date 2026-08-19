@@ -692,6 +692,7 @@ ActionController::Base.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base.enable_fragment_cache_logging:
   types:
   - undefined
@@ -1207,6 +1208,7 @@ ActionController::Base.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
@@ -2021,6 +2023,7 @@ ActionController::Base.supports_path?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base.thread_cattr_accessor:
   types:
   - undefined
@@ -2456,6 +2459,7 @@ ActionController::Base#authenticate_with_http_token:
   - undefined
   skip:
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base#available_action?:
   types:
   - Boolean
@@ -2915,6 +2919,7 @@ ActionController::Base#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base#edit_polymorphic_path:
   types:
   - undefined
@@ -3450,6 +3455,7 @@ ActionController::Base#head:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base#headers:
   types:
   - undefined
@@ -3581,6 +3587,7 @@ ActionController::Base#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
@@ -5043,6 +5050,7 @@ ActionController::Base#show_detailed_exceptions?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActionController::Base#sign_in:
   types:
   - undefined

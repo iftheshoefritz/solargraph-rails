@@ -166,6 +166,7 @@ Rails::Application.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Rails::Application.eager_load!:
   types:
   - undefined
@@ -233,6 +234,7 @@ Rails::Application.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Rails::Application.in?:
   types:
   - Boolean
@@ -755,6 +757,7 @@ Rails::Application#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Rails::Application#eager_load!:
   types:
   - undefined
@@ -835,6 +838,7 @@ Rails::Application#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Rails::Application#importmap:
   types:
   - undefined

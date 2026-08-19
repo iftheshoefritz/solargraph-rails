@@ -139,6 +139,7 @@ Time.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time.find_zone:
   types:
   - ActiveSupport::TimeZone
@@ -168,6 +169,7 @@ Time.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time.in?:
   types:
   - Boolean
@@ -402,6 +404,7 @@ Time#acts_like_time?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time#advance:
   types:
   - undefined
@@ -601,6 +604,7 @@ Time#blank?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time#change:
   types:
   - undefined
@@ -622,6 +626,7 @@ Time#compare_with_coercion:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time#days_ago:
   types:
   - undefined
@@ -648,6 +653,7 @@ Time#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time#end_of_day:
   types:
   - undefined
@@ -702,6 +708,7 @@ Time#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 Time#in:
   types:
   - undefined

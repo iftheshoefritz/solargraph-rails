@@ -328,6 +328,7 @@ ActiveJob::Base.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActiveJob::Base.execute:
   types:
   - undefined
@@ -359,6 +360,7 @@ ActiveJob::Base.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActiveJob::Base.in?:
   types:
   - Boolean
@@ -1369,6 +1371,7 @@ ActiveJob::Base#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActiveJob::Base#enqueue:
   types:
   - undefined
@@ -1419,6 +1422,7 @@ ActiveJob::Base#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 ActiveJob::Base#in?:
   types:
   - Boolean

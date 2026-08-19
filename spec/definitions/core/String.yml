@@ -109,6 +109,7 @@ String.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 String.html_safe?:
   types:
   - 'false'
@@ -119,6 +120,7 @@ String.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 String.in?:
   types:
   - Boolean
@@ -256,6 +258,7 @@ String#acts_like_string?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 String#as_json:
   types:
   - String
@@ -358,6 +361,7 @@ String#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 String#exclude?:
   types:
   - Boolean
@@ -426,6 +430,7 @@ String#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - branch-castwide-master
 String#humanize:
   types:
   - String
