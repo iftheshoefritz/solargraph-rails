@@ -97,6 +97,23 @@ RSpec.describe 'Rails API completion' do
 
     expect(completion_at(filename, [2, 7], map)).to include('create_table')
     expect(completion_at(filename, [6, 7], map)).to include('create_table')
+
+    # The block parameter's type comes from this gem's create_table annotation.
+    # Since 0.59.2 that annotation is a second pin for the same path rather than
+    # being merged into activerecord's, so the gem's untyped block wins and `t`
+    # resolves to nothing.
+    #
+    # https://github.com/castwide/solargraph/pull/1195 removed the merge
+    # https://github.com/castwide/solargraph/issues/1286 tracks the bug
+    # https://github.com/castwide/solargraph/pull/1288 restores it; verified to
+    #   make this example pass again
+    # Listed rather than open-ended: a later version is assumed fixed, and if it
+    # is not, this example fails and says so.
+    broken = ['0.59.2', '0.60.3']
+    if broken.include?(Solargraph::VERSION)
+      skip 'block parameter types unresolved; see castwide/solargraph#1288'
+    end
+
     expect(completion_at(filename, [8, 10], map)).to include('column')
     expect(completion_at(filename, [11, 10], map)).to include('column')
     expect(completion_at(filename, [14, 10], map)).to include('column')
