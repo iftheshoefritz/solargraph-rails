@@ -93,7 +93,9 @@ jobs:
           # Broken since 0.59.0.dev.1; last good release 0.58.3.
           # https://github.com/castwide/solargraph/pull/1279 fixes it. Drop this
           # once that merges and master reports a version carrying the fix.
-          yq -yi '.exclude += ["config/boot.rb", "config/puma.rb", "config/environments/*.rb"]' .solargraph.yml
+          if [ "$(bundle exec ruby -e 'require "solargraph"; print Solargraph::VERSION')" = "0.60.3" ]; then
+            yq -yi '.exclude += ["config/boot.rb", "config/puma.rb", "config/environments/*.rb"]' .solargraph.yml
+          fi
 
           bundle exec solargraph typecheck --level strong
         env:

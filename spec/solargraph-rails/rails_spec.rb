@@ -107,12 +107,12 @@ RSpec.describe 'Rails API completion' do
     # https://github.com/castwide/solargraph/issues/1286 tracks the bug
     # https://github.com/castwide/solargraph/pull/1288 restores it; verified to
     #   make this example pass again
-    # Listed rather than open-ended: a later release is assumed fixed, and if it
-    # is not, this example fails and says so. Branch keys are deliberately absent
-    # so branch-castwide-master keeps running and reports when the fix lands.
-    broken_releases = ['0.59.2', '0.60.3']
-    version = (ENV.fetch('CI', nil) && ENV.fetch('MATRIX_SOLARGRAPH_VERSION', nil)) || Solargraph::VERSION
-    skip 'block parameter types unresolved; see castwide/solargraph#1288' if broken_releases.include?(version)
+    # Keyed on the version solargraph reports, so castwide's master branch is
+    # covered while it still reports 0.60.3 and drops out of the list the moment
+    # that version is bumped. A later version that still has the bug runs the
+    # assertions and fails rather than being skipped silently.
+    broken_versions = ['0.59.2', '0.60.3']
+    skip 'block parameter types unresolved; see castwide/solargraph#1288' if broken_versions.include?(Solargraph::VERSION)
 
     expect(completion_at(filename, [8, 10], map)).to include('column')
     expect(completion_at(filename, [11, 10], map)).to include('column')
