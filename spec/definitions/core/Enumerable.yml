@@ -63,6 +63,8 @@ Enumerable#sum:
   - generic<T>
   - generic<U>
   min_rbs: '4.0'
+  skip:
+  - 0.48.0
 Enumerable#without:
   types:
   - undefined

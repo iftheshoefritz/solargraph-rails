@@ -98,6 +98,7 @@ class Definitions
   # e.g. rbs 4.0 renamed Enumerable's type parameter from Elem to E.
   def rbs_too_old?(data)
     return false unless data['min_rbs']
+    return false unless defined?(RBS::VERSION)
     return false unless Gem::Version.new(RBS::VERSION) < Gem::Version.new(data['min_rbs'])
 
     @skipped += 1
