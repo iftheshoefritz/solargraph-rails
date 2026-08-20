@@ -12,7 +12,7 @@ class Definitions
 
   def assert_matches_definitions
     @update = true if ENV['FORCE_UPDATE'] == 'true'
-    @allow_improvements = true if ENV['ALLOW_IMPROVEMENTS'] == 'true' || solargraph_version.start_with?('branch-')
+    @allow_improvements = true if ENV['ALLOW_IMPROVEMENTS'] == 'true'
 
     definitions = YAML.load_file(definitions_file)
 
@@ -87,10 +87,10 @@ class Definitions
     )
   end
 
+  # The version solargraph reports, not the matrix key. A branch build reports
+  # the version it was cut from, so its skips lift when that version is bumped
+  # rather than applying forever to a moving ref.
   def solargraph_version
-    solargraph_force_ci_version = ENV.fetch('CI', nil) && ENV.fetch('MATRIX_SOLARGRAPH_VERSION', nil)
-    return solargraph_force_ci_version if solargraph_force_ci_version
-
     Solargraph::VERSION
   end
 
@@ -144,10 +144,7 @@ class Definitions
     end
     if data['skip'] == true ||
        data['skip'] == solargraph_version || # in case of branches with specific excludes
-       (data['skip'] == 'branch-castwide-master' && solargraph_version.start_with?('branch-')) ||
-       (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version)) ||
-       (data['skip'].respond_to?(:include?) && data['skip'].include?('branch-castwide-master') &&
-        solargraph_version.start_with?('branch-'))
+       (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version))
       skip = true
       @skipped += 1
     end
