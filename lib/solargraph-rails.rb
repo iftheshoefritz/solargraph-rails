@@ -44,11 +44,10 @@ module Solargraph
       # @return [Solargraph::Environ]
       def local(source_map)
         pins = []
-        ds =
-          source_map.document_symbols.select do |n|
-            n.is_a?(Solargraph::Pin::Namespace)
-          end
-        ns = ds.first
+        ds = source_map.document_symbols.select do |n|
+          n.is_a?(Solargraph::Pin::Namespace)
+        end
+        ns = ds.find { |s| s.type == :class }
 
         basename = File.basename(source_map.filename)
 
