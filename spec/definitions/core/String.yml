@@ -109,6 +109,7 @@ String.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 String.html_safe?:
   types:
@@ -120,6 +121,7 @@ String.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 String.in?:
   types:
@@ -258,6 +260,7 @@ String#acts_like_string?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 String#as_json:
   types:
@@ -361,6 +364,7 @@ String#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 String#exclude?:
   types:
@@ -390,6 +394,7 @@ String#ext:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -430,6 +435,7 @@ String#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 String#humanize:
   types:
@@ -524,6 +530,7 @@ String#pathmap:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master

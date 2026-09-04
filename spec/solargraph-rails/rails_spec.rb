@@ -111,7 +111,7 @@ RSpec.describe 'Rails API completion' do
     # covered while it still reports 0.60.3 and drops out of the list the moment
     # that version is bumped. A later version that still has the bug runs the
     # assertions and fails rather than being skipped silently.
-    broken_versions = ['0.59.2', '0.60.3']
+    broken_versions = ['0.59.2', '0.60.3', '0.60.4']
     skip 'block parameter types unresolved; see castwide/solargraph#1288' if broken_versions.include?(Solargraph::VERSION)
 
     expect(completion_at(filename, [8, 10], map)).to include('column')
