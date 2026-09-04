@@ -455,6 +455,7 @@ Array#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  removed_in: 7.1
 Array#third:
   types:
   - undefined
