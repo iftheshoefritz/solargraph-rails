@@ -92,6 +92,24 @@ jobs:
             yq -yi '.exclude += ["config/boot.rb", "config/puma.rb", "config/environments/*.rb", "config/routes.rb", "db/*_schema.rb"]' .solargraph.yml
           fi
 
+          # Skipped while solargraph reports 0.60.4.
+          #
+          # config/puma.rb: "Unresolved call to >" -- Integer("5") infers
+          # Integer, nil because RBS interfaces are matched nominally.
+          # https://github.com/castwide/solargraph/pull/1266
+          #
+          # config/routes.rb: "Unresolved call to get" -- get reaches the
+          # block only through the plugin cross-file @yieldreceiver stub on
+          # ActionDispatch::Routing::RouteSet#draw.
+          # https://github.com/castwide/solargraph/pull/1288
+          #
+          # db/*_schema.rb: "Unresolved call to create_table" -- the block
+          # self type on ActiveRecord::Schema.define is dropped.
+          # https://github.com/castwide/solargraph/pull/1335
+          if [ "$(bundle exec ruby -e 'require "solargraph"; print Solargraph::VERSION')" = "0.60.4" ]; then
+            yq -yi '.exclude += ["config/puma.rb", "config/routes.rb", "db/*_schema.rb"]' .solargraph.yml
+          fi
+
           bundle exec solargraph typecheck --level strong
         env:
           MATRIX_RAILS_MAJOR_VERSION: ${{ matrix.versions.rails-major }}

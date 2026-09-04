@@ -57,6 +57,7 @@ Class.attr_internal_naming_format:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -85,6 +86,7 @@ Class.attr_internal_naming_format=:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -165,6 +167,7 @@ Class.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Class.html_safe?:
   types:
@@ -176,6 +179,7 @@ Class.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Class.in?:
   types:
@@ -410,6 +414,7 @@ Class#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Class#html_safe?:
   types:
@@ -421,6 +426,7 @@ Class#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Class#in?:
   types:

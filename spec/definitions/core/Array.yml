@@ -109,6 +109,7 @@ Array.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Array.html_safe?:
   types:
@@ -120,6 +121,7 @@ Array.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Array.in?:
   types:
@@ -279,6 +281,7 @@ Array#compact_blank:
   - 0.55.alpha
   - 0.57.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Array#compact_blank!:
   types:
@@ -303,6 +306,7 @@ Array#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Array#exclude?:
   types:
@@ -346,6 +350,7 @@ Array#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Array#in?:
   types:

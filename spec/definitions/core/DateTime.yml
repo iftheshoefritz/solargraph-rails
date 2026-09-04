@@ -197,6 +197,7 @@ DateTime.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime.find_beginning_of_week!:
   types:
@@ -228,6 +229,7 @@ DateTime.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime.in?:
   types:
@@ -415,6 +417,7 @@ DateTime#+:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -443,6 +446,7 @@ DateTime#-:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -473,6 +477,7 @@ DateTime#<=>:
   - 0.58.2
   - 0.59.0
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -490,6 +495,7 @@ DateTime#acts_like_date?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime#acts_like_time?:
   types:
@@ -501,6 +507,7 @@ DateTime#acts_like_time?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime#advance:
   types:
@@ -679,6 +686,7 @@ DateTime#as_json:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1004,6 +1012,7 @@ DateTime#blank?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime#change:
   types:
@@ -1038,6 +1047,7 @@ DateTime#compare_with_coercion:
   - 0.58.2
   - 0.59.0
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1116,6 +1126,7 @@ DateTime#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime#end_of_day:
   types:
@@ -1259,6 +1270,7 @@ DateTime#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 DateTime#in:
   types:
@@ -2036,6 +2048,7 @@ DateTime#utc_to_local_returns_utc_offset_times:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master

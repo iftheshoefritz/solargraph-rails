@@ -113,6 +113,7 @@ File.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 File.html_safe?:
   types:
@@ -124,6 +125,7 @@ File.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 File.in?:
   types:
@@ -280,6 +282,7 @@ File#compact_blank:
   - 0.52.0
   - 0.57.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 File#deep_dup:
   types:
@@ -295,6 +298,7 @@ File#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 File#exclude?:
   types:
@@ -314,6 +318,7 @@ File#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 File#in?:
   types:
@@ -404,6 +409,7 @@ File#sum:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59

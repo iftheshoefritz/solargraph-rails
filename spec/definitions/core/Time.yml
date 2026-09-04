@@ -139,6 +139,7 @@ Time.duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time.find_zone:
   types:
@@ -169,6 +170,7 @@ Time.html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time.in?:
   types:
@@ -355,6 +357,7 @@ Time#-:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -386,6 +389,7 @@ Time#<=>:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -404,6 +408,7 @@ Time#acts_like_time?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time#advance:
   types:
@@ -486,6 +491,7 @@ Time#as_json:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -604,6 +610,7 @@ Time#blank?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time#change:
   types:
@@ -626,6 +633,7 @@ Time#compare_with_coercion:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time#days_ago:
   types:
@@ -653,6 +661,7 @@ Time#duplicable?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time#end_of_day:
   types:
@@ -708,6 +717,7 @@ Time#html_safe?:
   - 0.51.2
   - 0.52.0
   - 0.60.3
+  - 0.60.4
   - branch-castwide-master
 Time#in:
   types:
@@ -799,6 +809,7 @@ Time#minus_without_coercion:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1016,6 +1027,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
+  - 0.60.4
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
