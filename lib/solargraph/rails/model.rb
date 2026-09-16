@@ -308,6 +308,24 @@ module Solargraph
             "@return [$T]"
           ]
         },
+        "find_or_create_by" => {
+          "(hash)" => [
+            "@param hash [Hash] attributes to match by",
+            "@return [$T]",
+          ],
+        },
+        "find_or_create_by!" => {
+          "(hash)" => [
+            "@param hash [Hash] attributes to match by",
+            "@return [$T]",
+          ],
+        },
+        "find_or_initialize_by" => {
+          "(hash)" => [
+            "@param hash [Hash] attributes to match by",
+            "@return [$T]",
+          ],
+        },
         "take" => {
           "()" => "T, nil",
           "(limit)" => "Array<$T>",

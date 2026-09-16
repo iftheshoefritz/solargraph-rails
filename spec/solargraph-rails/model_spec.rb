@@ -161,4 +161,22 @@ RSpec.describe Solargraph::Rails::Model do
       args: { h: 'Numeric' }
     )
   end
+
+  %w[find_or_create_by find_or_create_by! find_or_initialize_by].each do |method_name|
+    it "types #{method_name} as the model class" do
+      load_string 'app/models/person.rb',
+        <<~RUBY
+        class Person < ActiveRecord::Base
+        end
+        RUBY
+
+      # @overload-only method, like find_by! -- no top-level parameters
+      # to assert on, only per-overload ones.
+      assert_method(
+        api_map,
+        "Person.#{method_name}",
+        ['Person']
+      )
+    end
+  end
 end
