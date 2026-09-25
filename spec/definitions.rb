@@ -87,7 +87,18 @@ class Definitions
     )
   end
 
+  # The key that 'skip' entries in spec/definitions/*.yml are matched
+  # against.
+  #
+  # MATRIX_SOLARGRAPH_VERSION also selects a gem source in the Gemfile and a
+  # version constraint in the gemspec, so a caller that supplies its own
+  # solargraph gem (say, a path source pointing at a working tree) cannot use
+  # it to pick a key without also declaring a second solargraph gem from git.
+  # SOLARGRAPH_DEFINITIONS_KEY names the key on its own.
   def solargraph_version
+    definitions_key = ENV.fetch('SOLARGRAPH_DEFINITIONS_KEY', '')
+    return definitions_key unless definitions_key.empty?
+
     solargraph_force_ci_version = ENV.fetch('CI', nil) && ENV.fetch('MATRIX_SOLARGRAPH_VERSION', nil)
     return solargraph_force_ci_version if solargraph_force_ci_version
 
