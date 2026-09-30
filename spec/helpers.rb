@@ -3,6 +3,8 @@ require 'rails'
 require_relative 'definitions'
 
 module Helpers
+  include TypeMembers
+
   def load_string(filename, str)
     source = Solargraph::Source.load_string(str, filename)
     api_map.map(source)
@@ -67,7 +69,7 @@ module Helpers
     pin_return_type = pin.return_type
     pin_return_type = pin.typify map if pin_return_type.undefined?
     pin_return_type = pin.probe map if pin_return_type.undefined?
-    expect(pin_return_type.map(&:tag)).to eq(return_type)
+    expect(member_tags(pin_return_type)).to eq(return_type)
 
     args.each_pair do |name, type|
       expect(parameter = pin.parameters.find { _1.name == name.to_s }).to_not be_nil, "expected #{query} param #{name} to exist, but it doesn't"
@@ -131,6 +133,6 @@ module Helpers
   def completions_for(map, filename, position)
     clip = map.clip_at(filename, position)
 
-    clip.complete.pins.map { |pin| [pin.name, pin.return_type.map(&:tag)] }.to_h
+    clip.complete.pins.map { |pin| [pin.name, member_tags(pin.return_type)] }.to_h
   end
 end
