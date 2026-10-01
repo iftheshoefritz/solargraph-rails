@@ -1,4 +1,8 @@
+require_relative 'type_members'
+
 class Definitions
+  include TypeMembers
+
   def initialize(map, class_name, definition_name, update: false)
     @map = map
     @class_name = class_name
@@ -120,12 +124,12 @@ class Definitions
     relevant_pins = pins.select { |p| p.path == pins.first.path }
     meh_types = %w[BasicObject Object undefined]
     good_pins, meh_pins = relevant_pins.partition do |p|
-      return_type_tags = p.typify(map).map(&:tag)
+      return_type_tags = member_tags(p.typify(map))
       meh_types.none? { |meh_type| return_type_tags.include? meh_type }
     end
     # try hard to get a high quality and stable result
-    pin = (good_pins.sort_by { |p| p.typify(map).map(&:tag).sort } +
-           meh_pins.sort_by { |p| p.typify(map).map(&:tag).sort }).first
+    pin = (good_pins.sort_by { |p| member_tags(p.typify(map)).sort } +
+           meh_pins.sort_by { |p| member_tags(p.typify(map)).sort }).first
     skip = false
     @typed += 1 if data['types'] != ['undefined']
     rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
@@ -153,7 +157,7 @@ class Definitions
     end
     # Completion is found, but marked as skipped
     if pin
-      effective_type = pin.typify(map).map(&:tag).sort.uniq
+      effective_type = member_tags(pin.typify(map)).sort.uniq
       specified_type = data['types'].sort.uniq
       if effective_type != specified_type
         if update
