@@ -724,16 +724,8 @@ ActiveRecord::Base.benchmark:
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
@@ -2181,18 +2173,8 @@ ActiveRecord::Base.html_safe?:
   - branch-castwide-master
 ActiveRecord::Base.i18n_scope:
   types:
-  - ":activerecord"
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.alpha
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Symbol
+  skip: false
 ActiveRecord::Base.ids:
   types:
   - undefined
@@ -3182,16 +3164,8 @@ ActiveRecord::Base.presence_in:
   skip: false
 ActiveRecord::Base.present?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base.primary_abstract_class:
   types:
   - void
@@ -3555,16 +3529,8 @@ ActiveRecord::Base.reset_column_information:
   skip: false
 ActiveRecord::Base.reset_counters:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base.reset_locking_column:
   types:
   - undefined
@@ -4935,17 +4901,9 @@ ActiveRecord::Base.yaml_encoder:
   skip: false
 ActiveRecord::Base#<=>:
   types:
-  - '0'
+  - Integer
   - nil
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  skip: false
 ActiveRecord::Base#==:
   types:
   - Boolean
@@ -5237,16 +5195,8 @@ ActiveRecord::Base#before_committed!:
   skip: false
 ActiveRecord::Base#blank?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base#broadcast_action:
   types:
   - undefined
@@ -6376,16 +6326,8 @@ ActiveRecord::Base#presence_in:
   skip: false
 ActiveRecord::Base#present?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base#pretty_print:
   types:
   - IO
@@ -7149,16 +7091,8 @@ ActiveRecord::Base#validate:
   - Boolean
 ActiveRecord::Base#validate!:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base#validates_absence_of:
   types:
   - undefined
