@@ -638,16 +638,8 @@ ActionController::Base.dispatch:
   skip: false
 ActionController::Base.duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActionController::Base.enable_fragment_cache_logging:
   types:
   - undefined
@@ -1105,16 +1097,8 @@ ActionController::Base.helpers_path?:
   - branch-castwide-v0.59
 ActionController::Base.html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
@@ -2679,16 +2663,8 @@ ActionController::Base#dispatch:
   skip: false
 ActionController::Base#duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActionController::Base#edit_polymorphic_path:
   types:
   - undefined
@@ -3286,16 +3262,8 @@ ActionController::Base#hotwire_native_app?:
   - branch-castwide-v0.59
 ActionController::Base#html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
