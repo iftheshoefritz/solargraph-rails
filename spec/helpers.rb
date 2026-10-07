@@ -55,7 +55,7 @@ module Helpers
       else
         map = Solargraph::ApiMap.load('./')
       end
-
+    ensure
       injector.files.each { |f| File.delete(f) }
     end
 
