@@ -30,6 +30,10 @@ class Date
 end
 
 class DateTime < Date
+  # @param other [Numeric, ActiveSupport::Duration]
+  # @return [self]
+  def +(other); end
+
   # @return [String]
   def readable_inspect; end
 
