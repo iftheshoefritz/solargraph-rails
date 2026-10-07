@@ -102,6 +102,7 @@ Kernel.duplicable?:
   - 0.52.0
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-castwide-master
 Kernel.enable_warnings:
   types:
@@ -118,6 +119,7 @@ Kernel.html_safe?:
   - 0.52.0
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-castwide-master
 Kernel.in?:
   types:

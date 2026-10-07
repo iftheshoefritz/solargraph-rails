@@ -165,13 +165,13 @@ ActiveJob::Base.default_priority:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -194,13 +194,13 @@ ActiveJob::Base.default_priority=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -223,13 +223,13 @@ ActiveJob::Base.default_queue_name:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -252,13 +252,13 @@ ActiveJob::Base.default_queue_name=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -333,6 +333,7 @@ ActiveJob::Base.duplicable?:
   - 0.52.0
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-castwide-master
 ActiveJob::Base.execute:
   types:
@@ -366,6 +367,7 @@ ActiveJob::Base.html_safe?:
   - 0.52.0
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-castwide-master
 ActiveJob::Base.in?:
   types:
@@ -397,13 +399,13 @@ ActiveJob::Base.log_arguments:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -426,13 +428,13 @@ ActiveJob::Base.log_arguments=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -455,13 +457,13 @@ ActiveJob::Base.log_arguments?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -484,13 +486,13 @@ ActiveJob::Base.logger:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -513,13 +515,13 @@ ActiveJob::Base.logger=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -614,13 +616,13 @@ ActiveJob::Base.priority:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -643,13 +645,13 @@ ActiveJob::Base.priority=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -672,13 +674,13 @@ ActiveJob::Base.priority?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -741,13 +743,13 @@ ActiveJob::Base.queue_name:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -770,13 +772,13 @@ ActiveJob::Base.queue_name=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -799,13 +801,13 @@ ActiveJob::Base.queue_name?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -828,13 +830,13 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -857,13 +859,13 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -886,13 +888,13 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -924,13 +926,13 @@ ActiveJob::Base.queue_name_prefix:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -953,13 +955,13 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -982,13 +984,13 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1052,13 +1054,13 @@ ActiveJob::Base.rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1081,13 +1083,13 @@ ActiveJob::Base.rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1110,13 +1112,13 @@ ActiveJob::Base.rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1163,13 +1165,13 @@ ActiveJob::Base.retry_jitter:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1192,13 +1194,13 @@ ActiveJob::Base.retry_jitter=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1255,13 +1257,13 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1284,13 +1286,13 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1402,6 +1404,7 @@ ActiveJob::Base#duplicable?:
   - 0.52.0
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-castwide-master
 ActiveJob::Base#enqueue:
   types:
@@ -1454,6 +1457,7 @@ ActiveJob::Base#html_safe?:
   - 0.52.0
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-castwide-master
 ActiveJob::Base#in?:
   types:
@@ -1514,13 +1518,13 @@ ActiveJob::Base#logger=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1585,13 +1589,13 @@ ActiveJob::Base#queue_adapter:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1622,13 +1626,13 @@ ActiveJob::Base#queue_name_prefix:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1651,13 +1655,13 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1680,13 +1684,13 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1713,13 +1717,13 @@ ActiveJob::Base#rescue_handlers:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1742,13 +1746,13 @@ ActiveJob::Base#rescue_handlers=:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1771,13 +1775,13 @@ ActiveJob::Base#rescue_handlers?:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1820,13 +1824,13 @@ ActiveJob::Base#serialize:
   - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.1
   - 0.58.2
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
   - 0.60.3
   - 0.60.4
+  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
