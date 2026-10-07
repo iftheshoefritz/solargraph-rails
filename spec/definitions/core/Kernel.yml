@@ -100,7 +100,6 @@ Kernel.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -117,7 +116,6 @@ Kernel.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master

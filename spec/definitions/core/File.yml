@@ -112,7 +112,6 @@ File.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -125,7 +124,6 @@ File.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -283,7 +281,6 @@ File#compact_blank:
   - 0.51.2
   - 0.52.0
   - 0.57.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -300,7 +297,6 @@ File#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -321,7 +317,6 @@ File#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -405,14 +400,10 @@ File#sum:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.57.0
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-better_signature_combination

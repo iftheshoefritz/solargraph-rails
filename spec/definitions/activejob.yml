@@ -159,7 +159,6 @@ ActiveJob::Base.default_priority:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -167,9 +166,6 @@ ActiveJob::Base.default_priority:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -188,7 +184,6 @@ ActiveJob::Base.default_priority=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -196,9 +191,6 @@ ActiveJob::Base.default_priority=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -217,7 +209,6 @@ ActiveJob::Base.default_queue_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -225,9 +216,6 @@ ActiveJob::Base.default_queue_name:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -246,7 +234,6 @@ ActiveJob::Base.default_queue_name=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -254,9 +241,6 @@ ActiveJob::Base.default_queue_name=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -274,7 +258,6 @@ ActiveJob::Base.define_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.delegate:
   types:
   - undefined
@@ -311,7 +294,6 @@ ActiveJob::Base.direct_descendants:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   removed_in: 7.1
 ActiveJob::Base.discard_on:
   types:
@@ -331,7 +313,6 @@ ActiveJob::Base.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -355,7 +336,6 @@ ActiveJob::Base.handler_for_rescue:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.html_safe?:
   types:
   - 'false'
@@ -365,7 +345,6 @@ ActiveJob::Base.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -393,7 +372,6 @@ ActiveJob::Base.log_arguments:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -401,9 +379,6 @@ ActiveJob::Base.log_arguments:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -422,7 +397,6 @@ ActiveJob::Base.log_arguments=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -430,9 +404,6 @@ ActiveJob::Base.log_arguments=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -451,7 +422,6 @@ ActiveJob::Base.log_arguments?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -459,9 +429,6 @@ ActiveJob::Base.log_arguments?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -480,7 +447,6 @@ ActiveJob::Base.logger:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -488,9 +454,6 @@ ActiveJob::Base.logger:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -509,7 +472,6 @@ ActiveJob::Base.logger=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -517,9 +479,6 @@ ActiveJob::Base.logger=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -565,7 +524,6 @@ ActiveJob::Base.normalize_callback_params:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.perform_later:
   types:
   - undefined
@@ -610,7 +568,6 @@ ActiveJob::Base.priority:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -618,9 +575,6 @@ ActiveJob::Base.priority:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -639,7 +593,6 @@ ActiveJob::Base.priority=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -647,9 +600,6 @@ ActiveJob::Base.priority=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -668,7 +618,6 @@ ActiveJob::Base.priority?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -676,9 +625,6 @@ ActiveJob::Base.priority?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -737,7 +683,6 @@ ActiveJob::Base.queue_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -745,9 +690,6 @@ ActiveJob::Base.queue_name:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -766,7 +708,6 @@ ActiveJob::Base.queue_name=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -774,9 +715,6 @@ ActiveJob::Base.queue_name=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -795,7 +733,6 @@ ActiveJob::Base.queue_name?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -803,9 +740,6 @@ ActiveJob::Base.queue_name?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -824,7 +758,6 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -832,9 +765,6 @@ ActiveJob::Base.queue_name_delimiter:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -853,7 +783,6 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -861,9 +790,6 @@ ActiveJob::Base.queue_name_delimiter=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -882,7 +808,6 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -890,9 +815,6 @@ ActiveJob::Base.queue_name_delimiter?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -920,7 +842,6 @@ ActiveJob::Base.queue_name_prefix:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -928,9 +849,6 @@ ActiveJob::Base.queue_name_prefix:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -949,7 +867,6 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -957,9 +874,6 @@ ActiveJob::Base.queue_name_prefix=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -978,7 +892,6 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -986,9 +899,6 @@ ActiveJob::Base.queue_name_prefix?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1035,7 +945,6 @@ ActiveJob::Base.rescue_from:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.rescue_handlers:
   types:
   - undefined
@@ -1048,7 +957,6 @@ ActiveJob::Base.rescue_handlers:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1056,9 +964,6 @@ ActiveJob::Base.rescue_handlers:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1077,7 +982,6 @@ ActiveJob::Base.rescue_handlers=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1085,9 +989,6 @@ ActiveJob::Base.rescue_handlers=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1106,7 +1007,6 @@ ActiveJob::Base.rescue_handlers?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1114,9 +1014,6 @@ ActiveJob::Base.rescue_handlers?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1134,7 +1031,6 @@ ActiveJob::Base.rescue_with_handler:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.reset_callbacks:
   types:
   - undefined
@@ -1146,7 +1042,6 @@ ActiveJob::Base.reset_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.retry_jitter:
   types:
   - undefined
@@ -1159,7 +1054,6 @@ ActiveJob::Base.retry_jitter:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1167,9 +1061,6 @@ ActiveJob::Base.retry_jitter:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1188,7 +1079,6 @@ ActiveJob::Base.retry_jitter=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1196,9 +1086,6 @@ ActiveJob::Base.retry_jitter=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1234,7 +1121,6 @@ ActiveJob::Base.set_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -1251,7 +1137,6 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1259,9 +1144,6 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1280,7 +1162,6 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1288,9 +1169,6 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1308,7 +1186,6 @@ ActiveJob::Base.skip_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 ActiveJob::Base.subclasses:
   types:
   - Array<Class>
@@ -1402,7 +1279,6 @@ ActiveJob::Base#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -1455,7 +1331,6 @@ ActiveJob::Base#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -1498,7 +1373,6 @@ ActiveJob::Base#logger:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   added_in: 7.2
 ActiveJob::Base#logger=:
   types:
@@ -1512,7 +1386,6 @@ ActiveJob::Base#logger=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1520,9 +1393,6 @@ ActiveJob::Base#logger=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1583,7 +1453,6 @@ ActiveJob::Base#queue_adapter:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1591,9 +1460,6 @@ ActiveJob::Base#queue_adapter:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1620,7 +1486,6 @@ ActiveJob::Base#queue_name_prefix:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1628,9 +1493,6 @@ ActiveJob::Base#queue_name_prefix:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1649,7 +1511,6 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1657,9 +1518,6 @@ ActiveJob::Base#queue_name_prefix=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1678,7 +1536,6 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1686,9 +1543,6 @@ ActiveJob::Base#queue_name_prefix?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1711,7 +1565,6 @@ ActiveJob::Base#rescue_handlers:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1719,9 +1572,6 @@ ActiveJob::Base#rescue_handlers:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1740,7 +1590,6 @@ ActiveJob::Base#rescue_handlers=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1748,9 +1597,6 @@ ActiveJob::Base#rescue_handlers=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1769,7 +1615,6 @@ ActiveJob::Base#rescue_handlers?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1777,9 +1622,6 @@ ActiveJob::Base#rescue_handlers?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1818,7 +1660,6 @@ ActiveJob::Base#serialize:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1826,9 +1667,6 @@ ActiveJob::Base#serialize:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22

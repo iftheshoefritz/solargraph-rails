@@ -11,12 +11,8 @@ Rails::Application.<=>:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.56.2
   - 0.57.0
   - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -154,7 +150,6 @@ Rails::Application.define_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 Rails::Application.delegate:
   types:
   - undefined
@@ -180,7 +175,6 @@ Rails::Application.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -196,7 +190,6 @@ Rails::Application.eager_load!:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -204,9 +197,6 @@ Rails::Application.eager_load!:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -251,7 +241,6 @@ Rails::Application.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -275,7 +264,6 @@ Rails::Application.initializer:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -283,9 +271,6 @@ Rails::Application.initializer:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -304,7 +289,6 @@ Rails::Application.initializers:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -312,9 +296,6 @@ Rails::Application.initializers:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -333,7 +314,6 @@ Rails::Application.initializers_chain:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -341,9 +321,6 @@ Rails::Application.initializers_chain:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -362,7 +339,6 @@ Rails::Application.initializers_for:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -370,9 +346,6 @@ Rails::Application.initializers_for:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -446,7 +419,6 @@ Rails::Application.normalize_callback_params:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 Rails::Application.presence:
   types:
   - nil
@@ -500,7 +472,6 @@ Rails::Application.reset_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 Rails::Application.runner:
   types:
   - undefined
@@ -520,7 +491,6 @@ Rails::Application.set_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 Rails::Application.silence_redefinition_of_method:
   types:
   - undefined
@@ -536,7 +506,6 @@ Rails::Application.skip_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
-  - 0.56.2
 Rails::Application.subclasses:
   types:
   - Array<Class>
@@ -602,7 +571,6 @@ Rails::Application.yaml_tag:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -610,9 +578,6 @@ Rails::Application.yaml_tag:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -712,7 +677,6 @@ Rails::Application#default_url_options:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -720,9 +684,6 @@ Rails::Application#default_url_options:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -741,7 +702,6 @@ Rails::Application#default_url_options=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -749,9 +709,6 @@ Rails::Application#default_url_options=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -772,7 +729,6 @@ Rails::Application#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -805,7 +761,6 @@ Rails::Application#engine_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -813,9 +768,6 @@ Rails::Application#engine_name:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -856,7 +808,6 @@ Rails::Application#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -872,7 +823,6 @@ Rails::Application#importmap:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -880,9 +830,6 @@ Rails::Application#importmap:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -901,7 +848,6 @@ Rails::Application#importmap=:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -909,9 +855,6 @@ Rails::Application#importmap=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -966,7 +909,6 @@ Rails::Application#isolated?:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -974,9 +916,6 @@ Rails::Application#isolated?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1032,7 +971,6 @@ Rails::Application#middleware:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1040,9 +978,6 @@ Rails::Application#middleware:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1074,7 +1009,6 @@ Rails::Application#paths:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1082,9 +1016,6 @@ Rails::Application#paths:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1121,7 +1052,6 @@ Rails::Application#railtie_name:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1129,9 +1059,6 @@ Rails::Application#railtie_name:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22
@@ -1186,7 +1113,6 @@ Rails::Application#root:
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
-  - 0.56.2
   - 0.56.2-post
   - 0.56.alpha
   - 0.57.0
@@ -1194,9 +1120,6 @@ Rails::Application#root:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-2025-09-22

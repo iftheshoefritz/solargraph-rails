@@ -44,11 +44,8 @@ Module.constants:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.56.2
   - 0.57.0
   - 0.58.2
-  - 0.59.0.dev.1
-  - 0.59.0.dev.2
 Module.attr_internal_accessor:
   types:
   - void
@@ -151,7 +148,6 @@ Module.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -164,7 +160,6 @@ Module.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -392,7 +387,6 @@ Module#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
@@ -405,7 +399,6 @@ Module#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.3
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
