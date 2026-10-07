@@ -116,11 +116,16 @@ jobs:
           # Integer, nil because RBS interfaces are matched nominally.
           # https://github.com/castwide/solargraph/pull/1266
           #
+          # config/routes.rb: "Unresolved call to get" -- get reaches the
+          # block only through the plugin cross-file @yieldreceiver stub on
+          # ActionDispatch::Routing::RouteSet#draw.
+          # https://github.com/castwide/solargraph/pull/1288
+          #
           # db/*_schema.rb: "Unresolved call to create_table" -- the block
           # self type on ActiveRecord::Schema.define is dropped.
           # https://github.com/castwide/solargraph/pull/1335
           if [ "$(bundle exec ruby -e 'require "solargraph"; print Solargraph::VERSION')" = "0.61.0" ]; then
-            yq -yi '.exclude += ["config/puma.rb", "db/*_schema.rb"]' .solargraph.yml
+            yq -yi '.exclude += ["config/puma.rb", "config/routes.rb", "db/*_schema.rb"]' .solargraph.yml
           fi
 
           bundle exec solargraph typecheck --level strong
