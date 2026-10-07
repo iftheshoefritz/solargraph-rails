@@ -53,12 +53,35 @@ In this case there are 2 options:
    end
 ```
 
+Setting `FORCE_UPDATE=true` in the environment does the same for every assertion without editing specs.
+
 In case of option 2, don't forget to remove the flag after yml file has been updated. Also review git diff, to make sure that no regressions have been set (skip=true was set for entries which previously had skip=false)
 
 A quick way if you want to just start with the existing items:
 
 ```
 script/copy_definitions.rb 0.57.0 0.58.0
+```
+
+### Adding or dropping a Solargraph version in CI
+
+Skip lists are keyed by `MATRIX_SOLARGRAPH_VERSION` (when `CI` is set), so each matrix version needs its own entries.
+
+To add a version, add it to the `solargraph-version` matrix in `.github/workflows/test.yml` (plus Ruby `exclude` entries if its `required_ruby_version` rules some out), then record its skips with the update run:
+
+```
+export CI=true MATRIX_SOLARGRAPH_VERSION=0.61.0 MATRIX_RAILS_VERSION=8.0
+bundle update solargraph rails rbs
+(cd spec/rails8 && bundle install && bundle exec --gemfile ../../Gemfile rbs collection update)
+FORCE_UPDATE=true bundle exec rspec
+```
+
+Review the diff as described above, and repeat for any Rails version whose run still fails in CI.
+
+To drop a version, remove it from the matrix and from the skip lists:
+
+```
+script/remove_definitions.rb 0.58.1
 ```
 
 ### Generating assertions
