@@ -4,7 +4,8 @@ class Time
   # @return [Boolean]
   def eql_with_coercion(other); end
 
-  # @return [-1, 0, 1, nil]
+  # @param other [Object]
+  # @return [Integer, nil]
   def compare_with_coercion(other); end
 
   # @return [-1, 0, 1, nil]
@@ -12,6 +13,14 @@ class Time
 
   # @return [-1, 0, 1, nil]
   def <=>(other); end
+
+  # @param other [Time, ActiveSupport::TimeWithZone, DateTime, Numeric, ActiveSupport::Duration]
+  # @return [Float, Time]
+  def -(other); end
+
+  # @param other [Time, Numeric, ActiveSupport::Duration]
+  # @return [Float, Time]
+  def minus_without_coercion(other); end
 
   # @return [Time]
   def +(other); end
