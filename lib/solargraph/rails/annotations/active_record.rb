@@ -254,16 +254,16 @@ class ActiveRecord::Base
   def self.reset_counters(id, *counters, touch: nil); end
 
   # @return [self]
-  def reload(); end
+  def reload; end
 
-  # @param other_object [Object]
+  # @param other [Object]
   # @return [Integer, nil]
-  def <=>(other_object); end
+  def <=>(other); end
 end
 
 module ActiveRecord::Validations
   # @return [Boolean]
-  def validate(); end
+  def validate; end
 end
 
 # @!override ActiveRecord::Core#blank?
