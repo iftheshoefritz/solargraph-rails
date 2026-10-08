@@ -32,3 +32,8 @@ end
 
 # @!override Time#+
 #   @return [Time]
+
+# @!override Time#blank?
+#   @return [Boolean]
+# @!override Time#acts_like_time?
+#   @return [Boolean]

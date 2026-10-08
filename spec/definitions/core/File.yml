@@ -105,28 +105,12 @@ File.descendants:
   skip: false
 File.duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 File.html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 File.in?:
   types:
   - Boolean
@@ -290,16 +274,8 @@ File#deep_dup:
   skip: false
 File#duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 File#exclude?:
   types:
   - Boolean
@@ -310,16 +286,8 @@ File#excluding:
   skip: false
 File#html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 File#in?:
   types:
   - Boolean
