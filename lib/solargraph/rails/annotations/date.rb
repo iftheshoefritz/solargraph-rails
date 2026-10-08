@@ -54,3 +54,14 @@ class DateTime < Date
   # @return [String]
   def to_formatted_s(format = :some_default); end
 end
+
+# @!override Date#blank?
+#   @return [Boolean]
+# @!override Date#acts_like_date?
+#   @return [Boolean]
+# @!override DateTime#blank?
+#   @return [Boolean]
+# @!override DateTime#acts_like_date?
+#   @return [Boolean]
+# @!override DateTime#acts_like_time?
+#   @return [Boolean]

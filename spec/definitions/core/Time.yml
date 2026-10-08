@@ -131,16 +131,8 @@ Time.descendants:
   skip: false
 Time.duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 Time.find_zone:
   types:
   - ActiveSupport::TimeZone
@@ -162,16 +154,8 @@ Time.find_zone!:
   - 0.52.0
 Time.html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 Time.in?:
   types:
   - Boolean
@@ -372,16 +356,8 @@ Time#acts_like?:
   skip: false
 Time#acts_like_time?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 Time#advance:
   types:
   - undefined
@@ -570,16 +546,8 @@ Time#beginning_of_year:
   skip: false
 Time#blank?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 Time#change:
   types:
   - undefined
@@ -611,16 +579,8 @@ Time#deep_dup:
   skip: false
 Time#duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 Time#end_of_day:
   types:
   - undefined
@@ -667,16 +627,8 @@ Time#future?:
   skip: false
 Time#html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 Time#in:
   types:
   - undefined
