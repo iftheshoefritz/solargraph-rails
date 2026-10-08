@@ -527,7 +527,7 @@ Hash#stringify_keys!:
   - 0.52.0
 Hash#sum:
   types:
-  - Array
+  - Array(generic<K>, generic<V>)
   - Integer
   - generic<T>
   - generic<U>
@@ -538,6 +538,10 @@ Hash#sum:
   - 0.51.2
   - 0.52.0
   - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 Hash#symbolize_keys:
   types:
   - Hash{Symbol => generic<V>}
