@@ -1617,16 +1617,8 @@ ActiveRecord::Base.dup:
   skip: false
 ActiveRecord::Base.duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base.eager_load:
   types:
   - undefined
@@ -2161,16 +2153,8 @@ ActiveRecord::Base.having:
   skip: false
 ActiveRecord::Base.html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base.i18n_scope:
   types:
   - Symbol
@@ -5767,16 +5751,8 @@ ActiveRecord::Base#destroyed_by_association=:
   skip: false
 ActiveRecord::Base#duplicable?:
   types:
-  - 'true'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base#encode_with:
   types:
   - undefined
@@ -5924,16 +5900,8 @@ ActiveRecord::Base#hash:
   - 0.48.0
 ActiveRecord::Base#html_safe?:
   types:
-  - 'false'
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - branch-castwide-master
+  - Boolean
+  skip: false
 ActiveRecord::Base#id:
   types:
   - undefined
