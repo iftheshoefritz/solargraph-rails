@@ -56,6 +56,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.action_on_strict_loading_violation=:
   types:
   - undefined
@@ -81,6 +82,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.acts_like?:
   types:
   - Boolean
@@ -287,6 +289,7 @@ ActiveRecord::Base.application_record_class:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.application_record_class=:
   types:
   - undefined
@@ -312,6 +315,7 @@ ActiveRecord::Base.application_record_class=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.arel_table:
   types:
   - Arel::Table
@@ -2547,6 +2551,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.legacy_connection_handling=:
   types:
   - undefined
@@ -2572,6 +2577,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.limit:
   types:
   - undefined
@@ -3296,6 +3302,7 @@ ActiveRecord::Base.queues:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.queues=:
   types:
   - undefined
@@ -3321,6 +3328,7 @@ ActiveRecord::Base.queues=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.quoted_primary_key:
   types:
   - undefined
@@ -4259,6 +4267,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.suppress_multiple_database_warning=:
   types:
   - undefined
@@ -4284,6 +4293,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - undefined

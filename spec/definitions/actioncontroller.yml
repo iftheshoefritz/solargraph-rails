@@ -432,6 +432,7 @@ ActionController::Base.default_protect_from_forgery:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.2
 ActionController::Base.default_protect_from_forgery=:
   types:
   - undefined
@@ -457,6 +458,7 @@ ActionController::Base.default_protect_from_forgery=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.2
 ActionController::Base.default_static_extension:
   types:
   - undefined
@@ -1916,6 +1918,7 @@ ActionController::Base.urlsafe_csrf_tokens:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActionController::Base.urlsafe_csrf_tokens=:
   types:
   - undefined
@@ -1941,6 +1944,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActionController::Base.use:
   types:
   - undefined
@@ -2444,6 +2448,7 @@ ActionController::Base#default_protect_from_forgery:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.2
 ActionController::Base#default_protect_from_forgery=:
   types:
   - undefined
@@ -2469,6 +2474,7 @@ ActionController::Base#default_protect_from_forgery=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.2
 ActionController::Base#default_render:
   types:
   - undefined
@@ -3981,6 +3987,7 @@ ActionController::Base#raise_on_missing_translations:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActionController::Base#raise_on_missing_translations=:
   types:
   - undefined
@@ -4006,6 +4013,7 @@ ActionController::Base#raise_on_missing_translations=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActionController::Base#raise_on_open_redirects:
   types:
   - undefined
