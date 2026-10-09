@@ -16,6 +16,7 @@ require_relative 'solargraph/rails/storage'
 require_relative 'solargraph/rails/puma'
 require_relative 'solargraph/rails/importmap'
 require_relative 'solargraph/rails/debug'
+require_relative 'solargraph/rails/engine'
 require_relative 'solargraph/rails/version'
 
 module Solargraph
@@ -70,6 +71,18 @@ module Solargraph
         environ = Solargraph::Environ.new(pins: pins)
         Puma.instance.add_dsl(environ, basename)
         environ
+      end
+
+      # Paths inside one gem, relative to its root, to map in addition to its require_paths.
+      #
+      # @param metagem [Solargraph::Metagem]
+      #
+      # @return [Array<String>]
+      def extra_source_paths(metagem)
+        Engine.instance.extra_source_paths(metagem)
+      rescue => error
+        Solargraph.logger.warn(error.full_message(highlight: false))
+        []
       end
 
       private
