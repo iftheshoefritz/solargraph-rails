@@ -61,8 +61,7 @@ module Solargraph
         # @param const_node [::Parser::AST::Node, nil]
         # @return [Array<String>]
         def constant_words(const_node)
-          return [] if const_node.nil?
-          return [] unless const_node.type == :const
+          return [] if const_node.nil? || const_node.type != :const
 
           name = unpack_name(const_node)
           namespace = region.closure.full_context.namespace
@@ -84,8 +83,8 @@ module Solargraph
           value.type == :array ? value : nil
         end
 
-        # The prefix ActiveSupport puts on delegated method names, or nil
-        # when prefix: true has no method name to derive it from.
+        # The prefix ActiveSupport puts on delegated method names, or nil when
+        # it is not known statically, e.g. prefix: true with to: :@ivar.
         #
         # @param option [::Parser::AST::Node, nil] the prefix: value
         # @param to [String]
@@ -95,7 +94,7 @@ module Solargraph
           return (to.match?(/\A[a-z_]/) ? "#{to}_" : nil) if true_node?(option)
 
           prefix = word(option)
-          prefix.nil? ? '' : "#{prefix}_"
+          prefix && "#{prefix}_"
         end
 
         # @param option [::Parser::AST::Node, nil]
@@ -119,7 +118,9 @@ module Solargraph
         # @return [Solargraph::Source::Chain::InstanceVariable]
         def ivar_link(name)
           link = Solargraph::Source::Chain::InstanceVariable
+          # :nocov: CI measures coverage on one Solargraph version
           args = link.instance_method(:initialize).arity == 3 ? [name, node, get_node_location(node)] : [name]
+          # :nocov:
           link.new(*args)
         end
 

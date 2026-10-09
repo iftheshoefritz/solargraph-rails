@@ -22,7 +22,9 @@ module Solargraph
       def process(source_map, ns)
         return [] unless self.class.supported?
         # SendNode maps these, with the right closure and scope
+        # :nocov: CI measures coverage on one Solargraph version
         return [] if self.class.processor?
+        # :nocov:
         return [] unless source_map.code.include?('delegate')
 
         walker = Walker.from_source(source_map.source)
@@ -82,10 +84,12 @@ module Solargraph
         pins
       end
 
+      # :nocov: CI measures coverage on one Solargraph version
       if processor?
         require_relative 'delegate/send_node'
         Solargraph::Parser::NodeProcessor.register(:send, SendNode)
       end
+      # :nocov:
     end
   end
 end

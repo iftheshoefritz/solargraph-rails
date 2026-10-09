@@ -73,6 +73,15 @@ RSpec.describe Solargraph::Rails::Delegate, skip: skip_reason do
       expect(pins.map(&:name)).to eq(%w[thing_bar other_baz])
     end
 
+    it 'ignores delegate with a prefix only known at runtime' do
+      pins = delegated_pins(<<~RUBY)
+        class Foo
+          delegate :bar, to: :thing, prefix: name
+        end
+      RUBY
+      expect(pins).to be_empty
+    end
+
     it 'makes delegated methods private with private: true' do
       pins = delegated_pins(<<~RUBY)
         class Foo
@@ -102,6 +111,32 @@ RSpec.describe Solargraph::Rails::Delegate, skip: skip_reason do
         end
       RUBY
       expect(pins.map(&:name)).to eq(%w[bar baz])
+    end
+
+    it 'ignores splats it cannot expand' do
+      pins = delegated_pins(<<~RUBY)
+        module Foo
+          NAMES = build_names
+          delegate(*NAMES, to: :all)
+          delegate(*UNKNOWN, to: :all)
+          delegate(*names, to: :all)
+
+          def self.forward(*)
+            delegate(*, to: :all)
+          end
+        end
+      RUBY
+      expect(pins).to be_empty
+    end
+
+    it 'maps delegate to an expression' do
+      pins = delegated_pins(<<~RUBY)
+        class Foo
+          delegate :bar, to: 'Registry.current'
+          delegate :baz, to: 'not ) valid'
+        end
+      RUBY
+      expect(pins.map(&:name)).to eq(['bar'])
     end
 
     it 'maps each delegate onto the class that declares it' do
