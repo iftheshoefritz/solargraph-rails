@@ -17,6 +17,10 @@
 # Uncomment the following lines to make the configuration take effect.
 
 PreCommit:
+  ALL:
+    # Fail only on problems in lines a change touches, as castwide/solargraph does
+    problem_on_unmodified_line: warn
+
   RuboCop:
     enabled: true
     on_warn: fail # Treat all warnings as failures
