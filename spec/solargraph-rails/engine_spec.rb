@@ -2,9 +2,6 @@ require 'spec_helper'
 require 'tmpdir'
 
 RSpec.describe Solargraph::Rails::Engine do
-  # Duck type of Solargraph::Metagem, which older Solargraph lacks
-  let(:gem_class) { Struct.new(:full_path, :require_paths) }
-
   let(:root) { Dir.mktmpdir }
 
   after { FileUtils.remove_entry(root) }
@@ -20,7 +17,7 @@ RSpec.describe Solargraph::Rails::Engine do
 
   # @return [Array<String>]
   def directories
-    described_class.instance.extra_source_paths(gem_class.new(root, ['lib']))
+    described_class.instance.extra_source_paths(root: root, require_paths: ['lib'])
   end
 
   context 'with an engine' do
@@ -37,14 +34,19 @@ RSpec.describe Solargraph::Rails::Engine do
     end
 
     it 'is supplied by the convention' do
-      expect(Solargraph::Rails::Convention.new.extra_source_paths(gem_class.new(root, ['lib'])))
+      expect(Solargraph::Rails::Convention.new.extra_source_paths(root: root, require_paths: ['lib']))
+        .to eq(directories)
+    end
+
+    it 'accepts keywords later Solargraph versions may add' do
+      expect(Solargraph::Rails::Convention.new.extra_source_paths(root: root, require_paths: ['lib'], name: 'engine_gem'))
         .to eq(directories)
     end
 
     it 'maps no extra paths when the convention raises' do
       allow(described_class.instance).to receive(:extra_source_paths).and_raise('unreadable gem')
 
-      expect(Solargraph::Rails::Convention.new.extra_source_paths(gem_class.new(root, ['lib']))).to eq([])
+      expect(Solargraph::Rails::Convention.new.extra_source_paths(root: root, require_paths: ['lib'])).to eq([])
     end
   end
 

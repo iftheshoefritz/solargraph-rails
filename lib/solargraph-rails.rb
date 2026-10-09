@@ -73,13 +73,11 @@ module Solargraph
         environ
       end
 
-      # Paths inside one gem, relative to its root, to map in addition to its require_paths.
-      #
-      # @param metagem [Solargraph::Metagem]
-      #
-      # @return [Array<String>]
-      def extra_source_paths(metagem)
-        Engine.instance.extra_source_paths(metagem)
+      # @param root [String] the gem's root directory
+      # @param require_paths [Array<String>] the gem's require paths, relative to root
+      # @return [Array<String>] paths inside the gem, relative to root, to map beyond require_paths
+      def extra_source_paths(root:, require_paths:, **)
+        Engine.instance.extra_source_paths(root: root, require_paths: require_paths)
       rescue => error
         Solargraph.logger.warn(error.full_message(highlight: false))
         []
