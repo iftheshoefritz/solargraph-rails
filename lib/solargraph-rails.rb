@@ -16,6 +16,7 @@ require_relative 'solargraph/rails/storage'
 require_relative 'solargraph/rails/puma'
 require_relative 'solargraph/rails/importmap'
 require_relative 'solargraph/rails/debug'
+require_relative 'solargraph/rails/load_hooks'
 require_relative 'solargraph/rails/version'
 
 module Solargraph
@@ -90,3 +91,4 @@ module Solargraph
 end
 
 Solargraph::Convention.register(Solargraph::Rails::Convention)
+Solargraph::Rails::LoadHooks.register

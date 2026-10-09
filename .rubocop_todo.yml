@@ -465,6 +465,7 @@ RSpec/SpecFilePathFormat:
     - 'spec/solargraph-rails/convention_spec.rb'
     - 'spec/solargraph-rails/delegate_spec.rb'
     - 'spec/solargraph-rails/devise_spec.rb'
+    - 'spec/solargraph-rails/load_hooks_spec.rb'
     - 'spec/solargraph-rails/model_spec.rb'
     - 'spec/solargraph-rails/schema_spec.rb'
     - 'spec/solargraph-rails/storage_spec.rb'
