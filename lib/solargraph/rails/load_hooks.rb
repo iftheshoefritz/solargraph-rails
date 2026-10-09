@@ -69,8 +69,6 @@ module Solargraph
         require_relative 'load_hooks/send_node'
         Solargraph::Parser::NodeProcessor.register(:send, SendNode)
       end
-
-      register
     end
   end
 end

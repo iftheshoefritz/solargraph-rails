@@ -91,3 +91,4 @@ module Solargraph
 end
 
 Solargraph::Convention.register(Solargraph::Rails::Convention)
+Solargraph::Rails::LoadHooks.register
