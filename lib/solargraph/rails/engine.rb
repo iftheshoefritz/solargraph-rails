@@ -5,8 +5,6 @@ module Solargraph
     # Rails engines keep code under app/, which Zeitwerk loads instead of
     # require. Map the roots Rails::Engine::Configuration#paths autoloads.
     class Engine
-      ENGINE_SUPERCLASS = /<\s*(?:::)?Rails::Engine\b/
-
       # app/* and app/*/concerns, as the "app" path's glob.
       APP_ROOTS = '{*,*/concerns}'
 
@@ -44,7 +42,7 @@ module Solargraph
       def engine?(root, require_paths)
         require_paths.any? do |path|
           Dir.glob(File.join(root, path, '**', '*.rb')).any? do |file|
-            File.read(file).match?(ENGINE_SUPERCLASS)
+            File.read(file).match?(/<\s*(?:::)?Rails::Engine\b/)
           end
         end
       end

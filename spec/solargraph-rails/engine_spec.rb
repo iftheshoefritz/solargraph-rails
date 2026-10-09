@@ -48,6 +48,13 @@ RSpec.describe Solargraph::Rails::Engine do
     end
   end
 
+  it 'leaves out mailer previews when the engine has none' do
+    write 'lib/engine_gem/engine.rb', "class Engine < Rails::Engine; end\n"
+    write 'app/jobs/engine_gem/job.rb'
+
+    expect(directories).to eq(['app/jobs'])
+  end
+
   it 'returns nothing for a gem with app/ that is not an engine' do
     write 'lib/app_gem.rb'
     write 'app/models/app_gem/thing.rb'
