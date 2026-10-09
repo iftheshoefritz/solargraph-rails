@@ -37,3 +37,8 @@ end
 #   @return [Boolean]
 # @!override Time#acts_like_time?
 #   @return [Boolean]
+
+# ActiveSupport returns a String; json's RBS types json/add's Hash-returning
+# version, which Rails does not load: https://github.com/ruby/rbs/blob/v4.1.3/stdlib/json/0/json.rbs#L1947
+# @!override Time#as_json
+#   @return [String]
