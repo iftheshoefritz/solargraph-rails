@@ -462,6 +462,7 @@ RSpec/SpecFilePathFormat:
     - '**/spec/routing/**/*'
     - 'spec/solargraph-rails/annotate_spec.rb'
     - 'spec/solargraph-rails/autoload_spec.rb'
+    - 'spec/solargraph-rails/convention_spec.rb'
     - 'spec/solargraph-rails/delegate_spec.rb'
     - 'spec/solargraph-rails/devise_spec.rb'
     - 'spec/solargraph-rails/model_spec.rb'
