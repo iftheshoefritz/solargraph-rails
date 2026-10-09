@@ -606,7 +606,7 @@ ActionController::Base.descendants:
   skip: false
 ActionController::Base.devise_group:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -618,16 +618,11 @@ ActionController::Base.devise_group:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base.direct_descendants:
   types:
@@ -2039,7 +2034,7 @@ ActionController::Base#acts_like?:
   skip: false
 ActionController::Base#after_sign_in_path_for:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2051,20 +2046,15 @@ ActionController::Base#after_sign_in_path_for:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#after_sign_out_path_for:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2076,16 +2066,11 @@ ActionController::Base#after_sign_out_path_for:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#alert:
   types:
@@ -2164,7 +2149,7 @@ ActionController::Base#allow_forgery_protection=:
   - branch-castwide-v0.59
 ActionController::Base#allow_params_authentication!:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -2176,16 +2161,11 @@ ActionController::Base#allow_params_authentication!:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#any_templates?:
   types:
@@ -2266,7 +2246,7 @@ ActionController::Base#blank?:
   skip: false
 ActionController::Base#bypass_sign_in:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -2278,16 +2258,11 @@ ActionController::Base#bypass_sign_in:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#cache_store:
   types:
@@ -2607,7 +2582,7 @@ ActionController::Base#details_for_lookup:
   - 0.52.0
 ActionController::Base#devise_controller?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2619,20 +2594,15 @@ ActionController::Base#devise_controller?:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#devise_parameter_sanitizer:
   types:
-  - undefined
+  - Devise::ParameterSanitizer
   skip:
   - 0.48.0
   - 0.49.0
@@ -2644,16 +2614,11 @@ ActionController::Base#devise_parameter_sanitizer:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#dispatch:
   types:
@@ -3359,7 +3324,7 @@ ActionController::Base#instrument_fragment_cache:
   skip: false
 ActionController::Base#is_flashing_format?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3371,20 +3336,15 @@ ActionController::Base#is_flashing_format?:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#is_navigational_format?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3396,16 +3356,11 @@ ActionController::Base#is_navigational_format?:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#l:
   types:
@@ -3914,12 +3869,22 @@ ActionController::Base#performed?:
   skip: false
 ActionController::Base#polymorphic_path:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActionController::Base#polymorphic_url:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActionController::Base#prepend_view_path:
   types:
   - undefined
@@ -4182,8 +4147,13 @@ ActionController::Base#render_to_body:
   skip: false
 ActionController::Base#render_to_string:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActionController::Base#rendered_format:
   types:
   - undefined
@@ -4253,7 +4223,9 @@ ActionController::Base#request_forgery_protection_token=:
   - branch-castwide-v0.59
 ActionController::Base#request_format:
   types:
-  - undefined
+  - String
+  - Symbol
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
@@ -4265,16 +4237,11 @@ ActionController::Base#request_format:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#request_http_basic_authentication:
   types:
@@ -4585,7 +4552,7 @@ ActionController::Base#show_detailed_exceptions?:
   skip: false
 ActionController::Base#sign_in:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -4597,20 +4564,15 @@ ActionController::Base#sign_in:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#sign_in_and_redirect:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -4622,20 +4584,15 @@ ActionController::Base#sign_in_and_redirect:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#sign_out:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4647,20 +4604,15 @@ ActionController::Base#sign_out:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#sign_out_all_scopes:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4672,20 +4624,15 @@ ActionController::Base#sign_out_all_scopes:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#sign_out_and_redirect:
   types:
-  - undefined
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -4697,20 +4644,15 @@ ActionController::Base#sign_out_and_redirect:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#signed_in?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4722,20 +4664,15 @@ ActionController::Base#signed_in?:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#signed_in_root_path:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -4747,16 +4684,11 @@ ActionController::Base#signed_in_root_path:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#stale?:
   types:
@@ -4774,7 +4706,8 @@ ActionController::Base#status=:
   added_in: 7.2
 ActionController::Base#store_location_for:
   types:
-  - undefined
+  - String
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
@@ -4786,20 +4719,16 @@ ActionController::Base#store_location_for:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#stored_location_for:
   types:
-  - undefined
+  - String
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
@@ -4811,16 +4740,11 @@ ActionController::Base#stored_location_for:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#t:
   types:

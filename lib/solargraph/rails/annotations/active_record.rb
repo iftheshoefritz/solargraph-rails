@@ -253,6 +253,13 @@ class ActiveRecord::Base
   # @return [Boolean]
   def self.reset_counters(id, *counters, touch: nil); end
 
+  # An Array of attribute hashes creates and returns an Array of records.
+  # @return [self, Array<self>]
+  def self.create(attributes = nil, &block); end
+
+  # @return [self, Array<self>]
+  def self.create!(attributes = nil, &block); end
+
   # @return [self]
   def reload; end
 

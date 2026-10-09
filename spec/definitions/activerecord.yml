@@ -1077,17 +1077,14 @@ ActiveRecord::Base.count_by_sql:
   skip: false
 ActiveRecord::Base.create:
   types:
+  - Array<self>
   - self
   skip: false
 ActiveRecord::Base.create!:
   types:
+  - Array<self>
   - self
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
