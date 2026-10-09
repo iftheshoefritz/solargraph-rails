@@ -396,7 +396,7 @@ ActiveJob::Base.log_arguments=:
   - branch-castwide-v0.59
 ActiveJob::Base.log_arguments?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -592,7 +592,7 @@ ActiveJob::Base.priority=:
   - branch-castwide-v0.59
 ActiveJob::Base.priority?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -707,7 +707,7 @@ ActiveJob::Base.queue_name=:
   - branch-castwide-v0.59
 ActiveJob::Base.queue_name?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -782,7 +782,7 @@ ActiveJob::Base.queue_name_delimiter=:
   - branch-castwide-v0.59
 ActiveJob::Base.queue_name_delimiter?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -866,7 +866,7 @@ ActiveJob::Base.queue_name_prefix=:
   - branch-castwide-v0.59
 ActiveJob::Base.queue_name_prefix?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -981,7 +981,7 @@ ActiveJob::Base.rescue_handlers=:
   - branch-castwide-v0.59
 ActiveJob::Base.rescue_handlers?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -1494,7 +1494,7 @@ ActiveJob::Base#queue_name_prefix=:
   - branch-castwide-v0.59
 ActiveJob::Base#queue_name_prefix?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -1573,7 +1573,7 @@ ActiveJob::Base#rescue_handlers=:
   - branch-castwide-v0.59
 ActiveJob::Base#rescue_handlers?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
