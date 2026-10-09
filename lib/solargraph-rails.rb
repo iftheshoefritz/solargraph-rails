@@ -56,7 +56,7 @@ module Solargraph
         Puma.instance.add_dsl(environ, basename)
         Importmap.instance.add_dsl(environ, basename)
 
-        return environ unless ns
+        return environ unless ns.is_a?(Solargraph::Pin::Namespace)
 
         pins += run_feature { Schema.instance.process(source_map, ns) }
         pins += run_feature { Annotate.instance.process(source_map, ns) }
