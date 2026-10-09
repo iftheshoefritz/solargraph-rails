@@ -62,10 +62,15 @@ module Solargraph
         Solargraph::Parser::NodeProcessor.respond_to?(:deregister)
       end
 
-      if supported?
+      # @return [void]
+      def self.register
+        return unless supported?
+
         require_relative 'load_hooks/send_node'
         Solargraph::Parser::NodeProcessor.register(:send, SendNode)
       end
+
+      register
     end
   end
 end

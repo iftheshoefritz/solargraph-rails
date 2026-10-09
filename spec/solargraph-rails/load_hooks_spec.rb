@@ -21,6 +21,17 @@ RSpec.describe Solargraph::Rails::LoadHooks do
     end
   end
 
+  describe '.register' do
+    it 'leaves Solargraph processors alone where they cannot be chained' do
+      allow(described_class).to receive(:supported?).and_return(false)
+      allow(Solargraph::Parser::NodeProcessor).to receive(:register)
+
+      described_class.register
+
+      expect(Solargraph::Parser::NodeProcessor).not_to have_received(:register)
+    end
+  end
+
   describe 'mapping mixins in ActiveSupport.on_load blocks',
            skip: (described_class.supported? ? false : 'needs Solargraph >= 0.56.2 to chain :send processors') do
     # @param code [String]
@@ -100,6 +111,41 @@ RSpec.describe Solargraph::Rails::LoadHooks do
         end
       RUBY
       expect(refs).to include(%w[Include ActionMailer::Base Mixin])
+    end
+
+    it 'skips arguments that are not constants' do
+      refs = mixins_for(<<~RUBY)
+        ActiveSupport.on_load(:active_record) do
+          include mixin_for(:records), Mixin
+        end
+      RUBY
+      expect(refs).to include(%w[Include ActiveRecord::Base Mixin])
+    end
+
+    it 'leaves send without a method name alone' do
+      refs = mixins_for(<<~RUBY)
+        ActiveSupport.on_load(:active_record) do
+          send
+          send 'include', Mixin
+        end
+      RUBY
+      expect(refs.map { |ref| ref[1] }).not_to include('ActiveRecord::Base')
+    end
+
+    it 'leaves on_load calls without ActiveSupport alone' do
+      refs = mixins_for(<<~RUBY)
+        on_load(:active_record) { include First }
+        config.on_load(:active_record) { include Second }
+      RUBY
+      expect(refs.map { |ref| ref[1] }).not_to include('ActiveRecord::Base')
+    end
+
+    it 'leaves hooks not named by a symbol alone' do
+      refs = mixins_for(<<~RUBY)
+        ActiveSupport.on_load { include First }
+        ActiveSupport.on_load(hook_name) { include Second }
+      RUBY
+      expect(refs.map { |ref| ref[1] }).not_to include('ActiveRecord::Base')
     end
 
     it 'leaves hooks it does not know alone' do
