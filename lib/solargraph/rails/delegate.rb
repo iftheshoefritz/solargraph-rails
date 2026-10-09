@@ -11,8 +11,18 @@ module Solargraph
         Solargraph::Pin.const_defined?(:DelegatedMethod)
       end
 
+      # Solargraph < 0.56.2 keeps one processor per node type, so registering
+      # there would replace its own :send processor.
+      #
+      # @return [Boolean]
+      def self.processor?
+        supported? && Solargraph::Parser::NodeProcessor.respond_to?(:deregister)
+      end
+
       def process(source_map, ns)
         return [] unless self.class.supported?
+        # SendNode maps these, with the right closure and scope
+        return [] if self.class.processor?
         return [] unless source_map.code.include?('delegate')
 
         walker = Walker.from_source(source_map.source)
@@ -70,6 +80,11 @@ module Solargraph
         end
 
         pins
+      end
+
+      if processor?
+        require_relative 'delegate/send_node'
+        Solargraph::Parser::NodeProcessor.register(:send, SendNode)
       end
     end
   end
