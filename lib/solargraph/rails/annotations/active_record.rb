@@ -244,17 +244,34 @@ class ActiveRecord::Base
 
   def self.set_callback; end
 
-  # @return [:activerecord]
+  # @return [Symbol]
   def self.i18n_scope; end
 
+  # @param id [Integer, String]
+  # @param counters [Array<Symbol, String>] association or counter names
+  # @param touch [Boolean, Symbol, Array<Symbol>, nil]
+  # @return [Boolean]
+  def self.reset_counters(id, *counters, touch: nil); end
+
   # @return [self]
-  def reload(); end
+  def reload; end
+
+  # @param other [Object]
+  # @return [Integer, nil]
+  def <=>(other); end
 end
 
 module ActiveRecord::Validations
   # @return [Boolean]
-  def validate(); end
+  def validate; end
 end
+
+# @!override ActiveRecord::Core#blank?
+#   @return [Boolean]
+# @!override ActiveRecord::Core#present?
+#   @return [Boolean]
+# @!override ActiveModel::Validations#validate!
+#   @return [Boolean]
 
 # @!override ActiveRecord::Batches#find_each
 #   @yieldparam_single_parameter

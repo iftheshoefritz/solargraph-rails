@@ -96,8 +96,16 @@ module ActionController
     def session; end
     # @return [ActionDispatch::Flash::FlashHash]
     def flash; end
+
+    # @return [Boolean]
+    def self.supports_path?; end
   end
 end
+
+# @!override ActionController::Head#head
+#   @return [Boolean]
+# @!override ActionController::Rescue#show_detailed_exceptions?
+#   @return [Boolean]
 
 class AbstractController::Base
   include Rails::Application::Configuration
