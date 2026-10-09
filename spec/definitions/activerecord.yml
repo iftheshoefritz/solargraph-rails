@@ -1068,9 +1068,19 @@ ActiveRecord::Base.content_columns:
   skip: false
 ActiveRecord::Base.count:
   types:
+  - Hash
   - Integer
   skip:
   - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
