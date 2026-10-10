@@ -1071,7 +1071,6 @@ ActiveRecord::Base.count:
   - Hash
   - Integer
   skip:
-  - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
