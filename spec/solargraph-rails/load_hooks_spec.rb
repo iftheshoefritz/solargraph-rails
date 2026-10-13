@@ -199,6 +199,34 @@ RSpec.describe Solargraph::Rails::LoadHooks do
       expect(find_pin('ActionController::API#respond_with', api_map)).not_to be_nil
     end
 
+    it 'records a mixin expression for each class the hook runs on' do
+      # Stands in for Solargraph's own class, which older versions lack
+      dynamic_mixin = Class.new(Solargraph::Pin::Base) do
+        attr_reader :mixin, :node, :locals, :target
+
+        def initialize(mixin:, node:, locals: [], target: nil, **splat)
+          super(**splat)
+          @mixin = mixin
+          @node = node
+          @locals = locals
+          @target = target
+        end
+      end
+      stub_const('Solargraph::Pin::Reference::DynamicMixin', dynamic_mixin)
+
+      pins = Solargraph::SourceMap.load_string(<<~RUBY).pins.grep(dynamic_mixin).select(&:target)
+        initializer 'helpers' do |app|
+          ActiveSupport.on_load(:action_controller) do
+            include app.routes.mounted_helpers
+          end
+        end
+      RUBY
+
+      expect(pins.map { |pin| [pin.mixin, pin.target.path, pin.node.children[1], pin.locals.map(&:name)] })
+        .to eq([[Solargraph::Pin::Reference::Include, 'ActionController::Base', :mounted_helpers, ['app']],
+                [Solargraph::Pin::Reference::Include, 'ActionController::API', :mounted_helpers, ['app']]])
+    end
+
     it 'adds the module a mixin expression returns to the classes',
        skip: (if defined?(Solargraph::Pin::Reference::DynamicMixin)
                 false
