@@ -514,7 +514,7 @@ Date#in?:
   skip: false
 Date#in_time_zone:
   types:
-  - ActiveSupportTimeWithZone
+  - ActiveSupport::TimeWithZone
   - Time
   skip:
   - 0.48.0
@@ -527,16 +527,11 @@ Date#in_time_zone:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 Date#infinite?:
   types:
