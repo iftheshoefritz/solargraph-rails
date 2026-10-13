@@ -2274,7 +2274,7 @@ ActionController::Base#cache_store=:
   skip: false
 ActionController::Base#cancel_registration_path:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2299,7 +2299,7 @@ ActionController::Base#cancel_registration_path:
   - branch-castwide-v0.59
 ActionController::Base#cancel_registration_url:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
