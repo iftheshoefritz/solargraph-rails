@@ -161,4 +161,31 @@ RSpec.describe Solargraph::Rails::Model do
       args: { h: 'Numeric' }
     )
   end
+
+  it 'binds the RBS query-method type parameters to the model and ActiveRecord::Base' do
+    pending 'https://github.com/castwide/solargraph/pull/1344 and https://github.com/apiology/solargraph/pull/126'
+
+    filename = nil
+    map = rails_workspace do |root|
+      root.write_file 'app/models/widget.rb', <<~RUBY
+        class Widget < ActiveRecord::Base
+        end
+      RUBY
+
+      filename = root.write_file 'app/models/widget_report.rb', <<~RUBY
+        class WidgetReport
+          def run
+            model_ids = Widget.ids
+            relation_ids = Widget.all.ids
+            base_relation = ActiveRecord::Base.where(id: 1)
+          end
+        end
+      RUBY
+    end
+
+    inferred = ->(line) { member_tags(map.clip_at(filename, [line, 6]).infer) }
+    expect(inferred.call(2)).to eq(['Array<Integer>'])
+    expect(inferred.call(3)).to eq(['Array<Integer>'])
+    expect(inferred.call(4)).to eq(['ActiveRecord::Relation'])
+  end
 end

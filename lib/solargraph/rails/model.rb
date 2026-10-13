@@ -109,7 +109,7 @@ module Solargraph
 
         unless abstract
           pins += relation_method_pins(ns, :class, ns.path)
-          pins += relation_method_pins(relation, :instance, ns.path)
+          pins += relation_method_pins(relation, :instance, ns.path) + QueryGenerics.model_pins(ns, relation)
         end
 
         Solargraph.logger.debug("[Rails][Model] added #{pins.map(&:name)} to #{ns.path}")
