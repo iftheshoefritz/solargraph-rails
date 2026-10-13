@@ -1134,6 +1134,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveJob::Base.skip_after_callbacks_if_terminated=:
   types:
   - undefined
@@ -1159,6 +1160,7 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
+  removed_in: 7.1
 ActiveJob::Base.skip_callback:
   types:
   - undefined
