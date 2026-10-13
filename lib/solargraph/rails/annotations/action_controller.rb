@@ -87,6 +87,7 @@ module ActionController
     extend AbstractController::Helpers::ClassMethods
     include AbstractController::Caching
     include AbstractController::Caching::ClassMethods
+    include ActionDispatch::Routing::RouteSet::MountedHelpers
 
     # @return [ActionDispatch::Response]
     def response; end
@@ -116,6 +117,10 @@ class AbstractController::Base
   # rubocop:disable Lint/MissingSuper
   def self.method_added(method_name); end
   # rubocop:enable Lint/MissingSuper
+end
+
+class ActionController::API
+  include ActionDispatch::Routing::RouteSet::MountedHelpers
 end
 
 class ActionController::Metal

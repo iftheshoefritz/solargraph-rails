@@ -164,6 +164,14 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
+  it 'types main_app as a RoutesProxy in controllers and views' do
+    map = rails_workspace
+
+    %w[ActionController::Base ActionController::API ActionView::Base].each do |klass|
+      assert_method(map, "#{klass}#main_app", ['ActionDispatch::Routing::RoutesProxy'])
+    end
+  end
+
   # https://github.com/iftheshoefritz/solargraph-rails/issues/124
   xit 'understands ActiveRecord::Base#validation_context' do
     map = rails_workspace

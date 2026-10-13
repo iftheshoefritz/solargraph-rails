@@ -21,6 +21,12 @@ module ActionDispatch
       # @yieldself [ActionDispatch::Routing::Mapper]
       # @yieldreceiver [ActionDispatch::Routing::Mapper]
       def draw; end
+
+      # Rails defines main_app here through a string class_eval at boot.
+      module MountedHelpers
+        # @return [ActionDispatch::Routing::RoutesProxy]
+        def main_app; end
+      end
     end
   end
 end
