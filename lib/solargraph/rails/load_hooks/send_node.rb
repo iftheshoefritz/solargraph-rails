@@ -38,9 +38,8 @@ module Solargraph
           return unless reference_class
 
           mixin_args.each do |arg|
-            next unless arg.is_a?(::Parser::AST::Node)
             next map_expression(reference_class, arg, block, targets) if expression?(arg)
-            next unless arg.type == :const
+            next unless arg.is_a?(::Parser::AST::Node) && arg.type == :const
 
             location = get_node_location(arg)
             targets.each do |target|
@@ -57,7 +56,8 @@ module Solargraph
         # @param arg [::Parser::AST::Node]
         # @return [Boolean]
         def expression?(arg)
-          defined?(Solargraph::Pin::Reference::DynamicMixin) && EXPRESSION_TYPES.include?(arg.type)
+          arg.is_a?(::Parser::AST::Node) && EXPRESSION_TYPES.include?(arg.type) &&
+            Solargraph::Pin::Reference.const_defined?(:DynamicMixin)
         end
 
         # Solargraph infers the expression in the hook block, where its
