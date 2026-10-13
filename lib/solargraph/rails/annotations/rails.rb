@@ -24,3 +24,7 @@ class Rails::Application
   def self.inherited(subclass); end
   # rubocop:enable Lint/MissingSuper
 end
+
+# Initializer#run yields the application being initialized.
+# @!override Rails::Initializable::ClassMethods#initializer
+#   @yieldparam app [Rails::Application]

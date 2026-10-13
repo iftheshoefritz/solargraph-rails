@@ -139,6 +139,27 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
+  it 'types the application yielded to initializer blocks',
+     skip: (if defined?(Solargraph::Pin::Reference::IncludedMixin) && defined?(Solargraph::ApiMap::Index::YIELD_TAGS)
+              false
+            else
+              'needs Solargraph to map self.included hooks and apply overridden yield tags'
+            end) do
+    filename = nil
+    map =
+      rails_workspace do |root|
+        filename = root.write_file 'lib/my_railtie.rb', <<~RUBY
+          class MyRailtie < Rails::Railtie
+            initializer 'my_railtie.setup' do |app|
+              app
+            end
+          end
+        RUBY
+      end
+
+    expect(map.clip_at(filename, [2, 4]).infer.to_s).to eq('Rails::Application')
+  end
+
   it 'provides completions for ActionDispatch::Routing::Mapper' do
     map = rails_workspace
 
