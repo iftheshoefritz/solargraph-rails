@@ -199,6 +199,47 @@ RSpec.describe Solargraph::Rails::LoadHooks do
       expect(find_pin('ActionController::API#respond_with', api_map)).not_to be_nil
     end
 
+    it 'adds the module a mixin expression returns to the classes',
+       skip: (if defined?(Solargraph::Pin::Reference::DynamicMixin)
+                false
+              else
+                'needs Solargraph to infer mixin expressions'
+              end) do
+      api_map = Solargraph::ApiMap.new
+      load_string_into(api_map, 'app/lib/routes.rb', <<~RUBY)
+        module ActionController
+          class Base; end
+          class API; end
+        end
+
+        class Routes
+          module MountedHelpers
+            def main_app; end
+          end
+
+          def mounted_helpers
+            MountedHelpers
+          end
+        end
+
+        class Engine
+          # @yieldparam routes [Routes]
+          def self.initializer(name); end
+
+          initializer 'helpers' do |routes|
+            ActiveSupport.on_load(:action_controller) do
+              include routes.mounted_helpers
+            end
+          end
+        end
+      RUBY
+
+      expect(api_map.get_method_stack('ActionController::Base', 'main_app').map(&:path))
+        .to eq(['Routes::MountedHelpers#main_app'])
+      expect(api_map.get_method_stack('ActionController::API', 'main_app').map(&:path))
+        .to eq(['Routes::MountedHelpers#main_app'])
+    end
+
     # @param api_map [Solargraph::ApiMap]
     # @param filename [String]
     # @param code [String]
