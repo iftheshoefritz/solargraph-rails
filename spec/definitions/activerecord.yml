@@ -6314,7 +6314,7 @@ ActiveRecord::Base#present?:
   skip: false
 ActiveRecord::Base#pretty_print:
   types:
-  - IO
+  - void
   skip:
   - 0.48.0
   - 0.49.0
