@@ -14,7 +14,7 @@ module Solargraph
       # Unbound or misbound mixin generics leak `generic<Model>` into every
       # query method, so this needs both:
       # https://github.com/castwide/solargraph/pull/1344 (generics on extends) and
-      # https://github.com/apiology/solargraph/pull/126 (binding by position)
+      # https://github.com/castwide/solargraph/pull/1415 (binding by position)
       def self.supported?
         return @supported if defined?(@supported)
 
