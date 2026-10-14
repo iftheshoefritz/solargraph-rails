@@ -17,6 +17,7 @@ require_relative 'solargraph/rails/puma'
 require_relative 'solargraph/rails/importmap'
 require_relative 'solargraph/rails/debug'
 require_relative 'solargraph/rails/engine'
+require_relative 'solargraph/rails/load_hooks'
 require_relative 'solargraph/rails/version'
 
 module Solargraph
@@ -26,7 +27,7 @@ module Solargraph
     end
 
     class Convention < Solargraph::Convention::Base
-      # @param yard_map [Solargraph::DocMap]
+      # @param yard_map [Object, nil] YardMap, DocMap or nil, depending on the Solargraph version
       #
       # @return [Solargraph::Environ]
       def global(yard_map)
@@ -35,7 +36,7 @@ module Solargraph
         )
       rescue => error
         Solargraph.logger.warn(
-          error.message + "\n" + error.backtrace.join("\n")
+          error.message + "\n" + Array(error.backtrace).join("\n")
         )
         EMPTY_ENVIRON
       end
@@ -57,7 +58,7 @@ module Solargraph
         Puma.instance.add_dsl(environ, basename)
         Importmap.instance.add_dsl(environ, basename)
 
-        return environ unless ns
+        return environ unless ns.is_a?(Solargraph::Pin::Namespace)
 
         pins += run_feature { Schema.instance.process(source_map, ns) }
         pins += run_feature { Annotate.instance.process(source_map, ns) }
@@ -92,7 +93,7 @@ module Solargraph
         yield
       rescue => error
         Solargraph.logger.warn(
-          error.message + "\n" + error.backtrace.join("\n")
+          error.message + "\n" + Array(error.backtrace).join("\n")
         )
         []
       end
@@ -101,3 +102,4 @@ module Solargraph
 end
 
 Solargraph::Convention.register(Solargraph::Rails::Convention)
+Solargraph::Rails::LoadHooks.register

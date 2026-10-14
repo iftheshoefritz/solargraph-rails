@@ -324,7 +324,7 @@ Hash#deep_stringify_keys!:
   - branch-castwide-v0.59
 Hash#deep_symbolize_keys:
   types:
-  - Hash{Symbol, undefined}
+  - Hash{Symbol => generic<V>}
   skip:
   - 0.48.0
   - 0.49.0
@@ -349,7 +349,7 @@ Hash#deep_symbolize_keys:
   - branch-castwide-v0.59
 Hash#deep_symbolize_keys!:
   types:
-  - Hash{Symbol, undefined}
+  - Hash{Symbol => generic<V>}
   skip:
   - 0.48.0
   - 0.49.0

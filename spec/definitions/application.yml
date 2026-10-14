@@ -545,7 +545,7 @@ Rails::Application.with_options:
   skip: false
 Rails::Application.yaml_tag:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
