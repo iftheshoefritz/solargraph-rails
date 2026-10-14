@@ -2291,11 +2291,8 @@ ActionController::Base#cancel_registration_path:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#cancel_registration_url:
   types:
@@ -2316,11 +2313,8 @@ ActionController::Base#cancel_registration_url:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#class_eval:
   types:
