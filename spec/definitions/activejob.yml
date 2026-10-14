@@ -1637,7 +1637,6 @@ ActiveJob::Base#serialize:
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveJob::Base#serialized_arguments=:
   types:
