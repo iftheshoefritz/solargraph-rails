@@ -1,5 +1,8 @@
 require 'spec_helper'
 
+# Older Solargraph pins take no type arguments, so the builders cannot run.
+skip_reason = 'Solargraph pins lack type arguments' unless Solargraph::Pin::Reference.method_defined?(:generic_values)
+
 RSpec.describe Solargraph::Rails::QueryGenerics do
   let(:base) { Solargraph::Pin::Namespace.new(name: 'ActiveRecord::Base') }
   let(:model) { Solargraph::Pin::Namespace.new(name: 'User') }
@@ -10,13 +13,13 @@ RSpec.describe Solargraph::Rails::QueryGenerics do
     [pin.class, pin.closure.path, pin.name, pin.generic_values]
   end
 
-  describe '.binds_by_position?' do
+  describe '.binds_by_position?', skip: skip_reason do
     it 'reports whether this Solargraph binds generics by position' do
       expect(described_class.send(:binds_by_position?)).to be(true).or be(false)
     end
   end
 
-  context 'when supported' do
+  context 'when supported', skip: skip_reason do
     before { allow(described_class).to receive(:supported?).and_return(true) }
 
     it 'extends ActiveRecord::Base with ClassMethods bound to self' do
