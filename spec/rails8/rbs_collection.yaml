@@ -8,7 +8,7 @@ sources:
     # things failing after unrelated changes.
     #
     # https://github.com/ruby/gem_rbs_collection/commits/main/
-    revision: c78df6cf7f5b5d8151be261c29f8fdcb16465d61
+    revision: c26eeb202eb68ba5564b3b25ff1f65d28286aafb
     repo_dir: gems
 
 # You can specify local directories as sources also.

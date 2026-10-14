@@ -16,7 +16,8 @@ module Solargraph
 
       # @param yard_map [Solargraph::DocMap]
       def global(_doc_map)
-        extra_source_maps.values.flat_map(&:pins)
+        pins = extra_source_maps.values.flat_map(&:pins)
+        pins + QueryGenerics.base_pins(pins)
       end
 
       def local(source_map, ns)
