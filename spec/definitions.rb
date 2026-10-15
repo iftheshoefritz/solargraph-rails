@@ -165,10 +165,15 @@ class Definitions
         elsif !skip
           @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
         end
-      # rbs-only definitions may cover multiple versions of Rails and cause false alarms
-      elsif skip && !(pin.respond_to?(:source) && pin.source == :rbs)
+      elsif skip
+        rbs_pin = pin.respond_to?(:source) && pin.source == :rbs
         if update
-          remove_skip(data)
+          # rbs signatures cover several Rails versions, so an rbs pin does not
+          # show that a method removed or not yet added in this one exists
+          remove_skip(data) unless rbs_pin && (already_removed || not_added_yet)
+        elsif rbs_pin
+          # rbs-only definitions may cover multiple versions of Rails and cause false alarms
+          nil
         elsif !@allow_improvements
           @incorrect << <<~STR
             #{pin.path} is marked as skipped in #{definitions_file} for #{solargraph_version}, but is actually present and correct - see #{pin.inspect}.
