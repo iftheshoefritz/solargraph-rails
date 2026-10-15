@@ -1,7 +1,11 @@
 require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::MountedHelpers do
-  describe '.scan' do
+  describe '.scan', skip: (if defined?(Solargraph::Parser::ParserGem::NodeMethods)
+                            false
+                          else
+                            'needs Solargraph::Parser::ParserGem'
+                          end) do
     it 'finds helpers that define_mounted_helper adds' do
       scan = described_class.scan(<<~RUBY)
         initializer :define_main_app_helper do |app|
@@ -35,6 +39,22 @@ RSpec.describe Solargraph::Rails::MountedHelpers do
         Class.new(ActionView::Base) do
           include routes.mounted_helpers
         end
+      RUBY
+
+      expect(scan.targets).to be_empty
+    end
+
+    it 'finds nothing in an empty file' do
+      scan = described_class.scan('')
+
+      expect([scan.helpers, scan.targets]).to eq([[], []])
+    end
+
+    it 'ignores on_load hooks not called on ActiveSupport' do
+      scan = described_class.scan(<<~RUBY)
+        on_load(:action_controller) { include routes.mounted_helpers }
+        Other.on_load(:action_controller) { include routes.mounted_helpers }
+        ActiveSupport.on_load(hook) { include routes.mounted_helpers }
       RUBY
 
       expect(scan.targets).to be_empty
