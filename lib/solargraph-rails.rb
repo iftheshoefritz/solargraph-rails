@@ -18,6 +18,7 @@ require_relative 'solargraph/rails/puma'
 require_relative 'solargraph/rails/importmap'
 require_relative 'solargraph/rails/debug'
 require_relative 'solargraph/rails/load_hooks'
+require_relative 'solargraph/rails/mounted_helpers'
 require_relative 'solargraph/rails/version'
 
 module Solargraph
@@ -72,6 +73,20 @@ module Solargraph
         environ = Solargraph::Environ.new(pins: pins)
         Puma.instance.add_dsl(environ, basename)
         environ
+      end
+
+      # @param api_map [Solargraph::ApiMap]
+      # @param rooted_tag [String]
+      # @param scope [Symbol]
+      # @param _visibility [Array<Symbol>]
+      # @param _deep [Boolean]
+      # @param _skip [Set<String>]
+      # @param _no_core [Boolean]
+      #
+      # @return [Solargraph::Environ]
+      def object(api_map, rooted_tag, scope, _visibility, _deep, _skip, _no_core)
+        pins = run_feature { MountedHelpers.instance.object(api_map, rooted_tag, scope) }
+        pins.empty? ? EMPTY_ENVIRON : Solargraph::Environ.new(pins: pins)
       end
 
       private
