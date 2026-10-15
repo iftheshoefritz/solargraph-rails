@@ -2,10 +2,10 @@ require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::MountedHelpers do
   describe '.scan', skip: (if defined?(Solargraph::Parser::ParserGem::NodeMethods)
-                            false
-                          else
-                            'needs Solargraph::Parser::ParserGem'
-                          end) do
+                             false
+                           else
+                             'needs Solargraph::Parser::ParserGem'
+                           end) do
     it 'finds helpers that define_mounted_helper adds' do
       scan = described_class.scan(<<~RUBY)
         initializer :define_main_app_helper do |app|
