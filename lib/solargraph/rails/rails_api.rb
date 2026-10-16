@@ -65,7 +65,7 @@ module Solargraph
 
       # @return [Boolean]
       def gem_rbs_supported?
-        Gem::Version.new(Solargraph::VERSION).release >= Gem::Version.new('0.53.0')
+        gem_version_satisfies?('solargraph', '>= 0.53.0')
       end
 
       # @param gem_name [String]

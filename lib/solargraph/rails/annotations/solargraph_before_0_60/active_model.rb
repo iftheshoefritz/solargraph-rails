@@ -1,6 +1,6 @@
 module ActiveModel
   module Translation
-    # @param options [Hash] options to customize the output
+    # @param options [Hash{Symbol => undefined}] options to customize the output
     # @param attribute [Symbol, String] the name of the attribute
     # @return [String]
     def human_attribute_name(attribute, options = {}); end

@@ -37,7 +37,7 @@ RSpec.describe Solargraph::Rails::RailsApi do
     expect(global_paths).not_to include(*scoped_paths)
   end
 
-  it 'skips version-scoped annotations when Rails is not loaded' do
+  it 'skips Rails-version-scoped annotations when Rails is not loaded' do
     with_rails(nil)
 
     expect(global_paths).not_to include(*scoped_paths)
