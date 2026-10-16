@@ -164,9 +164,6 @@ end
 
 class ActiveRecord::Persistence::ClassMethods
   # @return [self]
-  def create(attributes = nil, &block); end
-
-  # @return [self]
   def build(attributes = nil, &block); end
 end
 
@@ -256,9 +253,6 @@ class ActiveRecord::Base
   # An Array of attribute hashes creates and returns an Array of records.
   # @return [self, Array<self>]
   def self.create(attributes = nil, &block); end
-
-  # @return [self, Array<self>]
-  def self.create!(attributes = nil, &block); end
 
   # @return [self]
   def reload; end

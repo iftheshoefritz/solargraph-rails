@@ -9,10 +9,12 @@ module Solargraph
 
       # Annotation subdirectories that load only when the bundled gem's
       # version meets the requirement - for types the RBS collection
-      # lacks in older versions of that gem.  Solargraph before 0.53
-      # reads no gem RBS, so they load there whatever the version.
+      # lacks in older versions of that gem.  Rails gems share one
+      # version, so Rails-version scopes check railties.  Solargraph
+      # before 0.53 reads no gem RBS, so they load there whatever the
+      # version.
       VERSION_SCOPED_ANNOTATIONS = {
-        'actionpack_before_7_2' => ['actionpack', '< 7.2']
+        'rails_before_7_2' => ['railties', '< 7.2']
       }.freeze
 
       def extra_source_maps
