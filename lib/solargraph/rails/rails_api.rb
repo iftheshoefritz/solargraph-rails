@@ -7,12 +7,8 @@ module Solargraph
 
       ANNOTATIONS_DIR = File.join(__dir__, 'annotations')
 
-      # Annotation subdirectories that load only when the bundled gem's
-      # version meets the requirement - for types the RBS collection
-      # lacks in older versions of that gem.  Rails gems share one
-      # version, so Rails-version scopes check railties.  Solargraph
-      # before 0.53 reads no gem RBS, so they load there whatever the
-      # version.
+      # Annotation subdirectory => [gem, requirement] it loads under; see
+      # annotations/README.md
       VERSION_SCOPED_ANNOTATIONS = {
         'rails_before_7_2' => ['railties', '< 7.2']
       }.freeze
@@ -66,12 +62,14 @@ module Solargraph
           scoped.keys.flat_map { |dir| Dir[File.join(ANNOTATIONS_DIR, dir, '*.rb')] }
       end
 
+      # @return [Boolean]
       def gem_rbs_supported?
         Gem::Version.new(Solargraph::VERSION).release >= Gem::Version.new('0.53.0')
       end
 
       # @param gem_name [String]
       # @param requirement [String]
+      # @return [Boolean]
       def gem_version_satisfies?(gem_name, requirement)
         spec = Gem.loaded_specs[gem_name]
         return false unless spec
