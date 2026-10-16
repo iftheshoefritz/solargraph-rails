@@ -207,6 +207,11 @@ class ActiveRecord::Base
   # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1378 ships in a release.
   extend ActiveRecord::Core
 
+  # Move to a solargraph_before_<release> directory once https://github.com/apiology/solargraph/pull/199 ships in a release.
+  # An Array of attribute hashes creates and returns an Array of records.
+  # @return [self, Array<self>]
+  def self.create(attributes = nil, &block); end
+
   # @return [self]
   def reload; end
 
