@@ -66,6 +66,21 @@ script/copy_definitions.rb 0.57.0 0.58.0
 ### Adding or dropping a Solargraph version in CI
 
 Skip lists are keyed by `MATRIX_SOLARGRAPH_VERSION` (when `CI` is set), so each matrix version needs its own entries.
+A bare version skips every Rails version; an item with `rails:` skips only the Rails versions (major.minor) it lists:
+
+```yaml
+ActionController::Base#authenticate_with_http_token:
+  types:
+  - generic<T>
+  - nil
+  skip:
+  - 0.48.0
+  - solargraph: 0.57.0
+    rails: ['7.0', '7.1']
+```
+
+`FORCE_UPDATE` writes these: a failure adds a bare version (or extends that version's `rails:` list), and a pass on a skipped version keeps the skip for the other Rails versions that `.github/workflows/test.yml` runs it with.
+Run it on every Rails version in the matrix, so passes narrow the skip and a `rails:` list that covers them all collapses back to a bare version.
 
 To add a version, add it to the `solargraph-version` matrix in `.github/workflows/test.yml` (plus Ruby `exclude` entries if its `required_ruby_version` rules some out), then record its skips with the update run:
 
