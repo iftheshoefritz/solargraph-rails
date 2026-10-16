@@ -11,8 +11,14 @@ require 'yaml'
 #   - 0.48.0
 #   - solargraph: 0.57.0
 #     rails: ['7.0', '7.1']
+#
+# Rails-scoped items are a shim for Solargraph releases below 0.60, which
+# cannot let an annotation win over older RBS. Anywhere else they raise.
 module SkipList
   WILDCARD = 'branch-castwide-master'
+  SCOPED_BELOW = Gem::Version.new('0.60')
+
+  class ScopedSkipError < StandardError; end
   WORKFLOW = File.expand_path('../.github/workflows/test.yml', __dir__)
 
   module_function
@@ -71,6 +77,8 @@ module SkipList
     list = items(data['skip']).flat_map do |item|
       next [item] unless version_of(item) == solargraph_version
 
+      next [] unless scoped_allowed?(solargraph_version)
+
       rails = (item.is_a?(String) ? matrix_rails : rails_of(item)) - [rails_version]
       rails.empty? ? [] : [{ 'solargraph' => solargraph_version, 'rails' => rails }]
     end
@@ -99,11 +107,29 @@ module SkipList
   # @param skip [Boolean, String, Array<String, Hash>, nil]
   # @return [Array<String, Hash>]
   def items(skip)
-    case skip
-    when Array then skip.dup
-    when String then [skip]
-    else []
-    end
+    list = case skip
+           when Array then skip.dup
+           when String then [skip]
+           else []
+           end
+    list.each { |item| check_scoped!(item) }
+  end
+
+  # @param solargraph_version [String]
+  # @return [Boolean]
+  def scoped_allowed?(solargraph_version)
+    solargraph_version.match?(/\A\d+(\.\d+)+\z/) && Gem::Version.new(solargraph_version) < SCOPED_BELOW
+  end
+
+  # @param item [String, Hash]
+  # @raise [ScopedSkipError]
+  # @return [void]
+  def check_scoped!(item)
+    return if item.is_a?(String) || scoped_allowed?(version_of(item))
+
+    raise ScopedSkipError, "Rails-scoped skip #{item.inspect} is only allowed for Solargraph releases " \
+                           "below #{SCOPED_BELOW}. Fix a Rails-version type gap on current Solargraph " \
+                           'with an annotation (e.g. a Rails-version-scoped annotation file), not a scoped skip.'
   end
 
   # @param item [String, Hash]
