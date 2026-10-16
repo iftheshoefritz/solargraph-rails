@@ -65,9 +65,8 @@ files.each do |path|
     next if skip.any? { |item| skip_version(item) == to_version }
 
     # Rails-scoped skips exist only for Solargraph releases below 0.60
-    scoped = from.is_a?(Hash) && to_version.match?(/\A\d+(\.\d+)+\z/) &&
-             Gem::Version.new(to_version) < Gem::Version.new("0.60")
-    skip.append(scoped ? from.merge("solargraph" => to_version) : to_version)
+    legacy = /\A\d+(\.\d+)+\z/.match?(to_version.to_s) && Gem::Version.new(to_version.to_s) < Gem::Version.new("0.60")
+    skip.append(from.is_a?(Hash) && legacy ? from.merge("solargraph" => to_version) : to_version)
     skip.sort_by! { |item| [skip_version(item), item.is_a?(Hash) ? 1 : 0] }
 
     file_entries_changed += 1
