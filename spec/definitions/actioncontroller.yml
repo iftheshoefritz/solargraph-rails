@@ -4285,7 +4285,7 @@ ActionController::Base#request_http_digest_authentication:
   skip: false
 ActionController::Base#request_http_token_authentication:
   types:
-  - void
+  - String
   skip:
   - 0.48.0
   - 0.49.0
