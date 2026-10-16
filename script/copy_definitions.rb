@@ -5,7 +5,7 @@ require "yaml"
 
 # A skip item is a version string or { "solargraph" => version, "rails" => [...] }
 #
-# @param item [String, Hash]
+# @param item [String, Hash{String => String, Array<String>}]
 # @return [String]
 def skip_version(item)
   item.is_a?(Hash) ? item["solargraph"].to_s : item.to_s
@@ -56,7 +56,7 @@ files.each do |path|
   data.each_value do |entry|
     next unless entry.is_a?(Hash)
 
-    # @type [Array<String, Hash>]
+    # @type [Array<String, Hash{String => String, Array<String>}>]
     skip = entry["skip"]
     next unless skip.is_a?(Array)
 
