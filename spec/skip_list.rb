@@ -37,9 +37,10 @@ module SkipList
     end
   end
 
-  # Records a failure on this Solargraph and Rails version: extends the
-  # version's Rails-scoped item if there is one, else skips the version on
-  # every Rails version.
+  # Records a failure on this Solargraph and Rails version. Below 0.60 it
+  # skips only the Rails versions that failed, and an item covering every
+  # matrix Rails version collapses to the bare version; elsewhere it skips
+  # the version on every Rails version.
   #
   # @param data [Hash{String => undefined}] a definitions entry
   # @param solargraph_version [String]
@@ -48,13 +49,11 @@ module SkipList
   # @return [void]
   def add(data, solargraph_version, rails_version, matrix_rails)
     list = items(data['skip'])
-    scoped = list.find { |item| item.is_a?(Hash) && version_of(item) == solargraph_version }
-    if scoped
-      rails = (rails_of(scoped) | [rails_version]).sort
+    unless list.include?(solargraph_version)
+      scoped = list.find { |item| item.is_a?(Hash) && version_of(item) == solargraph_version }
       list.delete(scoped)
-      list << ((matrix_rails - rails).empty? ? solargraph_version : scoped.merge('rails' => rails))
-    else
-      list << solargraph_version
+      rails = ((scoped ? rails_of(scoped) : []) | [rails_version]).sort
+      list << scoped_or_bare(solargraph_version, rails, matrix_rails)
     end
     data['skip'] = sorted(list)
   end
@@ -80,9 +79,19 @@ module SkipList
       next [] unless scoped_allowed?(solargraph_version)
 
       rails = (item.is_a?(String) ? matrix_rails : rails_of(item)) - [rails_version]
-      rails.empty? ? [] : [{ 'solargraph' => solargraph_version, 'rails' => rails }]
+      rails.empty? ? [] : [scoped_or_bare(solargraph_version, rails, matrix_rails)]
     end
     data['skip'] = list.empty? ? false : sorted(list)
+  end
+
+  # @param solargraph_version [String]
+  # @param rails [Array<String>] Rails versions to skip
+  # @param matrix_rails [Array<String>]
+  # @return [String, Hash{String => String, Array<String>}]
+  def scoped_or_bare(solargraph_version, rails, matrix_rails)
+    return solargraph_version if !scoped_allowed?(solargraph_version) || (matrix_rails - rails).empty?
+
+    { 'solargraph' => solargraph_version, 'rails' => rails }
   end
 
   # Rails versions (major.minor) that .github/workflows/test.yml runs with

@@ -70,7 +70,7 @@ Skip lists are keyed by `MATRIX_SOLARGRAPH_VERSION` (when `CI` is set), so each 
 A bare version skips every Rails version.
 
 An item with `rails:` skips only the Rails versions (major.minor) it lists.
-It is a legacy shim for Solargraph releases below 0.60, which cannot let an annotation win over older RBS; delete it when 0.57 and 0.58 leave the CI matrix.
+It is a legacy shim for Solargraph releases below 0.60, which cannot let an annotation win over older RBS; delete the `rails:` form when 0.57 and 0.58 leave the CI matrix.
 On any other version (0.60 and later, or `branch-*`) the specs raise on a `rails:` item: fix a Rails-version type gap there with an annotation (e.g. a Rails-version-scoped annotation file), not a scoped skip.
 
 ```yaml
@@ -84,9 +84,9 @@ ActionController::Base#authenticate_with_http_token:
     rails: ['7.0', '7.1']
 ```
 
-`FORCE_UPDATE` writes these only below 0.60: a failure adds a bare version (or extends that version's `rails:` list), and a pass on a skipped version keeps the skip for the other Rails versions that `.github/workflows/test.yml` runs it with.
-On those versions, run it on every Rails version in the matrix, so passes narrow the skip and a `rails:` list that covers them all collapses back to a bare version.
-On 0.60 and later a pass removes the bare version outright.
+`FORCE_UPDATE` writes these only below 0.60: a failure adds the current Rails version to that version's `rails:` list, and a pass on a skipped version keeps the skip for the other Rails versions that `.github/workflows/test.yml` runs it with.
+A `rails:` list that covers them all collapses back to a bare version.
+On 0.60 and later a failure adds a bare version and a pass removes it outright.
 
 To add a version, add it to the `solargraph-version` matrix in `.github/workflows/test.yml` (plus Ruby `exclude` entries if its `required_ruby_version` rules some out), then record its skips with the update run:
 

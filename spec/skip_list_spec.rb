@@ -54,8 +54,22 @@ RSpec.describe SkipList do
   end
 
   describe '.add' do
-    it 'adds a bare version when no Rails-scoped item exists' do
+    it 'skips only the failing Rails version below Solargraph 0.60' do
       data = { 'skip' => false }
+      described_class.add(data, '0.57.0', '7.0', matrix)
+
+      expect(data['skip']).to eq([{ 'solargraph' => '0.57.0', 'rails' => ['7.0'] }])
+    end
+
+    it 'adds a bare version on Solargraph 0.60 or later' do
+      data = { 'skip' => false }
+      described_class.add(data, '0.61.0', '8.0', %w[7.2 8.0])
+
+      expect(data['skip']).to eq(['0.61.0'])
+    end
+
+    it 'leaves a bare version alone' do
+      data = { 'skip' => ['0.57.0'] }
       described_class.add(data, '0.57.0', '7.0', matrix)
 
       expect(data['skip']).to eq(['0.57.0'])
@@ -92,6 +106,13 @@ RSpec.describe SkipList do
 
       expect([after_first, data['skip']])
         .to eq([[{ 'solargraph' => '0.57.0', 'rails' => ['7.1'] }], false])
+    end
+
+    it 'collapses a scoped item covering every matrix Rails version' do
+      data = { 'skip' => ['0.57.0'] }
+      described_class.remove(data, '0.57.0', '6.1', matrix)
+
+      expect(data['skip']).to eq(['0.57.0'])
     end
 
     it 'removes a bare version outright on Solargraph 0.60 or later' do
