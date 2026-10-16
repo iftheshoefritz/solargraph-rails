@@ -66,6 +66,7 @@ script/copy_definitions.rb 0.57.0 0.58.0
 ### Adding or dropping a Solargraph version in CI
 
 Skip lists are keyed by `MATRIX_SOLARGRAPH_VERSION` (when `CI` is set), so each matrix version needs its own entries.
+
 A bare version skips every Rails version.
 
 An item with `rails:` skips only the Rails versions (major.minor) it lists.
