@@ -180,6 +180,12 @@ module ActiveRecord
 end
 
 class ActiveRecord::Base
+  # Move to a solargraph_before_<release> directory once
+  # https://github.com/iftheshoefritz/solargraph-rails/pull/227,
+  # https://github.com/castwide/solargraph/pull/1378 and
+  # https://github.com/castwide/solargraph/pull/1406 ship, plus
+  # https://github.com/castwide/solargraph/pull/1344 and
+  # https://github.com/castwide/solargraph/pull/1415 for the count and pluck types.
   extend Enumerable
   extend ActiveRecord::QueryMethods
   extend ActiveRecord::FinderMethods
@@ -188,6 +194,7 @@ class ActiveRecord::Base
   extend ActiveRecord::Associations::CollectionProxy
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
+
   include ActiveModel::AttributeRegistration
   extend ActiveModel::AttributeRegistration::ClassMethods
 
@@ -199,10 +206,6 @@ class ActiveRecord::Base
 
   # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1378 ships in a release.
   extend ActiveRecord::Core
-
-  # An Array of attribute hashes creates and returns an Array of records.
-  # @return [self, Array<self>]
-  def self.create(attributes = nil, &block); end
 
   # @return [self]
   def reload; end
