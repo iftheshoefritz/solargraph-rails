@@ -13,10 +13,13 @@ RSpec.describe Solargraph::Rails::RailsApi do
 
   before { allow(rails_api).to receive(:gem_rbs_supported?).and_return(gem_rbs) }
 
-  # @param version [String, nil]
+  # Stubs the loaded Rails gems: activesupport (which every Rails gem
+  # depends on at its own version) at the given version, without railties.
+  #
+  # @param version [String, nil] nil for no Rails gem loaded
   def with_rails(version)
-    specs = Gem.loaded_specs.except('railties')
-    specs['railties'] = Gem::Specification.new('railties', version) if version
+    specs = Gem.loaded_specs.except('railties', 'activesupport')
+    specs['activesupport'] = Gem::Specification.new('activesupport', version) if version
     allow(Gem).to receive(:loaded_specs).and_return(specs)
   end
 
@@ -25,7 +28,7 @@ RSpec.describe Solargraph::Rails::RailsApi do
     rails_api.global(nil).map(&:path)
   end
 
-  it 'loads annotations scoped to Rails before 7.2 for Rails 7.1' do
+  it 'loads annotations scoped to Rails before 7.2 for Rails 7.1 without railties' do
     with_rails('7.1.5')
 
     expect(global_paths).to include(*scoped_paths)
@@ -37,10 +40,10 @@ RSpec.describe Solargraph::Rails::RailsApi do
     expect(global_paths).not_to include(*scoped_paths)
   end
 
-  it 'skips version-scoped annotations when Rails is not loaded' do
+  it 'loads version-scoped annotations when the Rails version is unknown' do
     with_rails(nil)
 
-    expect(global_paths).not_to include(*scoped_paths)
+    expect(global_paths).to include(*scoped_paths)
   end
 
   context 'when Solargraph cannot read gem RBS' do
