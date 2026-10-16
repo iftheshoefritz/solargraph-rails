@@ -70,7 +70,7 @@ A bare version skips every Rails version.
 
 An item with `rails:` skips only the Rails versions (major.minor) it lists.
 It is a legacy shim for Solargraph releases below 0.60, which cannot let an annotation win over older RBS; delete it when 0.57 and 0.58 leave the CI matrix.
-On any other version (0.60 and later, or `branch-*`) the specs raise on a `rails:` item: fix a Rails-version type gap there with an annotation (e.g. a Rails-version-scoped annotation file), not a scoped skip.
+On any other version (0.60 and later, or `branch-*`) the specs raise on a `rails:` item: fix a Rails-version type gap there with an annotation (e.g. a file in a Rails-version-scoped directory such as `lib/solargraph/rails/annotations/rails_before_7_2/`), not a scoped skip.
 
 ```yaml
 ActionController::Base#authenticate_with_http_token:
