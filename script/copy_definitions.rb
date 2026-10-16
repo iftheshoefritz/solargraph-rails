@@ -3,6 +3,14 @@
 
 require "yaml"
 
+# A skip item is a version string or { "solargraph" => version, "rails" => [...] }
+#
+# @param item [String, Hash]
+# @return [String]
+def skip_version(item)
+  item.is_a?(Hash) ? item["solargraph"].to_s : item.to_s
+end
+
 USAGE = <<~TXT
   Usage:
     ruby script/copy_definitions.rb FROM_VERSION TO_VERSION [--dry-run]
@@ -48,19 +56,16 @@ files.each do |path|
   data.each_value do |entry|
     next unless entry.is_a?(Hash)
 
-    # @type [Array<String>]
+    # @type [Array<String, Hash>]
     skip = entry["skip"]
     next unless skip.is_a?(Array)
 
-    skip.sort!.uniq!
+    from = skip.find { |item| skip_version(item) == from_version }
+    next if from.nil?
+    next if skip.any? { |item| skip_version(item) == to_version }
 
-    # @param idx [Integer, nil]
-    idx = skip.index(from_version)
-    next if idx.nil?
-    next if skip.include?(to_version)
-
-    skip.append(to_version)
-    skip.sort!.uniq!
+    skip.append(from.is_a?(Hash) ? from.merge("solargraph" => to_version) : to_version)
+    skip.sort_by! { |item| [skip_version(item), item.is_a?(Hash) ? 1 : 0] }
 
     file_entries_changed += 1
   end
