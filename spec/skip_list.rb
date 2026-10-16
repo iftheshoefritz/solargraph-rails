@@ -23,7 +23,7 @@ module SkipList
 
   module_function
 
-  # @param skip [Boolean, String, Array<String, Hash>, nil]
+  # @param skip [Boolean, String, Array<String, Hash{String => String, Array<String>}>, nil]
   # @param solargraph_version [String]
   # @param rails_version [String] major.minor
   # @return [Boolean]
@@ -41,7 +41,7 @@ module SkipList
   # version's Rails-scoped item if there is one, else skips the version on
   # every Rails version.
   #
-  # @param data [Hash] a definitions entry
+  # @param data [Hash{String => undefined}] a definitions entry
   # @param solargraph_version [String]
   # @param rails_version [String]
   # @param matrix_rails [Array<String>] Rails versions CI runs with this Solargraph version
@@ -63,7 +63,7 @@ module SkipList
   # on every Rails version stays skipped on the other matrix Rails versions,
   # since one Rails version passing says nothing about the others.
   #
-  # @param data [Hash] a definitions entry
+  # @param data [Hash{String => undefined}] a definitions entry
   # @param solargraph_version [String]
   # @param rails_version [String]
   # @param matrix_rails [Array<String>]
@@ -98,14 +98,14 @@ module SkipList
     versions.map { |v| "#{v['rails-major']}.#{v['rails-minor']}" }.uniq
   end
 
-  # @param list [Array<String, Hash>]
-  # @return [Array<String, Hash>]
+  # @param list [Array<String, Hash{String => String, Array<String>}>]
+  # @return [Array<String, Hash{String => String, Array<String>}>]
   def sorted(list)
     list.uniq.sort_by { |item| [version_of(item), item.is_a?(String) ? [] : rails_of(item)] }
   end
 
-  # @param skip [Boolean, String, Array<String, Hash>, nil]
-  # @return [Array<String, Hash>]
+  # @param skip [Boolean, String, Array<String, Hash{String => String, Array<String>}>, nil]
+  # @return [Array<String, Hash{String => String, Array<String>}>]
   def items(skip)
     list = case skip
            when Array then skip.dup
@@ -121,7 +121,7 @@ module SkipList
     solargraph_version.match?(/\A\d+(\.\d+)+\z/) && Gem::Version.new(solargraph_version) < SCOPED_BELOW
   end
 
-  # @param item [String, Hash]
+  # @param item [String, Hash{String => String, Array<String>}]
   # @raise [ScopedSkipError]
   # @return [void]
   def check_scoped!(item)
@@ -132,13 +132,13 @@ module SkipList
                            'with an annotation (e.g. a Rails-version-scoped annotation file), not a scoped skip.'
   end
 
-  # @param item [String, Hash]
+  # @param item [String, Hash{String => String, Array<String>}]
   # @return [String]
   def version_of(item)
     item.is_a?(Hash) ? item['solargraph'].to_s : item.to_s
   end
 
-  # @param item [Hash]
+  # @param item [Hash{String => String, Array<String>}]
   # @return [Array<String>]
   def rails_of(item)
     Array(item['rails']).map(&:to_s)
