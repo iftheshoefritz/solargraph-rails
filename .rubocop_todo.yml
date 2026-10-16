@@ -469,6 +469,7 @@ RSpec/SpecFilePathFormat:
     - 'spec/solargraph-rails/model_spec.rb'
     - 'spec/solargraph-rails/mounted_helpers_spec.rb'
     - 'spec/solargraph-rails/query_generics_spec.rb'
+    - 'spec/solargraph-rails/rails_api_spec.rb'
     - 'spec/solargraph-rails/schema_spec.rb'
     - 'spec/solargraph-rails/storage_spec.rb'
 

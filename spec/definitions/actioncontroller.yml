@@ -1098,7 +1098,7 @@ ActionController::Base.html_safe?:
   skip: false
 ActionController::Base.http_basic_authenticate_with:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base.in?:
   types:
@@ -2202,31 +2202,58 @@ ActionController::Base#as_json:
   skip: false
 ActionController::Base#authenticate_or_request_with_http_basic:
   types:
-  - undefined
-  skip: false
+  - String
+  - generic<T>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
 ActionController::Base#authenticate_or_request_with_http_digest:
   types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_or_request_with_http_token:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_with_http_basic:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_with_http_digest:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_with_http_token:
-  types:
-  - undefined
+  - String
+  - 'true'
   skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
+ActionController::Base#authenticate_or_request_with_http_token:
+  types:
+  - String
+  - generic<T>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+ActionController::Base#authenticate_with_http_basic:
+  types:
+  - generic<T>
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+ActionController::Base#authenticate_with_http_digest:
+  types:
+  - Boolean
+  - nil
+  skip: false
+ActionController::Base#authenticate_with_http_token:
+  types:
+  - generic<T>
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
 ActionController::Base#available_action?:
   types:
   - Boolean
@@ -3211,8 +3238,17 @@ ActionController::Base#html_safe?:
   skip: false
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
-  - undefined
-  skip: false
+  - String
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base#http_cache_forever:
   types:
   - undefined
@@ -4233,11 +4269,11 @@ ActionController::Base#request_format:
   - branch-castwide-v0.59
 ActionController::Base#request_http_basic_authentication:
   types:
-  - undefined
+  - String
   skip: false
 ActionController::Base#request_http_digest_authentication:
   types:
-  - undefined
+  - String
   skip: false
 ActionController::Base#request_http_token_authentication:
   types:
@@ -4248,6 +4284,11 @@ ActionController::Base#request_http_token_authentication:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base#require_dependency:
   types:
   - undefined
