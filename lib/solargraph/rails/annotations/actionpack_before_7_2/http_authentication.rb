@@ -8,7 +8,7 @@ module ActionController
           # @param name [String]
           # @param password [String]
           # @param realm [String, nil]
-          # @param options [Hash]
+          # @param options [Hash{Symbol => undefined}]
           # @return [void]
           def http_basic_authenticate_with(name:, password:, realm: nil, **options); end
         end
