@@ -212,7 +212,7 @@ Lint/BooleanSymbol:
 # Offense count: 1
 Lint/DuplicateMethods:
   Exclude:
-    - 'lib/solargraph/rails/annotations/date.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/date.rb'
 
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
@@ -304,8 +304,8 @@ Metrics/PerceivedComplexity:
 Naming/BlockForwarding:
   Exclude:
     - 'lib/solargraph-rails.rb'
-    - 'lib/solargraph/rails/annotations/active_job.rb'
     - 'lib/solargraph/rails/annotations/active_record.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/active_job.rb'
     - 'lib/solargraph/rails/walker.rb'
     - 'spec/helpers.rb'
 
@@ -340,8 +340,8 @@ Naming/MemoizedInstanceVariableName:
 Naming/MethodParameterName:
   Exclude:
     - 'lib/solargraph/rails/annotate.rb'
-    - 'lib/solargraph/rails/annotations/module.rb'
-    - 'lib/solargraph/rails/annotations/object.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/module.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/object.rb'
     - 'lib/solargraph/rails/autoload.rb'
     - 'lib/solargraph/rails/delegate.rb'
     - 'lib/solargraph/rails/devise.rb'
@@ -496,6 +496,9 @@ Style/ClassAndModuleChildren:
     - 'lib/solargraph/rails/annotations/action_mailer.rb'
     - 'lib/solargraph/rails/annotations/active_record.rb'
     - 'lib/solargraph/rails/annotations/rails.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/action_mailer.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/active_record.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/rails.rb'
     - 'spec/foo/test/channels/application_cable/connection_test.rb'
     - 'spec/foo/test/test_helper.rb'
 
@@ -505,7 +508,7 @@ Style/ClassAndModuleChildren:
 # Keywords: TODO, FIXME, OPTIMIZE, HACK, REVIEW, NOTE
 Style/CommentAnnotation:
   Exclude:
-    - 'lib/solargraph/rails/annotations/active_record.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/active_record.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
@@ -621,7 +624,7 @@ Style/OneClassPerFile:
     - 'lib/solargraph/rails/annotations/action_controller.rb'
     - 'lib/solargraph/rails/annotations/active_record.rb'
     - 'lib/solargraph/rails/annotations/date.rb'
-    - 'lib/solargraph/rails/annotations/rails.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/rails.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
@@ -815,9 +818,8 @@ YARD/MismatchName:
 # Offense count: 7
 YARD/TagTypeSyntax:
   Exclude:
-    - 'lib/solargraph/rails/annotations/active_record.rb'
-    - 'lib/solargraph/rails/annotations/date.rb'
-    - 'lib/solargraph/rails/annotations/time.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/date.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/time.rb'
     - 'lib/solargraph/rails/model.rb'
 
 # Offense count: 17

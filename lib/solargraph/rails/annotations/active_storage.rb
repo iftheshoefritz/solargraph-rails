@@ -98,16 +98,6 @@ module ActiveStorage
       # @param service [String, Symbol, nil] the service to use for the attachment
       # @return [void]
       def self.has_many_attached(name, dependent: :default, service: nil, strict_loading: false); end
-
-      # @return [void]
-      def self.attachment_changes(); end
-
-      # @return [Boolean]
-      def self.changed_for_autosave?; end
-
-      # @param lock [BasicObject]
-      # @return [self]
-      def self.reload(lock = false); end
     end
   end
 end

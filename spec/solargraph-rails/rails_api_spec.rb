@@ -47,6 +47,18 @@ RSpec.describe Solargraph::Rails::RailsApi do
     end
   end
 
+  it 'loads annotations scoped to Solargraph before 0.60 on Solargraph 0.59' do
+    stub_const('Solargraph::VERSION', '0.59.2')
+
+    expect(global_paths).to include('Module#presence')
+  end
+
+  it 'skips annotations scoped to Solargraph before 0.60 from Solargraph 0.60.0 on' do
+    stub_const('Solargraph::VERSION', '0.60.0.dev-castwide-master')
+
+    expect(global_paths).not_to include('Module#presence')
+  end
+
   it 'reads gem RBS from Solargraph 0.53.0 on' do
     stub_const('Solargraph::VERSION', '0.53.0.dev-castwide-master')
 
