@@ -36,6 +36,7 @@ end
 #   @return [Boolean]
 
 class AbstractController::Base
+  # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1403 ships in a release.
   include Rails::Application::Configuration
   extend Rails::Application::Configuration
 

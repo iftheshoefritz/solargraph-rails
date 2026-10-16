@@ -197,6 +197,7 @@ class ActiveRecord::Base
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
 
+  # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1378 ships in a release.
   extend ActiveRecord::Core
 
   # An Array of attribute hashes creates and returns an Array of records.
