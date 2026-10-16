@@ -1,3 +1,4 @@
+require_relative 'skip_list'
 require_relative 'type_members'
 
 class Definitions
@@ -132,26 +133,17 @@ class Definitions
            meh_pins.sort_by { |p| member_tags(p.typify(map)).sort }).first
     skip = false
     @typed += 1 if data['types'] != ['undefined']
-    rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
     already_removed = false
-    if data['removed_in']
-      rails_major_and_minor_version = Rails.version.split('.')[0..1].join('.')
-      if data['removed_in'].to_f <= rails_major_and_minor_version.to_f
-        skip = true
-        already_removed = true
-      end
+    if data['removed_in'] && data['removed_in'].to_f <= rails_major_and_minor_version.to_f
+      skip = true
+      already_removed = true
     end
     not_added_yet = false
     if data['added_in'] && (data['added_in'].to_f > rails_major_and_minor_version.to_f)
       skip = true
       not_added_yet = true
     end
-    if data['skip'] == true ||
-       data['skip'] == solargraph_version || # in case of branches with specific excludes
-       (data['skip'] == 'branch-castwide-master' && solargraph_version.start_with?('branch-')) ||
-       (data['skip'].respond_to?(:include?) && data['skip'].include?(solargraph_version)) ||
-       (data['skip'].respond_to?(:include?) && data['skip'].include?('branch-castwide-master') &&
-        solargraph_version.start_with?('branch-'))
+    if SkipList.applies?(data['skip'], solargraph_version, rails_major_and_minor_version)
       skip = true
       @skipped += 1
     end
@@ -176,7 +168,7 @@ class Definitions
           nil
         elsif !@allow_improvements
           @incorrect << <<~STR
-            #{pin.path} is marked as skipped in #{definitions_file} for #{solargraph_version}, but is actually present and correct - see #{pin.inspect}.
+            #{pin.path} is marked as skipped in #{definitions_file} for #{solargraph_version} on Rails #{rails_major_and_minor_version}, but is actually present and correct - see #{pin.inspect}.
             Consider setting skip=false
           STR
         else
@@ -218,19 +210,19 @@ class Definitions
   end
 
   def add_to_skip(data)
-    data['skip'] = [] unless data['skip'].is_a?(Array)
-    data['skip'] << solargraph_version
-    data['skip'].sort!.uniq!
+    SkipList.add(data, solargraph_version, rails_major_and_minor_version, matrix_rails_versions)
   end
 
   def remove_skip(data)
-    if data['skip'].is_a?(Array)
-      data['skip'].delete(solargraph_version)
-      data['skip'].sort!.uniq!
-      data['skip'] = false if data['skip'].empty?
-    else
-      data['skip'] = false
-    end
+    SkipList.remove(data, solargraph_version, rails_major_and_minor_version, matrix_rails_versions)
+  end
+
+  def rails_major_and_minor_version
+    Rails.version.split('.')[0..1].join('.')
+  end
+
+  def matrix_rails_versions
+    @matrix_rails_versions ||= SkipList.matrix_rails_versions(solargraph_version)
   end
 
   def percent(num_a, num_b)
