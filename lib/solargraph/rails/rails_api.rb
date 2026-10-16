@@ -10,7 +10,7 @@ module Solargraph
       # Annotation subdirectory => [gem, requirement] it loads under; see
       # annotations/README.md
       VERSION_SCOPED_ANNOTATIONS = {
-        'rails_before_7_2' => ['railties', '< 7.2'],
+        'rails_before_7_2' => ['activesupport', '< 7.2'],
         'solargraph_before_0_60' => ['solargraph', '< 0.60']
       }.freeze
 
@@ -68,12 +68,16 @@ module Solargraph
         gem_version_satisfies?('solargraph', '>= 0.53.0')
       end
 
+      # An unloaded gem counts as satisfying: scoped annotations type
+      # what the RBS collection types for newer versions, so loading
+      # them is the safe side when the version is unknown.
+      #
       # @param gem_name [String]
       # @param requirement [String]
       # @return [Boolean]
       def gem_version_satisfies?(gem_name, requirement)
         version = gem_version(gem_name)
-        return false unless version
+        return true unless version
 
         Gem::Requirement.new(requirement).satisfied_by?(version)
       end
