@@ -1,5 +1,3 @@
-# gem_rbs_collection types these from actionpack 7.2 on; older Rails
-# resolves actionpack/6.0 RBS, which lacks them.
 module ActionController
   module HttpAuthentication
     module Basic
