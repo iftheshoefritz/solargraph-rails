@@ -2254,6 +2254,14 @@ ActionController::Base#authenticate_with_http_token:
   - 0.49.0
   - 0.50.0
   - 0.51.2
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionController::Base#available_action?:
   types:
   - Boolean

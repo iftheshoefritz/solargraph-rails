@@ -27,14 +27,14 @@ module ActionController
         # @yieldparam password [String, nil]
         # @yieldreturn [generic<T>]
         # @return [generic<T>, String]
-        def authenticate_or_request_with_http_basic(realm = nil, message = nil, &login_procedure); end
+        def authenticate_or_request_with_http_basic(realm = nil, message = nil); end
 
         # @generic T
         # @yieldparam name [String, nil]
         # @yieldparam password [String, nil]
         # @yieldreturn [generic<T>]
         # @return [generic<T>, nil]
-        def authenticate_with_http_basic(&login_procedure); end
+        def authenticate_with_http_basic; end
 
         # @param realm [String]
         # @param message [String, nil]
@@ -50,13 +50,13 @@ module ActionController
         # @yieldparam username [String, nil]
         # @yieldreturn [String, nil]
         # @return [true, String]
-        def authenticate_or_request_with_http_digest(realm = 'Application', message = nil, &password_procedure); end
+        def authenticate_or_request_with_http_digest(realm = 'Application', message = nil); end
 
         # @param realm [String]
         # @yieldparam username [String, nil]
         # @yieldreturn [String, nil]
         # @return [Boolean, nil]
-        def authenticate_with_http_digest(realm = 'Application', &password_procedure); end
+        def authenticate_with_http_digest(realm = 'Application'); end
 
         # @param realm [String]
         # @param message [String, nil]
@@ -74,14 +74,14 @@ module ActionController
         # @yieldparam options [ActiveSupport::HashWithIndifferentAccess]
         # @yieldreturn [generic<T>]
         # @return [generic<T>, String]
-        def authenticate_or_request_with_http_token(realm = 'Application', message = nil, &login_procedure); end
+        def authenticate_or_request_with_http_token(realm = 'Application', message = nil); end
 
         # @generic T
         # @yieldparam token [String]
         # @yieldparam options [ActiveSupport::HashWithIndifferentAccess]
         # @yieldreturn [generic<T>]
         # @return [generic<T>, nil]
-        def authenticate_with_http_token(&login_procedure); end
+        def authenticate_with_http_token; end
 
         # @param realm [String]
         # @param message [String, nil]
