@@ -306,6 +306,7 @@ Naming/BlockForwarding:
     - 'lib/solargraph-rails.rb'
     - 'lib/solargraph/rails/annotations/active_job.rb'
     - 'lib/solargraph/rails/annotations/active_record.rb'
+    - 'lib/solargraph/rails/annotations/rails_before_7_2/active_record.rb'
     - 'lib/solargraph/rails/walker.rb'
     - 'spec/helpers.rb'
 
@@ -496,6 +497,7 @@ Style/ClassAndModuleChildren:
     - 'lib/solargraph/rails/annotations/action_mailer.rb'
     - 'lib/solargraph/rails/annotations/active_record.rb'
     - 'lib/solargraph/rails/annotations/rails.rb'
+    - 'lib/solargraph/rails/annotations/rails_before_7_2/active_record.rb'
     - 'spec/foo/test/channels/application_cable/connection_test.rb'
     - 'spec/foo/test/test_helper.rb'
 
@@ -622,6 +624,7 @@ Style/OneClassPerFile:
     - 'lib/solargraph/rails/annotations/active_record.rb'
     - 'lib/solargraph/rails/annotations/date.rb'
     - 'lib/solargraph/rails/annotations/rails.rb'
+    - 'lib/solargraph/rails/annotations/rails_before_7_2/active_record.rb'
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
