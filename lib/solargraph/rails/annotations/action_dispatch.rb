@@ -10,7 +10,6 @@ module ActionDispatch
     class Mapper
       include ActionDispatch::Routing::Mapper::Base
       include ActionDispatch::Routing::Mapper::HttpHelpers
-      include ActionDispatch::Routing::Mapper::Redirection
       include ActionDispatch::Routing::Mapper::Scoping
       include ActionDispatch::Routing::Mapper::Concerns
       include ActionDispatch::Routing::Mapper::Resources
