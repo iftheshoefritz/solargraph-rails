@@ -222,6 +222,11 @@ ActiveRecord::Base.aggregate_reflections:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections=:
   types:
   - Hash{String => ActiveRecord::Reflection::AggregateReflection}
@@ -231,6 +236,11 @@ ActiveRecord::Base.aggregate_reflections=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections?:
   types:
   - Boolean
@@ -480,6 +490,11 @@ ActiveRecord::Base.attribute_aliases:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_aliases=:
   types:
   - Hash{String => String}
@@ -489,6 +504,11 @@ ActiveRecord::Base.attribute_aliases=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_aliases?:
   types:
   - Boolean
@@ -520,6 +540,11 @@ ActiveRecord::Base.attribute_method_matchers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_method_matchers=:
   types:
   - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
@@ -529,6 +554,11 @@ ActiveRecord::Base.attribute_method_matchers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_method_matchers?:
   types:
   - Boolean
@@ -762,6 +792,11 @@ ActiveRecord::Base.cache_timestamp_format:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_timestamp_format=:
   types:
   - Symbol
@@ -771,6 +806,11 @@ ActiveRecord::Base.cache_timestamp_format=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_timestamp_format?:
   types:
   - Boolean
@@ -789,6 +829,11 @@ ActiveRecord::Base.cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_versioning=:
   types:
   - Boolean
@@ -798,6 +843,11 @@ ActiveRecord::Base.cache_versioning=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_versioning?:
   types:
   - Boolean
@@ -892,6 +942,11 @@ ActiveRecord::Base.collection_cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.collection_cache_versioning=:
   types:
   - Boolean
@@ -901,6 +956,11 @@ ActiveRecord::Base.collection_cache_versioning=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.collection_cache_versioning?:
   types:
   - Boolean
@@ -1332,6 +1392,11 @@ ActiveRecord::Base.default_scopes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.default_scopes=:
   types:
   - Array<ActiveRecord::Scoping::DefaultScope>
@@ -1341,6 +1406,11 @@ ActiveRecord::Base.default_scopes=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.default_scopes?:
   types:
   - Boolean
@@ -1735,6 +1805,11 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
@@ -2304,6 +2379,11 @@ ActiveRecord::Base.include_root_in_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.include_root_in_json=:
   types:
   - Boolean
@@ -2313,6 +2393,11 @@ ActiveRecord::Base.include_root_in_json=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.include_root_in_json?:
   types:
   - Boolean
@@ -2362,6 +2447,11 @@ ActiveRecord::Base.inheritance_column:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.inheritance_column=:
   types:
   - String
@@ -2371,6 +2461,11 @@ ActiveRecord::Base.inheritance_column=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.inheritance_column?:
   types:
   - Boolean
@@ -2462,6 +2557,11 @@ ActiveRecord::Base.internal_metadata_table_name:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.internal_metadata_table_name=:
   types:
   - String
@@ -2471,6 +2571,11 @@ ActiveRecord::Base.internal_metadata_table_name=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.internal_metadata_table_name?:
   types:
   - Boolean
@@ -2609,6 +2714,11 @@ ActiveRecord::Base.lock_optimistically:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.lock_optimistically=:
   types:
   - Boolean
@@ -2618,6 +2728,11 @@ ActiveRecord::Base.lock_optimistically=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.lock_optimistically?:
   types:
   - Boolean
@@ -2772,6 +2887,11 @@ ActiveRecord::Base.nested_attributes_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.nested_attributes_options=:
   types:
   - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
@@ -2781,6 +2901,11 @@ ActiveRecord::Base.nested_attributes_options=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.nested_attributes_options?:
   types:
   - Boolean
@@ -3110,6 +3235,11 @@ ActiveRecord::Base.pluralize_table_names:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.pluralize_table_names=:
   types:
   - Boolean
@@ -3119,6 +3249,11 @@ ActiveRecord::Base.pluralize_table_names=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.pluralize_table_names?:
   types:
   - Boolean
@@ -3375,6 +3510,11 @@ ActiveRecord::Base.record_timestamps:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.record_timestamps=:
   types:
   - Boolean
@@ -3384,6 +3524,11 @@ ActiveRecord::Base.record_timestamps=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.record_timestamps?:
   types:
   - Boolean
@@ -3666,6 +3811,11 @@ ActiveRecord::Base.schema_migrations_table_name:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.schema_migrations_table_name=:
   types:
   - String
@@ -3675,6 +3825,11 @@ ActiveRecord::Base.schema_migrations_table_name=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.schema_migrations_table_name?:
   types:
   - Boolean
@@ -3950,6 +4105,11 @@ ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   types:
   - Array<Symbol>
@@ -3959,6 +4119,11 @@ ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes?:
   types:
   - Boolean
@@ -4091,6 +4256,11 @@ ActiveRecord::Base.store_full_sti_class:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.store_full_sti_class=:
   types:
   - Boolean
@@ -4100,6 +4270,11 @@ ActiveRecord::Base.store_full_sti_class=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.store_full_sti_class?:
   types:
   - Boolean
@@ -4296,6 +4471,11 @@ ActiveRecord::Base.table_name_prefix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_prefix=:
   types:
   - String
@@ -4305,6 +4485,11 @@ ActiveRecord::Base.table_name_prefix=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_prefix?:
   types:
   - Boolean
@@ -4323,6 +4508,11 @@ ActiveRecord::Base.table_name_suffix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_suffix=:
   types:
   - String
@@ -4332,6 +4522,11 @@ ActiveRecord::Base.table_name_suffix=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_suffix?:
   types:
   - Boolean
@@ -4398,6 +4593,11 @@ ActiveRecord::Base.time_zone_aware_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_attributes=:
   types:
   - Boolean
@@ -4407,6 +4607,11 @@ ActiveRecord::Base.time_zone_aware_attributes=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_attributes?:
   types:
   - Boolean
@@ -4441,6 +4646,11 @@ ActiveRecord::Base.time_zone_aware_types:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_types=:
   types:
   - Array<Symbol>
@@ -4450,6 +4660,11 @@ ActiveRecord::Base.time_zone_aware_types=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_types?:
   types:
   - Boolean
@@ -4933,6 +5148,11 @@ ActiveRecord::Base#aggregate_reflections:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#aggregate_reflections?:
   types:
   - Boolean
@@ -4976,6 +5196,11 @@ ActiveRecord::Base#attribute_aliases:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#attribute_aliases?:
   types:
   - Boolean
@@ -5043,6 +5268,11 @@ ActiveRecord::Base#attribute_method_matchers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#attribute_method_matchers?:
   types:
   - Boolean
@@ -5374,6 +5604,11 @@ ActiveRecord::Base#cache_timestamp_format:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#cache_timestamp_format?:
   types:
   - Boolean
@@ -5396,6 +5631,11 @@ ActiveRecord::Base#cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#cache_versioning?:
   types:
   - Boolean
@@ -5507,6 +5747,11 @@ ActiveRecord::Base#collection_cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#collection_cache_versioning?:
   types:
   - Boolean
@@ -5651,6 +5896,11 @@ ActiveRecord::Base#default_scopes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#default_shard:
   types:
   - undefined
@@ -5994,6 +6244,11 @@ ActiveRecord::Base#include_root_in_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#include_root_in_json?:
   types:
   - Boolean
@@ -6052,6 +6307,11 @@ ActiveRecord::Base#lock_optimistically:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#lock_optimistically?:
   types:
   - Boolean
@@ -6120,6 +6380,11 @@ ActiveRecord::Base#nested_attributes_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#nested_attributes_options?:
   types:
   - Boolean
@@ -6285,6 +6550,11 @@ ActiveRecord::Base#pluralize_table_names:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#pluralize_table_names?:
   types:
   - Boolean
@@ -6446,6 +6716,11 @@ ActiveRecord::Base#record_timestamps:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#record_timestamps=:
   types:
   - Boolean
@@ -6455,6 +6730,11 @@ ActiveRecord::Base#record_timestamps=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#record_timestamps?:
   types:
   - Boolean
@@ -6605,6 +6885,11 @@ ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   types:
   - Boolean
@@ -6677,6 +6962,11 @@ ActiveRecord::Base#store_full_sti_class:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#store_full_sti_class?:
   types:
   - Boolean
@@ -6720,6 +7010,11 @@ ActiveRecord::Base#table_name_prefix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#table_name_prefix?:
   types:
   - Boolean
@@ -6738,6 +7033,11 @@ ActiveRecord::Base#table_name_suffix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#table_name_suffix?:
   types:
   - Boolean
@@ -6756,6 +7056,11 @@ ActiveRecord::Base#time_zone_aware_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#time_zone_aware_attributes?:
   types:
   - Boolean
@@ -6790,6 +7095,11 @@ ActiveRecord::Base#time_zone_aware_types:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#time_zone_aware_types?:
   types:
   - Boolean
