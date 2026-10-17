@@ -154,7 +154,11 @@ class Definitions
       if effective_type != specified_type
         if update
           process_potential_update(specified_type, effective_type, data, skip)
-        elsif !skip
+        elsif skip
+          nil
+        elsif @allow_improvements && improvement?(specified_type, effective_type)
+          @congrats << "#{pin.path} is now typed as #{effective_type}, improving on #{specified_type}"
+        else
           @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
         end
       elsif skip
@@ -207,6 +211,10 @@ class Definitions
       # @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
       add_to_skip(data)
     end
+  end
+
+  def improvement?(specified_type, effective_type)
+    specified_type == ['undefined'] && effective_type.none? { |t| %w[undefined Object BasicObject].include?(t) }
   end
 
   def add_to_skip(data)
