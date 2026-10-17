@@ -3121,7 +3121,7 @@ ActionController::Base#full_url_for:
   skip: false
 ActionController::Base#handle_unverified_request:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#handler_for_rescue:
   types:

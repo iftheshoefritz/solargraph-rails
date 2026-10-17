@@ -158,6 +158,9 @@ end
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
 
+  # Wrong: Rails returns a record, or an Array of records for an Array
+  # argument, not the relation. Delete once
+  # https://github.com/apiology/gem_rbs_collection/pull/5 lands.
   # @return [self]
   def build(attributes = nil, &block); end
 end
@@ -195,9 +198,6 @@ class ActiveRecord::Base
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
 
-  include ActiveModel::AttributeRegistration
-  extend ActiveModel::AttributeRegistration::ClassMethods
-
   include ActiveRecord::SignedId
   extend ActiveRecord::SignedId::ClassMethods
 
@@ -225,11 +225,11 @@ module ActiveRecord::Validations
   def validate; end
 end
 
-# @!override ActiveRecord::Batches#find_each
-#   @yieldparam_single_parameter
-
 # @!override ActiveRecord::Calculations#count
 #   @return [Integer, Hash]
+
+# Delete the pluck override once
+# https://github.com/apiology/gem_rbs_collection/pull/13 lands.
 # @!override ActiveRecord::Calculations#pluck
 #   @overload pluck(one)
 #     @return [Array]

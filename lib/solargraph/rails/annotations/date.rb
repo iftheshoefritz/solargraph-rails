@@ -9,6 +9,7 @@ class Date
   # @return [Integer, nil]
   def compare_with_coercion(other); end
 
+  # Delete once https://github.com/apiology/gem_rbs_collection/pull/11 lands.
   # @param format [Symbol]
   # @return [String]
   def to_formatted_s(format = :some_default); end
@@ -34,6 +35,7 @@ class DateTime < Date
   # @return [String]
   def readable_inspect; end
 
+  # Delete once https://github.com/apiology/gem_rbs_collection/pull/11 lands.
   # @param format [Symbol]
   # @return [String]
   def to_formatted_s(format = :some_default); end

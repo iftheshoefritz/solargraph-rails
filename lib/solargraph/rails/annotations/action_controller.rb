@@ -7,8 +7,6 @@ module ActionController
     #  ActionController::Base::MODULES and walk through it (and other
     #  cases of same pattern) to help future-proof things
     #
-    include RequestForgeryProtection
-    extend RequestForgeryProtection::ClassMethods
     include PermissionsPolicy
     extend PermissionsPolicy::ClassMethods
     include Logging
