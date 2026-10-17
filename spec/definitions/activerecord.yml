@@ -215,7 +215,7 @@ ActiveRecord::Base.after_validation:
   - 0.52.0
 ActiveRecord::Base.aggregate_reflections:
   types:
-  - undefined
+  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -224,7 +224,7 @@ ActiveRecord::Base.aggregate_reflections:
   - 0.52.0
 ActiveRecord::Base.aggregate_reflections=:
   types:
-  - undefined
+  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -473,7 +473,7 @@ ActiveRecord::Base.attribute_alias?:
   - 0.52.0
 ActiveRecord::Base.attribute_aliases:
   types:
-  - undefined
+  - Hash{String => String}
   skip:
   - 0.48.0
   - 0.49.0
@@ -482,7 +482,7 @@ ActiveRecord::Base.attribute_aliases:
   - 0.52.0
 ActiveRecord::Base.attribute_aliases=:
   types:
-  - undefined
+  - Hash{String => String}
   skip:
   - 0.48.0
   - 0.49.0
@@ -513,7 +513,7 @@ ActiveRecord::Base.attribute_method_affix:
   - 0.52.0
 ActiveRecord::Base.attribute_method_matchers:
   types:
-  - undefined
+  - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
   skip:
   - 0.48.0
   - 0.49.0
@@ -522,7 +522,7 @@ ActiveRecord::Base.attribute_method_matchers:
   - 0.52.0
 ActiveRecord::Base.attribute_method_matchers=:
   types:
-  - undefined
+  - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
   skip:
   - 0.48.0
   - 0.49.0
@@ -755,7 +755,7 @@ ActiveRecord::Base.cache:
   skip: false
 ActiveRecord::Base.cache_timestamp_format:
   types:
-  - undefined
+  - Symbol
   skip:
   - 0.48.0
   - 0.49.0
@@ -764,7 +764,7 @@ ActiveRecord::Base.cache_timestamp_format:
   - 0.52.0
 ActiveRecord::Base.cache_timestamp_format=:
   types:
-  - undefined
+  - Symbol
   skip:
   - 0.48.0
   - 0.49.0
@@ -782,7 +782,7 @@ ActiveRecord::Base.cache_timestamp_format?:
   - 0.52.0
 ActiveRecord::Base.cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -791,7 +791,7 @@ ActiveRecord::Base.cache_versioning:
   - 0.52.0
 ActiveRecord::Base.cache_versioning=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -885,7 +885,7 @@ ActiveRecord::Base.collection_cache_key:
   - 0.52.0
 ActiveRecord::Base.collection_cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -894,7 +894,7 @@ ActiveRecord::Base.collection_cache_versioning:
   - 0.52.0
 ActiveRecord::Base.collection_cache_versioning=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -1325,7 +1325,7 @@ ActiveRecord::Base.default_scoped:
   skip: false
 ActiveRecord::Base.default_scopes:
   types:
-  - undefined
+  - Array<ActiveRecord::Scoping::DefaultScope>
   skip:
   - 0.48.0
   - 0.49.0
@@ -1334,7 +1334,7 @@ ActiveRecord::Base.default_scopes:
   - 0.52.0
 ActiveRecord::Base.default_scopes=:
   types:
-  - undefined
+  - Array<ActiveRecord::Scoping::DefaultScope>
   skip:
   - 0.48.0
   - 0.49.0
@@ -1728,7 +1728,7 @@ ActiveRecord::Base.enum:
   - 0.52.0
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2297,7 +2297,7 @@ ActiveRecord::Base.in_order_of:
   skip: false
 ActiveRecord::Base.include_root_in_json:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2306,7 +2306,7 @@ ActiveRecord::Base.include_root_in_json:
   - 0.52.0
 ActiveRecord::Base.include_root_in_json=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2355,7 +2355,7 @@ ActiveRecord::Base.index_nested_attribute_errors=:
   - 0.52.0
 ActiveRecord::Base.inheritance_column:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2364,7 +2364,7 @@ ActiveRecord::Base.inheritance_column:
   - 0.52.0
 ActiveRecord::Base.inheritance_column=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2455,7 +2455,7 @@ ActiveRecord::Base.instantiate:
   skip: false
 ActiveRecord::Base.internal_metadata_table_name:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2464,7 +2464,7 @@ ActiveRecord::Base.internal_metadata_table_name:
   - 0.52.0
 ActiveRecord::Base.internal_metadata_table_name=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -2602,7 +2602,7 @@ ActiveRecord::Base.lock:
   skip: false
 ActiveRecord::Base.lock_optimistically:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2611,7 +2611,7 @@ ActiveRecord::Base.lock_optimistically:
   - 0.52.0
 ActiveRecord::Base.lock_optimistically=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -2765,7 +2765,7 @@ ActiveRecord::Base.module_parents:
   skip: false
 ActiveRecord::Base.nested_attributes_options:
   types:
-  - undefined
+  - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
   skip:
   - 0.48.0
   - 0.49.0
@@ -2774,7 +2774,7 @@ ActiveRecord::Base.nested_attributes_options:
   - 0.52.0
 ActiveRecord::Base.nested_attributes_options=:
   types:
-  - undefined
+  - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
   skip:
   - 0.48.0
   - 0.49.0
@@ -3103,7 +3103,7 @@ ActiveRecord::Base.pluck:
   - branch-castwide-v0.59
 ActiveRecord::Base.pluralize_table_names:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3112,7 +3112,7 @@ ActiveRecord::Base.pluralize_table_names:
   - 0.52.0
 ActiveRecord::Base.pluralize_table_names=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3368,7 +3368,7 @@ ActiveRecord::Base.real_inheritance_column=:
   skip: false
 ActiveRecord::Base.record_timestamps:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3377,7 +3377,7 @@ ActiveRecord::Base.record_timestamps:
   - 0.52.0
 ActiveRecord::Base.record_timestamps=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3659,7 +3659,7 @@ ActiveRecord::Base.schema_format=:
   - 0.52.0
 ActiveRecord::Base.schema_migrations_table_name:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -3668,7 +3668,7 @@ ActiveRecord::Base.schema_migrations_table_name:
   - 0.52.0
 ActiveRecord::Base.schema_migrations_table_name=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -3943,7 +3943,7 @@ ActiveRecord::Base.skip_callback:
   - 0.52.0
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
@@ -3952,7 +3952,7 @@ ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   - 0.52.0
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
@@ -4084,7 +4084,7 @@ ActiveRecord::Base.store_full_class_name?:
   - branch-castwide-v0.59
 ActiveRecord::Base.store_full_sti_class:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4093,7 +4093,7 @@ ActiveRecord::Base.store_full_sti_class:
   - 0.52.0
 ActiveRecord::Base.store_full_sti_class=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4289,7 +4289,7 @@ ActiveRecord::Base.table_name=:
   skip: false
 ActiveRecord::Base.table_name_prefix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -4298,7 +4298,7 @@ ActiveRecord::Base.table_name_prefix:
   - 0.52.0
 ActiveRecord::Base.table_name_prefix=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -4316,7 +4316,7 @@ ActiveRecord::Base.table_name_prefix?:
   - 0.52.0
 ActiveRecord::Base.table_name_suffix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -4325,7 +4325,7 @@ ActiveRecord::Base.table_name_suffix:
   - 0.52.0
 ActiveRecord::Base.table_name_suffix=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -4391,7 +4391,7 @@ ActiveRecord::Base.thread_mattr_writer:
   skip: false
 ActiveRecord::Base.time_zone_aware_attributes:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4400,7 +4400,7 @@ ActiveRecord::Base.time_zone_aware_attributes:
   - 0.52.0
 ActiveRecord::Base.time_zone_aware_attributes=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4434,7 +4434,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - branch-castwide-v0.59
 ActiveRecord::Base.time_zone_aware_types:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
@@ -4443,7 +4443,7 @@ ActiveRecord::Base.time_zone_aware_types:
   - 0.52.0
 ActiveRecord::Base.time_zone_aware_types=:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
@@ -4926,7 +4926,7 @@ ActiveRecord::Base#acts_like?:
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
-  - undefined
+  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -4969,7 +4969,7 @@ ActiveRecord::Base#attachment_changes:
   - 0.52.0
 ActiveRecord::Base#attribute_aliases:
   types:
-  - undefined
+  - Hash{String => String}
   skip:
   - 0.48.0
   - 0.49.0
@@ -5036,7 +5036,7 @@ ActiveRecord::Base#attribute_in_database:
   - 0.52.0
 ActiveRecord::Base#attribute_method_matchers:
   types:
-  - undefined
+  - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
   skip:
   - 0.48.0
   - 0.49.0
@@ -5367,7 +5367,7 @@ ActiveRecord::Base#cache_key_with_version:
   skip: false
 ActiveRecord::Base#cache_timestamp_format:
   types:
-  - undefined
+  - Symbol
   skip:
   - 0.48.0
   - 0.49.0
@@ -5389,7 +5389,7 @@ ActiveRecord::Base#cache_version:
   skip: false
 ActiveRecord::Base#cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -5500,7 +5500,7 @@ ActiveRecord::Base#clear_changes_information:
   - 0.52.0
 ActiveRecord::Base#collection_cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -5644,7 +5644,7 @@ ActiveRecord::Base#default_scope_override:
   - 0.52.0
 ActiveRecord::Base#default_scopes:
   types:
-  - undefined
+  - Array<ActiveRecord::Scoping::DefaultScope>
   skip:
   - 0.48.0
   - 0.49.0
@@ -5987,7 +5987,7 @@ ActiveRecord::Base#in?:
   skip: false
 ActiveRecord::Base#include_root_in_json:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6045,7 +6045,7 @@ ActiveRecord::Base#lock!:
   skip: false
 ActiveRecord::Base#lock_optimistically:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6113,7 +6113,7 @@ ActiveRecord::Base#method_missing:
   - 0.52.0
 ActiveRecord::Base#nested_attributes_options:
   types:
-  - undefined
+  - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
   skip:
   - 0.48.0
   - 0.49.0
@@ -6278,7 +6278,7 @@ ActiveRecord::Base#persisted?:
   skip: false
 ActiveRecord::Base#pluralize_table_names:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6439,7 +6439,7 @@ ActiveRecord::Base#readonly?:
   skip: false
 ActiveRecord::Base#record_timestamps:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6448,7 +6448,7 @@ ActiveRecord::Base#record_timestamps:
   - 0.52.0
 ActiveRecord::Base#record_timestamps=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6598,7 +6598,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - branch-castwide-v0.59
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
@@ -6670,7 +6670,7 @@ ActiveRecord::Base#store_full_class_name?:
   - branch-castwide-v0.59
 ActiveRecord::Base#store_full_sti_class:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6713,7 +6713,7 @@ ActiveRecord::Base#strict_loading_n_plus_one_only?:
   skip: false
 ActiveRecord::Base#table_name_prefix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -6731,7 +6731,7 @@ ActiveRecord::Base#table_name_prefix?:
   - 0.52.0
 ActiveRecord::Base#table_name_suffix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -6749,7 +6749,7 @@ ActiveRecord::Base#table_name_suffix?:
   - 0.52.0
 ActiveRecord::Base#time_zone_aware_attributes:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -6783,7 +6783,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - branch-castwide-v0.59
 ActiveRecord::Base#time_zone_aware_types:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0

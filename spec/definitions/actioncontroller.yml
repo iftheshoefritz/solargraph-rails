@@ -1047,7 +1047,7 @@ ActionController::Base.helpers:
   skip: false
 ActionController::Base.helpers_path:
   types:
-  - undefined
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
@@ -1058,7 +1058,7 @@ ActionController::Base.helpers_path:
   - 0.56.1
 ActionController::Base.helpers_path=:
   types:
-  - undefined
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
