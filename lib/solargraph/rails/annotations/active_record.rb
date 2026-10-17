@@ -198,11 +198,6 @@ class ActiveRecord::Base
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
 
-  # Solargraph before 0.53 reads no gem RBS and needs these for
-  # .type_for_attribute on Rails 7.2+.
-  include ActiveModel::AttributeRegistration
-  extend ActiveModel::AttributeRegistration::ClassMethods
-
   include ActiveRecord::SignedId
   extend ActiveRecord::SignedId::ClassMethods
 

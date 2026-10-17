@@ -7,11 +7,6 @@ module ActionController
     #  ActionController::Base::MODULES and walk through it (and other
     #  cases of same pattern) to help future-proof things
     #
-    # Solargraph before 0.53 reads no gem RBS and needs these. On later
-    # versions they put Rails' untyped #handle_unverified_request ahead of
-    # Devise's void one.
-    include RequestForgeryProtection
-    extend RequestForgeryProtection::ClassMethods
     include PermissionsPolicy
     extend PermissionsPolicy::ClassMethods
     include Logging

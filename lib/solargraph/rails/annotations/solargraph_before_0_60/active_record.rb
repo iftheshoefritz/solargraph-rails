@@ -27,6 +27,9 @@ class ActiveRecord::Base
 
   extend ActiveRecord::AttributeMethods
 
+  include ActiveModel::AttributeRegistration
+  extend ActiveModel::AttributeRegistration::ClassMethods
+
   include ActiveModel::Validations
   extend ActiveModel::Validations::ClassMethods
 
