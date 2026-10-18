@@ -4,9 +4,6 @@ require_relative 'type_members'
 class Definitions
   include TypeMembers
 
-  # Types that say no more about a value than undefined does
-  UNINFORMATIVE_TYPES = %w[undefined Object BasicObject].freeze
-
   def initialize(map, class_name, definition_name, update: false)
     @map = map
     @class_name = class_name
@@ -157,11 +154,7 @@ class Definitions
       if effective_type != specified_type
         if update
           process_potential_update(specified_type, effective_type, data, skip)
-        elsif skip
-          nil
-        elsif @allow_improvements && improvement?(specified_type, effective_type)
-          @congrats << "#{pin.path} is now typed as #{effective_type}, improving on #{specified_type}"
-        else
+        elsif !skip
           @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
         end
       elsif skip
@@ -214,10 +207,6 @@ class Definitions
       # @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
       add_to_skip(data)
     end
-  end
-
-  def improvement?(specified_type, effective_type)
-    specified_type == ['undefined'] && effective_type.none? { |t| UNINFORMATIVE_TYPES.include?(t) }
   end
 
   def add_to_skip(data)
