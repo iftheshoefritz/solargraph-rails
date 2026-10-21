@@ -5,18 +5,27 @@ module Solargraph
         @instance ||= self.new
       end
 
+      ANNOTATIONS_DIR = File.join(__dir__, 'annotations')
+
+      # Annotation subdirectory => [gem, requirement] it loads under; see
+      # annotations/README.md
+      VERSION_SCOPED_ANNOTATIONS = {
+        'rails_before_7_2' => ['activesupport', '< 7.2']
+      }.freeze
+
       def extra_source_maps
-        @extra_source_maps ||= Dir[File.join(__dir__, 'annotations', '*.rb')].to_h do |path|
+        @extra_source_maps ||= annotation_paths.to_h do |path|
           code = File.read(path)
           source = Solargraph::Source.load_string(code, path)
           map = Solargraph::SourceMap.map(source)
-          [File.basename(path, '.rb'), map]
+          [path.delete_prefix("#{ANNOTATIONS_DIR}/").delete_suffix('.rb'), map]
         end
       end
 
       # @param yard_map [Solargraph::DocMap]
       def global(_doc_map)
-        extra_source_maps.values.flat_map(&:pins)
+        pins = extra_source_maps.values.flat_map(&:pins)
+        pins + QueryGenerics.base_pins(pins)
       end
 
       def local(source_map, ns)
@@ -40,6 +49,36 @@ module Solargraph
           "[Rails][RailsApi] added #{pins.map(&:name)} to #{ns.path}"
         )
         pins
+      end
+
+      private
+
+      # @return [Array<String>]
+      def annotation_paths
+        scoped = VERSION_SCOPED_ANNOTATIONS.select do |_dir, (gem_name, requirement)|
+          !gem_rbs_supported? || gem_version_satisfies?(gem_name, requirement)
+        end
+        Dir[File.join(ANNOTATIONS_DIR, '*.rb')] +
+          scoped.keys.flat_map { |dir| Dir[File.join(ANNOTATIONS_DIR, dir, '*.rb')] }
+      end
+
+      # @return [Boolean]
+      def gem_rbs_supported?
+        Gem::Version.new(Solargraph::VERSION).release >= Gem::Version.new('0.53.0')
+      end
+
+      # An unloaded gem counts as satisfying: scoped annotations type
+      # what the RBS collection types for newer versions, so loading
+      # them is the safe side when the version is unknown.
+      #
+      # @param gem_name [String]
+      # @param requirement [String]
+      # @return [Boolean]
+      def gem_version_satisfies?(gem_name, requirement)
+        spec = Gem.loaded_specs[gem_name]
+        return true unless spec
+
+        Gem::Requirement.new(requirement).satisfied_by?(spec.version)
       end
     end
   end

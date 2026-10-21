@@ -1047,7 +1047,7 @@ ActionController::Base.helpers:
   skip: false
 ActionController::Base.helpers_path:
   types:
-  - undefined
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
@@ -1056,9 +1056,14 @@ ActionController::Base.helpers_path:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base.helpers_path=:
   types:
-  - undefined
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
@@ -1067,6 +1072,11 @@ ActionController::Base.helpers_path=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base.helpers_path?:
   types:
   - Boolean
@@ -1098,7 +1108,7 @@ ActionController::Base.html_safe?:
   skip: false
 ActionController::Base.http_basic_authenticate_with:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base.in?:
   types:
@@ -2202,31 +2212,66 @@ ActionController::Base#as_json:
   skip: false
 ActionController::Base#authenticate_or_request_with_http_basic:
   types:
-  - undefined
-  skip: false
+  - String
+  - generic<T>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
 ActionController::Base#authenticate_or_request_with_http_digest:
   types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_or_request_with_http_token:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_with_http_basic:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_with_http_digest:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#authenticate_with_http_token:
-  types:
-  - undefined
+  - String
+  - 'true'
   skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.60.4
   - 0.61.0
   - branch-castwide-master
+ActionController::Base#authenticate_or_request_with_http_token:
+  types:
+  - String
+  - generic<T>
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+ActionController::Base#authenticate_with_http_basic:
+  types:
+  - generic<T>
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+ActionController::Base#authenticate_with_http_digest:
+  types:
+  - Boolean
+  - nil
+  skip: false
+ActionController::Base#authenticate_with_http_token:
+  types:
+  - generic<T>
+  - nil
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionController::Base#available_action?:
   types:
   - Boolean
@@ -2286,10 +2331,8 @@ ActionController::Base#cancel_registration_path:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
@@ -2308,10 +2351,8 @@ ActionController::Base#cancel_registration_url:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
@@ -3215,8 +3256,17 @@ ActionController::Base#html_safe?:
   skip: false
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
-  - undefined
-  skip: false
+  - String
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base#http_cache_forever:
   types:
   - undefined
@@ -3488,7 +3538,7 @@ ActionController::Base#lookup_context:
   skip: false
 ActionController::Base#main_app:
   types:
-  - undefined
+  - ActionDispatch::Routing::RoutesProxy
   skip:
   - 0.48.0
   - 0.49.0
@@ -3506,10 +3556,8 @@ ActionController::Base#main_app:
   - 0.58.2
   - 0.59.0
   - 0.60.4
-  - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#media_type:
   types:
@@ -4239,21 +4287,16 @@ ActionController::Base#request_format:
   - branch-castwide-v0.59
 ActionController::Base#request_http_basic_authentication:
   types:
-  - undefined
+  - String
   skip: false
 ActionController::Base#request_http_digest_authentication:
   types:
-  - undefined
+  - String
   skip: false
 ActionController::Base#request_http_token_authentication:
   types:
-  - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  - String
+  skip: false
 ActionController::Base#require_dependency:
   types:
   - undefined
