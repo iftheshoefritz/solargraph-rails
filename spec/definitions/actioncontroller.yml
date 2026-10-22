@@ -1191,8 +1191,19 @@ ActionController::Base.include_all_helpers?:
   - branch-castwide-v0.59
 ActionController::Base.inherited:
   types:
-  - undefined
-  skip: false
+  - void
+  min_rbs: '4.1'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base.instance_values:
   types:
   - undefined
@@ -3131,8 +3142,18 @@ ActionController::Base#full_url_for:
   skip: false
 ActionController::Base#handle_unverified_request:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActionController::Base#handler_for_rescue:
   types:
   - undefined

@@ -373,8 +373,18 @@ ActiveRecord::Base.around_update:
   - 0.52.0
 ActiveRecord::Base.as_json:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.async_count_by_sql:
   types:
   - undefined
@@ -2493,8 +2503,19 @@ ActiveRecord::Base.inheritance_column?:
   - branch-castwide-v0.59
 ActiveRecord::Base.inherited:
   types:
-  - undefined
-  skip: false
+  - void
+  min_rbs: '4.1'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.initialize_find_by_cache:
   types:
   - undefined
@@ -4456,8 +4477,18 @@ ActiveRecord::Base.table_exists?:
   skip: false
 ActiveRecord::Base.table_name:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name=:
   types:
   - undefined
