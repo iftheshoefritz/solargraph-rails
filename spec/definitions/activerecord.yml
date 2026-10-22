@@ -384,6 +384,7 @@ ActiveRecord::Base.as_json:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.async_count_by_sql:
   types:
   - undefined
@@ -2514,6 +2515,7 @@ ActiveRecord::Base.inherited:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.initialize_find_by_cache:
   types:
   - undefined
@@ -4486,6 +4488,7 @@ ActiveRecord::Base.table_name:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name=:
   types:
   - undefined

@@ -485,6 +485,7 @@ Integer#to_fs:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - branch-castwide-master
 Integer#to_param:
   types:
   - undefined

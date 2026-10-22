@@ -1203,6 +1203,7 @@ ActionController::Base.inherited:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - branch-castwide-master
 ActionController::Base.instance_values:
   types:
   - undefined
@@ -3152,6 +3153,7 @@ ActionController::Base#handle_unverified_request:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - branch-castwide-master
 ActionController::Base#handler_for_rescue:
   types:
   - undefined
