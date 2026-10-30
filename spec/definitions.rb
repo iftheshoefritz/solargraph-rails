@@ -149,8 +149,11 @@ class Definitions
     end
     # Completion is found, but marked as skipped
     if pin
-      effective_type = member_tags(pin.typify(map)).sort.uniq
+      typified = pin.typify(map)
+      effective_type = member_tags(typified).sort.uniq
       specified_type = data['types'].sort.uniq
+      literal_class_type = literal_class_tags(typified)
+      effective_type = literal_class_type if literal_class_type == specified_type
       if effective_type != specified_type
         if update
           process_potential_update(specified_type, effective_type, data, skip)
@@ -183,6 +186,16 @@ class Definitions
     else
       @missing << meth
     end
+  end
+
+  # Solargraph with castwide/solargraph#1451 types an RBS literal return
+  # such as `-> false` as `false`; this lets it match an expected Boolean.
+  #
+  # @param type [Solargraph::ComplexType]
+  # @return [Array<String>]
+  def literal_class_tags(type)
+    type = type.simplify_literals if type.respond_to?(:simplify_literals)
+    member_tags(type).sort.uniq
   end
 
   def process_potential_update(specified_type, effective_type, data, skip)
