@@ -266,6 +266,7 @@ Array#compact_blank:
   - 0.57.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Array#compact_blank!:
   types:

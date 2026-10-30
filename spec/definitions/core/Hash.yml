@@ -526,6 +526,7 @@ Hash#sum:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Hash#symbolize_keys:
   types:
