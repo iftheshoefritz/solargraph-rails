@@ -3,7 +3,7 @@ module ActiveJob
     extend ActiveSupport::Concern
 
     module ClassMethods
-      # Delete once https://github.com/ruby/gem_rbs_collection/pull/1119 lands.
+      # Delete once https://github.com/ruby/gem_rbs_collection/pull/1119 merges.
       mattr_accessor :default_queue_name, default: "default"
     end
   end

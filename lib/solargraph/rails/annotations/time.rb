@@ -8,7 +8,7 @@ class Time
   # @return [Integer, nil]
   def compare_with_coercion(other); end
 
-  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1121 lands.
+  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1121 merges.
   # @param format [Symbol]
   # @return [String]
   def to_formatted_s(format = :some_default); end

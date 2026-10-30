@@ -1,5 +1,5 @@
 class Rails::Application
-  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1122 lands.
+  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1122 merges.
   # @param subclass [Class]
   # @return [void]
   # rubocop:disable Lint/MissingSuper
