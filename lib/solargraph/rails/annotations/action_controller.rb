@@ -30,7 +30,7 @@ module ActionController
 
     # Wrong in the gem RBS, which types this by AbstractController::Base's
     # body as true, but ActionMailer::Base returns false.
-    # Delete once https://github.com/apiology/gem_rbs_collection/pull/<N> merges.
+    # Delete once https://github.com/apiology/gem_rbs_collection/pull/17 merges.
     # @return [Boolean]
     def self.supports_path?; end
   end
