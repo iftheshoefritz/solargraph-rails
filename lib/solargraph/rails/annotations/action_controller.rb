@@ -7,8 +7,6 @@ module ActionController
     #  ActionController::Base::MODULES and walk through it (and other
     #  cases of same pattern) to help future-proof things
     #
-    include RequestForgeryProtection
-    extend RequestForgeryProtection::ClassMethods
     include PermissionsPolicy
     extend PermissionsPolicy::ClassMethods
     include Logging
@@ -42,6 +40,7 @@ end
 #   @return [Boolean]
 
 class AbstractController::Base
+  # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1403 ships in a release.
   include Rails::Application::Configuration
   extend Rails::Application::Configuration
 

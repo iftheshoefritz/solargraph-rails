@@ -30,6 +30,8 @@ module ActionController
     extend Flash::ClassMethods
     include FormBuilder
     extend FormBuilder::ClassMethods
+    include RequestForgeryProtection
+    extend RequestForgeryProtection::ClassMethods
     include ContentSecurityPolicy
     extend ContentSecurityPolicy::ClassMethods
     include Streaming

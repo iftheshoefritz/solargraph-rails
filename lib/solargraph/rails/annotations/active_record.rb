@@ -158,6 +158,9 @@ end
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
 
+  # Wrong: Rails returns a record, or an Array of records for an Array
+  # argument, not the relation. Delete once
+  # https://github.com/ruby/gem_rbs_collection/pull/1117 merges.
   # @return [self]
   def build(attributes = nil, &block); end
 end
@@ -180,6 +183,12 @@ module ActiveRecord
 end
 
 class ActiveRecord::Base
+  # Move to a solargraph_before_<release> directory once
+  # https://github.com/iftheshoefritz/solargraph-rails/pull/227,
+  # https://github.com/castwide/solargraph/pull/1378 and
+  # https://github.com/castwide/solargraph/pull/1406 ship, plus
+  # https://github.com/castwide/solargraph/pull/1344 and
+  # https://github.com/castwide/solargraph/pull/1415 for the count and pluck types.
   extend Enumerable
   extend ActiveRecord::QueryMethods
   extend ActiveRecord::FinderMethods
@@ -188,8 +197,6 @@ class ActiveRecord::Base
   extend ActiveRecord::Associations::CollectionProxy
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
-  include ActiveModel::AttributeRegistration
-  extend ActiveModel::AttributeRegistration::ClassMethods
 
   include ActiveRecord::SignedId
   extend ActiveRecord::SignedId::ClassMethods
@@ -197,8 +204,10 @@ class ActiveRecord::Base
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
 
+  # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1378 ships in a release.
   extend ActiveRecord::Core
 
+  # Move to a solargraph_before_<release> directory once https://github.com/apiology/solargraph/pull/199 ships in a release.
   # An Array of attribute hashes creates and returns an Array of records.
   # @return [self, Array<self>]
   def self.create(attributes = nil, &block); end
@@ -222,11 +231,11 @@ module ActiveRecord::Validations
   def validate; end
 end
 
-# @!override ActiveRecord::Batches#find_each
-#   @yieldparam_single_parameter
-
 # @!override ActiveRecord::Calculations#count
 #   @return [Integer, Hash]
+
+# Delete the pluck override once
+# https://github.com/ruby/gem_rbs_collection/pull/1123 merges.
 # @!override ActiveRecord::Calculations#pluck
 #   @overload pluck(one)
 #     @return [Array]
