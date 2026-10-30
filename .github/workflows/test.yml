@@ -17,7 +17,8 @@ on:
 
 jobs:
   rspec:
-    runs-on: ubuntu-latest
+    # ubuntu-26.04 (ubuntu-latest) has no Ruby 3.0 or 3.1 builds
+    runs-on: ${{ contains(fromJSON('["3.0", "3.1"]'), matrix.versions.ruby) && 'ubuntu-24.04' || 'ubuntu-latest' }}
     strategy:
       matrix:
         versions:
