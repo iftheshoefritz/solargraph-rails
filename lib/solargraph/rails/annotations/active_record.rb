@@ -221,7 +221,7 @@ class ActiveRecord::Base
 
   # Wrong in the gem RBS, which types this by its body as :activemodel or
   # :activerecord, but each class may override it.
-  # Delete once https://github.com/apiology/gem_rbs_collection/pull/17 merges.
+  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1125 merges.
   # @return [Symbol]
   def self.i18n_scope; end
 end
