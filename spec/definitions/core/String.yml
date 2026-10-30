@@ -245,6 +245,7 @@ String#acts_like_string?:
   - 0.52.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 String#as_json:
   types:
