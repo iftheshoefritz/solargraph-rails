@@ -5,10 +5,10 @@ RSpec.describe Solargraph::Rails::Storage do
     # Solargraph 0.62.0 does not extend classes defined in gems with the
     # ClassMethods of the concerns they include:
     # https://github.com/castwide/solargraph/pull/1469 removed the convention
-    # that did; https://github.com/apiology/solargraph/pull/448 restores it.
+    # that did; https://github.com/castwide/solargraph/pull/1476 restores it.
     # Keyed on the exact version, so a later release that is still broken
     # fails here rather than being skipped silently.
-    skip "concern class methods missing; see apiology/solargraph#448" if Solargraph::VERSION == "0.62.0"
+    skip "concern class methods missing; see castwide/solargraph#1476" if Solargraph::VERSION == "0.62.0"
 
     filename = nil
     map = rails_workspace do |root|
