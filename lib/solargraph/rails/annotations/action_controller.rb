@@ -27,6 +27,12 @@ module ActionController
     def session; end
     # @return [ActionDispatch::Flash::FlashHash]
     def flash; end
+
+    # Wrong in the gem RBS, which types this by AbstractController::Base's
+    # body as true, but ActionMailer::Base returns false.
+    # Delete once https://github.com/ruby/gem_rbs_collection/pull/1125 merges.
+    # @return [Boolean]
+    def self.supports_path?; end
   end
 end
 

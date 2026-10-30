@@ -240,8 +240,18 @@ Integer#as_json:
   skip: false
 Integer#blank?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 Integer#byte:
   types:
   - undefined
@@ -334,8 +344,18 @@ Integer#hours:
   - 0.52.0
 Integer#html_safe?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 Integer#in?:
   types:
   - Boolean
