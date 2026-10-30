@@ -262,6 +262,7 @@ ActiveJob::Base.define_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.delegate:
   types:
   - undefined
@@ -332,6 +333,7 @@ ActiveJob::Base.handler_for_rescue:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.html_safe?:
   types:
   - Boolean
@@ -517,6 +519,7 @@ ActiveJob::Base.normalize_callback_params:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.perform_later:
   types:
   - undefined
@@ -950,6 +953,7 @@ ActiveJob::Base.rescue_from:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.rescue_handlers:
   types:
   - undefined
@@ -1039,6 +1043,7 @@ ActiveJob::Base.rescue_with_handler:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.reset_callbacks:
   types:
   - undefined
@@ -1050,6 +1055,7 @@ ActiveJob::Base.reset_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.retry_jitter:
   types:
   - undefined
@@ -1131,6 +1137,7 @@ ActiveJob::Base.set_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.silence_redefinition_of_method:
   types:
   - undefined
@@ -1200,9 +1207,12 @@ ActiveJob::Base.skip_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveJob::Base.subclasses:
   types:
   - Array<Class>
+  skip:
+  - 0.62.0
 ActiveJob::Base.thread_cattr_accessor:
   types:
   - undefined
@@ -1371,6 +1381,7 @@ ActiveJob::Base#logger:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
   added_in: 7.2
 ActiveJob::Base#logger=:
   types:

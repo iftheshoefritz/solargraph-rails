@@ -151,6 +151,7 @@ Rails::Application.define_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 Rails::Application.delegate:
   types:
   - undefined
@@ -259,7 +260,6 @@ Rails::Application.initializer:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -285,7 +285,6 @@ Rails::Application.initializers:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -311,14 +310,13 @@ Rails::Application.initializers_chain:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 Rails::Application.initializers_for:
   types:
-  - undefined
+  - Rails::Initializable::Collection
   skip:
   - 0.48.0
   - 0.49.0
@@ -337,7 +335,6 @@ Rails::Application.initializers_for:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -409,6 +406,7 @@ Rails::Application.normalize_callback_params:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 Rails::Application.presence:
   types:
   - nil
@@ -462,6 +460,7 @@ Rails::Application.reset_callbacks:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 Rails::Application.runner:
   types:
   - undefined
@@ -481,6 +480,7 @@ Rails::Application.set_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 Rails::Application.silence_redefinition_of_method:
   types:
   - undefined
@@ -496,6 +496,7 @@ Rails::Application.skip_callback:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 Rails::Application.subclasses:
   types:
   - Array<Class>

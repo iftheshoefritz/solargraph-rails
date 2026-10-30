@@ -776,17 +776,20 @@ ActiveRecord::Base.blank?:
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.broadcasts_refreshes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.broadcasts_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.build:
   types:
@@ -1041,6 +1044,7 @@ ActiveRecord::Base.configurations:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.configurations=:
   types:
   - undefined
@@ -1052,6 +1056,7 @@ ActiveRecord::Base.configurations=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.connected?:
   types:
   - Boolean
@@ -1102,6 +1107,7 @@ ActiveRecord::Base.connection_handler=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.connection_handlers:
   types:
   - undefined
@@ -1173,7 +1179,8 @@ ActiveRecord::Base.create!:
   types:
   - Array<self>
   - self
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
@@ -1197,6 +1204,7 @@ ActiveRecord::Base.current_preventing_writes:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.current_role:
   types:
   - undefined
@@ -1235,6 +1243,7 @@ ActiveRecord::Base.current_shard:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.current_time_from_proper_timezone:
   types:
   - undefined
@@ -1580,7 +1589,8 @@ ActiveRecord::Base.define_callbacks:
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
@@ -2739,6 +2749,7 @@ ActiveRecord::Base.local_stored_attributes:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.local_stored_attributes=:
   types:
   - undefined
@@ -2750,6 +2761,7 @@ ActiveRecord::Base.local_stored_attributes=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.lock:
   types:
   - undefined
@@ -2978,6 +2990,7 @@ ActiveRecord::Base.new:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.62.0
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
@@ -4462,7 +4475,8 @@ ActiveRecord::Base.strict_loading_by_default?:
 ActiveRecord::Base.subclasses:
   types:
   - Array<Class>
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.sum:
   types:
   - undefined
@@ -4533,7 +4547,8 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.symbol_column_to_string:
   types:
@@ -4545,7 +4560,7 @@ ActiveRecord::Base.table_exists?:
   skip: false
 ActiveRecord::Base.table_name:
   types:
-  - undefined
+  - String
   skip: false
 ActiveRecord::Base.table_name=:
   types:
@@ -4819,7 +4834,6 @@ ActiveRecord::Base.to_adapter:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5535,162 +5549,194 @@ ActiveRecord::Base#blank?:
 ActiveRecord::Base#broadcast_action:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_action_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_action_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_action_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_after_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_before_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_remove:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_remove_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#cache_key:
   types:
@@ -6116,6 +6162,7 @@ ActiveRecord::Base#destroy_association_async_batch_size:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
   added_in: 7.1
 ActiveRecord::Base#destroyed?:
   types:
@@ -6982,6 +7029,7 @@ ActiveRecord::Base#signed_id_verifier_secret:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base#signed_id_verifier_secret?:
   types:
   - Boolean
@@ -7252,7 +7300,7 @@ ActiveRecord::Base#time_zone_aware_types?:
   - 0.52.0
 ActiveRecord::Base#to_gid:
   types:
-  - undefined
+  - GlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -7271,14 +7319,13 @@ ActiveRecord::Base#to_gid:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_gid_param:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -7297,14 +7344,13 @@ ActiveRecord::Base#to_gid_param:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_global_id:
   types:
-  - undefined
+  - GlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -7323,7 +7369,6 @@ ActiveRecord::Base#to_global_id:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7355,7 +7400,7 @@ ActiveRecord::Base#to_query:
   - 0.52.0
 ActiveRecord::Base#to_sgid:
   types:
-  - undefined
+  - SignedGlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -7374,7 +7419,6 @@ ActiveRecord::Base#to_sgid:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7400,14 +7444,13 @@ ActiveRecord::Base#to_sgid_param:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_signed_global_id:
   types:
-  - undefined
+  - SignedGlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -7426,7 +7469,6 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7441,8 +7483,9 @@ ActiveRecord::Base#toggle!:
   skip: false
 ActiveRecord::Base#touch:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.62.0
 ActiveRecord::Base#touch_later:
   types:
   - undefined
