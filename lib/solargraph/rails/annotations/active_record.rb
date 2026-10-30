@@ -160,7 +160,7 @@ class ActiveRecord::Relation
 
   # Wrong: Rails returns a record, or an Array of records for an Array
   # argument, not the relation. Delete once
-  # https://github.com/apiology/gem_rbs_collection/pull/5 lands.
+  # https://github.com/ruby/gem_rbs_collection/pull/1117 lands.
   # @return [self]
   def build(attributes = nil, &block); end
 end
@@ -229,7 +229,7 @@ end
 #   @return [Integer, Hash]
 
 # Delete the pluck override once
-# https://github.com/apiology/gem_rbs_collection/pull/13 lands.
+# https://github.com/ruby/gem_rbs_collection/pull/1123 lands.
 # @!override ActiveRecord::Calculations#pluck
 #   @overload pluck(one)
 #     @return [Array]
