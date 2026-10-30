@@ -3131,8 +3131,15 @@ ActionController::Base#full_url_for:
   skip: false
 ActionController::Base#handle_unverified_request:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
 ActionController::Base#handler_for_rescue:
   types:
   - undefined

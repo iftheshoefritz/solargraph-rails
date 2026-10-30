@@ -5,6 +5,8 @@ module ActiveStorage
       # NOTE: the below would normally be in a ClassMethods module -
       #   but Solargraph currently uses yard-activesupport-concern,
       #   which jams the method in as class methods under this module.
+      #   Move to a solargraph_before_<release> directory once
+      #   https://github.com/castwide/solargraph/pull/1378 ships in a release.
       #
       # Specifies the relation between a single attachment and the model.
       #
