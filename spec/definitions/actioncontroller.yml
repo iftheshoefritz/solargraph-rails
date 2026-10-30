@@ -3139,7 +3139,7 @@ ActionController::Base#handler_for_rescue:
   skip: false
 ActionController::Base#head:
   types:
-  - Boolean
+  - 'true'
   skip: false
 ActionController::Base#headers:
   types:

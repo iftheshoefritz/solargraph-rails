@@ -53,9 +53,6 @@ module ActionController
     include AbstractController::Helpers
     extend AbstractController::Helpers::ClassMethods
     include AbstractController::Caching
-
-    # @return [Boolean]
-    def self.supports_path?; end
   end
 end
 

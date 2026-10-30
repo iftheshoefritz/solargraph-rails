@@ -240,7 +240,7 @@ Integer#as_json:
   skip: false
 Integer#blank?:
   types:
-  - Boolean
+  - 'false'
   skip: false
 Integer#byte:
   types:
@@ -334,7 +334,7 @@ Integer#hours:
   - 0.52.0
 Integer#html_safe?:
   types:
-  - Boolean
+  - 'true'
   skip: false
 Integer#in?:
   types:

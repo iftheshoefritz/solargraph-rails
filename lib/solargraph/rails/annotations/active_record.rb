@@ -209,6 +209,12 @@ class ActiveRecord::Base
   # @param other [Object]
   # @return [Integer, nil]
   def <=>(other); end
+
+  # Wrong in the gem RBS, which types this by its body as :activemodel or
+  # :activerecord, but each class may override it.
+  # Delete once https://github.com/apiology/gem_rbs_collection/pull/<N> merges.
+  # @return [Symbol]
+  def self.i18n_scope; end
 end
 
 module ActiveRecord::Validations

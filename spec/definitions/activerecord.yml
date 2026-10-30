@@ -758,7 +758,7 @@ ActiveRecord::Base.benchmark:
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - Boolean
+  - 'false'
   skip: false
 ActiveRecord::Base.broadcast_target_default:
   types:
@@ -3295,7 +3295,7 @@ ActiveRecord::Base.presence_in:
   skip: false
 ActiveRecord::Base.present?:
   types:
-  - Boolean
+  - 'true'
   skip: false
 ActiveRecord::Base.primary_abstract_class:
   types:
@@ -3672,7 +3672,7 @@ ActiveRecord::Base.reset_column_information:
   skip: false
 ActiveRecord::Base.reset_counters:
   types:
-  - Boolean
+  - 'true'
   skip: false
 ActiveRecord::Base.reset_locking_column:
   types:
@@ -5425,7 +5425,7 @@ ActiveRecord::Base#before_committed!:
   skip: false
 ActiveRecord::Base#blank?:
   types:
-  - Boolean
+  - 'false'
   skip: false
 ActiveRecord::Base#broadcast_action:
   types:
@@ -6580,7 +6580,7 @@ ActiveRecord::Base#presence_in:
   skip: false
 ActiveRecord::Base#present?:
   types:
-  - Boolean
+  - 'true'
   skip: false
 ActiveRecord::Base#pretty_print:
   types:
@@ -7385,7 +7385,7 @@ ActiveRecord::Base#validate:
   - Boolean
 ActiveRecord::Base#validate!:
   types:
-  - Boolean
+  - 'true'
   skip: false
 ActiveRecord::Base#validates_absence_of:
   types:

@@ -42,9 +42,6 @@ class ActiveRecord::Base
 
   def self.set_callback; end
 
-  # @return [Symbol]
-  def self.i18n_scope; end
-
   # @param id [Integer, String]
   # @param counters [Array<Symbol, String>] association or counter names
   # @param touch [Boolean, Symbol, Array<Symbol>, nil]

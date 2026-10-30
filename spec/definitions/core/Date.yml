@@ -296,7 +296,7 @@ Date#acts_like?:
   skip: false
 Date#acts_like_date?:
   types:
-  - Boolean
+  - 'true'
   skip: false
 Date#advance:
   types:
@@ -441,7 +441,7 @@ Date#beginning_of_year:
   skip: false
 Date#blank?:
   types:
-  - Boolean
+  - 'false'
   skip: false
 Date#change:
   types:
