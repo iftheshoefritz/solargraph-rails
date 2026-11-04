@@ -54,6 +54,7 @@ Class.attr_internal_naming_format:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -79,6 +80,7 @@ Class.attr_internal_naming_format=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
