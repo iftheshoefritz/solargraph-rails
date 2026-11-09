@@ -152,6 +152,7 @@ Rails::Application.define_callbacks:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 Rails::Application.delegate:
   types:
   - undefined
@@ -407,6 +408,7 @@ Rails::Application.normalize_callback_params:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 Rails::Application.presence:
   types:
   - nil
@@ -461,6 +463,7 @@ Rails::Application.reset_callbacks:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 Rails::Application.runner:
   types:
   - undefined
@@ -481,6 +484,7 @@ Rails::Application.set_callback:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 Rails::Application.silence_redefinition_of_method:
   types:
   - undefined
@@ -497,6 +501,7 @@ Rails::Application.skip_callback:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 Rails::Application.subclasses:
   types:
   - Array<Class>

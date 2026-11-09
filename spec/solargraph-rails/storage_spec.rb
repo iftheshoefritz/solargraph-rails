@@ -2,13 +2,13 @@ require "spec_helper"
 
 RSpec.describe Solargraph::Rails::Storage do
   it "can auto-complete ActiveStorage" do
-    # Solargraph 0.62.0 does not extend classes defined in gems with the
+    # Solargraph 0.62.0 and 0.62.1 do not extend classes defined in gems with the
     # ClassMethods of the ActiveSupport::Concern modules they include:
     # https://github.com/castwide/solargraph/pull/1469 removed the convention
     # that did; https://github.com/castwide/solargraph/pull/1476 restores it.
-    # Keyed on the exact version, so a later release that is still broken
+    # Keyed on exact versions, so a later release that is still broken
     # fails here rather than being skipped silently.
-    skip "ActiveSupport::Concern class methods missing; see castwide/solargraph#1476" if Solargraph::VERSION == "0.62.0"
+    skip "ActiveSupport::Concern class methods missing; see castwide/solargraph#1476" if %w[0.62.0 0.62.1].include?(Solargraph::VERSION)
 
     filename = nil
     map = rails_workspace do |root|

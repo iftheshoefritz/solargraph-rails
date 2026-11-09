@@ -149,6 +149,7 @@ ActionController::Base.append_view_path:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.around_action:
   types:
   - void
@@ -223,6 +224,7 @@ ActionController::Base.build_view_context_class:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.cache_store:
   types:
   - undefined
@@ -275,6 +277,7 @@ ActionController::Base.config:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.configure:
   types:
   - void
@@ -287,6 +290,7 @@ ActionController::Base.configure:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.content_security_policy:
   types:
   - undefined
@@ -1519,6 +1523,7 @@ ActionController::Base.prepend_view_path:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.presence:
   types:
   - nil
@@ -1896,6 +1901,7 @@ ActionController::Base.subclasses:
   - Array<Class>
   skip:
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.supports_path?:
   types:
   - Boolean
@@ -2015,6 +2021,7 @@ ActionController::Base.use_renderer:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.use_renderers:
   types:
   - undefined
@@ -2027,6 +2034,7 @@ ActionController::Base.use_renderers:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.view_cache_dependency:
   types:
   - undefined
@@ -2043,6 +2051,7 @@ ActionController::Base.view_context_class:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.view_paths:
   types:
   - undefined
@@ -2055,6 +2064,7 @@ ActionController::Base.view_paths:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.view_paths=:
   types:
   - undefined
@@ -2067,6 +2077,7 @@ ActionController::Base.view_paths=:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - branch-castwide-master
 ActionController::Base.with_options:
   types:
   - undefined
