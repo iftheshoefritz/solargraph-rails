@@ -51,11 +51,16 @@ module Solargraph
         #
         # @return [Array<String>]
         def method_names
-          node.children.drop(2).flat_map do |arg|
+          delegate_args.flat_map do |arg|
             next constant_words(arg.children[0]) if arg.type == :splat
 
             [word(arg)].compact
           end
+        end
+
+        # @return [Array<::Parser::AST::Node>]
+        def delegate_args
+          node.children.drop(2)
         end
 
         # @param const_node [::Parser::AST::Node, nil]
