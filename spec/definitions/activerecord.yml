@@ -782,6 +782,7 @@ ActiveRecord::Base.blank?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 ActiveRecord::Base.broadcast_target_default:
   types:
@@ -3393,6 +3394,7 @@ ActiveRecord::Base.present?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 ActiveRecord::Base.primary_abstract_class:
   types:
@@ -3785,6 +3787,7 @@ ActiveRecord::Base.reset_counters:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 ActiveRecord::Base.reset_locking_column:
   types:
@@ -5594,6 +5597,7 @@ ActiveRecord::Base#blank?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 ActiveRecord::Base#broadcast_action:
   types:
@@ -6814,6 +6818,7 @@ ActiveRecord::Base#present?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 ActiveRecord::Base#pretty_print:
   types:
@@ -7655,6 +7660,7 @@ ActiveRecord::Base#validate!:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 ActiveRecord::Base#validates_absence_of:
   types:

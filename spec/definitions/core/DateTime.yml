@@ -381,6 +381,7 @@ DateTime#acts_like_date?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 DateTime#acts_like_time?:
   types:
@@ -395,6 +396,7 @@ DateTime#acts_like_time?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 DateTime#advance:
   types:
@@ -802,6 +804,7 @@ DateTime#blank?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 DateTime#change:
   types:
