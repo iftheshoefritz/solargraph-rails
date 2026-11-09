@@ -3304,12 +3304,8 @@ ActiveRecord::Base.pluck:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base.pluralize_table_names:
   types:
@@ -4145,12 +4141,8 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
 ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined
@@ -4170,12 +4162,8 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base.signed_id_verifier_secret?:
   types:
@@ -7075,7 +7063,7 @@ ActiveRecord::Base#serializable_hash:
   skip: false
 ActiveRecord::Base#signed_id:
   types:
-  - undefined
+  - String
   skip: false
 ActiveRecord::Base#signed_id_verifier_secret:
   types:

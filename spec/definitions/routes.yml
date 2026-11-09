@@ -276,15 +276,16 @@ ActionDispatch::Routing::Mapper#class_eval:
   skip: false
 ActionDispatch::Routing::Mapper#collection:
   types:
-  - undefined
+  - generic<T>
   skip: false
 ActionDispatch::Routing::Mapper#concern:
   types:
-  - undefined
+  - ActionDispatch::Routing::Mapper::_Concern
+  - Proc
   skip: false
 ActionDispatch::Routing::Mapper#concerns:
   types:
-  - undefined
+  - Array<Symbol>
   skip: false
 ActionDispatch::Routing::Mapper#connect:
   types:
@@ -293,7 +294,7 @@ ActionDispatch::Routing::Mapper#connect:
   added_in: 8.0
 ActionDispatch::Routing::Mapper#constraints:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#constraints_for:
   types:
@@ -301,7 +302,7 @@ ActionDispatch::Routing::Mapper#constraints_for:
   skip: false
 ActionDispatch::Routing::Mapper#controller:
   types:
-  - undefined
+  - generic<T>
   skip: false
 ActionDispatch::Routing::Mapper#deep_dup:
   types:
@@ -317,11 +318,11 @@ ActionDispatch::Routing::Mapper#default_url_options=:
   skip: false
 ActionDispatch::Routing::Mapper#defaults:
   types:
-  - undefined
+  - generic<T>
   skip: false
 ActionDispatch::Routing::Mapper#delete:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#devise_confirmation:
   types:
@@ -369,7 +370,7 @@ ActionDispatch::Routing::Mapper#duplicable?:
   skip: false
 ActionDispatch::Routing::Mapper#get:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#has_named_route?:
   types:
@@ -393,23 +394,23 @@ ActionDispatch::Routing::Mapper#instance_variable_names:
   skip: false
 ActionDispatch::Routing::Mapper#match:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#member:
   types:
-  - undefined
+  - generic<T>
   skip: false
 ActionDispatch::Routing::Mapper#mount:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#namespace:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#nested:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#new:
   types:
@@ -423,15 +424,15 @@ ActionDispatch::Routing::Mapper#new:
   - 0.58.2
 ActionDispatch::Routing::Mapper#options:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#patch:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#post:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#presence:
   types:
@@ -453,7 +454,7 @@ ActionDispatch::Routing::Mapper#pry:
   skip: false
 ActionDispatch::Routing::Mapper#put:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#raise_no_devise_method_error!:
   types:
@@ -484,11 +485,11 @@ ActionDispatch::Routing::Mapper#resolve:
   skip: false
 ActionDispatch::Routing::Mapper#resource:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#resources:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#resources_path_names:
   types:
@@ -496,11 +497,11 @@ ActionDispatch::Routing::Mapper#resources_path_names:
   skip: false
 ActionDispatch::Routing::Mapper#root:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#scope:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#set_omniauth_path_prefix!:
   types:
@@ -508,7 +509,7 @@ ActionDispatch::Routing::Mapper#set_omniauth_path_prefix!:
   skip: false
 ActionDispatch::Routing::Mapper#shallow:
   types:
-  - undefined
+  - generic<T>
   skip: false
 ActionDispatch::Routing::Mapper#shallow?:
   types:
@@ -541,7 +542,7 @@ ActionDispatch::Routing::Mapper#unauthenticated:
   skip: false
 ActionDispatch::Routing::Mapper#with_default_scope:
   types:
-  - undefined
+  - self
   skip: false
 ActionDispatch::Routing::Mapper#with_devise_exclusive_scope:
   types:
