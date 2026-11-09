@@ -17,7 +17,8 @@ on:
 
 jobs:
   rspec:
-    runs-on: ubuntu-latest
+    # ubuntu-26.04 (ubuntu-latest) has no Ruby 3.0 or 3.1 builds
+    runs-on: ${{ contains(fromJSON('["3.0", "3.1"]'), matrix.versions.ruby) && 'ubuntu-24.04' || 'ubuntu-latest' }}
     strategy:
       matrix:
         versions:
@@ -47,9 +48,10 @@ jobs:
           - "0.58.2"
           - "0.60.4"
           - "0.61.0"
+          - "0.62.0"
           - "branch-castwide-master"
         exclude:
-          # solargraph 0.60.4, 0.61.0 and castwide/solargraph master all set
+          # solargraph 0.60.4, 0.61.0, 0.62.0 and castwide/solargraph master all set
           # required_ruby_version = '>= 3.1', so bundler cannot resolve them on Ruby 3.0
           - versions:
               ruby: "3.0"
@@ -81,6 +83,16 @@ jobs:
               rails-major: "7"
               rails-minor: "1"
             solargraph-version: "0.61.0"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "0"
+            solargraph-version: "0.62.0"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.62.0"
         include:
           - versions:
               ruby: "3.2"
@@ -97,14 +109,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libsqlite3-dev
 
-      - uses: ruby/setup-ruby@v1.286.0
+      - uses: ruby/setup-ruby@v1.335.0
         with:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: 2.5.23
           # https://github.com/iftheshoefritz/solargraph-rails/actions/runs/22801832654/job/66144629310?pr=196
           rubygems: latest
           bundler-cache: true
-          cache-version: 2026-03-09-10-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
+          cache-version: 2026-10-18-01-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}.${{ matrix.versions.rails-minor }}
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
@@ -151,12 +163,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           key: |
-            2026-03-09-10-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2026-10-18-01-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           restore-keys: |
-            2026-03-09-10-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
-            2026-03-09-10-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
-            2026-03-09-10-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
-            2026-03-09-10-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-
+            2026-10-18-01-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-
+            2026-10-18-01-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-${{ matrix.versions.rails-minor }}-
+            2026-10-18-01-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}-
+            2026-10-18-01-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-
           path: |
             /home/runner/.cache/solargraph
 
@@ -220,6 +232,6 @@ jobs:
         uses: actions/cache/save@v4
         with:
           key: |
-            2026-03-09-10-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
+            2026-10-18-01-${{ runner.os }}-dot-cache-${{ hashFiles('spec/**/rbs_collection.yaml') }}-${{ matrix.solargraph-version }}-${{ matrix.versions.rails-major }}--${{ matrix.versions.rails-minor }}-${{ hashFiles('spec/**/Gemfile.lock') }}-${{ hashFiles('Gemfile.lock') }}
           path: |
             /home/runner/.cache/solargraph

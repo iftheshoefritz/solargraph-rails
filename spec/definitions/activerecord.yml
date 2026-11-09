@@ -52,6 +52,7 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -78,6 +79,7 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -215,22 +217,34 @@ ActiveRecord::Base.after_validation:
   - 0.52.0
 ActiveRecord::Base.aggregate_reflections:
   types:
-  - undefined
+  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections=:
   types:
-  - undefined
+  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections?:
   types:
   - Boolean
@@ -285,6 +299,7 @@ ActiveRecord::Base.application_record_class:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -311,6 +326,7 @@ ActiveRecord::Base.application_record_class=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -404,6 +420,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -473,22 +490,34 @@ ActiveRecord::Base.attribute_alias?:
   - 0.52.0
 ActiveRecord::Base.attribute_aliases:
   types:
-  - undefined
+  - Hash{String => String}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_aliases=:
   types:
-  - undefined
+  - Hash{String => String}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_aliases?:
   types:
   - Boolean
@@ -513,22 +542,34 @@ ActiveRecord::Base.attribute_method_affix:
   - 0.52.0
 ActiveRecord::Base.attribute_method_matchers:
   types:
-  - undefined
+  - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_method_matchers=:
   types:
-  - undefined
+  - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.attribute_method_matchers?:
   types:
   - Boolean
@@ -585,6 +626,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -718,6 +760,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -728,22 +771,35 @@ ActiveRecord::Base.benchmark:
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.broadcasts_refreshes:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.broadcasts_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.build:
   types:
@@ -755,22 +811,34 @@ ActiveRecord::Base.cache:
   skip: false
 ActiveRecord::Base.cache_timestamp_format:
   types:
-  - undefined
+  - Symbol
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_timestamp_format=:
   types:
-  - undefined
+  - Symbol
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_timestamp_format?:
   types:
   - Boolean
@@ -782,22 +850,34 @@ ActiveRecord::Base.cache_timestamp_format?:
   - 0.52.0
 ActiveRecord::Base.cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_versioning=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.cache_versioning?:
   types:
   - Boolean
@@ -885,22 +965,34 @@ ActiveRecord::Base.collection_cache_key:
   - 0.52.0
 ActiveRecord::Base.collection_cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.collection_cache_versioning=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.collection_cache_versioning?:
   types:
   - Boolean
@@ -962,6 +1054,7 @@ ActiveRecord::Base.configurations:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.configurations=:
   types:
   - undefined
@@ -973,6 +1066,7 @@ ActiveRecord::Base.configurations=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.connected?:
   types:
   - Boolean
@@ -1023,6 +1117,7 @@ ActiveRecord::Base.connection_handler=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.connection_handlers:
   types:
   - undefined
@@ -1068,9 +1163,19 @@ ActiveRecord::Base.content_columns:
   skip: false
 ActiveRecord::Base.count:
   types:
+  - Hash
   - Integer
   skip:
-  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
@@ -1084,7 +1189,8 @@ ActiveRecord::Base.create!:
   types:
   - Array<self>
   - self
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
@@ -1108,6 +1214,7 @@ ActiveRecord::Base.current_preventing_writes:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.current_role:
   types:
   - undefined
@@ -1146,6 +1253,7 @@ ActiveRecord::Base.current_shard:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.current_time_from_proper_timezone:
   types:
   - undefined
@@ -1238,6 +1346,7 @@ ActiveRecord::Base.default_role:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1263,6 +1372,7 @@ ActiveRecord::Base.default_role=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1288,6 +1398,7 @@ ActiveRecord::Base.default_role?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1316,22 +1427,34 @@ ActiveRecord::Base.default_scoped:
   skip: false
 ActiveRecord::Base.default_scopes:
   types:
-  - undefined
+  - Array<ActiveRecord::Scoping::DefaultScope>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.default_scopes=:
   types:
-  - undefined
+  - Array<ActiveRecord::Scoping::DefaultScope>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.default_scopes?:
   types:
   - Boolean
@@ -1362,6 +1485,7 @@ ActiveRecord::Base.default_shard:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1387,6 +1511,7 @@ ActiveRecord::Base.default_shard=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1412,6 +1537,7 @@ ActiveRecord::Base.default_shard?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1473,7 +1599,8 @@ ActiveRecord::Base.define_callbacks:
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
@@ -1645,6 +1772,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1670,6 +1798,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1695,6 +1824,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1719,13 +1849,19 @@ ActiveRecord::Base.enum:
   - 0.52.0
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.error_on_ignored_order:
   types:
   - undefined
@@ -1810,6 +1946,7 @@ ActiveRecord::Base.find:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1836,6 +1973,7 @@ ActiveRecord::Base.find_by:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2045,6 +2183,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2070,6 +2209,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2095,6 +2235,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2193,6 +2334,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2218,6 +2360,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2243,6 +2386,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2288,22 +2432,34 @@ ActiveRecord::Base.in_order_of:
   skip: false
 ActiveRecord::Base.include_root_in_json:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.include_root_in_json=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.include_root_in_json?:
   types:
   - Boolean
@@ -2346,22 +2502,34 @@ ActiveRecord::Base.index_nested_attribute_errors=:
   - 0.52.0
 ActiveRecord::Base.inheritance_column:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.inheritance_column=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.inheritance_column?:
   types:
   - Boolean
@@ -2383,6 +2551,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2446,22 +2615,34 @@ ActiveRecord::Base.instantiate:
   skip: false
 ActiveRecord::Base.internal_metadata_table_name:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.internal_metadata_table_name=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.internal_metadata_table_name?:
   types:
   - Boolean
@@ -2526,6 +2707,7 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2552,6 +2734,7 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2576,6 +2759,7 @@ ActiveRecord::Base.local_stored_attributes:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.local_stored_attributes=:
   types:
   - undefined
@@ -2587,28 +2771,41 @@ ActiveRecord::Base.local_stored_attributes=:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base.lock:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.lock_optimistically:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.lock_optimistically=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.lock_optimistically?:
   types:
   - Boolean
@@ -2675,6 +2872,7 @@ ActiveRecord::Base.logger?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2756,22 +2954,34 @@ ActiveRecord::Base.module_parents:
   skip: false
 ActiveRecord::Base.nested_attributes_options:
   types:
-  - undefined
+  - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.nested_attributes_options=:
   types:
-  - undefined
+  - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.nested_attributes_options?:
   types:
   - Boolean
@@ -2790,6 +3000,7 @@ ActiveRecord::Base.new:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.62.0
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
@@ -2885,6 +3096,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2910,6 +3122,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2935,6 +3148,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2960,6 +3174,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2985,6 +3200,7 @@ ActiveRecord::Base.partial_updates:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3010,6 +3226,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3035,6 +3252,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3088,28 +3306,41 @@ ActiveRecord::Base.pluck:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base.pluralize_table_names:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.pluralize_table_names=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.pluralize_table_names?:
   types:
   - Boolean
@@ -3151,8 +3382,18 @@ ActiveRecord::Base.presence_in:
   skip: false
 ActiveRecord::Base.present?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.primary_abstract_class:
   types:
   - void
@@ -3223,6 +3464,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3269,6 +3511,7 @@ ActiveRecord::Base.queues:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3295,6 +3538,7 @@ ActiveRecord::Base.queues=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3359,22 +3603,34 @@ ActiveRecord::Base.real_inheritance_column=:
   skip: false
 ActiveRecord::Base.record_timestamps:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.record_timestamps=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.record_timestamps?:
   types:
   - Boolean
@@ -3518,8 +3774,18 @@ ActiveRecord::Base.reset_column_information:
   skip: false
 ActiveRecord::Base.reset_counters:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base.reset_locking_column:
   types:
   - undefined
@@ -3650,22 +3916,34 @@ ActiveRecord::Base.schema_format=:
   - 0.52.0
 ActiveRecord::Base.schema_migrations_table_name:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.schema_migrations_table_name=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.schema_migrations_table_name?:
   types:
   - Boolean
@@ -3778,6 +4056,7 @@ ActiveRecord::Base.shard_selector:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3803,6 +4082,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3828,6 +4108,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3866,6 +4147,7 @@ ActiveRecord::Base.signed_id_verifier_secret:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3890,6 +4172,7 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3915,6 +4198,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3934,22 +4218,34 @@ ActiveRecord::Base.skip_callback:
   - 0.52.0
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes?:
   types:
   - Boolean
@@ -4019,6 +4315,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4044,6 +4341,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4069,28 +4367,41 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base.store_full_sti_class:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.store_full_sti_class=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.store_full_sti_class?:
   types:
   - Boolean
@@ -4134,6 +4445,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4159,6 +4471,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4184,6 +4497,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4191,7 +4505,8 @@ ActiveRecord::Base.strict_loading_by_default?:
 ActiveRecord::Base.subclasses:
   types:
   - Array<Class>
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.sum:
   types:
   - undefined
@@ -4226,6 +4541,7 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4252,6 +4568,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4260,7 +4577,8 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base.symbol_column_to_string:
   types:
@@ -4272,30 +4590,51 @@ ActiveRecord::Base.table_exists?:
   skip: false
 ActiveRecord::Base.table_name:
   types:
-  - undefined
-  skip: false
+  - String
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
 ActiveRecord::Base.table_name=:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.table_name_prefix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_prefix=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_prefix?:
   types:
   - Boolean
@@ -4307,22 +4646,34 @@ ActiveRecord::Base.table_name_prefix?:
   - 0.52.0
 ActiveRecord::Base.table_name_suffix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_suffix=:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.table_name_suffix?:
   types:
   - Boolean
@@ -4382,22 +4733,34 @@ ActiveRecord::Base.thread_mattr_writer:
   skip: false
 ActiveRecord::Base.time_zone_aware_attributes:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_attributes=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_attributes?:
   types:
   - Boolean
@@ -4419,28 +4782,41 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base.time_zone_aware_types:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_types=:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base.time_zone_aware_types?:
   types:
   - Boolean
@@ -4838,6 +5214,7 @@ ActiveRecord::Base.where:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4917,13 +5294,19 @@ ActiveRecord::Base#acts_like?:
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
-  - undefined
+  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#aggregate_reflections?:
   types:
   - Boolean
@@ -4960,13 +5343,19 @@ ActiveRecord::Base#attachment_changes:
   - 0.52.0
 ActiveRecord::Base#attribute_aliases:
   types:
-  - undefined
+  - Hash{String => String}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#attribute_aliases?:
   types:
   - Boolean
@@ -5027,13 +5416,19 @@ ActiveRecord::Base#attribute_in_database:
   - 0.52.0
 ActiveRecord::Base#attribute_method_matchers:
   types:
-  - undefined
+  - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#attribute_method_matchers?:
   types:
   - Boolean
@@ -5143,6 +5538,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5168,6 +5564,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5186,167 +5583,209 @@ ActiveRecord::Base#before_committed!:
   skip: false
 ActiveRecord::Base#blank?:
   types:
-  - Boolean
-  skip: false
+  - 'false'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#broadcast_action:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_action_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_action_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_action_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_after_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_append_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_before_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_prepend_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_refresh_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_remove:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_remove_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_render_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_replace_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update_later:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update_later_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#broadcast_update_to:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
   added_in: 8.0
 ActiveRecord::Base#cache_key:
   types:
@@ -5358,13 +5797,19 @@ ActiveRecord::Base#cache_key_with_version:
   skip: false
 ActiveRecord::Base#cache_timestamp_format:
   types:
-  - undefined
+  - Symbol
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#cache_timestamp_format?:
   types:
   - Boolean
@@ -5380,13 +5825,19 @@ ActiveRecord::Base#cache_version:
   skip: false
 ActiveRecord::Base#cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#cache_versioning?:
   types:
   - Boolean
@@ -5491,13 +5942,19 @@ ActiveRecord::Base#clear_changes_information:
   - 0.52.0
 ActiveRecord::Base#collection_cache_versioning:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#collection_cache_versioning?:
   types:
   - Boolean
@@ -5528,6 +5985,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5595,6 +6053,7 @@ ActiveRecord::Base#default_role:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5620,6 +6079,7 @@ ActiveRecord::Base#default_role?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5635,13 +6095,19 @@ ActiveRecord::Base#default_scope_override:
   - 0.52.0
 ActiveRecord::Base#default_scopes:
   types:
-  - undefined
+  - Array<ActiveRecord::Scoping::DefaultScope>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#default_shard:
   types:
   - undefined
@@ -5663,6 +6129,7 @@ ActiveRecord::Base#default_shard:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5688,6 +6155,7 @@ ActiveRecord::Base#default_shard?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5743,6 +6211,7 @@ ActiveRecord::Base#destroy_association_async_batch_size:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
   added_in: 7.1
 ActiveRecord::Base#destroyed?:
   types:
@@ -5793,6 +6262,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5818,6 +6288,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5843,6 +6314,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5978,13 +6450,19 @@ ActiveRecord::Base#in?:
   skip: false
 ActiveRecord::Base#include_root_in_json:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#include_root_in_json?:
   types:
   - Boolean
@@ -6036,13 +6514,19 @@ ActiveRecord::Base#lock!:
   skip: false
 ActiveRecord::Base#lock_optimistically:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#lock_optimistically?:
   types:
   - Boolean
@@ -6082,6 +6566,7 @@ ActiveRecord::Base#logger?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6104,13 +6589,19 @@ ActiveRecord::Base#method_missing:
   - 0.52.0
 ActiveRecord::Base#nested_attributes_options:
   types:
-  - undefined
+  - Hash{Symbol => Hash{Symbol => Boolean, Integer, Proc, Symbol}}
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#nested_attributes_options?:
   types:
   - Boolean
@@ -6159,6 +6650,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6184,6 +6676,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6209,6 +6702,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6234,6 +6728,7 @@ ActiveRecord::Base#partial_updates:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6259,6 +6754,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6269,13 +6765,19 @@ ActiveRecord::Base#persisted?:
   skip: false
 ActiveRecord::Base#pluralize_table_names:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#pluralize_table_names?:
   types:
   - Boolean
@@ -6301,11 +6803,21 @@ ActiveRecord::Base#presence_in:
   skip: false
 ActiveRecord::Base#present?:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#pretty_print:
   types:
-  - IO
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6324,6 +6836,7 @@ ActiveRecord::Base#pretty_print:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6375,6 +6888,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6430,22 +6944,34 @@ ActiveRecord::Base#readonly?:
   skip: false
 ActiveRecord::Base#record_timestamps:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#record_timestamps=:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#record_timestamps?:
   types:
   - Boolean
@@ -6562,6 +7088,7 @@ ActiveRecord::Base#signed_id_verifier_secret:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
 ActiveRecord::Base#signed_id_verifier_secret?:
   types:
   - Boolean
@@ -6583,19 +7110,26 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   types:
   - Boolean
@@ -6630,6 +7164,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6655,19 +7190,26 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#store_full_sti_class:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#store_full_sti_class?:
   types:
   - Boolean
@@ -6704,13 +7246,19 @@ ActiveRecord::Base#strict_loading_n_plus_one_only?:
   skip: false
 ActiveRecord::Base#table_name_prefix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#table_name_prefix?:
   types:
   - Boolean
@@ -6722,13 +7270,19 @@ ActiveRecord::Base#table_name_prefix?:
   - 0.52.0
 ActiveRecord::Base#table_name_suffix:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#table_name_suffix?:
   types:
   - Boolean
@@ -6740,13 +7294,19 @@ ActiveRecord::Base#table_name_suffix?:
   - 0.52.0
 ActiveRecord::Base#time_zone_aware_attributes:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#time_zone_aware_attributes?:
   types:
   - Boolean
@@ -6768,19 +7328,26 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#time_zone_aware_types:
   types:
-  - undefined
+  - Array<Symbol>
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
+  - branch-castwide-master
 ActiveRecord::Base#time_zone_aware_types?:
   types:
   - Boolean
@@ -6792,7 +7359,7 @@ ActiveRecord::Base#time_zone_aware_types?:
   - 0.52.0
 ActiveRecord::Base#to_gid:
   types:
-  - undefined
+  - GlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -6817,7 +7384,7 @@ ActiveRecord::Base#to_gid:
   - branch-castwide-v0.59
 ActiveRecord::Base#to_gid_param:
   types:
-  - undefined
+  - String
   skip:
   - 0.48.0
   - 0.49.0
@@ -6842,7 +7409,7 @@ ActiveRecord::Base#to_gid_param:
   - branch-castwide-v0.59
 ActiveRecord::Base#to_global_id:
   types:
-  - undefined
+  - GlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -6892,7 +7459,7 @@ ActiveRecord::Base#to_query:
   - 0.52.0
 ActiveRecord::Base#to_sgid:
   types:
-  - undefined
+  - SignedGlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -6942,7 +7509,7 @@ ActiveRecord::Base#to_sgid_param:
   - branch-castwide-v0.59
 ActiveRecord::Base#to_signed_global_id:
   types:
-  - undefined
+  - SignedGlobalID
   skip:
   - 0.48.0
   - 0.49.0
@@ -6975,8 +7542,18 @@ ActiveRecord::Base#toggle!:
   skip: false
 ActiveRecord::Base#touch:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - 0.62.0
 ActiveRecord::Base#touch_later:
   types:
   - undefined
@@ -7018,6 +7595,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7066,8 +7644,18 @@ ActiveRecord::Base#validate:
   - Boolean
 ActiveRecord::Base#validate!:
   types:
-  - Boolean
-  skip: false
+  - 'true'
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - 0.57.0
+  - 0.58.2
+  - 0.60.4
+  - 0.61.0
+  - branch-castwide-master
 ActiveRecord::Base#validates_absence_of:
   types:
   - undefined

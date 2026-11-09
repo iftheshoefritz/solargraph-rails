@@ -3,6 +3,14 @@
 
 require "yaml"
 
+# A skip item is a version string or { "solargraph" => version, "rails" => [...] }
+#
+# @param item [String, Hash{String => String, Array<String>}]
+# @return [String]
+def skip_version(item)
+  item.is_a?(Hash) ? item["solargraph"].to_s : item.to_s
+end
+
 USAGE = <<~TXT
   Usage:
     ruby script/remove_definitions.rb VERSION [--dry-run]
@@ -47,10 +55,10 @@ files.each do |path|
   data.each_value do |entry|
     next unless entry.is_a?(Hash)
 
-    # @type [Array<String>]
+    # @type [Array<String, Hash{String => String, Array<String>}>]
     skip = entry["skip"]
     next unless skip.is_a?(Array)
-    next unless skip.delete(version)
+    next unless skip.reject! { |item| skip_version(item) == version }
 
     # Same shape spec/definitions.rb#remove_skip leaves behind
     entry["skip"] = false if skip.empty?
