@@ -52,11 +52,8 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.action_on_strict_loading_violation=:
@@ -80,11 +77,8 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.acts_like?:
@@ -303,11 +297,8 @@ ActiveRecord::Base.application_record_class:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.application_record_class=:
@@ -331,11 +322,8 @@ ActiveRecord::Base.application_record_class=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.arel_table:
@@ -2776,11 +2764,8 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.legacy_connection_handling=:
@@ -2804,11 +2789,8 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.limit:
@@ -3606,11 +3588,8 @@ ActiveRecord::Base.queues:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.queues=:
@@ -3634,11 +3613,8 @@ ActiveRecord::Base.queues=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.quoted_primary_key:
@@ -4662,11 +4638,8 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.suppress_multiple_database_warning=:
@@ -4690,11 +4663,8 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.suppressing_turbo_broadcasts:
