@@ -76,6 +76,7 @@ ActionController::Base.allow_forgery_protection:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -102,6 +103,7 @@ ActionController::Base.allow_forgery_protection=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -149,6 +151,7 @@ ActionController::Base.append_view_path:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.around_action:
   types:
@@ -224,6 +227,7 @@ ActionController::Base.build_view_context_class:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.cache_store:
   types:
@@ -277,6 +281,7 @@ ActionController::Base.config:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.configure:
   types:
@@ -290,6 +295,7 @@ ActionController::Base.configure:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.content_security_policy:
   types:
@@ -329,6 +335,7 @@ ActionController::Base.csrf_token_storage_strategy:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -356,6 +363,7 @@ ActionController::Base.csrf_token_storage_strategy=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -387,6 +395,7 @@ ActionController::Base.default_asset_host_protocol:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -413,6 +422,7 @@ ActionController::Base.default_asset_host_protocol=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -443,6 +453,7 @@ ActionController::Base.default_protect_from_forgery:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -470,6 +481,7 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -497,6 +509,7 @@ ActionController::Base.default_static_extension:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -523,6 +536,7 @@ ActionController::Base.default_static_extension=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -549,6 +563,7 @@ ActionController::Base.default_url_options:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -575,6 +590,7 @@ ActionController::Base.default_url_options=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -601,6 +617,7 @@ ActionController::Base.default_url_options?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -680,6 +697,7 @@ ActionController::Base.enable_fragment_cache_logging:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -706,6 +724,7 @@ ActionController::Base.enable_fragment_cache_logging=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -736,6 +755,7 @@ ActionController::Base.etag_with_template_digest:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -762,6 +782,7 @@ ActionController::Base.etag_with_template_digest=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -788,6 +809,7 @@ ActionController::Base.etag_with_template_digest?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -814,6 +836,7 @@ ActionController::Base.etaggers:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -840,6 +863,7 @@ ActionController::Base.etaggers=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -866,6 +890,7 @@ ActionController::Base.etaggers?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -892,6 +917,7 @@ ActionController::Base.forgery_protection_origin_check:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -918,6 +944,7 @@ ActionController::Base.forgery_protection_origin_check=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -944,6 +971,7 @@ ActionController::Base.forgery_protection_strategy:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -970,6 +998,7 @@ ActionController::Base.forgery_protection_strategy=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1005,6 +1034,7 @@ ActionController::Base.fragment_cache_keys:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1031,6 +1061,7 @@ ActionController::Base.fragment_cache_keys=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1057,6 +1088,7 @@ ActionController::Base.fragment_cache_keys?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1097,6 +1129,7 @@ ActionController::Base.helpers_path:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.helpers_path=:
   types:
@@ -1114,6 +1147,7 @@ ActionController::Base.helpers_path=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.helpers_path?:
   types:
@@ -1137,6 +1171,7 @@ ActionController::Base.helpers_path?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1175,6 +1210,7 @@ ActionController::Base.include_all_helpers:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1201,6 +1237,7 @@ ActionController::Base.include_all_helpers=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1227,6 +1264,7 @@ ActionController::Base.include_all_helpers?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1281,6 +1319,7 @@ ActionController::Base.log_warning_on_csrf_failure:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1307,6 +1346,7 @@ ActionController::Base.log_warning_on_csrf_failure=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1398,6 +1438,7 @@ ActionController::Base.per_form_csrf_tokens:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1424,6 +1465,7 @@ ActionController::Base.per_form_csrf_tokens=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1450,6 +1492,7 @@ ActionController::Base.perform_caching:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1476,6 +1519,7 @@ ActionController::Base.perform_caching=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1523,6 +1567,7 @@ ActionController::Base.prepend_view_path:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.presence:
   types:
@@ -1568,6 +1613,7 @@ ActionController::Base.raise_on_open_redirects:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1594,6 +1640,7 @@ ActionController::Base.raise_on_open_redirects=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1636,6 +1683,7 @@ ActionController::Base.render:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1666,6 +1714,7 @@ ActionController::Base.request_forgery_protection_token:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1692,6 +1741,7 @@ ActionController::Base.request_forgery_protection_token=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1726,6 +1776,7 @@ ActionController::Base.rescue_handlers:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1752,6 +1803,7 @@ ActionController::Base.rescue_handlers=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1778,6 +1830,7 @@ ActionController::Base.rescue_handlers?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1812,6 +1865,7 @@ ActionController::Base.respond_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1901,6 +1955,7 @@ ActionController::Base.subclasses:
   - Array<Class>
   skip:
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.supports_path?:
   types:
@@ -1973,6 +2028,7 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2000,6 +2056,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2021,6 +2078,7 @@ ActionController::Base.use_renderer:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.use_renderers:
   types:
@@ -2034,6 +2092,7 @@ ActionController::Base.use_renderers:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.view_cache_dependency:
   types:
@@ -2051,6 +2110,7 @@ ActionController::Base.view_context_class:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.view_paths:
   types:
@@ -2064,6 +2124,7 @@ ActionController::Base.view_paths:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.view_paths=:
   types:
@@ -2077,6 +2138,7 @@ ActionController::Base.view_paths=:
   - 0.56.0
   - 0.56.1
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base.with_options:
   types:
@@ -2177,6 +2239,7 @@ ActionController::Base#alert:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2203,6 +2266,7 @@ ActionController::Base#allow_forgery_protection:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2229,6 +2293,7 @@ ActionController::Base#allow_forgery_protection=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2275,6 +2340,7 @@ ActionController::Base#any_templates?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2309,6 +2375,7 @@ ActionController::Base#authenticate_or_request_with_http_digest:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base#authenticate_or_request_with_http_token:
   types:
@@ -2525,6 +2592,7 @@ ActionController::Base#default_protect_from_forgery:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2552,6 +2620,7 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2583,6 +2652,7 @@ ActionController::Base#default_static_extension:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2609,6 +2679,7 @@ ActionController::Base#default_static_extension=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2635,6 +2706,7 @@ ActionController::Base#default_url_options:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2661,6 +2733,7 @@ ActionController::Base#default_url_options=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2687,6 +2760,7 @@ ActionController::Base#default_url_options?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2770,6 +2844,7 @@ ActionController::Base#edit_polymorphic_path:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2796,6 +2871,7 @@ ActionController::Base#edit_polymorphic_url:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2822,6 +2898,7 @@ ActionController::Base#enable_fragment_cache_logging:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2848,6 +2925,7 @@ ActionController::Base#enable_fragment_cache_logging=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2874,6 +2952,7 @@ ActionController::Base#etag_with_template_digest:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2900,6 +2979,7 @@ ActionController::Base#etag_with_template_digest=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2926,6 +3006,7 @@ ActionController::Base#etag_with_template_digest?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2952,6 +3033,7 @@ ActionController::Base#etaggers:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2978,6 +3060,7 @@ ActionController::Base#etaggers=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3004,6 +3087,7 @@ ActionController::Base#etaggers?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3046,6 +3130,7 @@ ActionController::Base#forgery_protection_origin_check:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3072,6 +3157,7 @@ ActionController::Base#forgery_protection_origin_check=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3098,6 +3184,7 @@ ActionController::Base#forgery_protection_strategy:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3124,6 +3211,7 @@ ActionController::Base#forgery_protection_strategy=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3163,6 +3251,7 @@ ActionController::Base#fragment_cache_keys:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3189,6 +3278,7 @@ ActionController::Base#fragment_cache_keys=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3215,6 +3305,7 @@ ActionController::Base#fragment_cache_keys?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3260,6 +3351,7 @@ ActionController::Base#head:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base#headers:
   types:
@@ -3292,6 +3384,7 @@ ActionController::Base#helpers_path:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3318,6 +3411,7 @@ ActionController::Base#helpers_path=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3344,6 +3438,7 @@ ActionController::Base#helpers_path?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3370,6 +3465,7 @@ ActionController::Base#hotwire_native_app?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3391,6 +3487,7 @@ ActionController::Base#http_basic_authenticate_or_request_with:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 ActionController::Base#http_cache_forever:
   types:
@@ -3422,6 +3519,7 @@ ActionController::Base#include_all_helpers:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3448,6 +3546,7 @@ ActionController::Base#include_all_helpers=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3474,6 +3573,7 @@ ActionController::Base#include_all_helpers?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3560,6 +3660,7 @@ ActionController::Base#locale:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3586,6 +3687,7 @@ ActionController::Base#locale=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3626,6 +3728,7 @@ ActionController::Base#log_warning_on_csrf_failure:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3652,6 +3755,7 @@ ActionController::Base#log_warning_on_csrf_failure=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3722,6 +3826,7 @@ ActionController::Base#middleware_stack:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3748,6 +3853,7 @@ ActionController::Base#middleware_stack=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3774,6 +3880,7 @@ ActionController::Base#middleware_stack?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3800,6 +3907,7 @@ ActionController::Base#mimes_for_respond_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3826,6 +3934,7 @@ ActionController::Base#mimes_for_respond_to=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3852,6 +3961,7 @@ ActionController::Base#mimes_for_respond_to?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3878,6 +3988,7 @@ ActionController::Base#new_polymorphic_path:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3904,6 +4015,7 @@ ActionController::Base#new_polymorphic_url:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3934,6 +4046,7 @@ ActionController::Base#notice:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3968,6 +4081,7 @@ ActionController::Base#per_form_csrf_tokens:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3994,6 +4108,7 @@ ActionController::Base#per_form_csrf_tokens=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4020,6 +4135,7 @@ ActionController::Base#perform_caching:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4046,6 +4162,7 @@ ActionController::Base#perform_caching=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4120,6 +4237,7 @@ ActionController::Base#raise_on_missing_translations:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4147,6 +4265,7 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4174,6 +4293,7 @@ ActionController::Base#raise_on_open_redirects:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4200,6 +4320,7 @@ ActionController::Base#raise_on_open_redirects=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4230,6 +4351,7 @@ ActionController::Base#recede_or_redirect_back_or_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4256,6 +4378,7 @@ ActionController::Base#recede_or_redirect_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4294,6 +4417,7 @@ ActionController::Base#refresh_or_redirect_back_or_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4320,6 +4444,7 @@ ActionController::Base#refresh_or_redirect_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4388,6 +4513,7 @@ ActionController::Base#request_forgery_protection_token:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4414,6 +4540,7 @@ ActionController::Base#request_forgery_protection_token=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4478,6 +4605,7 @@ ActionController::Base#rescue_handlers:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4504,6 +4632,7 @@ ActionController::Base#rescue_handlers=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4530,6 +4659,7 @@ ActionController::Base#rescue_handlers?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4593,6 +4723,7 @@ ActionController::Base#responder:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4619,6 +4750,7 @@ ActionController::Base#responder=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4645,6 +4777,7 @@ ActionController::Base#responder?:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4688,6 +4821,7 @@ ActionController::Base#resume_or_redirect_back_or_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4714,6 +4848,7 @@ ActionController::Base#resume_or_redirect_to:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5029,6 +5164,7 @@ ActionController::Base#view_paths:
   - 0.60.4
   - 0.61.0
   - 0.62.0
+  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
