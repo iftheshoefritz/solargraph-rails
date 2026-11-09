@@ -1,10 +1,5 @@
 class String
-  # @return [BigDecimal]
-  def to_d; end
-
+  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1121 merges.
   # @return [String]
   def as_json; end
 end
-
-# @!override String#blank?
-#   @return [Boolean]

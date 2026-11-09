@@ -158,6 +158,9 @@ end
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
 
+  # Wrong: Rails returns a record, or an Array of records for an Array
+  # argument, not the relation. Delete once
+  # https://github.com/ruby/gem_rbs_collection/pull/1117 merges.
   # @return [self]
   def build(attributes = nil, &block); end
 end
@@ -180,76 +183,31 @@ module ActiveRecord
 end
 
 class ActiveRecord::Base
+  # Move to a solargraph_before_<release> directory once
+  # https://github.com/iftheshoefritz/solargraph-rails/pull/227,
+  # https://github.com/castwide/solargraph/pull/1378 and
+  # https://github.com/castwide/solargraph/pull/1406 ship, plus
+  # https://github.com/castwide/solargraph/pull/1344 and
+  # https://github.com/castwide/solargraph/pull/1415 for the count and pluck types.
   extend Enumerable
   extend ActiveRecord::QueryMethods
   extend ActiveRecord::FinderMethods
   extend ActiveRecord::Calculations
   extend ActiveRecord::Batches
   extend ActiveRecord::Associations::CollectionProxy
-  extend ActiveRecord::Associations::ClassMethods
-  extend ActiveRecord::Inheritance::ClassMethods
-  include ActiveRecord::ModelSchema
-  extend ActiveRecord::ModelSchema::ClassMethods
-  include ActiveRecord::Transactions
-  extend ActiveRecord::Transactions::ClassMethods
-  include ActiveRecord::Scoping::Named
-  extend ActiveRecord::Scoping::Named::ClassMethods
   extend ActiveRecord::RelationMethods
   extend ActiveRecord::Relation
-  include ActiveRecord::Persistence
-  include ActiveRecord::Persistence
-  extend ActiveRecord::Persistence::ClassMethods
-  include ActiveModel::AttributeRegistration
-  extend ActiveModel::AttributeRegistration::ClassMethods
-  # note: this supplies set_callback() - after Rails 7.1, this is no
-  #  longer used and is replaced entirely by ActiveRecord::Callbacks
-  #  below
-  include ActiveRecord::Callbacks
-  extend ActiveRecord::Callbacks::ClassMethods
-  extend ActiveRecord::Translation
-
-  # copied from .gem_rbs_collection/activestorage/7.0/lib/engine.rbs
-  # which for some reason does not get included
-  include ::ActiveStorage::Attached::Model
-  extend ::ActiveStorage::Attached::Model::ClassMethods
-  include ::ActiveStorage::Reflection::ActiveRecordExtensions
 
   include ActiveRecord::SignedId
   extend ActiveRecord::SignedId::ClassMethods
 
-  include ActiveRecord::Timestamp
-  extend ActiveRecord::Timestamp::ClassMethods
-
-  extend ActiveRecord::AttributeMethods
-
   include ::Turbo::Broadcastable
   extend ::Turbo::Broadcastable::ClassMethods
 
-  include ActiveModel::Validations
-  extend ActiveModel::Validations::ClassMethods
-
+  # Move to a solargraph_before_<release> directory once https://github.com/castwide/solargraph/pull/1378 ships in a release.
   extend ActiveRecord::Core
-  extend ActiveRecord::Core::ClassMethods
 
-  class << self
-    # included in ActiveRecordExtensions
-    # @return [Hash{String => ActiveStorage::Reflection::HasOneAttachedReflection, ActiveStorage::Reflection::HasManyAttachedReflection}]
-    attr_accessor :attachment_reflections
-  end
-
-  extend ::ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
-
-  def self.set_callback; end
-
-  # @return [Symbol]
-  def self.i18n_scope; end
-
-  # @param id [Integer, String]
-  # @param counters [Array<Symbol, String>] association or counter names
-  # @param touch [Boolean, Symbol, Array<Symbol>, nil]
-  # @return [Boolean]
-  def self.reset_counters(id, *counters, touch: nil); end
-
+  # Move to a solargraph_before_<release> directory once https://github.com/apiology/solargraph/pull/199 ships in a release.
   # An Array of attribute hashes creates and returns an Array of records.
   # @return [self, Array<self>]
   def self.create(attributes = nil, &block); end
@@ -260,6 +218,12 @@ class ActiveRecord::Base
   # @param other [Object]
   # @return [Integer, nil]
   def <=>(other); end
+
+  # Wrong in the gem RBS, which types this by its body as :activemodel or
+  # :activerecord, but each class may override it.
+  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1125 merges.
+  # @return [Symbol]
+  def self.i18n_scope; end
 end
 
 module ActiveRecord::Validations
@@ -267,29 +231,16 @@ module ActiveRecord::Validations
   def validate; end
 end
 
-# @!override ActiveRecord::Core#blank?
-#   @return [Boolean]
-# @!override ActiveRecord::Core#present?
-#   @return [Boolean]
-# @!override ActiveModel::Validations#validate!
-#   @return [Boolean]
-
-# @!override ActiveRecord::Batches#find_each
-#   @yieldparam_single_parameter
-
 # @!override ActiveRecord::Calculations#count
 #   @return [Integer, Hash]
+
+# Delete the pluck override once
+# https://github.com/ruby/gem_rbs_collection/pull/1123 merges.
 # @!override ActiveRecord::Calculations#pluck
 #   @overload pluck(one)
 #     @return [Array]
 #   @overload pluck(one, two, *more)
 #     @return [Array<Array>]
 
-# @!override ActiveRecord::QueryMethods::WhereChain#not
-#   @return_single_parameter
-# @!override ActiveRecord::QueryMethods::WhereChain#missing
-#   @return_single_parameter
-# @!override ActiveRecord::QueryMethods::WhereChain#associated
-#   @return_single_parameter
 # @!override ActiveRecord::ConnectionAdapters::SchemaStatements#create_table
 #   @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]
