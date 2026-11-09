@@ -1181,7 +1181,8 @@ ActiveRecord::Base.create!:
   types:
   - Array<self>
   - self
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
@@ -2987,6 +2988,7 @@ ActiveRecord::Base.new:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.62.0
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
