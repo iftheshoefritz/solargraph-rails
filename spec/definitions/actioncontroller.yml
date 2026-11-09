@@ -1890,7 +1890,8 @@ ActionController::Base.skip_parameter_encoding:
 ActionController::Base.subclasses:
   types:
   - Array<Class>
-  skip: false
+  skip:
+  - 0.62.0
 ActionController::Base.supports_path?:
   types:
   - Boolean

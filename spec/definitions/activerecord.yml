@@ -1590,7 +1590,8 @@ ActiveRecord::Base.define_callbacks:
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
@@ -4486,7 +4487,8 @@ ActiveRecord::Base.strict_loading_by_default?:
 ActiveRecord::Base.subclasses:
   types:
   - Array<Class>
-  skip: false
+  skip:
+  - 0.62.0
 ActiveRecord::Base.sum:
   types:
   - undefined

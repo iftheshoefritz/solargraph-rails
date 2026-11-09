@@ -1207,7 +1207,8 @@ ActiveJob::Base.skip_callback:
 ActiveJob::Base.subclasses:
   types:
   - Array<Class>
-  skip: false
+  skip:
+  - 0.62.0
 ActiveJob::Base.thread_cattr_accessor:
   types:
   - undefined
