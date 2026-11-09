@@ -438,10 +438,8 @@ ActionController::Base.default_protect_from_forgery:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base.default_protect_from_forgery=:
@@ -465,10 +463,8 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base.default_static_extension:
@@ -1894,8 +1890,7 @@ ActionController::Base.skip_parameter_encoding:
 ActionController::Base.subclasses:
   types:
   - Array<Class>
-  skip:
-  - 0.62.0
+  skip: false
 ActionController::Base.supports_path?:
   types:
   - Boolean
@@ -1966,10 +1961,8 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base.urlsafe_csrf_tokens=:
@@ -1993,10 +1986,8 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base.use:
@@ -2513,10 +2504,8 @@ ActionController::Base#default_protect_from_forgery:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base#default_protect_from_forgery=:
@@ -2540,10 +2529,8 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base#default_render:
@@ -4107,10 +4094,8 @@ ActionController::Base#raise_on_missing_translations:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base#raise_on_missing_translations=:
@@ -4134,10 +4119,8 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base#raise_on_open_redirects:

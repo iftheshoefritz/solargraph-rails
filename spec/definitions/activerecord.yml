@@ -52,10 +52,8 @@ ActiveRecord::Base.action_on_strict_loading_violation:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.action_on_strict_loading_violation=:
@@ -79,10 +77,8 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.acts_like?:
@@ -299,10 +295,8 @@ ActiveRecord::Base.application_record_class:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.application_record_class=:
@@ -326,10 +320,8 @@ ActiveRecord::Base.application_record_class=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.arel_table:
@@ -1189,8 +1181,7 @@ ActiveRecord::Base.create!:
   types:
   - Array<self>
   - self
-  skip:
-  - 0.62.0
+  skip: false
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
@@ -1599,8 +1590,7 @@ ActiveRecord::Base.define_callbacks:
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
-  skip:
-  - 0.62.0
+  skip: false
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
@@ -2707,10 +2697,8 @@ ActiveRecord::Base.legacy_connection_handling:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.legacy_connection_handling=:
@@ -2734,10 +2722,8 @@ ActiveRecord::Base.legacy_connection_handling=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.limit:
@@ -3000,7 +2986,6 @@ ActiveRecord::Base.new:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.62.0
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
@@ -3511,10 +3496,8 @@ ActiveRecord::Base.queues:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.queues=:
@@ -3538,10 +3521,8 @@ ActiveRecord::Base.queues=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.quoted_primary_key:
@@ -4505,8 +4486,7 @@ ActiveRecord::Base.strict_loading_by_default?:
 ActiveRecord::Base.subclasses:
   types:
   - Array<Class>
-  skip:
-  - 0.62.0
+  skip: false
 ActiveRecord::Base.sum:
   types:
   - undefined
@@ -4541,10 +4521,8 @@ ActiveRecord::Base.suppress_multiple_database_warning:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.suppress_multiple_database_warning=:
@@ -4568,10 +4546,8 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActiveRecord::Base.suppressing_turbo_broadcasts:
