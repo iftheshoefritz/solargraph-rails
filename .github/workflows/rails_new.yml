@@ -133,10 +133,9 @@ jobs:
             yq -yi '.exclude += ["config/puma.rb", "config/routes.rb", "db/*_schema.rb"]' .solargraph.yml
           fi
 
-          # Skipped while solargraph reports 0.62.1, for the same reasons;
-          # config/routes.rb passes there.
+          # Skipped while solargraph reports 0.62.1, for the same reasons.
           if [ "$(bundle exec ruby -e 'require "solargraph"; print Solargraph::VERSION')" = "0.62.1" ]; then
-            yq -yi '.exclude += ["config/puma.rb", "db/*_schema.rb"]' .solargraph.yml
+            yq -yi '.exclude += ["config/puma.rb", "config/routes.rb", "db/*_schema.rb"]' .solargraph.yml
           fi
 
           bundle exec solargraph typecheck --level strong
