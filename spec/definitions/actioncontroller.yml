@@ -1683,7 +1683,6 @@ ActionController::Base.render:
   - 0.60.4
   - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3660,7 +3659,6 @@ ActionController::Base#locale:
   - 0.60.4
   - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3687,7 +3685,6 @@ ActionController::Base#locale=:
   - 0.60.4
   - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5164,7 +5161,6 @@ ActionController::Base#view_paths:
   - 0.60.4
   - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
