@@ -308,6 +308,7 @@ Date#acts_like_date?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Date#advance:
   types:
@@ -463,6 +464,7 @@ Date#blank?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Date#change:
   types:
