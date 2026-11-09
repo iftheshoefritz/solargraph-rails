@@ -1,4 +1,9 @@
 module ActiveModel
+  module Naming
+    # @return [ActiveModel::Name] the model name for the class
+    def model_name; end
+  end
+
   module Translation
     # @param options [Hash{Symbol => undefined}] options to customize the output
     # @param attribute [Symbol, String] the name of the attribute

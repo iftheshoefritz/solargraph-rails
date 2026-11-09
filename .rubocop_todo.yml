@@ -496,7 +496,6 @@ Style/ClassAndModuleChildren:
     - 'lib/solargraph/rails/annotations/action_controller.rb'
     - 'lib/solargraph/rails/annotations/action_mailer.rb'
     - 'lib/solargraph/rails/annotations/active_record.rb'
-    - 'lib/solargraph/rails/annotations/rails.rb'
     - 'lib/solargraph/rails/annotations/rails_before_7_2/active_record.rb'
     - 'lib/solargraph/rails/annotations/solargraph_before_0_60/action_mailer.rb'
     - 'lib/solargraph/rails/annotations/solargraph_before_0_60/active_record.rb'
