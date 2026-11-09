@@ -618,7 +618,7 @@ Style/NumericPredicate:
     - 'spec/**/*'
     - 'Gemfile'
 
-# Offense count: 13
+# Offense count: 14
 # Configuration parameters: AllowedClasses.
 Style/OneClassPerFile:
   Exclude:
@@ -626,6 +626,7 @@ Style/OneClassPerFile:
     - 'lib/solargraph/rails/annotations/active_record.rb'
     - 'lib/solargraph/rails/annotations/date.rb'
     - 'lib/solargraph/rails/annotations/rails_before_7_2/active_record.rb'
+    - 'lib/solargraph/rails/annotations/solargraph_before_0_60/date.rb'
     - 'lib/solargraph/rails/annotations/solargraph_before_0_60/rails.rb'
 
 # Offense count: 1

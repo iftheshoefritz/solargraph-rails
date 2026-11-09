@@ -277,16 +277,55 @@ ActionDispatch::Routing::Mapper#class_eval:
 ActionDispatch::Routing::Mapper#collection:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#concern:
   types:
   - ActionDispatch::Routing::Mapper::_Concern
   - Proc
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#concerns:
   types:
   - Array<Symbol>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#connect:
   types:
   - undefined
@@ -295,7 +334,20 @@ ActionDispatch::Routing::Mapper#connect:
 ActionDispatch::Routing::Mapper#constraints:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#constraints_for:
   types:
   - undefined
@@ -303,7 +355,20 @@ ActionDispatch::Routing::Mapper#constraints_for:
 ActionDispatch::Routing::Mapper#controller:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#deep_dup:
   types:
   - undefined
@@ -319,11 +384,37 @@ ActionDispatch::Routing::Mapper#default_url_options=:
 ActionDispatch::Routing::Mapper#defaults:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#delete:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#devise_confirmation:
   types:
   - undefined
@@ -371,7 +462,20 @@ ActionDispatch::Routing::Mapper#duplicable?:
 ActionDispatch::Routing::Mapper#get:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#has_named_route?:
   types:
   - Boolean
@@ -395,23 +499,88 @@ ActionDispatch::Routing::Mapper#instance_variable_names:
 ActionDispatch::Routing::Mapper#match:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#member:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#mount:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#namespace:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#nested:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#new:
   types:
   - generic<T>
@@ -425,15 +594,54 @@ ActionDispatch::Routing::Mapper#new:
 ActionDispatch::Routing::Mapper#options:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#patch:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#post:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#presence:
   types:
   - nil
@@ -455,7 +663,20 @@ ActionDispatch::Routing::Mapper#pry:
 ActionDispatch::Routing::Mapper#put:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#raise_no_devise_method_error!:
   types:
   - undefined
@@ -486,11 +707,37 @@ ActionDispatch::Routing::Mapper#resolve:
 ActionDispatch::Routing::Mapper#resource:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#resources:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#resources_path_names:
   types:
   - undefined
@@ -498,11 +745,37 @@ ActionDispatch::Routing::Mapper#resources_path_names:
 ActionDispatch::Routing::Mapper#root:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#scope:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#set_omniauth_path_prefix!:
   types:
   - undefined
@@ -510,7 +783,20 @@ ActionDispatch::Routing::Mapper#set_omniauth_path_prefix!:
 ActionDispatch::Routing::Mapper#shallow:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#shallow?:
   types:
   - Boolean
@@ -543,7 +829,20 @@ ActionDispatch::Routing::Mapper#unauthenticated:
 ActionDispatch::Routing::Mapper#with_default_scope:
   types:
   - self
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionDispatch::Routing::Mapper#with_devise_exclusive_scope:
   types:
   - undefined
