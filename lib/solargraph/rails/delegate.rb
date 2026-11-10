@@ -31,9 +31,8 @@ module Solargraph
       #
       # @return [Array<String>]
       def self.gem_dirs
-        @gem_dirs ||= Gem.path.flat_map do |path|
-          [File.join(path, 'gems', ''), File.join(path, 'bundler', 'gems', '')]
-        end
+        @gem_dirs ||= Gem.path.map { |path| File.join(path, 'gems', '') } +
+                      Gem.path.map { |path| File.join(path, 'bundler', 'gems', '') }
       end
 
       def process(source_map, ns)

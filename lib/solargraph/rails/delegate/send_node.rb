@@ -6,9 +6,6 @@ module Solargraph
       class SendNode < Solargraph::Parser::NodeProcessor::Base
         include Solargraph::Parser::ParserGem::NodeMethods
 
-        # A method name, e.g. to: :lookup_context, including keywords like :class
-        METHOD_NAME = /\A[a-z_]\w*[?!]?\z/
-
         # Children were already processed by Solargraph's own :send processor.
         #
         # @return [Boolean]
@@ -27,7 +24,7 @@ module Solargraph
           to = word(Util.extract_option(node, :to))
           return if to.nil?
           return if to == 'class' && !Delegate.class_delegation_supported?
-          return if to.match?(METHOD_NAME) && gem_file?
+          return if method_name?(to) && gem_file?
 
           prefix = prefix_for(Util.extract_option(node, :prefix), to)
           return if prefix.nil?
@@ -116,6 +113,12 @@ module Solargraph
           !filename.nil? && Delegate.gem_dirs.any? { |dir| filename.start_with?(dir) }
         end
 
+        # @param target [String] e.g. "lookup_context", or a keyword like "class"
+        # @return [Boolean]
+        def method_name?(target)
+          target.match?(/\A[a-z_]\w*[?!]?\z/)
+        end
+
         # @param option [::Parser::AST::Node, nil]
         # @return [Boolean]
         def true_node?(option)
@@ -146,7 +149,7 @@ module Solargraph
         # @param target [String] e.g. "records", "class", "@records" or "Foo.bar"
         # @return [Solargraph::Source::Chain, nil]
         def receiver_chain(target)
-          link = if target.match?(METHOD_NAME)
+          link = if method_name?(target)
                    # Includes keywords: ActiveSupport sends to: :class to self
                    Solargraph::Source::Chain::Call.new(target)
                  elsif target.match?(/\A@\w+\z/)
