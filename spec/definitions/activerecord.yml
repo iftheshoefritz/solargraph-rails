@@ -3309,10 +3309,16 @@ ActiveRecord::Base.pluck:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
