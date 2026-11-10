@@ -194,6 +194,7 @@ Rails::Application.eager_load!:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -687,6 +688,7 @@ Rails::Application#default_url_options:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -712,6 +714,7 @@ Rails::Application#default_url_options=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -969,6 +972,7 @@ Rails::Application#middleware:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1007,6 +1011,7 @@ Rails::Application#paths:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1112,6 +1117,7 @@ Rails::Application#root:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
