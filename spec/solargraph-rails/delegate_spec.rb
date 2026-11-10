@@ -37,9 +37,10 @@ RSpec.describe Solargraph::Rails::Delegate, skip: skip_reason do
   describe 'as a :send node processor',
            skip: (described_class.processor? ? false : 'needs Solargraph >= 0.56.2 to chain :send processors') do
     # @param code [String]
+    # @param filename [String, nil]
     # @return [Array<Solargraph::Pin::DelegatedMethod>]
-    def delegated_pins(code)
-      Solargraph::SourceMap.load_string(code).pins.grep(Solargraph::Pin::DelegatedMethod)
+    def delegated_pins(code, filename = nil)
+      Solargraph::SourceMap.load_string(code, filename).pins.grep(Solargraph::Pin::DelegatedMethod)
     end
 
     it 'maps delegate to delegated instance methods' do
@@ -127,6 +128,19 @@ RSpec.describe Solargraph::Rails::Delegate, skip: skip_reason do
         end
       RUBY
       expect(pins).to be_empty
+    end
+
+    it 'maps only delegates to non-methods in gem files' do
+      code = <<~RUBY
+        class Foo
+          delegate :bar, to: :thing
+          delegate :baz, to: :@thing
+          delegate :qux, to: 'Registry.current'
+        end
+      RUBY
+      gem_file = File.join(Gem.path.first, 'gems', 'foo-1.0', 'lib', 'foo.rb')
+      expect(delegated_pins(code, gem_file).map(&:name)).to eq(%w[baz qux])
+      expect(delegated_pins(code, 'app/foo.rb').map(&:name)).to eq(%w[bar baz qux])
     end
 
     it 'maps delegate to an expression' do

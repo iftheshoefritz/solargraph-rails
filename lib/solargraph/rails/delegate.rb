@@ -27,6 +27,15 @@ module Solargraph
         Solargraph::Pin::DelegatedMethod.private_method_defined?(:lookup_target)
       end
 
+      # Directories RubyGems and Bundler install gems into.
+      #
+      # @return [Array<String>]
+      def self.gem_dirs
+        @gem_dirs ||= Gem.path.flat_map do |path|
+          [File.join(path, 'gems', ''), File.join(path, 'bundler', 'gems', '')]
+        end
+      end
+
       def process(source_map, ns)
         return [] unless self.class.supported?
         # SendNode maps these, with the right closure and scope
