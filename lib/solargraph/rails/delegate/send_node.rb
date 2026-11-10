@@ -23,6 +23,7 @@ module Solargraph
 
           to = word(Util.extract_option(node, :to))
           return if to.nil?
+          return if to == 'class' && !Delegate.class_delegation_supported?
 
           prefix = prefix_for(Util.extract_option(node, :prefix), to)
           return if prefix.nil?

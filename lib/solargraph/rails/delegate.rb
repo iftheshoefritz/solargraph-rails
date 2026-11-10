@@ -19,6 +19,14 @@ module Solargraph
         supported? && Solargraph::Parser::NodeProcessor.respond_to?(:deregister)
       end
 
+      # Typifying a delegate ..., to: :class pin overflows the stack unless
+      # DelegatedMethod has #lookup_target, from castwide/solargraph#1406.
+      #
+      # @return [Boolean]
+      def self.class_delegation_supported?
+        Solargraph::Pin::DelegatedMethod.private_method_defined?(:lookup_target)
+      end
+
       def process(source_map, ns)
         return [] unless self.class.supported?
         # SendNode maps these, with the right closure and scope

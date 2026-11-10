@@ -202,5 +202,17 @@ RSpec.describe Solargraph::Rails::Delegate, skip: skip_reason do
       RUBY
       expect(api_map.get_method_stack('Thing', 'total').first.typify(api_map).to_s).to eq('Integer')
     end
+
+    it 'typifies a method delegated to a class method of the same name' do
+      load_string 'app/thing.rb', <<~RUBY
+        class Thing
+          # @return [Integer]
+          def self.total; end
+
+          delegate :total, to: :class
+        end
+      RUBY
+      expect { api_map.get_method_stack('Thing', 'total').map { |pin| pin.typify(api_map) } }.not_to raise_error
+    end
   end
 end
