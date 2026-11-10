@@ -797,7 +797,8 @@ Rails::Application#html_safe?:
   skip: false
 Rails::Application#importmap:
   types:
-  - undefined
+  - Importmap::Map
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
@@ -809,21 +810,17 @@ Rails::Application#importmap:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
+  added_in: 8.0
 Rails::Application#importmap=:
   types:
-  - undefined
+  - Importmap::Map
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
@@ -835,18 +832,13 @@ Rails::Application#importmap=:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
+  added_in: 8.0
 Rails::Application#in?:
   types:
   - Boolean
