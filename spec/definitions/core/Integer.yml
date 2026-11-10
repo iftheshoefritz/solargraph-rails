@@ -251,6 +251,7 @@ Integer#blank?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Integer#byte:
   types:
@@ -355,6 +356,7 @@ Integer#html_safe?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Integer#in?:
   types:

@@ -368,6 +368,7 @@ Time#acts_like_time?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Time#advance:
   types:
@@ -547,6 +548,7 @@ Time#blank?:
   - 0.58.2
   - 0.60.4
   - 0.61.0
+  - 0.62.0
   - branch-castwide-master
 Time#change:
   types:
