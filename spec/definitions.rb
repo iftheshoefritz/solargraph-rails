@@ -1,3 +1,4 @@
+require_relative 'expected_types'
 require_relative 'skip_list'
 require_relative 'type_members'
 
@@ -151,7 +152,7 @@ class Definitions
     if pin
       effective_type = member_tags(pin.typify(map)).sort.uniq
       specified_type = data['types'].sort.uniq
-      if effective_type != specified_type
+      if effective_type != ExpectedTypes.normalize(specified_type, map).sort.uniq
         if update
           process_potential_update(specified_type, effective_type, data, skip)
         elsif !skip

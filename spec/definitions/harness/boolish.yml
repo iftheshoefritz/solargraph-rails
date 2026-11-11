@@ -1,0 +1,7 @@
+---
+"#boolish_method":
+  types:
+  - boolish
+"#string_method":
+  types:
+  - boolish
