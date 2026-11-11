@@ -213,7 +213,7 @@ ActiveRecord::Base.after_validation:
   - 0.52.0
 ActiveRecord::Base.aggregate_reflections:
   types:
-  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
+  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -229,7 +229,7 @@ ActiveRecord::Base.aggregate_reflections:
   - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections=:
   types:
-  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
+  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
@@ -5290,9 +5290,8 @@ ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   - 0.52.0
 ActiveRecord::Base.where:
   types:
-  - ActiveRecord::QueryMethods::WhereChain
+  - ActiveRecord::QueryMethods::WhereChain<ActiveRecord::Relation>
   - ActiveRecord::Relation
-  - self
   skip:
   - 0.48.0
   - 0.49.0
@@ -5392,7 +5391,7 @@ ActiveRecord::Base#acts_like?:
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
-  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
+  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
   skip:
   - 0.48.0
   - 0.49.0
