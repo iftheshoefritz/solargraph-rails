@@ -60,10 +60,22 @@ module Solargraph
       # @return [Array<String>]
       def annotation_paths
         scoped = VERSION_SCOPED_ANNOTATIONS.select do |_dir, (gem_name, requirement)|
-          (gem_name != 'solargraph' && !gem_rbs_supported?) || gem_version_satisfies?(gem_name, requirement)
+          scope_applies?(gem_name, requirement)
         end
         Dir[File.join(ANNOTATIONS_DIR, '*.rb')] +
           scoped.keys.flat_map { |dir| Dir[File.join(ANNOTATIONS_DIR, dir, '*.rb')] }
+      end
+
+      # Solargraph before 0.53 reads no gem RBS, so it needs every
+      # directory scoped to another gem's version.
+      #
+      # @param gem_name [String]
+      # @param requirement [String, Array<String>]
+      # @return [Boolean]
+      def scope_applies?(gem_name, requirement)
+        return true if gem_name != 'solargraph' && !gem_rbs_supported?
+
+        gem_version_satisfies?(gem_name, requirement)
       end
 
       # @return [Boolean]
