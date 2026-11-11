@@ -5782,9 +5782,7 @@ ActiveRecord::Base#broadcast_action:
   - 0.61.0
 ActiveRecord::Base#broadcast_action_later:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -5797,9 +5795,7 @@ ActiveRecord::Base#broadcast_action_later:
   - 0.61.0
 ActiveRecord::Base#broadcast_action_later_to:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -5851,9 +5847,7 @@ ActiveRecord::Base#broadcast_append:
   - 0.61.0
 ActiveRecord::Base#broadcast_append_later:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -5866,9 +5860,7 @@ ActiveRecord::Base#broadcast_append_later:
   - 0.61.0
 ActiveRecord::Base#broadcast_append_later_to:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -5920,9 +5912,7 @@ ActiveRecord::Base#broadcast_prepend:
   - 0.61.0
 ActiveRecord::Base#broadcast_prepend_later:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -5935,9 +5925,7 @@ ActiveRecord::Base#broadcast_prepend_later:
   - 0.61.0
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6054,9 +6042,7 @@ ActiveRecord::Base#broadcast_render:
   - 0.61.0
 ActiveRecord::Base#broadcast_render_later:
   types:
-  - Boolean
-  - Turbo::Streams::BroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6069,9 +6055,7 @@ ActiveRecord::Base#broadcast_render_later:
   - 0.61.0
 ActiveRecord::Base#broadcast_render_later_to:
   types:
-  - Boolean
-  - Turbo::Streams::BroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6110,9 +6094,7 @@ ActiveRecord::Base#broadcast_replace:
   - 0.61.0
 ActiveRecord::Base#broadcast_replace_later:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6125,9 +6107,7 @@ ActiveRecord::Base#broadcast_replace_later:
   - 0.61.0
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6166,9 +6146,7 @@ ActiveRecord::Base#broadcast_update:
   - 0.61.0
 ActiveRecord::Base#broadcast_update_later:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0
@@ -6181,9 +6159,7 @@ ActiveRecord::Base#broadcast_update_later:
   - 0.61.0
 ActiveRecord::Base#broadcast_update_later_to:
   types:
-  - Boolean
-  - Turbo::Streams::ActionBroadcastJob
-  - nil
+  - void
   skip:
   - 0.48.0
   - 0.49.0

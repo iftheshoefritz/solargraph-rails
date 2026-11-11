@@ -1,9 +1,4 @@
 module Turbo
-  module Streams
-    class ActionBroadcastJob < ActiveJob::Base; end
-    class BroadcastJob < ActiveJob::Base; end
-  end
-
   module Broadcastable
     module ClassMethods
       # @param stream [Symbol, Proc]
@@ -129,42 +124,42 @@ module Turbo
 
     # @param streamables [Array<Object>]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_replace_later_to(*streamables, **rendering); end
 
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_replace_later(**rendering); end
 
     # @param streamables [Array<Object>]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_update_later_to(*streamables, **rendering); end
 
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_update_later(**rendering); end
 
     # @param streamables [Array<Object>]
     # @param target [Object]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_append_later_to(*streamables, target: broadcast_target_default, **rendering); end
 
     # @param target [Object]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_append_later(target: broadcast_target_default, **rendering); end
 
     # @param streamables [Array<Object>]
     # @param target [Object]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_prepend_later_to(*streamables, target: broadcast_target_default, **rendering); end
 
     # @param target [Object]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_prepend_later(target: broadcast_target_default, **rendering); end
 
     # @param streamables [Array<Object>]
@@ -180,14 +175,14 @@ module Turbo
     # @param target [Object]
     # @param attributes [Hash{Symbol => Object}]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_action_later_to(*streamables, action:, target: broadcast_target_default, attributes: {}, **rendering); end
 
     # @param action [Symbol, String]
     # @param target [Object]
     # @param attributes [Hash{Symbol => Object}]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
+    # @return [void]
     def broadcast_action_later(action:, target: broadcast_target_default, attributes: {}, **rendering); end
 
     # @param rendering [Hash{Symbol => Object}]
@@ -200,12 +195,12 @@ module Turbo
     def broadcast_render_to(*streamables, **rendering); end
 
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::BroadcastJob, false, nil]
+    # @return [void]
     def broadcast_render_later(**rendering); end
 
     # @param streamables [Array<Object>]
     # @param rendering [Hash{Symbol => Object}]
-    # @return [Turbo::Streams::BroadcastJob, false, nil]
+    # @return [void]
     def broadcast_render_later_to(*streamables, **rendering); end
   end
 end
