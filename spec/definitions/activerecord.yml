@@ -789,27 +789,15 @@ ActiveRecord::Base.blank?:
 ActiveRecord::Base.broadcast_target_default:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base.broadcasts_refreshes:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base.broadcasts_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base.build:
   types:
   - self
@@ -4671,11 +4659,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base.symbol_column_to_string:
   types:
   - undefined
@@ -5711,259 +5695,131 @@ ActiveRecord::Base#blank?:
 ActiveRecord::Base#broadcast_action:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_action_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_action_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_action_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_after_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_append:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_append_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_append_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_append_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_before_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_prepend:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_prepend_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_prepend_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_refresh:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_refresh_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_refresh_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_refresh_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_remove:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_remove_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_render:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_render_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_render_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_render_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_replace:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_replace_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_replace_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_update:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_update_later:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_update_later_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#broadcast_update_to:
   types:
   - undefined
-  skip:
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
-  added_in: 8.0
+  skip: false
 ActiveRecord::Base#cache_key:
   types:
   - undefined

@@ -12,7 +12,9 @@ module Solargraph
       VERSION_SCOPED_ANNOTATIONS = {
         'rails_before_7_2' => ['activesupport', '< 7.2'],
         'solargraph_before_0_60' => ['solargraph', '< 0.60'],
-        'rbs_before_4_3' => ['rbs', '< 4.3']
+        'rbs_before_4_3' => ['rbs', '< 4.3'],
+        'solargraph_before_0_62_2' => ['solargraph', '< 0.62.2'],
+        'solargraph_from_0_62_before_0_62_2' => ['solargraph', ['>= 0.62', '< 0.62.2']]
       }.freeze
 
       def extra_source_maps
@@ -58,7 +60,7 @@ module Solargraph
       # @return [Array<String>]
       def annotation_paths
         scoped = VERSION_SCOPED_ANNOTATIONS.select do |_dir, (gem_name, requirement)|
-          !gem_rbs_supported? || gem_version_satisfies?(gem_name, requirement)
+          (gem_name != 'solargraph' && !gem_rbs_supported?) || gem_version_satisfies?(gem_name, requirement)
         end
         Dir[File.join(ANNOTATIONS_DIR, '*.rb')] +
           scoped.keys.flat_map { |dir| Dir[File.join(ANNOTATIONS_DIR, dir, '*.rb')] }
@@ -74,7 +76,7 @@ module Solargraph
       # them is the safe side when the version is unknown.
       #
       # @param gem_name [String]
-      # @param requirement [String]
+      # @param requirement [String, Array<String>]
       # @return [Boolean]
       def gem_version_satisfies?(gem_name, requirement)
         version = gem_version(gem_name)
