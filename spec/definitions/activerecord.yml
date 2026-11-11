@@ -548,11 +548,7 @@ ActiveRecord::Base.attribute_method_matchers:
   - 0.52.0
   - 0.57.0
   - 0.58.2
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
+  removed_in: 7.1
 ActiveRecord::Base.attribute_method_matchers=:
   types:
   - Array<ActiveModel::AttributeMethods::ClassMethods::AttributeMethodMatcher>
@@ -564,11 +560,7 @@ ActiveRecord::Base.attribute_method_matchers=:
   - 0.52.0
   - 0.57.0
   - 0.58.2
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
+  removed_in: 7.1
 ActiveRecord::Base.attribute_method_matchers?:
   types:
   - Boolean
@@ -5540,11 +5532,7 @@ ActiveRecord::Base#attribute_method_matchers:
   - 0.52.0
   - 0.57.0
   - 0.58.2
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
+  removed_in: 7.1
 ActiveRecord::Base#attribute_method_matchers?:
   types:
   - Boolean

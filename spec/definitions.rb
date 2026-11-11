@@ -1,14 +1,16 @@
+require_relative 'expected_types'
 require_relative 'skip_list'
 require_relative 'type_members'
 
 class Definitions
   include TypeMembers
 
-  def initialize(map, class_name, definition_name, update: false)
+  def initialize(map, class_name, definition_name, update: false, definitions_file: nil)
     @map = map
     @class_name = class_name
     @definition_name = definition_name
     @update = update
+    @definitions_file = definitions_file
   end
 
   def inspect
@@ -151,7 +153,7 @@ class Definitions
     if pin
       effective_type = member_tags(pin.typify(map)).sort.uniq
       specified_type = data['types'].sort.uniq
-      if effective_type != specified_type
+      if effective_type != ExpectedTypes.normalize(specified_type, map).sort.uniq
         if update
           process_potential_update(specified_type, effective_type, data, skip)
         elsif !skip

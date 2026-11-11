@@ -2334,7 +2334,7 @@ ActionController::Base#allow_params_authentication!:
   - branch-castwide-v0.59
 ActionController::Base#any_templates?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -3926,7 +3926,7 @@ ActionController::Base#mimes_for_respond_to=:
   - branch-castwide-v0.59
 ActionController::Base#mimes_for_respond_to?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
@@ -4665,7 +4665,7 @@ ActionController::Base#responder=:
   - branch-castwide-v0.59
 ActionController::Base#responder?:
   types:
-  - undefined
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
