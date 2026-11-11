@@ -4666,8 +4666,7 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   removed_in: 7.1
 ActiveRecord::Base.suppressed_turbo_broadcasts?:
   types:
-  - Boolean
-  - nil
+  - BasicObject
   skip: false
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
