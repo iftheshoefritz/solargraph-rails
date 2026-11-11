@@ -264,7 +264,9 @@ Date.yesterday:
   skip: false
 Date#<=>:
   types:
-  - Integer
+  - "-1"
+  - '0'
+  - '1'
   - nil
   skip:
   - 0.48.0
