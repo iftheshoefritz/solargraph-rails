@@ -5,3 +5,4 @@ gem 'rails', "~> #{ENV.fetch('MATRIX_RAILS_VERSION', '7.0')}.0"
 gem 'sqlite3'
 gem 'pry'
 gem 'rake'
+gem 'turbo-rails'

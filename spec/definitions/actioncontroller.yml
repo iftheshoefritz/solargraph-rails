@@ -3454,30 +3454,7 @@ ActionController::Base#helpers_path?:
 ActionController::Base#hotwire_native_app?:
   types:
   - Boolean
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  skip: false
 ActionController::Base#html_safe?:
   types:
   - Boolean
@@ -4346,58 +4323,12 @@ ActionController::Base#read_fragment:
   skip: false
 ActionController::Base#recede_or_redirect_back_or_to:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  - void
+  skip: false
 ActionController::Base#recede_or_redirect_to:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  - void
+  skip: false
 ActionController::Base#redirect_back:
   types:
   - undefined
@@ -4412,58 +4343,12 @@ ActionController::Base#redirect_to:
   skip: false
 ActionController::Base#refresh_or_redirect_back_or_to:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  - void
+  skip: false
 ActionController::Base#refresh_or_redirect_to:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  - void
+  skip: false
 ActionController::Base#relative_url_root:
   types:
   - undefined
@@ -4855,58 +4740,12 @@ ActionController::Base#response_body=:
   skip: false
 ActionController::Base#resume_or_redirect_back_or_to:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  - void
+  skip: false
 ActionController::Base#resume_or_redirect_to:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.0
-  - 0.57.alpha
-  - 0.58.0
-  - 0.58.2
-  - 0.59.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-master
-  - branch-castwide-v0.59
+  - void
+  skip: false
 ActionController::Base#route_for:
   types:
   - undefined
@@ -5167,6 +5006,10 @@ ActionController::Base#try:
 ActionController::Base#try!:
   types:
   - undefined
+  skip: false
+ActionController::Base#turbo_native_app?:
+  types:
+  - Boolean
   skip: false
 ActionController::Base#url_for:
   types:
