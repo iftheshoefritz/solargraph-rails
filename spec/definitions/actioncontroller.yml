@@ -4324,29 +4324,11 @@ ActionController::Base#read_fragment:
 ActionController::Base#recede_or_redirect_back_or_to:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActionController::Base#recede_or_redirect_to:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActionController::Base#redirect_back:
   types:
   - undefined
@@ -4362,29 +4344,11 @@ ActionController::Base#redirect_to:
 ActionController::Base#refresh_or_redirect_back_or_to:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActionController::Base#refresh_or_redirect_to:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActionController::Base#relative_url_root:
   types:
   - undefined
@@ -4777,29 +4741,11 @@ ActionController::Base#response_body=:
 ActionController::Base#resume_or_redirect_back_or_to:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActionController::Base#resume_or_redirect_to:
   types:
   - void
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActionController::Base#route_for:
   types:
   - undefined

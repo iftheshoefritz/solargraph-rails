@@ -60,12 +60,6 @@ RSpec.describe Solargraph::Rails::RailsApi do
 
       expect(global_paths).to include(*scoped_paths)
     end
-
-    it 'skips annotations scoped to newer Solargraph versions' do
-      stub_const('Solargraph::VERSION', '0.52.0')
-
-      expect(loads_dir?('solargraph_from_0_62_before_0_62_2')).to be(false)
-    end
   end
 
   it 'loads annotations scoped to Solargraph before 0.60 on Solargraph 0.59' do
@@ -92,16 +86,10 @@ RSpec.describe Solargraph::Rails::RailsApi do
     expect(loads_dir?('solargraph_before_0_62_2')).to be(false)
   end
 
-  it 'loads annotations scoped to Solargraph 0.62.0 to 0.62.1 on Solargraph 0.62.0' do
-    stub_const('Solargraph::VERSION', '0.62.0')
+  it 'loads the turbo-rails stubs on Solargraph 0.48' do
+    stub_const('Solargraph::VERSION', '0.48.0')
 
     expect(global_paths).to include('Turbo::Native::Navigation#recede_or_redirect_to')
-  end
-
-  it 'skips annotations scoped to Solargraph 0.62.0 to 0.62.1 on Solargraph 0.61' do
-    stub_const('Solargraph::VERSION', '0.61.0')
-
-    expect(global_paths).not_to include('Turbo::Native::Navigation#recede_or_redirect_to')
   end
 
   it 'reads gem RBS from Solargraph 0.53.0 on' do
