@@ -7762,7 +7762,8 @@ ActiveRecord::Base#toggle!:
   skip: false
 ActiveRecord::Base#touch:
   types:
-  - void
+  - Boolean
+  - nil
   skip:
   - 0.48.0
   - 0.49.0
