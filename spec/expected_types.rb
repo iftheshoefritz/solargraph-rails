@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'pathname'
-require 'rbs'
 require 'tmpdir'
 require_relative 'type_members'
 
