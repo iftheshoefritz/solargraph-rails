@@ -23,7 +23,6 @@ module Turbo
       # @return [void]
       def broadcasts_refreshes(stream = model_name.plural); end
 
-      # @return [String]
       def broadcast_target_default; end
 
       # @generic T
