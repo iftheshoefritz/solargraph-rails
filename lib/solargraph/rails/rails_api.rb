@@ -13,7 +13,7 @@ module Solargraph
         'rails_before_7_2' => ['activesupport', '< 7.2'],
         'solargraph_before_0_60' => ['solargraph', '< 0.60'],
         'rbs_before_4_3' => ['rbs', '< 4.3'],
-        'solargraph_before_0_62_2' => ['solargraph', '< 0.62.2']
+        'solargraph_before_0_53' => ['solargraph', '< 0.53']
       }.freeze
 
       def extra_source_maps

@@ -4667,11 +4667,20 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
 ActiveRecord::Base.suppressed_turbo_broadcasts?:
   types:
   - BasicObject
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
   - generic<T>
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
 ActiveRecord::Base.symbol_column_to_string:
   types:
   - undefined
