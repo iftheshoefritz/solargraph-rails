@@ -4323,11 +4323,11 @@ ActionController::Base#read_fragment:
   skip: false
 ActionController::Base#recede_or_redirect_back_or_to:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#recede_or_redirect_to:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#redirect_back:
   types:
@@ -4343,11 +4343,11 @@ ActionController::Base#redirect_to:
   skip: false
 ActionController::Base#refresh_or_redirect_back_or_to:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#refresh_or_redirect_to:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#relative_url_root:
   types:
@@ -4740,11 +4740,11 @@ ActionController::Base#response_body=:
   skip: false
 ActionController::Base#resume_or_redirect_back_or_to:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#resume_or_redirect_to:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base#route_for:
   types:
@@ -5006,6 +5006,10 @@ ActionController::Base#try:
 ActionController::Base#try!:
   types:
   - undefined
+  skip: false
+ActionController::Base#turbo_native_app?:
+  types:
+  - Boolean
   skip: false
 ActionController::Base#url_for:
   types:

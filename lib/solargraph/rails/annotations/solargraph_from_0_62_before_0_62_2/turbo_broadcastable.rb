@@ -1,48 +1,116 @@
 module Turbo
+  module Streams
+    class ActionBroadcastJob < ActiveJob::Base; end
+    class BroadcastJob < ActiveJob::Base; end
+  end
+
   module Broadcastable
     module ClassMethods
+      # @param stream [Symbol, Proc]
+      # @param inserts_by [Symbol]
+      # @return [void]
       def broadcasts_to(stream, inserts_by: :append, target: broadcast_target_default, **rendering); end
+
+      # @param inserts_by [Symbol]
+      # @return [void]
       def broadcasts(stream = model_name.plural, inserts_by: :append, target: broadcast_target_default, **rendering); end
+
+      # @param stream [Symbol, Proc]
+      # @return [void]
       def broadcasts_refreshes_to(stream); end
+
+      # @return [void]
       def broadcasts_refreshes(stream = model_name.plural); end
+
+      # @return [String]
       def broadcast_target_default; end
-      # @yield
+
+      # @generic T
+      # @yieldreturn [generic<T>]
+      # @return [generic<T>]
       def suppressing_turbo_broadcasts; end
-      # @return [Boolean]
+
+      # @return [Boolean, nil]
       def suppressed_turbo_broadcasts?; end
     end
 
+    # @return [void]
     def broadcast_remove_to(*streamables, target: self, **rendering); end
+    # @return [void]
     def broadcast_remove(**rendering); end
+    # @return [void]
     def broadcast_replace_to(*streamables, **rendering); end
+    # @return [void]
     def broadcast_replace(**rendering); end
+    # @return [void]
     def broadcast_update_to(*streamables, **rendering); end
+    # @return [void]
     def broadcast_update(**rendering); end
+    # @return [void]
     def broadcast_before_to(*streamables, target: nil, targets: nil, **rendering); end
+    # @return [void]
     def broadcast_after_to(*streamables, target: nil, targets: nil, **rendering); end
+    # @return [void]
     def broadcast_append_to(*streamables, target: broadcast_target_default, **rendering); end
+    # @return [void]
     def broadcast_append(target: broadcast_target_default, **rendering); end
+    # @return [void]
     def broadcast_prepend_to(*streamables, target: broadcast_target_default, **rendering); end
+    # @return [void]
     def broadcast_prepend(target: broadcast_target_default, **rendering); end
+    # @return [void]
     def broadcast_refresh_to(*streamables, **attributes); end
+    # @return [void]
     def broadcast_refresh; end
+
+    # @param action [Symbol, String]
+    # @param attributes [Hash{Symbol => Object}]
+    # @return [void]
     def broadcast_action_to(*streamables, action:, target: broadcast_target_default, attributes: {}, **rendering); end
+
+    # @param action [Symbol, String]
+    # @param attributes [Hash{Symbol => Object}]
+    # @return [void]
     def broadcast_action(action, target: broadcast_target_default, attributes: {}, **rendering); end
+
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_replace_later_to(*streamables, **rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_replace_later(**rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_update_later_to(*streamables, **rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_update_later(**rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_append_later_to(*streamables, target: broadcast_target_default, **rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_append_later(target: broadcast_target_default, **rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_prepend_later_to(*streamables, target: broadcast_target_default, **rendering); end
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_prepend_later(target: broadcast_target_default, **rendering); end
+    # @return [void]
     def broadcast_refresh_later_to(*streamables, **attributes); end
+    # @return [void]
     def broadcast_refresh_later; end
+
+    # @param action [Symbol, String]
+    # @param attributes [Hash{Symbol => Object}]
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_action_later_to(*streamables, action:, target: broadcast_target_default, attributes: {}, **rendering); end
+
+    # @param action [Symbol, String]
+    # @param attributes [Hash{Symbol => Object}]
+    # @return [Turbo::Streams::ActionBroadcastJob, false, nil]
     def broadcast_action_later(action:, target: broadcast_target_default, attributes: {}, **rendering); end
+
+    # @return [void]
     def broadcast_render(**rendering); end
+    # @return [void]
     def broadcast_render_to(*streamables, **rendering); end
+    # @return [Turbo::Streams::BroadcastJob, false, nil]
     def broadcast_render_later(**rendering); end
+    # @return [Turbo::Streams::BroadcastJob, false, nil]
     def broadcast_render_later_to(*streamables, **rendering); end
   end
 end

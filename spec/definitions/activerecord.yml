@@ -788,15 +788,23 @@ ActiveRecord::Base.blank?:
   - branch-castwide-master
 ActiveRecord::Base.broadcast_target_default:
   types:
-  - undefined
+  - String
+  skip: false
+ActiveRecord::Base.broadcasts:
+  types:
+  - void
   skip: false
 ActiveRecord::Base.broadcasts_refreshes:
   types:
-  - undefined
+  - void
+  skip: false
+ActiveRecord::Base.broadcasts_refreshes_to:
+  types:
+  - void
   skip: false
 ActiveRecord::Base.broadcasts_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base.build:
   types:
@@ -4656,9 +4664,14 @@ ActiveRecord::Base.suppress_multiple_database_warning=:
   - branch-better_signature_combination
   - branch-castwide-v0.59
   removed_in: 7.1
+ActiveRecord::Base.suppressed_turbo_broadcasts?:
+  types:
+  - Boolean
+  - nil
+  skip: false
 ActiveRecord::Base.suppressing_turbo_broadcasts:
   types:
-  - undefined
+  - generic<T>
   skip: false
 ActiveRecord::Base.symbol_column_to_string:
   types:
@@ -5694,131 +5707,155 @@ ActiveRecord::Base#blank?:
   - branch-castwide-master
 ActiveRecord::Base#broadcast_action:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_action_later:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_action_later_to:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_action_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_after_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_append:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_append_later:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_append_later_to:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_append_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_before_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_prepend:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_prepend_later:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_prepend_later_to:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_prepend_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_refresh:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_refresh_later:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_refresh_later_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_refresh_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_remove:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_remove_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_render:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_render_later:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::BroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_render_later_to:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::BroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_render_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_replace:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_replace_later:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_replace_later_to:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_replace_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_update:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#broadcast_update_later:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_update_later_to:
   types:
-  - undefined
+  - Boolean
+  - Turbo::Streams::ActionBroadcastJob
+  - nil
   skip: false
 ActiveRecord::Base#broadcast_update_to:
   types:
-  - undefined
+  - void
   skip: false
 ActiveRecord::Base#cache_key:
   types:
