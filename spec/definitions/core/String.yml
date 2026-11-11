@@ -250,7 +250,7 @@ String#acts_like_string?:
   - branch-castwide-master
 String#as_json:
   types:
-  - String
+  - self
   skip: false
 String#at:
   types:

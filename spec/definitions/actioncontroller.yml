@@ -1285,8 +1285,21 @@ ActionController::Base.layout:
   skip: false
 ActionController::Base.log_at:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionController::Base.log_process_action:
   types:
   - undefined
@@ -1520,8 +1533,21 @@ ActionController::Base.perform_caching=:
   - branch-castwide-v0.59
 ActionController::Base.permissions_policy:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionController::Base.prepend_after_action:
   types:
   - void
@@ -4039,8 +4065,21 @@ ActionController::Base#params:
   skip: false
 ActionController::Base#params=:
   types:
-  - undefined
-  skip: false
+  - void
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionController::Base#per_form_csrf_tokens:
   types:
   - undefined
@@ -4460,13 +4499,21 @@ ActionController::Base#request:
   skip: false
 ActionController::Base#request=:
   types:
-  - undefined
+  - ActionDispatch::Request
   skip:
   - 0.48.0
   - 0.49.0
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - solargraph: 0.57.0
+    rails:
+    - '7.0'
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.0'
+    - '7.1'
 ActionController::Base#request_forgery_protection_token:
   types:
   - undefined
@@ -4764,8 +4811,39 @@ ActionController::Base#response:
   skip: false
 ActionController::Base#response=:
   types:
-  - undefined
-  skip: false
+  - ActionDispatch::Response
+  skip:
+  - solargraph: 0.48.0
+    rails:
+    - '7.1'
+    - '7.2'
+    - '8.0'
+  - solargraph: 0.49.0
+    rails:
+    - '7.1'
+    - '7.2'
+    - '8.0'
+  - solargraph: 0.50.0
+    rails:
+    - '7.1'
+    - '7.2'
+    - '8.0'
+  - solargraph: 0.51.2
+    rails:
+    - '7.1'
+    - '7.2'
+    - '8.0'
+  - solargraph: 0.52.0
+    rails:
+    - '7.1'
+    - '7.2'
+    - '8.0'
+  - solargraph: 0.57.0
+    rails:
+    - '7.1'
+  - solargraph: 0.58.2
+    rails:
+    - '7.1'
   added_in: 7.1
 ActionController::Base#response_body:
   types:

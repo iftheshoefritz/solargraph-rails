@@ -17,4 +17,10 @@ class Rails::Application
   def self.config; end
   # @yieldreceiver [self]
   def configure; end
+
+  # @param subclass [Class]
+  # @return [void]
+  # rubocop:disable Lint/MissingSuper
+  def self.inherited(subclass); end
+  # rubocop:enable Lint/MissingSuper
 end

@@ -159,8 +159,9 @@ class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
 
   # Wrong: Rails returns a record, or an Array of records for an Array
-  # argument, not the relation. Delete once
-  # https://github.com/ruby/gem_rbs_collection/pull/1117 merges.
+  # argument, not the relation. Still needed after
+  # https://github.com/ruby/gem_rbs_collection/pull/1117: without it
+  # ActiveRecord::Base.build stops resolving to self on Solargraph 0.62.0.
   # @return [self]
   def build(attributes = nil, &block); end
 end
@@ -218,12 +219,6 @@ class ActiveRecord::Base
   # @param other [Object]
   # @return [Integer, nil]
   def <=>(other); end
-
-  # Wrong in the gem RBS, which types this by its body as :activemodel or
-  # :activerecord, but each class may override it.
-  # Delete once https://github.com/ruby/gem_rbs_collection/pull/1125 merges.
-  # @return [Symbol]
-  def self.i18n_scope; end
 end
 
 module ActiveRecord::Validations
@@ -233,14 +228,6 @@ end
 
 # @!override ActiveRecord::Calculations#count
 #   @return [Integer, Hash]
-
-# Delete the pluck override once
-# https://github.com/ruby/gem_rbs_collection/pull/1123 merges.
-# @!override ActiveRecord::Calculations#pluck
-#   @overload pluck(one)
-#     @return [Array]
-#   @overload pluck(one, two, *more)
-#     @return [Array<Array>]
 
 # @!override ActiveRecord::ConnectionAdapters::SchemaStatements#create_table
 #   @yieldparam [ActiveRecord::ConnectionAdapters::TableDefinition]

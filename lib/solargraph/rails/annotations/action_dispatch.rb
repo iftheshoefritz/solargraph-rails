@@ -9,9 +9,10 @@ module ActionDispatch
   module Routing
     class Mapper
       module Resources
-        # Remove once ruby/gem_rbs_collection#1106 is released and the
-        # collection revision is bumped:
-        # https://github.com/ruby/gem_rbs_collection/pull/1106
+        # Still needed after
+        # https://github.com/ruby/gem_rbs_collection/pull/1106: without it
+        # Solargraph 0.60.4 and 0.61.0 do not resolve generic<T> here, and
+        # Rails 7.0 and 7.1 resolve actionpack 6.0 RBS, which lacks it.
         #
         # Returns the block's value, via path_scope's yield.
         #
