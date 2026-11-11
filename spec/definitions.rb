@@ -5,11 +5,12 @@ require_relative 'type_members'
 class Definitions
   include TypeMembers
 
-  def initialize(map, class_name, definition_name, update: false)
+  def initialize(map, class_name, definition_name, update: false, definitions_file: nil)
     @map = map
     @class_name = class_name
     @definition_name = definition_name
     @update = update
+    @definitions_file = definitions_file
   end
 
   def inspect
