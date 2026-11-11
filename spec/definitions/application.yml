@@ -893,7 +893,7 @@ Rails::Application#isolate_namespace:
   skip: false
 Rails::Application#isolated?:
   types:
-  - BasicObject
+  - Boolean
   skip:
   - 0.48.0
   - 0.49.0
