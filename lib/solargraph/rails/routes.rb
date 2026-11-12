@@ -8,6 +8,22 @@ module Solargraph
       MAPPER = 'ActionDispatch::Routing::Mapper'.freeze
       RESOURCES = "#{MAPPER}::Resources".freeze
       SCOPING = "#{MAPPER}::Scoping".freeze
+      HTTP_HELPERS = "#{MAPPER}::HttpHelpers".freeze
+
+      # The parameters of a verb route that take a `"controller#action"` String: Rails names them
+      # to and mapping, its RBS to and path_to_endpoint_and_options
+      VERB_PARAMETERS = %w[to mapping path_to_endpoint_and_options].freeze
+
+      # The routing methods and parameters that take a `"controller#action"` String, as
+      # [method namespace, method name, parameter name]. Rails names root's parameter path, its
+      # RBS to.
+      ACTION_PARAMETERS = (
+        [[RESOURCES, 'root', 'to'], [RESOURCES, 'root', 'path']] +
+        [*%w[get post put patch delete options].map { |verb| [HTTP_HELPERS, verb] }, [RESOURCES, 'match']]
+          .flat_map do |method_namespace, method_name|
+            VERB_PARAMETERS.map { |param_name| [method_namespace, method_name, param_name] }
+          end
+      ).freeze
 
       # @return [Routes]
       def self.instance
@@ -89,10 +105,9 @@ module Solargraph
       # @param actions [Array<Solargraph::Pin::Method>] its public instance methods
       # @return [Array<Solargraph::Pin::FactoryParameter>]
       def action_pins(controller, actions)
-        # Rails names the parameter path, its RBS names it to
-        actions.product(%w[to path]).map do |action, param_name|
+        actions.product(ACTION_PARAMETERS).map do |action, (method_namespace, method_name, param_name)|
           value = "#{controller_path(controller)}##{action.name}"
-          build(RESOURCES, 'root', param_name, value, action.location)
+          build(method_namespace, method_name, param_name, value, action.location)
         end
       end
 

@@ -18,6 +18,11 @@ module RoutesSpecWorkspace
       controller :profiles do
       end
       resources :application
+      get 'latest', to: 'posts#index'
+      get 'feed' => 'admin/posts#index'
+      match 'all', to: 'posts#index', via: :get
+      root to: 'admin/posts#index'
+      get 'private', to: 'posts#find_post'
     end
   RUBY
 
@@ -119,5 +124,33 @@ RSpec.describe Solargraph::Rails::Routes do
     skip_unless_nested_routes_resolve
 
     expect(locations_of(10, ':profiles')).to eq([[:profiles, 0]])
+  end
+
+  it 'goes from the to: of a verb route to its action' do
+    skip_unless_keyword_routes_resolve
+
+    expect(locations_of(13, "'posts#index'")).to eq([[:posts, 1]])
+  end
+
+  it 'goes from a hash pair verb route to its action' do
+    skip_unless_keyword_routes_resolve
+
+    expect(locations_of(14, "'admin/posts#index'")).to eq([[:admin_posts, 1]])
+  end
+
+  it 'goes from the to: of a match route to its action' do
+    skip_unless_keyword_routes_resolve
+
+    expect(locations_of(15, "'posts#index'")).to eq([[:posts, 1]])
+  end
+
+  it 'goes from the to: of a root route to its action' do
+    skip_unless_keyword_routes_resolve
+
+    expect(locations_of(16, "'admin/posts#index'")).to eq([[:admin_posts, 1]])
+  end
+
+  it 'does not treat private methods as verb route actions' do
+    expect(definitions_of(17, "'posts#find_post'")).to be_empty
   end
 end

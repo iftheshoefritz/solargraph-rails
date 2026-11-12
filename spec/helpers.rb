@@ -148,4 +148,11 @@ module Helpers
   def skip_unless_nested_routes_resolve
     skip 'nested routes blocks lose their receiver' if Gem::Version.new(Solargraph::VERSION) <= Gem::Version.new('0.62.1')
   end
+
+  # Solargraph matches literals only at positional arguments. Keyed on the
+  # version, so a later release that is still broken fails here rather than
+  # being skipped silently.
+  def skip_unless_keyword_routes_resolve
+    skip 'keyword literals are not matched' if Gem::Version.new(Solargraph::VERSION) <= Gem::Version.new('0.62.1')
+  end
 end
