@@ -135,4 +135,13 @@ module Helpers
 
     clip.complete.pins.map { |pin| [pin.name, member_tags(pin.return_type)] }.to_h
   end
+
+  # Solargraph drops the receiver of a block nested in a @yieldreceiver
+  # block, and matches literals only against parameters of a signature the
+  # arguments conform to, which `namespace :admin` and `controller :posts`
+  # do not. Keyed on the version, so a later release that is still broken
+  # fails here rather than being skipped silently.
+  def skip_unless_nested_routes_resolve
+    skip 'nested routes blocks lose their receiver' if Gem::Version.new(Solargraph::VERSION) <= Gem::Version.new('0.62.1')
+  end
 end
