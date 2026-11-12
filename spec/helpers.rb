@@ -130,6 +130,10 @@ module Helpers
     clip.complete.pins.map(&:name)
   end
 
+  def definitions_at(filename, position, map = api_map)
+    map.clip_at(filename, position).define
+  end
+
   def completions_for(map, filename, position)
     clip = map.clip_at(filename, position)
 
