@@ -522,13 +522,6 @@ Hash#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
-  - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 Hash#symbolize_keys:
   types:
   - Hash{Symbol => generic<V>}

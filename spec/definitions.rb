@@ -5,6 +5,18 @@ require_relative 'type_members'
 class Definitions
   include TypeMembers
 
+  # A bare `Hash` means `Hash[untyped, untyped]`, so it cannot show whether
+  # K and V reach a return type. Ask about `Hash{Rational => Complex}`
+  # instead, and expect each stand-in where the YAML names its parameter.
+  STAND_INS = %w[Rational Complex].freeze
+
+  # rbs 4.0 renamed Array's and Enumerable's Elem to E; activesupport's rbs
+  # still says Elem
+  RENAMED = { 'Elem' => 'E' }.freeze
+
+  # Solargraph 0.52 and older take only a namespace here, not a type.
+  TAKES_TYPE = Solargraph::ApiMap.instance_method(:get_methods).parameters.first.last == :rooted_tag
+
   def initialize(map, class_name, definition_name, update: false, definitions_file: nil)
     @map = map
     @class_name = class_name
@@ -80,10 +92,53 @@ class Definitions
   def instance_methods
     @instance_methods ||=
       map.get_methods(
-        class_name,
+        instance_tag,
         scope: :instance,
         visibility: %i[public protected private]
       )
+  end
+
+  # @return [String] e.g. 'Hash{Rational => Complex}' or 'Array<Rational>'
+  def instance_tag
+    return class_name if type_params.empty?
+
+    stand_ins = STAND_INS.first(type_params.size)
+    return "Hash{#{stand_ins.join(' => ')}}" if class_name == 'Hash'
+
+    "#{class_name}<#{stand_ins.join(', ')}>"
+  end
+
+  # @return [Array<String>] e.g. ['K', 'V']
+  def type_params
+    return [] unless TAKES_TYPE
+
+    @type_params ||= begin
+      declarations = map.get_path_pins(class_name).grep(Solargraph::Pin::Namespace)
+      names = declarations.map(&:generics).max_by(&:size) || []
+      raise "#{class_name} has more type parameters than STAND_INS" if names.size > STAND_INS.size
+
+      names.map { |name| RENAMED.fetch(name, name) }
+    end
+  end
+
+  # @param types [Array<String>] expected types, e.g. ['Hash{Symbol => generic<V>}']
+  # @return [Array<String>] e.g. ['Hash{Symbol => Complex}']
+  def with_stand_ins(types)
+    types.map do |tag|
+      tag.gsub(/generic<(\w+)>/) do |generic|
+        index = type_params.index(RENAMED.fetch(Regexp.last_match(1), Regexp.last_match(1)))
+        index ? STAND_INS[index] : generic
+      end
+    end
+  end
+
+  # @param types [Array<String>] e.g. ['Hash{Symbol => Complex}']
+  # @return [Array<String>] e.g. ['Hash{Symbol => generic<V>}']
+  def without_stand_ins(types)
+    return types if type_params.empty?
+
+    pattern = /(?<![\w:])(?:#{STAND_INS.first(type_params.size).join('|')})(?![\w:])/
+    types.map { |tag| tag.gsub(pattern) { |stand_in| "generic<#{type_params[STAND_INS.index(stand_in)]}>" } }
   end
 
   def class_methods
@@ -153,11 +208,11 @@ class Definitions
     if pin
       effective_type = member_tags(pin.typify(map)).sort.uniq
       specified_type = data['types'].sort.uniq
-      if effective_type != ExpectedTypes.normalize(specified_type, map).sort.uniq
+      if effective_type != with_stand_ins(ExpectedTypes.normalize(specified_type, map)).sort.uniq
         if update
-          process_potential_update(specified_type, effective_type, data, skip)
+          process_potential_update(specified_type, without_stand_ins(effective_type), data, skip)
         elsif !skip
-          @incorrect << "#{pin.path} expected #{specified_type}, got: #{effective_type}"
+          @incorrect << "#{pin.path} expected #{with_stand_ins(specified_type)}, got: #{effective_type}"
         end
       elsif skip
         rbs_pin = pin.respond_to?(:source) && pin.source == :rbs
