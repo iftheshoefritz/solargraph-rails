@@ -522,6 +522,7 @@ Hash#sum:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.57.0
 Hash#symbolize_keys:
   types:
   - Hash{Symbol => generic<V>}
