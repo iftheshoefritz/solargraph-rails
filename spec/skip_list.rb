@@ -11,9 +11,12 @@ require 'yaml'
 #   - 0.48.0
 #   - solargraph: 0.57.0
 #     rails: ['7.0', '7.1']
+#   - solargraph: 0.60.4
+#     min_rbs: '4.0'
 #
 # Rails-scoped items are a shim for Solargraph releases below 0.60, which
 # cannot let an annotation win over older RBS. Anywhere else they raise.
+# An item with min_rbs skips only when the rbs gem is at least that version.
 module SkipList
   WILDCARD = 'branch-castwide-master'
   SCOPED_BELOW = Gem::Version.new('0.60')
@@ -32,9 +35,18 @@ module SkipList
     return false unless skip
 
     items(skip).any? do |item|
-      version_matches?(version_of(item), solargraph_version) &&
-        (item.is_a?(String) || rails_of(item).include?(rails_version))
+      version_matches?(version_of(item), solargraph_version) && item_applies?(item, rails_version)
     end
+  end
+
+  # @param item [String, Hash{String => String, Array<String>}]
+  # @param rails_version [String]
+  # @return [Boolean]
+  def item_applies?(item, rails_version)
+    return true if item.is_a?(String)
+    return Gem::Version.new(RBS::VERSION) >= Gem::Version.new(item['min_rbs']) if item.key?('min_rbs')
+
+    rails_of(item).include?(rails_version)
   end
 
   # Records a failure on this Solargraph and Rails version. Below 0.60 it
@@ -134,7 +146,7 @@ module SkipList
   # @raise [ScopedSkipError]
   # @return [void]
   def check_scoped!(item)
-    return if item.is_a?(String) || scoped_allowed?(version_of(item))
+    return if item.is_a?(String) || item.key?('min_rbs') || scoped_allowed?(version_of(item))
 
     raise ScopedSkipError, "Rails-scoped skip #{item.inspect} is only allowed for Solargraph releases " \
                            "below #{SCOPED_BELOW}. Fix a Rails-version type gap on current Solargraph " \

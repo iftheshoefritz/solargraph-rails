@@ -254,7 +254,7 @@ Array#class_eval:
   skip: false
 Array#compact_blank:
   types:
-  - Array
+  - Array<generic<E>>
   min_rbs: '4.0'
   skip:
   - 0.48.0
@@ -266,7 +266,6 @@ Array#compact_blank:
   - 0.57.0
   - 0.60.4
   - 0.61.0
-  - branch-castwide-master
 Array#compact_blank!:
   types:
   - Array<generic<Elem>>
@@ -276,6 +275,10 @@ Array#compact_blank!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - solargraph: 0.60.4
+    min_rbs: '4.0'
+  - solargraph: 0.61.0
+    min_rbs: '4.0'
 Array#deep_dup:
   types:
   - undefined
@@ -357,6 +360,10 @@ Array#inquiry:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - solargraph: 0.60.4
+    min_rbs: '4.0'
+  - solargraph: 0.61.0
+    min_rbs: '4.0'
 Array#instance_values:
   types:
   - undefined
