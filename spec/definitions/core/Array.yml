@@ -275,8 +275,10 @@ Array#compact_blank!:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.4
-  - 0.61.0
+  - solargraph: 0.60.4
+    min_rbs: '4.0'
+  - solargraph: 0.61.0
+    min_rbs: '4.0'
 Array#deep_dup:
   types:
   - undefined
@@ -358,8 +360,10 @@ Array#inquiry:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.60.4
-  - 0.61.0
+  - solargraph: 0.60.4
+    min_rbs: '4.0'
+  - solargraph: 0.61.0
+    min_rbs: '4.0'
 Array#instance_values:
   types:
   - undefined

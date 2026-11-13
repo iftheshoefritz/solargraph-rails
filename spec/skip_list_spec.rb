@@ -38,6 +38,16 @@ RSpec.describe SkipList do
       expect(described_class.applies?(allowed, '0.58.2', '7.0')).to be(true)
     end
 
+    it 'limits an rbs-scoped item to rbs versions from its min_rbs' do
+      skip = [{ 'solargraph' => '0.61.0', 'min_rbs' => '4.0' }]
+      results = %w[3.10.4 4.0.1].map do |rbs|
+        stub_const('RBS::VERSION', rbs)
+        described_class.applies?(skip, '0.61.0', '7.2')
+      end
+
+      expect(results).to eq([false, true])
+    end
+
     it 'raises on a Rails-scoped item for Solargraph 0.60 or later' do
       skip = ['0.48.0', { 'solargraph' => '0.60.0', 'rails' => ['7.0'] }]
 
