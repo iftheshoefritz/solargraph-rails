@@ -254,7 +254,7 @@ Array#class_eval:
   skip: false
 Array#compact_blank:
   types:
-  - Array
+  - Array<generic<E>>
   min_rbs: '4.0'
   skip:
   - 0.48.0
@@ -266,6 +266,8 @@ Array#compact_blank:
   - 0.57.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
+  - 0.62.1
   - branch-castwide-master
 Array#compact_blank!:
   types:
