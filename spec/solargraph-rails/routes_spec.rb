@@ -164,4 +164,10 @@ RSpec.describe Solargraph::Rails::Routes do
   it 'does not treat private methods as verb route actions' do
     expect(definitions_of(17, "'posts#find_post'")).to be_empty
   end
+
+  it 'maps no controllers without Solargraph::Pin::FactoryParameter' do
+    allow(described_class).to receive(:supported?).and_return(false)
+
+    expect(described_class.instance.process(map.source_map(files[:posts]))).to be_empty
+  end
 end

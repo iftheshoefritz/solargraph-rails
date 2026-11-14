@@ -34,7 +34,7 @@ module Solargraph
       #
       # @return [Boolean]
       def self.supported?
-        defined?(Solargraph::Pin::FactoryParameter) ? true : false
+        Solargraph::Pin.const_defined?(:FactoryParameter)
       end
 
       # RBS types the draw block with `[self: Mapper]`, which Solargraph does
@@ -47,7 +47,7 @@ module Solargraph
       def object(api_map, rooted_tag, scope)
         return [] unless scope == :instance && rooted_tag.delete_prefix('::') == ROUTE_SET
 
-        location = api_map.get_path_pins("#{ROUTE_SET}#draw").find(&:location)&.location
+        location = api_map.get_path_pins("#{ROUTE_SET}#draw").filter_map(&:location).first
         [
           Util.build_public_method(
             Solargraph::Pin::Namespace.new(name: ROUTE_SET),
