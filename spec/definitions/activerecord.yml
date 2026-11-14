@@ -4979,7 +4979,6 @@ ActiveRecord::Base.to_adapter:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base.to_param:
   types:
@@ -7467,7 +7466,6 @@ ActiveRecord::Base#to_gid:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_gid_param:
   types:
@@ -7492,7 +7490,6 @@ ActiveRecord::Base#to_gid_param:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_global_id:
   types:
@@ -7517,7 +7514,6 @@ ActiveRecord::Base#to_global_id:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_key:
   types:
@@ -7567,7 +7563,6 @@ ActiveRecord::Base#to_sgid:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_sgid_param:
   types:
@@ -7592,7 +7587,6 @@ ActiveRecord::Base#to_sgid_param:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#to_signed_global_id:
   types:
@@ -7617,7 +7611,6 @@ ActiveRecord::Base#to_signed_global_id:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActiveRecord::Base#toggle:
   types:
