@@ -266,7 +266,6 @@ Rails::Application.initializer:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 Rails::Application.initializers:
   types:
@@ -291,7 +290,6 @@ Rails::Application.initializers:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 Rails::Application.initializers_chain:
   types:
@@ -316,7 +314,6 @@ Rails::Application.initializers_chain:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 Rails::Application.initializers_for:
   types:
@@ -341,7 +338,6 @@ Rails::Application.initializers_for:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 Rails::Application.instance:
   types:

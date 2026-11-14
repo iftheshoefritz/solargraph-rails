@@ -1885,7 +1885,6 @@ ActionController::Base.responders:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base.set_callback:
   types:
@@ -2505,7 +2504,6 @@ ActionController::Base#collect_mimes_from_class_level:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#combined_fragment_cache_key:
   types:
@@ -4549,7 +4547,6 @@ ActionController::Base#respond_with:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#responder:
   types:
