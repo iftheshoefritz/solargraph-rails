@@ -72,6 +72,13 @@ RSpec.describe Solargraph::Rails::Routes do
     definitions_at(files[:routes], [line, column], map)
   end
 
+  # Before 0.62.0 Solargraph discards the only signature of a method that
+  # takes a block when the call passes none, so `resources :posts` has no
+  # parameters to match the literal against.
+  def skip_unless_blockless_routes_resolve
+    skip 'blockless calls lose their signature' if Gem::Version.new(Solargraph::VERSION) < Gem::Version.new('0.62.0')
+  end
+
   # @return [Array(Symbol, Integer)] the file and line of each definition
   def locations_of(line, word)
     definitions_of(line, word).map do |pin|
@@ -80,11 +87,15 @@ RSpec.describe Solargraph::Rails::Routes do
   end
 
   it 'goes from resources to their controllers' do
+    skip_unless_blockless_routes_resolve
+
     expect(locations_of(1, ':profiles')).to eq([[:profiles, 0]])
     expect(locations_of(1, ':posts')).to contain_exactly([:posts, 0], [:admin_posts, 0])
   end
 
   it 'goes from a singular resource to its plural controller' do
+    skip_unless_blockless_routes_resolve
+
     expect(locations_of(2, ':profile')).to eq([[:profiles, 0]])
   end
 
