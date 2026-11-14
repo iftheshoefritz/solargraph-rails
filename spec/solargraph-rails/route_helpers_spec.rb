@@ -1,77 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::RouteHelpers do
-  # Loading the Rails app takes seconds, so the examples share one library over these files
-  def self.routes
-    <<~RUBY
-      Rails.application.routes.draw do
-        root "posts#index"
-        resources :posts do
-          member do
-            get :preview
-          end
-          collection do
-            get :search
-          end
-          get :archive, on: :member
-          get :drafts, on: :collection
-          resources :comments, only: [:index, :show]
-        end
-        resource :profile, except: :destroy
-        resources :photos, only: [:index, :show]
-        resource :user, only: [:index]
-        resources :members, only: [:index]
-        resources :authors, shallow: true do
-          resources :books
-        end
-        namespace :admin do
-          root "dashboard#show"
-          resources :users, only: :index
-        end
-        scope as: :legacy do
-          resources :tokens, only: :index
-        end
-        scope module: :billing do
-          resources :invoices, only: :index
-        end
-        scope path: "/v2" do
-          resources :reports, only: :index
-        end
-        resources :articles, as: :stories, only: [:index, :show]
-        get "search", to: "search#index", as: :site_search
-        get "photos/featured"
-        get "photos/:id/raw" => "photos#raw"
-        get "ignored", to: "pages#ignored", as: nil
-        resources :news, only: [:index, :show]
-        direct :homepage do
-          "https://rubyonrails.org"
-        end
-        mount Blog::Engine, at: "/blog", as: :blog
-        concern :reviewable do
-          resources :reviews, only: :index
-        end
-        resources :products, concerns: :reviewable, only: :show
-        resources(*ROUTED)
-        %w[a b].each { |name| resources name }
-        resources dynamic_name
-        get "elsewhere", to: "search#other", as: :site_search
-        concern :looping do
-          resources :loops, only: :index
-          concerns :looping
-        end
-        concerns :looping
-        draw :extras
-        root "pages#landing", as: :landing_root
-      end
-    RUBY
-  end
-
-  def self.extras
-    <<~RUBY
-      resources :audits, only: :index
-      draw :extras
-    RUBY
-  end
+  # The routes and their callers are fixture files, drawn from config/routes.rb of spec/rails8; spec/rails7 links to
+  # them. Loading the Rails app takes seconds, so the examples share one library.
 
   # @return [Hash{String => String, Symbol, nil}] each helper with the start of the routes line creating it, or nil
   #   when Rails defines no such helper
@@ -138,61 +69,6 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
     }
   end
 
-  def self.files
-    {
-      'config/routes.rb' => routes,
-      'config/routes/extras.rb' => extras,
-      'app/controllers/route_helpers_controller.rb' => <<~RUBY,
-        class RouteHelpersController < ActionController::Base
-          def index
-        #{helpers.keys.map { |name| "    #{name}" }.join("\n")}
-            tags_path
-          end
-        end
-      RUBY
-      'app/helpers/route_helpers_helper.rb' => <<~RUBY,
-        module RouteHelpersHelper
-          def link
-            post_path
-          end
-        end
-      RUBY
-      'app/mailers/route_helpers_mailer.rb' => <<~RUBY,
-        class RouteHelpersMailer < ActionMailer::Base
-          def notify
-            posts_url
-          end
-        end
-      RUBY
-      'app/models/route_helpers_record.rb' => <<~RUBY,
-        class RouteHelpersRecord < ApplicationRecord
-          def link
-            posts_path
-          end
-        end
-      RUBY
-      'lib/route_helpers_client.rb' => <<~RUBY,
-        class RouteHelpersClient
-          def link
-            Rails.application.routes.url_helpers.posts_path
-            Rails.application.routes.url_helpers.blog
-          end
-
-          def plain
-            posts_path
-          end
-        end
-      RUBY
-      'spec/route_helpers_flow_test.rb' => <<~RUBY
-        class RouteHelpersFlowTest < ActionDispatch::IntegrationTest
-          def test_index
-            posts_path
-          end
-        end
-      RUBY
-    }
-  end
-
   def self.root
     File.expand_path("../rails#{ENV.fetch('MATRIX_RAILS_VERSION').split('.').first}", __dir__)
   end
@@ -203,26 +79,6 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
       library.catalog
     end
   end
-
-  def self.write_files
-    routes = File.join(root, 'config/routes.rb')
-    FileUtils.cp(routes, "#{routes}.orig") if File.exist?(routes)
-    files.each do |path, code|
-      FileUtils.mkdir_p(File.dirname(File.join(root, path)))
-      File.write(File.join(root, path), code)
-    end
-  end
-
-  def self.remove_files
-    files.each_key { |path| FileUtils.rm_f(File.join(root, path)) }
-    FileUtils.rm_rf(File.join(root, 'config/routes'))
-    routes = File.join(root, 'config/routes.rb')
-    FileUtils.mv("#{routes}.orig", routes) if File.exist?("#{routes}.orig")
-  end
-
-  # The routes reader reads drawn files from disk, so they stay for the whole group
-  before(:all) { self.class.write_files } # rubocop:disable RSpec/BeforeAfterAll
-  after(:all) { self.class.remove_files } # rubocop:disable RSpec/BeforeAfterAll
 
   def library
     self.class.library
@@ -241,10 +97,14 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
     library.definitions_at(path(relpath), line, lines[line].index(call))
   end
 
+  def routes_file
+    'config/routes/route_helpers.rb'
+  end
+
   # @param needle [String]
   # @param code [String] the routes file
   # @return [Integer] the 0-based line of the routes file starting with the needle
-  def routes_line(needle, code = self.class.routes)
+  def routes_line(needle, code = File.read(path(routes_file)))
     code.lines.index { |text| text.strip.start_with?(needle) }
   end
 
@@ -268,7 +128,7 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
           expected = if needle == :extras
                        [path('config/routes/extras.rb'), 0]
                      else
-                       [path('config/routes.rb'), routes_line(needle)]
+                       [path(routes_file), routes_line(needle)]
                      end
 
           expect(place(controller_definition(helper))).to eq(expected)
@@ -317,7 +177,7 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
   describe 'callers' do
     it 'resolves helpers in helper modules' do
       expect(place(definitions('app/helpers/route_helpers_helper.rb', 'post_path').first))
-        .to eq([path('config/routes.rb'), routes_line('resources :posts do')])
+        .to eq([path(routes_file), routes_line('resources :posts do')])
     end
 
     it 'resolves helpers in mailers' do
@@ -352,14 +212,14 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
   end
 
   it 'refreshes the helpers when the routes file changes' do
-    filename = path('config/routes.rb')
-    edited = self.class.routes.sub('draw :extras', "draw :extras\n  resources :tags")
+    filename = path(routes_file)
+    edited = File.read(filename).sub('draw :extras', "draw :extras\nresources :tags")
     expect(controller_definition('tags_path')).to be_nil
 
     library.attach(Solargraph::Source.load_string(edited, filename, 1))
 
     expect(place(controller_definition('tags_path'))).to eq([filename, routes_line('resources :tags', edited)])
   ensure
-    library.attach(Solargraph::Source.load_string(self.class.routes, filename, 2))
+    library.attach(Solargraph::Source.load_string(File.read(filename), filename, 2))
   end
 end

@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Routes for spec/solargraph-rails/route_helpers_spec.rb
+  draw :route_helpers
 end
