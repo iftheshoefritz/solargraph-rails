@@ -73,7 +73,7 @@ module Solargraph
           pin.is_a?(Solargraph::Pin::Method) && pin.scope == :instance && pin.visibility == :public
         end.group_by(&:namespace)
         controllers.flat_map do |controller|
-          controller_pins(controller) + action_pins(controller, actions.fetch(controller.path, []))
+          controller_pins(controller) + action_pins(controller, actions[controller.path] || [])
         end
       end
 
@@ -82,7 +82,8 @@ module Solargraph
       # @param controller [Solargraph::Pin::Namespace]
       # @return [Array<Solargraph::Pin::Base>]
       def controller_pins(controller)
-        *namespaces, name = controller_path(controller).split('/')
+        namespace_path, _, name = controller_path(controller).rpartition('/')
+        namespaces = namespace_path.split('/')
         location = controller.location
         pins = [
           build(RESOURCES, 'resources', 'resources', name.to_sym, location, decl: :restarg),
@@ -90,8 +91,10 @@ module Solargraph
           build(SCOPING, 'controller', 'controller', name.to_sym, location)
         ]
         # Resources and Scoping both define namespace
-        pins + namespaces.product([RESOURCES, SCOPING]).map do |namespace, method_namespace|
-          build(method_namespace, 'namespace', 'name', namespace.to_sym, location)
+        pins + namespaces.flat_map do |namespace|
+          [RESOURCES, SCOPING].map do |method_namespace|
+            build(method_namespace, 'namespace', 'name', namespace.to_sym, location)
+          end
         end
       end
 
@@ -102,17 +105,20 @@ module Solargraph
       end
 
       # @param controller [Solargraph::Pin::Namespace]
-      # @param actions [Array<Solargraph::Pin::Method>] its public instance methods
+      # @param actions [Array<Solargraph::Pin::Base>] its public instance methods
       # @return [Array<Solargraph::Pin::Base>]
       def action_pins(controller, actions)
-        actions.product(ACTION_PARAMETERS).map do |action, (method_namespace, method_name, param_name)|
+        actions.flat_map do |action|
           value = "#{controller_path(controller)}##{action.name}"
-          build(method_namespace, method_name, param_name, value, action.location)
+          ACTION_PARAMETERS.map do |method_namespace, method_name, param_name|
+            build(method_namespace, method_name, param_name, value, action.location)
+          end
         end
       end
 
       # @param controller [Solargraph::Pin::Namespace]
       # @return [String] e.g. `admin/posts` for `Admin::PostsController`
+      # @sg-ignore Solargraph does not map ActiveSupport's String#underscore
       def controller_path(controller)
         controller.path.underscore.delete_suffix('_controller')
       end
@@ -125,6 +131,8 @@ module Solargraph
       # @param decl [Symbol]
       # @return [Solargraph::Pin::Base] a FactoryParameter, which older Solargraph versions lack
       def build(method_namespace, method_name, param_name, value, location, decl: :arg)
+        # @sg-ignore FactoryParameter#initialize resolves Symbol to Pin::Symbol
+        #   and rejects nil for its [String, nil] return_type
         Solargraph::Pin::FactoryParameter.new(
           method_name: method_name,
           method_namespace: method_namespace,
