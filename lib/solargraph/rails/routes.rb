@@ -60,7 +60,7 @@ module Solargraph
       end
 
       # @param source_map [Solargraph::SourceMap]
-      # @return [Array<Solargraph::Pin::FactoryParameter>]
+      # @return [Array<Solargraph::Pin::Base>]
       def process(source_map)
         return [] unless self.class.supported?
 
@@ -80,7 +80,7 @@ module Solargraph
       private
 
       # @param controller [Solargraph::Pin::Namespace]
-      # @return [Array<Solargraph::Pin::FactoryParameter>]
+      # @return [Array<Solargraph::Pin::Base>]
       def controller_pins(controller)
         *namespaces, name = controller_path(controller).split('/')
         location = controller.location
@@ -103,7 +103,7 @@ module Solargraph
 
       # @param controller [Solargraph::Pin::Namespace]
       # @param actions [Array<Solargraph::Pin::Method>] its public instance methods
-      # @return [Array<Solargraph::Pin::FactoryParameter>]
+      # @return [Array<Solargraph::Pin::Base>]
       def action_pins(controller, actions)
         actions.product(ACTION_PARAMETERS).map do |action, (method_namespace, method_name, param_name)|
           value = "#{controller_path(controller)}##{action.name}"
@@ -123,7 +123,7 @@ module Solargraph
       # @param value [String, Symbol]
       # @param location [Solargraph::Location, nil]
       # @param decl [Symbol]
-      # @return [Solargraph::Pin::FactoryParameter]
+      # @return [Solargraph::Pin::Base] a FactoryParameter, which older Solargraph versions lack
       def build(method_namespace, method_name, param_name, value, location, decl: :arg)
         Solargraph::Pin::FactoryParameter.new(
           method_name: method_name,
