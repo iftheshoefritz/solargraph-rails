@@ -1,9 +1,10 @@
 module ActionDispatch
   module Routing
     class Mapper
-      # Rails 7.0 and 7.1 resolve actionpack 6.0 RBS, which does not type
-      # the routing DSL; gem_rbs_collection types it from actionpack 7.2:
-      # https://github.com/ruby/gem_rbs_collection/pull/1106
+      # Solargraph before 0.53 reads no gem RBS. gem_rbs_collection types
+      # the routing DSL from actionpack 7.2, and in actionpack 6.0 (Rails
+      # 7.0 and 7.1) since
+      # https://github.com/ruby/gem_rbs_collection/pull/1136
 
       module Base
         # @return [self]
