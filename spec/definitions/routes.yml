@@ -283,14 +283,6 @@ ActionDispatch::Routing::Mapper#collection:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#concern:
   types:
   - ActionDispatch::Routing::Mapper::_Concern
@@ -301,14 +293,6 @@ ActionDispatch::Routing::Mapper#concern:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#concerns:
   types:
   - Array<Symbol>
@@ -318,14 +302,6 @@ ActionDispatch::Routing::Mapper#concerns:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#connect:
   types:
   - undefined
@@ -340,14 +316,6 @@ ActionDispatch::Routing::Mapper#constraints:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#constraints_for:
   types:
   - undefined
@@ -361,14 +329,6 @@ ActionDispatch::Routing::Mapper#controller:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#deep_dup:
   types:
   - undefined
@@ -390,14 +350,6 @@ ActionDispatch::Routing::Mapper#defaults:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#delete:
   types:
   - self
@@ -407,14 +359,6 @@ ActionDispatch::Routing::Mapper#delete:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#devise_confirmation:
   types:
   - undefined
@@ -468,14 +412,6 @@ ActionDispatch::Routing::Mapper#get:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#has_named_route?:
   types:
   - Boolean
@@ -505,14 +441,6 @@ ActionDispatch::Routing::Mapper#match:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#member:
   types:
   - generic<T>
@@ -522,14 +450,6 @@ ActionDispatch::Routing::Mapper#member:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#mount:
   types:
   - self
@@ -539,14 +459,6 @@ ActionDispatch::Routing::Mapper#mount:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#namespace:
   types:
   - self
@@ -556,14 +468,6 @@ ActionDispatch::Routing::Mapper#namespace:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#nested:
   types:
   - self
@@ -573,14 +477,6 @@ ActionDispatch::Routing::Mapper#nested:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#new:
   types:
   - generic<T>
@@ -600,14 +496,6 @@ ActionDispatch::Routing::Mapper#options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#patch:
   types:
   - self
@@ -617,14 +505,6 @@ ActionDispatch::Routing::Mapper#patch:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#post:
   types:
   - self
@@ -634,14 +514,6 @@ ActionDispatch::Routing::Mapper#post:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#presence:
   types:
   - nil
@@ -669,14 +541,6 @@ ActionDispatch::Routing::Mapper#put:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#raise_no_devise_method_error!:
   types:
   - undefined
@@ -713,14 +577,6 @@ ActionDispatch::Routing::Mapper#resource:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#resources:
   types:
   - self
@@ -730,14 +586,6 @@ ActionDispatch::Routing::Mapper#resources:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#resources_path_names:
   types:
   - undefined
@@ -751,14 +599,6 @@ ActionDispatch::Routing::Mapper#root:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#scope:
   types:
   - self
@@ -768,14 +608,6 @@ ActionDispatch::Routing::Mapper#scope:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#set_omniauth_path_prefix!:
   types:
   - undefined
@@ -789,14 +621,6 @@ ActionDispatch::Routing::Mapper#shallow:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#shallow?:
   types:
   - Boolean
@@ -835,14 +659,6 @@ ActionDispatch::Routing::Mapper#with_default_scope:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#with_devise_exclusive_scope:
   types:
   - undefined

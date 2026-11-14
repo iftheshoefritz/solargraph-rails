@@ -1120,11 +1120,7 @@ ActionController::Base.helpers_path:
   - 0.56.1
   - 0.57.0
   - 0.58.2
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActionController::Base.helpers_path=:
   types:
   - Array<String>
@@ -1138,11 +1134,7 @@ ActionController::Base.helpers_path=:
   - 0.56.1
   - 0.57.0
   - 0.58.2
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActionController::Base.helpers_path?:
   types:
   - Boolean
@@ -1162,13 +1154,9 @@ ActionController::Base.helpers_path?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base.html_safe?:
   types:
@@ -1292,14 +1280,6 @@ ActionController::Base.log_at:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionController::Base.log_process_action:
   types:
   - undefined
@@ -1540,14 +1520,6 @@ ActionController::Base.permissions_policy:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionController::Base.prepend_after_action:
   types:
   - void
@@ -1975,8 +1947,6 @@ ActionController::Base.subclasses:
   - Array<Class>
   skip:
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActionController::Base.supports_path?:
   types:
   - Boolean
@@ -2423,14 +2393,6 @@ ActionController::Base#authenticate_with_http_token:
   - 0.49.0
   - 0.50.0
   - 0.51.2
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionController::Base#available_action?:
   types:
   - Boolean
@@ -3372,7 +3334,7 @@ ActionController::Base#helpers:
   skip: false
 ActionController::Base#helpers_path:
   types:
-  - undefined
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
@@ -3389,17 +3351,13 @@ ActionController::Base#helpers_path:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#helpers_path=:
   types:
-  - undefined
+  - Array<String>
   skip:
   - 0.48.0
   - 0.49.0
@@ -3416,13 +3374,9 @@ ActionController::Base#helpers_path=:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#helpers_path?:
   types:
@@ -3443,13 +3397,9 @@ ActionController::Base#helpers_path?:
   - 0.58.0
   - 0.58.2
   - 0.59.0
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
   - branch-2025-09-22
   - branch-better_signature_combination
-  - branch-castwide-master
   - branch-castwide-v0.59
 ActionController::Base#hotwire_native_app?:
   types:
@@ -4049,14 +3999,6 @@ ActionController::Base#params=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionController::Base#per_form_csrf_tokens:
   types:
   - undefined
@@ -4723,12 +4665,6 @@ ActionController::Base#response=:
     - '7.1'
     - '7.2'
     - '8.0'
-  - solargraph: 0.57.0
-    rails:
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.1'
   added_in: 7.1
 ActionController::Base#response_body:
   types:
