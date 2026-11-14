@@ -27,6 +27,8 @@ RSpec.describe 'Rails API completion' do
   end
 
   it 'can auto-complete inside routes' do
+    skip 'needs Solargraph to call Convention#object' unless Solargraph::Convention::Base.method_defined?(:object)
+
     filename = nil
     map =
       rails_workspace do |root|
