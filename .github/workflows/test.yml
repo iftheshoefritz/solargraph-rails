@@ -83,6 +83,18 @@ jobs:
               rails-major: "7"
               rails-minor: "1"
             solargraph-version: "0.61.0"
+          # Ruby 3.1 gets rbs 3, where 0.60.4 and 0.61.0 pass core/Array and
+          # core/Enumerable entries they skip for failing on rbs 4
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.60.4"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.61.0"
           - versions:
               ruby: "3.0"
               rails-major: "7"
