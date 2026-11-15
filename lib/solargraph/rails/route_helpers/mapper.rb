@@ -75,6 +75,14 @@ module Solargraph
           NodeParser.parse_with_comments(code, file).first
         end
 
+        # Solargraph::Range.from_node returns nil for Parser nodes on Solargraph 0.50 and earlier
+        #
+        # @param node [::Parser::AST::Node]
+        # @return [Solargraph::Range]
+        def range_of(node)
+          Solargraph::Range.from_expr(node.loc.expression)
+        end
+
         # The bodies of the app's `Rails.application.routes.draw do ... end` blocks. Engines' route sets are skipped.
         #
         # @param node [::Parser::AST::Node, nil]
@@ -138,7 +146,7 @@ module Solargraph
           return if args.any? { |arg| !readable?(arg) }
 
           saved = @location
-          @location = Solargraph::Location.new(@file, Solargraph::Range.from_node(call))
+          @location = Solargraph::Location.new(@file, range_of(call))
           block = body && proc { eval_body(body) }
           dispatch(method, args, body, &block)
         rescue StandardError => e
