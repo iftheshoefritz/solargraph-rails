@@ -5,6 +5,7 @@ module ActiveRecord
   module SignedId
     # @param expires_in [ActiveSupport::Duration, nil]
     # @param expires_at [Time, ActiveSupport::TimeWithZone, nil]
+    # @param purpose [undefined]
     # @return [String]
     def signed_id(expires_in: nil, expires_at: nil, purpose: nil); end
 

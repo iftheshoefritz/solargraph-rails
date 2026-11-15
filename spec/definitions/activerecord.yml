@@ -4004,11 +4004,6 @@ ActiveRecord::Base.signed_id_verifier_secret:
   types:
   - undefined
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
@@ -4023,11 +4018,6 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
@@ -6770,12 +6760,7 @@ ActiveRecord::Base#serializable_hash:
 ActiveRecord::Base#signed_id:
   types:
   - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
+  skip: false
 ActiveRecord::Base#signed_id_verifier_secret:
   types:
   - undefined
