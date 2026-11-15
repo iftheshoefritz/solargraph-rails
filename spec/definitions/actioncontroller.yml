@@ -4618,7 +4618,12 @@ ActionController::Base#response:
 ActionController::Base#response=:
   types:
   - ActionDispatch::Response
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActionController::Base#response_body:
   types:
   - undefined
