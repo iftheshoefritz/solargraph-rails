@@ -220,8 +220,7 @@ class Definitions
           # rbs signatures cover several Rails versions, so an rbs pin does not
           # show that a method removed or not yet added in this one exists
           remove_skip(data) unless rbs_pin && (already_removed || not_added_yet)
-        elsif rbs_pin
-          # rbs-only definitions may cover multiple versions of Rails and cause false alarms
+        elsif rbs_pin && (already_removed || not_added_yet)
           nil
         elsif !@allow_improvements
           @incorrect << <<~STR
