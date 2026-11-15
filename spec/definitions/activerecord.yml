@@ -1179,6 +1179,8 @@ ActiveRecord::Base.create!:
   - self
   skip:
   - 0.62.0
+  - 0.62.1
+  - branch-castwide-master
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
@@ -1593,6 +1595,8 @@ ActiveRecord::Base.define_model_callbacks:
   - undefined
   skip:
   - 0.62.0
+  - 0.62.1
+  - branch-castwide-master
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
@@ -2973,6 +2977,8 @@ ActiveRecord::Base.new:
   - 0.51.2
   - 0.52.0
   - 0.62.0
+  - 0.62.1
+  - branch-castwide-master
 ActiveRecord::Base.next_sequence_value:
   types:
   - undefined
@@ -4461,6 +4467,8 @@ ActiveRecord::Base.subclasses:
   - Array<Class>
   skip:
   - 0.62.0
+  - 0.62.1
+  - branch-castwide-master
 ActiveRecord::Base.sum:
   types:
   - undefined

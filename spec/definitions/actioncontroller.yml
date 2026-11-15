@@ -1946,6 +1946,8 @@ ActionController::Base.subclasses:
   - Array<Class>
   skip:
   - 0.62.0
+  - 0.62.1
+  - branch-castwide-master
 ActionController::Base.supports_path?:
   types:
   - Boolean
