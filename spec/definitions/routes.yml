@@ -292,14 +292,6 @@ ActionDispatch::Routing::Mapper#concern:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
 ActionDispatch::Routing::Mapper#concerns:
   types:
   - Array<Symbol>
