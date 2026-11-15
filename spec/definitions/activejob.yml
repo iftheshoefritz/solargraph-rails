@@ -1241,6 +1241,8 @@ ActiveJob::Base.subclasses:
   - Array<Class>
   skip:
   - 0.62.0
+  - 0.62.1
+  - branch-castwide-master
 ActiveJob::Base.thread_cattr_accessor:
   types:
   - undefined
