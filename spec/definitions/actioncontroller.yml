@@ -4618,33 +4618,7 @@ ActionController::Base#response:
 ActionController::Base#response=:
   types:
   - ActionDispatch::Response
-  skip:
-  - solargraph: 0.48.0
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  - solargraph: 0.49.0
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  - solargraph: 0.50.0
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  - solargraph: 0.51.2
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  - solargraph: 0.52.0
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  added_in: 7.1
+  skip: false
 ActionController::Base#response_body:
   types:
   - undefined
