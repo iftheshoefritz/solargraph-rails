@@ -1,6 +1,7 @@
 # These mirror activerecord 7.2's RBS for Rails 7.0 and 7.1, whose
 # gem_rbs_collection RBS (activerecord 7.0 and 7.1) lacks them. Remove
-# once gem_rbs_collection backports them to activerecord 7.0 and 7.1.
+# once https://github.com/apiology/gem_rbs_collection/pull/28 merges and
+# the pinned collection revision includes it.
 module ActiveRecord
   module SignedId
     # @param expires_in [ActiveSupport::Duration, nil]
