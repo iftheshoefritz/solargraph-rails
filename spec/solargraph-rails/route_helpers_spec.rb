@@ -211,7 +211,9 @@ RSpec.describe Solargraph::Rails::RouteHelpers do
     end
   end
 
-  it 'refreshes the helpers when the routes file changes' do
+  it 'refreshes the helpers when the routes file changes',
+     skip: Gem::Version.new(Solargraph::VERSION) < Gem::Version.new('0.51.0') &&
+           'Solargraph before 0.51 does not remap other files for an attached edit' do
     filename = path(routes_file)
     edited = File.read(filename).sub('draw :extras', "draw :extras\nresources :tags")
     expect(controller_definition('tags_path')).to be_nil
