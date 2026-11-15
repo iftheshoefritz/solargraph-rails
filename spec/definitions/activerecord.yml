@@ -213,36 +213,14 @@ ActiveRecord::Base.after_validation:
   - 0.52.0
 ActiveRecord::Base.aggregate_reflections:
   types:
-  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
+  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections=:
   types:
-  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
+  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActiveRecord::Base.aggregate_reflections?:
   types:
   - Boolean
@@ -5242,20 +5220,9 @@ ActiveRecord::Base#acts_like?:
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
-  - Hash{String => ActiveRecord::Reflection::AggregateReflection}
+  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActiveRecord::Base#aggregate_reflections?:
   types:
   - Boolean
