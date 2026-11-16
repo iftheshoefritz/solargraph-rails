@@ -563,9 +563,15 @@ Time#class_eval:
   skip: false
 Time#compare_with_coercion:
   types:
-  - Integer
+  - "-1"
+  - '0'
+  - '1'
   - nil
-  skip: false
+  skip:
+  - 0.60.4
+  - 0.61.0
+  - 0.62.1
+  - branch-castwide-master
 Time#days_ago:
   types:
   - undefined

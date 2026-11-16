@@ -6,7 +6,7 @@ class Date
   def readable_inspect; end
 
   # @param other [Object]
-  # @return [Integer, nil]
+  # @return [-1, 0, 1, nil]
   def compare_with_coercion(other); end
 end
 
@@ -20,11 +20,11 @@ class DateTime < Date
   def -(other); end
 
   # @param other [Object]
-  # @return [Integer, nil]
+  # @return [-1, 0, 1, nil]
   def compare_with_coercion(other); end
 
   # @param other [Object]
-  # @return [Integer, nil]
+  # @return [-1, 0, 1, nil]
   def <=>(other); end
 
   # @return [String]
