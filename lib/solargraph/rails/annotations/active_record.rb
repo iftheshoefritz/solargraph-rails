@@ -217,7 +217,7 @@ class ActiveRecord::Base
   def reload; end
 
   # @param other [Object]
-  # @return [-1, 0, 1, nil]
+  # @return [Integer, nil]
   def <=>(other); end
 end
 
