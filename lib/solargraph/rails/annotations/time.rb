@@ -3,10 +3,6 @@ require 'time'
 class Time
   # @return [Boolean]
   def eql_with_coercion(other); end
-
-  # @param other [Object]
-  # @return [Integer, nil]
-  def compare_with_coercion(other); end
 end
 
 # ActiveSupport returns a String; json's RBS types json/add's Hash-returning

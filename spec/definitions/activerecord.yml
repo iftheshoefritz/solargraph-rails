@@ -5092,20 +5092,9 @@ ActiveRecord::Base.yaml_encoder:
   skip: false
 ActiveRecord::Base#<=>:
   types:
-  - "-1"
-  - '0'
-  - '1'
+  - Integer
   - nil
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.60.4
-  - 0.61.0
-  - 0.62.1
-  - branch-castwide-master
+  skip: false
 ActiveRecord::Base#==:
   types:
   - Boolean
@@ -6783,7 +6772,12 @@ ActiveRecord::Base#serializable_hash:
 ActiveRecord::Base#signed_id:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#signed_id_verifier_secret:
   types:
   - undefined
