@@ -4,10 +4,6 @@ require 'active_support/core_ext'
 class Date
   # @return [String]
   def readable_inspect; end
-
-  # @param other [Object]
-  # @return [Integer, nil]
-  def compare_with_coercion(other); end
 end
 
 class DateTime < Date
@@ -22,10 +18,6 @@ class DateTime < Date
   # @param other [Object]
   # @return [Integer, nil]
   def compare_with_coercion(other); end
-
-  # @param other [Object]
-  # @return [Integer, nil]
-  def <=>(other); end
 
   # @return [String]
   def readable_inspect; end

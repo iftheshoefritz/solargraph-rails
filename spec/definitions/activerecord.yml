@@ -756,10 +756,12 @@ ActiveRecord::Base.build:
   skip:
   - solargraph: 0.57.0
     rails:
+    - '7.1'
     - '7.2'
     - '8.0'
   - solargraph: 0.58.2
     rails:
+    - '7.1'
     - '7.2'
     - '8.0'
   - 0.60.4
@@ -4004,6 +4006,11 @@ ActiveRecord::Base.signed_id_verifier_secret:
   types:
   - undefined
   skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
@@ -4018,6 +4025,11 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined
   skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
@@ -6760,7 +6772,12 @@ ActiveRecord::Base#serializable_hash:
 ActiveRecord::Base#signed_id:
   types:
   - String
-  skip: false
+  skip:
+  - 0.48.0
+  - 0.49.0
+  - 0.50.0
+  - 0.51.2
+  - 0.52.0
 ActiveRecord::Base#signed_id_verifier_secret:
   types:
   - undefined
@@ -7196,7 +7213,7 @@ ActiveRecord::Base#toggle!:
   skip: false
 ActiveRecord::Base#touch:
   types:
-  - void
+  - boolish
   skip:
   - 0.48.0
   - 0.49.0
@@ -7205,11 +7222,7 @@ ActiveRecord::Base#touch:
   - 0.52.0
   - 0.57.0
   - 0.58.2
-  - 0.60.4
-  - 0.61.0
   - 0.62.0
-  - 0.62.1
-  - branch-castwide-master
 ActiveRecord::Base#touch_later:
   types:
   - undefined
