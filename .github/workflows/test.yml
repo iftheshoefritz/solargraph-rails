@@ -116,6 +116,11 @@ jobs:
             solargraph-version: "branch-castwide-master"
             run_coverage: true
       fail-fast: false
+    env:
+      # Run every bundle command, including nested ones, on the Bundler
+      # installed below rather than the newer default gem that
+      # `rubygems: latest` brings; solargraph < 0.58 requires bundler ~> 2.0
+      BUNDLER_VERSION: 2.5.23
     steps:
       - uses: actions/checkout@v2
 
