@@ -15,6 +15,10 @@ class DateTime < Date
   # @return [Rational, self]
   def -(other); end
 
+  # @param other [Object]
+  # @return [Integer, nil]
+  def compare_with_coercion(other); end
+
   # @return [String]
   def readable_inspect; end
 end
