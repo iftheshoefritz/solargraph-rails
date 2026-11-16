@@ -1,6 +1,6 @@
 # These mirror activerecord 7.2's RBS for Rails 7.0 and 7.1, whose
 # gem_rbs_collection RBS (activerecord 7.0 and 7.1) lacks them. Remove
-# once https://github.com/apiology/gem_rbs_collection/pull/28 merges and
+# once https://github.com/ruby/gem_rbs_collection/pull/1142 merges and
 # the pinned collection revision includes it.
 module ActiveRecord
   module SignedId
