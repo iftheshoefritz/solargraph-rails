@@ -116,11 +116,6 @@ jobs:
             solargraph-version: "branch-castwide-master"
             run_coverage: true
       fail-fast: false
-    env:
-      # Run every bundle command, including nested ones, on the Bundler
-      # installed below rather than the newer default gem that
-      # `rubygems: latest` brings; solargraph < 0.58 requires bundler ~> 2.0
-      BUNDLER_VERSION: 2.5.23
     steps:
       - uses: actions/checkout@v2
 
@@ -128,6 +123,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libsqlite3-dev
+
+      # These solargraphs fail version solving under Bundler 4.1, the
+      # default gem `rubygems: latest` brings on Ruby 3.2; run every bundle
+      # command, including nested ones, on the Bundler installed below
+      - name: Pin Bundler for solargraph 0.51.2 and 0.52.0
+        if: contains(fromJSON('["0.51.2", "0.52.0"]'), matrix.solargraph-version)
+        run: echo "BUNDLER_VERSION=2.5.23" >> "$GITHUB_ENV"
 
       - uses: ruby/setup-ruby@v1.335.0
         with:
