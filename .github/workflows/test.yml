@@ -127,7 +127,7 @@ jobs:
       # These solargraphs fail version solving under Bundler 4.1, the
       # default gem `rubygems: latest` brings on Ruby 3.2; run every bundle
       # command, including nested ones, on the Bundler installed below
-      - name: Pin Bundler for solargraph 0.51.2 and 0.52.0
+      - name: Use Bundler 2.5.23 for solargraph 0.51.2 and 0.52.0
         if: contains(fromJSON('["0.51.2", "0.52.0"]'), matrix.solargraph-version)
         run: echo "BUNDLER_VERSION=2.5.23" >> "$GITHUB_ENV"
 
