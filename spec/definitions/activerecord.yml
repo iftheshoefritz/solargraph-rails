@@ -211,30 +211,6 @@ ActiveRecord::Base.after_validation:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-ActiveRecord::Base.aggregate_reflections:
-  types:
-  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.62.0
-ActiveRecord::Base.aggregate_reflections=:
-  types:
-  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.62.0
 ActiveRecord::Base.aggregate_reflections?:
   types:
   - Boolean
@@ -484,8 +460,6 @@ ActiveRecord::Base.attribute_aliases:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.attribute_aliases=:
   types:
@@ -496,8 +470,6 @@ ActiveRecord::Base.attribute_aliases=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.attribute_aliases?:
   types:
@@ -530,8 +502,6 @@ ActiveRecord::Base.attribute_method_matchers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   removed_in: 7.1
 ActiveRecord::Base.attribute_method_matchers=:
   types:
@@ -542,8 +512,6 @@ ActiveRecord::Base.attribute_method_matchers=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   removed_in: 7.1
 ActiveRecord::Base.attribute_method_matchers?:
   types:
@@ -809,8 +777,6 @@ ActiveRecord::Base.cache_timestamp_format:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.cache_timestamp_format=:
   types:
@@ -821,8 +787,6 @@ ActiveRecord::Base.cache_timestamp_format=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.cache_timestamp_format?:
   types:
@@ -842,8 +806,6 @@ ActiveRecord::Base.cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.cache_versioning=:
   types:
@@ -854,8 +816,6 @@ ActiveRecord::Base.cache_versioning=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.cache_versioning?:
   types:
@@ -951,8 +911,6 @@ ActiveRecord::Base.collection_cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.collection_cache_versioning=:
   types:
@@ -963,8 +921,6 @@ ActiveRecord::Base.collection_cache_versioning=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.collection_cache_versioning?:
   types:
@@ -1423,8 +1379,6 @@ ActiveRecord::Base.default_scopes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.default_scopes=:
   types:
@@ -1435,8 +1389,6 @@ ActiveRecord::Base.default_scopes=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.default_scopes?:
   types:
@@ -1847,8 +1799,6 @@ ActiveRecord::Base.enumerate_columns_in_select_statements:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.error_on_ignored_order:
   types:
@@ -2435,8 +2385,6 @@ ActiveRecord::Base.include_root_in_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.include_root_in_json=:
   types:
@@ -2447,8 +2395,6 @@ ActiveRecord::Base.include_root_in_json=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.include_root_in_json?:
   types:
@@ -2499,8 +2445,6 @@ ActiveRecord::Base.inheritance_column:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.inheritance_column=:
   types:
@@ -2511,8 +2455,6 @@ ActiveRecord::Base.inheritance_column=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.inheritance_column?:
   types:
@@ -2607,8 +2549,6 @@ ActiveRecord::Base.internal_metadata_table_name:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.internal_metadata_table_name=:
   types:
@@ -2619,8 +2559,6 @@ ActiveRecord::Base.internal_metadata_table_name=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.internal_metadata_table_name?:
   types:
@@ -2764,8 +2702,6 @@ ActiveRecord::Base.lock_optimistically:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.lock_optimistically=:
   types:
@@ -2776,8 +2712,6 @@ ActiveRecord::Base.lock_optimistically=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.lock_optimistically?:
   types:
@@ -2935,8 +2869,6 @@ ActiveRecord::Base.nested_attributes_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.nested_attributes_options=:
   types:
@@ -2947,8 +2879,6 @@ ActiveRecord::Base.nested_attributes_options=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.nested_attributes_options?:
   types:
@@ -3276,16 +3206,8 @@ ActiveRecord::Base.pluck:
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
   - 0.57.alpha
   - 0.58.0
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
@@ -3299,8 +3221,6 @@ ActiveRecord::Base.pluralize_table_names:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.pluralize_table_names=:
   types:
@@ -3311,8 +3231,6 @@ ActiveRecord::Base.pluralize_table_names=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.pluralize_table_names?:
   types:
@@ -3582,8 +3500,6 @@ ActiveRecord::Base.record_timestamps:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.record_timestamps=:
   types:
@@ -3594,8 +3510,6 @@ ActiveRecord::Base.record_timestamps=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.record_timestamps?:
   types:
@@ -3891,8 +3805,6 @@ ActiveRecord::Base.schema_migrations_table_name:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.schema_migrations_table_name=:
   types:
@@ -3903,8 +3815,6 @@ ActiveRecord::Base.schema_migrations_table_name=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.schema_migrations_table_name?:
   types:
@@ -4093,22 +4003,14 @@ ActiveRecord::Base.signed_id_verifier=:
 ActiveRecord::Base.signed_id_verifier_secret:
   types:
   - undefined
-  added_in: 8.0
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
@@ -4116,20 +4018,13 @@ ActiveRecord::Base.signed_id_verifier_secret=:
   types:
   - undefined
   skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
   - 0.55.alpha
   - 0.56.0
   - 0.56.1
   - 0.56.2-post
   - 0.56.alpha
-  - 0.57.0
   - 0.57.alpha
   - 0.58.0
-  - 0.58.2
   - 0.59.0
   - branch-2025-09-22
   - branch-better_signature_combination
@@ -4183,8 +4078,6 @@ ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   types:
@@ -4195,8 +4088,6 @@ ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes?:
   types:
@@ -4336,8 +4227,6 @@ ActiveRecord::Base.store_full_sti_class:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.store_full_sti_class=:
   types:
@@ -4348,8 +4237,6 @@ ActiveRecord::Base.store_full_sti_class=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.store_full_sti_class?:
   types:
@@ -4577,8 +4464,6 @@ ActiveRecord::Base.table_name_prefix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.table_name_prefix=:
   types:
@@ -4589,8 +4474,6 @@ ActiveRecord::Base.table_name_prefix=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.table_name_prefix?:
   types:
@@ -4610,8 +4493,6 @@ ActiveRecord::Base.table_name_suffix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.table_name_suffix=:
   types:
@@ -4622,8 +4503,6 @@ ActiveRecord::Base.table_name_suffix=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.table_name_suffix?:
   types:
@@ -4691,8 +4570,6 @@ ActiveRecord::Base.time_zone_aware_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.time_zone_aware_attributes=:
   types:
@@ -4703,8 +4580,6 @@ ActiveRecord::Base.time_zone_aware_attributes=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.time_zone_aware_attributes?:
   types:
@@ -4742,8 +4617,6 @@ ActiveRecord::Base.time_zone_aware_types:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.time_zone_aware_types=:
   types:
@@ -4754,8 +4627,6 @@ ActiveRecord::Base.time_zone_aware_types=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base.time_zone_aware_types?:
   types:
@@ -5232,18 +5103,6 @@ ActiveRecord::Base#acts_like?:
   types:
   - Boolean
   skip: false
-ActiveRecord::Base#aggregate_reflections:
-  types:
-  - Hash{Symbol => ActiveRecord::Reflection::AggregateReflection}
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.57.0
-  - 0.58.2
-  - 0.62.0
 ActiveRecord::Base#aggregate_reflections?:
   types:
   - Boolean
@@ -5287,8 +5146,6 @@ ActiveRecord::Base#attribute_aliases:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#attribute_aliases?:
   types:
@@ -5357,8 +5214,6 @@ ActiveRecord::Base#attribute_method_matchers:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   removed_in: 7.1
 ActiveRecord::Base#attribute_method_matchers?:
   types:
@@ -5675,8 +5530,6 @@ ActiveRecord::Base#cache_timestamp_format:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#cache_timestamp_format?:
   types:
@@ -5700,8 +5553,6 @@ ActiveRecord::Base#cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#cache_versioning?:
   types:
@@ -5814,8 +5665,6 @@ ActiveRecord::Base#collection_cache_versioning:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#collection_cache_versioning?:
   types:
@@ -5967,8 +5816,6 @@ ActiveRecord::Base#default_scopes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#default_shard:
   types:
@@ -6326,8 +6173,6 @@ ActiveRecord::Base#include_root_in_json:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#include_root_in_json?:
   types:
@@ -6387,8 +6232,6 @@ ActiveRecord::Base#lock_optimistically:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#lock_optimistically?:
   types:
@@ -6460,8 +6303,6 @@ ActiveRecord::Base#nested_attributes_options:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#nested_attributes_options?:
   types:
@@ -6638,8 +6479,6 @@ ActiveRecord::Base#pluralize_table_names:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#pluralize_table_names?:
   types:
@@ -6806,8 +6645,6 @@ ActiveRecord::Base#record_timestamps:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#record_timestamps=:
   types:
@@ -6818,8 +6655,6 @@ ActiveRecord::Base#record_timestamps=:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#record_timestamps?:
   types:
@@ -6925,20 +6760,7 @@ ActiveRecord::Base#serializable_hash:
 ActiveRecord::Base#signed_id:
   types:
   - String
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - solargraph: 0.57.0
-    rails:
-    - '7.0'
-    - '7.1'
-  - solargraph: 0.58.2
-    rails:
-    - '7.0'
-    - '7.1'
+  skip: false
 ActiveRecord::Base#signed_id_verifier_secret:
   types:
   - undefined
@@ -6989,8 +6811,6 @@ ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   types:
@@ -7068,8 +6888,6 @@ ActiveRecord::Base#store_full_sti_class:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#store_full_sti_class?:
   types:
@@ -7114,8 +6932,6 @@ ActiveRecord::Base#table_name_prefix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#table_name_prefix?:
   types:
@@ -7135,8 +6951,6 @@ ActiveRecord::Base#table_name_suffix:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#table_name_suffix?:
   types:
@@ -7156,8 +6970,6 @@ ActiveRecord::Base#time_zone_aware_attributes:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#time_zone_aware_attributes?:
   types:
@@ -7195,8 +7007,6 @@ ActiveRecord::Base#time_zone_aware_types:
   - 0.50.0
   - 0.51.2
   - 0.52.0
-  - 0.57.0
-  - 0.58.2
   - 0.62.0
 ActiveRecord::Base#time_zone_aware_types?:
   types:
