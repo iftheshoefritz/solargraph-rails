@@ -8,7 +8,7 @@ sources:
     # things failing after unrelated changes.
     #
     # https://github.com/ruby/gem_rbs_collection/commits/main/
-    revision: ed9e97829b8b22ed4a7e8888d7ce2d6c44835d07
+    revision: a3e904b19533c1e5518dec35d3ec833ac0b4a7c2
     # revision: main
     repo_dir: gems
 
