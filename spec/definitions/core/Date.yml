@@ -288,6 +288,7 @@ Date#<=>:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -311,6 +312,7 @@ Date#acts_like_date?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Date#advance:
   types:
@@ -468,6 +470,7 @@ Date#blank?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Date#change:
   types:
@@ -492,6 +495,7 @@ Date#compare_with_coercion:
   - 0.60.4
   - 0.61.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Date#days_ago:
   types:
