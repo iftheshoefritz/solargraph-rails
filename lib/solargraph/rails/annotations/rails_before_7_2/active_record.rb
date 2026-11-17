@@ -8,6 +8,11 @@ class ActiveRecord::Base
   def self.create!(attributes = nil, &block); end
 end
 
+class ActiveRecord::ModelSchema::ClassMethods
+  # @return [String]
+  def table_name; end
+end
+
 # @!override ActiveRecord::Calculations#pluck
 #   @overload pluck(one)
 #     @return [Array]
