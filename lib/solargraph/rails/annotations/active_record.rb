@@ -157,18 +157,6 @@ end
 
 class ActiveRecord::Relation
   include ActiveRecord::RelationMethods
-
-  # Wrong: Rails returns a record, or an Array of records for an Array
-  # argument, not the relation. Still needed after
-  # https://github.com/ruby/gem_rbs_collection/pull/1117: without it
-  # ActiveRecord::Base.build stops resolving to self on Solargraph 0.62.0.
-  # @return [self]
-  def build(attributes = nil, &block); end
-end
-
-class ActiveRecord::Persistence::ClassMethods
-  # @return [self]
-  def build(attributes = nil, &block); end
 end
 
 module ActiveRecord
@@ -212,6 +200,11 @@ class ActiveRecord::Base
   # An Array of attribute hashes creates and returns an Array of records.
   # @return [self, Array<self>]
   def self.create(attributes = nil, &block); end
+
+  # Without this, Base.build resolves to Relation#build, the alias of `new`
+  # that `extend ActiveRecord::Relation` above brings in.
+  # @return [Array<self>, self]
+  def self.build(attributes = nil, &block); end
 
   # @return [self]
   def reload; end

@@ -752,20 +752,9 @@ ActiveRecord::Base.broadcasts_to:
   skip: false
 ActiveRecord::Base.build:
   types:
+  - Array<self>
   - self
-  skip:
-  - solargraph: 0.57.0
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  - solargraph: 0.58.2
-    rails:
-    - '7.1'
-    - '7.2'
-    - '8.0'
-  - 0.60.4
-  - 0.61.0
+  skip: false
 ActiveRecord::Base.cache:
   types:
   - undefined
