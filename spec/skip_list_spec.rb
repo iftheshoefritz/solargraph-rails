@@ -133,7 +133,7 @@ RSpec.describe SkipList do
   describe '.matrix_rails_versions' do
     it 'leaves out Rails versions the CI matrix excludes for a Solargraph version' do
       expect([described_class.matrix_rails_versions('0.57.0'),
-              described_class.matrix_rails_versions('0.62.1')])
+              described_class.matrix_rails_versions('0.62.2')])
         .to eq([%w[7.0 7.1 7.2 8.0], %w[7.2 8.0]])
     end
   end

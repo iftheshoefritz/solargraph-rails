@@ -17,6 +17,7 @@ Rails::Application.<=>:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Rails::Application.abstract_railtie?:
   types:
@@ -154,6 +155,7 @@ Rails::Application.define_callbacks:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Rails::Application.delegate:
   types:
@@ -198,6 +200,7 @@ Rails::Application.eager_load!:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -408,6 +411,7 @@ Rails::Application.normalize_callback_params:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Rails::Application.presence:
   types:
@@ -464,6 +468,7 @@ Rails::Application.reset_callbacks:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Rails::Application.runner:
   types:
@@ -486,6 +491,7 @@ Rails::Application.set_callback:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Rails::Application.silence_redefinition_of_method:
   types:
@@ -504,6 +510,7 @@ Rails::Application.skip_callback:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 Rails::Application.subclasses:
   types:
@@ -581,6 +588,7 @@ Rails::Application.yaml_tag:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -694,6 +702,7 @@ Rails::Application#default_url_options:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -721,6 +730,7 @@ Rails::Application#default_url_options=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -774,6 +784,7 @@ Rails::Application#engine_name:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -910,6 +921,7 @@ Rails::Application#isolated?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -974,6 +986,7 @@ Rails::Application#middleware:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1014,6 +1027,7 @@ Rails::Application#paths:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1059,6 +1073,7 @@ Rails::Application#railtie_name:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1122,6 +1137,7 @@ Rails::Application#root:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master

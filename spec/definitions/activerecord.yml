@@ -384,6 +384,7 @@ ActiveRecord::Base.attachment_reflections?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -571,6 +572,7 @@ ActiveRecord::Base.attributes_for_inspect?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -706,6 +708,7 @@ ActiveRecord::Base.belongs_to_required_by_default?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -729,6 +732,7 @@ ActiveRecord::Base.blank?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.broadcast_target_default:
   types:
@@ -976,6 +980,7 @@ ActiveRecord::Base.configurations:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.configurations=:
   types:
@@ -990,6 +995,7 @@ ActiveRecord::Base.configurations=:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.connected?:
   types:
@@ -1043,6 +1049,7 @@ ActiveRecord::Base.connection_handler=:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.connection_handlers:
   types:
@@ -1102,6 +1109,7 @@ ActiveRecord::Base.count:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.count_by_sql:
   types:
@@ -1119,6 +1127,7 @@ ActiveRecord::Base.create!:
   skip:
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.create_or_find_by:
   types:
@@ -1145,6 +1154,7 @@ ActiveRecord::Base.current_preventing_writes:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.current_role:
   types:
@@ -1186,6 +1196,7 @@ ActiveRecord::Base.current_shard:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.current_time_from_proper_timezone:
   types:
@@ -1281,6 +1292,7 @@ ActiveRecord::Base.default_role:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1308,6 +1320,7 @@ ActiveRecord::Base.default_role=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1335,6 +1348,7 @@ ActiveRecord::Base.default_role?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1413,6 +1427,7 @@ ActiveRecord::Base.default_shard:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1440,6 +1455,7 @@ ActiveRecord::Base.default_shard=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1467,6 +1483,7 @@ ActiveRecord::Base.default_shard?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1531,6 +1548,7 @@ ActiveRecord::Base.define_model_callbacks:
   skip:
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.defined_enums:
   types:
@@ -1705,6 +1723,7 @@ ActiveRecord::Base.encrypted_attributes:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1732,6 +1751,7 @@ ActiveRecord::Base.encrypted_attributes=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1759,6 +1779,7 @@ ActiveRecord::Base.encrypted_attributes?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1877,6 +1898,7 @@ ActiveRecord::Base.find:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1905,6 +1927,7 @@ ActiveRecord::Base.find_by:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2116,6 +2139,7 @@ ActiveRecord::Base.has_many_inversing:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2143,6 +2167,7 @@ ActiveRecord::Base.has_many_inversing=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2170,6 +2195,7 @@ ActiveRecord::Base.has_many_inversing?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2270,6 +2296,7 @@ ActiveRecord::Base.immutable_strings_by_default:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2297,6 +2324,7 @@ ActiveRecord::Base.immutable_strings_by_default=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2324,6 +2352,7 @@ ActiveRecord::Base.immutable_strings_by_default?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2470,6 +2499,7 @@ ActiveRecord::Base.inheritance_column?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2665,6 +2695,7 @@ ActiveRecord::Base.local_stored_attributes:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.local_stored_attributes=:
   types:
@@ -2679,6 +2710,7 @@ ActiveRecord::Base.local_stored_attributes=:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.lock:
   types:
@@ -2772,6 +2804,7 @@ ActiveRecord::Base.logger?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -2891,6 +2924,7 @@ ActiveRecord::Base.new:
   - 0.52.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.next_sequence_value:
   types:
@@ -2989,6 +3023,7 @@ ActiveRecord::Base.param_delimiter?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3016,6 +3051,7 @@ ActiveRecord::Base.partial_inserts:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3043,6 +3079,7 @@ ActiveRecord::Base.partial_inserts=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3070,6 +3107,7 @@ ActiveRecord::Base.partial_inserts?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3097,6 +3135,7 @@ ActiveRecord::Base.partial_updates:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3124,6 +3163,7 @@ ActiveRecord::Base.partial_updates=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3151,6 +3191,7 @@ ActiveRecord::Base.partial_updates?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3277,6 +3318,7 @@ ActiveRecord::Base.present?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.primary_abstract_class:
   types:
@@ -3350,6 +3392,7 @@ ActiveRecord::Base.primary_key_prefix_type?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3658,6 +3701,7 @@ ActiveRecord::Base.reset_counters:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.reset_locking_column:
   types:
@@ -3921,6 +3965,7 @@ ActiveRecord::Base.shard_selector:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3948,6 +3993,7 @@ ActiveRecord::Base.shard_selector=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -3975,6 +4021,7 @@ ActiveRecord::Base.shard_selector?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4053,6 +4100,7 @@ ActiveRecord::Base.signed_id_verifier_secret?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4161,6 +4209,7 @@ ActiveRecord::Base.store_full_class_name:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4188,6 +4237,7 @@ ActiveRecord::Base.store_full_class_name=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4215,6 +4265,7 @@ ActiveRecord::Base.store_full_class_name?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4284,6 +4335,7 @@ ActiveRecord::Base.strict_loading_by_default:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4311,6 +4363,7 @@ ActiveRecord::Base.strict_loading_by_default=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4338,6 +4391,7 @@ ActiveRecord::Base.strict_loading_by_default?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -4348,6 +4402,7 @@ ActiveRecord::Base.subclasses:
   skip:
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base.sum:
   types:
@@ -4605,6 +4660,7 @@ ActiveRecord::Base.time_zone_aware_attributes?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5027,6 +5083,7 @@ ActiveRecord::Base.where:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5327,6 +5384,7 @@ ActiveRecord::Base#automatic_scope_inversing:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5354,6 +5412,7 @@ ActiveRecord::Base#automatic_scope_inversing?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5385,6 +5444,7 @@ ActiveRecord::Base#blank?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base#broadcast_action:
   types:
@@ -5699,6 +5759,7 @@ ActiveRecord::Base#column_for_attribute:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5768,6 +5829,7 @@ ActiveRecord::Base#default_role:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5795,6 +5857,7 @@ ActiveRecord::Base#default_role?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5841,6 +5904,7 @@ ActiveRecord::Base#default_shard:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5868,6 +5932,7 @@ ActiveRecord::Base#default_shard?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -5925,6 +5990,7 @@ ActiveRecord::Base#destroy_association_async_batch_size:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
   added_in: 7.1
 ActiveRecord::Base#destroyed?:
@@ -5978,6 +6044,7 @@ ActiveRecord::Base#encrypted_attributes:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6005,6 +6072,7 @@ ActiveRecord::Base#encrypted_attributes=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6032,6 +6100,7 @@ ActiveRecord::Base#encrypted_attributes?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6275,6 +6344,7 @@ ActiveRecord::Base#logger?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6355,6 +6425,7 @@ ActiveRecord::Base#param_delimiter=:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6382,6 +6453,7 @@ ActiveRecord::Base#partial_inserts:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6409,6 +6481,7 @@ ActiveRecord::Base#partial_inserts?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6436,6 +6509,7 @@ ActiveRecord::Base#partial_updates:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6463,6 +6537,7 @@ ActiveRecord::Base#partial_updates?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6519,6 +6594,7 @@ ActiveRecord::Base#present?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base#pretty_print:
   types:
@@ -6584,6 +6660,7 @@ ActiveRecord::Base#primary_key_prefix_type?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6780,6 +6857,7 @@ ActiveRecord::Base#signed_id_verifier_secret:
   - 0.56.1
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base#signed_id_verifier_secret?:
   types:
@@ -6804,6 +6882,7 @@ ActiveRecord::Base#signed_id_verifier_secret?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6854,6 +6933,7 @@ ActiveRecord::Base#store_full_class_name:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -6881,6 +6961,7 @@ ActiveRecord::Base#store_full_class_name?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7000,6 +7081,7 @@ ActiveRecord::Base#time_zone_aware_attributes?:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7255,6 +7337,7 @@ ActiveRecord::Base#type_for_attribute:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -7316,6 +7399,7 @@ ActiveRecord::Base#validate!:
   - 0.61.0
   - 0.62.0
   - 0.62.1
+  - 0.62.2
   - branch-castwide-master
 ActiveRecord::Base#validates_absence_of:
   types:

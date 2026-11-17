@@ -2,13 +2,13 @@ require 'spec_helper'
 
 RSpec.describe Solargraph::Rails::Devise do
   it "includes devise modules" do
-    # Solargraph 0.62.0 and 0.62.1 do not extend classes defined in gems with the
+    # Solargraph 0.62.0 through 0.62.2 do not extend classes defined in gems with the
     # ClassMethods of the ActiveSupport::Concern modules they include:
     # https://github.com/castwide/solargraph/pull/1469 removed the convention
     # that did; https://github.com/castwide/solargraph/pull/1476 restores it.
     # Keyed on exact versions, so a later release that is still broken
     # fails here rather than being skipped silently.
-    skip "ActiveSupport::Concern class methods missing; see castwide/solargraph#1476" if %w[0.62.0 0.62.1].include?(Solargraph::VERSION)
+    skip "ActiveSupport::Concern class methods missing; see castwide/solargraph#1476" if %w[0.62.0 0.62.1 0.62.2].include?(Solargraph::VERSION)
 
     filename = nil
     map = rails_workspace do |root|
