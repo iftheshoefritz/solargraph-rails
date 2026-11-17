@@ -464,6 +464,7 @@ ActionController::Base.default_protect_from_forgery:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base.default_protect_from_forgery=:
@@ -489,6 +490,7 @@ ActionController::Base.default_protect_from_forgery=:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base.default_static_extension:
@@ -2067,6 +2069,7 @@ ActionController::Base.urlsafe_csrf_tokens:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base.urlsafe_csrf_tokens=:
@@ -2092,6 +2095,7 @@ ActionController::Base.urlsafe_csrf_tokens=:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base.use:
@@ -2622,6 +2626,7 @@ ActionController::Base#default_protect_from_forgery:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base#default_protect_from_forgery=:
@@ -2647,6 +2652,7 @@ ActionController::Base#default_protect_from_forgery=:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.2
 ActionController::Base#default_render:
@@ -4269,6 +4275,7 @@ ActionController::Base#raise_on_missing_translations:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base#raise_on_missing_translations=:
@@ -4294,6 +4301,7 @@ ActionController::Base#raise_on_missing_translations=:
   - 0.61.0
   - branch-2025-09-22
   - branch-better_signature_combination
+  - branch-castwide-master
   - branch-castwide-v0.59
   removed_in: 7.1
 ActionController::Base#raise_on_open_redirects:
