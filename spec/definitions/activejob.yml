@@ -294,6 +294,9 @@ ActiveJob::Base.direct_descendants:
   - 0.52.0
   - 0.56.0
   - 0.56.1
+  - 0.62.0
+  - 0.62.1
+  - 0.62.2
   - branch-castwide-master
   removed_in: 7.1
 ActiveJob::Base.discard_on:
@@ -1221,6 +1224,9 @@ ActiveJob::Base.skip_after_callbacks_if_terminated:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
+  - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -1247,6 +1253,9 @@ ActiveJob::Base.skip_after_callbacks_if_terminated=:
   - 0.59.0
   - 0.60.4
   - 0.61.0
+  - 0.62.0
+  - 0.62.1
+  - 0.62.2
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
