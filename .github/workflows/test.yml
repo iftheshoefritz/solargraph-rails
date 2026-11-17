@@ -108,6 +108,19 @@ jobs:
               rails-major: "7"
               rails-minor: "1"
             solargraph-version: "0.62.2"
+          # Covered on Rails 7.0 and 7.2; these releases read no gem RBS,
+          # so Rails 7.1 adds the least here. Dropped to make room for the
+          # castwide master cells on Rails 7.0 and 7.1 below.
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.49.0"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.50.0"
         include:
           - versions:
               ruby: "3.2"
@@ -115,6 +128,19 @@ jobs:
               rails-minor: "0"
             solargraph-version: "branch-castwide-master"
             run_coverage: true
+          # castwide master needs Ruby 3.1+, so it cannot use the Ruby 3.0
+          # rows above; Ruby 3.2 matches the Rails 7.0 run in castwide's
+          # plugins.yml
+          - versions:
+              ruby: "3.2"
+              rails-major: "7"
+              rails-minor: "0"
+            solargraph-version: "branch-castwide-master"
+          - versions:
+              ruby: "3.2"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "branch-castwide-master"
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
