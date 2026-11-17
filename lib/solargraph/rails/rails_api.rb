@@ -5,7 +5,10 @@ module Solargraph
         @instance ||= self.new
       end
 
-      ANNOTATIONS_DIR = File.join(__dir__, 'annotations')
+      # Outside the gem's require_paths: Solargraph 0.61+ maps every .rb
+      # file under them as gem source, which would bypass the version
+      # scoping below.
+      ANNOTATIONS_DIR = File.expand_path('../../../annotations', __dir__)
 
       # Annotation subdirectory => [gem, requirement] it loads under; see
       # annotations/README.md

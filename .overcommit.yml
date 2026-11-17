@@ -25,7 +25,7 @@ PreCommit:
     enabled: true
     exclude:
       - 'spec/**/*'
-      - lib/solargraph/rails/annotations/**/*
+      - annotations/**/*
       - vendor/**/*
       - ".bundle/**/*"
 
