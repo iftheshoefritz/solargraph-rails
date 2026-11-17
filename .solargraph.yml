@@ -6,7 +6,7 @@ include:
 - "*.gemspec"
 exclude:
 - spec/**/*
-- lib/solargraph/rails/annotations/**/*
+- annotations/**/*
 - vendor/**/*
 - ".bundle/**/*"
 require:
