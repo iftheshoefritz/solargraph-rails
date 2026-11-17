@@ -95,7 +95,7 @@ module SkipList
   end
 
   # Rails versions (major.minor) that .github/workflows/test.yml runs with
-  # a Solargraph version, after its `exclude` entries.
+  # a Solargraph version, after its `exclude` and `include` entries.
   #
   # @param solargraph_version [String]
   # @return [Array<String>]
@@ -103,8 +103,10 @@ module SkipList
     matrix = YAML.load_file(WORKFLOW).dig('jobs', 'rspec', 'strategy', 'matrix')
     excludes = (matrix['exclude'] || []).select { |ex| ex['solargraph-version'] == solargraph_version }
     excluded = excludes.map { |ex| ex['versions'] }
-    versions = matrix['versions'].reject { |v| excluded.include?(v) }
-    versions.map { |v| "#{v['rails-major']}.#{v['rails-minor']}" }.uniq
+    includes = (matrix['include'] || []).select { |inc| inc['solargraph-version'] == solargraph_version }
+    versions = matrix['versions'].reject { |v| excluded.include?(v) } + includes.map { |inc| inc['versions'] }
+    rails = versions.map { |v| "#{v['rails-major']}.#{v['rails-minor']}" }.uniq
+    rails.sort_by { |v| Gem::Version.new(v) }
   end
 
   # @param list [Array<String, Hash{String => String, Array<String>}>]
