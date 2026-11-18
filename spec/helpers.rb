@@ -130,9 +130,29 @@ module Helpers
     clip.complete.pins.map(&:name)
   end
 
+  def definitions_at(filename, position, map = api_map)
+    map.clip_at(filename, position).define
+  end
+
   def completions_for(map, filename, position)
     clip = map.clip_at(filename, position)
 
     clip.complete.pins.map { |pin| [pin.name, member_tags(pin.return_type)] }.to_h
+  end
+
+  # Solargraph drops the receiver of a block nested in a @yieldreceiver
+  # block, and matches literals only against parameters of a signature the
+  # arguments conform to, which `namespace :admin` and `controller :posts`
+  # do not. Keyed on the version, so a later release that is still broken
+  # fails here rather than being skipped silently.
+  def skip_unless_nested_routes_resolve
+    skip 'nested routes blocks lose their receiver' if Gem::Version.new(Solargraph::VERSION) <= Gem::Version.new('0.62.1')
+  end
+
+  # Solargraph matches literals only at positional arguments. Keyed on the
+  # version, so a later release that is still broken fails here rather than
+  # being skipped silently.
+  def skip_unless_keyword_routes_resolve
+    skip 'keyword literals are not matched' if Gem::Version.new(Solargraph::VERSION) <= Gem::Version.new('0.62.1')
   end
 end
