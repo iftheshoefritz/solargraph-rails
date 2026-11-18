@@ -26,7 +26,7 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
-  it 'can auto-complete inside routes', skip: 'not working' do
+  it 'can auto-complete inside routes' do
     filename = nil
     map =
       rails_workspace do |root|
@@ -49,13 +49,13 @@ RSpec.describe 'Rails API completion' do
     map =
       rails_workspace do |root|
         filename = root.write_file 'app/mailers/test_mailer.rb', <<~EOS
-        class TestMailer < ActionMailer::Base
-          defa
-          def welcome_email
-            ma
+          class TestMailer < ActionMailer::Base
+            defa
+            def welcome_email
+              ma
+            end
           end
-        end
-      EOS
+        EOS
       end
 
     expect(completion_at(filename, [1, 6], map)).to include('default')
@@ -74,25 +74,25 @@ RSpec.describe 'Rails API completion' do
     map =
       rails_workspace do |root|
         filename = root.write_file 'db/migrate/20130502114652_create_things.rb', <<~EOS
-        class CreateThings < ActiveRecord::Migration[7.0]
-          def self.up
-            crea
-          end
+          class CreateThings < ActiveRecord::Migration[7.0]
+            def self.up
+              crea
+            end
 
-          def change
-            crea
-            create_table :things do |t|
-              t.col
-            end
-            change_table :things do |t|
-              t.col
-            end
-            create_join_table :things do |t|
-              t.col
+            def change
+              crea
+              create_table :things do |t|
+                t.col
+              end
+              change_table :things do |t|
+                t.col
+              end
+              create_join_table :things do |t|
+                t.col
+              end
             end
           end
-        end
-      EOS
+        EOS
       end
 
     expect(completion_at(filename, [2, 7], map)).to include('create_table')
