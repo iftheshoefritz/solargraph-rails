@@ -1,6 +1,7 @@
 module Solargraph
   module Rails
     class RailsApi
+      # @return [Solargraph::Rails::RailsApi]
       def self.instance
         @instance ||= self.new
       end
@@ -19,6 +20,7 @@ module Solargraph
         'solargraph_before_0_53' => ['solargraph', '< 0.53']
       }.freeze
 
+      # @return [Hash{String => Solargraph::SourceMap}]
       def extra_source_maps
         @extra_source_maps ||= annotation_paths.to_h do |path|
           code = File.read(path)
@@ -28,12 +30,18 @@ module Solargraph
         end
       end
 
-      # @param yard_map [Solargraph::DocMap]
+      # @param _doc_map [Object, nil] YardMap, DocMap or nil, depending on the Solargraph version
+      #
+      # @return [Array<Solargraph::Pin::Base>]
       def global(_doc_map)
         pins = extra_source_maps.values.flat_map(&:pins)
         pins + QueryGenerics.base_pins(pins)
       end
 
+      # @param source_map [Solargraph::SourceMap]
+      # @param ns [Solargraph::Pin::Namespace]
+      #
+      # @return [Array<Solargraph::Pin::Base>]
       def local(source_map, ns)
         return [] unless source_map.filename.include?('db/migrate')
         node, _ = Walker.normalize_ast(source_map.source)
