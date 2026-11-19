@@ -222,12 +222,10 @@ end
 # https://github.com/ruby/gem_rbs_collection/pull/1155
 
 module ActiveRecord::SignedId
-  # A String, or a Proc returning one
   # @return [String, Proc, nil]
   def signed_id_verifier_secret; end
 
   module ClassMethods
-    # A String, or a Proc returning one
     # @return [String, Proc, nil]
     def signed_id_verifier_secret; end
 
