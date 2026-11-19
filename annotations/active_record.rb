@@ -219,6 +219,26 @@ module ActiveRecord::Validations
   def validate; end
 end
 
+# Delete once https://github.com/ruby/gem_rbs_collection/pull/1155 is merged
+# and the revision in spec/rails{7,8}/rbs_collection.yaml includes it. That
+# PR types Rails 7.1 to 8.1 only, so keep the Rails 7.0 types then in a
+# rails_before_7_1 directory.
+module ActiveRecord::SignedId
+  # A String, or a Proc returning one
+  # @return [String, Proc, nil]
+  def signed_id_verifier_secret; end
+
+  module ClassMethods
+    # A String, or a Proc returning one
+    # @return [String, Proc, nil]
+    def signed_id_verifier_secret; end
+
+    # @param value [String, Proc, nil]
+    # @return [String, Proc, nil]
+    def signed_id_verifier_secret=(value); end
+  end
+end
+
 # @!override ActiveRecord::Calculations#count
 #   @return [Integer, Hash]
 
