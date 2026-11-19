@@ -219,6 +219,22 @@ module ActiveRecord::Validations
   def validate; end
 end
 
+# https://github.com/ruby/gem_rbs_collection/pull/1155
+
+module ActiveRecord::SignedId
+  # @return [String, Proc, nil]
+  def signed_id_verifier_secret; end
+
+  module ClassMethods
+    # @return [String, Proc, nil]
+    def signed_id_verifier_secret; end
+
+    # @param value [String, Proc, nil]
+    # @return [String, Proc, nil]
+    def signed_id_verifier_secret=(value); end
+  end
+end
+
 # @!override ActiveRecord::Calculations#count
 #   @return [Integer, Hash]
 
