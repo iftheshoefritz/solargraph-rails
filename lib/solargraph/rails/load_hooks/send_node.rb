@@ -14,6 +14,8 @@ module Solargraph
           'prepend' => Solargraph::Pin::Reference::Prepend
         }.freeze
 
+        EXPRESSION_TYPES = %i[send csend lvar ivar].freeze
+
         # Children were already processed by Solargraph's own :send processor.
         #
         # @return [Boolean]
@@ -36,6 +38,7 @@ module Solargraph
           return unless reference_class
 
           mixin_args.each do |arg|
+            next map_expression(reference_class, arg, block, targets) if expression?(arg)
             next unless arg.is_a?(::Parser::AST::Node) && arg.type == :const
 
             location = get_node_location(arg)
@@ -44,6 +47,36 @@ module Solargraph
               pins.push reference_class.new(location: location, closure: closure, name: unpack_name(arg),
                                             source: :parser)
             end
+          end
+        end
+
+        # Whether Solargraph can infer the module from the argument, e.g.
+        # app.routes.mounted_helpers.
+        #
+        # @param arg [::Parser::AST::Node]
+        # @return [Boolean]
+        def expression?(arg)
+          arg.is_a?(::Parser::AST::Node) && EXPRESSION_TYPES.include?(arg.type) &&
+            Solargraph::Pin::Reference.const_defined?(:DynamicMixin)
+        end
+
+        # Solargraph infers the expression in the hook block, where its
+        # locals are, and maps the module it returns onto each target.
+        #
+        # @param reference_class [Class<Solargraph::Pin::Reference>]
+        # @param arg [::Parser::AST::Node]
+        # @param block [Solargraph::Pin::Block]
+        # @param targets [Array<String>]
+        # @return [void]
+        def map_expression(reference_class, arg, block, targets)
+          location = get_node_location(arg)
+          visible = locals.select { |pin| pin.visible_at?(block, location) }
+          targets.each do |target|
+            pins.push Solargraph::Pin::Reference::DynamicMixin.new(
+              location: location, closure: block, mixin: reference_class, node: arg, locals: visible,
+              target: Solargraph::Pin::Namespace.new(location: location, name: target, source: :parser),
+              source: :parser
+            )
           end
         end
 
