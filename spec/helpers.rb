@@ -20,6 +20,18 @@ module Helpers
     def initialize(folder)
       @folder = folder
       @files = []
+      @originals = {}
+    end
+
+    # Puts back the fixture files the written ones replaced, and deletes the rest
+    def restore
+      files.uniq.each do |path|
+        if @originals.key?(path)
+          File.write(path, @originals[path])
+        else
+          File.delete(path)
+        end
+      end
     end
 
     def solargraph_version_numeric
@@ -28,6 +40,7 @@ module Helpers
 
     def write_file(path, content)
       FileUtils.mkdir_p(File.dirname(path))
+      @originals[path] = File.read(path) if File.exist?(path) && !@originals.key?(path)
       File.write(path, content)
       @files << path
       # Older Solargraph versions store relative paths; return those
@@ -56,7 +69,7 @@ module Helpers
         map = Solargraph::ApiMap.load('./')
       end
     ensure
-      injector.files.each { |f| File.delete(f) }
+      injector.restore
     end
 
     map
