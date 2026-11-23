@@ -26,13 +26,30 @@ RSpec.describe 'Rails API completion' do
     )
   end
 
-  it 'can auto-complete inside routes', skip: 'not working' do
+  it 'can auto-complete inside routes' do
+    skip 'needs Solargraph to call Convention#object' unless Solargraph::Convention::Base.method_defined?(:object)
+
     filename = nil
     map =
       rails_workspace do |root|
-        filename = root.write_file 'config/routes.rb', <<~EOS
+        filename = root.write_file 'config/routes/completion.rb', <<~EOS
         Rails.application.routes.draw do
           res
+        end
+      EOS
+      end
+
+    expect(completion_at(filename, [1, 5], map)).to include('resources')
+  end
+
+  it 'can auto-complete inside nested routes blocks' do
+    skip_unless_nested_routes_resolve
+
+    filename = nil
+    map =
+      rails_workspace do |root|
+        filename = root.write_file 'config/routes/completion.rb', <<~EOS
+        Rails.application.routes.draw do
           resource :things do
             res
           end
@@ -40,8 +57,7 @@ RSpec.describe 'Rails API completion' do
       EOS
       end
 
-    expect(completion_at(filename, [1, 5], map)).to include('resources')
-    expect(completion_at(filename, [3, 7], map)).to include('resources')
+    expect(completion_at(filename, [2, 7], map)).to include('resources')
   end
 
   it 'can auto-complete inside mailers' do

@@ -20,6 +20,7 @@ require_relative 'solargraph/rails/debug'
 require_relative 'solargraph/rails/engine'
 require_relative 'solargraph/rails/load_hooks'
 require_relative 'solargraph/rails/mounted_helpers'
+require_relative 'solargraph/rails/routes'
 require_relative 'solargraph/rails/version'
 
 module Solargraph
@@ -70,6 +71,7 @@ module Solargraph
         pins += run_feature { Devise.instance.process(source_map, ns) }
         pins += run_feature { Delegate.instance.process(source_map, ns) } if Delegate.supported?
         pins += run_feature { RailsApi.instance.local(source_map, ns) }
+        pins += run_feature { Routes.instance.process(source_map) }
 
         environ = Solargraph::Environ.new(pins: pins)
         Puma.instance.add_dsl(environ, basename)
@@ -97,6 +99,7 @@ module Solargraph
       # @return [Solargraph::Environ]
       def object(api_map, rooted_tag, scope, _visibility, _deep, _skip, _no_core)
         pins = run_feature { MountedHelpers.instance.object(api_map, rooted_tag, scope) }
+        pins += run_feature { Routes.instance.object(api_map, rooted_tag, scope) }
         pins.empty? ? EMPTY_ENVIRON : Solargraph::Environ.new(pins: pins)
       end
 
