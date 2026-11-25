@@ -4072,43 +4072,16 @@ ActiveRecord::Base.signed_id_verifier=:
   skip: false
 ActiveRecord::Base.signed_id_verifier_secret:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.alpha
-  - 0.58.0
-  - 0.59.0
-  - branch-2025-09-22
-  - branch-better_signature_combination
+  - String
+  - Proc
+  - nil
+  skip: false
 ActiveRecord::Base.signed_id_verifier_secret=:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.55.alpha
-  - 0.56.0
-  - 0.56.1
-  - 0.56.2-post
-  - 0.56.alpha
-  - 0.57.alpha
-  - 0.58.0
-  - 0.59.0
-  - branch-2025-09-22
-  - branch-better_signature_combination
-  - branch-castwide-v0.59
+  - String
+  - Proc
+  - nil
+  skip: false
 ActiveRecord::Base.signed_id_verifier_secret?:
   types:
   - Boolean
@@ -6887,19 +6860,10 @@ ActiveRecord::Base#signed_id:
   - 0.52.0
 ActiveRecord::Base#signed_id_verifier_secret:
   types:
-  - undefined
-  skip:
-  - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
-  - 0.52.0
-  - 0.56.0
-  - 0.56.1
-  - 0.62.0
-  - 0.62.1
-  - 0.62.2
-  - branch-castwide-master
+  - String
+  - Proc
+  - nil
+  skip: false
 ActiveRecord::Base#signed_id_verifier_secret?:
   types:
   - Boolean

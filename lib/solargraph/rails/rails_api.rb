@@ -14,6 +14,7 @@ module Solargraph
       # Annotation subdirectory => [gem, requirement] it loads under; see
       # annotations/README.md
       VERSION_SCOPED_ANNOTATIONS = {
+        'rails_before_7_1' => ['activesupport', '< 7.1'],
         'rails_before_7_2' => ['activesupport', '< 7.2'],
         'solargraph_before_0_60' => ['solargraph', '< 0.60'],
         'rbs_before_4_3' => ['rbs', '< 4.3'],
